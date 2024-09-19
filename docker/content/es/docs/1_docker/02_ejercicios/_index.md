@@ -1,7 +1,7 @@
 ---
 title: "Docker Prácticas"
 linkTitle: "Ejercicios"
-weight: 20
+weight: 30
 menu:
   main:
     weight: 20

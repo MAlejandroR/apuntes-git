@@ -1,7 +1,7 @@
 ---
 title: "Ficheros y directorios"
 linkTitle: "ficheros y directorios"
-weight: 10
+weight: 20
 icon: fa-solid fa-terminal
 draft: false    
 ---

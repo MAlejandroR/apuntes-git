@@ -6409,7 +6409,7 @@ limitations under the License.
           }
 
           var query = $(this).val();
-          var searchPage = 'http://localhost:1313/manuel/search/?q=' + query;
+          var searchPage = 'http://localhost:35635/manuel/search/?q=' + query;
           document.location = searchPage;
 
           return false;

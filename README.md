@@ -8,3 +8,6 @@
 ## php
 ## Laravel
 
+### utilidades.
+Color en alert:
+primary, white, dark, warning, light, success, 300, blue, orange.
