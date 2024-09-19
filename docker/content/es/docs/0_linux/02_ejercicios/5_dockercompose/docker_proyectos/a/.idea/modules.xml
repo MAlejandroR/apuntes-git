@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/a.iml" filepath="$PROJECT_DIR$/.idea/a.iml" />
+      <module fileurl="file://$USER_HOME$/docker/.idea/docker.iml" filepath="$USER_HOME$/docker/.idea/docker.iml" />
+      <module fileurl="file:///var/www/html/ex_1/.idea/ex_1.iml" filepath="/var/www/html/ex_1/.idea/ex_1.iml" />
+      <module fileurl="file://$USER_HOME$/laravel/roles/.idea/roles.iml" filepath="$USER_HOME$/laravel/roles/.idea/roles.iml" />
+    </modules>
+  </component>
+</project>

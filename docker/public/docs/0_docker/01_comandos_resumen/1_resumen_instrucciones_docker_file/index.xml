@@ -1,0 +1,18 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Máster en  Web – Instruccione de Dockerfile</title>
+    <link>http://proyectosdwa.es/manuel/docs/0_docker/01_comandos_resumen/1_resumen_instrucciones_docker_file/</link>
+    <description>Recent content in Instruccione de Dockerfile on Máster en  Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    
+	  <atom:link href="http://proyectosdwa.es/manuel/docs/0_docker/01_comandos_resumen/1_resumen_instrucciones_docker_file/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>

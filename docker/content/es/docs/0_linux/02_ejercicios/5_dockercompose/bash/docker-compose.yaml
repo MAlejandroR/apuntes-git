@@ -1,0 +1,6 @@
+version: "3.8"
+services:
+  bash:
+    build: .
+    image: ubuntu:latest
+    container_name: container_bash

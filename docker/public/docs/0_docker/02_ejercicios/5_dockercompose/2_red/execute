@@ -1,0 +1,5 @@
+gnome-terminal -x docker compose run -ti equipo1 bash
+gnome-terminal -x docker compose run -ti equipo2 bash
+#Vemos que se haber cada una en una ventana
+#docker ps , y veo los contenedore creados
+#cuando salgo del contenedor con exit, desaparece el contenedor del sistema
