@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:32853/en/categories/</loc>
+    <loc>http://web.infenlaces.com/dwes/docker/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="//localhost:32853/categories/"
+                href="http://web.infenlaces.com/dwes/docker/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="//localhost:32853/fr/categories/"
+                href="http://web.infenlaces.com/dwes/docker/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:32853/en/categories/"
+                href="http://web.infenlaces.com/dwes/docker/en/categories/"
                 />
   </url><url>
-    <loc>//localhost:32853/en/</loc>
+    <loc>http://web.infenlaces.com/dwes/docker/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="//localhost:32853/fr/"
+                href="http://web.infenlaces.com/dwes/docker/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="//localhost:32853/"
+                href="http://web.infenlaces.com/dwes/docker/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:32853/en/"
+                href="http://web.infenlaces.com/dwes/docker/en/"
                 />
   </url><url>
-    <loc>//localhost:32853/en/tags/</loc>
+    <loc>http://web.infenlaces.com/dwes/docker/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="//localhost:32853/tags/"
+                href="http://web.infenlaces.com/dwes/docker/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="//localhost:32853/fr/tags/"
+                href="http://web.infenlaces.com/dwes/docker/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:32853/en/tags/"
+                href="http://web.infenlaces.com/dwes/docker/en/tags/"
                 />
   </url>
 </urlset>

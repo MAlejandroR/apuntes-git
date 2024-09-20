@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ficheros y directorios on Máster en  Web</title>
-    <link>//localhost:32853/docs/0_linux/01_comandos_gestion_ficheros/</link>
+    <link>http://web.infenlaces.com/dwes/docker/docs/0_linux/01_comandos_gestion_ficheros/</link>
     <description>Recent content in Ficheros y directorios on Máster en  Web</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <atom:link href="//localhost:32853/docs/0_linux/01_comandos_gestion_ficheros/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://web.infenlaces.com/dwes/docker/docs/0_linux/01_comandos_gestion_ficheros/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
