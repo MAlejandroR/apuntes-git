@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:35635/manuel/fr/categories/</loc>
+    <loc>//localhost:32853/fr/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:35635/manuel/categories/"
+                href="//localhost:32853/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:35635/manuel/en/categories/"
+                href="//localhost:32853/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:35635/manuel/fr/categories/"
+                href="//localhost:32853/fr/categories/"
                 />
   </url><url>
-    <loc>http://localhost:35635/manuel/fr/</loc>
+    <loc>//localhost:32853/fr/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:35635/manuel/en/"
+                href="//localhost:32853/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:35635/manuel/"
+                href="//localhost:32853/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:35635/manuel/fr/"
+                href="//localhost:32853/fr/"
                 />
   </url><url>
-    <loc>http://localhost:35635/manuel/fr/tags/</loc>
+    <loc>//localhost:32853/fr/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:35635/manuel/tags/"
+                href="//localhost:32853/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:35635/manuel/en/tags/"
+                href="//localhost:32853/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:35635/manuel/fr/tags/"
+                href="//localhost:32853/fr/tags/"
                 />
   </url>
 </urlset>

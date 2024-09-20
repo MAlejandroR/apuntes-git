@@ -1,4 +1,5 @@
-baseURL = 'http://proyectosdwa.es/manuel'
+#baseURL = 'http://proyectosdwa.es/manuel'
+#baseURL = 'http://web.infenlaces.com/dwes/docker'
 #baseURL = 'http://localhost'
 languageCode = 'es-es'
 title = 'Recursos de apoyo al aprendizaje'
@@ -73,7 +74,7 @@ ul_show = 1
 sidebar_menu_foldable = true
 
 [params]
-custom_css=['/css/estilo.css']
+custom_css=['custom.css']
 copyright = "@MRomero"
 privacy_policy = "https://policies.google.com/privacy"
 
