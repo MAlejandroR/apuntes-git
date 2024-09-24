@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Máster en Web on Máster en  Web</title>
+    <link>http://localhost:39845/manuel/</link>
+    <description>Recent content in Máster en Web on Máster en  Web</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Fri, 22 Oct 2021 16:23:31 +0200</lastBuildDate>
+    <atom:link href="http://localhost:39845/manuel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalación</title>
+      <link>http://localhost:39845/manuel/docs/hugo/1_instalacion/</link>
+      <pubDate>Mon, 04 Oct 2021 12:01:52 +0200</pubDate>
+      <guid>http://localhost:39845/manuel/docs/hugo/1_instalacion/</guid>
+      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;&amp;#x2705;&#xA;&lt;strong&gt;Objetivos&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Aprenderemos a instalar &lt;em&gt;hugo&lt;/em&gt; y crear un &lt;strong&gt;nuevo sitio web&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;No olvides, si se necesita, configurar el &lt;strong&gt;path&lt;/strong&gt; del sistema para acceder desde cualquier invocación&lt;/li&gt;&#xA;&lt;li&gt;Gestionamos todo desde un &lt;strong&gt;terminal&lt;/strong&gt; independientemente de usar linux o windows&lt;/li&gt;&#xA;&lt;li&gt;Verifica la versión instalada&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Páginas referenciadas&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Web de visual code : &lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;https://code.visualstudio.com/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Web de jetsbrain y phpstorm: &lt;a href=&#34;https://www.jetbrains.com/&#34;&gt;https://www.jetbrains.com/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;hugo: &lt;a href=&#34;https://gohugo.io&#34;&gt;https://gohugo.io&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;página de snap : &lt;a href=&#34;https://snapcraft.io/docs/snap-documentation&#34;&gt;https://snapcraft.io/docs/snap-documentation&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;instalación&#34;&gt;Instalación&lt;/h2&gt;&#xA;&lt;p&gt;Tiene instaladores para mac, windows y linux:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gohugo.io/getting-started/quick-start/#step-1-install-hugo&#34;&gt;https://gohugo.io/getting-started/quick-start/#step-1-install-hugo&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;Recuerda:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Temas o layouts base</title>
+      <link>http://localhost:39845/manuel/docs/hugo/2_temas/</link>
+      <pubDate>Mon, 04 Oct 2021 13:19:24 +0200</pubDate>
+      <guid>http://localhost:39845/manuel/docs/hugo/2_temas/</guid>
+      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;&amp;#x2705;&#xA;&lt;strong&gt;Objetivo&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Asociar una plantilla o theme al sitio web&lt;/li&gt;&#xA;&lt;li&gt;Acceder al fichero de configuración del sitio web &lt;strong&gt;config.toml&lt;/strong&gt;&#xA;&lt;strong&gt;Páginas referenciadas o de consulta&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://desarrolloweb.com/articulos/generar-contenido-site-hugo&#34;&gt;https://desarrolloweb.com/articulos/generar-contenido-site-hugo&lt;/a&gt; (primera parte)&lt;/li&gt;&#xA;&lt;li&gt;Plantillas disponibles en &lt;em&gt;hugo&lt;/em&gt;  &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;https://themes.gohugo.io/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Plantilla usada como ejemplo&lt;em&gt;relearn&lt;/em&gt;:  &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-relearn/&#34;&gt;https://themes.gohugo.io/themes/hugo-theme-relearn/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h1 id=&#34;tema-plantilla-o-layout-para-el-sitio-web&#34;&gt;Tema, plantilla o layout para el sitio web&lt;/h1&gt;&#xA;&lt;p&gt;Ahora que tenemos nuestro sitio web, lo primero que tenemos que hacer es asociar una plantilla o theme a nuestro sitio para poder visualizar su contenido.&#xA;Para referirnos a la plantilla usaremos el término  &lt;strong&gt;theme&lt;/strong&gt; o &lt;strong&gt;layout&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contenido</title>
+      <link>http://localhost:39845/manuel/docs/hugo/3_contenido/</link>
+      <pubDate>Mon, 04 Oct 2021 13:19:24 +0200</pubDate>
+      <guid>http://localhost:39845/manuel/docs/hugo/3_contenido/</guid>
+      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;&amp;#x2705;&#xA;&lt;strong&gt;Objetivo&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Asociar una plantilla o theme al sitio web&lt;/li&gt;&#xA;&lt;li&gt;Estructurar contenido para mejorar la visualización del sitio.&lt;/li&gt;&#xA;&lt;li&gt;Organizar los contenidos que vamos a publicar (Orgnaizaremos por directorios y ficheros)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Páginas referenciadas o de consulta&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gohugo.io/content-management/organization/&#34;&gt;https://gohugo.io/content-management/organization/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://desarrolloweb.com/articulos/generar-contenido-site-hugo&#34;&gt;https://desarrolloweb.com/articulos/generar-contenido-site-hugo&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Plantillas disponibles en &lt;em&gt;hugo&lt;/em&gt;  &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;https://themes.gohugo.io/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Plantilla usada como ejemplo&lt;em&gt;relearn&lt;/em&gt;:  &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-relearn/&#34;&gt;https://themes.gohugo.io/themes/hugo-theme-relearn/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h1 id=&#34;contenido&#34;&gt;Contenido&lt;/h1&gt;&#xA;&lt;p&gt;Ahora que tenemos una plantilla, queda lo principal, que es aportar contenido a nuestro sitio web.&#xA;Son sitios estáticos, por lo que nuestro objetivo es aportar ficheros de texto con datos, información, imágenes, efectos visuales para que sean publicados en la web.&#xA;La idea va a ser aportar ficheros en formato &lt;a href=&#34;http://localhost:39845/manuel/manuel/&#34;&gt;markdown&lt;/a&gt; cuyo contenido queremos&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Uso básico de git</title>
+      <link>http://localhost:39845/manuel/docs/hugo/3_git/</link>
+      <pubDate>Mon, 04 Oct 2021 13:19:24 +0200</pubDate>
+      <guid>http://localhost:39845/manuel/docs/hugo/3_git/</guid>
+      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;&amp;#x2705;&#xA;&lt;strong&gt;Objetivo&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Crear un repositorio en github&lt;/li&gt;&#xA;&lt;li&gt;Crear un proyecto en local, crear un repositorio local y enlazarlo con el repositorio de github&lt;/li&gt;&#xA;&lt;li&gt;Realizar cambios en local, subirlo a github, clonar proyectos y actulizarlos&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Páginas referenciadas o de consulta&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;https://https://www.atlassian.com/es/git&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;crear-un-usuario-en-git&#34;&gt;Crear un usuario en git&lt;/h2&gt;&#xA;&lt;p&gt;Para ello accedemos a la página oficial de git &lt;a href=&#34;https://github.com&#34;&gt;https://github.com&lt;/a&gt; y buscamos la opción &lt;strong&gt;Sig up&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img alt=&#34;Acceso a git&#34; src=&#34;http://localhost:39845/manuel/manuel/docs/hugo/3_git/git_new_user.png&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Una vez presionado el botón, aportamos los datos que nos solicita y nos registramos&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shortcode</title>
+      <link>http://localhost:39845/manuel/docs/hugo/4_shortcode/</link>
+      <pubDate>Mon, 04 Oct 2021 13:19:53 +0200</pubDate>
+      <guid>http://localhost:39845/manuel/docs/hugo/4_shortcode/</guid>
+      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;Extensiones a markdown.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;IMPORTANTE:&lt;/strong&gt; Se usan dentro del texto &lt;strong&gt;.md&lt;/strong&gt; no en las plantillas&lt;/p&gt;&#xA;&lt;p&gt;Doc: &lt;a href=&#34;https://gohugo.io/content-management/shortcodes&#34;&gt;https://gohugo.io/content-management/shortcodes&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;Un shortcode es un fragmento  de código html que será renderizado dentro de un fichero md  cuando el sistema cargue o renderice dicha página de contenido&#xA;Es una forma de dar efectos visuales y de poder tener mayor funcionalidad dentro de nuestro sitio web&lt;/p&gt;&#xA;&lt;p&gt;Vamos a ver algunos ejemplos. Hay que remarcar, que ciertos shortcode son propios de una plantilla, pero no costaría mucho poderlos tener en otra&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Personalizar la plantilla</title>
+      <link>http://localhost:39845/manuel/docs/hugo/5_estilo_plantilla/</link>
+      <pubDate>Fri, 22 Oct 2021 16:23:31 +0200</pubDate>
+      <guid>http://localhost:39845/manuel/docs/hugo/5_estilo_plantilla/</guid>
+      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;&amp;#x2705;&#xA;&lt;strong&gt;Objetivos&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Vamos a modificar la plantilla utilizada&lt;/li&gt;&#xA;&lt;li&gt;Siempre se podrá hacer, pero en cada plantilla de una forma&lt;/li&gt;&#xA;&lt;li&gt;Acceder siempre a la información de la plantilla&lt;/li&gt;&#xA;&lt;li&gt;Modificar el logo, menú, etc&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Páginas referenciadas&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;En este caso referenciamos el tema &lt;a href=&#34;https://mcshelby.github.io/hugo-theme-relearn/basics/customization/&#34;&gt;&lt;strong&gt;relearn&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;qué-partes-hay-en-la-plantilla&#34;&gt;Qué partes hay en la plantilla&lt;/h2&gt;&#xA;&lt;p&gt;Debemos identificar las partes de una plantilla. Independientemente de la plantilla utilizada podemos hablar de:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Logo&lt;/li&gt;&#xA;&lt;li&gt;Colores usados en el estilo&lt;/li&gt;&#xA;&lt;li&gt;Menú principal&#xA;Identifiquemos esos elementos en nuestra plantilla y veamos cómo modificarlos para personalizarla a nuestro gusto.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;En la imagen siguiente hemos identificado diferentes partes en la plantilla que vemos tras instalarla, sin ninguna modificación.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Multilenguaje</title>
+      <link>http://localhost:39845/manuel/docs/hugo/6_multilenguajes/</link>
+      <pubDate>Tue, 05 Oct 2021 20:02:27 +0200</pubDate>
+      <guid>http://localhost:39845/manuel/docs/hugo/6_multilenguajes/</guid>
+      <description>&lt;p&gt;&#xA;&#xA;&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ver cómo establecer diferentes lenguajes en nuestro proyecto&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gohugo.io/content-management/multilingual/&#34;&gt;https://gohugo.io/content-management/multilingual/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://learn.netlify.app/en/cont/i18n/&#34;&gt;https://learn.netlify.app/en/cont/i18n/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;para-este-cometido&#34;&gt;Para este cometido&lt;/h2&gt;&#xA;&lt;pre&gt;&lt;code&gt;1.- Vamos a actualizar el trabajo realizado para los diferentes idiomas &#xA;2.- Vamos a usar la plantilla relearn, y veremos también cómo actualizar la primera pantalla&#xA;3.- Para la traducción usaremos translate de google&#xA;4.- Si quieres puedes crear un proyecto de 0 para centrarte en este aspecto de un proyecto&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;&#xA;&lt;h4 class=&#34;alert-heading&#34;&gt;Recuerda&lt;/h4&gt;&#xA;&#xA;    &lt;p&gt;&lt;strong&gt;Como crear un proyecto en hugo y establecer la plantilla relearn&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Plantillas </title>
+      <link>http://localhost:39845/manuel/docs/hugo/7_plantillas/</link>
+      <pubDate>Mon, 04 Oct 2021 13:19:43 +0200</pubDate>
+      <guid>http://localhost:39845/manuel/docs/hugo/7_plantillas/</guid>
+      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;Algunas notas sobre el trabajo con las plantillas:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sintaxis básica de las plantillas en Hugo&lt;/li&gt;&#xA;&lt;li&gt;Organización de las plantillas. Directorio &lt;code&gt;layout&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Modificación de una plantilla&lt;/li&gt;&#xA;&lt;li&gt;Creación de plantillas&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Documentación:&lt;/strong&gt;  &lt;a href=&#34;https://gohugo.io/templates/&#34;&gt;https://gohugo.io/templates/&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;sintaxis-básica&#34;&gt;Sintaxis básica&lt;/h2&gt;&#xA;&lt;p&gt;Un plantilla es una página html donde utilizando una notación especial, vamos a poder incluir elementos que vamos a partir de un lenguaje de programación y las variable que gestione.&lt;/p&gt;&#xA;&lt;p&gt;Las variables las podríamos declarar y asignar dentro de esas secciones de código, o bien, recuperarlas de las declaradas y asignadas en los ficheros de configuración como es &#xA;&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;&#xA;&#xA;    config.toml&#xA;&#xA;&lt;/span&gt;&#xA; con el que estamos trabajando constantemete&#xA;fini&amp;gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Plantillas </title>
+      <link>http://localhost:39845/manuel/docs/hugo/9_otros_aspectos/</link>
+      <pubDate>Mon, 04 Oct 2021 13:19:43 +0200</pubDate>
+      <guid>http://localhost:39845/manuel/docs/hugo/9_otros_aspectos/</guid>
+      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;Algunas notas sobre el trabajo con las plantillas:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sintaxis básica de las plantillas en Hugo&lt;/li&gt;&#xA;&lt;li&gt;Organización de las plantillas. Directorio &lt;code&gt;layout&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Modificación de una plantilla&lt;/li&gt;&#xA;&lt;li&gt;Creación de plantillas&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Documentación:&lt;/strong&gt;  &lt;a href=&#34;https://gohugo.io/templates/&#34;&gt;https://gohugo.io/templates/&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;sintaxis-básica&#34;&gt;Sintaxis básica&lt;/h2&gt;&#xA;&lt;p&gt;Un plantilla es una página html donde utilizando una notación especial, vamos a poder incluir elementos que vamos a partir de un lenguaje de programación y las variable que gestione.&lt;/p&gt;&#xA;&lt;p&gt;Las variables las podríamos declarar y asignar dentro de esas secciones de código, o bien, recuperarlas de las declaradas y asignadas en los ficheros de configuración como es &#xA;&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;&#xA;&#xA;    config.toml&#xA;&#xA;&lt;/span&gt;&#xA; con el que estamos trabajando constantemete&#xA;fini&amp;gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Datos externos</title>
+      <link>http://localhost:39845/manuel/docs/hugo/8.--datos/</link>
+      <pubDate>Mon, 04 Oct 2021 13:20:01 +0200</pubDate>
+      <guid>http://localhost:39845/manuel/docs/hugo/8.--datos/</guid>
+      <description>&lt;h1 id=&#34;consumir-datos-de-ficheros-con-estructura&#34;&gt;Consumir datos de ficheros con estructura&lt;/h1&gt;&#xA;&lt;p&gt;La ubicación del fichero debe de estar en &lt;em&gt;&lt;strong&gt;data&lt;/strong&gt;&lt;/em&gt;&#xA;Podemos consumir datos de diferentes fuentes, como un fichero json, o csv, o un directorio con imágenes o un fichero csv compartido en drive&#xA;Por ejemplo vamos a ubicar ahí un fichero de cadenas de tv sacado de github y ubicado en un proyecto de github&#xA;&lt;a href=&#34;https://github.com/MAlejandroR/staticSite/blob/main/data/tv.json&#34;&gt;https://github.com/MAlejandroR/staticSite/blob/main/data/tv.json&lt;/a&gt;&#xA;Este fichero es un array de elemetos ***json *** (parejas variable valor en un fichero)&#xA;Cada json contiene &lt;strong&gt;name&lt;/strong&gt; y &lt;strong&gt;channels&lt;/strong&gt; y channels es un array con todos los canales de ese tipo de canales con los siguientes datos:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Otros Aspectos</title>
+      <link>http://localhost:39845/manuel/docs/hugo/9.-otros_aspectos/</link>
+      <pubDate>Mon, 04 Oct 2021 13:20:01 +0200</pubDate>
+      <guid>http://localhost:39845/manuel/docs/hugo/9.-otros_aspectos/</guid>
+      <description>&lt;h3 id=&#34;activar-un-shortcode-dentro-de-otro&#34;&gt;Activar un shortcode dentro de otro&lt;/h3&gt;&#xA;&lt;p&gt;Hugo para convertir md a html utiliza &lt;em&gt;&lt;strong&gt;GoldMark&lt;/strong&gt;&lt;/em&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;&#xA;&lt;h4 class=&#34;alert-heading&#34;&gt;GoldMark&lt;/h4&gt;&#xA;&#xA;    &lt;p&gt;Es el procesador que utiliza Hugo&lt;/p&gt;&#xA;&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;&#xA;&lt;pre&gt;&lt;code&gt;para convertir texto MD a HTML&#xA;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/span&gt;&#xA;, rápido y muy compatible con los estándares de &lt;strong&gt;Markdown&lt;/strong&gt;.&#xA;&#xA;&lt;/div&gt;&#xA;&lt;/p&gt;&#xA;&#xA;&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;&#xA;&#xA;    warning&#xA;&#xA;&lt;/span&gt;&#xA;&#xA;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    primary&#xA;&#xA;&lt;/span&gt;&#xA;&#xA;&#xA;&lt;span class=&#34;font-weight-bold text-info&#34;&gt;&#xA;&#xA;    Info&#xA;&#xA;&lt;/span&gt;&#xA;&#xA;&#xA;&lt;span class=&#34;font-weight-bold text-muted&#34;&gt;&#xA;&#xA;    Muted&#xA;&#xA;&lt;/span&gt;</description>
+    </item>
+    <item>
+      <title>Search Results</title>
+      <link>http://localhost:39845/manuel/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:39845/manuel/search/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
