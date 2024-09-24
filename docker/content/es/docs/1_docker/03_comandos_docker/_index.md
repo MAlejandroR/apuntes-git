@@ -216,7 +216,7 @@ En este
 >> Crea un contenedor llamado web, abriendo un terminal y mapea el puerto 8000 del anfitrión al 80 del contenedor
 ```bash
  docker rm web 
- docker run -ti --name web ubuntu:latest -p 8000:80 bash
+ docker run -ti --name web  -p 8000:80 ubuntu:latest bash
 ```
 {{% /pageinfo %}}
 {{% pageinfo color="primary" %}}
@@ -228,7 +228,7 @@ En este
 >> Crea un contenedor llamado __web__, abriendo un terminal y comparte la carpeta del directorio actual llamada __app__ con la carpeta del docker ubicada en __/var/www/html__. Mapea los puertos anteriores
 ```bash
  docker rm web 
- docker run -ti --name web ubuntu:latest -p 8000:80  -v .\app:/var/www/html bash
+ docker run -ti --name web -p 8000:80  -v .\app:/var/www/html ubuntu:latest  bash
 ```
 {{% /pageinfo %}}
 {{< alert title="Warning" color="warning" >}}

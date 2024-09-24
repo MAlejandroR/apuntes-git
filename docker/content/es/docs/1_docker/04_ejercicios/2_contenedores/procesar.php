@@ -112,7 +112,7 @@ header("Refresh: 5; url=$paginaDeReferencia");
                                     d="M17e2 89c0-51 4-78 10-74 6 3 10 22 10 41 0 34 0 34 45 34s45 0 45-34c0-19 5-38 10-41 6-4 10 23 10 74 0 47-4 81-10 81-5 0-10-16-10-35 0-35 0-35-45-35s-45 0-45 35c0 19-4 35-10 35s-10-34-10-81z"/><path
                                     d="M2170 90V10h50c28 0 50 5 50 10 0 6-18 10-40 10h-40v70c0 40-4 70-10 70s-10-33-10-80z"/><path
                                     d="M2350 90c-45-89-45-90-27-90 6 1 31 39 55 85 32 64 39 85 27 85-9 0-31-32-55-80z"/></g></svg></span><span
-                        class="navbar-brand__name">Máster en  Web</span></a>
+                        class="navbar-brand__name">Desarrollo Web</span></a>
             <div class="td-navbar-nav-scroll ml-md-auto pr-20%" id="main_navbar ">
                 <h1>Soluciones a ejercicos</h1>
                 </ul>

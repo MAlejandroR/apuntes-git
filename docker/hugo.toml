@@ -1,5 +1,5 @@
 #baseURL = 'http://proyectosdwa.es/manuel'
-baseURL = 'http://web.infenlaces.com/dwes/docker'
+baseURL = 'http://web.infenlaces.com/dwes/docker/'
 #baseURL = 'http://localhost/'
 
 languageCode = 'es-es'
@@ -60,7 +60,7 @@ languageName = "English"
 contentDir = "content/en"
 
 [languages.es]
-title = "Máster en  Web"
+title = "Desarrollo Web"
 languageName = "Español"
 contentDir = "content/es"
 
