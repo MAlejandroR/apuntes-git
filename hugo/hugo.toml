@@ -1,5 +1,7 @@
-baseURL = 'http://proyectosdwa.es/manuel'
-#baseURL = 'http://localhost'
+#baseURL = 'http://proyectosdwa.es/manuel'
+baseURL = 'http://web.infenlaces.com/dwes/docker/'
+#baseURL = 'http://localhost/'
+
 languageCode = 'es-es'
 title = 'Conceptos sobre desarrollo web'
 
@@ -69,7 +71,7 @@ languageName = "English"
 contentDir = "content/en"
 
 [languages.es]
-title = "Máster en  Web"
+title = "Desarrollo web"
 languageName = "Español"
 contentDir = "content/es"
 
@@ -87,7 +89,7 @@ sidebar_menu_foldable = true
 custom_css=['/css/estilo.css']
 copyright = "@MRomero"
 privacy_policy = "https://policies.google.com/privacy"
-
+logo= "/images/logo.png"
 
 
 [params.links]

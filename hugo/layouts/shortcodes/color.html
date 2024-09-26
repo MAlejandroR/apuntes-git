@@ -3,6 +3,7 @@
 {{ if eq .Page.File.Ext "md" }}
     {{ .Inner | markdownify }}
 {{ else }}
+    htmlhmtlhtml
     {{ .Inner | htmlUnescape | safeHTML }}
 {{ end }}
 </span>

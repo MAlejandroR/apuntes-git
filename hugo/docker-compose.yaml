@@ -1,0 +1,19 @@
+#version: "3.8"
+#services:
+#  hugo:
+#    image: klakegg/hugo
+#    volumes:
+#      - ./practica:/src
+#    ports:
+#      - "8888:1313"  # Expone el puerto 1313 para acceder a Hugo desde el navegador
+#    command: server --bind 0.0.0.0
+version: "3.8"
+services:
+  hugo:
+    image:  ntrrg/hugo
+    container_name: hugo
+    volumes:
+      - ./practica:/site
+    ports:
+      - "8888:1313"
+    command: server --source /site/prueba --bind 0.0.0.0
