@@ -1,5 +1,5 @@
 #baseURL = 'http://proyectosdwa.es/manuel'
-baseURL = 'http://web.infenlaces.com/dwes/docker/'
+baseURL = 'http://web.infenlaces.com/dwes/hugo/'
 #baseURL = 'http://localhost/'
 
 languageCode = 'es-es'
@@ -80,16 +80,17 @@ title = "Docsy"
 languageName = "Francés"
 contentDir = "content/fr"
 
+
+[params]
+custom_css=['/css/custom.css']
+copyright = "@MRomero"
+privacy_policy = "https://policies.google.com/privacy"
+
+logo= "/images/logo.png"
 [params.ui]
 sidebar_menu_compact = true
 ul_show = 1
 sidebar_menu_foldable = true
-
-[params]
-custom_css=['/css/estilo.css']
-copyright = "@MRomero"
-privacy_policy = "https://policies.google.com/privacy"
-logo= "/images/logo.png"
 
 
 [params.links]

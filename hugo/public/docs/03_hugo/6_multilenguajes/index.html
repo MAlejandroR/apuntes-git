@@ -1,0 +1,503 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/dwes/hugo/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=dwes/hugo/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/dwes/hugo/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/dwes/hugo/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/dwes/hugo/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/dwes/hugo/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/dwes/hugo/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/dwes/hugo/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/dwes/hugo/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/dwes/hugo/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/dwes/hugo/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/dwes/hugo/favicons/android-192x192.png" sizes="192x192">
+
+<title>Multilenguaje | Desarrollo web</title>
+<meta name="description" content="Crear el sitio multilingüe">
+
+<meta property="og:url" content="http://localhost:1313/dwes/hugo/docs/03_hugo/6_multilenguajes/">
+  <meta property="og:site_name" content="Desarrollo web">
+  <meta property="og:title" content="Multilenguaje">
+  <meta property="og:description" content="Crear el sitio multilingüe">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2021-10-05T20:02:27+02:00">
+    <meta property="article:modified_time" content="2021-10-05T20:02:27+02:00">
+
+  <meta itemprop="name" content="Multilenguaje">
+  <meta itemprop="description" content="Crear el sitio multilingüe">
+  <meta itemprop="datePublished" content="2021-10-05T20:02:27+02:00">
+  <meta itemprop="dateModified" content="2021-10-05T20:02:27+02:00">
+  <meta itemprop="wordCount" content="961">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Multilenguaje">
+  <meta name="twitter:description" content="Crear el sitio multilingüe">
+
+
+<link href="/dwes/hugo/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-page">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/dwes/hugo/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/dwes/hugo/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Desarrollo web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="/dwes/hugo/docs/"><span>Documentación</span></a>
+      </li>
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/dwes/hugo/en/">English</a></li>
+    <li><a class="dropdown-item" href="/dwes/hugo/fr/">Francés</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <div class="td-sidebar-nav__section nav-item dropdown d-block d-lg-none">
+      <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/dwes/hugo/en/">English</a></li>
+    <li><a class="dropdown-item" href="/dwes/hugo/fr/">Francés</a></li>
+    </ul>
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-dweshugodocs-li">
+  <a href="/dwes/hugo/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-dweshugodocs"><i class="fa-solid fa-screwdriver-wrench"></i><span class="">Documentación</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-dweshugodocs03_hugo-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo-check" checked/>
+  <label for="m-dweshugodocs03_hugo-check"><a href="/dwes/hugo/docs/03_hugo/" title="Crear Sitios Estáticos" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dweshugodocs03_hugo"><i class="icon-hugo"></i><span class="">Hugo (Web Static)</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo1_instalacion-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo1_instalacion-check"/>
+  <label for="m-dweshugodocs03_hugo1_instalacion-check"><a href="/dwes/hugo/docs/03_hugo/1_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo1_instalacion"><i class="fas fa-cogs"></i><span class="">Instalación</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo2_temas-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo2_temas-check"/>
+  <label for="m-dweshugodocs03_hugo2_temas-check"><a href="/dwes/hugo/docs/03_hugo/2_temas/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo2_temas"><i class="fa-solid fa-palette"></i><span class="">Temas o layouts base</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dweshugodocs03_hugo3_contenido-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo3_contenido-check"/>
+  <label for="m-dweshugodocs03_hugo3_contenido-check"><a href="/dwes/hugo/docs/03_hugo/3_contenido/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dweshugodocs03_hugo3_contenido"><i class="fas fa-pencil-alt"></i><span class="">Contenido</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo3_contenido01_creacion-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo3_contenido01_creacion-check"/>
+  <label for="m-dweshugodocs03_hugo3_contenido01_creacion-check"><a href="/dwes/hugo/docs/03_hugo/3_contenido/01_creacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo3_contenido01_creacion"><i class="fas fa-file-alt"></i><span class="">Añadiendo</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo3_contenido02_taxonomias-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo3_contenido02_taxonomias-check"/>
+  <label for="m-dweshugodocs03_hugo3_contenido02_taxonomias-check"><a href="/dwes/hugo/docs/03_hugo/3_contenido/02_taxonomias/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo3_contenido02_taxonomias"><i class="fas fa-file-alt"></i><span class="">Taxonomías</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dweshugodocs03_hugo3_git-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo3_git-check"/>
+  <label for="m-dweshugodocs03_hugo3_git-check"><a href="/dwes/hugo/docs/03_hugo/3_git/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dweshugodocs03_hugo3_git"><i class="fab fa-git-alt"></i><span class="">Uso básico de git</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo3_gitdespliegue-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo3_gitdespliegue-check"/>
+  <label for="m-dweshugodocs03_hugo3_gitdespliegue-check"><a href="/dwes/hugo/docs/03_hugo/3_git/despliegue/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo3_gitdespliegue"><i class="fab fa-git-alt"></i><span class="">Despliegue en git</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo4_shortcode-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo4_shortcode-check"/>
+  <label for="m-dweshugodocs03_hugo4_shortcode-check"><a href="/dwes/hugo/docs/03_hugo/4_shortcode/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo4_shortcode"><i class="fas fa-code"></i><span class="">Shortcode</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo5_estilo_plantilla-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo5_estilo_plantilla-check"/>
+  <label for="m-dweshugodocs03_hugo5_estilo_plantilla-check"><a href="/dwes/hugo/docs/03_hugo/5_estilo_plantilla/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo5_estilo_plantilla"><i class="fas fa-tools"></i><span class="">Personalizar la plantilla</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-dweshugodocs03_hugo6_multilenguajes-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo6_multilenguajes-check" checked/>
+  <label for="m-dweshugodocs03_hugo6_multilenguajes-check"><a href="/dwes/hugo/docs/03_hugo/6_multilenguajes/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo6_multilenguajes"><i class="fas fa-globe"></i><span class="td-sidebar-nav-active-item">Multilenguaje</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dweshugodocs03_hugo7_plantillas-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo7_plantillas-check"/>
+  <label for="m-dweshugodocs03_hugo7_plantillas-check"><a href="/dwes/hugo/docs/03_hugo/7_plantillas/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dweshugodocs03_hugo7_plantillas"><i class="fab fa-html5"></i><span class="">Plantillas </span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo7_plantillasdatos-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo7_plantillasdatos-check"/>
+  <label for="m-dweshugodocs03_hugo7_plantillasdatos-check"><a href="/dwes/hugo/docs/03_hugo/7_plantillas/datos/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo7_plantillasdatos"><i class="fas fa-file-alt"></i><span class="">Datos externos</span></a></label>
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#cambiando-la-página-por-defecto">Cambiando la página por defecto</a></li>
+        <li><a href="#cambiando-valores-a-través-de-variables">Cambiando valores a través de variables</a></li>
+        <li><a href="#añadiendo-menús-en-la-página-principal">Añadiendo menús en la página principal</a></li>
+        <li><a href="#añadiendo-páginas-traducidas-a-nuestro-sitio">Añadiendo páginas traducidas a nuestro sitio</a></li>
+        <li><a href="#añadiendo-menús">Añadiendo menús</a></li>
+        <li><a href="#práctica">Práctica</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/dwes/hugo/docs/">Documentación</a></li>
+  <li class="breadcrumb-item">
+    <a href="/dwes/hugo/docs/03_hugo/">Hugo (Web Static)</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    Multilenguaje</li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Multilenguaje</h1>
+	<div class="lead">Crear el sitio multilingüe</div>
+	<header class="article-meta">
+		
+</header>
+	
+
+<div class="pageinfo pageinfo-primary">
+<ul>
+<li>Ver cómo establecer diferentes lenguajes en nuestro proyecto</li>
+<li><a href="https://gohugo.io/content-management/multilingual/">https://gohugo.io/content-management/multilingual/</a></li>
+<li><a href="https://relearn.netlify.app/en/cont/i18n/">https://relearn.netlify.app/en/cont/i18n/</a></li>
+</ul>
+
+</div>
+
+<h1 id="multilenguaje">Multilenguaje</h1>
+<p>Hugo permite establecer el 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    multilenguaje
+
+
+</span>
+</strong>
+
+para adaptar las páginas en el lenguaje deseado</p>
+<blockquote>
+<p>Para ello, lo primero modificamos el fichero de configuración  estableciendo los idiomas
+&raquo; Vamos a establecer 3 idiomas : inglés, francés, y español</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[Languages]
+</span></span><span style="display:flex;"><span>    [Languages.es]
+</span></span><span style="display:flex;"><span>        title = <span style="color:#cd5555">&#34;Ejemplo para el uso de idiomas&#34;</span>
+</span></span><span style="display:flex;"><span>        weight = <span style="color:#b452cd">1</span>
+</span></span><span style="display:flex;"><span>        languageName = <span style="color:#cd5555">&#34;Español&#34;</span>
+</span></span><span style="display:flex;"><span>    [Languages.en]
+</span></span><span style="display:flex;"><span>        title = <span style="color:#cd5555">&#34;Example use language&#34;</span>
+</span></span><span style="display:flex;"><span>        weight = <span style="color:#b452cd">2</span>
+</span></span><span style="display:flex;"><span>        languageName = <span style="color:#cd5555">&#34;English&#34;</span>
+</span></span><span style="display:flex;"><span>   [Languages.fr]
+</span></span><span style="display:flex;"><span>        title = <span style="color:#cd5555">&#34;Exemple d&#39;utilisation des langues&#34;</span>
+</span></span><span style="display:flex;"><span>        weight = <span style="color:#b452cd">3</span>
+</span></span><span style="display:flex;"><span>        languageName = <span style="color:#cd5555">&#34;Français&#34;</span>
+</span></span></code></pre></div><p>Vemos como las variables usadas son claras en su función. 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    weight
+
+
+</span>
+</strong>
+, como ya sabemos establece el orden en el que aparecerán en el menú
+
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>Listado de idiomas configurado</strong></p>
+<hr>
+<p><img alt="imagen de lista de idiomas" src="/dwes/hugo/docs/03_hugo/6_multilenguajes/listado_idiomas.png"></p>
+
+</div>
+</p>
+<p>En este caso vamos a establecer diferentes directorios para establecer la ubicación de los ficheros. Deberá de aparecer un menú para ver las diferentes opciones del menú.</p>
+<p>Ahora podremos establecer un idioma por defecto también con variables en el fichero <strong>config.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>defaultContentLanguage = <span style="color:#cd5555">&#39;es&#39;</span>
+</span></span></code></pre></div><h3 id="cambiando-la-página-por-defecto">Cambiando la página por defecto</h3>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Ten en cuenta</h4>
+
+    <strong>
+<span class="font-weight-bold text-primary">
+<pre><code>Esto es algó concreto de esta plantilla
+</code></pre>
+</span>
+</strong>
+
+
+</div>
+
+<p>Lo primero que observamos es que si cambiamos de idioma el contenido no cambia, por lo que tenemos que establecer el contenido de la página en los idiomas que queramos establecer</p>
+<p>En el caso de <strong>relearn</strong> la página que nos muestra, si no hay contenido en la carpeta 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    content
+
+
+</span>
+</strong>
+, es el contenido del fichero <strong>index.html</strong> Si entramos en él, y así vemos cómo utilizar la estructura de control en una plantilla, vemos claramente dónde se ubica la traducción, ya que por defecto, esta plantilla está preparada para inglés y francés. Añadamos el español.
+Para ello observa y utiliza la estructura de controlc   
+<strong>
+<span class="font-weight-bold text-primary">
+
+    if  - else if - end
+
+
+</span>
+</strong>
+<img alt="sintaxis estructuras de control" src="https://gohugo.io/templates/introduction/#logic"></p>
+
+
+<div class="pageinfo pageinfo-primary">
+<p>Recuerda realizar las modificaciones copiando los ficheros en la carpeta layout</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{if eq .Site.Language.Lang &#34;fr&#34;}}
+</span></span><span style="display:flex;"><span>   	&lt;<span style="color:#8b008b;font-weight:bold">h1</span>&gt;Personaliser la page d&#39;accueil&lt;/<span style="color:#8b008b;font-weight:bold">h1</span>&gt;
+</span></span><span style="display:flex;"><span>       <span style="color:#228b22">&lt;!--Usa el traductor para completar esta parte--&gt;</span>
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span>   {{else if eq .Site.Language.Lang &#34;es&#34; }}
+</span></span><span style="display:flex;"><span>   	&lt;<span style="color:#8b008b;font-weight:bold">h1</span>&gt;Personaliza tu página principal&lt;/<span style="color:#8b008b;font-weight:bold">h1</span>&gt;
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span>   {{else if eq .Site.Language.Lang &#34;en&#34;}}
+</span></span><span style="display:flex;"><span>   		&lt;<span style="color:#8b008b;font-weight:bold">h1</span>&gt;Customize your own home page&lt;/<span style="color:#8b008b;font-weight:bold">h1</span>&gt;
+</span></span><span style="display:flex;"><span>           <span style="color:#228b22">&lt;!--Usa el traductor para completar esta parte--&gt;</span>
+</span></span><span style="display:flex;"><span>   {{end}}
+</span></span></code></pre></div>
+</div>
+
+<h3 id="cambiando-valores-a-través-de-variables">Cambiando valores a través de variables</h3>
+<p>Ahora observamos que aunque cambie el contenido, hay palabras con que no se adaptan al idioma esablecido</p>
+<p>Vamos a hacer que estas palabras, también sean traducidas. Lógicamente no vamos a cambiar toda la página para una palabra, sino, lo que haremos es usar un fichero para traducirlas y que el sistema obtenga el valor del fichero que corresponda al idioma establecido según una etiqueta</p>
+<p>Con uso podemos usar la librería <strong><a href="https://developer.mozilla.org/es/docs/Mozilla/Add-ons/WebExtensions/API/i18n">i18n</a></strong> para traducciones (internacionalización)</p>
+<p>En la estructura de carpetas, dentro de <strong>themes</strong>, hay ficheros para traducir o establecer identificadores que se pueden adaptar a diferentes idiomas.
+Vemos cómo estos ficheros empiezan con dos letras que identifican el idioma
+<a href="/static/lista_i18n_traducciones.png">Lista de ficheros de traducciones</a></p>
+<p>Vamos a establecer nuevos valores para cambiar las siguientes palabras. Vemos que la palabra de buscador ya sí que se adapta</p>
+<ul>
+<li>Home</li>
+<li>Build witdh &hellip; from &hellip; and</li>
+</ul>
+<p>Para ello vamos a usar la función de traducción de hugo</p>
+<pre tabindex="0"><code class="language-hugo" data-lang="hugo">{{ T &#34;identificador_valor&#34; }}
+</code></pre><p>Con esto lo que hacemos es buscar el identificador <strong>identificador_valor</strong> en el fichero del idioma establecido y colocar su valor</p>
+<p>En este fichero podemos tener valores para singular y plural. <strong>others</strong> sería el identificador general (normalmente el que querremos utilizar), ver más sobre esto en la documentación oficial
+
+
+<div class="pageinfo pageinfo-primary">
+<p>Cambia las palabras que hemos indicado
+Mira el fichero <strong>menu-footer.html</strong> y <strong>menu.html</strong> para localizar los items
+No olvides modificar los ficheros copiándolos previamente a tu carpeta <strong>layout</strong></p>
+
+</div>
+</p>
+<h3 id="añadiendo-menús-en-la-página-principal">Añadiendo menús en la página principal</h3>
+<p>Si queremos establecer menú en la página principal y que esté en diferentes idiomas</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> [[languages.es.menu.main]]
+</span></span><span style="display:flex;"><span>    name = <span style="color:#cd5555">&#34;Otros&#34;</span>
+</span></span><span style="display:flex;"><span>    weight = <span style="color:#b452cd">50</span>
+</span></span><span style="display:flex;"><span>    url = <span style="color:#cd5555">&#34;https://github.com/google/docsy/&#34;</span>
+</span></span><span style="display:flex;"><span> [[languages.en.menu.main]]
+</span></span><span style="display:flex;"><span>    name = <span style="color:#cd5555">&#34;Other&#34;</span>
+</span></span><span style="display:flex;"><span>    weight = <span style="color:#b452cd">50</span>
+</span></span><span style="display:flex;"><span>    url = <span style="color:#cd5555">&#34;https://github.com/google/docsy/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  [[menu.main]]
+</span></span><span style="display:flex;"><span>     name = <span style="color:#cd5555">&#34;GitHub&#34;</span>
+</span></span><span style="display:flex;"><span>    weight = <span style="color:#b452cd">50</span>
+</span></span><span style="display:flex;"><span>    url = <span style="color:#cd5555">&#34;https://github.com/google/docsy/&#34;</span>
+</span></span><span style="display:flex;"><span>    pre = <span style="color:#cd5555">&#34;&lt;i class=&#39;fab fa-github&#39;&gt;&lt;/i&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>    post = <span style="color:#cd5555">&#34;&lt;span class=&#39;alert&#39;&gt;New!&lt;/span&gt;&#34;</span> 
+</span></span></code></pre></div><h3 id="añadiendo-páginas-traducidas-a-nuestro-sitio">Añadiendo páginas traducidas a nuestro sitio</h3>
+<p>A la hora de especificar las traducciones. Es sistema va a esperar tener un fichero para cada uno de los idiomas establecidos. Es decir, si tenemos una página llamada <strong>tema1.md</strong> y tenemos 3 idiomas, como es el caso que hemos planteado, deberemos de alguna manera especificar un fichero <em>tema1.md</em> para cada uno de los idiomas.</p>
+<p>Para hacer esto tenemos dos opciones. Vamos a ver aquí una de ellas, y la otra la podéis consultar en la página de referencia</p>
+<blockquote>
+<p><a href="https://gohugo.io/content-management/multilingual/#translate-your-content">https://gohugo.io/content-management/multilingual/#translate-your-content</a></p>
+</blockquote>
+<p>La solución que aplicamos es tener un directorio para cada uno de los idiomas.</p>
+<p><img alt="Listado de directorios" src="/images/directorios_idiomas.png"></p>
+<p>Una vez que lo hemos establecido, debemos indicar en el fichero de configuración con la variable <strong>contentDir</strong>, el directorio dónde se ubicarán los ficheros traducidos a ese idioma, de forma que en el caso que estamos añadiendo esta variable, nos debería quedar</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[Languages]
+</span></span><span style="display:flex;"><span>    [Languages.en]
+</span></span><span style="display:flex;"><span>        title = <span style="color:#cd5555">&#34;Example use language&#34;</span>
+</span></span><span style="display:flex;"><span>        weight = <span style="color:#b452cd">2</span>
+</span></span><span style="display:flex;"><span>        languageName = <span style="color:#cd5555">&#34;English&#34;</span>
+</span></span><span style="display:flex;"><span>        ContentDir=<span style="color:#cd5555">&#34;/content/fr&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    [Languages.es]
+</span></span><span style="display:flex;"><span>        title = <span style="color:#cd5555">&#34;Ejemplo para el uso de idiomas&#34;</span>
+</span></span><span style="display:flex;"><span>        weight = <span style="color:#b452cd">1</span>
+</span></span><span style="display:flex;"><span>        languageName = <span style="color:#cd5555">&#34;Español&#34;</span>
+</span></span><span style="display:flex;"><span>        ContentDir=<span style="color:#cd5555">&#34;/content/es&#34;</span>
+</span></span><span style="display:flex;"><span>   [Languages.fr]
+</span></span><span style="display:flex;"><span>        title = <span style="color:#cd5555">&#34;Exemple d&#39;utilisation des langues&#34;</span>
+</span></span><span style="display:flex;"><span>        weight = <span style="color:#b452cd">1</span>
+</span></span><span style="display:flex;"><span>        languageName = <span style="color:#cd5555">&#34;Français&#34;</span>
+</span></span><span style="display:flex;"><span>        ContentDir=<span style="color:#cd5555">&#34;/content/fr&#34;</span>
+</span></span></code></pre></div><p>Una vez hecho esto, hemos de crear cada uno de los ficheros en cada directorio, no los replica hugo
+
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>Crear ficheros md</strong></p>
+<hr>
+<p><img alt="Crear ficheros" src="/images/creacion_ficheros_md.png"></p>
+
+</div>
+</p>
+<p>Una vez creada ya lo único que queda es poner contenido. Para el ejercicio utiliza <em>translate</em> para  realizar la traducción en los dos idiomas</p>
+<h3 id="añadiendo-menús">Añadiendo menús</h3>
+<p>Estas acciones hay que añadirlas en el fichero de configuración
+En el caso de learn se añade usando la siguiente sintaxis</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[[Languages.en.menu.shortcuts]]
+</span></span><span style="display:flex;"><span>            name = <span style="color:#cd5555">&#34;Public Center  Enlaces&#34;</span>
+</span></span><span style="display:flex;"><span>            url = <span style="color:#cd5555">&#34;http://cpilosenlaces.com&#34;</span>
+</span></span><span style="display:flex;"><span>            identifier = <span style="color:#cd5555">&#34;cp&#34;</span>
+</span></span><span style="display:flex;"><span>            weight= <span style="color:#b452cd">10</span>
+</span></span><span style="display:flex;"><span>[[Languages.en.menu.shortcuts]]
+</span></span><span style="display:flex;"><span>            name = <span style="color:#cd5555">&#34;Language PHP&#34;</span>
+</span></span><span style="display:flex;"><span>            url = <span style="color:#cd5555">&#34;http://php.net&#34;</span>
+</span></span><span style="display:flex;"><span>            identifier = <span style="color:#cd5555">&#34;php&#34;</span>
+</span></span><span style="display:flex;"><span>            weight= <span style="color:#b452cd">11</span>
+</span></span><span style="display:flex;"><span>[[Languages.en.menu.shortcuts]]
+</span></span><span style="display:flex;"><span>            name = <span style="color:#cd5555">&#34;Wiki Documentation&#34;</span>
+</span></span><span style="display:flex;"><span>            identifier = <span style="color:#cd5555">&#34;wiki&#34;</span>
+</span></span><span style="display:flex;"><span>            url = <span style="color:#cd5555">&#34;http://es.wikieducator.org/Usuario:ManuelRomero&#34;</span>
+</span></span><span style="display:flex;"><span>            weight= <span style="color:#b452cd">12</span>            
+</span></span></code></pre></div><h3 id="práctica">Práctica</h3>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Ahora practica tú</h4>
+
+    <p>&#x1f603;
+<strong>Añade 3 lenguajes a la página</strong></p>
+<ol>
+<li>
+<p>Establece tres idiomas para la página (es, en, fr)</p>
+</li>
+<li>
+<p>Utiliza translate para realizar la traducción de los ficheros <strong>md</strong> (markdonw)</p>
+</li>
+</ol>
+
+
+</div>
+
+
+	
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2024
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/dwes/hugo/js/main.js"></script>
+<script defer src="/dwes/hugo/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/dwes/hugo/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

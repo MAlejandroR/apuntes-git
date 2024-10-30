@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:46499/dwes/docker/en/categories/</loc>
+    <loc>http://localhost:1313/dwes/hugo/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:46499/dwes/docker/categories/"
+                href="http://localhost:1313/dwes/hugo/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:46499/dwes/docker/fr/categories/"
+                href="http://localhost:1313/dwes/hugo/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:46499/dwes/docker/en/categories/"
+                href="http://localhost:1313/dwes/hugo/en/categories/"
                 />
   </url><url>
-    <loc>http://localhost:46499/dwes/docker/en/</loc>
+    <loc>http://localhost:1313/dwes/hugo/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:46499/dwes/docker/"
+                href="http://localhost:1313/dwes/hugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:46499/dwes/docker/fr/"
+                href="http://localhost:1313/dwes/hugo/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:46499/dwes/docker/en/"
+                href="http://localhost:1313/dwes/hugo/en/"
                 />
   </url><url>
-    <loc>http://localhost:46499/dwes/docker/en/tags/</loc>
+    <loc>http://localhost:1313/dwes/hugo/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:46499/dwes/docker/tags/"
+                href="http://localhost:1313/dwes/hugo/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:46499/dwes/docker/fr/tags/"
+                href="http://localhost:1313/dwes/hugo/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:46499/dwes/docker/en/tags/"
+                href="http://localhost:1313/dwes/hugo/en/tags/"
                 />
   </url>
 </urlset>

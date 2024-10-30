@@ -1,0 +1,1023 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/dwes/hugo/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=dwes/hugo/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/dwes/hugo/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/dwes/hugo/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/dwes/hugo/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/dwes/hugo/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/dwes/hugo/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/dwes/hugo/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/dwes/hugo/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/dwes/hugo/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/dwes/hugo/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/dwes/hugo/favicons/android-192x192.png" sizes="192x192">
+
+<title>Shortcode | Desarrollo web</title>
+<meta name="description" content="Incluir **elementos visuales** html en nuestros ficheros **md**">
+
+<meta property="og:url" content="http://localhost:1313/dwes/hugo/docs/03_hugo/4_shortcode/">
+  <meta property="og:site_name" content="Desarrollo web">
+  <meta property="og:title" content="Shortcode">
+  <meta property="og:description" content="Incluir **elementos visuales** html en nuestros ficheros **md**">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2021-10-04T13:19:53+02:00">
+    <meta property="article:modified_time" content="2021-10-04T13:19:53+02:00">
+
+  <meta itemprop="name" content="Shortcode">
+  <meta itemprop="description" content="Incluir **elementos visuales** html en nuestros ficheros **md**">
+  <meta itemprop="datePublished" content="2021-10-04T13:19:53+02:00">
+  <meta itemprop="dateModified" content="2021-10-04T13:19:53+02:00">
+  <meta itemprop="wordCount" content="1610">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Shortcode">
+  <meta name="twitter:description" content="Incluir **elementos visuales** html en nuestros ficheros **md**">
+
+
+<link href="/dwes/hugo/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-page">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/dwes/hugo/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/dwes/hugo/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Desarrollo web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="/dwes/hugo/docs/"><span>Documentación</span></a>
+      </li>
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/dwes/hugo/en/">English</a></li>
+    <li><a class="dropdown-item" href="/dwes/hugo/fr/">Francés</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <div class="td-sidebar-nav__section nav-item dropdown d-block d-lg-none">
+      <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/dwes/hugo/en/">English</a></li>
+    <li><a class="dropdown-item" href="/dwes/hugo/fr/">Francés</a></li>
+    </ul>
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-dweshugodocs-li">
+  <a href="/dwes/hugo/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-dweshugodocs"><i class="fa-solid fa-screwdriver-wrench"></i><span class="">Documentación</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-dweshugodocs03_hugo-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo-check" checked/>
+  <label for="m-dweshugodocs03_hugo-check"><a href="/dwes/hugo/docs/03_hugo/" title="Crear Sitios Estáticos" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dweshugodocs03_hugo"><i class="icon-hugo"></i><span class="">Hugo (Web Static)</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo1_instalacion-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo1_instalacion-check"/>
+  <label for="m-dweshugodocs03_hugo1_instalacion-check"><a href="/dwes/hugo/docs/03_hugo/1_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo1_instalacion"><i class="fas fa-cogs"></i><span class="">Instalación</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo2_temas-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo2_temas-check"/>
+  <label for="m-dweshugodocs03_hugo2_temas-check"><a href="/dwes/hugo/docs/03_hugo/2_temas/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo2_temas"><i class="fa-solid fa-palette"></i><span class="">Temas o layouts base</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dweshugodocs03_hugo3_contenido-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo3_contenido-check"/>
+  <label for="m-dweshugodocs03_hugo3_contenido-check"><a href="/dwes/hugo/docs/03_hugo/3_contenido/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dweshugodocs03_hugo3_contenido"><i class="fas fa-pencil-alt"></i><span class="">Contenido</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo3_contenido01_creacion-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo3_contenido01_creacion-check"/>
+  <label for="m-dweshugodocs03_hugo3_contenido01_creacion-check"><a href="/dwes/hugo/docs/03_hugo/3_contenido/01_creacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo3_contenido01_creacion"><i class="fas fa-file-alt"></i><span class="">Añadiendo</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo3_contenido02_taxonomias-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo3_contenido02_taxonomias-check"/>
+  <label for="m-dweshugodocs03_hugo3_contenido02_taxonomias-check"><a href="/dwes/hugo/docs/03_hugo/3_contenido/02_taxonomias/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo3_contenido02_taxonomias"><i class="fas fa-file-alt"></i><span class="">Taxonomías</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dweshugodocs03_hugo3_git-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo3_git-check"/>
+  <label for="m-dweshugodocs03_hugo3_git-check"><a href="/dwes/hugo/docs/03_hugo/3_git/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dweshugodocs03_hugo3_git"><i class="fab fa-git-alt"></i><span class="">Uso básico de git</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo3_gitdespliegue-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo3_gitdespliegue-check"/>
+  <label for="m-dweshugodocs03_hugo3_gitdespliegue-check"><a href="/dwes/hugo/docs/03_hugo/3_git/despliegue/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo3_gitdespliegue"><i class="fab fa-git-alt"></i><span class="">Despliegue en git</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-dweshugodocs03_hugo4_shortcode-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo4_shortcode-check" checked/>
+  <label for="m-dweshugodocs03_hugo4_shortcode-check"><a href="/dwes/hugo/docs/03_hugo/4_shortcode/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo4_shortcode"><i class="fas fa-code"></i><span class="td-sidebar-nav-active-item">Shortcode</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo5_estilo_plantilla-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo5_estilo_plantilla-check"/>
+  <label for="m-dweshugodocs03_hugo5_estilo_plantilla-check"><a href="/dwes/hugo/docs/03_hugo/5_estilo_plantilla/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo5_estilo_plantilla"><i class="fas fa-tools"></i><span class="">Personalizar la plantilla</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo6_multilenguajes-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo6_multilenguajes-check"/>
+  <label for="m-dweshugodocs03_hugo6_multilenguajes-check"><a href="/dwes/hugo/docs/03_hugo/6_multilenguajes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo6_multilenguajes"><i class="fas fa-globe"></i><span class="">Multilenguaje</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dweshugodocs03_hugo7_plantillas-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo7_plantillas-check"/>
+  <label for="m-dweshugodocs03_hugo7_plantillas-check"><a href="/dwes/hugo/docs/03_hugo/7_plantillas/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dweshugodocs03_hugo7_plantillas"><i class="fab fa-html5"></i><span class="">Plantillas </span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo7_plantillasdatos-li">
+  <input type="checkbox" id="m-dweshugodocs03_hugo7_plantillasdatos-check"/>
+  <label for="m-dweshugodocs03_hugo7_plantillasdatos-check"><a href="/dwes/hugo/docs/03_hugo/7_plantillas/datos/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo7_plantillasdatos"><i class="fas fa-file-alt"></i><span class="">Datos externos</span></a></label>
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#shortcodes-de-hugo">Shortcodes de hugo</a></li>
+      </ul>
+    </li>
+    <li><a href="#hahahugoshortcode13s5hbhb">HAHAHUGOSHORTCODE13s5HBHB</a>
+      <ul>
+        <li></li>
+        <li><a href="#creación-de-un-shortcode-en-hugo">Creación de un Shortcode en Hugo</a></li>
+        <li><a href="#práctica">Práctica</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/dwes/hugo/docs/">Documentación</a></li>
+  <li class="breadcrumb-item">
+    <a href="/dwes/hugo/docs/03_hugo/">Hugo (Web Static)</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    Shortcode</li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Shortcode</h1>
+	<div class="lead">Incluir <strong>elementos visuales</strong> html en nuestros ficheros <strong>md</strong></div>
+	<header class="article-meta">
+		
+</header>
+	
+
+<div class="pageinfo pageinfo-primary">
+<p>Extensiones a markdown.</p>
+<p><strong>IMPORTANTE:</strong> Se usan dentro del texto <strong>.md</strong> no en las plantillas</p>
+<p>Doc: <a href="https://gohugo.io/content-management/shortcodes">https://gohugo.io/content-management/shortcodes</a></p>
+
+</div>
+
+<p>El párrafo que has escrito está bien enfocado para un nivel de ciclo superior de desarrollo web, pero tiene algunos pequeños detalles de estilo que se podrían ajustar para mejorar la fluidez del texto. Aquí te doy una versión ligeramente corregida, con algunas mejoras gramaticales y de redacción:</p>
+<p>Un <a href="https://gohugo.io/content-management/shortcodes/">shortcode</a> es un fragmento de 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    código HTML
+
+</span>
+</strong>
+ que será renderizado a partir de un texto en un fichero .md cuando el sistema cargue o renderice la página de contenido.</p>
+<p>Es una forma de añadir efectos visuales y funcionalidades adicionales a nuestro sitio web.</p>
+<p>Vamos a ver algunos ejemplos. Cabe destacar que ciertos shortcodes son propios de una plantilla específica, pero no sería complicado reutilizarlos en otra.</p>
+<p>Los shortcodes propios de cada tema están ubicados en la carpeta del tema 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    themes/nombre_tema/layouts/shortcodes
+
+
+</span>
+</strong>
+, por lo que, si queremos crear los nuestros propios o modificar alguno existente, deberemos hacerlo en la carpeta raíz del proyecto, en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    /layouts/shortcodes
+
+
+</span>
+</strong>
+.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h3 id="shortcodes-de-hugo">Shortcodes de hugo</h3>
+<p><strong>Cargar una página de redes sociales a partir de la referencia</strong></p>
+<ul>
+<li>Supongamos que me gusta un vidoeclip de música publicado en <strong>youtube</strong>, y la web es <a href="https://www.youtube.com/watch?v=j9WyKTGAO2w">https://www.youtube.com/watch?v=j9WyKTGAO2w</a></li>
+</ul>
+<p>Pues podría cargar ese vídeo usando el <strong>shortcode</strong> de hugo</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&lt;</span>youtube<span style="color:#bbb"> </span>j9WyKTGAO2w<span style="color:#a61717;background-color:#e3d2d2">&gt;</span><span style="color:#1e889b">}}</span>
+</span></span></code></pre></div><p>El efecto de ponerlo es el siguiente</p>
+<h2 id="hahahugoshortcode13s5hbhb">
+
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/j9WyKTGAO2w?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      ></iframe>
+    </div>
+</h2>
+<p><strong>Instagram</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&lt;</span><span style="color:#bbb"> </span>instagram<span style="color:#bbb"> </span>BWNjjyYFxVx<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&gt;</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span></code></pre></div><p>{{ <instagram BWNjjyYFxVx> }}</p>
+<p><strong>Twitter</strong></p>
+<pre tabindex="0"><code></code></pre><p>Resultado</p>
+<p><strong>Vimeo</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span>
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://player.vimeo.com/video/146022717" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+
+</span></span></code></pre></div><p>Resultado
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://player.vimeo.com/video/146022717" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p>Veamos  alguno  ellos, propios de <a href="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/index.html">Relearn</a></p>
+<ul>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Badge
+
+
+</span>
+</strong>
+</li>
+</ul>
+<p>Es una insignia de marca para mostrar un texto</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>{{<span style="color:#cd5555">`</span>% badge %}}Important{{<span style="color:#cd5555">`</span>% /badge %}}
+</span></span><span style="display:flex;"><span>{{<span style="color:#cd5555">`</span>% badge <span style="color:#00688b">style</span>=<span style="color:#cd5555">&#34;primary&#34;</span> <span style="color:#00688b">title</span>=<span style="color:#cd5555">&#34;Version&#34;</span> %}}6.6.6{{<span style="color:#cd5555">`</span>% /badge %}}
+</span></span><span style="display:flex;"><span>{{<span style="color:#cd5555">`</span>% badge <span style="color:#00688b">style</span>=<span style="color:#cd5555">&#34;red&#34;</span> <span style="color:#00688b">icon</span>=<span style="color:#cd5555">&#34;angle-double-up&#34;</span> %}}Captain{{<span style="color:#cd5555">`</span>% /badge %}}
+</span></span><span style="display:flex;"><span>{{<span style="color:#cd5555">`</span>% badge <span style="color:#00688b">style</span>=<span style="color:#cd5555">&#34;info&#34;</span> %}}New{{<span style="color:#cd5555">`</span>% /badge %}}
+</span></span><span style="display:flex;"><span>{{<span style="color:#cd5555">`</span>% badge <span style="color:#00688b">color</span>=<span style="color:#cd5555">&#34;fuchsia&#34;</span> <span style="color:#00688b">icon</span>=<span style="color:#cd5555">&#34;fa-fw fab fa-hackerrank&#34;</span> %}}Awesome{{<span style="color:#cd5555">`</span>% /badge %}}
+</span></span></code></pre></div><p>Se verá:</p>
+<p><img alt="badge.png" src="/images/hugo/badge.png"></p>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Personaliza</h4>
+
+    Puedes cambiar color, icon style para personalizar
+
+</div>
+
+
+
+<div class="pageinfo pageinfo-primary">
+<h4 id="ver-el-resto-de-shortcodehttpsmcshelbygithubiohugo-theme-relearnshortcodesindexhtml-que-tiene-la-plantilla--relearn">Ver el resto de <a href="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/index.html">shortcode</a> que tiene la plantilla  Relearn.</h4>
+<ul>
+<li>Badge</li>
+<li>Button</li>
+<li>Children</li>
+<li>Expand</li>
+<li>Highlight</li>
+<li>Icon</li>
+<li>Include</li>
+<li>Math</li>
+<li>Mermaid</li>
+<li>Notice</li>
+<li>OpenAPI (Este no lo vamos a usar ahora)</li>
+<li>Resources</li>
+<li>SiteParam</li>
+<li>Tab</li>
+<li>Tabs</li>
+</ul>
+<hr>
+
+</div>
+
+<p>. Visita la página y pruébalos cada uno.</p>
+<p>*Para practicar debes de probar con los siguientes shortcodes</p>
+<h4 id="button">button</h4>
+<p>*El uso es con la siguiente sintaxis</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>{{% button <span style="color:#00688b">href</span>=<span style="color:#cd5555">&#34;referencia&#34;</span> /*%}}Label del botón{{% /button %}}
+</span></span></code></pre></div><p>*Podemos incluir  atributos según puedes ver en la web de referencia</p>
+<h4 id="resources">resources</h4>
+<p>*Este shortcode es muy práctico e interesante. Con él podemos conseguir que aparezcan los recursos que contiene la carpeta actual (ficheros de imágenes, y documentos, exluyendo los md y html que tuviera la carpeta o <a href="https://gohugo.io/content-management/page-bundles/">page bundle</a>.</p>
+<p>Una vez colocada en la carpeta los ficheros de recursos que queremos que sean accesibles por descarga, colocaremos en nuestro fichero <em><strong><strong>md</strong></strong></em> el shortcode
+*El uso es con la siguiente sintaxis</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{%/* attachments sort=<span style="color:#cd5555">&#34;asc&#34;</span> /%}}
+</span></span></code></pre></div><p>Este shortcode tiene muchas opciones que puedes probar</p>
+<h4 id="mermaind">mermaind</h4>
+<p>Interesante shortcode que</p>
+<p>El shortcode de 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Mermaid
+
+</span>
+</strong>
+ permite generar 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    diagramas y diagramas de flujo a partir de texto
+
+</span>
+</strong>
+, de manera similar a cómo se utiliza Markdown, gracias a la librería <img alt="Mermaid" src="https://mermaid.js.org/#/">.</p>
+<p>Aunque los ejemplos utilizan shortcodes con parámetros nombrados, se recomienda emplear bloques de código de Markdown en su lugar.</p>
+<p>Esto se debe a que cada vez más herramientas soportan los bloques de código de Mermaid en Markdown (por ejemplo, GitHub), lo que hace que tu contenido sea más portátil.</p>
+<pre class="mermaid">graph LR;
+If --&gt; Then
+Then --&gt; Else</pre>
+<p>visualizará:</p>
+<p>Los gráficos generados pueden moverse arrastrándolos y hacer zoom con la rueda del ratón. En dispositivos móviles, se puede interactuar con gestos táctiles.</p>
+<h3 id="creación-de-un-shortcode-en-hugo">Creación de un Shortcode en Hugo</h3>
+<p>En Hugo, los <strong>shortcodes</strong> son fragmentos reutilizables de código que permiten añadir contenido dinámico en tus páginas. Para crear un shortcode, sigue estos pasos:</p>
+<ol>
+<li>Crea un archivo con la extensión <code>.html</code> en la carpeta <code>layouts/shortcodes/</code>.</li>
+<li>Dentro del archivo, define el contenido del shortcode usando HTML o Go Templates.</li>
+</ol>
+<p>Ejemplo de un shortcode básico (<code>example.html</code>):</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">p</span>&gt;Este es un contenido de shortcode: {{ .Get &#34;text&#34; }}&lt;/<span style="color:#8b008b;font-weight:bold">p</span>&gt;
+</span></span></code></pre></div><p>Para usarlo en un archivo .md, llama al shortcode con:</p>
+<p><div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-markdown" data-lang="markdown"><span style="display:flex; background-color:#d6d6c6"><span>   { {&lt; <span style="color:#8b008b;font-weight:bold">example</span> <span style="color:#658b00">text</span>=<span style="color:#cd5555">&#34;¡Hola, Shortcode!&#34;</span> &gt;}}</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+
+<div class="alert alert-info" role="alert">
+<h4 class="alert-heading">Úsalos sin abusar</h4>
+
+    Los shortcodes son útiles para insertar bloques de código repetitivos y personalizables en varias partes del sitio.
+
+</div>
+</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#228b22">/* Aquí podrías agregar estilos CSS personalizados para mejorar la presentación del shortcode */</span>
+</span></span></code></pre></div><h4 id="crear--shortcodes-personalizado">Crear  Shortcodes personalizado</h4>
+<p>
+
+<div class="pageinfo pageinfo-primary">
+
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Crear un Shortcode para Texto con Color Personalizado
+
+
+</span>
+</strong>
+
+ 
+
+
+
+<hr style="border-color: red; border-width: 3px;"/>
+
+
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            <i class="fas  fa-check-circle"></i> 
+        </span>
+        
+        <span >Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px;font-weight:bold"> Crear un shortcode para el color del texto</h3>
+
+    <hr style="border-color:seagreen;border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+        
+        <li>Este shortcode permite cambiar el color del texto que envuelvas en él, y si no especificas un color, usará el color rojo por defecto. A continuación te explico cómo crearlo:</li>
+            
+        
+        
+        
+        </ul>
+
+    </div>
+</div>
+
+
+</div>
+
+
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">Muy importante</h4>
+
+    <ol>
+<li>Crear el shortcode:</li>
+</ol>
+<blockquote>
+<p>Creo en un directorio concreto un fichero llamado <strong> nombre_shortcode.html </strong> creando un <strong>trocito de html</strong></p>
+</blockquote>
+<ol start="2">
+<li>Invocar al shortcode:</li>
+</ol>
+<blockquote>
+<p>En un fichero markdown, donde quiero   que se rederice ese trocito de html, lo invoco como vemos a continuación</p>
+</blockquote>
+
+
+</div>
+</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#1e889b">{{</span><span style="color:#a61717;background-color:#e3d2d2">&lt;</span>nombre_shortcode<span style="color:#a61717;background-color:#e3d2d2">&gt;</span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>contenido que se recibirá como .Inner dentro del shortcode
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#a61717;background-color:#e3d2d2">&lt;/</span>nombre_shortcode<span style="color:#a61717;background-color:#e3d2d2">&gt;</span><span style="color:#1e889b">}}</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<p>Creando el shortcode:</p>
+<ol>
+<li>Crea un archivo en la carpeta <code>layouts/shortcodes/</code> llamado <code>color.html</code>.</li>
+<li>Dentro del archivo <code>color.html</code>, añade este código:</li>
+</ol>
+<p>3.- Un shortcode se crea y luego se invoca (2 conceptos que hay que tener muy claros)</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{$color := .Get &#34;color&#34; | default &#34;red&#34; }}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">style</span>=<span style="color:#cd5555">&#34;color:{{ $color }}; font-weight:bold&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  { { .Inner }}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span></code></pre></div>
+
+<div class="pageinfo pageinfo-primary">
+
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Crear un Shortcode para Mostrar objetivos
+
+
+</span>
+</strong>
+
+
+
+
+
+<hr style="border-color: red; border-width: 3px;"/>
+
+
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            <i class="fas  fa-check-circle"></i> 
+        </span>
+        
+        <span >Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px;font-weight:bold"> Crear un shortcode para mostrar obejtivos</h3>
+
+    <hr style="border-color:seagreen;border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+        
+        <li>Este shortcode permite visualizar un listado de objetivos</li>
+            
+        <li>Sería como éste cuadradito que estás viendo.</li>
+            
+        <li>Y muestra su contenido como un listado de items.</li>
+            
+        
+        
+        </ul>
+
+    </div>
+</div>
+
+
+</div>
+
+<blockquote>
+<ul>
+<li>En este caso queremos dos parámetros: el title y el subtitle</li>
+<li>Por otro lado necesitamos coger el contenido y mostrarlo en una lista</li>
+<li>Lo invocaremos así, el ejemplo anterior está invocado:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>{{&lt; objetivos  title=<span style="color:#cd5555">&#34;Práctica&#34;</span> sub_title=<span style="color:#cd5555">&#34;Crear un shortcode para mostrar obejtivos&#34;</span>&gt;}}
+</span></span><span style="display:flex;"><span>    Este shortcode permite visualizar un listado de objetivos
+</span></span><span style="display:flex;"><span>    Sería como éste cuadradito que estás viendo.
+</span></span><span style="display:flex;"><span>    Y muestra su contenido como un listado de items.
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>{{&lt; /objetivos &gt;}}
+</span></span><span style="display:flex;"><span>{{&lt;/&gt;}}</span></span></code></pre></td></tr></table>
+</div>
+</div>
+Luego, aplica ese color al texto que coloques dentro del shortcode.</li>
+</ul>
+</blockquote>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1148px">
+<img class="card-img-top" src="/dwes/hugo/docs/03_hugo/4_shortcode/shortcode_hu990567123845066105.png" width="1138" height="598">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    El código
+
+
+</span>
+</strong>
+
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-html" data-lang="html"><span style="display:flex; background-color:#d6d6c6"><span>{ $title := .Get &#34;title&#34; | default &#34;Objetivos&#34; }}
+</span></span><span style="display:flex;"><span>{{ $sub_title := .Get &#34;sub_title&#34; | default &#34;Qué veremos aquí&#34; }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">style</span>=<span style="color:#cd5555">&#34;border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">style</span>=<span style="color:#cd5555">&#34;background-color:darkgreen; color:white;
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555">    font-weight:bold; padding:10px; display: flex; align-items: center;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#228b22">&lt;!-- Icono de objetivos --&gt;</span>
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">style</span>=<span style="color:#cd5555">&#34;margin-right: 8px;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#8b008b;font-weight:bold">i</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;fas  fa-check-circle&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">i</span>&gt; <span style="color:#228b22">&lt;!-- Icono de diana para &#34;Objetivos&#34; --&gt;</span>
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#228b22">&lt;!-- Título en negrita con un poco de margen --&gt;</span>
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#8b008b;font-weight:bold">span</span> &gt;{{ $title }}&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">h3</span> <span style="color:#658b00">style</span>=<span style="color:#cd5555">&#34;padding: 5px;font-weight:bold&#34;</span>&gt; {{$sub_title}}&lt;/<span style="color:#8b008b;font-weight:bold">h3</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">hr</span> <span style="color:#658b00">style</span>=<span style="color:#cd5555">&#34;border-color:seagreen;border-width:3px&#34;</span>/&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#228b22">&lt;!-- Texto con fondo más claro y margen interno --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">style</span>=<span style="color:#cd5555">&#34;background-color:#d0f0d0; color:darkgreen; padding: 10px;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>        {{ range (split .Inner &#34;\n&#34;)}}
+</span></span><span style="display:flex;"><span>            {{- if gt (len .) 0 -}}
+</span></span><span style="display:flex;"><span>              &lt;<span style="color:#8b008b;font-weight:bold">li</span>&gt;{{.}}&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>            {{end}}
+</span></span><span style="display:flex;"><span>        {{ end}}
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Puntos importantes para explicar
+
+
+</span>
+</strong>
+
+<ol>
+<li>
+<p>Observa cómo creamos las variables y las leemos del shortcode dándelo un valor por defecto
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>   { <span style="color:#00688b">$title</span> := .Get <span style="color:#cd5555">&#34;title&#34;</span> | <span style="color:#8b008b;font-weight:bold">default</span> <span style="color:#cd5555">&#34;Objetivos&#34;</span> }}
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>   {{ <span style="color:#00688b">$sub_title</span> := .Get <span style="color:#cd5555">&#34;sub_title&#34;</span> | <span style="color:#8b008b;font-weight:bold">default</span> <span style="color:#cd5555">&#34;Qué veremos aquí&#34;</span> }}</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p>A continuación va código html normal con estilo, pero observa cuando quiero escribir el valor de las variables previamente creados:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;div style=<span style="color:#cd5555">&#34;border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;div style=<span style="color:#cd5555">&#34;background-color:darkgreen; color:white;
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555">    font-weight:bold; padding:10px; display: flex; align-items: center;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;!-- Icono de objetivos --&gt;
+</span></span><span style="display:flex;"><span>        &lt;span style=<span style="color:#cd5555">&#34;margin-right: 8px;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;i class=<span style="color:#cd5555">&#34;fas  fa-check-circle&#34;</span>&gt;&lt;/i&gt; &lt;!-- Icono de diana para <span style="color:#cd5555">&#34;Objetivos&#34;</span> --&gt;
+</span></span><span style="display:flex;"><span>        &lt;/span&gt;
+</span></span><span style="display:flex;"><span>        &lt;!-- Título en negrita con un poco de margen --&gt;
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>        &lt;span &gt;{{ <span style="color:#00688b">$title</span> }}&lt;/span&gt;
+</span></span><span style="display:flex;"><span>    &lt;/div&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>    &lt;h3 style=<span style="color:#cd5555">&#34;padding: 5px;font-weight:bold&#34;</span>&gt; {{<span style="color:#00688b">$sub_title</span>}}&lt;/h3&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;hr style=<span style="color:#cd5555">&#34;border-color:seagreen;border-width:3px&#34;</span>/&gt;
+</span></span><span style="display:flex;"><span>    &lt;!-- Texto con fondo más claro y margen interno --&gt;
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;/div&gt;
+</span></span><span style="display:flex;"><span>&lt;/div&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p>Como recojo el valor del contenido (inner), lo rompemos en filas y lo mostramos como un listado no ordenado
+4. Fíjate la manero de realizar un split o rotura de una cadena, quedándonos con un array de filas. Rompo la cadena con el carácter 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    fín de línea
+
+
+</span>
+</strong>
+. Para ello uso la función 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    split
+
+
+</span>
+</strong>
+.
+5. Para comprender mejor este código lo vamos a reescribir buscando una mayor legibilidad.
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>&lt;div style=<span style="color:#cd5555">&#34;background-color:#d0f0d0; color:darkgreen; padding: 10px;&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;ul&gt;
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>            {{ <span style="color:#00688b">$lineas</span> := split .Inner <span style="color:#cd5555">&#34;</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span>}}
+</span></span><span style="display:flex;"><span>            {{ range <span style="color:#00688b">$lineas</span>}}
+</span></span><span style="display:flex;"><span>                {{ <span style="color:#00688b">$linea</span> := .}}
+</span></span><span style="display:flex;"><span>                {{ <span style="color:#8b008b;font-weight:bold">if</span> gt (len <span style="color:#00688b">$linea</span>) <span style="color:#b452cd">0</span> }}
+</span></span><span style="display:flex;"><span>                  &lt;li&gt;{{<span style="color:#00688b">$linea</span>}}&lt;/li&gt;
+</span></span><span style="display:flex;"><span>                {{end}}
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>            {{ end}}
+</span></span><span style="display:flex;"><span>        &lt;/ul&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;/div&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p><code>$lineas</code> es un array con cada una de las líneas
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>    {{ <span style="color:#00688b">$lineas</span> := split .Inner <span style="color:#cd5555">&#34;</span><span style="color:#cd5555">\n</span><span style="color:#cd5555">&#34;</span>}}</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p><code>range</code> es la estructura de control que va a recorrer cada elemento del array
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>    {{ range <span style="color:#00688b">$lineas</span>}}
+</span></span><span style="display:flex;"><span>      ....      
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>    {{ end}}</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p>En cada interación su valor que queda en el contexto actual refereniado con el <code>punto (.)</code></p>
+</li>
+<li>
+<p>Guardo el valor en la variabble <code>$linea</code> (busco legibilidad)
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>   {{ <span style="color:#00688b">$linea</span> := .}}</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p>Verifico que la línea no esté vacía, para eliminar líneas en blanco
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>   {{ <span style="color:#8b008b;font-weight:bold">if</span> gt (len <span style="color:#00688b">$linea</span>) <span style="color:#b452cd">0</span> }}
+</span></span><span style="display:flex;"><span>   ..... 
+</span></span><span style="display:flex;"><span>   {{end}}</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p>Visualizo su contenido en un elemento de hmtl <li>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span> &lt;li&gt;{{<span style="color:#00688b">$linea</span>}}&lt;/li&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+</ol>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Muy importante</h4>
+
+    <p>Observa cómo cualquier estructura que abramos, hay que cerrarla</p>
+<pre tabindex="0"><code class="language-got-html-template" data-lang="got-html-template">{{range ...}}
+ // código de este blucle
+{{end}}
+{{if ...}}
+ // código de esta selección 
+{{end}}
+</code></pre><p>Si no lo haces, te dará un error EOF (Encuento el final de fichero y no debería de haberlo encontrado, ya que tendría que haber encontrado antes un final de estructrua de control).</p>
+
+
+</div>
+
+<h3 id="práctica">Práctica</h3>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Ahora practica tú </h4>
+
+    <p>Accede a la información de de <a href="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/">shortcode de la plantilla de relearn</a></p>
+<p>Incluye en tu trabajo los elementos que a continuación se muestran</p>
+<p>1 Botones</p>
+<p>2 Páginas de descargas</p>
+<p>3 Acortar un texto con leer mas&hellip;</p>
+<p>4 Texto remarcado como una noticia</p>
+<p>5 Crear gráficos con mermaid (opcional)</p>
+<p>6 tabs de diferentes elementos</p>
+<h3 id="question">&#x2753;</h3>
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Dudas ?</h4>
+<pre><code>Si tienes alguna duda, pregunta o envía un mensaje para aclarar.
+</code></pre>
+</div>
+
+
+</div>
+
+
+	
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2024
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script type="module" async>
+  import mermaid from "https:\/\/cdn.jsdelivr.net\/npm\/mermaid@latest\/dist\/mermaid.esm.min.mjs";
+
+  (function ($) {
+    if ($('.mermaid').length == 0) {
+      mermaid.initialize({ startOnLoad: false });
+      return;
+    }
+
+    var params = {};
+
+    
+    
+    var norm = function (defaultConfig, params) {
+      var result = {};
+      for (const key in defaultConfig) {
+        const keyLower = key.toLowerCase();
+        if (defaultConfig.hasOwnProperty(key) && params.hasOwnProperty(keyLower)) {
+          if (typeof defaultConfig[key] === "object") {
+            result[key] = norm(defaultConfig[key], params[keyLower]);
+          } else {
+            result[key] = params[keyLower];
+          }
+        }
+      }
+      return result;
+    };
+
+    var settings = norm(mermaid.mermaidAPI.defaultConfig, params);
+    settings.startOnLoad = true;
+    if ($('html[data-bs-theme="dark"]').length) {
+      settings.theme = 'dark';
+    }
+    mermaid.initialize(settings);
+
+    
+    const lightDarkModeThemeChangeHandler = function (mutationsList, observer) {
+      for (const mutation of mutationsList) {
+        if (mutation.type === 'attributes' && mutation.attributeName === 'data-bs-theme') {
+          
+          
+          
+          location.reload();
+        }
+      }
+    };
+
+    const observer = new MutationObserver(lightDarkModeThemeChangeHandler);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['data-bs-theme']
+    });
+    
+
+  })(jQuery);
+</script>
+<script src="/dwes/hugo/js/main.js"></script>
+<script defer src="/dwes/hugo/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/dwes/hugo/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

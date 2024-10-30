@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Uso básico de git on Desarrollo web</title>
+    <link>http://localhost:1313/dwes/hugo/docs/03_hugo/3_git/</link>
+    <description>Recent content in Uso básico de git on Desarrollo web</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 04 Oct 2021 13:19:24 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/dwes/hugo/docs/03_hugo/3_git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Despliegue en git</title>
+      <link>http://localhost:1313/dwes/hugo/docs/03_hugo/3_git/despliegue/</link>
+      <pubDate>Mon, 04 Oct 2021 13:19:24 +0200</pubDate>
+      <guid>http://localhost:1313/dwes/hugo/docs/03_hugo/3_git/despliegue/</guid>
+      <description>&lt;h3 id=&#34;1-crear-el-repositorio-en-github&#34;&gt;1. Crear el Repositorio en GitHub&lt;/h3&gt;&#xA;&lt;p&gt;Ve a &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;, inicia sesión y crea un nuevo repositorio (esta sección ya la hemos realizado previamente:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Haz clic en &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    New&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA; en la esquina superior derecha.&lt;/li&gt;&#xA;&lt;li&gt;Nombra el repositorio, por ejemplo, &lt;strong&gt;&lt;code&gt;mi-proyecto-hugo&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Selecciona &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    público&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA; si deseas que el sitio sea accesible para todos.&lt;/li&gt;&#xA;&lt;li&gt;Copiamos las instrucciones y vamos a local&lt;/li&gt;&#xA;&lt;li&gt;Terminamos el proceso para subir nuestro proyecto, &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    pero antes de ello debemos preparar nuestro proyecto de hugo para deplegarlo&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;configurar-hugo-para-deplegarlo&#34;&gt;Configurar Hugo para deplegarlo&lt;/h3&gt;&#xA;&lt;p&gt;Por defecto, Hugo genera los archivos estáticos en la carpeta &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    /public&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA;, pero para desplegarlo, git espera que el sitio web esté en una carpeta llamada &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    /docs&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA; para &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    GitHub Pages&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA;, que es dónde se va a desplegar.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

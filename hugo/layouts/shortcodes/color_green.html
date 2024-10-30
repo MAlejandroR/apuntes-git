@@ -1,3 +1,10 @@
-<span class="font-weight-bold" style="color:darkgreen">
-      {{ .Inner | markdownify|  htmlUnescape | safeHTML}}
+{{ $color := .Get "color" | default "primary" }}
+<strong>
+<span class="font-weight-bold text-{{ $color }}">
+{{ if eq .Page.File.Ext "md" }}
+    {{.Inner|markdownify}}
+{{ else }}
+    {{.Inner|htmlUnescape|safeHTML}}
+{{ end }}
 </span>
+</strong>
