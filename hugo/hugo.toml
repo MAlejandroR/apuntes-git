@@ -1,5 +1,5 @@
 #baseURL = 'http://proyectosdwa.es/manuel'
-baseURL = 'http://web.infenlaces.com/dwes/hugo/'
+baseURL = 'http://web.infenlaces.com/hugo/'
 #baseURL = 'http://localhost/'
 
 languageCode = 'es-es'
