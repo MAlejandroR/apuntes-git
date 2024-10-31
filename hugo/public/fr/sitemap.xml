@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/dwes/hugo/fr/categories/</loc>
+    <loc>http://web.infenlaces.com/hugo/fr/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/dwes/hugo/categories/"
+                href="http://web.infenlaces.com/hugo/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/dwes/hugo/en/categories/"
+                href="http://web.infenlaces.com/hugo/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/dwes/hugo/fr/categories/"
+                href="http://web.infenlaces.com/hugo/fr/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/fr/</loc>
+    <loc>http://web.infenlaces.com/hugo/fr/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/dwes/hugo/"
+                href="http://web.infenlaces.com/hugo/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/dwes/hugo/en/"
+                href="http://web.infenlaces.com/hugo/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/dwes/hugo/fr/"
+                href="http://web.infenlaces.com/hugo/fr/"
                 />
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/fr/tags/</loc>
+    <loc>http://web.infenlaces.com/hugo/fr/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/dwes/hugo/tags/"
+                href="http://web.infenlaces.com/hugo/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/dwes/hugo/en/tags/"
+                href="http://web.infenlaces.com/hugo/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/dwes/hugo/fr/tags/"
+                href="http://web.infenlaces.com/hugo/fr/tags/"
                 />
   </url>
 </urlset>

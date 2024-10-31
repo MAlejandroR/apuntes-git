@@ -1,25 +1,26 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head><script src="/dwes/hugo/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=dwes/hugo/livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 
 
-<link rel="shortcut icon" href="/dwes/hugo/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/dwes/hugo/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/dwes/hugo/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/dwes/hugo/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/dwes/hugo/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/dwes/hugo/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/dwes/hugo/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/dwes/hugo/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/dwes/hugo/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/dwes/hugo/favicons/android-192x192.png" sizes="192x192">
+<link rel="shortcut icon" href="/hugo/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/hugo/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/hugo/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/hugo/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/hugo/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/hugo/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/hugo/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/hugo/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/hugo/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/hugo/favicons/android-192x192.png" sizes="192x192">
 
 <title>Personalizar la plantilla | Desarrollo web</title>
 <meta name="description" content="Cómo modificar y personalizar la plantilla o tema">
-<meta property="og:url" content="http://localhost:1313/dwes/hugo/docs/03_hugo/5_estilo_plantilla/">
+
+<meta property="og:url" content="http://web.infenlaces.com/hugo/docs/03_hugo/5_estilo_plantilla/">
   <meta property="og:site_name" content="Desarrollo web">
   <meta property="og:title" content="Personalizar la plantilla">
   <meta property="og:description" content="Cómo modificar y personalizar la plantilla o tema">
@@ -39,11 +40,7 @@
   <meta name="twitter:description" content="Cómo modificar y personalizar la plantilla o tema">
 
 
-
-
-
-<link href="/dwes/hugo/scss/main.css" rel="stylesheet">
-
+<link rel="preload" href="/hugo/scss/main.min.4ca8339c750a3533f7f8ce9d53c521cb89991c36ff375a9f8c5cd8d485c7ebe0.css" as="style"><link href="/hugo/scss/main.min.4ca8339c750a3533f7f8ce9d53c521cb89991c36ff375a9f8c5cd8d485c7ebe0.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -52,20 +49,22 @@
   </head>
   <body class="td-page">
     <header>
-      <nav class="td-navbar js-navbar-scroll" data-bs-theme="dark">
-<div class="container-fluid flex-column flex-md-row">
-  <a class="navbar-brand" href="/dwes/hugo/"><span class="navbar-brand__logo navbar-logo"><svg height="800" width="800" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 392.533 392.533"><path style="fill:#fff" d="M359.854 21.786H32.743c-6.012.0-10.925 4.848-10.925 10.925v241.972c0 6.012 4.848 10.925 10.925 10.925h327.111c6.012.0 10.925-4.848 10.925-10.925V32.711C370.78 26.699 365.867 21.786 359.854 21.786z"/><path style="fill:#56ace0" d="M254.416 342.756l-8.792-35.362h-98.651l-8.792 35.362c-1.228 4.849-5.56 8.275-10.602 8.275h-24.824v19.717h187.022V351.03h-24.824C259.976 351.03 255.644 347.669 254.416 342.756z"/><path style="fill:#ffc10d" d="M65.454 87.919h34.974c6.012.0 10.925 4.848 10.925 10.925s-4.848 10.925-10.925 10.925H65.454v21.786h13.188c6.012.0 10.925 4.848 10.925 10.925.0 6.012-4.848 10.925-10.925 10.925H65.454v88.566h261.754V65.422H65.454V87.919z"/><g><path style="fill:#194f82" d="M359.854.0H32.743C14.707.0.032 14.675.032 32.711v241.972c0 18.036 14.675 32.711 32.711 32.711h91.798l-5.495 21.786H91.83c-6.012.0-10.925 4.848-10.925 10.925v41.503c0 6.012 4.848 10.925 10.925 10.925h208.873c6.012.0 10.925-4.848 10.925-10.925v-41.503c0-6.012-4.848-10.925-10.925-10.925h-27.216l-5.495-21.786h91.798c18.036.0 32.711-14.675 32.711-32.711V32.711C392.566 14.675 377.891.0 359.854.0zM289.778 351.03v19.717H102.82V351.03h24.824c5.042.0 9.374-3.426 10.602-8.275l8.792-35.362h98.586l8.792 35.362c1.228 4.848 5.56 8.275 10.602 8.275h24.76zm70.076-65.422H32.743c-6.012.0-10.925-4.848-10.925-10.925V32.711c0-6.012 4.848-10.925 10.925-10.925h327.111c6.012.0 10.925 4.848 10.925 10.925v242.036h.065C370.78 280.695 365.931 285.608 359.854 285.608z"/><path style="fill:#194f82" d="M338.004 43.572H54.594c-6.012.0-10.925 4.848-10.925 10.925v198.335c0 6.012 4.848 10.925 10.925 10.925h283.539c6.012.0 10.925-4.848 10.925-10.925V54.562C348.994 48.549 344.016 43.572 338.004 43.572zM327.208 241.907h-.065H65.454v-88.566h13.188c6.012.0 10.925-4.848 10.925-10.925.0-6.012-4.848-10.925-10.925-10.925H65.454V109.64h34.974c6.012.0 10.925-4.848 10.925-10.925.0-6.012-4.848-10.925-10.925-10.925H65.454V65.293h261.754V241.907z"/><path style="fill:#194f82" d="M109.155 161.099l34.521 34.521c6.723 6.206 13.317 2.133 15.451.0 4.267-4.267 4.267-11.119.0-15.451l-26.828-26.764 26.828-26.828c4.267-4.267 4.267-11.119.0-15.451-4.267-4.267-11.119-4.267-15.451.0l-34.521 34.521C104.889 149.915 104.889 156.768 109.155 161.099z"/><path style="fill:#194f82" d="M233.535 195.62c4.978 5.042 12.283 3.556 15.451.0l34.521-34.521c4.267-4.267 4.267-11.119.0-15.451l-34.521-34.521c-4.267-4.267-11.119-4.267-15.451.0-4.267 4.267-4.267 11.119.0 15.451l26.828 26.828-26.828 26.828C229.269 184.436 229.269 191.289 233.535 195.62z"/><path style="fill:#194f82" d="M174.254 219.152c6.853 2.069 12.283-2.263 13.834-6.788l37.883-110.222c1.939-5.689-1.099-11.895-6.788-13.834-5.689-1.939-11.895 1.099-13.834 6.788l-37.883 110.222C165.527 210.941 168.501 217.341 174.254 219.152z"/></g></svg></span><span class="navbar-brand__name">Desarrollo web</span></a>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/hugo/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/hugo/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Desarrollo web</span></a>
   <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link active" href="/dwes/hugo/docs/"><span>Documentación</span></a>
+        <a class="nav-link active" href="/hugo/docs/"><span>Documentación</span></a>
       </li>
       <li class="nav-item dropdown d-none d-lg-block">
         <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/dwes/hugo/en/">English</a></li>
-    <li><a class="dropdown-item" href="/dwes/hugo/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/hugo/en/">English</a></li>
+    <li><a class="dropdown-item" href="/hugo/fr/">Francés</a></li>
     </ul>
 </div></li>
       </ul>
@@ -75,6 +74,7 @@
   </div>
 </div>
 </nav>
+
     </header>
     <div class="container-fluid td-outer">
       <div class="td-main">
@@ -91,128 +91,77 @@
       <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/dwes/hugo/en/">English</a></li>
-    <li><a class="dropdown-item" href="/dwes/hugo/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/hugo/en/">English</a></li>
+    <li><a class="dropdown-item" href="/hugo/fr/">Francés</a></li>
     </ul>
 </div>
     </div>
     <ul class="td-sidebar-nav__section pe-md-3 ul-0">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-dweshugodocs-li">
-  <a href="/dwes/hugo/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-dweshugodocs"><i class="fa-solid fa-screwdriver-wrench"></i><span class="">Documentación</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-hugodocs-li">
+  <a href="/hugo/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-hugodocs"><i class="fa-solid fa-screwdriver-wrench"></i><span class="">Documentación</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-dweshugodocs03_hugo-li">
-  <input type="checkbox" id="m-dweshugodocs03_hugo-check" checked/>
-  <label for="m-dweshugodocs03_hugo-check"><a href="/dwes/hugo/docs/03_hugo/" title="Crear Sitios Estáticos" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dweshugodocs03_hugo"><i class="icon-hugo"></i><span class="">Hugo (Web Static)</span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-hugodocs03_hugo-li">
+  <input type="checkbox" id="m-hugodocs03_hugo-check" checked/>
+  <label for="m-hugodocs03_hugo-check"><a href="/hugo/docs/03_hugo/" title="Crear Sitios Estáticos" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-hugodocs03_hugo"><i class="icon-hugo"></i><span class="">Hugo (Web Static)</span></a></label>
   
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo1_instalacion-li">
-  <input type="checkbox" id="m-dweshugodocs03_hugo1_instalacion-check"/>
-  <label for="m-dweshugodocs03_hugo1_instalacion-check"><a href="/dwes/hugo/docs/03_hugo/1_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo1_instalacion"><i class="fas fa-cogs"></i><span class="">Instalación</span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugodocs03_hugo1_instalacion-li">
+  <input type="checkbox" id="m-hugodocs03_hugo1_instalacion-check"/>
+  <label for="m-hugodocs03_hugo1_instalacion-check"><a href="/hugo/docs/03_hugo/1_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-hugodocs03_hugo1_instalacion"><i class="fas fa-cogs"></i><span class="">Instalación</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo2_temas-li">
-  <input type="checkbox" id="m-dweshugodocs03_hugo2_temas-check"/>
-  <label for="m-dweshugodocs03_hugo2_temas-check"><a href="/dwes/hugo/docs/03_hugo/2_temas/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo2_temas"><i class="fa-solid fa-palette"></i><span class="">Temas o layouts base</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugodocs03_hugo2_temas-li">
+  <input type="checkbox" id="m-hugodocs03_hugo2_temas-check"/>
+  <label for="m-hugodocs03_hugo2_temas-check"><a href="/hugo/docs/03_hugo/2_temas/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-hugodocs03_hugo2_temas"><i class="fa-solid fa-palette"></i><span class="">Temas o layouts base</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dweshugodocs03_hugo3_contenido-li">
-  <input type="checkbox" id="m-dweshugodocs03_hugo3_contenido-check"/>
-  <label for="m-dweshugodocs03_hugo3_contenido-check"><a href="/dwes/hugo/docs/03_hugo/3_contenido/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dweshugodocs03_hugo3_contenido"><i class="fas fa-pencil-alt"></i><span class="">Contenido</span></a></label>
-  
-  <ul class="ul-3 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo3_contenido01_creacion-li">
-  <input type="checkbox" id="m-dweshugodocs03_hugo3_contenido01_creacion-check"/>
-  <label for="m-dweshugodocs03_hugo3_contenido01_creacion-check"><a href="/dwes/hugo/docs/03_hugo/3_contenido/01_creacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo3_contenido01_creacion"><i class="fas fa-file-alt"></i><span class="">Añadiendo</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo3_contenido02_taxonomias-li">
-  <input type="checkbox" id="m-dweshugodocs03_hugo3_contenido02_taxonomias-check"/>
-  <label for="m-dweshugodocs03_hugo3_contenido02_taxonomias-check"><a href="/dwes/hugo/docs/03_hugo/3_contenido/02_taxonomias/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo3_contenido02_taxonomias"><i class="fas fa-file-alt"></i><span class="">Añadiendo</span></a></label>
-  
-</li>
-  </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dweshugodocs03_hugo3_git-li">
-  <input type="checkbox" id="m-dweshugodocs03_hugo3_git-check"/>
-  <label for="m-dweshugodocs03_hugo3_git-check"><a href="/dwes/hugo/docs/03_hugo/3_git/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dweshugodocs03_hugo3_git"><i class="fab fa-git-alt"></i><span class="">Uso básico de git</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-hugodocs03_hugo3_contenido-li">
+  <input type="checkbox" id="m-hugodocs03_hugo3_contenido-check"/>
+  <label for="m-hugodocs03_hugo3_contenido-check"><a href="/hugo/docs/03_hugo/3_contenido/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-hugodocs03_hugo3_contenido"><i class="fas fa-pencil-alt"></i><span class="">Contenido</span></a></label>
   
   <ul class="ul-3 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo3_gitdespliegue-li">
-  <input type="checkbox" id="m-dweshugodocs03_hugo3_gitdespliegue-check"/>
-  <label for="m-dweshugodocs03_hugo3_gitdespliegue-check"><a href="/dwes/hugo/docs/03_hugo/3_git/despliegue/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo3_gitdespliegue"><i class="fab fa-git-alt"></i><span class="">Despliegue en git</span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugodocs03_hugo3_contenido01_creacion-li">
+  <input type="checkbox" id="m-hugodocs03_hugo3_contenido01_creacion-check"/>
+  <label for="m-hugodocs03_hugo3_contenido01_creacion-check"><a href="/hugo/docs/03_hugo/3_contenido/01_creacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-hugodocs03_hugo3_contenido01_creacion"><i class="fas fa-file-alt"></i><span class="">Añadiendo</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugodocs03_hugo3_contenido02_taxonomias-li">
+  <input type="checkbox" id="m-hugodocs03_hugo3_contenido02_taxonomias-check"/>
+  <label for="m-hugodocs03_hugo3_contenido02_taxonomias-check"><a href="/hugo/docs/03_hugo/3_contenido/02_taxonomias/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-hugodocs03_hugo3_contenido02_taxonomias"><i class="fas fa-file-alt"></i><span class="">Taxonomías</span></a></label>
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo4_shortcode-li">
-  <input type="checkbox" id="m-dweshugodocs03_hugo4_shortcode-check"/>
-  <label for="m-dweshugodocs03_hugo4_shortcode-check"><a href="/dwes/hugo/docs/03_hugo/4_shortcode/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo4_shortcode"><i class="fas fa-code"></i><span class="">Shortcode</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-dweshugodocs03_hugo5_estilo_plantilla-li">
-  <input type="checkbox" id="m-dweshugodocs03_hugo5_estilo_plantilla-check" checked/>
-  <label for="m-dweshugodocs03_hugo5_estilo_plantilla-check"><a href="/dwes/hugo/docs/03_hugo/5_estilo_plantilla/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo5_estilo_plantilla"><i class="fas fa-tools"></i><span class="td-sidebar-nav-active-item">Personalizar la plantilla</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo6_multilenguajes-li">
-  <input type="checkbox" id="m-dweshugodocs03_hugo6_multilenguajes-check"/>
-  <label for="m-dweshugodocs03_hugo6_multilenguajes-check"><a href="/dwes/hugo/docs/03_hugo/6_multilenguajes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo6_multilenguajes"><i class="fas fa-globe"></i><span class="">Multilenguaje</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dweshugodocs03_hugo7_plantillas-li">
-  <input type="checkbox" id="m-dweshugodocs03_hugo7_plantillas-check"/>
-  <label for="m-dweshugodocs03_hugo7_plantillas-check"><a href="/dwes/hugo/docs/03_hugo/7_plantillas/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dweshugodocs03_hugo7_plantillas"><i class="fab fa-html5"></i><span class="">Plantillas </span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-hugodocs03_hugo3_git-li">
+  <input type="checkbox" id="m-hugodocs03_hugo3_git-check"/>
+  <label for="m-hugodocs03_hugo3_git-check"><a href="/hugo/docs/03_hugo/3_git/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-hugodocs03_hugo3_git"><i class="fab fa-git-alt"></i><span class="">Uso básico de git</span></a></label>
   
   <ul class="ul-3 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocs03_hugo7_plantillasdatos-li">
-  <input type="checkbox" id="m-dweshugodocs03_hugo7_plantillasdatos-check"/>
-  <label for="m-dweshugodocs03_hugo7_plantillasdatos-check"><a href="/dwes/hugo/docs/03_hugo/7_plantillas/datos/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocs03_hugo7_plantillasdatos"><i class="fas fa-file-alt"></i><span class="">Datos externos</span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugodocs03_hugo3_gitdespliegue-li">
+  <input type="checkbox" id="m-hugodocs03_hugo3_gitdespliegue-check"/>
+  <label for="m-hugodocs03_hugo3_gitdespliegue-check"><a href="/hugo/docs/03_hugo/3_git/despliegue/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-hugodocs03_hugo3_gitdespliegue"><i class="fab fa-git-alt"></i><span class="">Despliegue en git</span></a></label>
   
 </li>
   </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugodocs03_hugo4_shortcode-li">
+  <input type="checkbox" id="m-hugodocs03_hugo4_shortcode-check"/>
+  <label for="m-hugodocs03_hugo4_shortcode-check"><a href="/hugo/docs/03_hugo/4_shortcode/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-hugodocs03_hugo4_shortcode"><i class="fas fa-code"></i><span class="">Shortcode</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-hugodocs03_hugo5_estilo_plantilla-li">
+  <input type="checkbox" id="m-hugodocs03_hugo5_estilo_plantilla-check" checked/>
+  <label for="m-hugodocs03_hugo5_estilo_plantilla-check"><a href="/hugo/docs/03_hugo/5_estilo_plantilla/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-hugodocs03_hugo5_estilo_plantilla"><i class="fas fa-tools"></i><span class="td-sidebar-nav-active-item">Personalizar la plantilla</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugodocs03_hugo6_multilenguajes-li">
+  <input type="checkbox" id="m-hugodocs03_hugo6_multilenguajes-check"/>
+  <label for="m-hugodocs03_hugo6_multilenguajes-check"><a href="/hugo/docs/03_hugo/6_multilenguajes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-hugodocs03_hugo6_multilenguajes"><i class="fas fa-globe"></i><span class="">Multilenguaje</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-hugodocs03_hugo7_plantillas-li">
+  <input type="checkbox" id="m-hugodocs03_hugo7_plantillas-check"/>
+  <label for="m-hugodocs03_hugo7_plantillas-check"><a href="/hugo/docs/03_hugo/7_plantillas/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-hugodocs03_hugo7_plantillas"><i class="fab fa-html5"></i><span class="">Plantillas </span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-hugodocs03_hugo7_plantillasdatos-li">
+  <input type="checkbox" id="m-hugodocs03_hugo7_plantillasdatos-check"/>
+  <label for="m-hugodocs03_hugo7_plantillasdatos-check"><a href="/hugo/docs/03_hugo/7_plantillas/datos/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-hugodocs03_hugo7_plantillasdatos"><i class="fas fa-file-alt"></i><span class="">Datos externos</span></a></label>
+  
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dweshugodocshugo-li">
-  <input type="checkbox" id="m-dweshugodocshugo-check"/>
-  <label for="m-dweshugodocshugo-check"><a href="/dwes/hugo/docs/hugo/" title="Crear Sitios Estáticos" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dweshugodocshugo"><i class="fa-solid fa-browser"></i><span class="">Sitios Estáticos</span></a></label>
-  
-  <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocshugo1_instalacion-li">
-  <input type="checkbox" id="m-dweshugodocshugo1_instalacion-check"/>
-  <label for="m-dweshugodocshugo1_instalacion-check"><a href="/dwes/hugo/docs/hugo/1_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocshugo1_instalacion"><span class="">Instalación</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocshugo2_temas-li">
-  <input type="checkbox" id="m-dweshugodocshugo2_temas-check"/>
-  <label for="m-dweshugodocshugo2_temas-check"><a href="/dwes/hugo/docs/hugo/2_temas/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocshugo2_temas"><span class="">Temas o layouts base</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocshugo3_contenido-li">
-  <input type="checkbox" id="m-dweshugodocshugo3_contenido-check"/>
-  <label for="m-dweshugodocshugo3_contenido-check"><a href="/dwes/hugo/docs/hugo/3_contenido/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocshugo3_contenido"><span class="">Contenido</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocshugo3_git-li">
-  <input type="checkbox" id="m-dweshugodocshugo3_git-check"/>
-  <label for="m-dweshugodocshugo3_git-check"><a href="/dwes/hugo/docs/hugo/3_git/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocshugo3_git"><span class="">Uso básico de git</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocshugo4_shortcode-li">
-  <input type="checkbox" id="m-dweshugodocshugo4_shortcode-check"/>
-  <label for="m-dweshugodocshugo4_shortcode-check"><a href="/dwes/hugo/docs/hugo/4_shortcode/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocshugo4_shortcode"><span class="">Shortcode</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocshugo5_estilo_plantilla-li">
-  <input type="checkbox" id="m-dweshugodocshugo5_estilo_plantilla-check"/>
-  <label for="m-dweshugodocshugo5_estilo_plantilla-check"><a href="/dwes/hugo/docs/hugo/5_estilo_plantilla/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocshugo5_estilo_plantilla"><span class="">Personalizar la plantilla</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocshugo6_multilenguajes-li">
-  <input type="checkbox" id="m-dweshugodocshugo6_multilenguajes-check"/>
-  <label for="m-dweshugodocshugo6_multilenguajes-check"><a href="/dwes/hugo/docs/hugo/6_multilenguajes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocshugo6_multilenguajes"><span class="">Multilenguaje</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocshugo7_plantillas-li">
-  <input type="checkbox" id="m-dweshugodocshugo7_plantillas-check"/>
-  <label for="m-dweshugodocshugo7_plantillas-check"><a href="/dwes/hugo/docs/hugo/7_plantillas/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocshugo7_plantillas"><span class="">Plantillas </span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocshugo9_otros_aspectos-li">
-  <input type="checkbox" id="m-dweshugodocshugo9_otros_aspectos-check"/>
-  <label for="m-dweshugodocshugo9_otros_aspectos-check"><a href="/dwes/hugo/docs/hugo/9_otros_aspectos/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocshugo9_otros_aspectos"><span class="">Plantillas </span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocshugo8--datos-li">
-  <input type="checkbox" id="m-dweshugodocshugo8--datos-check"/>
-  <label for="m-dweshugodocshugo8--datos-check"><a href="/dwes/hugo/docs/hugo/8.--datos/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocshugo8--datos"><span class="">Datos externos</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dweshugodocshugo9-otros_aspectos-li">
-  <input type="checkbox" id="m-dweshugodocshugo9-otros_aspectos-check"/>
-  <label for="m-dweshugodocshugo9-otros_aspectos-check"><a href="/dwes/hugo/docs/hugo/9.-otros_aspectos/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dweshugodocshugo9-otros_aspectos"><span class="">Otros Aspectos</span></a></label>
-  
 </li>
   </ul>
 </li>
@@ -256,9 +205,9 @@
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
   <li class="breadcrumb-item">
-    <a href="/dwes/hugo/docs/">Documentación</a></li>
+    <a href="/hugo/docs/">Documentación</a></li>
   <li class="breadcrumb-item">
-    <a href="/dwes/hugo/docs/03_hugo/">Hugo (Web Static)</a></li>
+    <a href="/hugo/docs/03_hugo/">Hugo (Web Static)</a></li>
   <li class="breadcrumb-item active" aria-current="page">
     Personalizar la plantilla</li>
   </ol>
@@ -301,7 +250,7 @@ Identifiquemos esos elementos en nuestra plantilla y veamos cómo modificarlos p
 <p><strong>Partes de la plantilla</strong></p>
 <hr>
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
-<img class="card-img-top" src="/dwes/hugo/docs/03_hugo/5_estilo_plantilla/partes_plantilla_estilo_hu17890143343312110119.png" width="800" height="351">
+<img class="card-img-top" src="/hugo/docs/03_hugo/5_estilo_plantilla/partes_plantilla_estilo_hu17890143343312110119.png" width="800" height="351">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -328,7 +277,7 @@ La carpeta
 , va a contener ficheros html que serán parte una  página html, de forma que los podré invocar cuando los necesite. Por ejemplo un <strong>footer.html</strong> o un <strong>header.html</strong></p>
 <p><strong>Fichero logo.html del partial en relearn</strong>
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 229px">
-<img class="card-img-top" src="/dwes/hugo/docs/03_hugo/5_estilo_plantilla/partial_logo_hu4846952621210771211.png" width="219" height="139">
+<img class="card-img-top" src="/hugo/docs/03_hugo/5_estilo_plantilla/partial_logo_hu4846952621210771211.png" width="219" height="139">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -361,7 +310,7 @@ La carpeta
 <p><strong>Ficheros para establecer nuestro logo</strong></p>
 <hr>
 <p><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 224px">
-<img class="card-img-top" src="/dwes/hugo/docs/03_hugo/5_estilo_plantilla/ficheros_logo_hu3089673578545469799.png" width="214" height="191">
+<img class="card-img-top" src="/hugo/docs/03_hugo/5_estilo_plantilla/ficheros_logo_hu3089673578545469799.png" width="214" height="191">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -440,7 +389,7 @@ Copiamos nuestro logo en la carpeta static y lo especificamos en un elemento
 </span></span></code></pre></div><p><strong>Sitio web con el logo actualizado</strong></p>
 <hr>
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 531px">
-<img class="card-img-top" src="/dwes/hugo/docs/03_hugo/5_estilo_plantilla/sitio_web_logo_hu12948276268068967421.png" width="521" height="423">
+<img class="card-img-top" src="/hugo/docs/03_hugo/5_estilo_plantilla/sitio_web_logo_hu12948276268068967421.png" width="521" height="423">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -494,7 +443,7 @@ Por ejemplo, vamos a añadir 3 items</p>
 <p><strong>Menú principal ubicado en la parte izquierda</strong></p>
 <hr>
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 299px">
-<img class="card-img-top" src="/dwes/hugo/docs/03_hugo/5_estilo_plantilla/menu_izquierdo_hu17085185439461486406.png" width="289" height="133">
+<img class="card-img-top" src="/hugo/docs/03_hugo/5_estilo_plantilla/menu_izquierdo_hu17085185439461486406.png" width="289" height="133">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -524,7 +473,7 @@ Posteriormente veremos el tema de traducción y abordaremos esta cuestión</p>
 </span></span></code></pre></div><p><strong>Menú con título establecido</strong></p>
 <hr>
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 311px">
-<img class="card-img-top" src="/dwes/hugo/docs/03_hugo/5_estilo_plantilla/menu_titulo_hu13272086850886634214.png" width="301" height="471">
+<img class="card-img-top" src="/hugo/docs/03_hugo/5_estilo_plantilla/menu_titulo_hu13272086850886634214.png" width="301" height="471">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -584,19 +533,19 @@ Posteriormente veremos el tema de traducción y abordaremos esta cuestión</p>
       </tr>
       <tr>
           <td><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 210px">
-<img class="card-img-top" src="/dwes/hugo/docs/03_hugo/5_estilo_plantilla/style_red_hu4788799580241355938.png" width="200" height="229">
+<img class="card-img-top" src="/hugo/docs/03_hugo/5_estilo_plantilla/style_red_hu4788799580241355938.png" width="200" height="229">
 </figure>
 </td>
           <td><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 210px">
-<img class="card-img-top" src="/dwes/hugo/docs/03_hugo/5_estilo_plantilla/style_blue_hu11793417493889138317.png" width="200" height="283">
+<img class="card-img-top" src="/hugo/docs/03_hugo/5_estilo_plantilla/style_blue_hu11793417493889138317.png" width="200" height="283">
 </figure>
 </td>
           <td><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 210px">
-<img class="card-img-top" src="/dwes/hugo/docs/03_hugo/5_estilo_plantilla/style_green_hu16261756730196571970.png" width="200" height="237">
+<img class="card-img-top" src="/hugo/docs/03_hugo/5_estilo_plantilla/style_green_hu16261756730196571970.png" width="200" height="237">
 </figure>
 </td>
           <td><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 210px">
-<img class="card-img-top" src="/dwes/hugo/docs/03_hugo/5_estilo_plantilla/style_default_hu3833053105730399465.png" width="200" height="219">
+<img class="card-img-top" src="/hugo/docs/03_hugo/5_estilo_plantilla/style_default_hu3833053105730399465.png" width="200" height="219">
 </figure>
 </td>
       </tr>
@@ -607,7 +556,7 @@ El color se carga, ya que en realidad lo que hacemos es establecer los <strong>c
 <p><strong>Ficheros con diferentes temas</strong></p>
 <hr>
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 296px">
-<img class="card-img-top" src="/dwes/hugo/docs/03_hugo/5_estilo_plantilla/temas_hu17941287655038778817.png" width="286" height="200">
+<img class="card-img-top" src="/hugo/docs/03_hugo/5_estilo_plantilla/temas_hu17941287655038778817.png" width="286" height="200">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -628,7 +577,7 @@ Tras modificar dos colores de fondo bg y el color de la letra del título queda 
 <p>**Nuevo estilo de la página **</p>
 <hr>
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 355px">
-<img class="card-img-top" src="/dwes/hugo/docs/03_hugo/5_estilo_plantilla/pagina_nuevo_estilo_hu16389066432737317693.png" width="345" height="550">
+<img class="card-img-top" src="/hugo/docs/03_hugo/5_estilo_plantilla/pagina_nuevo_estilo_hu16389066432737317693.png" width="345" height="550">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -654,7 +603,7 @@ Los parámetros modificados son los siguientes</p>
 <p><strong>Estilo de la página con el home modificado</strong></p>
 <hr>
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 321px">
-<img class="card-img-top" src="/dwes/hugo/docs/03_hugo/5_estilo_plantilla/pagina_home_modificado_hu626394262288900004.png" width="311" height="542">
+<img class="card-img-top" src="/hugo/docs/03_hugo/5_estilo_plantilla/pagina_home_modificado_hu626394262288900004.png" width="311" height="542">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -681,7 +630,7 @@ Una pequeña modificación y observamos la actualización en la página</p>
 <p><strong>Footer del  menú modificado</strong></p>
 <hr>
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 289px">
-<img class="card-img-top" src="/dwes/hugo/docs/03_hugo/5_estilo_plantilla/actualizado_footer_menu_hu5192163126569462880.png" width="279" height="534">
+<img class="card-img-top" src="/hugo/docs/03_hugo/5_estilo_plantilla/actualizado_footer_menu_hu5192163126569462880.png" width="279" height="534">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -763,9 +712,9 @@ Una pequeña modificación y observamos la actualización en la página</p>
 </footer>
 
     </div>
-    <script src="/dwes/hugo/js/main.js"></script>
-<script defer src="/dwes/hugo/js/click-to-copy.js" crossorigin="anonymous"></script>
-<script src='/dwes/hugo/js/tabpane-persist.js'></script>
+    <script src="/hugo/js/main.min.4abfd555c53a673849cd5c11982a9ab092036efe658e624ccab5180a6803e877.js" integrity="sha256-Sr/VVcU6ZzhJzVwRmCqasJIDbv5ljmJMyrUYCmgD6Hc=" crossorigin="anonymous"></script>
+<script defer src="/hugo/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+<script src='/hugo/js/tabpane-persist.js'></script>
 
   </body>
 </html>

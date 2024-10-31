@@ -2,136 +2,100 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/dwes/hugo/docs/</loc>
+    <loc>http://web.infenlaces.com/hugo/docs/</loc>
     <lastmod>2021-10-22T16:23:31+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/03_hugo/1_instalacion/</loc>
+    <loc>http://web.infenlaces.com/hugo/docs/03_hugo/1_instalacion/</loc>
     <lastmod>2021-10-04T12:01:52+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/hugo/1_instalacion/</loc>
-    <lastmod>2021-10-04T12:01:52+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/03_hugo/2_temas/</loc>
+    <loc>http://web.infenlaces.com/hugo/docs/03_hugo/2_temas/</loc>
     <lastmod>2021-10-04T13:19:24+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/hugo/2_temas/</loc>
+    <loc>http://web.infenlaces.com/hugo/docs/03_hugo/3_contenido/</loc>
     <lastmod>2021-10-04T13:19:24+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/03_hugo/3_contenido/</loc>
+    <loc>http://web.infenlaces.com/hugo/docs/03_hugo/3_git/</loc>
     <lastmod>2021-10-04T13:19:24+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/hugo/3_contenido/</loc>
-    <lastmod>2021-10-04T13:19:24+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/03_hugo/3_git/</loc>
-    <lastmod>2021-10-04T13:19:24+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/hugo/3_git/</loc>
-    <lastmod>2021-10-04T13:19:24+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/03_hugo/4_shortcode/</loc>
+    <loc>http://web.infenlaces.com/hugo/docs/03_hugo/4_shortcode/</loc>
     <lastmod>2021-10-04T13:19:53+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/hugo/4_shortcode/</loc>
-    <lastmod>2021-10-04T13:19:53+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/03_hugo/3_contenido/01_creacion/</loc>
+    <loc>http://web.infenlaces.com/hugo/docs/03_hugo/3_contenido/01_creacion/</loc>
     <lastmod>2021-10-04T13:19:24+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/03_hugo/3_contenido/02_taxonomias/</loc>
+    <loc>http://web.infenlaces.com/hugo/docs/03_hugo/3_git/despliegue/</loc>
     <lastmod>2021-10-04T13:19:24+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/03_hugo/3_git/despliegue/</loc>
+    <loc>http://web.infenlaces.com/hugo/docs/03_hugo/3_contenido/02_taxonomias/</loc>
     <lastmod>2021-10-04T13:19:24+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/03_hugo/5_estilo_plantilla/</loc>
+    <loc>http://web.infenlaces.com/hugo/docs/03_hugo/5_estilo_plantilla/</loc>
     <lastmod>2021-10-22T16:23:31+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/hugo/5_estilo_plantilla/</loc>
-    <lastmod>2021-10-22T16:23:31+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/03_hugo/6_multilenguajes/</loc>
+    <loc>http://web.infenlaces.com/hugo/docs/03_hugo/6_multilenguajes/</loc>
     <lastmod>2021-10-05T20:02:27+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/hugo/6_multilenguajes/</loc>
-    <lastmod>2021-10-05T20:02:27+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/03_hugo/7_plantillas/</loc>
+    <loc>http://web.infenlaces.com/hugo/docs/03_hugo/7_plantillas/</loc>
     <lastmod>2021-10-04T13:19:43+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/hugo/7_plantillas/</loc>
-    <lastmod>2021-10-04T13:19:43+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/hugo/9_otros_aspectos/</loc>
-    <lastmod>2021-10-04T13:19:43+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/03_hugo/7_plantillas/datos/</loc>
+    <loc>http://web.infenlaces.com/hugo/docs/03_hugo/7_plantillas/datos/</loc>
     <lastmod>2021-10-04T13:20:01+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/hugo/8.--datos/</loc>
-    <lastmod>2021-10-04T13:20:01+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/hugo/9.-otros_aspectos/</loc>
-    <lastmod>2021-10-04T13:20:01+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/03_hugo/</loc>
+    <loc>http://web.infenlaces.com/hugo/docs/03_hugo/</loc>
     <lastmod>2021-09-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/</loc>
+    <loc>http://web.infenlaces.com/hugo/</loc>
     <lastmod>2023-04-08T18:20:47+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/dwes/hugo/en/"
+                href="http://web.infenlaces.com/hugo/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/dwes/hugo/fr/"
+                href="http://web.infenlaces.com/hugo/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/dwes/hugo/"
+                href="http://web.infenlaces.com/hugo/"
                 />
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/docs/hugo/</loc>
-    <lastmod>2021-09-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/dwes/hugo/categories/</loc>
+    <loc>http://web.infenlaces.com/hugo/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/dwes/hugo/en/categories/"
+                href="http://web.infenlaces.com/hugo/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/dwes/hugo/fr/categories/"
+                href="http://web.infenlaces.com/hugo/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/dwes/hugo/categories/"
+                href="http://web.infenlaces.com/hugo/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/search/</loc>
+    <loc>http://web.infenlaces.com/hugo/search/</loc>
   </url><url>
-    <loc>http://localhost:1313/dwes/hugo/tags/</loc>
+    <loc>http://web.infenlaces.com/hugo/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/dwes/hugo/en/tags/"
+                href="http://web.infenlaces.com/hugo/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/dwes/hugo/fr/tags/"
+                href="http://web.infenlaces.com/hugo/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/dwes/hugo/tags/"
+                href="http://web.infenlaces.com/hugo/tags/"
                 />
   </url>
 </urlset>

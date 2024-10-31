@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Plantillas  on Desarrollo web</title>
-    <link>http://localhost:1313/dwes/hugo/docs/03_hugo/7_plantillas/</link>
+    <link>http://web.infenlaces.com/hugo/docs/03_hugo/7_plantillas/</link>
     <description>Recent content in Plantillas  on Desarrollo web</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate>Mon, 04 Oct 2021 13:20:01 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/dwes/hugo/docs/03_hugo/7_plantillas/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://web.infenlaces.com/hugo/docs/03_hugo/7_plantillas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Datos externos</title>
-      <link>http://localhost:1313/dwes/hugo/docs/03_hugo/7_plantillas/datos/</link>
+      <link>http://web.infenlaces.com/hugo/docs/03_hugo/7_plantillas/datos/</link>
       <pubDate>Mon, 04 Oct 2021 13:20:01 +0200</pubDate>
-      <guid>http://localhost:1313/dwes/hugo/docs/03_hugo/7_plantillas/datos/</guid>
+      <guid>http://web.infenlaces.com/hugo/docs/03_hugo/7_plantillas/datos/</guid>
       <description>&lt;h1 id=&#34;consumir-datos-de-ficheros-con-estructura&#34;&gt;Consumir datos de ficheros con estructura&lt;/h1&gt;&#xA;&lt;p&gt;La ubicación del fichero debe de estar en &lt;em&gt;&lt;strong&gt;data&lt;/strong&gt;&lt;/em&gt;&#xA;Podemos consumir datos de diferentes fuentes, entro otras opciones:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Un fichero json&lt;/li&gt;&#xA;&lt;li&gt;Fichero CSV&lt;/li&gt;&#xA;&lt;li&gt;Un directorio con imágenes&lt;/li&gt;&#xA;&lt;li&gt;Un fichero csv compartido en drive&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Para ilustrar esto, a ubicar en el directorio &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    data&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA; un fichero de cadenas de tv sacado de github y ubicado en un proyecto de github&#xA;&lt;a href=&#34;https://github.com/MAlejandroR/staticSite/blob/main/data/tv.json&#34;&gt;https://github.com/MAlejandroR/staticSite/blob/main/data/tv.json&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Este fichero, es un array de elemetos &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    json&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA; (parejas variable valor en un fichero)&#xA;Cada json contiene &lt;strong&gt;name&lt;/strong&gt; y &lt;strong&gt;channels&lt;/strong&gt; y channels es un array con todos los canales de ese tipo de canales con los siguientes datos:&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Documentación on Desarrollo web</title>
-    <link>http://localhost:1313/dwes/hugo/docs/</link>
+    <link>http://web.infenlaces.com/hugo/docs/</link>
     <description>Recent content in Documentación on Desarrollo web</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/dwes/hugo/docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://web.infenlaces.com/hugo/docs/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

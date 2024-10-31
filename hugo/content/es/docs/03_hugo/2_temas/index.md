@@ -88,7 +88,10 @@ Nos abrirá un puerto en el navegador según nos muestre la salida en el termina
 Página inicial
 {{< /imgproc >}}
 
-Dependiendo del tema, habrá un contenido u otro. Este tema en concreto nos muestra el contenido de una página **themes/relearn/layouts/partial/initial.md**. 
+Dependiendo del tema, habrá un contenido u otro.
+
+En este tema en concreto, vemos que la página inicial sale sin ningún contenido, esperano que vayamos aportando nos muestra el contenido
+
 Si quisiéramos cambiar el contenido de la página, en lugar de cambiar el fichero, lo que haríamos es copiar el fichero en la carpeta **layout** del directorio del proyecto. volveremos a esto más adelante.
 
 ### Añadir módulo de hugo
