@@ -1,0 +1,588 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs/05_ejercicios/3_contenedores_imagenes/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Contenedores | Despliegue de aplicacones Web</title>
+<meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
+
+<meta property="og:url" content="http://localhost:1313/docs/05_ejercicios/3_contenedores_imagenes/">
+  <meta property="og:site_name" content="Despliegue de aplicacones Web">
+  <meta property="og:title" content="Contenedores">
+  <meta property="og:description" content="Contenedores =&gt; imágenes ❗ Como crear nuestras imágenes En esta sección realizaremos acciones para pasar crear nuestras imágenes a partir de contenedores
+Una imagen es la plantilla para un contenedor, y contiene un sistema de archivos con una determinada versión de sistema operativo a partir del sistema operativo del anfitrión, y una serie de programas o servicios que se han añadido
+La forma de construir una imagen es en capas, según le vamos añadiendo elementos. La idea es tener un contenedor según nuestra necesidad, y con él, crear una imagen
+:">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Contenedores">
+  <meta itemprop="description" content="Contenedores =&gt; imágenes ❗ Como crear nuestras imágenes En esta sección realizaremos acciones para pasar crear nuestras imágenes a partir de contenedores
+Una imagen es la plantilla para un contenedor, y contiene un sistema de archivos con una determinada versión de sistema operativo a partir del sistema operativo del anfitrión, y una serie de programas o servicios que se han añadido
+La forma de construir una imagen es en capas, según le vamos añadiendo elementos. La idea es tener un contenedor según nuestra necesidad, y con él, crear una imagen
+:">
+  <meta itemprop="wordCount" content="450">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contenedores">
+  <meta name="twitter:description" content="Contenedores =&gt; imágenes ❗ Como crear nuestras imágenes En esta sección realizaremos acciones para pasar crear nuestras imágenes a partir de contenedores
+Una imagen es la plantilla para un contenedor, y contiene un sistema de archivos con una determinada versión de sistema operativo a partir del sistema operativo del anfitrión, y una serie de programas o servicios que se han añadido
+La forma de construir una imagen es en capas, según le vamos añadiendo elementos. La idea es tener un contenedor según nuestra necesidad, y con él, crear una imagen
+:">
+
+
+<link href="/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Despliegue de aplicacones Web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/en/">English</a></li>
+    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <div class="td-sidebar-nav__section nav-item dropdown d-block d-lg-none">
+      <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/en/">English</a></li>
+    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    </ul>
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
+  <a href="/docs/" title="Introducción" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><i class="fas fa-docker"></i><span class="">Docker</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs01_conceptos-li">
+  <input type="checkbox" id="m-docs01_conceptos-check"/>
+  <label for="m-docs01_conceptos-check"><a href="/docs/01_conceptos/" title="Conceptos sobre docker" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs01_conceptos"><i class="fa-regular fa-lightbulb"></i><span class="">Conceptos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs02_contenedores_imagenes-li">
+  <input type="checkbox" id="m-docs02_contenedores_imagenes-check"/>
+  <label for="m-docs02_contenedores_imagenes-check"><a href="/docs/02_contenedores_imagenes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs02_contenedores_imagenes"><i class="fa-regular fa-box"></i><span class="">Contenedores e imágenes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs03_instalacion-li">
+  <input type="checkbox" id="m-docs03_instalacion-check"/>
+  <label for="m-docs03_instalacion-check"><a href="/docs/03_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs03_instalacion"><i class="fa-regular fa-box"></i><span class="">Contenedores e imágenes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs04_comandos_docker-li">
+  <input type="checkbox" id="m-docs04_comandos_docker-check"/>
+  <label for="m-docs04_comandos_docker-check"><a href="/docs/04_comandos_docker/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs04_comandos_docker"><i class="fa-solid fa-terminal"></i><span class="">comandos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs05_ejercicios-li">
+  <input type="checkbox" id="m-docs05_ejercicios-check" checked/>
+  <label for="m-docs05_ejercicios-check"><a href="/docs/05_ejercicios/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs05_ejercicios"><i class="fa-solid fa-list-check"></i><span class="">Ejercicios</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs05_ejercicios1_imagenes-li">
+  <input type="checkbox" id="m-docs05_ejercicios1_imagenes-check"/>
+  <label for="m-docs05_ejercicios1_imagenes-check"><a href="/docs/05_ejercicios/1_imagenes/" title="Crea imágenes" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs05_ejercicios1_imagenes"><i class="fa-regular fa-file-image"></i><span class="">Imágenes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs05_ejercicios2_contenedores-li">
+  <input type="checkbox" id="m-docs05_ejercicios2_contenedores-check"/>
+  <label for="m-docs05_ejercicios2_contenedores-check"><a href="/docs/05_ejercicios/2_contenedores/" title="Crea Contenedores" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs05_ejercicios2_contenedores"><i class="fa-solid fa-box-open"></i><span class="">Contenedores</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docs05_ejercicios3_contenedores_imagenes-li">
+  <input type="checkbox" id="m-docs05_ejercicios3_contenedores_imagenes-check" checked/>
+  <label for="m-docs05_ejercicios3_contenedores_imagenes-check"><a href="/docs/05_ejercicios/3_contenedores_imagenes/" title="Contenedores" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-docs05_ejercicios3_contenedores_imagenes"><i class="fa-solid fa-trowel"></i><span class="td-sidebar-nav-active-item">Container to images</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs05_resumen_instrucciones_docker_file-li">
+  <input type="checkbox" id="m-docs05_resumen_instrucciones_docker_file-check"/>
+  <label for="m-docs05_resumen_instrucciones_docker_file-check"><a href="/docs/05_resumen_instrucciones_docker_file/" title="Gestión de archivos y directorios" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs05_resumen_instrucciones_docker_file"><i class="fa-regular fa-file-code"></i><span class="">Archivos y directorios</span></a></label>
+  
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#__contenedores--imágenes__"><strong>Contenedores =&gt; imágenes</strong></a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/docs/">Docker</a></li>
+  <li class="breadcrumb-item">
+    <a href="/docs/05_ejercicios/">Ejercicios</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    Container to images</li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Contenedores</h1>
+  
+	<header class="article-meta">
+		
+</header>
+	<h2 id="__contenedores--imágenes__"><strong>Contenedores =&gt; imágenes</strong></h2>
+
+
+<div class="pageinfo pageinfo-primary">
+<h4 id="__heavy_exclamation_mark-como-crear-nuestras-imágenes__"><strong>&#x2757; Como crear nuestras imágenes</strong></h4>
+<p>En esta sección realizaremos acciones para pasar crear <strong>nuestras imágenes</strong> a partir de <strong>contenedores</strong></p>
+<p>Una imagen es la plantilla para un contenedor, y contiene un sistema de archivos con una determinada versión de sistema operativo a partir del sistema operativo del anfitrión, y una serie de programas o servicios que se han añadido<br>
+La forma de construir una imagen es en capas, según le vamos añadiendo elementos. <br>
+La idea es tener un contenedor según nuestra necesidad, y con él, crear una imagen<br>
+:</p>
+
+</div>
+
+<ul>
+<li>Comandos a usar</li>
+</ul>
+<blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker commit
+</span></span><span style="display:flex;"><span>docker push
+</span></span><span style="display:flex;"><span>docker <span style="color:#658b00">export</span>
+</span></span><span style="display:flex;"><span>docker import
+</span></span></code></pre></div></blockquote>
+<h4 id="__1-crea-una-imagen-llamada-hahahugoshortcode173s1hbhb-a-partir-del-conenedor-hahahugoshortcode173s2hbhb__"><strong>1. Crea una imagen llamada 
+<strong>
+<span class="font-weight-bold text-text-success">
+
+    web:v1
+
+
+</span>
+</strong>
+ a partir del conenedor 
+<strong>
+<span class="font-weight-bold text-text-success">
+
+    web
+
+
+</span>
+</strong>
+</strong></h4>
+<blockquote>
+<p>
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Revisa</h4>
+
+    <h4 id="__mag-verifica-antes__"><strong>&#x1f50d; verifica antes</strong></h4>
+<ol>
+<li>Revisa que tienes ese contenedor creado en el ejercicio anterior</li>
+<li>En este ejercicio teníamos apache y php y tenemos realizado el forward del puerto 8000:80</li>
+</ol>
+<blockquote>
+</blockquote>
+
+
+</div>
+
+
+
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker stop web docker commit web web:v1" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+</p>
+</blockquote>
+<h4 id="__2-verifica-que-has-creado-la-imagen__"><strong>2. Verifica que has creado la imagen</strong></h4>
+<blockquote>
+
+
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker images" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__3-crea-con-run-un-contenedor-pero-compartiendo-una-carpeta__"><strong>3. Crea con run, un contenedor, pero compartiendo una carpeta</strong></h4>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Recuerda</h4>
+
+    <h4 id="__memo-revisa-los-comandos__"><strong>&#x1f4dd; Revisa los comandos</strong></h4>
+<ul>
+<li>Mira la ayuda del comando run , revisa la opción <strong>-v</strong></li>
+<li>La carpeta en local la crearemos en el directorio actual y la llamaremos <strong>app</strong></li>
+<li>En el docker la carpeta serán <strong>/var/www/html</strong> que es dónde apache va a ir buscar los recursos cuando se los soliciten su <strong>DocumentRoot</strong></li>
+<li>Ten cuidado con el caracter de separar directorios, en windows es <strong>&quot;\&quot;</strong> en linux y mac es <strong>&quot;/&quot;</strong></li>
+</ul>
+
+
+</div>
+
+<blockquote>
+
+
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker run -t -i -v .\app:/var/www/html web:v1 bash" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__4-crear-un-fichero-tar--llamado-webtar-con-el-contenedor__"><strong>4. Crear un fichero tar  llamado web.tar con el contenedor</strong></h4>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Interesante</h4>
+
+    <strong>#####&#x1f31f; Puede ser que quieras tener tu imagen en un fichero</strong><br>
+Con este comando vamos a crear un <strong>fichero tar</strong> a partir de un <strong>contenedor</strong> <br>
+El contenedor tiene que estar parado <strong>stop</strong>.<br>
+Con la opción <strong>-o</strong> especificamos el nombre del fichero <strong>tar</strong><br>
+Lo que se almacena  en el <strong>fichero tar</strong> es <strong>la imagen del contenedor</strong>, es decir me guardo una image, luego cuando lo exporte, __exportaré <strong>una imagen</strong> de la cual tendré que crear <strong>un contenedor</strong><br>
+<strong>&#x1f4dd; Muy interesante reflexionar y entender este pequeño escenario</strong>
+
+</div>
+
+<blockquote>
+
+
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker stop web docker export -o web.tar web" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__5-crea-una-imagen-llamada-hahahugoshortcode173s10hbhb-a-partir-del-fichero-hahahugoshortcode173s11hbhb__"><strong>5. Crea una imagen llamada 
+<strong>
+<span class="font-weight-bold text-text-success">
+
+    web:v2
+
+
+</span>
+</strong>
+ a partir del fichero 
+<strong>
+<span class="font-weight-bold text-text-success">
+
+    web.tar
+
+
+</span>
+</strong>
+</strong></h4>
+<blockquote>
+
+
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker import web.tar web:v2" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__6-confirma-que-lo-has-creado__"><strong>6. Confirma que lo has creado</strong></h4>
+<blockquote>
+
+ 
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker images" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__7-crea-un-contenedor-llamado-web2-a-patir-de-la-imagen-webv2__"><strong>7. Crea un contenedor llamado web2 a patir de la imagen web:v2</strong></h4>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Warning</h4>
+
+    <ul>
+<li>Realiza el forward de los puertos 8002:80 (seguramente el 8000 esté ocupado)</li>
+<li>Mapea o crea el volumen de capetas .\app:/var/www/html</li>
+</ul>
+
+
+</div>
+
+<blockquote>
+
+ 
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker run -t -i -p 8002:80 -v .\app:/var/www/html web:v2 bash" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__7-hazte-una-cuenta-en-docker-hub__"><strong>7. Hazte una cuenta en docker hub</strong></h4>
+<p>
+
+<div class="pageinfo pageinfo-primary">
+<ul>
+<li>Conectate a docker hub  <strong><a href="https://hub.docker.com/">https://hub.docker.com/</a></strong></li>
+<li>En <strong>sign up</strong> te podrás registrar</li>
+</ul>
+
+</div>
+
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 882px">
+<img class="card-img-top" src="/docs/05_ejercicios/3_contenedores_imagenes/dockerhub_hu6343802249552047288.png" width="872" height="299">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+<h4 id="__7-accede-en-línea-de-comandos-a-tu-cuenta__"><strong>7. Accede en línea de comandos a tu cuenta</strong></h4>
+<blockquote>
+
+
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker login" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__7-sube-la-imagen-webv1-que-tienes-en-tu-sistema__"><strong>7. Sube la imagen web:v1 que tienes en tu sistema</strong></h4>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Observación en la solución</h4>
+
+    &#x1f50d; En la solución he puesto el nombre que corresponde a mi namespace, que es el nombre de usuario de docker hub, <strong>manolo</strong>, para especificar en nameespace, cada una tendréis el vuetro propio.
+
+</div>
+
+<blockquote>
+
+
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker push manolo/web:v1" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+
+  <div class="section-index">
+    
+    
+    </div>
+</div>
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2024
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

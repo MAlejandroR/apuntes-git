@@ -1,0 +1,453 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs/02_instalacion/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Instalación | Desarrollo web</title>
+<meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
+
+<meta property="og:url" content="http://localhost:1313/docs/02_instalacion/">
+  <meta property="og:site_name" content="Desarrollo web">
+  <meta property="og:title" content="Instalación">
+  <meta property="og:description" content="Instalando en Ubuntu En un sistema Ubuntu, puedes instalar Apache y PHP utilizando los siguientes comandos: Actualizar los repositorios: 1 2 3 4 5 6 #Actualizar repositorios sudo apt update #Instalar Apache2 sudo apt install apache2 #Instalar php y el módulo de php para apache sudo apt install php libapache2-mod-php Depué de realizar estas tareas, debes de resetear apache para ponerlo todo en funcionamiento 1 sudo systemctl restart apache2">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Instalación">
+  <meta itemprop="description" content="Instalando en Ubuntu En un sistema Ubuntu, puedes instalar Apache y PHP utilizando los siguientes comandos: Actualizar los repositorios: 1 2 3 4 5 6 #Actualizar repositorios sudo apt update #Instalar Apache2 sudo apt install apache2 #Instalar php y el módulo de php para apache sudo apt install php libapache2-mod-php Depué de realizar estas tareas, debes de resetear apache para ponerlo todo en funcionamiento 1 sudo systemctl restart apache2">
+  <meta itemprop="datePublished" content="2024-10-15T07:04:49+02:00">
+  <meta itemprop="dateModified" content="2024-10-15T07:04:49+02:00">
+  <meta itemprop="wordCount" content="365">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Instalación">
+  <meta name="twitter:description" content="Instalando en Ubuntu En un sistema Ubuntu, puedes instalar Apache y PHP utilizando los siguientes comandos: Actualizar los repositorios: 1 2 3 4 5 6 #Actualizar repositorios sudo apt update #Instalar Apache2 sudo apt install apache2 #Instalar php y el módulo de php para apache sudo apt install php libapache2-mod-php Depué de realizar estas tareas, debes de resetear apache para ponerlo todo en funcionamiento 1 sudo systemctl restart apache2">
+
+
+<link href="/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Desarrollo web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/en/">English</a></li>
+    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <div class="td-sidebar-nav__section nav-item dropdown d-block d-lg-none">
+      <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/en/">English</a></li>
+    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    </ul>
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
+  <a href="/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><i class="fa-brands fa-php_"></i><span class="">PHP </span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs01_introduccion-li">
+  <input type="checkbox" id="m-docs01_introduccion-check"/>
+  <label for="m-docs01_introduccion-check"><a href="/docs/01_introduccion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs01_introduccion"><i class="fas fa-book"></i><span class="">Introducción</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docs02_instalacion-li">
+  <input type="checkbox" id="m-docs02_instalacion-check" checked/>
+  <label for="m-docs02_instalacion-check"><a href="/docs/02_instalacion/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-docs02_instalacion"><i class="fas fa-download"></i><span class="td-sidebar-nav-active-item">Instalación</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs03_empezando-li">
+  <input type="checkbox" id="m-docs03_empezando-check"/>
+  <label for="m-docs03_empezando-check"><a href="/docs/03_empezando/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs03_empezando"><i class="fas fa-play"></i><span class="">Empezando</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs04_escribiendo-li">
+  <input type="checkbox" id="m-docs04_escribiendo-check"/>
+  <label for="m-docs04_escribiendo-check"><a href="/docs/04_escribiendo/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs04_escribiendo"><i class="fas fa-keyboard"></i><span class="">Escribiendo</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs05_declaraciones-li">
+  <input type="checkbox" id="m-docs05_declaraciones-check"/>
+  <label for="m-docs05_declaraciones-check"><a href="/docs/05_declaraciones/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs05_declaraciones"><i class="fas fa-file-alt"></i><span class="">Declaraciones</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs06_control-li">
+  <input type="checkbox" id="m-docs06_control-check"/>
+  <label for="m-docs06_control-check"><a href="/docs/06_control/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs06_control"><i class="fas fa-cogs"></i><span class="">Control</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs07_expresiones-li">
+  <input type="checkbox" id="m-docs07_expresiones-check"/>
+  <label for="m-docs07_expresiones-check"><a href="/docs/07_expresiones/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs07_expresiones"><i class="fas fa-code"></i><span class="">Expresiones</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs08_mas_detalles_php-li">
+  <input type="checkbox" id="m-docs08_mas_detalles_php-check"/>
+  <label for="m-docs08_mas_detalles_php-check"><a href="/docs/08_mas_detalles_php/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs08_mas_detalles_php"><i class="fas fa-clipboard-list"></i><span class="">Fundamentos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs09_funciones_propias-li">
+  <input type="checkbox" id="m-docs09_funciones_propias-check"/>
+  <label for="m-docs09_funciones_propias-check"><a href="/docs/09_funciones_propias/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs09_funciones_propias"><i class="fas fa-cogs"></i><span class="">Func. integradas</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs10_funciones-li">
+  <input type="checkbox" id="m-docs10_funciones-check"/>
+  <label for="m-docs10_funciones-check"><a href="/docs/10_funciones/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs10_funciones"><i class="fas fa-list-ul"></i><span class="">Fuciones</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs11_formularios-li">
+  <input type="checkbox" id="m-docs11_formularios-check"/>
+  <label for="m-docs11_formularios-check"><a href="/docs/11_formularios/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs11_formularios"><i class="fa-brands fa-wpforms"></i><span class="">Formularios</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs12_arrays-li">
+  <input type="checkbox" id="m-docs12_arrays-check"/>
+  <label for="m-docs12_arrays-check"><a href="/docs/12_arrays/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs12_arrays"><i class="fas fa-th-large"></i><span class="">Arrays</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs13_objetos-li">
+  <input type="checkbox" id="m-docs13_objetos-check"/>
+  <label for="m-docs13_objetos-check"><a href="/docs/13_objetos/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs13_objetos"><i class="fas fa-cube"></i><span class="">Objetos</span></a></label>
+  
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#instalando-en-ubuntu">Instalando en Ubuntu</a></li>
+        <li><a href="#instalando-en-windows-con-xampp">Instalando en Windows con XAMPP</a></li>
+        <li><a href="#creación-de-docker">Creación de docker</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/docs/">PHP </a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    Instalación</li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Instalación</h1>
+  
+	<header class="article-meta">
+		
+</header>
+	<h3 id="instalando-en-ubuntu">Instalando en Ubuntu</h3>
+<ul>
+<li>En un sistema Ubuntu, puedes instalar Apache y PHP utilizando los siguientes comandos:</li>
+</ul>
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Actualizar los repositorios:
+
+
+</span>
+</strong>
+
+<p><div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#228b22">#Actualizar repositorios
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>sudo apt update
+</span></span><span style="display:flex;"><span><span style="color:#228b22">#Instalar Apache2
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>sudo apt install apache2
+</span></span><span style="display:flex;"><span><span style="color:#228b22">#Instalar php y el módulo de php para apache 
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>sudo apt install php libapache2-mod-php</span></span></code></pre></td></tr></table>
+</div>
+</div>
+Depué de realizar estas tareas, debes de resetear apache para ponerlo todo en funcionamiento
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>sudo systemctl restart apache2</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<h3 id="instalando-en-windows-con-xampp">Instalando en Windows con XAMPP</h3>
+<p>XAMPP es una solución sencilla para tener Apache, PHP, y MySQL en Windows. Sigue estos pasos para instalarlo:</p>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Descargar XAMPP
+
+
+</span>
+</strong>
+
+Ve al sitio web oficial de XAMPP <a href="https://www.apachefriends.org">https://www.apachefriends.org</a> y descarga la versión que incluye PHP.</p>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Instalar XAMPP
+
+
+</span>
+</strong>
+
+Ejecuta el instalador y sigue las instrucciones. Asegúrate de seleccionar Apache y PHP durante la instalación.</p>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Iniciar los servicios
+
+
+</span>
+</strong>
+:
+Abre el panel de control de XAMPP y asegúrate de iniciar Apache.</p>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Comprobar instalación
+
+
+</span>
+</strong>
+
+Abre tu navegador y visita <code>http://localhost/</code>. Deberías ver la página de bienvenida de XAMPP.</p>
+<h3 id="creación-de-docker">Creación de docker</h3>
+<ul>
+<li>Es esta la solución que vamos a utilizar.</li>
+<li>Para ello crearemos un 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    docker-compose.yaml
+
+
+</span>
+</strong>
+, que nos levante un servicio con php y apache2.</li>
+<li>Por si queremos realizar modificaciones sobre la imagen original, la imagen la vamos a crear a patir de un 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Dockerfile
+
+
+</span>
+</strong>
+</li>
+<li>Cada proyecto que creemos o bien tendremos esta estructura, o bien los crearemos todos a partir de la carpeta compartida</li>
+</ul>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 240px">
+<img class="card-img-top" src="/docs/02_instalacion/docker_folder_hu7708736624956657042.png" width="230" height="87">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<hr style="border-color: red; border-width: 3px;"/>
+<p>El contenido de los ficheros:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-docker" data-lang="docker"><span style="display:flex;"><span>services:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#a61717;background-color:#e3d2d2"></span>    web:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#a61717;background-color:#e3d2d2"></span>        build : .<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#a61717;background-color:#e3d2d2"></span>        ports:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#a61717;background-color:#e3d2d2"></span>            - 8800:80<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>        volumes:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>            - ./../app:/var/www/html<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#a61717;background-color:#e3d2d2"></span>        container_name: web</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Info</h4>
+
+    <ul>
+<li>Creamos el servicio (contenedor ) <em><strong>web</strong></em></li>
+<li>A partir del <strong>Dockerfile</strong> que tenemos en <strong>la misma carpeta</strong></li>
+<li>Proyectamos el puerto <strong>8800</strong> para acceder a él</li>
+<li>Mapeamos la carpeta <strong>./../app</strong> para escribir nuestros programas</li>
+</ul>
+
+
+</div>
+
+<p>El Dockerfile
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>FROM php:<span style="color:#b452cd">8.3</span>-apache
+</span></span><span style="display:flex;"><span>ENV DEBIAN_FRONTEND=noninteractive
+</span></span><span style="display:flex;"><span>RUN apt update
+</span></span><span style="display:flex;"><span><span style="color:#228b22"># Usa la imagen base de PHP con Apache
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>
+</span></span><span style="display:flex;"><span><span style="color:#228b22"># Añadir o modificar la configuración de Apache para listar directorios si no hay index
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>RUN <span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;Directory /var/www/html&gt;&#39;</span> &gt;&gt; /etc/apache2/apache2.conf
+</span></span><span style="display:flex;"><span>RUN <span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;Options +Indexes&#39;</span> &gt;&gt; /etc/apache2/apache2.conf
+</span></span><span style="display:flex;"><span>RUN <span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;/Directory&gt;&#39;</span> &gt;&gt; /etc/apache2/apache2.conf
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#228b22"># Exponer el puerto 80
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>EXPOSE <span style="color:#b452cd">80</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<p>La imagen de la estructura la podríamos organizar de la siguiente manera
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 514px">
+<img class="card-img-top" src="/docs/02_instalacion/estructura_docker_hu13023925879229262445.png" width="504" height="297">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+
+  <div class="section-index">
+    
+    
+    </div>
+</div>
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2024
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

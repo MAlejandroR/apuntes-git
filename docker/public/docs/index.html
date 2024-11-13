@@ -1,0 +1,691 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Introducción | Despliegue de aplicacones Web</title>
+<meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
+
+<meta property="og:url" content="http://localhost:1313/docs/">
+  <meta property="og:site_name" content="Despliegue de aplicacones Web">
+  <meta property="og:title" content="Introducción">
+  <meta property="og:description" content="Docker Objetivos de este tema Entender qué es docker Crear contenedores Crear Imágenes Trabajar con entornos dockerizados para desarrollo Crear imágenes con DockerFile Crear servicios con docker compose Referencias Fuentes de Información La mejor la oficial: https://docs.docker.com/engine/">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Introducción">
+  <meta itemprop="description" content="Docker Objetivos de este tema Entender qué es docker Crear contenedores Crear Imágenes Trabajar con entornos dockerizados para desarrollo Crear imágenes con DockerFile Crear servicios con docker compose Referencias Fuentes de Información La mejor la oficial: https://docs.docker.com/engine/">
+  <meta itemprop="wordCount" content="890">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Introducción">
+  <meta name="twitter:description" content="Docker Objetivos de este tema Entender qué es docker Crear contenedores Crear Imágenes Trabajar con entornos dockerizados para desarrollo Crear imágenes con DockerFile Crear servicios con docker compose Referencias Fuentes de Información La mejor la oficial: https://docs.docker.com/engine/">
+
+
+<link href="/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Despliegue de aplicacones Web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/en/">English</a></li>
+    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <div class="td-sidebar-nav__section nav-item dropdown d-block d-lg-none">
+      <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/en/">English</a></li>
+    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    </ul>
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
+  <a href="/docs/" title="Introducción" class="align-left ps-0 active td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><i class="fas fa-docker"></i><span class="td-sidebar-nav-active-item">Docker</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs01_conceptos-li">
+  <input type="checkbox" id="m-docs01_conceptos-check"/>
+  <label for="m-docs01_conceptos-check"><a href="/docs/01_conceptos/" title="Conceptos sobre docker" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs01_conceptos"><i class="fa-regular fa-lightbulb"></i><span class="">Conceptos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs02_contenedores_imagenes-li">
+  <input type="checkbox" id="m-docs02_contenedores_imagenes-check"/>
+  <label for="m-docs02_contenedores_imagenes-check"><a href="/docs/02_contenedores_imagenes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs02_contenedores_imagenes"><i class="fa-regular fa-box"></i><span class="">Contenedores e imágenes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs03_instalacion-li">
+  <input type="checkbox" id="m-docs03_instalacion-check"/>
+  <label for="m-docs03_instalacion-check"><a href="/docs/03_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs03_instalacion"><i class="fa-regular fa-box"></i><span class="">Contenedores e imágenes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs03_comandos_docker-li">
+  <input type="checkbox" id="m-docs03_comandos_docker-check"/>
+  <label for="m-docs03_comandos_docker-check"><a href="/docs/03_comandos_docker/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs03_comandos_docker"><i class="fa-solid fa-terminal"></i><span class="">comandos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs04_ejercicios-li">
+  <input type="checkbox" id="m-docs04_ejercicios-check"/>
+  <label for="m-docs04_ejercicios-check"><a href="/docs/04_ejercicios/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs04_ejercicios"><i class="fa-solid fa-list-check"></i><span class="">Ejercicios</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs04_ejercicios1_imagenes-li">
+  <input type="checkbox" id="m-docs04_ejercicios1_imagenes-check"/>
+  <label for="m-docs04_ejercicios1_imagenes-check"><a href="/docs/04_ejercicios/1_imagenes/" title="Crea imágenes" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs04_ejercicios1_imagenes"><i class="fa-regular fa-file-image"></i><span class="">Imágenes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs04_ejercicios2_contenedores-li">
+  <input type="checkbox" id="m-docs04_ejercicios2_contenedores-check"/>
+  <label for="m-docs04_ejercicios2_contenedores-check"><a href="/docs/04_ejercicios/2_contenedores/" title="Crea Contenedores" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs04_ejercicios2_contenedores"><i class="fa-solid fa-box-open"></i><span class="">Contenedores</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs04_ejercicios3_contenedores_imagenes-li">
+  <input type="checkbox" id="m-docs04_ejercicios3_contenedores_imagenes-check"/>
+  <label for="m-docs04_ejercicios3_contenedores_imagenes-check"><a href="/docs/04_ejercicios/3_contenedores_imagenes/" title="Contenedores" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs04_ejercicios3_contenedores_imagenes"><i class="fa-solid fa-trowel"></i><span class="">Container to images</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs05_resumen_instrucciones_docker_file-li">
+  <input type="checkbox" id="m-docs05_resumen_instrucciones_docker_file-check"/>
+  <label for="m-docs05_resumen_instrucciones_docker_file-check"><a href="/docs/05_resumen_instrucciones_docker_file/" title="Gestión de archivos y directorios" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs05_resumen_instrucciones_docker_file"><i class="fa-regular fa-file-code"></i><span class="">Archivos y directorios</span></a></label>
+  
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#orígenes-y-dotcloud-2008">Orígenes y dotCloud (2008)</a></li>
+    <li><a href="#lanzamiento-público-de-docker-2013">Lanzamiento Público de Docker (2013)</a></li>
+    <li><a href="#proyecto-moby-2017-modularización-y-flexibilidad">Proyecto Moby (2017): Modularización y Flexibilidad</a></li>
+    <li><a href="#docker-como-producto-comercial">Docker como Producto Comercial</a></li>
+    <li><a href="#impacto-de-la-comunidad-y-ecosistema-de-código-abierto">Impacto de la Comunidad y Ecosistema de Código Abierto</a></li>
+    <li><a href="#popularización-de-contenedores-e-integración-con-kubernetes">Popularización de Contenedores e Integración con Kubernetes</a></li>
+    <li><a href="#el-futuro-de-docker">El Futuro de Docker</a></li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs td-breadcrumbs__single">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item active" aria-current="page">
+    Docker</li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Introducción</h1>
+  
+	<header class="article-meta">
+		
+</header>
+	<p>
+
+
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-check-circle"></i> 
+            
+        </span>
+        
+        <span>Docker</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight:bold">Objetivos de este tema</h3>
+
+    <hr style="border-color:seagreen; border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            <li>Entender qué es docker</li>
+            
+            <li>Crear contenedores</li>
+            
+            <li>Crear Imágenes</li>
+            
+            <li>Trabajar con entornos dockerizados para desarrollo</li>
+            
+            <li>Crear imágenes con DockerFile</li>
+            
+            <li>Crear servicios con docker compose</li>
+            
+            
+            
+        </ul>
+    </div>
+    
+
+
+</div>
+
+
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Referencias</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Fuentes de Información</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
+    
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            <li><ul>
+<li>La mejor la oficial:</li>
+</ul>
+</li>
+            
+            <li><blockquote>
+<p><a href="https://docs.docker.com/engine/">https://docs.docker.com/engine/</a></p>
+</blockquote></li>
+            
+            <li><ul>
+<li>Artículo interesante de Mauricio Collados, donde he sacado ideas para este tema</li>
+</ul>
+</li>
+            
+            <li><blockquote>
+<p><a href="https://medium.com/ingenier%C3%ADa-en-tranqui-finanzas/una-gu%C3%ADa-no-tan-r%C3%A1pida-de-docker-y-kubernetes-933f5b6709df">https://medium.com/ingenier%C3%ADa-en-tranqui-finanzas/una-gu%C3%ADa-no-tan-r%C3%A1pida-de-docker-y-kubernetes-933f5b6709df</a></p>
+</blockquote></li>
+            
+            <li><ul>
+<li>Curso gratuito de docker</li>
+</ul>
+</li>
+            
+            <li><blockquote>
+<p><a href="https://jgaitpro.com/p/introduccion-a-containers-en-docker">https://jgaitpro.com/p/introduccion-a-containers-en-docker</a></p>
+</blockquote></li>
+            
+            <li><ul>
+<li>Instalar contenedor en windows (ver minutos 6:10 - 9:21</li>
+</ul>
+</li>
+            
+            <li><blockquote>
+<p><a href="https://www.youtube.com/watch?v=9FoWrDx6n2k">https://www.youtube.com/watch?v=9FoWrDx6n2k</a></p>
+</blockquote></li>
+            
+            
+            
+            
+        </ul>
+    </div>
+</div>
+</p>
+<p>
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Lectura recomendada</h4>
+
+    <blockquote>
+<ul>
+<li>Esta página por su puesto no es para estudiar.</li>
+<li>Trata de contextualizar docker con un poco de historia y su evolución</li>
+<li>Trata de sus orígenes,</li>
+<li><em><strong>Como técnicos/as en tecnologías, es bueno que conozcamos algo de historia de la tecnología con la que trabajamos</strong></em></li>
+</ul>
+</blockquote>
+
+
+</div>
+
+
+
+<div class="pageinfo pageinfo-primary">
+
+<strong>Resumen de un poco de historia</strong>
+
+
+
+<hr style="border-color: red; border-width: 3px;"/>
+
+El desarrollo de 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker comenzó en 2010
+
+
+</span>
+</strong>
+, impulsado por 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Solomon Hykes
+
+
+</span>
+</strong>
+, quien trabajaba como ingeniero en una empresa que más tarde se renombraría como 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker Inc
+
+
+</span>
+</strong>
+.
+<br />
+Ahí se creó inicialmente 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker como una plataforma de contenedores
+
+
+</span>
+</strong>
+, y con el tiempo se convirtió en una tecnología y una marca ampliamente reconocida para la 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    virtualización basada en contenedores
+
+
+</span>
+</strong>
+, algo que después de 2013 cuando Solomon lo presentó en una conferencia al munso, cambió totalmente el enfoque del desarrollo.
+<br />
+Solomon Hykes dejó Docker Inc. en 2018 para centrarse en nuevos proyectos.
+<br />
+En 2017, Docker Inc. lanzó el 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Moby Project
+
+
+</span>
+</strong>
+, un proyecto de código abierto que descompone Docker en varios componentes modulares y reutilizables.
+<br />
+El objetivo de Moby es permitir a los desarrolladores utilizar estos componentes de manera independiente para crear sus propias soluciones de contenedores personalizadas. En este proyecto, se desglosó Docker en componentes más pequeños y reutilizables
+<br />
+
+Actualmente, Docker sigue existiendo como un producto comercial y una plataforma completa que integra estos componentes en un paquete fácil de usar para crear y gestionar contenedores.
+<br />
+En otras palabras, Docker es la plataforma que los usuarios finales utilizan para trabajar con contenedores, mientras que Moby funciona como un 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    conjunto de herramientas
+
+
+</span>
+</strong>
+ de código abierto que sirve como base de Docker y permite a los desarrolladores crear soluciones a medida.
+
+</div>
+</p>
+
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Referencias</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Fuentes de Información</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
+    
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            <li>&ldquo;What is Docker? The spark for the container revolution&rdquo; (3 de marzo de 2021): Este artículo ofrece una visión detallada sobre los inicios de Docker y su impacto en la industria de contenedores. <a href="https://www.infoworld.com/article/2269272/how-docker-broke-in-half.html">https://www.infoworld.com/article/2269272/how-docker-broke-in-half.html</a></li>
+            
+            <li>&ldquo;Solomon Hykes leaves Docker, the company he founded&rdquo; (28 de marzo de 2018): Este artículo aborda la salida de Solomon Hykes de Docker y ofrece una visión de su impacto en la empresa. <a href="https://techcrunch.com/2018/03/28/solomon-hykes-leaves-docker-the-company-he-founded/">https://techcrunch.com/2018/03/28/solomon-hykes-leaves-docker-the-company-he-founded/</a></li>
+            
+            
+            
+        </ul>
+    </div>
+</div>
+
+<h1 id="historia-de-docker-innovación-y-comunidad-en-la-contenerización">Historia de Docker: Innovación y Comunidad en la Contenerización</h1>
+<p>La historia de Docker es un proceso  de innovación y colaboración que ha incidido de forma muy clara y contundente en el mundo del desarrollo de software, popularizando el uso de contenedores.
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 870px">
+<img class="card-img-top" src="/docs/salomon_trabajando_hu5347605164123752284.webp" width="860" height="491">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+<h2 id="orígenes-y-dotcloud-2008">Orígenes y dotCloud (2008)</h2>
+<p>Docker tuvo sus orígenes en 2008 como un proyecto interno dentro de 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    dotCloud
+
+
+</span>
+</strong>
+, una empresa de plataforma como servicio fundada por 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Solomon Hykes
+
+
+</span>
+</strong>
+.</p>
+<p>Su objetivo era mejorar la eficiencia y portabilidad de las aplicaciones 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    al empaquetarlas en contenedores
+
+
+</span>
+</strong>
+ que pudieran <strong>ejecutarse de forma consistente en diferentes entornos</strong>.
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 310px">
+<img class="card-img-top" src="/docs/empaquetamiento_hu1462948396119611165.webp" width="300" height="300">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+<h2 id="lanzamiento-público-de-docker-2013">Lanzamiento Público de Docker (2013)</h2>
+<p>En 2013, Docker fue presentado al público y se lanzó como 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    software de código abierto
+
+
+</span>
+</strong>
+ bajo la licencia Apache 2.0.</p>
+<p>Esta decisión fue clave, ya que permitió el crecimiento de una comunidad global en torno a Docker, impulsando su desarrollo y su adopción.</p>
+<p>La facilidad con la que 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    los contenedores Docker podían crearse y desplegarse
+
+
+</span>
+</strong>
+ ayudó a que se convirtiera en una herramienta popular entre desarrolladores y empresas.
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1289px">
+<img class="card-img-top" src="/docs/salomon_2013_hu11764695974802313557.png" width="1279" height="746">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+El día de la presentación de Salomon Hykes
+<a href="https://www.google.com/search?q=presentaci%C3%B3n+docker+por+solomon+2013&oq=presentaci%C3%B3n+docker+por+solomon+2013&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDg3MjBqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:78729fe6,vid:zgR8otZkwHc,st:0>">Una reacción a la Presentación</a>
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+<h2 id="proyecto-moby-2017-modularización-y-flexibilidad">Proyecto Moby (2017): Modularización y Flexibilidad</h2>
+<p>Para modularizar y estandarizar la construcción de sistemas de contenedores, en 2017 Docker, Inc. lanzó el 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Proyecto Moby
+
+
+</span>
+</strong>
+.</p>
+<p>Moby Project es una plataforma abierta que proporciona componentes básicos para crear soluciones personalizadas de contenerización.</p>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker
+
+
+</span>
+</strong>
+ sigue siendo la implementación más popular basada en Moby, pero Moby en sí mismo permite que otros desarrolladores construyan sus propias versiones y herramientas adaptadas a necesidades específicas.</p>
+<h2 id="docker-como-producto-comercial">Docker como Producto Comercial</h2>
+<p>Docker, Inc. ha desarrollado Docker como un 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    producto comercial
+
+
+</span>
+</strong>
+ que incluye herramientas avanzadas y soporte técnico, facilitando la adopción y administración de contenedores en entornos empresariales.</p>
+<p>Esta versión comercial se complementa con una comunidad de código abierto, lo que permite que Docker sea accesible tanto para individuos como para grandes empresas.</p>
+<h2 id="impacto-de-la-comunidad-y-ecosistema-de-código-abierto">Impacto de la Comunidad y Ecosistema de Código Abierto</h2>
+<p>La comunidad de desarrolladores ha sido fundamental en la evolución de Docker. Contribuciones de código, mejoras de rendimiento y soluciones innovadoras aportadas por la comunidad global han consolidado a Docker como la tecnología de contenedorización líder en la actualidad.</p>
+<p>La adopción de Docker ha sido tal que se ha convertido en un 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    estándar para el empaquetado y despliegue de aplicaciones
+
+
+</span>
+</strong>
+.</p>
+<h2 id="popularización-de-contenedores-e-integración-con-kubernetes">Popularización de Contenedores e Integración con Kubernetes</h2>
+<p>Docker popularizó la idea de los contenedores, transformándolos en una forma eficiente de empaquetar y distribuir aplicaciones.</p>
+<p>Su integración con otras tecnologías, especialmente 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Kubernetes
+
+
+</span>
+</strong>
+, ha permitido crear ecosistemas de contenedores más complejos y escalables, adecuados para entornos de microservicios y despliegues en la nube.</p>
+<h2 id="el-futuro-de-docker">El Futuro de Docker</h2>
+<p>Docker continúa evolucionando y adaptándose a las tendencias emergentes, como la 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    computación en la nube
+
+
+</span>
+</strong>
+ y el 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    edge computing
+
+
+</span>
+</strong>
+.</p>
+<p>A medida que el desarrollo de software se orienta cada vez más hacia infraestructuras dinámicas y escalables, Docker se posiciona como una tecnología clave en la implementación de aplicaciones modernas.</p>
+
+  <div class="section-index">
+    
+    
+    <hr class="panel-line">
+        <div class="entry">
+                <h5>
+                    <a href="/docs/01_conceptos/">Conceptos sobre docker</a>
+                </h5>
+                <p></p>
+            </div>
+        <div class="entry">
+                <h5>
+                    <a href="/docs/02_contenedores_imagenes/">Contenedores e imágenes</a>
+                </h5>
+                <p></p>
+            </div>
+        <div class="entry">
+                <h5>
+                    <a href="/docs/03_instalacion/">Contenedores e imágenes</a>
+                </h5>
+                <p></p>
+            </div>
+        <div class="entry">
+                <h5>
+                    <a href="/docs/03_comandos_docker/">Docker Prácticas</a>
+                </h5>
+                <p></p>
+            </div>
+        <div class="entry">
+                <h5>
+                    <a href="/docs/04_ejercicios/">Docker Prácticas</a>
+                </h5>
+                <p></p>
+            </div>
+        <div class="entry">
+                <h5>
+                    <a href="/docs/05_resumen_instrucciones_docker_file/">Gestión de archivos y directorios</a>
+                </h5>
+                <p></p>
+            </div>
+        </div>
+</div>
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2024
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

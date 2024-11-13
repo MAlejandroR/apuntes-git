@@ -1,0 +1,1 @@
+create user '$USER' identified by '$PASSWORD'

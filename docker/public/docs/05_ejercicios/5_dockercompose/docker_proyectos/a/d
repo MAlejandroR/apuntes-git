@@ -1,0 +1,4 @@
+docker stop p1
+docker rm p1
+docker build -t web:v1 .
+docker run -d  --name p1 --hostname dockerfile  web:v1

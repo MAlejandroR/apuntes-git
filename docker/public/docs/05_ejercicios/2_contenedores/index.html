@@ -1,0 +1,916 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs/05_ejercicios/2_contenedores/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Crea Contenedores | Despliegue de aplicacones Web</title>
+<meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
+
+<meta property="og:url" content="http://localhost:1313/docs/05_ejercicios/2_contenedores/">
+  <meta property="og:site_name" content="Despliegue de aplicacones Web">
+  <meta property="og:title" content="Crea Contenedores">
+  <meta property="og:description" content="Crear y usar contenedores Comandos a usar docker create docker start docker exec docker run docker run --name docker run --name xxx --hostname xxx -p xxxx:xx v xx:xxx nombre_imagen Crea, lista y borra contenedores Comandos a usar docker create docker start docker exec &gt; docker ps -a docker rm nombre_contenedor docker rm (docker ps -a- q) Si estás en linux o en mac
+docker rm $(docker ps -a -q) 1. Crea 5 contenedor a partir de la imagen ubuntu:latest sin especificar nombre 2. Verifica que los has creado Revisa con cuidado 🔍 Reflexiona Observa que te tienen que salir en estado created Has de intentar enteder qué implica este estado y ver que en este contenedor no puedo ejecutar nada hasta que no esté en estado Up">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Crea Contenedores">
+  <meta itemprop="description" content="Crear y usar contenedores Comandos a usar docker create docker start docker exec docker run docker run --name docker run --name xxx --hostname xxx -p xxxx:xx v xx:xxx nombre_imagen Crea, lista y borra contenedores Comandos a usar docker create docker start docker exec &gt; docker ps -a docker rm nombre_contenedor docker rm (docker ps -a- q) Si estás en linux o en mac
+docker rm $(docker ps -a -q) 1. Crea 5 contenedor a partir de la imagen ubuntu:latest sin especificar nombre 2. Verifica que los has creado Revisa con cuidado 🔍 Reflexiona Observa que te tienen que salir en estado created Has de intentar enteder qué implica este estado y ver que en este contenedor no puedo ejecutar nada hasta que no esté en estado Up">
+  <meta itemprop="wordCount" content="680">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Crea Contenedores">
+  <meta name="twitter:description" content="Crear y usar contenedores Comandos a usar docker create docker start docker exec docker run docker run --name docker run --name xxx --hostname xxx -p xxxx:xx v xx:xxx nombre_imagen Crea, lista y borra contenedores Comandos a usar docker create docker start docker exec &gt; docker ps -a docker rm nombre_contenedor docker rm (docker ps -a- q) Si estás en linux o en mac
+docker rm $(docker ps -a -q) 1. Crea 5 contenedor a partir de la imagen ubuntu:latest sin especificar nombre 2. Verifica que los has creado Revisa con cuidado 🔍 Reflexiona Observa que te tienen que salir en estado created Has de intentar enteder qué implica este estado y ver que en este contenedor no puedo ejecutar nada hasta que no esté en estado Up">
+
+
+<link href="/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Despliegue de aplicacones Web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/en/">English</a></li>
+    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <div class="td-sidebar-nav__section nav-item dropdown d-block d-lg-none">
+      <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/en/">English</a></li>
+    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    </ul>
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
+  <a href="/docs/" title="Introducción" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><i class="fas fa-docker"></i><span class="">Docker</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs01_conceptos-li">
+  <input type="checkbox" id="m-docs01_conceptos-check"/>
+  <label for="m-docs01_conceptos-check"><a href="/docs/01_conceptos/" title="Conceptos sobre docker" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs01_conceptos"><i class="fa-regular fa-lightbulb"></i><span class="">Conceptos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs02_contenedores_imagenes-li">
+  <input type="checkbox" id="m-docs02_contenedores_imagenes-check"/>
+  <label for="m-docs02_contenedores_imagenes-check"><a href="/docs/02_contenedores_imagenes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs02_contenedores_imagenes"><i class="fa-regular fa-box"></i><span class="">Contenedores e imágenes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs03_instalacion-li">
+  <input type="checkbox" id="m-docs03_instalacion-check"/>
+  <label for="m-docs03_instalacion-check"><a href="/docs/03_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs03_instalacion"><i class="fa-regular fa-box"></i><span class="">Contenedores e imágenes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs04_comandos_docker-li">
+  <input type="checkbox" id="m-docs04_comandos_docker-check"/>
+  <label for="m-docs04_comandos_docker-check"><a href="/docs/04_comandos_docker/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs04_comandos_docker"><i class="fa-solid fa-terminal"></i><span class="">comandos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs05_ejercicios-li">
+  <input type="checkbox" id="m-docs05_ejercicios-check" checked/>
+  <label for="m-docs05_ejercicios-check"><a href="/docs/05_ejercicios/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs05_ejercicios"><i class="fa-solid fa-list-check"></i><span class="">Ejercicios</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs05_ejercicios1_imagenes-li">
+  <input type="checkbox" id="m-docs05_ejercicios1_imagenes-check"/>
+  <label for="m-docs05_ejercicios1_imagenes-check"><a href="/docs/05_ejercicios/1_imagenes/" title="Crea imágenes" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs05_ejercicios1_imagenes"><i class="fa-regular fa-file-image"></i><span class="">Imágenes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docs05_ejercicios2_contenedores-li">
+  <input type="checkbox" id="m-docs05_ejercicios2_contenedores-check" checked/>
+  <label for="m-docs05_ejercicios2_contenedores-check"><a href="/docs/05_ejercicios/2_contenedores/" title="Crea Contenedores" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-docs05_ejercicios2_contenedores"><i class="fa-solid fa-box-open"></i><span class="td-sidebar-nav-active-item">Contenedores</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs05_ejercicios3_contenedores_imagenes-li">
+  <input type="checkbox" id="m-docs05_ejercicios3_contenedores_imagenes-check"/>
+  <label for="m-docs05_ejercicios3_contenedores_imagenes-check"><a href="/docs/05_ejercicios/3_contenedores_imagenes/" title="Contenedores" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs05_ejercicios3_contenedores_imagenes"><i class="fa-solid fa-trowel"></i><span class="">Container to images</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs05_resumen_instrucciones_docker_file-li">
+  <input type="checkbox" id="m-docs05_resumen_instrucciones_docker_file-check"/>
+  <label for="m-docs05_resumen_instrucciones_docker_file-check"><a href="/docs/05_resumen_instrucciones_docker_file/" title="Gestión de archivos y directorios" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs05_resumen_instrucciones_docker_file"><i class="fa-regular fa-file-code"></i><span class="">Archivos y directorios</span></a></label>
+  
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#__crear-y-usar-contenedores__"><strong>Crear y usar contenedores</strong></a></li>
+    <li><a href="#__crea-lista-y-borra-contenedores__"><strong>Crea, lista y borra contenedores</strong></a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/docs/">Docker</a></li>
+  <li class="breadcrumb-item">
+    <a href="/docs/05_ejercicios/">Ejercicios</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    Contenedores</li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Crea Contenedores</h1>
+  
+	<header class="article-meta">
+		
+</header>
+	<h2 id="__crear-y-usar-contenedores__"><strong>Crear y usar contenedores</strong></h2>
+<ul>
+<li>Comandos a usar</li>
+</ul>
+<blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker create
+</span></span><span style="display:flex;"><span>docker start
+</span></span><span style="display:flex;"><span>docker <span style="color:#658b00">exec</span>
+</span></span><span style="display:flex;"><span>docker run 
+</span></span><span style="display:flex;"><span>docker run --name
+</span></span><span style="display:flex;"><span>docker run --name xxx --hostname xxx -p xxxx:xx v xx:xxx nombre_imagen
+</span></span></code></pre></div></blockquote>
+<h2 id="__crea-lista-y-borra-contenedores__"><strong>Crea, lista y borra contenedores</strong></h2>
+<ul>
+<li>Comandos a usar</li>
+</ul>
+<blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>docker create
+</span></span><span style="display:flex;"><span>docker start
+</span></span><span style="display:flex;"><span>docker <span style="color:#658b00">exec</span> 
+</span></span><span style="display:flex;"><span>&gt; docker ps -a
+</span></span><span style="display:flex;"><span>docker rm nombre_contenedor
+</span></span><span style="display:flex;"><span>docker rm (docker ps -a- q)
+</span></span></code></pre></div></blockquote>
+<p><em>Si estás en linux o en mac</em></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker rm <span style="color:#8b008b;font-weight:bold">$(</span>docker ps -a -q<span style="color:#8b008b;font-weight:bold">)</span>
+</span></span></code></pre></div><h4 id="__1-crea-5-contenedor-a-partir-de-la-imagen-hahahugoshortcode172s0hbhb-sin-especificar-nombre__"><strong>1. Crea 5 contenedor a partir de la imagen 
+<strong>
+<span class="font-weight-bold text-text-success">
+
+    ubuntu:latest
+
+
+</span>
+</strong>
+ sin especificar nombre</strong></h4>
+
+
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker create ubuntu:latest docker create ubuntu:latest docker create ubuntu:latest docker create ubuntu:latest docker create ubuntu:latest" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+<h4 id="__2-verifica-que-los-has-creado__"><strong>2. Verifica que los has creado</strong></h4>
+
+
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker ps -a" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Revisa con cuidado</h4>
+
+    <h4 id="mag-reflexiona">&#x1f50d; Reflexiona</h4>
+<ul>
+<li>Observa que te tienen que salir en estado <strong>created</strong></li>
+</ul>
+<blockquote>
+<p>Has de intentar enteder qué implica este estado y ver que en este contenedor <strong>no puedo ejecutar</strong> nada hasta que no
+esté en estado <strong>Up</strong></p>
+</blockquote>
+<ul>
+<li>Observa igualmente el nombre que el sistema le a asignado al contenedor</li>
+</ul>
+
+</div>
+
+<h4 id="__3-verifica-que-los-has-creado__"><strong>3. Verifica que los has creado</strong></h4>
+<p>
+
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker ps -a" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Revisa con cuidado</h4>
+
+    <h6 id="mag-reflexiona">&#x1f50d; Reflexiona</h6>
+<ul>
+<li>Observa que si solo escribes <strong>docker ps</strong> no sale nada</li>
+<li>Esto es porque docker ps solo muestar los contenedores que están en estado <strong>Up</strong></li>
+</ul>
+
+
+</div>
+</p>
+<h4 id="__4-borra-todos-los-contenedores-y-verificalo__"><strong>4. Borra todos los contenedores y verificalo</strong></h4>
+
+
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker rm (docker ps -a -q) docker ps -a" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+<hr>
+<h4 id="__5-crea-un-contenedor-llamado-hahahugoshortcode172s7hbhb-a-partir-de-la-imagen-hahahugoshortcode172s8hbhb__"><strong>5. Crea un contenedor llamado 
+<strong>
+<span class="font-weight-bold text-text-success">
+
+    web
+
+
+</span>
+</strong>
+ a partir de la imagen 
+<strong>
+<span class="font-weight-bold text-text-success">
+
+    ubuntu:latest
+
+
+</span>
+</strong>
+</strong></h4>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">parámetros</h4>
+
+    <h4 id="woman_detective-revisa-los-parámetros">:woman_detective: revisa los parámetros</h4>
+<ul>
+<li>Puedes ver los parámetros de un comando con <strong>docker help comando</strong></li>
+<li>seguimos usando el comando <strong>create</strong> para crear contenedores</li>
+</ul>
+
+
+</div>
+
+<blockquote>
+
+ 
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker create --name web ubuntu:latest" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__6-arranca-el-contenedor__"><strong>6. Arranca el contenedor</strong></h4>
+<blockquote>
+
+ 
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker start web" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__7-observa-su-estado__"><strong>7. Observa su estado</strong></h4>
+<blockquote>
+<p>
+ 
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker ps -a" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">parámetros</h4>
+
+    <h4 id="mag-estados-del-contenedor">&#x1f50d; estados del contenedor</h4>
+<ul>
+<li>Entender los estados del contenedor al principio cuesta</li>
+<li>Un contenedor, cuando lo arrancamos ejectua el servicio o programa que tenga asignado <strong>estado Up</strong> y luego se detiene
+<strong>estado Exited</strong></li>
+<li>Al revisar este ejercicio verás que el contenedor pasa directamente a estado Exited, y es porque el contenedor al
+estar creado a partir de la imagen ubuntu:latest sí que tiene asociado un commando (revisa la columna <strong>COMMAND</strong>)</li>
+<li>Pero como no tiene ningún terminal asociado para interactuar con él, no hace nada y muere</li>
+</ul>
+
+
+</div>
+</p>
+</blockquote>
+<h4 id="__8-borra-todos-los-contenedores__"><strong>8. Borra todos los contenedores</strong></h4>
+<blockquote>
+
+  
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker rm (docker ps -a -q)" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__9-crea-un-contenedor-llamado-web-que-permita-ejecutar-comandos-en-un-terminal-de-forma-interactiva-a-partir-de-la-imagen-ubuntu_latest__"><strong>9. Crea un contenedor llamado web que permita ejecutar comandos en un terminal de forma interactiva a partir de la imagen ubuntu_latest</strong></h4>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Usa Help</h4>
+
+    <h4 id="woman_detective-revisa-los-parámetros">:woman_detective: revisa los parámetros</h4>
+<ul>
+<li>Puedes ver los parámetros de un comando con <strong>docker help comando</strong></li>
+<li>En este caso <strong>docker help create</strong></li>
+<li>En este caso lo podemos asociar con el comando <strong>-t</strong> para terminal y <strong>-i</strong> para ineteractive</li>
+</ul>
+
+
+</div>
+
+<blockquote>
+
+ 
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker create -t -i --name web ubuntu:latest" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__10-arranca-el-contenedor__"><strong>10. Arranca el contenedor</strong></h4>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Parámetros</h4>
+
+    <h4 id="woman_detective-revisa-los-parámetros">:woman_detective: revisa los parámetros</h4>
+<ul>
+<li>Para arrancar <strong>docker start</strong></li>
+</ul>
+
+
+</div>
+
+<blockquote>
+
+ 
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker start web" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__11-ejecuta-de-forma-interactiva--i-en-un-terminal--t-un-comado-bash__"><strong>11. Ejecuta de forma interactiva (-i) en un terminal (-t) un comado bash</strong></h4>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Parámetros</h4>
+
+    <h4 id="woman_detective-revisa-los-parámetros">:woman_detective: revisa los parámetros</h4>
+<ul>
+<li>Revisa el comando <strong>docker exec</strong></li>
+<li>Los parámetros -i y -t</li>
+<li>el orden es primero especificar el contenedor y luego el comando</li>
+<li>bash es un programa que sirve para interpretar comandos, como cuando abrimos un shell en windows</li>
+</ul>
+
+
+</div>
+
+<blockquote>
+
+ 
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker exec -i -t web bash " />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__12-para-el-contenedor__"><strong>12. Para el contenedor</strong></h4>
+<blockquote>
+
+ 
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker stop web" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__13-revisa-su-estado__"><strong>13. Revisa su estado</strong></h4>
+<blockquote>
+
+ 
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker ps -a" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__14-borra-todos-los-contenedores__"><strong>14. Borra todos los contenedores</strong></h4>
+<blockquote>
+
+ 
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker rm (docker ps -a -q) " />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__15-crea-un-contenedor-llamado-hahahugoshortcode172s24hbhb-que-se-quede-arrancado-a-partir-de-la-imagen-hahahugoshortcode172s25hbhb__"><strong>15. Crea un contenedor llamado 
+<strong>
+<span class="font-weight-bold text-text-success">
+
+    web
+
+
+</span>
+</strong>
+ que se quede arrancado a partir de la imagen 
+<strong>
+<span class="font-weight-bold text-text-success">
+
+    ubuntu_latest
+
+
+</span>
+</strong>
+</strong></h4>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Los estados del contenedor</h4>
+
+    <h4 id="male_detective">&#x1f575;&#xfe0f;&zwj;&#x2642;&#xfe0f;</h4>
+<ul>
+<li>Si queremos dejar el contenedor en estado <strong>Up</strong> debemos usar el comando <strong>docker run</strong></li>
+<li>No es necesario, pero mejor especifica el comando al final (bash)</li>
+<li>Aunque el orden de los parámetros no es importante, la solución tiene uno concreto, pero eso podría cambiar</li>
+</ul>
+
+
+</div>
+
+<blockquote>
+
+
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker run --name web -t -i ubuntu:latest bash" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__16-instala-apache2-y--php-en-el-contendor-web__"><strong>16. Instala apache2 y  php en el contendor web</strong></h4>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">instando:  apt update</h4>
+
+    <h4 id="books">&#x1f4da;</h4>
+<ul>
+<li>Una vez dentro lo primero que hay que hacer es <strong>apt update</strong></li>
+<li>se pueden instalar todos los paquetes a la vez</li>
+<li>con <strong>-y</strong> no nos preguntará si queremos instalarlo</li>
+<li>php implica dos paquetes <strong>php</strong>, el intérprete, y el módulo que viene con apache para que apache sepa que un determinado recurso que tiene extensión php, tiene que llamar al intérprete para que lo ejectue, este es el paquete <strong>libapache2-mod-php</strong></li>
+</ul>
+
+
+</div>
+
+<blockquote>
+
+ 
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "apt update apt install -y apache2 php libapache2-mod-php" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__17-arranca-el-servicio-de-apache__"><strong>17. Arranca el servicio de apache</strong></h4>
+<p>
+
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "service apache start" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">parando y arrancando</h4>
+
+    &#x25b6;&#xfe0f; &#x1f6d1;
+*Prueba a pararlo (<strong>stop</strong>), a ver su estado (<strong>status</strong>)  y volverlo a arrancar (<strong>start</strong>|<strong>restart</strong>)
+
+</div>
+</p>
+<h4 id="__18-borra-el-contendor-web__"><strong>18. Borra el contendor web</strong></h4>
+<p>
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Warning</h4>
+
+    &#x1f4a1;
+Antes de elimniar el contenedor tiene que estar parado
+
+</div>
+
+
+
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker stop web docker rm web" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+</p>
+<h4 id="__19-crea-igual-que-antes-el-contenedor-web-pero-mapeando-el-puerto-hahahugoshortcode172s34hbhb__"><strong>19. Crea igual que antes el contenedor web, pero mapeando el puerto 
+<strong>
+<span class="font-weight-bold text-text-success">
+
+    8000:80
+
+
+</span>
+</strong>
+</strong></h4>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Recuerda</h4>
+
+    <h6 id="warning-muy-importante">&#x26a0;&#xfe0f; Muy importante</h6>
+<p>Es muy importante que entiendas el concepto</p>
+
+</div>
+
+<blockquote>
+
+
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "docker run --name web -t -i -p 8000:80 ubuntu:latest bash" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        
+    
+</form>
+
+
+
+
+</blockquote>
+<h4 id="__20-instala-apache2-y--php-en-el-contendor-web__"><strong>20. Instala apache2 y  php en el contendor web</strong></h4>
+<blockquote>
+
+> 
+
+
+<form action="procesar.php" method="POST">
+
+    <textarea id="texto" name="respuesta" rows="4" cols="50">
+    </textarea>
+    <input type='hidden' name='solucion' value= "apt update apt install -y apache2 php libapache2-mod-php" />
+    <br>
+    <input type="submit" value="Evaluar" name="ejercicio">
+    
+        <blockquote>
+</blockquote>
+
+    
+</form>
+
+
+
+
+</blockquote>
+
+  <div class="section-index">
+    
+    
+    </div>
+</div>
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2024
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/js/tabpane-persist.js'></script>
+
+  </body>
+</html>
