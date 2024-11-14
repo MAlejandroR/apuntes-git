@@ -1,5 +1,5 @@
 #baseURL = 'http://proyectosdwa.es/manuel'
-baseURL = 'http://web.infenlaces.com/docker/'
+baseURL = 'http://web.infenlaces.com/despliegue/docker/'
 #baseURL = 'http://localhost:1313'
 
 languageCode = 'es-es'
