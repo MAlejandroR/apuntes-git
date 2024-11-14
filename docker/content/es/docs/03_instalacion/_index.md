@@ -1,85 +1,122 @@
 ---
-title: "Contenedores e imágenes"
-linkTitle: "Contenedores e imágenes"
-weight: 20
-icon: "fa-regular fa-box"
-draft: false    
+title: "Instalación"
+linkTitle: "Instalación"
+weight: 30
+icon: "fa fa-download"
+draft: false
 ---
 
-## Contenedores e imágnes
-{{< imgproc Contenedor_vs_img  Fill "600x350" >}}
+{{< objetivos  >}}
+Instalar docker en ubuntu
+Instalar docker en windows
+Instalar docker con vagrant
+{{< /objetivos >}}
 
+### Referencias para instalar ubuntu
+{{<referencias title="Instalar Docker" sub_title="Páginas oficiales" icon="fab fa-docker">}}
+Instalar docker: Se ha de ir a la referencia de <strong>la página oficial de docker</strong> (https://docs.docker.com/install)
+Instalar docker en <strong>ubuntu</strong>   (https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+Instalar docker en <strong>windows</strong> (https://docs.docker.com/docker-for-windows/install/)
+Instalar docker en <strong>mac</strong> (https://docs.docker.com/desktop/install/mac-install)
+{{</referencias>}}
 
+### Proceso de instalación en Ubuntu
 
-{{< /imgproc >}}
-### La imagen
-{{<definicion title="la imagen">}}
-{{< color_blue >}}La imagen{{</color_blue>}} es un archivo que contiene todas las librerías, dependencias y configuraciones necesarias para ejecutar un entorno aislado con sus propios servicios y procesos. Sirve como base para crear uno o varios contenedores, los cuales obtendrán configuraciones de red y direcciones IP independientes al momento de su creación.
+1. {{< color >}} Paquetes necesarios durante la instalación {{< /color >}}: usaremos certificados {{< color >}} (ca-certificates) {{< /color >}}. Descargamos con {{< color >}} curl {{< /color >}}, usaremos claves públicas y privadas {{< color >}} (gnupg-agent) {{< /color >}} y conoceremos la versión de nuestro sistema {{< color >}} (lsb-release) {{< /color >}}, lo que nos permitirá hacer una instalación genérica.
 
-{{</definicion>}}
+{{< highlight bash "linenos=table, hl_lines=1" >}}
+sudo apt-get install ca-certificates curl gnupg-agent lsb-release
+{{< /highlight >}}
 
-{{%line%}}
- 
-{{< imgproc Imagen Fill "611x812" >}}
+2. {{< color >}} Añadimos la clave GPG oficial de Docker {{< /color >}}
 
-{{< /imgproc >}}
+{{< highlight bash "linenos=table, hl_lines=1 2" >}}
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \
+sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+{{< /highlight >}}
 
-{{< alert title="Notas" color="primary" >}}
-No se emula hardware, sino únicamente servicios y software (como el sistema de archivos, el sistema operativo y los servicios). Por lo tanto, un contenedor no es una máquina virtual, aunque tenga su propia IP. Sin embargo, puede considerarse como un dispositivo o nodo independiente dentro de la red.
-{{< /alert >}}
+3. Añadimos el repositorio {{< color >}} stable {{< /color >}} (Proporciona últimas versiones). Otras opciones (modificar stable por la opción deseada):
 
-### El contenedor
+	- {{< color >}} test {{< /color >}}: Versiones listas para probar.
+	- {{< color >}} nightly {{< /color >}}: Actualizaciones de la próxima versión.
 
-> El contenedor es una capa de lectura y escritura que se añade a una imagen, permitiendo interactuar con ella y ponerla en ejecución.
-{{< imgproc container Fill "800x600" >}}
-Imagen obtenida de https://iesgn.github.io/curso_docker_2021/sesion2/organizacion.html
-{{< /imgproc >}}
-{{< alert title="Notas" color="primary" >}} El contenedor se crea a partir de una imagen y siempre dependerá de ella. Esto significa que no podremos eliminar la imagen mientras exista un contenedor asociado a ella. {{< /alert >}}
+{{< highlight bash "linenos=table, hl_lines=1-5" >}}
+echo \
+"deb [arch=$(dpkg --print-architecture) \
+signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] \
+https://download.docker.com/linux/ubuntu \
+$(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+{{< /highlight >}}
 
-{{< alert title="Notas" color="primary" >}} El contenedor almacena los cambios realizados sobre la imagen, funcionando como pequeños incrementos sobre un archivo base. Este enfoque lo convierte en un sistema muy robusto, ágil y ligero. {{< /alert >}}
+4. {{< color >}} Actualizamos el índice de los paquetes apt e instalamos Docker {{< /color >}}: el cliente de Docker ***docker-ce-cli***, el demonio de Docker ***docker-ce*** y el runtime de contenedores que gestiona su ejecución ***containerd.io***. La construcción y administración de contenedores e imágenes la gestiona el demonio docker-ce.
 
-### Contenedor e imagen
-{{% pageinfo%}}
-#### 
-**La unión hace la fuerza**   
+{{< highlight bash "linenos=table" >}}
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+{{< /highlight >}}
 
-El funcionamiento de Docker se basa en crear un contenedor a partir de una imagen, por lo que los conceptos de imagen y contenedor están intrínsecamente relacionados (no se pueden usar de manera individual).
+5. {{< color >}} Agregamos el usuario actual al grupo de Docker {{< /color >}} (para poder usar Docker sin sudo), de lo contrario, no podremos hacerlo:
 
-{{< alert title="Nota" color="primary" >}} 
-Todo contenedor siempre dependerá de una única imagen. {{< /alert >}}
+{{< highlight bash "linenos=table, hl_lines=1" >}}
+sudo usermod -aG docker $USER
+{{< /highlight >}}
 
-{{< alert title="Nota" color="primary" >}}
-Una imagen puede ser la base de uno o muchos contenedores. 
-Cada contenedor es un sistema independiente de los demás, con su propia IP y un entorno completamente aislado. {{< /alert >}}
+6. {{< color >}} Cambiamos al grupo {{< /color >}} de Docker en la sesión actual. Nota: para que el cambio aplique a otras sesiones, será necesario cerrar sesión o reiniciar.
 
-{{< imgproc join_img_container Fill "800x200" >}}
+{{< highlight bash "linenos=table, hl_lines=1" >}}
+newgrp docker
+{{< /highlight >}}
 
-{{< /imgproc >}}
+7. {{< color >}} Probamos la instalación {{< /color >}} listando los comandos disponibles de Docker:
 
-{{% /pageinfo%}}
+{{< highlight bash "linenos=table, hl_lines=1" >}}
+docker help
+{{< /highlight >}}
 
-### Compentes de la arqutectura docker
-{{< imgproc arquitectura_docker Fill "1359x901" >}}
+### Instalación de Docker en Windows
 
-{{< /imgproc >}}
-Descripcion de la imagen
-<h3>{{< color >}} Cliente de Docker: {{< /color >}}</h3>
+1. {{< color >}} Descargar Docker Desktop Installer {{< /color >}}: Para instalar Docker en Windows, descarga el fichero **Docker Desktop Installer.exe** y ejecútalo. También puedes usar el siguiente comando en la línea de comandos:
 
->* {{< color >}}Docker CLI{{< /color >}} permite ejecutar comandos para interactuar con Docker, 
->*  {{< color >}}Docker Compose{{< /color >}}** se utiliza para definir y manejar aplicaciones de múltiples contenedores.      
->* {{< color >}}Docker Engine{{< /color >}} Envía comandos  al motor de Docker para su ejecución.
+   {{< highlight bash "linenos=table, hl_lines=1" >}}
+   Start-Process '.\Docker Desktop Installer.exe' install
+   {{< /highlight >}}
 
-<h3>{{< color >}}Docker Engine:{{< /color >}}</h3>
+   Docker no se instala directamente sobre Windows. Necesita una capa de virtualización ya que Docker corre sobre Linux.
 
-> Compuesta por {{< color >}}Docker Engine API{{< /color >}} y{{< color >}}Docker daemon{{< /color >}},los cuales  son componentes fundamentales del motor de Docker.
->*{{< color >}}Docker Engine API{{< /color >}} es la interfaz de comunicación entre el cliente y el motor.
->*{{< color >}}Docker daemon{{< /color >}}gestiona los contenedores y las imágenes.
->>Podemos ver en la imagen,  áreas para {{< color >}}imágenes{{< /color >}} y {{< color >}}contenedores{{< /color >}}, donde queda explícito que   Docker Engine se encarga de manejar tanto las imágenes como la ejecución de los contenedores.
->>* {{< color >}}Container Runtime{{< /color >}} es el entorno en el que los contenedores se ejecutan.
+2. {{< color >}} Opciones de virtualización {{< /color >}}: Durante la instalación, elige entre **Hyper-V** o **WSL**.
+	- Si dockerizarás sistemas Windows, usa **Hyper-V**.
+	- Para otros casos, se recomienda **WSL** por eficiencia. Ésta debe de ser la opción seleccionada en nuestro caso.
 
+   [Más información en la documentación oficial de Docker](https://docs.docker.com/docker-for-windows/install/).
 
-<h3> {{< color >}} Docker Registry: {{< /color >}}</h3>
+---
 
-> {{< color >}}Docker Register API{{< /color >}}** y {{< color >}}Repositorio de imágenes{{< /color >}}, que podemos considerar componentes esperados en esta sección.
->* {{< color >}}Docker Registry{{< /color >}}** es el servicio para almacenar y distribuir imágenes de contenedores, siendo {{< color >}} Docker Hub {{< /color >}} es un ejemplo de un registro público.
->* {{< color >}}Repositorio de imágenes {{< /color >}} muestra en su relación con {{< color >}} Docker Engine {{< /color >}} quien puede extraer y subir imágenes  este repositorio 
+#### Arrancar el Servicio
+
+1. {{< color >}} Activar Docker Desktop {{< /color >}}: Tras la instalación, Windows no activa Docker automáticamente. Debes hacerlo manualmente:
+	- Busca la aplicación Docker Desktop y ejecútala.
+	- La primera vez, Docker te informará sobre el uso gratuito para pequeñas empresas.
+    - Una vez abierta puedes configurarla para que se arranque automáticamente cada vez que arranque el sistema
+
+---
+
+### Crear contenedores de Windows
+
+1. {{< color >}} Configuración para contenedores de Windows {{< /color >}}: Para crear contenedores de Windows, necesitas activarlos en el demonio.
+	- Ve al servicio Docker y abre el menú contextual.
+	- Selecciona la opción **switch to Windows containers…**.
+
+   > En este curso, no configuraremos contenedores de Windows.
+
+---
+
+### Interfaz Gráfica en Windows
+
+1. {{< color >}} Uso de la interfaz gráfica {{< /color >}}: Docker Desktop en Windows proporciona una interfaz gráfica para gestionar contenedores, imágenes y configuraciones de manera visual.
+2. En cualquier caso, recomendamos que abras un power shell en windows y realices las acciones en el terminal.
+
+---
+
+### Configuración de Docker Desktop
+
+1. {{< color >}} Personalización de Docker Desktop {{< /color >}}: Docker Desktop permite ajustar configuraciones avanzadas para personalizar el rendimiento y los recursos asignados.

@@ -2,7 +2,7 @@
 title: "Introducción"
 linkTitle: "Docker"
 weight: 10
-icon: fas fa-docker
+icon: fab fa-docker
 ---
 
 

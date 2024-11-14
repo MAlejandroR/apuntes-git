@@ -1,42 +1,42 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head>
+  <head><script src="/despliegue/docker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=despliegue/docker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="alternate" type="application/rss&#43;xml" href="http://web.infenlaces.com/docker/docs/03_instalacion/index.xml">
-<meta name="robots" content="index, follow">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/despliegue/docker/docs/03_instalacion/index.xml">
+<meta name="robots" content="noindex, nofollow">
 
 
-<link rel="shortcut icon" href="/docker/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/docker/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/docker/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/docker/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/docker/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/docker/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/docker/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/docker/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/docker/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/docker/favicons/android-192x192.png" sizes="192x192">
+<link rel="shortcut icon" href="/despliegue/docker/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/despliegue/docker/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-192x192.png" sizes="192x192">
 
-<title>Contenedores e imágenes | Despliegue de aplicacones Web</title>
+<title>Instalación | Despliegue de aplicacones Web</title>
 <meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
 
-<meta property="og:url" content="http://web.infenlaces.com/docker/docs/03_instalacion/">
+<meta property="og:url" content="http://localhost:1313/despliegue/docker/docs/03_instalacion/">
   <meta property="og:site_name" content="Despliegue de aplicacones Web">
-  <meta property="og:title" content="Contenedores e imágenes">
-  <meta property="og:description" content="Contenedores e imágnes La imagen la imagen La imagen es un archivo que contiene todas las librerías, dependencias y configuraciones necesarias para ejecutar un entorno aislado con sus propios servicios y procesos. Sirve como base para crear uno o varios contenedores, los cuales obtendrán configuraciones de red y direcciones IP independientes al momento de su creación.">
+  <meta property="og:title" content="Instalación">
+  <meta property="og:description" content="Objetivos Qué veremos aquí Instalar docker en ubuntu Instalar docker en windows Instalar docker con vagrant Referencias para instalar ubuntu Instalar Docker Páginas oficiales Instalar docker: Se ha de ir a la referencia de la página oficial de docker (https://docs.docker.com/install) Instalar docker en ubuntu (https://docs.docker.com/install/linux/docker-ce/ubuntu/) Instalar docker en windows (https://docs.docker.com/docker-for-windows/install/) Instalar docker en mac (https://docs.docker.com/desktop/install/mac-install) Proceso de instalación en Ubuntu Paquetes necesarios durante la instalación : usaremos certificados (ca-certificates) . Descargamos con curl , usaremos claves públicas y privadas (gnupg-agent) y conoceremos la versión de nuestro sistema (lsb-release) , lo que nos permitirá hacer una instalación genérica. 1 sudo apt-get install ca-certificates curl gnupg-agent lsb-release Añadimos la clave GPG oficial de Docker 1 2 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \ sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg Añadimos el repositorio stable (Proporciona últimas versiones). Otras opciones (modificar stable por la opción deseada):">
   <meta property="og:locale" content="es">
   <meta property="og:type" content="website">
 
-  <meta itemprop="name" content="Contenedores e imágenes">
-  <meta itemprop="description" content="Contenedores e imágnes La imagen la imagen La imagen es un archivo que contiene todas las librerías, dependencias y configuraciones necesarias para ejecutar un entorno aislado con sus propios servicios y procesos. Sirve como base para crear uno o varios contenedores, los cuales obtendrán configuraciones de red y direcciones IP independientes al momento de su creación.">
-  <meta itemprop="wordCount" content="466">
+  <meta itemprop="name" content="Instalación">
+  <meta itemprop="description" content="Objetivos Qué veremos aquí Instalar docker en ubuntu Instalar docker en windows Instalar docker con vagrant Referencias para instalar ubuntu Instalar Docker Páginas oficiales Instalar docker: Se ha de ir a la referencia de la página oficial de docker (https://docs.docker.com/install) Instalar docker en ubuntu (https://docs.docker.com/install/linux/docker-ce/ubuntu/) Instalar docker en windows (https://docs.docker.com/docker-for-windows/install/) Instalar docker en mac (https://docs.docker.com/desktop/install/mac-install) Proceso de instalación en Ubuntu Paquetes necesarios durante la instalación : usaremos certificados (ca-certificates) . Descargamos con curl , usaremos claves públicas y privadas (gnupg-agent) y conoceremos la versión de nuestro sistema (lsb-release) , lo que nos permitirá hacer una instalación genérica. 1 sudo apt-get install ca-certificates curl gnupg-agent lsb-release Añadimos la clave GPG oficial de Docker 1 2 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \ sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg Añadimos el repositorio stable (Proporciona últimas versiones). Otras opciones (modificar stable por la opción deseada):">
+  <meta itemprop="wordCount" content="564">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Contenedores e imágenes">
-  <meta name="twitter:description" content="Contenedores e imágnes La imagen la imagen La imagen es un archivo que contiene todas las librerías, dependencias y configuraciones necesarias para ejecutar un entorno aislado con sus propios servicios y procesos. Sirve como base para crear uno o varios contenedores, los cuales obtendrán configuraciones de red y direcciones IP independientes al momento de su creación.">
+  <meta name="twitter:title" content="Instalación">
+  <meta name="twitter:description" content="Objetivos Qué veremos aquí Instalar docker en ubuntu Instalar docker en windows Instalar docker con vagrant Referencias para instalar ubuntu Instalar Docker Páginas oficiales Instalar docker: Se ha de ir a la referencia de la página oficial de docker (https://docs.docker.com/install) Instalar docker en ubuntu (https://docs.docker.com/install/linux/docker-ce/ubuntu/) Instalar docker en windows (https://docs.docker.com/docker-for-windows/install/) Instalar docker en mac (https://docs.docker.com/desktop/install/mac-install) Proceso de instalación en Ubuntu Paquetes necesarios durante la instalación : usaremos certificados (ca-certificates) . Descargamos con curl , usaremos claves públicas y privadas (gnupg-agent) y conoceremos la versión de nuestro sistema (lsb-release) , lo que nos permitirá hacer una instalación genérica. 1 sudo apt-get install ca-certificates curl gnupg-agent lsb-release Añadimos la clave GPG oficial de Docker 1 2 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \ sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg Añadimos el repositorio stable (Proporciona últimas versiones). Otras opciones (modificar stable por la opción deseada):">
 
 
-<link rel="preload" href="/docker/scss/main.min.63975f114ff794292780fdd5a24550d3a960614785032fcf30d0e9e8f298e400.css" as="style"><link href="/docker/scss/main.min.63975f114ff794292780fdd5a24550d3a960614785032fcf30d0e9e8f298e400.css" rel="stylesheet">
+<link href="/despliegue/docker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -47,8 +47,8 @@
     <header>
       <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
 <div class="container-fluid flex-column flex-md-row ">
-  <a class="navbar-brand" href="/docker/"><span class="navbar-brand__logo navbar-logo">
-    <img src="/docker/images/logo.png" alt="Logo" width="150" height="auto" />
+  <a class="navbar-brand" href="/despliegue/docker/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/despliegue/docker/images/logo.png" alt="Logo" width="150" height="auto" />
     </span><span class="navbar-brand__name">Despliegue de aplicacones Web</span></a>
   <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
     <ul class="navbar-nav">
@@ -56,8 +56,8 @@
         <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/docker/en/">English</a></li>
-    <li><a class="dropdown-item" href="/docker/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/despliegue/docker/en/">English</a></li>
+    <li><a class="dropdown-item" href="/despliegue/docker/fr/">Francés</a></li>
     </ul>
 </div></li>
       </ul>
@@ -84,53 +84,30 @@
       <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/docker/en/">English</a></li>
-    <li><a class="dropdown-item" href="/docker/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/despliegue/docker/en/">English</a></li>
+    <li><a class="dropdown-item" href="/despliegue/docker/fr/">Francés</a></li>
     </ul>
 </div>
     </div>
     <ul class="td-sidebar-nav__section pe-md-3 ul-0">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-dockerdocs-li">
-  <a href="/docker/docs/" title="Introducción" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-dockerdocs"><i class="fas fa-docker"></i><span class="">Docker</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-desplieguedockerdocs-li">
+  <a href="/despliegue/docker/docs/" title="Introducción" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-desplieguedockerdocs"><i class="fab fa-docker"></i><span class="">Docker</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs01_conceptos-li">
-  <input type="checkbox" id="m-dockerdocs01_conceptos-check"/>
-  <label for="m-dockerdocs01_conceptos-check"><a href="/docker/docs/01_conceptos/" title="Conceptos sobre docker" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs01_conceptos"><i class="fa-regular fa-lightbulb"></i><span class="">Conceptos</span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-desplieguedockerdocs01_conceptos-li">
+  <input type="checkbox" id="m-desplieguedockerdocs01_conceptos-check"/>
+  <label for="m-desplieguedockerdocs01_conceptos-check"><a href="/despliegue/docker/docs/01_conceptos/" title="Conceptos sobre docker" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-desplieguedockerdocs01_conceptos"><i class="fa-regular fa-lightbulb"></i><span class="">Conceptos</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-dockerdocs03_instalacion-li">
-  <input type="checkbox" id="m-dockerdocs03_instalacion-check" checked/>
-  <label for="m-dockerdocs03_instalacion-check"><a href="/docker/docs/03_instalacion/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-dockerdocs03_instalacion"><i class="fa-regular fa-box"></i><span class="td-sidebar-nav-active-item">Contenedores e imágenes</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-desplieguedockerdocs02_contenedores-e-imc3a1genes-li">
+  <input type="checkbox" id="m-desplieguedockerdocs02_contenedores-e-imc3a1genes-check"/>
+  <label for="m-desplieguedockerdocs02_contenedores-e-imc3a1genes-check"><a href="/despliegue/docker/docs/02_contenedores-e-im%C3%A1genes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-desplieguedockerdocs02_contenedores-e-imc3a1genes"><i class="fa  fa-box"></i><span class="">Contenedores e imágenes</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs02_contenedores_imagenes-li">
-  <input type="checkbox" id="m-dockerdocs02_contenedores_imagenes-check"/>
-  <label for="m-dockerdocs02_contenedores_imagenes-check"><a href="/docker/docs/02_contenedores_imagenes/" title="Docker por comandos" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs02_contenedores_imagenes"><i class="fa-regular fa-box"></i><span class="">Docker y sus comandos</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-desplieguedockerdocs03_instalacion-li">
+  <input type="checkbox" id="m-desplieguedockerdocs03_instalacion-check" checked/>
+  <label for="m-desplieguedockerdocs03_instalacion-check"><a href="/despliegue/docker/docs/03_instalacion/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-desplieguedockerdocs03_instalacion"><i class="fa fa-download"></i><span class="td-sidebar-nav-active-item">Instalación</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs04_comandos_docker-li">
-  <input type="checkbox" id="m-dockerdocs04_comandos_docker-check"/>
-  <label for="m-dockerdocs04_comandos_docker-check"><a href="/docker/docs/04_comandos_docker/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs04_comandos_docker"><i class="fa-solid fa-terminal"></i><span class="">comandos</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dockerdocs05_ejercicios-li">
-  <input type="checkbox" id="m-dockerdocs05_ejercicios-check"/>
-  <label for="m-dockerdocs05_ejercicios-check"><a href="/docker/docs/05_ejercicios/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs05_ejercicios"><i class="fa-solid fa-list-check"></i><span class="">Ejercicios</span></a></label>
-  
-  <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs05_ejercicios1_imagenes-li">
-  <input type="checkbox" id="m-dockerdocs05_ejercicios1_imagenes-check"/>
-  <label for="m-dockerdocs05_ejercicios1_imagenes-check"><a href="/docker/docs/05_ejercicios/1_imagenes/" title="Crea imágenes" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs05_ejercicios1_imagenes"><i class="fa-regular fa-file-image"></i><span class="">Imágenes</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs05_ejercicios2_contenedores-li">
-  <input type="checkbox" id="m-dockerdocs05_ejercicios2_contenedores-check"/>
-  <label for="m-dockerdocs05_ejercicios2_contenedores-check"><a href="/docker/docs/05_ejercicios/2_contenedores/" title="Crea Contenedores" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs05_ejercicios2_contenedores"><i class="fa-solid fa-box-open"></i><span class="">Contenedores</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs05_ejercicios3_contenedores_imagenes-li">
-  <input type="checkbox" id="m-dockerdocs05_ejercicios3_contenedores_imagenes-check"/>
-  <label for="m-dockerdocs05_ejercicios3_contenedores_imagenes-check"><a href="/docker/docs/05_ejercicios/3_contenedores_imagenes/" title="Contenedores" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs05_ejercicios3_contenedores_imagenes"><i class="fa-solid fa-trowel"></i><span class="">Container to images</span></a></label>
-  
-</li>
-  </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs06_resumen_instrucciones_docker_file-li">
-  <input type="checkbox" id="m-dockerdocs06_resumen_instrucciones_docker_file-check"/>
-  <label for="m-dockerdocs06_resumen_instrucciones_docker_file-check"><a href="/docker/docs/06_resumen_instrucciones_docker_file/" title="Gestión de archivos y directorios" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs06_resumen_instrucciones_docker_file"><i class="fa-regular fa-file-code"></i><span class="">Archivos y directorios</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-desplieguedockerdocs04_comandos-li">
+  <input type="checkbox" id="m-desplieguedockerdocs04_comandos-check"/>
+  <label for="m-desplieguedockerdocs04_comandos-check"><a href="/despliegue/docker/docs/04_comandos/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-desplieguedockerdocs04_comandos"><i class="fa-solid fa-terminal"></i><span class="">Comandos docer</span></a></label>
   
 </li>
   </ul>
@@ -148,12 +125,14 @@
             <div class="td-toc">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#contenedores-e-imágnes">Contenedores e imágnes</a>
+    <li>
       <ul>
-        <li><a href="#la-imagen">La imagen</a></li>
-        <li><a href="#el-contenedor">El contenedor</a></li>
-        <li><a href="#contenedor-e-imagen">Contenedor e imagen</a></li>
-        <li><a href="#compentes-de-la-arqutectura-docker">Compentes de la arqutectura docker</a></li>
+        <li><a href="#referencias-para-instalar-ubuntu">Referencias para instalar ubuntu</a></li>
+        <li><a href="#proceso-de-instalación-en-ubuntu">Proceso de instalación en Ubuntu</a></li>
+        <li><a href="#instalación-de-docker-en-windows">Instalación de Docker en Windows</a></li>
+        <li><a href="#crear-contenedores-de-windows">Crear contenedores de Windows</a></li>
+        <li><a href="#interfaz-gráfica-en-windows">Interfaz Gráfica en Windows</a></li>
+        <li><a href="#configuración-de-docker-desktop">Configuración de Docker Desktop</a></li>
       </ul>
     </li>
   </ul>
@@ -170,352 +149,423 @@
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
   <li class="breadcrumb-item">
-    <a href="/docker/docs/">Docker</a></li>
+    <a href="/despliegue/docker/docs/">Docker</a></li>
   <li class="breadcrumb-item active" aria-current="page">
-    Contenedores e imágenes</li>
+    Instalación</li>
   </ol>
 </nav>
             
 <div class="td-content">
-	<h1>Contenedores e imágenes</h1>
+	<h1>Instalación</h1>
   
 	<header class="article-meta">
 		
 </header>
-	<h2 id="contenedores-e-imágnes">Contenedores e imágnes</h2>
-<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
-<img class="card-img-top" src="/docker/docs/03_instalacion/Contenedor_vs_img_hu14260772193613322638.png" width="600" height="350">
-<figcaption class="card-body px-0 pt-2 pb-0">
-<p class="card-text">
+	
 
 
 
 
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-check-circle"></i> 
+            
+        </span>
+        
+        <span>Objetivos</span>
+    </div>
 
+    <h3 style="padding: 5px; font-weight:bold">Qué veremos aquí</h3>
 
-</p>
-</figcaption>
-</figure>
-
-<h3 id="la-imagen">La imagen</h3>
-<div class="definicion-concepto">
-  <div class="definicion-titulo">
+    <hr style="border-color:seagreen; border-width:3px"/>
     
-    <i class="fas fa-info-circle" aria-hidden="true"></i>
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            <li>Instalar docker en ubuntu</li>
+            
+            <li>Instalar docker en windows</li>
+            
+            <li>Instalar docker con vagrant</li>
+            
+            
+            
+        </ul>
+    </div>
     
-    <strong>la imagen</strong>
-  </div>
-  <div class="definicion-contenido">
+
+
+</div>
+
+<h3 id="referencias-para-instalar-ubuntu">Referencias para instalar ubuntu</h3>
+
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Instalar Docker</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Páginas oficiales</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
     
-
-<span class="font-weight-bold text-primary">
-
-
-    La imagen
-
-</span>
- es un archivo que contiene todas las librerías, dependencias y configuraciones necesarias para ejecutar un entorno aislado con sus propios servicios y procesos. Sirve como base para crear uno o varios contenedores, los cuales obtendrán configuraciones de red y direcciones IP independientes al momento de su creación.
-
-
-  </div>
-</div>
-<hr style="border-color: red; border-width: 3px;"/>
-<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 621px">
-<img class="card-img-top" src="/docker/docs/03_instalacion/Imagen_hu16434163412315167937.png" width="611" height="812">
-<figcaption class="card-body px-0 pt-2 pb-0">
-<p class="card-text">
-
-
-
-
-</p>
-</figcaption>
-</figure>
-
-
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Notas</h4>
-
-    No se emula hardware, sino únicamente servicios y software (como el sistema de archivos, el sistema operativo y los servicios). Por lo tanto, un contenedor no es una máquina virtual, aunque tenga su propia IP. Sin embargo, puede considerarse como un dispositivo o nodo independiente dentro de la red.
-
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            <li>Instalar docker: Se ha de ir a la referencia de <strong>la página oficial de docker</strong> (<a href="https://docs.docker.com/install">https://docs.docker.com/install</a>)</li>
+            
+            <li>Instalar docker en <strong>ubuntu</strong>   (<a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">https://docs.docker.com/install/linux/docker-ce/ubuntu/</a>)</li>
+            
+            <li>Instalar docker en <strong>windows</strong> (<a href="https://docs.docker.com/docker-for-windows/install/">https://docs.docker.com/docker-for-windows/install/</a>)</li>
+            
+            <li>Instalar docker en <strong>mac</strong> (<a href="https://docs.docker.com/desktop/install/mac-install">https://docs.docker.com/desktop/install/mac-install</a>)</li>
+            
+            
+            
+        </ul>
+    </div>
 </div>
 
-<h3 id="el-contenedor">El contenedor</h3>
-<blockquote>
-<p>El contenedor es una capa de lectura y escritura que se añade a una imagen, permitiendo interactuar con ella y ponerla en ejecución.
-<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
-<img class="card-img-top" src="/docker/docs/03_instalacion/container_hu5364377010260540432.jpg" width="800" height="600">
-<figcaption class="card-body px-0 pt-2 pb-0">
-<p class="card-text">
-
-
-Imagen obtenida de https://iesgn.github.io/curso_docker_2021/sesion2/organizacion.html
-
-</p>
-</figcaption>
-</figure>
-
-
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Notas</h4>
-
-    El contenedor se crea a partir de una imagen y siempre dependerá de ella. Esto significa que no podremos eliminar la imagen mientras exista un contenedor asociado a ella.
-
-</div>
-</p>
-</blockquote>
-
-
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Notas</h4>
-
-    El contenedor almacena los cambios realizados sobre la imagen, funcionando como pequeños incrementos sobre un archivo base. Este enfoque lo convierte en un sistema muy robusto, ágil y ligero.
-
-</div>
-
-<h3 id="contenedor-e-imagen">Contenedor e imagen</h3>
-
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="heading"></h4>
-<p><strong>La unión hace la fuerza</strong></p>
-<p>El funcionamiento de Docker se basa en crear un contenedor a partir de una imagen, por lo que los conceptos de imagen y contenedor están intrínsecamente relacionados (no se pueden usar de manera individual).</p>
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Nota</h4>
-<pre><code>Todo contenedor siempre dependerá de una única imagen.
-</code></pre>
-</div>
-<div class="alert alert-primary" role="alert">
-<h4 class="alert-heading">Nota</h4>
-<pre><code>Una imagen puede ser la base de uno o muchos contenedores.
-</code></pre>
-<p>Cada contenedor es un sistema independiente de los demás, con su propia IP y un entorno completamente aislado.</p>
-</div>
-<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
-<img class="card-img-top" src="/docker/docs/03_instalacion/join_img_container_hu17901011678537150505.png" width="800" height="200">
-<figcaption class="card-body px-0 pt-2 pb-0">
-<p class="card-text">
-</p>
-</figcaption>
-</figure>
-
-</div>
-
-<h3 id="compentes-de-la-arqutectura-docker">Compentes de la arqutectura docker</h3>
-<p><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1369px">
-<img class="card-img-top" src="/docker/docs/03_instalacion/arquitectura_docker_hu10097844928879679189.png" width="1359" height="901">
-<figcaption class="card-body px-0 pt-2 pb-0">
-<p class="card-text">
-
-
-
-
-</p>
-</figcaption>
-</figure>
-
-Descripcion de la imagen</p>
-<h3>
+<h3 id="proceso-de-instalación-en-ubuntu">Proceso de instalación en Ubuntu</h3>
+<ol>
+<li>
 <strong>
 <span class="font-weight-bold text-primary">
 
-    Cliente de Docker:
+    Paquetes necesarios durante la instalación
 
 
 </span>
 </strong>
-</h3>
-<blockquote>
+: usaremos certificados 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    (ca-certificates)
+
+
+</span>
+</strong>
+. Descargamos con 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    curl
+
+
+</span>
+</strong>
+, usaremos claves públicas y privadas 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    (gnupg-agent)
+
+
+</span>
+</strong>
+ y conoceremos la versión de nuestro sistema 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    (lsb-release)
+
+
+</span>
+</strong>
+, lo que nos permitirá hacer una instalación genérica.</li>
+</ol>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>sudo apt-get install ca-certificates curl gnupg-agent lsb-release</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ol start="2">
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Añadimos la clave GPG oficial de Docker
+
+
+</span>
+</strong>
+</li>
+</ol>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>curl -fsSL https://download.docker.com/linux/ubuntu/gpg | <span style="color:#cd5555">\
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#cd5555"></span>sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ol start="3">
+<li>
+<p>Añadimos el repositorio 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    stable
+
+
+</span>
+</strong>
+ (Proporciona últimas versiones). Otras opciones (modificar stable por la opción deseada):</p>
 <ul>
 <li>
 <strong>
 <span class="font-weight-bold text-primary">
 
-    Docker CLI
+    test
 
 
 </span>
 </strong>
- permite ejecutar comandos para interactuar con Docker,</li>
+: Versiones listas para probar.</li>
 <li>
 <strong>
 <span class="font-weight-bold text-primary">
 
-    Docker Compose
+    nightly
 
 
 </span>
 </strong>
-** se utiliza para definir y manejar aplicaciones de múltiples contenedores.</li>
-<li>
-<strong>
-<span class="font-weight-bold text-primary">
-
-    Docker Engine
-
-
-</span>
-</strong>
- Envía comandos  al motor de Docker para su ejecución.</li>
+: Actualizaciones de la próxima versión.</li>
 </ul>
-</blockquote>
-<h3>
-<strong>
-<span class="font-weight-bold text-primary">
-
-    Docker Engine:
-
-
-</span>
-</strong>
-</h3>
-<blockquote>
-<p>Compuesta por 
-<strong>
-<span class="font-weight-bold text-primary">
-
-    Docker Engine API
-
-
-</span>
-</strong>
- y
-<strong>
-<span class="font-weight-bold text-primary">
-
-    Docker daemon
-
-
-</span>
-</strong>
-,los cuales  son componentes fundamentales del motor de Docker.
-*
-<strong>
-<span class="font-weight-bold text-primary">
-
-    Docker Engine API
-
-
-</span>
-</strong>
- es la interfaz de comunicación entre el cliente y el motor.
-*
-<strong>
-<span class="font-weight-bold text-primary">
-
-    Docker daemon
-
-
-</span>
-</strong>
-gestiona los contenedores y las imágenes.</p>
-<blockquote>
-<p>Podemos ver en la imagen,  áreas para 
-<strong>
-<span class="font-weight-bold text-primary">
-
-    imágenes
-
-
-</span>
-</strong>
- y 
-<strong>
-<span class="font-weight-bold text-primary">
-
-    contenedores
-
-
-</span>
-</strong>
-, donde queda explícito que   Docker Engine se encarga de manejar tanto las imágenes como la ejecución de los contenedores.</p>
-<ul>
+</li>
+</ol>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#658b00">echo</span> <span style="color:#cd5555">\
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#cd5555"></span><span style="color:#cd5555">&#34;deb [arch=</span><span style="color:#8b008b;font-weight:bold">$(</span>dpkg --print-architecture<span style="color:#8b008b;font-weight:bold">)</span><span style="color:#cd5555"> \
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#cd5555">signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] \
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#cd5555">https://download.docker.com/linux/ubuntu \
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#cd5555"></span><span style="color:#8b008b;font-weight:bold">$(</span>lsb_release -cs<span style="color:#8b008b;font-weight:bold">)</span><span style="color:#cd5555"> stable&#34;</span> | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ol start="4">
 <li>
 <strong>
 <span class="font-weight-bold text-primary">
 
-    Container Runtime
+    Actualizamos el índice de los paquetes apt e instalamos Docker
 
 
 </span>
 </strong>
- es el entorno en el que los contenedores se ejecutan.</li>
-</ul>
-</blockquote>
-</blockquote>
-<h3> 
+: el cliente de Docker <em><strong>docker-ce-cli</strong></em>, el demonio de Docker <em><strong>docker-ce</strong></em> y el runtime de contenedores que gestiona su ejecución <em><strong>containerd.io</strong></em>. La construcción y administración de contenedores e imágenes la gestiona el demonio docker-ce.</li>
+</ol>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get update
+</span></span><span style="display:flex;"><span>sudo apt-get install docker-ce docker-ce-cli containerd.io</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ol start="5">
+<li>
 <strong>
 <span class="font-weight-bold text-primary">
 
-    Docker Registry:
+    Agregamos el usuario actual al grupo de Docker
 
 
 </span>
 </strong>
-</h3>
-<blockquote>
+ (para poder usar Docker sin sudo), de lo contrario, no podremos hacerlo:</li>
+</ol>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>sudo usermod -aG docker <span style="color:#00688b">$USER</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ol start="6">
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Cambiamos al grupo
+
+
+</span>
+</strong>
+ de Docker en la sesión actual. Nota: para que el cambio aplique a otras sesiones, será necesario cerrar sesión o reiniciar.</li>
+</ol>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>newgrp docker</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ol start="7">
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Probamos la instalación
+
+
+</span>
+</strong>
+ listando los comandos disponibles de Docker:</li>
+</ol>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker help</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="instalación-de-docker-en-windows">Instalación de Docker en Windows</h3>
+<ol>
+<li>
 <p>
 <strong>
 <span class="font-weight-bold text-primary">
 
-    Docker Register API
+    Descargar Docker Desktop Installer
 
 
 </span>
 </strong>
-** y 
+: Para instalar Docker en Windows, descarga el fichero <strong>Docker Desktop Installer.exe</strong> y ejecútalo. También puedes usar el siguiente comando en la línea de comandos:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>Start-Process <span style="color:#cd5555">&#39;.\Docker Desktop Installer.exe&#39;</span> install</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Docker no se instala directamente sobre Windows. Necesita una capa de virtualización ya que Docker corre sobre Linux.</p>
+</li>
+<li>
+<p>
 <strong>
 <span class="font-weight-bold text-primary">
 
-    Repositorio de imágenes
+    Opciones de virtualización
 
 
 </span>
 </strong>
-, que podemos considerar componentes esperados en esta sección.</p>
+: Durante la instalación, elige entre <strong>Hyper-V</strong> o <strong>WSL</strong>.</p>
 <ul>
-<li>
-<strong>
-<span class="font-weight-bold text-primary">
-
-    Docker Registry
-
-
-</span>
-</strong>
-** es el servicio para almacenar y distribuir imágenes de contenedores, siendo 
-<strong>
-<span class="font-weight-bold text-primary">
-
-    Docker Hub
-
-
-</span>
-</strong>
- es un ejemplo de un registro público.</li>
-<li>
-<strong>
-<span class="font-weight-bold text-primary">
-
-    Repositorio de imágenes
-
-
-</span>
-</strong>
- muestra en su relación con 
-<strong>
-<span class="font-weight-bold text-primary">
-
-    Docker Engine
-
-
-</span>
-</strong>
- quien puede extraer y subir imágenes  este repositorio</li>
+<li>Si dockerizarás sistemas Windows, usa <strong>Hyper-V</strong>.</li>
+<li>Para otros casos, se recomienda <strong>WSL</strong> por eficiencia. Ésta debe de ser la opción seleccionada en nuestro caso.</li>
 </ul>
+<p><a href="https://docs.docker.com/docker-for-windows/install/">Más información en la documentación oficial de Docker</a>.</p>
+</li>
+</ol>
+<hr>
+<h4 id="arrancar-el-servicio">Arrancar el Servicio</h4>
+<ol>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Activar Docker Desktop
+
+
+</span>
+</strong>
+: Tras la instalación, Windows no activa Docker automáticamente. Debes hacerlo manualmente:
+<ul>
+<li>Busca la aplicación Docker Desktop y ejecútala.</li>
+<li>La primera vez, Docker te informará sobre el uso gratuito para pequeñas empresas.</li>
+<li>Una vez abierta puedes configurarla para que se arranque automáticamente cada vez que arranque el sistema</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="crear-contenedores-de-windows">Crear contenedores de Windows</h3>
+<ol>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Configuración para contenedores de Windows
+
+
+</span>
+</strong>
+: Para crear contenedores de Windows, necesitas activarlos en el demonio.</p>
+<ul>
+<li>Ve al servicio Docker y abre el menú contextual.</li>
+<li>Selecciona la opción <strong>switch to Windows containers…</strong>.</li>
+</ul>
+<blockquote>
+<p>En este curso, no configuraremos contenedores de Windows.</p>
 </blockquote>
+</li>
+</ol>
+<hr>
+<h3 id="interfaz-gráfica-en-windows">Interfaz Gráfica en Windows</h3>
+<ol>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Uso de la interfaz gráfica
+
+
+</span>
+</strong>
+: Docker Desktop en Windows proporciona una interfaz gráfica para gestionar contenedores, imágenes y configuraciones de manera visual.</li>
+<li>En cualquier caso, recomendamos que abras un power shell en windows y realices las acciones en el terminal.</li>
+</ol>
+<hr>
+<h3 id="configuración-de-docker-desktop">Configuración de Docker Desktop</h3>
+<ol>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Personalización de Docker Desktop
+
+
+</span>
+</strong>
+: Docker Desktop permite ajustar configuraciones avanzadas para personalizar el rendimiento y los recursos asignados.</li>
+</ol>
 
   <div class="section-index">
     
@@ -558,9 +608,9 @@ gestiona los contenedores y las imágenes.</p>
 </footer>
 
     </div>
-    <script src="/docker/js/main.min.939583f3113b055f5997f72fd03498635992f3351c2fa03eaa9b085da7f1290f.js" integrity="sha256-k5WD8xE7BV9Zl/cv0DSYY1mS8zUcL6A&#43;qpsIXafxKQ8=" crossorigin="anonymous"></script>
-<script defer src="/docker/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
-<script src='/docker/js/tabpane-persist.js'></script>
+    <script src="/despliegue/docker/js/main.js"></script>
+<script defer src="/despliegue/docker/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/despliegue/docker/js/tabpane-persist.js'></script>
 
   </body>
 </html>
