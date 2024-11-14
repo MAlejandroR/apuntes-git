@@ -2,89 +2,91 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/docs/01_conceptos/</loc>
+    <loc>http://web.infenlaces.com/docker/docs/01_conceptos/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/</loc>
+    <loc>http://web.infenlaces.com/docker/docs/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/04_ejercicios/1_imagenes/</loc>
+    <loc>http://web.infenlaces.com/docker/docs/05_ejercicios/1_imagenes/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/04_ejercicios/2_contenedores/</loc>
+    <loc>http://web.infenlaces.com/docker/docs/05_ejercicios/2_contenedores/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/02_contenedores_imagenes/</loc>
+    <loc>http://web.infenlaces.com/docker/docs/03_instalacion/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/03_comandos_docker/</loc>
+    <loc>http://web.infenlaces.com/docker/docs/02_contenedores_imagenes/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/04_ejercicios/3_contenedores_imagenes/</loc>
+    <loc>http://web.infenlaces.com/docker/docs/04_comandos_docker/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/04_ejercicios/</loc>
+    <loc>http://web.infenlaces.com/docker/docs/05_ejercicios/3_contenedores_imagenes/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/05_resumen_instrucciones_docker_file/</loc>
+    <loc>http://web.infenlaces.com/docker/docs/05_ejercicios/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/04_ejercicios/5_dockercompose/3_web_1/app/</loc>
+    <loc>http://web.infenlaces.com/docker/docs/06_resumen_instrucciones_docker_file/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/04_ejercicios/5_dockercompose/4_web_2/app/</loc>
+    <loc>http://web.infenlaces.com/docker/docs/05_ejercicios/5_dockercompose/3_web_1/app/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/04_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/</loc>
+    <loc>http://web.infenlaces.com/docker/docs/05_ejercicios/5_dockercompose/4_web_2/app/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/04_ejercicios/5_dockercompose/7_web_developer/app/</loc>
+    <loc>http://web.infenlaces.com/docker/docs/05_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/04_ejercicios/5_dockercompose/apache/app/</loc>
+    <loc>http://web.infenlaces.com/docker/docs/05_ejercicios/5_dockercompose/7_web_developer/app/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/04_ejercicios/5_dockercompose/docker_proyectos/</loc>
+    <loc>http://web.infenlaces.com/docker/docs/05_ejercicios/5_dockercompose/apache/app/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/04_ejercicios/5_dockercompose/nginx/app/</loc>
+    <loc>http://web.infenlaces.com/docker/docs/05_ejercicios/5_dockercompose/docker_proyectos/</loc>
   </url><url>
-    <loc>http://localhost:1313/docs/politica-de-privacidad/</loc>
+    <loc>http://web.infenlaces.com/docker/docs/05_ejercicios/5_dockercompose/nginx/app/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://web.infenlaces.com/docker/politica-de-privacidad/</loc>
+  </url><url>
+    <loc>http://web.infenlaces.com/docker/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/categories/"
+                href="http://web.infenlaces.com/docker/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/categories/"
+                href="http://web.infenlaces.com/docker/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/categories/"
+                href="http://web.infenlaces.com/docker/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://web.infenlaces.com/docker/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/"
+                href="http://web.infenlaces.com/docker/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/"
+                href="http://web.infenlaces.com/docker/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/"
+                href="http://web.infenlaces.com/docker/"
                 />
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://web.infenlaces.com/docker/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/en/tags/"
+                href="http://web.infenlaces.com/docker/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/fr/tags/"
+                href="http://web.infenlaces.com/docker/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/tags/"
+                href="http://web.infenlaces.com/docker/tags/"
                 />
   </url>
 </urlset>

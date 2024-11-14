@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conceptos sobre docker on Despliegue de aplicacones Web</title>
-    <link>http://localhost:1313/docs/01_conceptos/</link>
+    <link>http://web.infenlaces.com/docker/docs/01_conceptos/</link>
     <description>Recent content in Conceptos sobre docker on Despliegue de aplicacones Web</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <atom:link href="http://localhost:1313/docs/01_conceptos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://web.infenlaces.com/docker/docs/01_conceptos/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
