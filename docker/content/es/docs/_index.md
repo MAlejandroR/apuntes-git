@@ -14,6 +14,10 @@ Trabajar con entornos dockerizados para desarrollo
 Crear imágenes con DockerFile
 Crear servicios con docker compose
 {{< /objetivos >}}
+
+
+
+
 {{<referencias>}}
 * La mejor la oficial:
 > https://docs.docker.com/engine/

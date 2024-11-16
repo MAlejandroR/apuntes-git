@@ -139,3 +139,10 @@ algolia_docsearch = false
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+[outputs]
+home = ["HTML", "RSS", "print"]
+section = ["HTML", "RSS", "print"]
+page = ["HTML", "print"]
+taxonomy = ["HTML", "RSS"]
+term = ["HTML", "RSS"]
