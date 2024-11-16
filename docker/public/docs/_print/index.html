@@ -1,0 +1,2362 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" type="text/html" href="http://web.infenlaces.com/despliegue/docker/docs/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://web.infenlaces.com/despliegue/docker/docs/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/despliegue/docker/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/despliegue/docker/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-192x192.png" sizes="192x192">
+
+<title>Introducción | Despliegue de aplicacones Web</title>
+<meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
+
+<meta property="og:url" content="http://web.infenlaces.com/despliegue/docker/docs/">
+  <meta property="og:site_name" content="Despliegue de aplicacones Web">
+  <meta property="og:title" content="Introducción">
+  <meta property="og:description" content="Docker Objetivos de este tema Entender qué es docker Crear contenedores Crear Imágenes Trabajar con entornos dockerizados para desarrollo Crear imágenes con DockerFile Crear servicios con docker compose Referencias Fuentes de Información La mejor la oficial: https://docs.docker.com/engine/">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Introducción">
+  <meta itemprop="description" content="Docker Objetivos de este tema Entender qué es docker Crear contenedores Crear Imágenes Trabajar con entornos dockerizados para desarrollo Crear imágenes con DockerFile Crear servicios con docker compose Referencias Fuentes de Información La mejor la oficial: https://docs.docker.com/engine/">
+  <meta itemprop="wordCount" content="890">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Introducción">
+  <meta name="twitter:description" content="Docker Objetivos de este tema Entender qué es docker Crear contenedores Crear Imágenes Trabajar con entornos dockerizados para desarrollo Crear imágenes con DockerFile Crear servicios con docker compose Referencias Fuentes de Información La mejor la oficial: https://docs.docker.com/engine/">
+
+
+<link rel="preload" href="/despliegue/docker/scss/main.min.2226bb8b004a95914f9976368ab2165eeb0ad2f8876fc94fa0720f4829b62d7d.css" as="style"><link href="/despliegue/docker/scss/main.min.2226bb8b004a95914f9976368ab2165eeb0ad2f8876fc94fa0720f4829b62d7d.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/despliegue/docker/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/despliegue/docker/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Despliegue de aplicacones Web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/despliegue/docker/en/">English</a></li>
+    <li><a class="dropdown-item" href="/despliegue/docker/fr/">Francés</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+Versión imprimible multipagina.
+<a href="#" onclick="print();return false;">Haga click aquí para imprimir</a>.
+</p><p>
+<a href="/despliegue/docker/docs/">Volver a la vista normal de esta página</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Introducción</h1>
+
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1: <a href="#pg-31315b7cb4f93cac4e144a838a35f8df">Conceptos sobre docker</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>2: <a href="#pg-65d5cba354484d7f0190e833730fea79">Contenedores e imágenes</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>3: <a href="#pg-015e39fb970d2fc0fa343d9eb6f8b7ee">Instalación</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>4: <a href="#pg-81917096855a46c0b43795c6cb7186e7">Docker Prácticas</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+
+    </ul>
+
+
+<div class="content">
+      
+
+
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-check-circle"></i> 
+            
+        </span>
+        
+        <span>Docker</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight:bold">Objetivos de este tema</h3>
+
+    <hr style="border-color:seagreen; border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            <li>Entender qué es docker</li>
+            
+            <li>Crear contenedores</li>
+            
+            <li>Crear Imágenes</li>
+            
+            <li>Trabajar con entornos dockerizados para desarrollo</li>
+            
+            <li>Crear imágenes con DockerFile</li>
+            
+            <li>Crear servicios con docker compose</li>
+            
+            
+            
+        </ul>
+    </div>
+    
+
+
+</div>
+
+
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Referencias</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Fuentes de Información</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
+    
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            <li><ul>
+<li>La mejor la oficial:</li>
+</ul>
+</li>
+            
+            <li><blockquote>
+<p><a href="https://docs.docker.com/engine/">https://docs.docker.com/engine/</a></p>
+</blockquote></li>
+            
+            <li><ul>
+<li>Artículo interesante de Mauricio Collados, donde he sacado ideas para este tema</li>
+</ul>
+</li>
+            
+            <li><blockquote>
+<p><a href="https://medium.com/ingenier%C3%ADa-en-tranqui-finanzas/una-gu%C3%ADa-no-tan-r%C3%A1pida-de-docker-y-kubernetes-933f5b6709df">https://medium.com/ingenier%C3%ADa-en-tranqui-finanzas/una-gu%C3%ADa-no-tan-r%C3%A1pida-de-docker-y-kubernetes-933f5b6709df</a></p>
+</blockquote></li>
+            
+            <li><ul>
+<li>Curso gratuito de docker</li>
+</ul>
+</li>
+            
+            <li><blockquote>
+<p><a href="https://jgaitpro.com/p/introduccion-a-containers-en-docker">https://jgaitpro.com/p/introduccion-a-containers-en-docker</a></p>
+</blockquote></li>
+            
+            <li><ul>
+<li>Instalar contenedor en windows (ver minutos 6:10 - 9:21</li>
+</ul>
+</li>
+            
+            <li><blockquote>
+<p><a href="https://www.youtube.com/watch?v=9FoWrDx6n2k">https://www.youtube.com/watch?v=9FoWrDx6n2k</a></p>
+</blockquote></li>
+            
+            
+            
+            
+        </ul>
+    </div>
+</div>
+
+<p>
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Lectura recomendada</h4>
+
+    <blockquote>
+<ul>
+<li>Esta página por su puesto no es para estudiar.</li>
+<li>Trata de contextualizar docker con un poco de historia y su evolución</li>
+<li>Trata de sus orígenes,</li>
+<li><em><strong>Como técnicos/as en tecnologías, es bueno que conozcamos algo de historia de la tecnología con la que trabajamos</strong></em></li>
+</ul>
+</blockquote>
+
+
+</div>
+
+
+
+<div class="pageinfo pageinfo-primary">
+
+<strong>Resumen de un poco de historia</strong>
+
+
+
+<hr style="border-color: red; border-width: 3px;"/>
+
+El desarrollo de 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker comenzó en 2010
+
+
+</span>
+</strong>
+, impulsado por 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Solomon Hykes
+
+
+</span>
+</strong>
+, quien trabajaba como ingeniero en una empresa que más tarde se renombraría como 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker Inc
+
+
+</span>
+</strong>
+.
+<br />
+Ahí se creó inicialmente 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker como una plataforma de contenedores
+
+
+</span>
+</strong>
+, y con el tiempo se convirtió en una tecnología y una marca ampliamente reconocida para la 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    virtualización basada en contenedores
+
+
+</span>
+</strong>
+, algo que después de 2013 cuando Solomon lo presentó en una conferencia al munso, cambió totalmente el enfoque del desarrollo.
+<br />
+Solomon Hykes dejó Docker Inc. en 2018 para centrarse en nuevos proyectos.
+<br />
+En 2017, Docker Inc. lanzó el 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Moby Project
+
+
+</span>
+</strong>
+, un proyecto de código abierto que descompone Docker en varios componentes modulares y reutilizables.
+<br />
+El objetivo de Moby es permitir a los desarrolladores utilizar estos componentes de manera independiente para crear sus propias soluciones de contenedores personalizadas. En este proyecto, se desglosó Docker en componentes más pequeños y reutilizables
+<br />
+
+Actualmente, Docker sigue existiendo como un producto comercial y una plataforma completa que integra estos componentes en un paquete fácil de usar para crear y gestionar contenedores.
+<br />
+En otras palabras, Docker es la plataforma que los usuarios finales utilizan para trabajar con contenedores, mientras que Moby funciona como un 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    conjunto de herramientas
+
+
+</span>
+</strong>
+ de código abierto que sirve como base de Docker y permite a los desarrolladores crear soluciones a medida.
+
+</div>
+</p>
+
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Referencias</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Fuentes de Información</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
+    
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            <li>&ldquo;What is Docker? The spark for the container revolution&rdquo; (3 de marzo de 2021): Este artículo ofrece una visión detallada sobre los inicios de Docker y su impacto en la industria de contenedores. <a href="https://www.infoworld.com/article/2269272/how-docker-broke-in-half.html">https://www.infoworld.com/article/2269272/how-docker-broke-in-half.html</a></li>
+            
+            <li>&ldquo;Solomon Hykes leaves Docker, the company he founded&rdquo; (28 de marzo de 2018): Este artículo aborda la salida de Solomon Hykes de Docker y ofrece una visión de su impacto en la empresa. <a href="https://techcrunch.com/2018/03/28/solomon-hykes-leaves-docker-the-company-he-founded/">https://techcrunch.com/2018/03/28/solomon-hykes-leaves-docker-the-company-he-founded/</a></li>
+            
+            
+            
+        </ul>
+    </div>
+</div>
+
+<h1 id="historia-de-docker-innovación-y-comunidad-en-la-contenerización">Historia de Docker: Innovación y Comunidad en la Contenerización</h1>
+<p>La historia de Docker es un proceso  de innovación y colaboración que ha incidido de forma muy clara y contundente en el mundo del desarrollo de software, popularizando el uso de contenedores.
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 870px">
+<img class="card-img-top" src="/despliegue/docker/docs/salomon_trabajando_hu5347605164123752284.webp" width="860" height="491">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+<h2 id="orígenes-y-dotcloud-2008">Orígenes y dotCloud (2008)</h2>
+<p>Docker tuvo sus orígenes en 2008 como un proyecto interno dentro de 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    dotCloud
+
+
+</span>
+</strong>
+, una empresa de plataforma como servicio fundada por 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Solomon Hykes
+
+
+</span>
+</strong>
+.</p>
+<p>Su objetivo era mejorar la eficiencia y portabilidad de las aplicaciones 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    al empaquetarlas en contenedores
+
+
+</span>
+</strong>
+ que pudieran <strong>ejecutarse de forma consistente en diferentes entornos</strong>.
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 310px">
+<img class="card-img-top" src="/despliegue/docker/docs/empaquetamiento_hu1462948396119611165.webp" width="300" height="300">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+<h2 id="lanzamiento-público-de-docker-2013">Lanzamiento Público de Docker (2013)</h2>
+<p>En 2013, Docker fue presentado al público y se lanzó como 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    software de código abierto
+
+
+</span>
+</strong>
+ bajo la licencia Apache 2.0.</p>
+<p>Esta decisión fue clave, ya que permitió el crecimiento de una comunidad global en torno a Docker, impulsando su desarrollo y su adopción.</p>
+<p>La facilidad con la que 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    los contenedores Docker podían crearse y desplegarse
+
+
+</span>
+</strong>
+ ayudó a que se convirtiera en una herramienta popular entre desarrolladores y empresas.
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1289px">
+<img class="card-img-top" src="/despliegue/docker/docs/salomon_2013_hu11764695974802313557.png" width="1279" height="746">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+El día de la presentación de Salomon Hykes
+<a href="https://www.google.com/search?q=presentaci%C3%B3n+docker+por+solomon+2013&oq=presentaci%C3%B3n+docker+por+solomon+2013&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBCDg3MjBqMGo3qAIIsAIB&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:78729fe6,vid:zgR8otZkwHc,st:0>">Una reacción a la Presentación</a>
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+<h2 id="proyecto-moby-2017-modularización-y-flexibilidad">Proyecto Moby (2017): Modularización y Flexibilidad</h2>
+<p>Para modularizar y estandarizar la construcción de sistemas de contenedores, en 2017 Docker, Inc. lanzó el 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Proyecto Moby
+
+
+</span>
+</strong>
+.</p>
+<p>Moby Project es una plataforma abierta que proporciona componentes básicos para crear soluciones personalizadas de contenerización.</p>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker
+
+
+</span>
+</strong>
+ sigue siendo la implementación más popular basada en Moby, pero Moby en sí mismo permite que otros desarrolladores construyan sus propias versiones y herramientas adaptadas a necesidades específicas.</p>
+<h2 id="docker-como-producto-comercial">Docker como Producto Comercial</h2>
+<p>Docker, Inc. ha desarrollado Docker como un 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    producto comercial
+
+
+</span>
+</strong>
+ que incluye herramientas avanzadas y soporte técnico, facilitando la adopción y administración de contenedores en entornos empresariales.</p>
+<p>Esta versión comercial se complementa con una comunidad de código abierto, lo que permite que Docker sea accesible tanto para individuos como para grandes empresas.</p>
+<h2 id="impacto-de-la-comunidad-y-ecosistema-de-código-abierto">Impacto de la Comunidad y Ecosistema de Código Abierto</h2>
+<p>La comunidad de desarrolladores ha sido fundamental en la evolución de Docker. Contribuciones de código, mejoras de rendimiento y soluciones innovadoras aportadas por la comunidad global han consolidado a Docker como la tecnología de contenedorización líder en la actualidad.</p>
+<p>La adopción de Docker ha sido tal que se ha convertido en un 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    estándar para el empaquetado y despliegue de aplicaciones
+
+
+</span>
+</strong>
+.</p>
+<h2 id="popularización-de-contenedores-e-integración-con-kubernetes">Popularización de Contenedores e Integración con Kubernetes</h2>
+<p>Docker popularizó la idea de los contenedores, transformándolos en una forma eficiente de empaquetar y distribuir aplicaciones.</p>
+<p>Su integración con otras tecnologías, especialmente 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Kubernetes
+
+
+</span>
+</strong>
+, ha permitido crear ecosistemas de contenedores más complejos y escalables, adecuados para entornos de microservicios y despliegues en la nube.</p>
+<h2 id="el-futuro-de-docker">El Futuro de Docker</h2>
+<p>Docker continúa evolucionando y adaptándose a las tendencias emergentes, como la 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    computación en la nube
+
+
+</span>
+</strong>
+ y el 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    edge computing
+
+
+</span>
+</strong>
+.</p>
+<p>A medida que el desarrollo de software se orienta cada vez más hacia infraestructuras dinámicas y escalables, Docker se posiciona como una tecnología clave en la implementación de aplicaciones modernas.</p>
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-31315b7cb4f93cac4e144a838a35f8df">1 - Conceptos sobre docker</h1>
+    
+	<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fab fa-docker" aria-hidden="true"></i>
+    
+    <strong>docker</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+Docker es una plataforma de virtualización basada en contenedores.
+
+  </div>
+</div>
+<ul>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    PUNTOS FUNDAMENTALES
+
+
+</span>
+</strong>
+
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Importante</h4>
+
+    Asegúrate de leer y entender bien los siguientes párrafos
+
+</div>
+</p>
+</li>
+<li>
+<p>La idea es tener 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    un contenedor (un archivo ejecutable)
+
+
+</span>
+</strong>
+ que contiene todo lo necesario para ejecutar una aplicación, incluyendo el código, las dependencias y las configuraciones, de forma totalmente aislada del sistema en el cual se está ejecutando. Esto permite que la aplicación se ejecute de manera consistente en cualquier entorno.</p>
+</li>
+<li>
+<p>Este archivo contenedor 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    no incluye un sistema operativo completo propio
+
+
+</span>
+</strong>
+, pero funciona como si lo tuviera, 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    ejecutándose de forma aislada e independiente del sistema anfitrión
+
+
+</span>
+</strong>
+.</p>
+<blockquote>
+<p>Utiliza el kernel del anfitrión y configura los componentes necesarios para simular el entorno del sistema operativo deseado o requerido, aunque siempre dentro del tipo de sistema operativo del anfitrión.</p>
+</blockquote>
+</li>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Compatibilidad de sistema operativo
+
+
+</span>
+</strong>
+: Los contenedores dependen del sistema anfitrión, por lo que los contenedores Linux solo se ejecutan en anfitriones Linux.</p>
+<blockquote>
+<p>Sin embargo, gracias a tecnologías comoc  
+<strong>
+<span class="font-weight-bold text-primary">
+
+    WSL y Hyper-V
+
+
+</span>
+</strong>
+, es posible ejecutar contenedores Linux en Windows.</p>
+</blockquote>
+<blockquote>
+<p>También existen soluciones emergentes para ejecutar contenedores de Windows en Linux, aunque con limitaciones.</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="el-proceso-de-empaquetado">El proceso de empaquetado</h3>
+<p>En Docker, el proceso de empaquetado agrupa el código fuente y todas las dependencias necesarias para que el software funcione, creando una entidad unificada en forma de archivo de contenedor.</p>
+<p>Para crear un contenedor necesitamos partir de una plantilla base que contenga lo necesario  para este entorno de ejecución aislada. Esta plantilla la conocemos como 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    imagen
+
+
+</span>
+</strong>
+</p>
+<p>Un <strong>contenedor</strong> es, en esencia, una instancia ejecutable que virtualiza el software dentro de un entorno específico.</p>
+<p>A partir de un contenedor, se pueden crear imágenes en cualquier momento, permitiendo así capturar el estado del entorno y los cambios realizados.</p>
+<h3 id="creación-y-actualización-de-contenedores">Creación y actualización de contenedores</h3>
+<p>A partir de una imagen específica, es posible iniciar un contenedor de forma muy rápida, en cuestión de segundos o menos.</p>
+<p>Si realizamos cambios en el contenedor, estos se guardan en capas incrementales, lo que permite visualizar los cambios y restaurar versiones anteriores del entorno, si es necesario.</p>
+<h3 id="docker-vs-máquinas-virtuales">Docker Vs Máquinas virtuales</h3>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS6zxmUEE9zmd10c_6vLNf2bTaI_BoVCkVukwHcnBO0S3lm_NVU_YU9sJcUpCItLKyKCACkXrjESfbB/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-65d5cba354484d7f0190e833730fea79">2 - Contenedores e imágenes</h1>
+    
+	<h2 id="contenedores-e-imágnes">Contenedores e imágnes</h2>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
+<img class="card-img-top" src="/despliegue/docker/docs/02_contenedores-e-im%C3%A1genes/Contenedor_vs_img_hu14260772193613322638.png" width="600" height="350">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+Imagen y contenedor en docker
+
+</p>
+</figcaption>
+</figure>
+
+<h3 id="la-imagen">La imagen</h3>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-info-circle" aria-hidden="true"></i>
+    
+    <strong>la imagen</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+
+<span class="font-weight-bold text-primary">
+
+
+    La imagen
+
+</span>
+ es un archivo que contiene todas las librerías, dependencias y configuraciones necesarias para ejecutar un entorno aislado con sus propios servicios y procesos. Sirve como base para crear uno o varios contenedores, los cuales obtendrán configuraciones de red y direcciones IP independientes al momento de su creación.
+
+
+  </div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 621px">
+<img class="card-img-top" src="/despliegue/docker/docs/02_contenedores-e-im%C3%A1genes/Imagen_hu16434163412315167937.png" width="611" height="812">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Notas</h4>
+
+    No se emula hardware, sino únicamente servicios y software (como el sistema de archivos, el sistema operativo y los servicios). Por lo tanto, un contenedor no es una máquina virtual, aunque tenga su propia IP. Sin embargo, puede considerarse como un dispositivo o nodo independiente dentro de la red.
+
+</div>
+
+<h3 id="el-contenedor">El contenedor</h3>
+<blockquote>
+<p>El contenedor es una capa de lectura y escritura que se añade a una imagen, permitiendo interactuar con ella y ponerla en ejecución.
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
+<img class="card-img-top" src="/despliegue/docker/docs/02_contenedores-e-im%C3%A1genes/container_hu5364377010260540432.jpg" width="800" height="600">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+Imagen obtenida de https://iesgn.github.io/curso_docker_2021/sesion2/organizacion.html
+
+</p>
+</figcaption>
+</figure>
+
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Notas</h4>
+
+    El contenedor se crea a partir de una imagen y siempre dependerá de ella. Esto significa que no podremos eliminar la imagen mientras exista un contenedor asociado a ella.
+
+</div>
+</p>
+</blockquote>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Notas</h4>
+
+    El contenedor almacena los cambios realizados sobre la imagen, funcionando como pequeños incrementos sobre un archivo base. Este enfoque lo convierte en un sistema muy robusto, ágil y ligero.
+
+</div>
+
+<h3 id="contenedor-e-imagen">Contenedor e imagen</h3>
+
+
+<div class="pageinfo pageinfo-primary">
+<h4 id="heading"></h4>
+<p><strong>La unión hace la fuerza</strong></p>
+<p>El funcionamiento de Docker se basa en crear un contenedor a partir de una imagen, por lo que los conceptos de imagen y contenedor están intrínsecamente relacionados (no se pueden usar de manera individual).</p>
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Nota</h4>
+<pre><code>Todo contenedor siempre dependerá de una única imagen.
+</code></pre>
+</div>
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Nota</h4>
+<pre><code>Una imagen puede ser la base de uno o muchos contenedores.
+</code></pre>
+<p>Cada contenedor es un sistema independiente de los demás, con su propia IP y un entorno completamente aislado.</p>
+</div>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
+<img class="card-img-top" src="/despliegue/docker/docs/02_contenedores-e-im%C3%A1genes/join_img_container_hu17901011678537150505.png" width="800" height="200">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+</p>
+</figcaption>
+</figure>
+
+</div>
+
+<h3 id="compentes-de-la-arqutectura-docker">Compentes de la arqutectura docker</h3>
+<p><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1369px">
+<img class="card-img-top" src="/despliegue/docker/docs/02_contenedores-e-im%C3%A1genes/arquitectura_docker_hu10097844928879679189.png" width="1359" height="901">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+Descripcion de la imagen</p>
+<h3>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Cliente de Docker:
+
+
+</span>
+</strong>
+</h3>
+<blockquote>
+<ul>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker CLI
+
+
+</span>
+</strong>
+ permite ejecutar comandos para interactuar con Docker,</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker Compose
+
+
+</span>
+</strong>
+** se utiliza para definir y manejar aplicaciones de múltiples contenedores.</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker Engine
+
+
+</span>
+</strong>
+ Envía comandos  al motor de Docker para su ejecución.</li>
+</ul>
+</blockquote>
+<h3>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker Engine:
+
+
+</span>
+</strong>
+</h3>
+<blockquote>
+<p>Compuesta por 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker Engine API
+
+
+</span>
+</strong>
+ y
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker daemon
+
+
+</span>
+</strong>
+,los cuales  son componentes fundamentales del motor de Docker.
+*
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker Engine API
+
+
+</span>
+</strong>
+ es la interfaz de comunicación entre el cliente y el motor.
+*
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker daemon
+
+
+</span>
+</strong>
+gestiona los contenedores y las imágenes.</p>
+<blockquote>
+<p>Podemos ver en la imagen,  áreas para 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    imágenes
+
+
+</span>
+</strong>
+ y 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    contenedores
+
+
+</span>
+</strong>
+, donde queda explícito que   Docker Engine se encarga de manejar tanto las imágenes como la ejecución de los contenedores.</p>
+<ul>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Container Runtime
+
+
+</span>
+</strong>
+ es el entorno en el que los contenedores se ejecutan.</li>
+</ul>
+</blockquote>
+</blockquote>
+<h3> 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker Registry:
+
+
+</span>
+</strong>
+</h3>
+<blockquote>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker Register API
+
+
+</span>
+</strong>
+** y 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Repositorio de imágenes
+
+
+</span>
+</strong>
+, que podemos considerar componentes esperados en esta sección.</p>
+<ul>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker Registry
+
+
+</span>
+</strong>
+** es el servicio para almacenar y distribuir imágenes de contenedores, siendo 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker Hub
+
+
+</span>
+</strong>
+ es un ejemplo de un registro público.</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Repositorio de imágenes
+
+
+</span>
+</strong>
+ muestra en su relación con 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker Engine
+
+
+</span>
+</strong>
+ quien puede extraer y subir imágenes  este repositorio</li>
+</ul>
+</blockquote>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-015e39fb970d2fc0fa343d9eb6f8b7ee">3 - Instalación</h1>
+    
+	
+
+
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-check-circle"></i> 
+            
+        </span>
+        
+        <span>Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight:bold">Qué veremos aquí</h3>
+
+    <hr style="border-color:seagreen; border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            <li>Instalar docker en ubuntu</li>
+            
+            <li>Instalar docker en windows</li>
+            
+            <li>Instalar docker con vagrant</li>
+            
+            
+            
+        </ul>
+    </div>
+    
+
+
+</div>
+
+<h3 id="referencias-para-instalar-ubuntu">Referencias para instalar ubuntu</h3>
+
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Instalar Docker</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Páginas oficiales</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
+    
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            <li>Instalar docker: Se ha de ir a la referencia de <strong>la página oficial de docker</strong> (<a href="https://docs.docker.com/install">https://docs.docker.com/install</a>)</li>
+            
+            <li>Instalar docker en <strong>ubuntu</strong>   (<a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/">https://docs.docker.com/install/linux/docker-ce/ubuntu/</a>)</li>
+            
+            <li>Instalar docker en <strong>windows</strong> (<a href="https://docs.docker.com/docker-for-windows/install/">https://docs.docker.com/docker-for-windows/install/</a>)</li>
+            
+            <li>Instalar docker en <strong>mac</strong> (<a href="https://docs.docker.com/desktop/install/mac-install">https://docs.docker.com/desktop/install/mac-install</a>)</li>
+            
+            
+            
+        </ul>
+    </div>
+</div>
+
+<h3 id="proceso-de-instalación-en-ubuntu">Proceso de instalación en Ubuntu</h3>
+<ol>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Paquetes necesarios durante la instalación
+
+
+</span>
+</strong>
+: usaremos certificados 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    (ca-certificates)
+
+
+</span>
+</strong>
+. Descargamos con 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    curl
+
+
+</span>
+</strong>
+, usaremos claves públicas y privadas 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    (gnupg-agent)
+
+
+</span>
+</strong>
+ y conoceremos la versión de nuestro sistema 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    (lsb-release)
+
+
+</span>
+</strong>
+, lo que nos permitirá hacer una instalación genérica.</li>
+</ol>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>sudo apt-get install ca-certificates curl gnupg-agent lsb-release</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ol start="2">
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Añadimos la clave GPG oficial de Docker
+
+
+</span>
+</strong>
+</li>
+</ol>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>curl -fsSL https://download.docker.com/linux/ubuntu/gpg | <span style="color:#cd5555">\
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#cd5555"></span>sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ol start="3">
+<li>
+<p>Añadimos el repositorio 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    stable
+
+
+</span>
+</strong>
+ (Proporciona últimas versiones). Otras opciones (modificar stable por la opción deseada):</p>
+<ul>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    test
+
+
+</span>
+</strong>
+: Versiones listas para probar.</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    nightly
+
+
+</span>
+</strong>
+: Actualizaciones de la próxima versión.</li>
+</ul>
+</li>
+</ol>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#658b00">echo</span> <span style="color:#cd5555">\
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#cd5555"></span><span style="color:#cd5555">&#34;deb [arch=</span><span style="color:#8b008b;font-weight:bold">$(</span>dpkg --print-architecture<span style="color:#8b008b;font-weight:bold">)</span><span style="color:#cd5555"> \
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#cd5555">signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] \
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#cd5555">https://download.docker.com/linux/ubuntu \
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#cd5555"></span><span style="color:#8b008b;font-weight:bold">$(</span>lsb_release -cs<span style="color:#8b008b;font-weight:bold">)</span><span style="color:#cd5555"> stable&#34;</span> | sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ol start="4">
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Actualizamos el índice de los paquetes apt e instalamos Docker
+
+
+</span>
+</strong>
+: el cliente de Docker <em><strong>docker-ce-cli</strong></em>, el demonio de Docker <em><strong>docker-ce</strong></em> y el runtime de contenedores que gestiona su ejecución <em><strong>containerd.io</strong></em>. La construcción y administración de contenedores e imágenes la gestiona el demonio docker-ce.</li>
+</ol>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get update
+</span></span><span style="display:flex;"><span>sudo apt-get install docker-ce docker-ce-cli containerd.io</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ol start="5">
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Agregamos el usuario actual al grupo de Docker
+
+
+</span>
+</strong>
+ (para poder usar Docker sin sudo), de lo contrario, no podremos hacerlo:</li>
+</ol>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>sudo usermod -aG docker <span style="color:#00688b">$USER</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ol start="6">
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Cambiamos al grupo
+
+
+</span>
+</strong>
+ de Docker en la sesión actual. Nota: para que el cambio aplique a otras sesiones, será necesario cerrar sesión o reiniciar.</li>
+</ol>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>newgrp docker</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ol start="7">
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Probamos la instalación
+
+
+</span>
+</strong>
+ listando los comandos disponibles de Docker:</li>
+</ol>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker help</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="instalación-de-docker-en-windows">Instalación de Docker en Windows</h3>
+<ol>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Descargar Docker Desktop Installer
+
+
+</span>
+</strong>
+: Para instalar Docker en Windows, descarga el fichero <strong>Docker Desktop Installer.exe</strong> y ejecútalo. También puedes usar el siguiente comando en la línea de comandos:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>Start-Process <span style="color:#cd5555">&#39;.\Docker Desktop Installer.exe&#39;</span> install</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Docker no se instala directamente sobre Windows. Necesita una capa de virtualización ya que Docker corre sobre Linux.</p>
+</li>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Opciones de virtualización
+
+
+</span>
+</strong>
+: Durante la instalación, elige entre <strong>Hyper-V</strong> o <strong>WSL</strong>.</p>
+<ul>
+<li>Si dockerizarás sistemas Windows, usa <strong>Hyper-V</strong>.</li>
+<li>Para otros casos, se recomienda <strong>WSL</strong> por eficiencia. Ésta debe de ser la opción seleccionada en nuestro caso.</li>
+</ul>
+<p><a href="https://docs.docker.com/docker-for-windows/install/">Más información en la documentación oficial de Docker</a>.</p>
+</li>
+</ol>
+<hr>
+<h4 id="arrancar-el-servicio">Arrancar el Servicio</h4>
+<ol>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Activar Docker Desktop
+
+
+</span>
+</strong>
+: Tras la instalación, Windows no activa Docker automáticamente. Debes hacerlo manualmente:
+<ul>
+<li>Busca la aplicación Docker Desktop y ejecútala.</li>
+<li>La primera vez, Docker te informará sobre el uso gratuito para pequeñas empresas.</li>
+<li>Una vez abierta puedes configurarla para que se arranque automáticamente cada vez que arranque el sistema</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="crear-contenedores-de-windows">Crear contenedores de Windows</h3>
+<ol>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Configuración para contenedores de Windows
+
+
+</span>
+</strong>
+: Para crear contenedores de Windows, necesitas activarlos en el demonio.</p>
+<ul>
+<li>Ve al servicio Docker y abre el menú contextual.</li>
+<li>Selecciona la opción <strong>switch to Windows containers…</strong>.</li>
+</ul>
+<blockquote>
+<p>En este curso, no configuraremos contenedores de Windows.</p>
+</blockquote>
+</li>
+</ol>
+<hr>
+<h3 id="interfaz-gráfica-en-windows">Interfaz Gráfica en Windows</h3>
+<ol>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Uso de la interfaz gráfica
+
+
+</span>
+</strong>
+: Docker Desktop en Windows proporciona una interfaz gráfica para gestionar contenedores, imágenes y configuraciones de manera visual.</li>
+<li>En cualquier caso, recomendamos que abras un power shell en windows y realices las acciones en el terminal.</li>
+</ol>
+<hr>
+<h3 id="configuración-de-docker-desktop">Configuración de Docker Desktop</h3>
+<ol>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Personalización de Docker Desktop
+
+
+</span>
+</strong>
+: Docker Desktop permite ajustar configuraciones avanzadas para personalizar el rendimiento y los recursos asignados.</li>
+</ol>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-81917096855a46c0b43795c6cb7186e7">4 - Docker Prácticas</h1>
+    
+	<h3 id="1-obteniendo-una-imagen">1. Obteniendo una Imagen</h3>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-info-circle" aria-hidden="true"></i>
+    
+    <strong>Obtención de Imágenes</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+Las imágenes en Docker son las bases para crear contenedores. Puedes obtener diferentes versiones de una imagen usando etiquetas.
+
+  </div>
+</div>
+<ol>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Descarga una imagen
+
+
+</span>
+</strong>
+:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker pull ubuntu:latest</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Ver imágenes disponibles
+
+
+</span>
+</strong>
+:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker images</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Consultar ayuda
+
+
+</span>
+</strong>
+:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker <span style="color:#658b00">help</span> images</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+</ol>
+<hr>
+<h3 id="2-creando-un-contenedor">2. Creando un Contenedor</h3>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Información</h4>
+
+    Un contenedor es una instancia ejecutable de una imagen, que contiene todo el entorno necesario para correr aplicaciones de forma aislada.
+
+</div>
+
+<ol>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Crear contenedor
+
+
+</span>
+</strong>
+:</p>
+<ul>
+<li>Usamos el comando <code>docker create</code> para crear contenedores sin ejecutarlos inmediatamente.</li>
+</ul>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker create --name ls ubuntu:latest ls
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker create -i -t --name bash ubuntu:latest bash
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker create --name update ubuntu:latest apt-get update</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</li>
+</ol>
+<hr>
+<h3 id="3-ejecutando-y-administrando-contenedores">3. Ejecutando y Administrando Contenedores</h3>
+<ol>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Ver contenedores creados
+
+
+</span>
+</strong>
+:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker ps -a</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Ejecutar contenedores creados
+
+
+</span>
+</strong>
+:</p>
+<ul>
+<li>Para ejecutar un contenedor creado, usa el comando <code>docker start</code> con opciones para ver su salida en consola.</li>
+</ul>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker start -a ls
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker start -i bash
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker start -a update</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</li>
+</ol>
+<hr>
+<h3 id="4-estados-del-contenedor">4. Estados del Contenedor</h3>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-info-circle" aria-hidden="true"></i>
+    
+    <strong>Estados del Contenedor</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+Un contenedor en Docker puede estar en diferentes estados:
+- **Running**: El contenedor está activo y operativo.
+- **Exited** y **Stopped**: Similares, aunque `exited` indica una detención inesperada mientras `stopped` es una parada controlada.
+  
+  </div>
+</div>
+<p>Para ver los estados de cada contenedor:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker ps -a</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<hr>
+<h3 id="5-ejecución-de-comandos-en-el-contenedor">5. Ejecución de Comandos en el Contenedor</h3>
+<ol>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Ejecutar comandos con <code>docker exec</code>
+
+
+</span>
+</strong>
+:</p>
+<ul>
+<li>Usa <code>docker exec</code> para ejecutar comandos en un contenedor que ya esté en ejecución.</li>
+</ul>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker <span style="color:#658b00">exec</span> -ti web bash</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</li>
+</ol>
+<hr>
+<h3 id="6-forward-de-puertos">6. Forward de Puertos</h3>
+<ol>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Redireccionamiento de puertos entre anfitrión y contenedor
+
+
+</span>
+</strong>
+:</p>
+<ul>
+<li>Para acceder al servidor web desde la red, configura un puerto en el anfitrión que redirija al puerto 80 del contenedor.</li>
+</ul>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker run -ti -p 8080:80 --name web ubuntu:latest</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</li>
+</ol>
+<hr>
+<h3 id="7-compartiendo-carpetas">7. Compartiendo Carpetas</h3>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-info-circle" aria-hidden="true"></i>
+    
+    <strong>Mapeo de Directorios</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+Puedes mapear una carpeta local en el directorio de trabajo del contenedor para compartir archivos.
+
+  </div>
+</div>
+<ol>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Crear un volumen compartido
+
+
+</span>
+</strong>
+:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker run -ti -p 8080:80 --name web -v /home/usuario/docker:/var/www/html ubuntu:latest</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<blockquote>
+<p>Si la carpeta no existe, Docker la crea automáticamente.</p>
+</blockquote>
+<hr>
+<h3 id="8-crear-una-imagen-desde-un-contenedor">8. Crear una Imagen desde un Contenedor</h3>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-info-circle" aria-hidden="true"></i>
+    
+    <strong>Crear imagen desde contenedor</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+Para conservar el estado de un contenedor y replicarlo, crea una imagen con `docker commit`.
+
+  </div>
+</div>
+<ol>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Crear imagen
+
+
+</span>
+</strong>
+:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker commit container_name nombre_imagen:tag</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<hr>
+<h3 id="9-comandos-para-manejar-volúmenes">9. Comandos para Manejar Volúmenes</h3>
+<ol>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Crear y administrar volúmenes
+
+
+</span>
+</strong>
+:</p>
+<ul>
+<li>Comandos útiles para gestionar volúmenes en Docker:</li>
+</ul>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker volume create [nombre]
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker volume ls
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker volume inspect nombre
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker volume rm nombre</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</li>
+</ol>
+<blockquote>
+<p>Los volúmenes permiten persistir datos y compartirlos entre contenedores o con el sistema anfitrión.</p>
+</blockquote>
+<h3 id="9-otros-comandos-importantes-en-docker">9. Otros Comandos Importantes en Docker</h3>
+<ol>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Comandos útiles en Docker
+
+
+</span>
+</strong>
+: Existen varios comandos para gestionar contenedores e imágenes. Aquí algunos de los más importantes:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker inspect
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker pause
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker unpause
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker rm
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker stop
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker rmi
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker login
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker push
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker pull
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker import
+</span></span><span style="display:flex;"><span>docker export</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Para obtener ayuda detallada sobre cada comando:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker help</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+</ol>
+<hr>
+<h3 id="10-inspección-de-contenedores">10. Inspección de Contenedores</h3>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-info-circle" aria-hidden="true"></i>
+    
+    <strong>Comando inspect</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+El comando `docker inspect` proporciona información detallada del contenedor, como directorios mapeados y puertos abiertos.
+
+  </div>
+</div>
+<ol>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Inspeccionar un contenedor
+
+
+</span>
+</strong>
+:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker inspect [opciones] nombre_contenedor</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p><strong>Nota</strong>: Con la opción <code>-s</code>, obtienes información adicional sobre el tamaño de los archivos.</p>
+</blockquote>
+</li>
+</ol>
+<hr>
+<h3 id="11-pausar-y-reiniciar-un-contenedor">11. Pausar y Reiniciar un Contenedor</h3>
+<ol>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Pausar y reanudar
+
+
+</span>
+</strong>
+: Los comandos <code>docker pause</code> y <code>docker unpause</code> congelan y reinician un contenedor en un estado específico.</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker pause
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker unpause</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p><strong>Práctica</strong>: Arranca un contenedor, abre un terminal y pausa el contenedor. Observa cómo afecta el terminal y reanúdalo.</p>
+</li>
+</ol>
+<hr>
+<h3 id="12-borrar-un-contenedor">12. Borrar un Contenedor</h3>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Información</h4>
+
+    Para borrar un contenedor, debe estar detenido. Usa <code>docker stop</code> para detenerlo primero.
+
+</div>
+
+<ol>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Detener y borrar contenedores
+
+
+</span>
+</strong>
+:</p>
+<ul>
+<li><code>docker stop</code> tiene una opción <code>-t</code> para especificar el tiempo de espera antes de detener el contenedor.</li>
+</ul>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker stop [opciones]
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker rm [opciones]</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p><strong>Nota</strong>: <code>pause</code> y <code>stop</code> no son lo mismo. <code>pause</code> detiene momentáneamente el contenedor sin interrumpir el proceso, mientras que <code>stop</code> finaliza la ejecución.</p>
+</li>
+</ol>
+<hr>
+<h3 id="13-borrar-todos-los-contenedores">13. Borrar Todos los Contenedores</h3>
+<ol>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Comando para borrar múltiples contenedores
+
+
+</span>
+</strong>
+:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker stop <span style="color:#8b008b;font-weight:bold">$(</span>docker ps -a -q<span style="color:#8b008b;font-weight:bold">)</span>
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker rm <span style="color:#8b008b;font-weight:bold">$(</span>docker ps -a -q<span style="color:#8b008b;font-weight:bold">)</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<blockquote>
+<p>En PowerShell, utiliza paréntesis en lugar de <code>$()</code>.</p>
+</blockquote>
+</li>
+</ol>
+<hr>
+<h3 id="14-ver-imágenes-y-borrarlas">14. Ver Imágenes y Borrarlas</h3>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-info-circle" aria-hidden="true"></i>
+    
+    <strong>Gestión de Imágenes</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+Para borrar una imagen, no debe tener contenedores asociados, independientemente de su estado.
+
+  </div>
+</div>
+<ol>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Comandos para imágenes
+
+
+</span>
+</strong>
+:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker images
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker rmi nombre_imagen</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</li>
+</ol>
+<hr>
+<h3 id="15-exportar-e-importar-imágenes">15. Exportar e Importar Imágenes</h3>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-info-circle" aria-hidden="true"></i>
+    
+    <strong>Exportación e Importación de Imágenes</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+Los comandos `docker export` y `docker import` permiten guardar una imagen en un archivo `.tar` y restaurarla posteriormente.
+
+  </div>
+</div>
+<ol>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Exportar un contenedor a un archivo tar
+
+
+</span>
+</strong>
+:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker <span style="color:#658b00">export</span> -o web.tar web</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</li>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Importar una imagen desde un archivo
+
+
+</span>
+</strong>
+:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker import web.tar</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p><strong>Ejercicio</strong>: Exporta el contenedor <code>web</code> a un archivo tar, revisa su tamaño, y crea una imagen <code>web:v2</code> a partir del archivo.</p>
+</li>
+</ol>
+<hr>
+<h3 id="16-trabajando-con-docker-hub">16. Trabajando con Docker Hub</h3>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-info-circle" aria-hidden="true"></i>
+    
+    <strong>Docker Hub</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+Docker Hub permite almacenar, compartir y descargar imágenes de contenedores.
+
+  </div>
+</div>
+<ol>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Comandos esenciales para Docker Hub
+
+
+</span>
+</strong>
+:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker login
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker search
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker pull nombre_imagen
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker push nombre_imagen</span></span></code></pre></td></tr></table>
+</div>
+</div>
+</li>
+</ol>
+<hr>
+<h3 id="17-creando-una-cuenta-y-usando-docker-hub">17. Creando una Cuenta y Usando Docker Hub</h3>
+<ol>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Crear una cuenta en Docker Hub
+
+
+</span>
+</strong>
+:</p>
+<ul>
+<li>Puedes descargar imágenes sin cuenta usando <code>docker pull</code> o <code>docker run</code>.</li>
+<li>Inicia sesión con <code>docker login</code> para subir tus propias imágenes.</li>
+</ul>
+</li>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Subir imágenes al repositorio
+
+
+</span>
+</strong>
+:</p>
+<ul>
+<li>Usa <code>docker push</code> para subir una imagen. <strong>Recuerda</strong>: el nombre de usuario debe ser parte del nombre de la imagen.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<p>Con estos pasos, podrás manejar y gestionar contenedores, imágenes y repositorios en Docker de manera avanzada.</p>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2024
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/despliegue/docker/js/main.min.32339ee7e1e5f837349cf41279909ad84968bc2ee74435b18ec15a70da0bdc2a.js" integrity="sha256-MjOe5&#43;Hl&#43;Dc0nPQSeZCa2ElovC7nRDWxjsFacNoL3Co=" crossorigin="anonymous"></script>
+<script defer src="/despliegue/docker/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+<script src='/despliegue/docker/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

@@ -1,5 +1,5 @@
 ---
-title: "Docker Prácticas"
+title: "Docker Práctico en línea de comandos "
 linkTitle: "Comandos docker"
 weight: 40
 icon: fa-solid fa-terminal
@@ -286,4 +286,88 @@ Docker Hub permite almacenar, compartir y descargar imágenes de contenedores.
 
 ---
 
-Con estos pasos, podrás manejar y gestionar contenedores, imágenes y repositorios en Docker de manera avanzada.
+
+### 18. Estadísticas de Contenedores
+
+{{<definicion title="docker stats" sub_title="Monitorización de uso de recursos" >}}
+El comando `docker stats` muestra estadísticas en tiempo real del uso de recursos por los contenedores.
+{{</definicion>}}
+
+1. {{< color >}} Ver estadísticas de todos los contenedores activos {{< /color >}}:
+   {{< highlight bash "linenos=table, hl_lines=1" >}}
+   docker stats
+   {{< /highlight >}}
+
+---
+
+### 19. Espacio en Disco
+
+{{<definicion title="docker system df" sub_title="Uso de disco en Docker" >}}
+El comando `docker system df` proporciona información sobre el uso de disco por imágenes, contenedores y volúmenes.
+{{</definicion>}}
+
+1. {{< color >}} Revisar el uso de disco por Docker {{< /color >}}:
+   {{< highlight bash "linenos=table, hl_lines=1" >}}
+   docker system df
+   {{< /highlight >}}
+
+---
+
+### 20. Logs de Contenedores
+
+{{<definicion title="docker logs" sub_title="Acceso a registros de contenedores" >}}
+Con `docker logs`, puedes revisar los registros de un contenedor para solucionar problemas o revisar su estado.
+{{</definicion>}}
+
+1. {{< color >}} Ver logs de un contenedor específico {{< /color >}}:
+   {{< highlight bash "linenos=table, hl_lines=1" >}}
+   docker logs container_name
+   {{< /highlight >}}
+
+> **Nota**: Usa `--tail` para ver solo las últimas líneas.
+
+---
+
+### 21. Gestión de Redes
+
+{{<definicion title="docker network" sub_title="Administrar redes en Docker" >}}
+Docker permite gestionar redes personalizadas para conectar contenedores.
+{{</definicion>}}
+
+1. {{< color >}} Listar redes disponibles {{< /color >}}:
+   {{< highlight bash "linenos=table, hl_lines=1" >}}
+   docker network ls
+   {{< /highlight >}}
+
+2. {{< color >}} Crear una red personalizada {{< /color >}}:
+   {{< highlight bash "linenos=table, hl_lines=1" >}}
+   docker network create my_custom_network
+   {{< /highlight >}}
+
+---
+
+### 22. Renombrar Contenedores
+
+{{<definicion title="docker rename" sub_title="Cambiar el nombre de un contenedor" >}}
+Usa `docker rename` para renombrar un contenedor existente.
+{{</definicion>}}
+
+1. {{< color >}} Renombrar un contenedor {{< /color >}}:
+   {{< highlight bash "linenos=table, hl_lines=1" >}}
+   docker rename old_name new_name
+   {{< /highlight >}}
+
+---
+
+### 23. Limpieza de Recursos
+
+{{<definicion title="docker system prune" sub_title="Liberar espacio eliminando recursos no utilizados" >}}
+El comando `docker system prune` elimina contenedores, imágenes y volúmenes que no se estén utilizando.
+{{</definicion>}}
+
+1. {{< color >}} Ejecutar limpieza de recursos {{< /color >}}:
+   {{< highlight bash "linenos=table, hl_lines=1" >}}
+   docker system prune -f
+   {{< /highlight >}}
+
+> **Nota**: Añade la opción `--volumes` para eliminar también volúmenes.
