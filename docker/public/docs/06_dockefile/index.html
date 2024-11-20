@@ -1,0 +1,802 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs/06_dockefile/index.xml">
+<link rel="alternate" type="text/html" href="http://localhost:1313/docs/06_dockefile/_print/">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Fichero de ejecución para crear imágenes DockerFile | Despliegue de aplicacones Web</title>
+<meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
+
+<meta property="og:url" content="http://localhost:1313/docs/06_dockefile/">
+  <meta property="og:site_name" content="Despliegue de aplicacones Web">
+  <meta property="og:title" content="Fichero de ejecución para crear imágenes DockerFile">
+  <meta property="og:description" content="Dockerfile Un Dockerfile es un fichero de texto que contiene una serie de instrucciones para crear una imagen . Este fichero tiene un formato concreto y necesita al menos la instrucción FROM para especificar la imagen base a partir de la cual construiremos nuestra imagen personalizada. Para qué La idea es que partiendo de una imagen personalicemos la imagen quequeremos crear,
+Después, a partir de esta imagen, levantaremos el contenedor)">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Fichero de ejecución para crear imágenes DockerFile">
+  <meta itemprop="description" content="Dockerfile Un Dockerfile es un fichero de texto que contiene una serie de instrucciones para crear una imagen . Este fichero tiene un formato concreto y necesita al menos la instrucción FROM para especificar la imagen base a partir de la cual construiremos nuestra imagen personalizada. Para qué La idea es que partiendo de una imagen personalicemos la imagen quequeremos crear,
+Después, a partir de esta imagen, levantaremos el contenedor)">
+  <meta itemprop="wordCount" content="813">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Fichero de ejecución para crear imágenes DockerFile">
+  <meta name="twitter:description" content="Dockerfile Un Dockerfile es un fichero de texto que contiene una serie de instrucciones para crear una imagen . Este fichero tiene un formato concreto y necesita al menos la instrucción FROM para especificar la imagen base a partir de la cual construiremos nuestra imagen personalizada. Para qué La idea es que partiendo de una imagen personalicemos la imagen quequeremos crear,
+Después, a partir de esta imagen, levantaremos el contenedor)">
+
+
+<link href="/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Despliegue de aplicacones Web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/en/">English</a></li>
+    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <div class="td-sidebar-nav__section nav-item dropdown d-block d-lg-none">
+      <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/en/">English</a></li>
+    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    </ul>
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
+  <a href="/docs/" title="Introducción" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><i class="fab fa-docker"></i><span class="">Docker</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs01_conceptos-li">
+  <input type="checkbox" id="m-docs01_conceptos-check"/>
+  <label for="m-docs01_conceptos-check"><a href="/docs/01_conceptos/" title="Conceptos sobre docker" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs01_conceptos"><i class="fa-regular fa-lightbulb"></i><span class="">Conceptos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs02_contenedores-e-imc3a1genes-li">
+  <input type="checkbox" id="m-docs02_contenedores-e-imc3a1genes-check"/>
+  <label for="m-docs02_contenedores-e-imc3a1genes-check"><a href="/docs/02_contenedores-e-im%C3%A1genes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs02_contenedores-e-imc3a1genes"><i class="fa  fa-box"></i><span class="">Contenedores e imágenes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs03_instalacion-li">
+  <input type="checkbox" id="m-docs03_instalacion-check"/>
+  <label for="m-docs03_instalacion-check"><a href="/docs/03_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs03_instalacion"><i class="fa fa-download"></i><span class="">Instalación</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs04_comandos-li">
+  <input type="checkbox" id="m-docs04_comandos-check"/>
+  <label for="m-docs04_comandos-check"><a href="/docs/04_comandos/" title="Docker en  línea de comandos " class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs04_comandos"><i class="fa-solid fa-terminal"></i><span class="">Comandos docker</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs05_comandos_docker-li">
+  <input type="checkbox" id="m-docs05_comandos_docker-check"/>
+  <label for="m-docs05_comandos_docker-check"><a href="/docs/05_comandos_docker/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs05_comandos_docker"><i class="fa-solid fa-terminal"></i><span class="">comandos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs07_docker-compose-li">
+  <input type="checkbox" id="m-docs07_docker-compose-check"/>
+  <label for="m-docs07_docker-compose-check"><a href="/docs/07_docker-compose/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs07_docker-compose"><i class="fa-solid fa-terminal"></i><span class="">comandos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docs06_dockefile-li">
+  <input type="checkbox" id="m-docs06_dockefile-check" checked/>
+  <label for="m-docs06_dockefile-check"><a href="/docs/06_dockefile/" title="Fichero de ejecución para crear imágenes DockerFile" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-docs06_dockefile"><i class="fa-solid fa-terminal"></i><span class="td-sidebar-nav-active-item">DockerFile</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs10_reverse_proxy-li">
+  <input type="checkbox" id="m-docs10_reverse_proxy-check"/>
+  <label for="m-docs10_reverse_proxy-check"><a href="/docs/10_reverse_proxy/" title="Proxy inverso o Reverse prxy" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs10_reverse_proxy"><i class="fa-regular fa-file-code"></i><span class="">Proxy inverso</span></a></label>
+  
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+<a id="print" href="/docs/06_dockefile/_print/"><i class="fa-solid fa-print fa-fw"></i> Imprimir la sección entera</a>
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#construcción-del-dockerfile">Construcción del Dockerfile</a></li>
+    <li><a href="#instrucciones-principales">Instrucciones principales</a></li>
+    <li><a href="#ejemplo-imagen-base-from">Ejemplo: Imagen base (<code>FROM</code>)</a></li>
+    <li><a href="#ejemplo-ejecución-de-comandos-run">Ejemplo: Ejecución de comandos (<code>RUN</code>)</a>
+      <ul>
+        <li><a href="#instalación-de-paquetes">Instalación de paquetes</a></li>
+        <li><a href="#instalación-de-paquetes-1">Instalación de paquetes</a></li>
+        <li><a href="#ejecución-de-scripts">Ejecución de scripts</a></li>
+      </ul>
+    </li>
+    <li><a href="#declaración-de-variables-env-y-arg">Declaración de variables: <code>ENV</code> y <code>ARG</code></a>
+      <ul>
+        <li><a href="#env">ENV</a></li>
+        <li><a href="#arg">ARG</a></li>
+      </ul>
+    </li>
+    <li><a href="#ejemplo-personalización-con-run">Ejemplo: Personalización con <code>RUN</code></a></li>
+    <li><a href="#práctica-sugerida-crear-un-dockerfile">Práctica sugerida: Crear un Dockerfile</a></li>
+    <li><a href="#declaración-de-variables-env-vs-arg">Declaración de variables: <code>ENV</code> vs <code>ARG</code></a>
+      <ul>
+        <li><a href="#ejemplo-de-uso-arg">Ejemplo de uso: <code>ARG</code></a></li>
+        <li><a href="#ejemplo-de-uso-env">Ejemplo de uso: <code>ENV</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#solución-de-problemas-instalación-de-php">Solución de problemas: Instalación de PHP</a>
+      <ul>
+        <li><a href="#problema">Problema</a></li>
+        <li><a href="#solución">Solución</a></li>
+      </ul>
+    </li>
+    <li><a href="#etiquetas-label">Etiquetas (<code>LABEL</code>)</a></li>
+    <li><a href="#gestión-de-archivos-copy-y-add">Gestión de archivos: <code>COPY</code> y <code>ADD</code></a>
+      <ul>
+        <li><a href="#ejemplo-crear-usuarios-desde-un-script">Ejemplo: Crear usuarios desde un script</a></li>
+      </ul>
+    </li>
+    <li><a href="#comandos-cmd-y-entrypoint">Comandos: <code>CMD</code> y <code>ENTRYPOINT</code></a>
+      <ul>
+        <li><a href="#cmd"><code>CMD</code></a></li>
+        <li><a href="#entrypoint"><code>ENTRYPOINT</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#volúmenes-volume">Volúmenes (<code>VOLUME</code>)</a></li>
+    <li><a href="#directorio-de-trabajo-workdir">Directorio de trabajo (<code>WORKDIR</code>)</a></li>
+    <li><a href="#exponer-puertos-expose">Exponer puertos (<code>EXPOSE</code>)</a></li>
+    <li><a href="#conclusión">Conclusión</a></li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/docs/">Docker</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    DockerFile</li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Fichero de ejecución para crear imágenes DockerFile</h1>
+  
+	<header class="article-meta">
+		
+</header>
+	<p><div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-file-alt" aria-hidden="true"></i>
+    
+    <strong>Dockerfile</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+Un 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Dockerfile
+
+
+</span>
+</strong>
+ es un fichero de texto que contiene una serie de instrucciones para crear una 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    imagen
+
+
+</span>
+</strong>
+. 
+<br />
+Este fichero tiene un formato concreto y necesita al menos la instrucción 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    FROM
+
+
+</span>
+</strong>
+ para especificar la imagen base a partir de la cual construiremos nuestra imagen personalizada.
+
+  </div>
+</div>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Para qué</h4>
+
+    <blockquote>
+<ul>
+<li>
+<p>La idea es que partiendo de una imagen  personalicemos la imagen quequeremos crear,</p>
+</li>
+<li>
+<p>Después, a partir de esta imagen, levantaremos el contenedor)</p>
+</li>
+</ul>
+</blockquote>
+
+
+</div>
+</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="construcción-del-dockerfile">Construcción del Dockerfile</h2>
+<p><img alt="img_1.png" src="/docs/06_dockefile/img_1.png">
+Para ejecutar las instrucciones del Dockerfile, utilizamos el comando 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    docker build
+
+
+</span>
+</strong>
+:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker build [OPTIONS] PATH | URL | -</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Podemos usar la opción 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    PATH
+
+
+</span>
+</strong>
+ para especificar la ubicación del Dockerfile.</p>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Si el fichero tiene otro nombre
+
+
+</span>
+</strong>
+, lo indicamos con la opción 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    -f
+
+
+</span>
+</strong>
+.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="instrucciones-principales">Instrucciones principales</h2>
+<ul>
+<li><strong>FROM</strong>: Establece la imagen base.</li>
+<li><strong>RUN</strong>: Ejecuta comandos durante la construcción de la imagen.</li>
+<li><strong>CMD</strong>: Especifica el comando predeterminado para el contenedor.</li>
+<li><strong>LABEL</strong>: Añade metadatos a la imagen.</li>
+<li><strong>EXPOSE</strong>: Define los puertos que se abrirán.</li>
+<li><strong>ENV</strong>: Establece variables de entorno.</li>
+<li><strong>COPY</strong> y <strong>ADD</strong>: Copian archivos al contenedor.</li>
+<li><strong>WORKDIR</strong>: Define el directorio de trabajo.</li>
+<li><strong>VOLUME</strong>: Crea un punto de montaje persistente.</li>
+<li><strong>ENTRYPOINT</strong>: Establece el comando principal del contenedor.</li>
+<li><strong>ARG</strong>: Declara argumentos para la construcción.</li>
+</ul>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="ejemplo-imagen-base-from">Ejemplo: Imagen base (<code>FROM</code>)</h2>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#8b008b;font-weight:bold">FROM</span><span style="color:#cd5555"> ubuntu:latest</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Esta instrucción es obligatoria y debe ser la primera, salvo comentarios o 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    ARG
+
+
+</span>
+</strong>
+.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="ejemplo-ejecución-de-comandos-run">Ejemplo: Ejecución de comandos (<code>RUN</code>)</h2>
+<h3 id="instalación-de-paquetes">Instalación de paquetes</h3>
+<h3 id="instalación-de-paquetes-1">Instalación de paquetes</h3>
+<blockquote>
+<p><em>Lo primero que debemos hacer es ejecutar 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    apt-get update
+
+
+</span>
+</strong>
+, lo que actualiza las cabeceras de los repositorios para garantizar que los paquetes disponibles estén actualizados.</em><br>
+<em>Observa que se utiliza la opción 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    -y
+
+
+</span>
+</strong>
+ para confirmar automáticamente las instalaciones, evitando la necesidad de interacción manual, 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    algo que no está permitido durante la construcción del contenedor
+
+
+</span>
+</strong>
+.</em></p>
+</blockquote>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">RUN</span> apt-get update &amp;&amp; apt-get install -y apache2<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">RUN</span> apt-get install -y php git zip</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="ejecución-de-scripts">Ejecución de scripts</h3>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">RUN</span> bash script.sh</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Cada instrucción 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    RUN
+
+
+</span>
+</strong>
+ genera una capa.</p>
+<p>Modificar una capa afecta a las siguientes, por lo que conviene agrupar comandos para optimizar.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="declaración-de-variables-env-y-arg">Declaración de variables: <code>ENV</code> y <code>ARG</code></h2>
+<h3 id="env">ENV</h3>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">FROM</span><span style="color:#cd5555"> ubuntu:latest</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">ENV</span> <span style="color:#00688b">USER</span>=developer
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">RUN</span> <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;Usuario actual: </span><span style="color:#00688b">$USER</span><span style="color:#cd5555">&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="arg">ARG</h3>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">ARG</span> <span style="color:#00688b">VERSION</span>=latest
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">FROM</span><span style="color:#cd5555"> ubuntu:$VERSION</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">RUN</span> <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;Versión base: </span><span style="color:#00688b">$VERSION</span><span style="color:#cd5555">&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Construcción con argumentos personalizados:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker build --build-arg <span style="color:#00688b">VERSION</span>=20.04 -t mi_imagen .</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="ejemplo-personalización-con-run">Ejemplo: Personalización con <code>RUN</code></h2>
+<p>Podemos ejecutar comandos de administración, instalación y scripts predefinidos:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">RUN</span> mkdir -p /var/www/app &amp;&amp; chown -R www-data:www-data /var/www/app<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">RUN</span> apt-get update &amp;&amp; apt-get install -y composer<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">RUN</span> composer install --no-scripts --no-autoloader</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="práctica-sugerida-crear-un-dockerfile">Práctica sugerida: Crear un Dockerfile</h2>
+<ol>
+<li>Partir de la imagen base <code>ubuntu:latest</code>.</li>
+<li>Instalar los paquetes necesarios:
+<ul>
+<li><code>apache2</code></li>
+<li><code>vim</code></li>
+<li><code>git</code></li>
+<li><code>zip</code></li>
+</ul>
+</li>
+</ol>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">FROM</span><span style="color:#cd5555"> ubuntu:latest</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">RUN</span> apt-get update &amp;&amp; apt-get install -y apache2 vim git zip</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="declaración-de-variables-env-vs-arg">Declaración de variables: <code>ENV</code> vs <code>ARG</code></h2>
+<p><img alt="img_2.png" src="/docs/06_dockefile/img_2.png">
+Diferencias clave:</p>
+<ul>
+<li><strong><code>ENV</code></strong>: Define variables accesibles dentro del contenedor en tiempo de ejecución.</li>
+<li><strong><code>ARG</code></strong>: Define argumentos disponibles solo durante la construcción de la imagen.</li>
+</ul>
+<h3 id="ejemplo-de-uso-arg">Ejemplo de uso: <code>ARG</code></h3>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">ARG</span> <span style="color:#00688b">VERSION</span>=latest
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">FROM</span><span style="color:#cd5555"> ubuntu:$VERSION</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">RUN</span> <span style="color:#658b00">echo</span> <span style="color:#00688b">$VERSION</span> &gt; version.txt</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Construcción personalizada:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker build --build-arg <span style="color:#00688b">VERSION</span>=18.10 -t web:v1 .</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="ejemplo-de-uso-env">Ejemplo de uso: <code>ENV</code></h3>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">FROM</span><span style="color:#cd5555"> ubuntu:latest</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">ENV</span> <span style="color:#00688b">USER</span>=manuel
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">RUN</span> <span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;Usuario configurado: </span><span style="color:#00688b">$USER</span><span style="color:#cd5555">&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="solución-de-problemas-instalación-de-php">Solución de problemas: Instalación de PHP</h2>
+<h3 id="problema">Problema</h3>
+<p>Al instalar PHP, puede requerirse configurar la zona horaria (<code>tzone</code>), lo que interrumpe la construcción al no poder interactuar con el contenedor.
+<img alt="img_3.png" src="/docs/06_dockefile/img_3.png"></p>
+<h3 id="solución">Solución</h3>
+<p>Configurar el entorno en modo no interactivo:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">ARG</span> <span style="color:#00688b">DEBIAN_FRONTEND</span>=noninteractive
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">RUN</span> apt-get update &amp;&amp; apt-get install -y php libapache2-mod-php</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Configurar la zona horaria:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">RUN</span> ln -snf /usr/share/zoneinfo/Europe/Madrid /etc/localtime &amp;&amp; <span style="color:#cd5555">\
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555"></span><span style="color:#658b00">echo</span> <span style="color:#cd5555">&#34;Europe/Madrid&#34;</span> &gt; /etc/timezone</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="etiquetas-label">Etiquetas (<code>LABEL</code>)</h2>
+<p>Podemos agregar metadatos útiles a la imagen:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">FROM</span><span style="color:#cd5555"> ubuntu:latest</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">LABEL</span> <span style="color:#00688b">maintainer</span>=<span style="color:#cd5555">&#34;example@example.com&#34;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">LABEL</span> <span style="color:#00688b">version</span>=<span style="color:#cd5555">&#34;1.0&#34;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">LABEL</span> <span style="color:#00688b">description</span>=<span style="color:#cd5555">&#34;Imagen personalizada para aplicaciones web&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Ver etiquetas en el contenedor:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker inspect --format <span style="color:#cd5555">&#39;{{.Config.Labels}}&#39;</span> container_name</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="gestión-de-archivos-copy-y-add">Gestión de archivos: <code>COPY</code> y <code>ADD</code></h2>
+<h3 id="ejemplo-crear-usuarios-desde-un-script">Ejemplo: Crear usuarios desde un script</h3>
+<p>Archivos necesarios:</p>
+<ol>
+<li>
+<p><code>usuarios.txt</code>:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>maria
+</span></span><span style="display:flex;"><span>nives
+</span></span><span style="display:flex;"><span>luis
+</span></span><span style="display:flex;"><span>lourdes
+</span></span><span style="display:flex;"><span>manuel</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p><code>crea_usuarios.sh</code>:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">while</span> <span style="color:#00688b">IFS</span>= <span style="color:#658b00">read</span> -r line
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">do</span>
+</span></span><span style="display:flex;"><span>useradd -m <span style="color:#00688b">$line</span> -p <span style="color:#00688b">$line</span>
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">done</span> &lt; usuarios.txt</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+</ol>
+<p>Dockerfile:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">FROM</span><span style="color:#cd5555"> ubuntu:latest</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">COPY</span> crea_usuarios.sh /<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">ADD</span> usuarios.txt /<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">RUN</span> bash crea_usuarios.sh</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="comandos-cmd-y-entrypoint">Comandos: <code>CMD</code> y <code>ENTRYPOINT</code></h2>
+<h3 id="cmd"><code>CMD</code></h3>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">CMD</span> [<span style="color:#cd5555">&#34;echo&#34;</span>, <span style="color:#cd5555">&#34;Hola desde Docker&#34;</span>]</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="entrypoint"><code>ENTRYPOINT</code></h3>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">ENTRYPOINT</span> [<span style="color:#cd5555">&#34;apachectl&#34;</span>, <span style="color:#cd5555">&#34;-D&#34;</span>, <span style="color:#cd5555">&#34;FOREGROUND&#34;</span>]</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Ambos comandos definen lo que ejecutará el contenedor al iniciarse.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="volúmenes-volume">Volúmenes (<code>VOLUME</code>)</h2>
+<p>Definir un volumen para persistencia de datos:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">FROM</span><span style="color:#cd5555"> ubuntu:latest</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">VOLUME</span> [<span style="color:#cd5555">&#34;/data&#34;</span>]</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Uso con variables de entorno:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">ENV</span> <span style="color:#00688b">WEB_DIR</span>=/var/www/html<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">VOLUME</span><span style="color:#cd5555"> $WEB_DIR</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="directorio-de-trabajo-workdir">Directorio de trabajo (<code>WORKDIR</code>)</h2>
+<p>Definir el directorio predeterminado:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">FROM</span><span style="color:#cd5555"> ubuntu:latest</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">WORKDIR</span><span style="color:#cd5555"> /var/www/html</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">COPY</span> script.sh /<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">ENTRYPOINT</span> bash script.sh</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="exponer-puertos-expose">Exponer puertos (<code>EXPOSE</code>)</h2>
+<p>Definir puertos expuestos por el contenedor:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">FROM</span><span style="color:#cd5555"> ubuntu:latest</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">ENV</span> <span style="color:#00688b">WEB_PORT</span>=<span style="color:#b452cd">80</span> <span style="color:#00688b">MYSQL_PORT</span>=<span style="color:#b452cd">3306</span>
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">EXPOSE</span><span style="color:#cd5555"> $WEB_PORT $MYSQL_PORT</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="conclusión">Conclusión</h2>
+
+
+<div class="alert alert-green" role="alert">
+<h4 class="alert-heading">Resumen</h4>
+
+    <ul>
+<li>Sabemos crear imágenes personalizadas con Dockerfile.</li>
+<li>Sabemos usar instrucciones clave como <code>RUN</code>, <code>CMD</code>, <code>ENTRYPOINT</code> y más.</li>
+<li>Aprendimos a gestionar volúmenes y persistencia de datos.</li>
+<li>Configuramos variables de entorno y puertos expuestos.</li>
+<li>Sabemos subir y gestionar imágenes en Docker Hub.</li>
+</ul>
+
+
+</div>
+
+
+  <div class="section-index">
+    
+    
+    </div>
+</div>
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2024
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

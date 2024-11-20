@@ -2,65 +2,65 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Despliegue de aplicaciones web on Despliegue de aplicacones Web</title>
-    <link>http://web.infenlaces.com/despliegue/docker/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in Despliegue de aplicaciones web on Despliegue de aplicacones Web</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <atom:link href="http://web.infenlaces.com/despliegue/docker/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://web.infenlaces.com/despliegue/docker/docs/06_ejercicios/5_dockercompose/3_web_1/app/</link>
+      <link>http://localhost:1313/docs/08_ejercicios/5_dockercompose/3_web_1/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://web.infenlaces.com/despliegue/docker/docs/06_ejercicios/5_dockercompose/3_web_1/app/</guid>
+      <guid>http://localhost:1313/docs/08_ejercicios/5_dockercompose/3_web_1/app/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;title&gt;Title&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;h1&gt;Hola desde docker &lt;/h1&gt;&#xA;&lt;h2 style=&#34;color:red; font-size: 3em&#34;&gt;Estoy en el index&lt;/h2&gt;&#xA;&lt;a href=&#34;saludo2.html&#34;&gt;Ir a saludo2&lt;/a&gt;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://web.infenlaces.com/despliegue/docker/docs/06_ejercicios/5_dockercompose/4_web_2/app/</link>
+      <link>http://localhost:1313/docs/08_ejercicios/5_dockercompose/4_web_2/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://web.infenlaces.com/despliegue/docker/docs/06_ejercicios/5_dockercompose/4_web_2/app/</guid>
+      <guid>http://localhost:1313/docs/08_ejercicios/5_dockercompose/4_web_2/app/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;title&gt;Title&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;h1&gt;Hola desde dockerrrrr &lt;/h1&gt;&#xA;&lt;h2 style=&#34;color:red; font-size: 3em&#34;&gt;Estoy en el index&lt;/h2&gt;&#xA;&lt;a href=&#34;saludo2.html&#34;&gt;Ir a saludo2&lt;/a&gt;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://web.infenlaces.com/despliegue/docker/docs/06_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/</link>
+      <link>http://localhost:1313/docs/08_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://web.infenlaces.com/despliegue/docker/docs/06_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/</guid>
+      <guid>http://localhost:1313/docs/08_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;title&gt;Title&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;h1&gt;Hola desde dockerrrrr &lt;/h1&gt;&#xA;&lt;h2 style=&#34;color:red; font-size: 3em&#34;&gt;Estoy en el index&lt;/h2&gt;&#xA;&lt;a href=&#34;saludo2.html&#34;&gt;Ir a saludo2&lt;/a&gt;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://web.infenlaces.com/despliegue/docker/docs/06_ejercicios/5_dockercompose/7_web_developer/app/</link>
+      <link>http://localhost:1313/docs/08_ejercicios/5_dockercompose/7_web_developer/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://web.infenlaces.com/despliegue/docker/docs/06_ejercicios/5_dockercompose/7_web_developer/app/</guid>
+      <guid>http://localhost:1313/docs/08_ejercicios/5_dockercompose/7_web_developer/app/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;title&gt;Title&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;h1&gt;Hola desde dockerrrrr &lt;/h1&gt;&#xA;&lt;h2 style=&#34;color:red; font-size: 3em&#34;&gt;Estoy en el index&lt;/h2&gt;&#xA;&lt;a href=&#34;saludo2.html&#34;&gt;Ir a saludo2&lt;/a&gt;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://web.infenlaces.com/despliegue/docker/docs/06_ejercicios/5_dockercompose/apache/app/</link>
+      <link>http://localhost:1313/docs/08_ejercicios/5_dockercompose/apache/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://web.infenlaces.com/despliegue/docker/docs/06_ejercicios/5_dockercompose/apache/app/</guid>
+      <guid>http://localhost:1313/docs/08_ejercicios/5_dockercompose/apache/app/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;title&gt;Title&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;h1&gt;Hols&lt;/h1&gt;&#xA;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://web.infenlaces.com/despliegue/docker/docs/06_ejercicios/5_dockercompose/docker_proyectos/</link>
+      <link>http://localhost:1313/docs/08_ejercicios/5_dockercompose/docker_proyectos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://web.infenlaces.com/despliegue/docker/docs/06_ejercicios/5_dockercompose/docker_proyectos/</guid>
+      <guid>http://localhost:1313/docs/08_ejercicios/5_dockercompose/docker_proyectos/</guid>
       <description>&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Transitional//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#34;&gt;&#xA;&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34;&gt;&#xA;  &lt;!--&#xA;    Modified from the Debian original for Ubuntu&#xA;    Last updated: 2022-03-22&#xA;    See: https://launchpad.net/bugs/1966004&#xA;  --&gt;&#xA;  &lt;head&gt;&#xA;    &lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=UTF-8&#34; /&gt;&#xA;    &lt;title&gt;Apache2 Ubuntu Default Page: It works&lt;/title&gt;&#xA;    &lt;style type=&#34;text/css&#34; media=&#34;screen&#34;&gt;&#xA;  * {&#xA;    margin: 0px 0px 0px 0px;&#xA;    padding: 0px 0px 0px 0px;&#xA;  }&#xA;&#xA;  body, html {&#xA;    padding: 3px 3px 3px 3px;&#xA;&#xA;    background-color: #D8DBE2;&#xA;&#xA;    font-family: Ubuntu, Verdana, sans-serif;&#xA;    font-size: 11pt;&#xA;    text-align: center;&#xA;  }&#xA;&#xA;  div.main_page {&#xA;    position: relative;&#xA;    display: table;&#xA;&#xA;    width: 800px;&#xA;&#xA;    margin-bottom: 3px;&#xA;    margin-left: auto;&#xA;    margin-right: auto;&#xA;    padding: 0px 0px 0px 0px;&#xA;&#xA;    border-width: 2px;&#xA;    border-color: #212738;&#xA;    border-style: solid;&#xA;&#xA;    background-color: #FFFFFF;&#xA;&#xA;    text-align: center;&#xA;  }&#xA;&#xA;  div.page_header {&#xA;    height: 180px;&#xA;    width: 100%;&#xA;&#xA;    background-color: #F5F6F7;&#xA;  }&#xA;&#xA;  div.page_header span {&#xA;    margin: 15px 0px 0px 50px;&#xA;&#xA;    font-size: 180%;&#xA;    font-weight: bold;&#xA;  }&#xA;&#xA;  div.page_header img {&#xA;    margin: 3px 0px 0px 40px;&#xA;&#xA;    border: 0px 0px 0px;&#xA;  }&#xA;&#xA;  div.banner {&#xA;    padding: 9px 6px 9px 6px;&#xA;    background-color: #E9510E;&#xA;    color: #FFFFFF;&#xA;    font-weight: bold;&#xA;    font-size: 112%;&#xA;    text-align: center;&#xA;    position: absolute;&#xA;    left: 40%;&#xA;    bottom: 30px;&#xA;    width: 20%;&#xA;  }&#xA;&#xA;  div.table_of_contents {&#xA;    clear: left;&#xA;&#xA;    min-width: 200px;&#xA;&#xA;    margin: 3px 3px 3px 3px;&#xA;&#xA;    background-color: #FFFFFF;&#xA;&#xA;    text-align: left;&#xA;  }&#xA;&#xA;  div.table_of_contents_item {&#xA;    clear: left;&#xA;&#xA;    width: 100%;&#xA;&#xA;    margin: 4px 0px 0px 0px;&#xA;&#xA;    background-color: #FFFFFF;&#xA;&#xA;    color: #000000;&#xA;    text-align: left;&#xA;  }&#xA;&#xA;  div.table_of_contents_item a {&#xA;    margin: 6px 0px 0px 6px;&#xA;  }&#xA;&#xA;  div.content_section {&#xA;    margin: 3px 3px 3px 3px;&#xA;&#xA;    background-color: #FFFFFF;&#xA;&#xA;    text-align: left;&#xA;  }&#xA;&#xA;  div.content_section_text {&#xA;    padding: 4px 8px 4px 8px;&#xA;&#xA;    color: #000000;&#xA;    font-size: 100%;&#xA;  }&#xA;&#xA;  div.content_section_text pre {&#xA;    margin: 8px 0px 8px 0px;&#xA;    padding: 8px 8px 8px 8px;&#xA;&#xA;    border-width: 1px;&#xA;    border-style: dotted;&#xA;    border-color: #000000;&#xA;&#xA;    background-color: #F5F6F7;&#xA;&#xA;    font-style: italic;&#xA;  }&#xA;&#xA;  div.content_section_text p {&#xA;    margin-bottom: 6px;&#xA;  }&#xA;&#xA;  div.content_section_text ul, div.content_section_text li {&#xA;    padding: 4px 8px 4px 16px;&#xA;  }&#xA;&#xA;  div.section_header {&#xA;    padding: 3px 6px 3px 6px;&#xA;&#xA;    background-color: #8E9CB2;&#xA;&#xA;    color: #FFFFFF;&#xA;    font-weight: bold;&#xA;    font-size: 112%;&#xA;    text-align: center;&#xA;  }&#xA;&#xA;  div.section_header_grey {&#xA;    background-color: #9F9386;&#xA;  }&#xA;&#xA;  .floating_element {&#xA;    position: relative;&#xA;    float: left;&#xA;  }&#xA;&#xA;  div.table_of_contents_item a,&#xA;  div.content_section_text a {&#xA;    text-decoration: none;&#xA;    font-weight: bold;&#xA;  }&#xA;&#xA;  div.table_of_contents_item a:link,&#xA;  div.table_of_contents_item a:visited,&#xA;  div.table_of_contents_item a:active {&#xA;    color: #000000;&#xA;  }&#xA;&#xA;  div.table_of_contents_item a:hover {&#xA;    background-color: #000000;&#xA;&#xA;    color: #FFFFFF;&#xA;  }&#xA;&#xA;  div.content_section_text a:link,&#xA;  div.content_section_text a:visited,&#xA;   div.content_section_text a:active {&#xA;    background-color: #DCDFE6;&#xA;&#xA;    color: #000000;&#xA;  }&#xA;&#xA;  div.content_section_text a:hover {&#xA;    background-color: #000000;&#xA;&#xA;    color: #DCDFE6;&#xA;  }&#xA;&#xA;  div.validator {&#xA;  }&#xA;    &lt;/style&gt;&#xA;  &lt;/head&gt;&#xA;  &lt;body&gt;&#xA;    &lt;div class=&#34;main_page&#34;&gt;&#xA;      &lt;div class=&#34;page_header floating_element&#34;&gt;&#xA;        &lt;img src=&#34;icons/ubuntu-logo.png&#34; alt=&#34;Ubuntu Logo&#34;&#xA;             style=&#34;width:184px;height:146px;&#34; class=&#34;floating_element&#34; /&gt;&#xA;        &lt;div&gt;&#xA;          &lt;span style=&#34;margin-top: 1.5em;&#34; class=&#34;floating_element&#34;&gt;&#xA;            Apache2 Default Page&#xA;          &lt;/span&gt;&#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;banner&#34;&gt;&#xA;          &lt;div id=&#34;about&#34;&gt;&lt;/div&gt;&#xA;          It works!&#xA;        &lt;/div&gt;&#xA;&#xA;      &lt;/div&gt;&#xA;      &lt;div class=&#34;content_section floating_element&#34;&gt;&#xA;        &lt;div class=&#34;content_section_text&#34;&gt;&#xA;          &lt;p&gt;&#xA;                This is the default welcome page used to test the correct &#xA;                operation of the Apache2 server after installation on Ubuntu systems.&#xA;                It is based on the equivalent page on Debian, from which the Ubuntu Apache&#xA;                packaging is derived.&#xA;                If you can read this page, it means that the Apache HTTP server installed at&#xA;                this site is working properly. You should &lt;b&gt;replace this file&lt;/b&gt; (located at&#xA;                &lt;tt&gt;/var/www/html/index.html&lt;/tt&gt;) before continuing to operate your HTTP server.&#xA;          &lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://web.infenlaces.com/despliegue/docker/docs/06_ejercicios/5_dockercompose/nginx/app/</link>
+      <link>http://localhost:1313/docs/08_ejercicios/5_dockercompose/nginx/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://web.infenlaces.com/despliegue/docker/docs/06_ejercicios/5_dockercompose/nginx/app/</guid>
+      <guid>http://localhost:1313/docs/08_ejercicios/5_dockercompose/nginx/app/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;title&gt;Title&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;h1&gt;Hola desde docker &lt;/h1&gt;&#xA;&lt;h2 style=&#34;color:red; font-size: 3em&#34;&gt;Estoy en el index&lt;/h2&gt;&#xA;&lt;a href=&#34;saludo2.html&#34;&gt;Ir a saludo2&lt;/a&gt;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://web.infenlaces.com/despliegue/docker/politica-de-privacidad/</link>
+      <link>http://localhost:1313/politica-de-privacidad/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://web.infenlaces.com/despliegue/docker/politica-de-privacidad/</guid>
+      <guid>http://localhost:1313/politica-de-privacidad/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;es&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;&#xA;    &lt;title&gt;Políticas de Privacidad y Licencia de Contenido&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;    &lt;section&gt;&#xA;        &lt;h1&gt;Políticas de Privacidad y Licencia de Contenido&lt;/h1&gt;&#xA;&#xA;        &lt;h2&gt;Licencia del contenido&lt;/h2&gt;&#xA;        &lt;p&gt;Todo el contenido disponible en este sitio web está licenciado bajo una &lt;strong&gt;Licencia Creative Commons Atribución 4.0 Internacional (CC BY 4.0)&lt;/strong&gt;. Esto significa que puedes:&lt;/p&gt;&#xA;        &lt;ul&gt;&#xA;            &lt;li&gt;&lt;strong&gt;Compartir:&lt;/strong&gt; Copiar y redistribuir el material en cualquier medio o formato.&lt;/li&gt;&#xA;            &lt;li&gt;&lt;strong&gt;Adaptar:&lt;/strong&gt; Re-mezclar, transformar y construir a partir del material para cualquier propósito, incluso comercialmente.&lt;/li&gt;&#xA;        &lt;/ul&gt;&#xA;&#xA;        &lt;h3&gt;Condiciones&lt;/h3&gt;&#xA;        &lt;p&gt;Bajo los siguientes términos:&lt;/p&gt;</description>
     </item>
   </channel>

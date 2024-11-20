@@ -5,7 +5,6 @@ weight: 10
 icon: fab fa-docker
 ---
 
-
 {{< objetivos  title="Docker" sub_title="Objetivos de este tema">}}
 Entender qué es docker
 Crear contenedores

@@ -1,28 +1,28 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="http://web.infenlaces.com/despliegue/docker/docs/06_ejercicios/2_contenedores/">
-<link rel="alternate" type="application/rss&#43;xml" href="http://web.infenlaces.com/despliegue/docker/docs/06_ejercicios/2_contenedores/index.xml">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docs/06_ejercicios/2_contenedores/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs/06_ejercicios/2_contenedores/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
-<link rel="shortcut icon" href="/despliegue/docker/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/despliegue/docker/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/despliegue/docker/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/despliegue/docker/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-192x192.png" sizes="192x192">
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
 <title>Crea Contenedores | Despliegue de aplicacones Web</title>
 <meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
 
-<meta property="og:url" content="http://web.infenlaces.com/despliegue/docker/docs/06_ejercicios/2_contenedores/">
+<meta property="og:url" content="http://localhost:1313/docs/06_ejercicios/2_contenedores/">
   <meta property="og:site_name" content="Despliegue de aplicacones Web">
   <meta property="og:title" content="Crea Contenedores">
   <meta property="og:description" content="Crear y usar contenedores Comandos a usar docker create docker start docker exec docker run docker run --name docker run --name xxx --hostname xxx -p xxxx:xx v xx:xxx nombre_imagen Crea, lista y borra contenedores Comandos a usar docker create docker start docker exec &gt; docker ps -a docker rm nombre_contenedor docker rm (docker ps -a- q) Si estás en linux o en mac
@@ -40,7 +40,7 @@ docker rm $(docker ps -a -q) 1. Crea 5 contenedor a partir de la imagen ubuntu:l
 docker rm $(docker ps -a -q) 1. Crea 5 contenedor a partir de la imagen ubuntu:latest sin especificar nombre 2. Verifica que los has creado Revisa con cuidado 🔍 Reflexiona Observa que te tienen que salir en estado created Has de intentar enteder qué implica este estado y ver que en este contenedor no puedo ejecutar nada hasta que no esté en estado Up">
 
 
-<link rel="preload" href="/despliegue/docker/scss/main.min.2226bb8b004a95914f9976368ab2165eeb0ad2f8876fc94fa0720f4829b62d7d.css" as="style"><link href="/despliegue/docker/scss/main.min.2226bb8b004a95914f9976368ab2165eeb0ad2f8876fc94fa0720f4829b62d7d.css" rel="stylesheet">
+<link href="/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -51,8 +51,8 @@ docker rm $(docker ps -a -q) 1. Crea 5 contenedor a partir de la imagen ubuntu:l
     <header>
       <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
 <div class="container-fluid flex-column flex-md-row ">
-  <a class="navbar-brand" href="/despliegue/docker/"><span class="navbar-brand__logo navbar-logo">
-    <img src="/despliegue/docker/images/logo.png" alt="Logo" width="150" height="auto" />
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/images/logo.png" alt="Logo" width="150" height="auto" />
     </span><span class="navbar-brand__name">Despliegue de aplicacones Web</span></a>
   <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
     <ul class="navbar-nav">
@@ -60,8 +60,8 @@ docker rm $(docker ps -a -q) 1. Crea 5 contenedor a partir de la imagen ubuntu:l
         <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/despliegue/docker/en/">English</a></li>
-    <li><a class="dropdown-item" href="/despliegue/docker/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/en/">English</a></li>
+    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
     </ul>
 </div></li>
       </ul>
@@ -88,7 +88,7 @@ docker rm $(docker ps -a -q) 1. Crea 5 contenedor a partir de la imagen ubuntu:l
 Versión imprimible multipagina.
 <a href="#" onclick="print();return false;">Haga click aquí para imprimir</a>.
 </p><p>
-<a href="/despliegue/docker/docs/06_ejercicios/2_contenedores/">Volver a la vista normal de esta página</a>.
+<a href="/docs/06_ejercicios/2_contenedores/">Volver a la vista normal de esta página</a>.
 </p>
 </div>
 
@@ -846,9 +846,9 @@ Antes de elimniar el contenedor tiene que estar parado
 </footer>
 
     </div>
-    <script src="/despliegue/docker/js/main.min.32339ee7e1e5f837349cf41279909ad84968bc2ee74435b18ec15a70da0bdc2a.js" integrity="sha256-MjOe5&#43;Hl&#43;Dc0nPQSeZCa2ElovC7nRDWxjsFacNoL3Co=" crossorigin="anonymous"></script>
-<script defer src="/despliegue/docker/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
-<script src='/despliegue/docker/js/tabpane-persist.js'></script>
+    <script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/js/tabpane-persist.js'></script>
 
   </body>
 </html>

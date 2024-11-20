@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://web.infenlaces.com/despliegue/docker/fr/categories/</loc>
+    <loc>http://localhost:1313/fr/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://web.infenlaces.com/despliegue/docker/categories/"
+                href="http://localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://web.infenlaces.com/despliegue/docker/en/categories/"
+                href="http://localhost:1313/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://web.infenlaces.com/despliegue/docker/fr/categories/"
+                href="http://localhost:1313/fr/categories/"
                 />
   </url><url>
-    <loc>http://web.infenlaces.com/despliegue/docker/fr/</loc>
+    <loc>http://localhost:1313/fr/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://web.infenlaces.com/despliegue/docker/en/"
+                href="http://localhost:1313/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://web.infenlaces.com/despliegue/docker/"
+                href="http://localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://web.infenlaces.com/despliegue/docker/fr/"
+                href="http://localhost:1313/fr/"
                 />
   </url><url>
-    <loc>http://web.infenlaces.com/despliegue/docker/fr/tags/</loc>
+    <loc>http://localhost:1313/fr/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://web.infenlaces.com/despliegue/docker/tags/"
+                href="http://localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://web.infenlaces.com/despliegue/docker/en/tags/"
+                href="http://localhost:1313/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://web.infenlaces.com/despliegue/docker/fr/tags/"
+                href="http://localhost:1313/fr/tags/"
                 />
   </url>
 </urlset>

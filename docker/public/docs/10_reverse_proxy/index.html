@@ -1,0 +1,585 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs/10_reverse_proxy/index.xml">
+<link rel="alternate" type="text/html" href="http://localhost:1313/docs/10_reverse_proxy/_print/">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+
+<title>Proxy inverso o Reverse prxy | Despliegue de aplicacones Web</title>
+<meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
+
+<meta property="og:url" content="http://localhost:1313/docs/10_reverse_proxy/">
+  <meta property="og:site_name" content="Despliegue de aplicacones Web">
+  <meta property="og:title" content="Proxy inverso o Reverse prxy">
+  <meta property="og:description" content="Explicación: Proxy y Proxy Inverso 1. Proxy Qué es un proxy Un proxy es un servidor intermedio que actúa como puente entre un cliente y un servidor . Cuando un cliente solicita acceder a un recurso en Internet, el proxy redirige esa solicitud al servidor, recibe la respuesta y se la devuelve al cliente.
+Función principal:
+Ocultar la identidad del cliente (anonimato). Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché. Ejemplo:
+Un usuario quiere acceder a una página web. Su solicitud pasa primero por un servidor proxy que redirige la conexión, de modo que el servidor web no ve directamente al cliente, sino al proxy.">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Proxy inverso o Reverse prxy">
+  <meta itemprop="description" content="Explicación: Proxy y Proxy Inverso 1. Proxy Qué es un proxy Un proxy es un servidor intermedio que actúa como puente entre un cliente y un servidor . Cuando un cliente solicita acceder a un recurso en Internet, el proxy redirige esa solicitud al servidor, recibe la respuesta y se la devuelve al cliente.
+Función principal:
+Ocultar la identidad del cliente (anonimato). Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché. Ejemplo:
+Un usuario quiere acceder a una página web. Su solicitud pasa primero por un servidor proxy que redirige la conexión, de modo que el servidor web no ve directamente al cliente, sino al proxy.">
+  <meta itemprop="wordCount" content="675">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Proxy inverso o Reverse prxy">
+  <meta name="twitter:description" content="Explicación: Proxy y Proxy Inverso 1. Proxy Qué es un proxy Un proxy es un servidor intermedio que actúa como puente entre un cliente y un servidor . Cuando un cliente solicita acceder a un recurso en Internet, el proxy redirige esa solicitud al servidor, recibe la respuesta y se la devuelve al cliente.
+Función principal:
+Ocultar la identidad del cliente (anonimato). Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché. Ejemplo:
+Un usuario quiere acceder a una página web. Su solicitud pasa primero por un servidor proxy que redirige la conexión, de modo que el servidor web no ve directamente al cliente, sino al proxy.">
+
+
+<link href="/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Despliegue de aplicacones Web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/en/">English</a></li>
+    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <div class="td-sidebar-nav__section nav-item dropdown d-block d-lg-none">
+      <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/en/">English</a></li>
+    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    </ul>
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
+  <a href="/docs/" title="Introducción" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><i class="fab fa-docker"></i><span class="">Docker</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs01_conceptos-li">
+  <input type="checkbox" id="m-docs01_conceptos-check"/>
+  <label for="m-docs01_conceptos-check"><a href="/docs/01_conceptos/" title="Conceptos sobre docker" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs01_conceptos"><i class="fa-regular fa-lightbulb"></i><span class="">Conceptos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs02_contenedores-e-imc3a1genes-li">
+  <input type="checkbox" id="m-docs02_contenedores-e-imc3a1genes-check"/>
+  <label for="m-docs02_contenedores-e-imc3a1genes-check"><a href="/docs/02_contenedores-e-im%C3%A1genes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs02_contenedores-e-imc3a1genes"><i class="fa  fa-box"></i><span class="">Contenedores e imágenes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs03_instalacion-li">
+  <input type="checkbox" id="m-docs03_instalacion-check"/>
+  <label for="m-docs03_instalacion-check"><a href="/docs/03_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs03_instalacion"><i class="fa fa-download"></i><span class="">Instalación</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs04_comandos-li">
+  <input type="checkbox" id="m-docs04_comandos-check"/>
+  <label for="m-docs04_comandos-check"><a href="/docs/04_comandos/" title="Docker en  línea de comandos " class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs04_comandos"><i class="fa-solid fa-terminal"></i><span class="">Comandos docker</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs05_comandos_docker-li">
+  <input type="checkbox" id="m-docs05_comandos_docker-check"/>
+  <label for="m-docs05_comandos_docker-check"><a href="/docs/05_comandos_docker/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs05_comandos_docker"><i class="fa-solid fa-terminal"></i><span class="">comandos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs07_docker-compose-li">
+  <input type="checkbox" id="m-docs07_docker-compose-check"/>
+  <label for="m-docs07_docker-compose-check"><a href="/docs/07_docker-compose/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs07_docker-compose"><i class="fa-solid fa-terminal"></i><span class="">comandos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs06_dockefile-li">
+  <input type="checkbox" id="m-docs06_dockefile-check"/>
+  <label for="m-docs06_dockefile-check"><a href="/docs/06_dockefile/" title="Fichero de ejecución para crear imágenes DockerFile" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs06_dockefile"><i class="fa-solid fa-terminal"></i><span class="">DockerFile</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docs10_reverse_proxy-li">
+  <input type="checkbox" id="m-docs10_reverse_proxy-check" checked/>
+  <label for="m-docs10_reverse_proxy-check"><a href="/docs/10_reverse_proxy/" title="Proxy inverso o Reverse prxy" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-docs10_reverse_proxy"><i class="fa-regular fa-file-code"></i><span class="td-sidebar-nav-active-item">Proxy inverso</span></a></label>
+  
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+<a id="print" href="/docs/10_reverse_proxy/_print/"><i class="fa-solid fa-print fa-fw"></i> Imprimir la sección entera</a>
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-proxy">1. Proxy</a></li>
+    <li><a href="#2-proxy-inverso">2. Proxy Inverso</a></li>
+    <li><a href="#3-por-qué-se-llama-proxy-inverso">3. ¿Por qué se llama &ldquo;proxy inverso&rdquo;?</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#1-preparar-el-entorno">1. Preparar el entorno</a></li>
+    <li><a href="#2-crear-los-contenedores-para-los-alumnos">2. Crear los contenedores para los alumnos</a>
+      <ul>
+        <li><a href="#crear-el-dockerfile-para-apache-y-php">Crear el Dockerfile para Apache y PHP:</a></li>
+        <li><a href="#construir-las-imágenes-para-cada-alumno">Construir las imágenes para cada alumno:</a></li>
+        <li><a href="#levantar-los-contenedores">Levantar los contenedores:</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-configurar-el-proxy-inverso-con-nginx">3. Configurar el proxy inverso con Nginx</a>
+      <ul>
+        <li><a href="#crear-un-archivo-de-configuración-para-nginx">Crear un archivo de configuración para Nginx:</a></li>
+        <li><a href="#levantar-el-contenedor-de-nginx-como-proxy-inverso">Levantar el contenedor de Nginx como proxy inverso:</a></li>
+      </ul>
+    </li>
+    <li><a href="#4-configurar-una-red-común-en-docker">4. Configurar una red común en Docker</a>
+      <ul>
+        <li><a href="#crear-una-red-personalizada-para-los-contenedores">Crear una red personalizada para los contenedores:</a></li>
+        <li><a href="#conectar-los-contenedores-a-esta-red">Conectar los contenedores a esta red:</a></li>
+      </ul>
+    </li>
+    <li><a href="#5-probar-la-configuración">5. Probar la configuración</a></li>
+    <li><a href="#6-aspecto-importantes">6. Aspecto importantes</a></li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/docs/">Docker</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    Proxy inverso</li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Proxy inverso o Reverse prxy</h1>
+  
+	<header class="article-meta">
+		
+</header>
+	<h1 id="explicación-proxy-y-proxy-inverso">Explicación: Proxy y Proxy Inverso</h1>
+<h2 id="1-proxy">1. Proxy</h2>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-network-wired" aria-hidden="true"></i>
+    
+    <strong>Qué es un proxy</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+Un 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    proxy
+
+
+</span>
+</strong>
+ es un servidor intermedio que actúa como 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    puente
+
+
+</span>
+</strong>
+ entre 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    un cliente y un servidor
+
+
+</span>
+</strong>
+.
+
+  </div>
+</div>
+<p>Cuando un cliente solicita acceder a un recurso en Internet, el proxy redirige esa solicitud al servidor, recibe la respuesta y se la devuelve al cliente.</p>
+<p><strong>Función principal</strong>:</p>
+<ul>
+<li>Ocultar la identidad del cliente (anonimato).</li>
+<li>Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché.</li>
+</ul>
+<p><strong>Ejemplo</strong>:<br>
+Un usuario quiere acceder a una página web. Su solicitud pasa primero por un servidor proxy que redirige la conexión, de modo que el servidor web no ve directamente al cliente, sino al proxy.</p>
+<hr>
+<h2 id="2-proxy-inverso">2. Proxy Inverso</h2>
+<p>Un <strong>proxy inverso</strong> (también llamado <em>reverse proxy</em>) es un servidor que se sitúa frente a uno o más servidores y gestiona las solicitudes de los clientes antes de enviarlas a los servidores finales.</p>
+<p><strong>Función principal</strong>:</p>
+<ul>
+<li>Actuar como intermediario entre los clientes y los servidores internos, con objetivos como:
+<ul>
+<li>Distribuir la carga entre varios servidores (balanceo de carga).</li>
+<li>Mejorar la seguridad ocultando los servidores reales.</li>
+<li>Servir contenido en caché para acelerar la entrega.</li>
+<li>Gestionar múltiples subdominios o servicios desde un único punto de entrada.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Ejemplo</strong>:<br>
+Cuando accedes a <code>www.miweb.com</code>, el proxy inverso determina si tu solicitud debe ser atendida por un servidor web, un servidor de imágenes, o un servicio API, redirigiéndola al servidor correspondiente.</p>
+<hr>
+<h2 id="3-por-qué-se-llama-proxy-inverso">3. ¿Por qué se llama &ldquo;proxy inverso&rdquo;?</h2>
+<p>El término &ldquo;inverso&rdquo; refleja que el proxy inverso actúa del lado del servidor (recibiendo solicitudes de los clientes) en lugar del lado del cliente (como un proxy convencional). Mientras el proxy normal protege al cliente, el proxy inverso protege y organiza a los servidores.</p>
+<hr>
+<p><strong>Nota</strong>:<br>
+El término &ldquo;prosy inverter&rdquo; es incorrecto. El término correcto en inglés es <strong>reverse proxy</strong>, traducido al español como <strong>proxy inverso</strong>.</p>
+<h1 id="configuración-de-proxy-inverso-con-docker">Configuración de Proxy Inverso con Docker</h1>
+<h2 id="1-preparar-el-entorno">1. Preparar el entorno</h2>
+<p>Editar el archivo <code>hosts</code> en tu máquina local:</p>
+<p>Agrega las siguientes líneas para simular los dominios:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>127.0.0.1 dwes.com
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>127.0.0.1 alumno1.dwes.com
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>127.0.0.1 alumno2.dwes.com</span></span></code></pre></td></tr></table>
+</div>
+</div>
+Esto permite que los subdominios apunten a tu máquina local.</p>
+<p>Instala 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker
+
+
+</span>
+</strong>
+ y 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker Compose
+
+
+</span>
+</strong>
+ si aún no los tienes.</p>
+<hr>
+<h2 id="2-crear-los-contenedores-para-los-alumnos">2. Crear los contenedores para los alumnos</h2>
+<p>Cada alumno tendrá un contenedor Docker con 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Apache
+
+
+</span>
+</strong>
+ y 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    PHP
+
+
+</span>
+</strong>
+ instalados:</p>
+<h3 id="crear-el-dockerfile-para-apache-y-php">Crear el Dockerfile para Apache y PHP:</h3>
+<p>En una carpeta, crea un archivo <code>Dockerfile</code> con este contenido:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#8b008b;font-weight:bold">FROM</span><span style="color:#cd5555"> php:8.3-apache</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">COPY</span> ./public_html/ /var/www/html/<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">EXPOSE</span><span style="color:#cd5555"> 80</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<p>Crea la carpeta <code>public_html/</code> con un archivo <code>index.php</code> simple para probar:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>&lt;?php
+</span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#34;Bienvenido al servidor de alumno1&#34;</span>;
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">?&gt;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<h3 id="construir-las-imágenes-para-cada-alumno">Construir las imágenes para cada alumno:</h3>
+<p>Copia la carpeta del proyecto para cada alumno (<code>alumno1/</code>, <code>alumno2/</code>) y personaliza los contenidos.
+En cada carpeta, ejecuta:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker build -t alumno1-apache .
+</span></span><span style="display:flex;"><span>docker build -t alumno2-apache .</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<h3 id="levantar-los-contenedores">Levantar los contenedores:</h3>
+<p>Ejecuta:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker run -d --name alumno1 -p 8081:80 alumno1-apache
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker run -d --name alumno2 -p 8082:80 alumno2-apache</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<hr>
+<h2 id="3-configurar-el-proxy-inverso-con-nginx">3. Configurar el proxy inverso con Nginx</h2>
+<h3 id="crear-un-archivo-de-configuración-para-nginx">Crear un archivo de configuración para Nginx:</h3>
+<p>En una carpeta <code>nginx-proxy</code>, crea un archivo <code>nginx.conf</code>:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-nginx" data-lang="nginx"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">events</span> {}
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">http</span> {
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">server</span> {
+</span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#8b008b;font-weight:bold">listen</span> <span style="color:#b452cd">80</span>;
+</span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">server_name</span> <span style="color:#cd5555">alumno1.dwes.com</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8b008b;font-weight:bold">location</span> <span style="color:#cd5555">/</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#8b008b;font-weight:bold">proxy_pass</span> <span style="color:#cd5555">http://alumno1:80</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#8b008b;font-weight:bold">proxy_set_header</span> <span style="color:#cd5555">Host</span> <span style="color:#00688b">$host</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#8b008b;font-weight:bold">proxy_set_header</span> <span style="color:#cd5555">X-Real-IP</span> <span style="color:#00688b">$remote_addr</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>    <span style="color:#8b008b;font-weight:bold">server</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#8b008b;font-weight:bold">listen</span> <span style="color:#b452cd">80</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#8b008b;font-weight:bold">server_name</span> <span style="color:#cd5555">alumno2.dwes.com</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#8b008b;font-weight:bold">location</span> <span style="color:#cd5555">/</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#8b008b;font-weight:bold">proxy_pass</span> <span style="color:#cd5555">http://alumno2:80</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#8b008b;font-weight:bold">proxy_set_header</span> <span style="color:#cd5555">Host</span> <span style="color:#00688b">$host</span>;
+</span></span><span style="display:flex;"><span>            <span style="color:#8b008b;font-weight:bold">proxy_set_header</span> <span style="color:#cd5555">X-Real-IP</span> <span style="color:#00688b">$remote_addr</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<h3 id="levantar-el-contenedor-de-nginx-como-proxy-inverso">Levantar el contenedor de Nginx como proxy inverso:</h3>
+<p>Usa el siguiente comando para ejecutar el proxy inverso:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker run -d --name nginx-proxy <span style="color:#cd5555">\
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555"></span>--network bridge <span style="color:#cd5555">\
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#cd5555"></span>-v <span style="color:#8b008b;font-weight:bold">$(</span><span style="color:#658b00">pwd</span><span style="color:#8b008b;font-weight:bold">)</span>/nginx.conf:/etc/nginx/nginx.conf:ro <span style="color:#cd5555">\
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555"></span>-p 80:80 nginx</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<hr>
+<h2 id="4-configurar-una-red-común-en-docker">4. Configurar una red común en Docker</h2>
+<h3 id="crear-una-red-personalizada-para-los-contenedores">Crear una red personalizada para los contenedores:</h3>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker network create dwes-network</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="conectar-los-contenedores-a-esta-red">Conectar los contenedores a esta red:</h3>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker network connect dwes-network alumno1
+</span></span><span style="display:flex;"><span>docker network connect dwes-network alumno2
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>docker network connect dwes-network nginx-proxy</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr>
+<h2 id="5-probar-la-configuración">5. Probar la configuración</h2>
+<p>Abre en el navegador:</p>
+<ul>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    <a href="http://alumno1.dwes.com">http://alumno1.dwes.com</a>
+
+
+</span>
+</strong>
+</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    <a href="http://alumno2.dwes.com">http://alumno2.dwes.com</a>
+
+
+</span>
+</strong>
+</li>
+</ul>
+<p>Deberías ver el contenido de cada contenedor.</p>
+<hr>
+<h2 id="6-aspecto-importantes">6. Aspecto importantes</h2>
+<ul>
+<li>Resalta las diferencias entre usar 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Nginx
+
+
+</span>
+</strong>
+ y 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Apache
+
+
+</span>
+</strong>
+ como proxy inverso.</li>
+</ul>
+
+  <div class="section-index">
+    
+    
+    </div>
+</div>
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2024
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/js/main.js"></script>
+<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/js/tabpane-persist.js'></script>
+
+  </body>
+</html>
