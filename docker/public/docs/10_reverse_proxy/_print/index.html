@@ -1,52 +1,49 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/despliegue/docker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=despliegue/docker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="http://localhost:1313/docs/10_reverse_proxy/">
-<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs/10_reverse_proxy/index.xml">
+<link rel="canonical" type="text/html" href="http://localhost:1313/despliegue/docker/docs/10_reverse_proxy/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/despliegue/docker/docs/10_reverse_proxy/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
-<link rel="shortcut icon" href="/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+<link rel="shortcut icon" href="/despliegue/docker/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/despliegue/docker/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-192x192.png" sizes="192x192">
 
 <title>Proxy inverso o Reverse prxy | Despliegue de aplicacones Web</title>
 <meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
 
-<meta property="og:url" content="http://localhost:1313/docs/10_reverse_proxy/">
+<meta property="og:url" content="http://localhost:1313/despliegue/docker/docs/10_reverse_proxy/">
   <meta property="og:site_name" content="Despliegue de aplicacones Web">
   <meta property="og:title" content="Proxy inverso o Reverse prxy">
   <meta property="og:description" content="Explicación: Proxy y Proxy Inverso 1. Proxy Qué es un proxy Un proxy es un servidor intermedio que actúa como puente entre un cliente y un servidor . Cuando un cliente solicita acceder a un recurso en Internet, el proxy redirige esa solicitud al servidor, recibe la respuesta y se la devuelve al cliente.
 Función principal:
-Ocultar la identidad del cliente (anonimato). Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché. Ejemplo:
-Un usuario quiere acceder a una página web. Su solicitud pasa primero por un servidor proxy que redirige la conexión, de modo que el servidor web no ve directamente al cliente, sino al proxy.">
+Ocultar la identidad del cliente (anonimato). Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché. Imagen obtenida de https://www.redeszone.net/tutoriales/servidores/diferencias-proxy-vs-proxy-inverso/">
   <meta property="og:locale" content="es">
   <meta property="og:type" content="website">
 
   <meta itemprop="name" content="Proxy inverso o Reverse prxy">
   <meta itemprop="description" content="Explicación: Proxy y Proxy Inverso 1. Proxy Qué es un proxy Un proxy es un servidor intermedio que actúa como puente entre un cliente y un servidor . Cuando un cliente solicita acceder a un recurso en Internet, el proxy redirige esa solicitud al servidor, recibe la respuesta y se la devuelve al cliente.
 Función principal:
-Ocultar la identidad del cliente (anonimato). Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché. Ejemplo:
-Un usuario quiere acceder a una página web. Su solicitud pasa primero por un servidor proxy que redirige la conexión, de modo que el servidor web no ve directamente al cliente, sino al proxy.">
-  <meta itemprop="wordCount" content="675">
+Ocultar la identidad del cliente (anonimato). Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché. Imagen obtenida de https://www.redeszone.net/tutoriales/servidores/diferencias-proxy-vs-proxy-inverso/">
+  <meta itemprop="wordCount" content="706">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Proxy inverso o Reverse prxy">
   <meta name="twitter:description" content="Explicación: Proxy y Proxy Inverso 1. Proxy Qué es un proxy Un proxy es un servidor intermedio que actúa como puente entre un cliente y un servidor . Cuando un cliente solicita acceder a un recurso en Internet, el proxy redirige esa solicitud al servidor, recibe la respuesta y se la devuelve al cliente.
 Función principal:
-Ocultar la identidad del cliente (anonimato). Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché. Ejemplo:
-Un usuario quiere acceder a una página web. Su solicitud pasa primero por un servidor proxy que redirige la conexión, de modo que el servidor web no ve directamente al cliente, sino al proxy.">
+Ocultar la identidad del cliente (anonimato). Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché. Imagen obtenida de https://www.redeszone.net/tutoriales/servidores/diferencias-proxy-vs-proxy-inverso/">
 
 
-<link href="/scss/main.css" rel="stylesheet">
+<link href="/despliegue/docker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -57,8 +54,8 @@ Un usuario quiere acceder a una página web. Su solicitud pasa primero por un se
     <header>
       <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
 <div class="container-fluid flex-column flex-md-row ">
-  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo">
-    <img src="/images/logo.png" alt="Logo" width="150" height="auto" />
+  <a class="navbar-brand" href="/despliegue/docker/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/despliegue/docker/images/logo.png" alt="Logo" width="150" height="auto" />
     </span><span class="navbar-brand__name">Despliegue de aplicacones Web</span></a>
   <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
     <ul class="navbar-nav">
@@ -66,8 +63,8 @@ Un usuario quiere acceder a una página web. Su solicitud pasa primero por un se
         <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/en/">English</a></li>
-    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/despliegue/docker/en/">English</a></li>
+    <li><a class="dropdown-item" href="/despliegue/docker/fr/">Francés</a></li>
     </ul>
 </div></li>
       </ul>
@@ -94,7 +91,7 @@ Un usuario quiere acceder a una página web. Su solicitud pasa primero por un se
 Versión imprimible multipagina.
 <a href="#" onclick="print();return false;">Haga click aquí para imprimir</a>.
 </p><p>
-<a href="/docs/10_reverse_proxy/">Volver a la vista normal de esta página</a>.
+<a href="/despliegue/docker/docs/10_reverse_proxy/">Volver a la vista normal de esta página</a>.
 </p>
 </div>
 
@@ -167,12 +164,74 @@ Un
 <li>Ocultar la identidad del cliente (anonimato).</li>
 <li>Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché.</li>
 </ul>
-<p><strong>Ejemplo</strong>:<br>
-Un usuario quiere acceder a una página web. Su solicitud pasa primero por un servidor proxy que redirige la conexión, de modo que el servidor web no ve directamente al cliente, sino al proxy.</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 710px">
+<img class="card-img-top" src="/despliegue/docker/docs/10_reverse_proxy/proxy_hu342787633500672969.png" width="700" height="529">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+Imagen obtenida de https://www.redeszone.net/tutoriales/servidores/diferencias-proxy-vs-proxy-inverso/
+
+</p>
+</figcaption>
+</figure>
+
+<p>En la imagen podemos ver el ejemplo:</p>
+<blockquote>
+<ul>
+<li>Un usuario quiere acceder a una página web.</li>
+<li>Su solicitud pasa primero por un servidor proxy que redirige la conexión, de modo que el servidor web no ve directamente al cliente, sino al proxy.</li>
+</ul>
+</blockquote>
 <hr>
 <h2 id="2-proxy-inverso">2. Proxy Inverso</h2>
-<p>Un <strong>proxy inverso</strong> (también llamado <em>reverse proxy</em>) es un servidor que se sitúa frente a uno o más servidores y gestiona las solicitudes de los clientes antes de enviarlas a los servidores finales.</p>
-<p><strong>Función principal</strong>:</p>
+<p>Un <strong>proxy inverso</strong> (también llamado <em>reverse proxy</em>) es un servidor que se sitúa frente a uno o más servidores y gestiona las solicitudes de los clientes antes de enviarlas a los servidores finales.
+De alguna forma la diferencia es que colocamos el servidor proxy después de internet, y no antes
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Proxy directo
+
+
+</span>
+</strong>
+
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 710px">
+<img class="card-img-top" src="/despliegue/docker/docs/10_reverse_proxy/proxy_directo_hu4033920156410999965.webp" width="700" height="297">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Proxy reverse
+
+
+</span>
+</strong>
+
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 710px">
+<img class="card-img-top" src="/despliegue/docker/docs/10_reverse_proxy/proxy_reverse_hu4033920156410999965.webp" width="700" height="297">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<strong>Función principal</strong>:</p>
 <ul>
 <li>Actuar como intermediario entre los clientes y los servidores internos, con objetivos como:
 <ul>
@@ -500,9 +559,9 @@ En cada carpeta, ejecuta:
 </footer>
 
     </div>
-    <script src="/js/main.js"></script>
-<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
-<script src='/js/tabpane-persist.js'></script>
+    <script src="/despliegue/docker/js/main.js"></script>
+<script defer src="/despliegue/docker/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/despliegue/docker/js/tabpane-persist.js'></script>
 
   </body>
 </html>

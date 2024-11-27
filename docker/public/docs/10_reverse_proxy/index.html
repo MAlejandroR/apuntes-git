@@ -1,52 +1,49 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/despliegue/docker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=despliegue/docker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs/10_reverse_proxy/index.xml">
-<link rel="alternate" type="text/html" href="http://localhost:1313/docs/10_reverse_proxy/_print/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/despliegue/docker/docs/10_reverse_proxy/index.xml">
+<link rel="alternate" type="text/html" href="http://localhost:1313/despliegue/docker/docs/10_reverse_proxy/_print/">
 <meta name="robots" content="noindex, nofollow">
 
 
-<link rel="shortcut icon" href="/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+<link rel="shortcut icon" href="/despliegue/docker/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/despliegue/docker/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-192x192.png" sizes="192x192">
 
 <title>Proxy inverso o Reverse prxy | Despliegue de aplicacones Web</title>
 <meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
 
-<meta property="og:url" content="http://localhost:1313/docs/10_reverse_proxy/">
+<meta property="og:url" content="http://localhost:1313/despliegue/docker/docs/10_reverse_proxy/">
   <meta property="og:site_name" content="Despliegue de aplicacones Web">
   <meta property="og:title" content="Proxy inverso o Reverse prxy">
   <meta property="og:description" content="Explicación: Proxy y Proxy Inverso 1. Proxy Qué es un proxy Un proxy es un servidor intermedio que actúa como puente entre un cliente y un servidor . Cuando un cliente solicita acceder a un recurso en Internet, el proxy redirige esa solicitud al servidor, recibe la respuesta y se la devuelve al cliente.
 Función principal:
-Ocultar la identidad del cliente (anonimato). Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché. Ejemplo:
-Un usuario quiere acceder a una página web. Su solicitud pasa primero por un servidor proxy que redirige la conexión, de modo que el servidor web no ve directamente al cliente, sino al proxy.">
+Ocultar la identidad del cliente (anonimato). Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché. Imagen obtenida de https://www.redeszone.net/tutoriales/servidores/diferencias-proxy-vs-proxy-inverso/">
   <meta property="og:locale" content="es">
   <meta property="og:type" content="website">
 
   <meta itemprop="name" content="Proxy inverso o Reverse prxy">
   <meta itemprop="description" content="Explicación: Proxy y Proxy Inverso 1. Proxy Qué es un proxy Un proxy es un servidor intermedio que actúa como puente entre un cliente y un servidor . Cuando un cliente solicita acceder a un recurso en Internet, el proxy redirige esa solicitud al servidor, recibe la respuesta y se la devuelve al cliente.
 Función principal:
-Ocultar la identidad del cliente (anonimato). Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché. Ejemplo:
-Un usuario quiere acceder a una página web. Su solicitud pasa primero por un servidor proxy que redirige la conexión, de modo que el servidor web no ve directamente al cliente, sino al proxy.">
-  <meta itemprop="wordCount" content="675">
+Ocultar la identidad del cliente (anonimato). Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché. Imagen obtenida de https://www.redeszone.net/tutoriales/servidores/diferencias-proxy-vs-proxy-inverso/">
+  <meta itemprop="wordCount" content="706">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Proxy inverso o Reverse prxy">
   <meta name="twitter:description" content="Explicación: Proxy y Proxy Inverso 1. Proxy Qué es un proxy Un proxy es un servidor intermedio que actúa como puente entre un cliente y un servidor . Cuando un cliente solicita acceder a un recurso en Internet, el proxy redirige esa solicitud al servidor, recibe la respuesta y se la devuelve al cliente.
 Función principal:
-Ocultar la identidad del cliente (anonimato). Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché. Ejemplo:
-Un usuario quiere acceder a una página web. Su solicitud pasa primero por un servidor proxy que redirige la conexión, de modo que el servidor web no ve directamente al cliente, sino al proxy.">
+Ocultar la identidad del cliente (anonimato). Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché. Imagen obtenida de https://www.redeszone.net/tutoriales/servidores/diferencias-proxy-vs-proxy-inverso/">
 
 
-<link href="/scss/main.css" rel="stylesheet">
+<link href="/despliegue/docker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -57,8 +54,8 @@ Un usuario quiere acceder a una página web. Su solicitud pasa primero por un se
     <header>
       <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
 <div class="container-fluid flex-column flex-md-row ">
-  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo">
-    <img src="/images/logo.png" alt="Logo" width="150" height="auto" />
+  <a class="navbar-brand" href="/despliegue/docker/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/despliegue/docker/images/logo.png" alt="Logo" width="150" height="auto" />
     </span><span class="navbar-brand__name">Despliegue de aplicacones Web</span></a>
   <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
     <ul class="navbar-nav">
@@ -66,8 +63,8 @@ Un usuario quiere acceder a una página web. Su solicitud pasa primero por un se
         <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/en/">English</a></li>
-    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/despliegue/docker/en/">English</a></li>
+    <li><a class="dropdown-item" href="/despliegue/docker/fr/">Francés</a></li>
     </ul>
 </div></li>
       </ul>
@@ -94,46 +91,38 @@ Un usuario quiere acceder a una página web. Su solicitud pasa primero por un se
       <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/en/">English</a></li>
-    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/despliegue/docker/en/">English</a></li>
+    <li><a class="dropdown-item" href="/despliegue/docker/fr/">Francés</a></li>
     </ul>
 </div>
     </div>
     <ul class="td-sidebar-nav__section pe-md-3 ul-0">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
-  <a href="/docs/" title="Introducción" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><i class="fab fa-docker"></i><span class="">Docker</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-desplieguedockerdocs-li">
+  <a href="/despliegue/docker/docs/" title="Introducción" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-desplieguedockerdocs"><i class="fab fa-docker"></i><span class="">Docker</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs01_conceptos-li">
-  <input type="checkbox" id="m-docs01_conceptos-check"/>
-  <label for="m-docs01_conceptos-check"><a href="/docs/01_conceptos/" title="Conceptos sobre docker" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs01_conceptos"><i class="fa-regular fa-lightbulb"></i><span class="">Conceptos</span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-desplieguedockerdocs01_conceptos-li">
+  <input type="checkbox" id="m-desplieguedockerdocs01_conceptos-check"/>
+  <label for="m-desplieguedockerdocs01_conceptos-check"><a href="/despliegue/docker/docs/01_conceptos/" title="Conceptos sobre docker" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-desplieguedockerdocs01_conceptos"><i class="fa-regular fa-lightbulb"></i><span class="">Conceptos</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs02_contenedores-e-imc3a1genes-li">
-  <input type="checkbox" id="m-docs02_contenedores-e-imc3a1genes-check"/>
-  <label for="m-docs02_contenedores-e-imc3a1genes-check"><a href="/docs/02_contenedores-e-im%C3%A1genes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs02_contenedores-e-imc3a1genes"><i class="fa  fa-box"></i><span class="">Contenedores e imágenes</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-desplieguedockerdocs02_contenedores-e-imc3a1genes-li">
+  <input type="checkbox" id="m-desplieguedockerdocs02_contenedores-e-imc3a1genes-check"/>
+  <label for="m-desplieguedockerdocs02_contenedores-e-imc3a1genes-check"><a href="/despliegue/docker/docs/02_contenedores-e-im%C3%A1genes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-desplieguedockerdocs02_contenedores-e-imc3a1genes"><i class="fa  fa-box"></i><span class="">Contenedores e imágenes</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs03_instalacion-li">
-  <input type="checkbox" id="m-docs03_instalacion-check"/>
-  <label for="m-docs03_instalacion-check"><a href="/docs/03_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs03_instalacion"><i class="fa fa-download"></i><span class="">Instalación</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-desplieguedockerdocs03_instalacion-li">
+  <input type="checkbox" id="m-desplieguedockerdocs03_instalacion-check"/>
+  <label for="m-desplieguedockerdocs03_instalacion-check"><a href="/despliegue/docker/docs/03_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-desplieguedockerdocs03_instalacion"><i class="fa fa-download"></i><span class="">Instalación</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs04_comandos-li">
-  <input type="checkbox" id="m-docs04_comandos-check"/>
-  <label for="m-docs04_comandos-check"><a href="/docs/04_comandos/" title="Docker en  línea de comandos " class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs04_comandos"><i class="fa-solid fa-terminal"></i><span class="">Comandos docker</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-desplieguedockerdocs06_dockefile-li">
+  <input type="checkbox" id="m-desplieguedockerdocs06_dockefile-check"/>
+  <label for="m-desplieguedockerdocs06_dockefile-check"><a href="/despliegue/docker/docs/06_dockefile/" title="Fichero de ejecución para crear imágenes DockerFile" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-desplieguedockerdocs06_dockefile"><i class="fa-solid fa-terminal"></i><span class="">DockerFile</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs05_comandos_docker-li">
-  <input type="checkbox" id="m-docs05_comandos_docker-check"/>
-  <label for="m-docs05_comandos_docker-check"><a href="/docs/05_comandos_docker/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs05_comandos_docker"><i class="fa-solid fa-terminal"></i><span class="">comandos</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-desplieguedockerdocs07_docker-compose-li">
+  <input type="checkbox" id="m-desplieguedockerdocs07_docker-compose-check"/>
+  <label for="m-desplieguedockerdocs07_docker-compose-check"><a href="/despliegue/docker/docs/07_docker-compose/" title="Docker compose" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-desplieguedockerdocs07_docker-compose"><i class="fas fa-file-code"></i><span class="">docker compose</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs07_docker-compose-li">
-  <input type="checkbox" id="m-docs07_docker-compose-check"/>
-  <label for="m-docs07_docker-compose-check"><a href="/docs/07_docker-compose/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs07_docker-compose"><i class="fa-solid fa-terminal"></i><span class="">comandos</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs06_dockefile-li">
-  <input type="checkbox" id="m-docs06_dockefile-check"/>
-  <label for="m-docs06_dockefile-check"><a href="/docs/06_dockefile/" title="Fichero de ejecución para crear imágenes DockerFile" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs06_dockefile"><i class="fa-solid fa-terminal"></i><span class="">DockerFile</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docs10_reverse_proxy-li">
-  <input type="checkbox" id="m-docs10_reverse_proxy-check" checked/>
-  <label for="m-docs10_reverse_proxy-check"><a href="/docs/10_reverse_proxy/" title="Proxy inverso o Reverse prxy" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-docs10_reverse_proxy"><i class="fa-regular fa-file-code"></i><span class="td-sidebar-nav-active-item">Proxy inverso</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-desplieguedockerdocs10_reverse_proxy-li">
+  <input type="checkbox" id="m-desplieguedockerdocs10_reverse_proxy-check" checked/>
+  <label for="m-desplieguedockerdocs10_reverse_proxy-check"><a href="/despliegue/docker/docs/10_reverse_proxy/" title="Proxy inverso o Reverse prxy" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-desplieguedockerdocs10_reverse_proxy"><i class="fa-regular fa-file-code"></i><span class="td-sidebar-nav-active-item">Proxy inverso</span></a></label>
   
 </li>
   </ul>
@@ -145,7 +134,7 @@ Un usuario quiere acceder a una página web. Su solicitud pasa primero por un se
           </aside>
           <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
             <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
-<a id="print" href="/docs/10_reverse_proxy/_print/"><i class="fa-solid fa-print fa-fw"></i> Imprimir la sección entera</a>
+<a id="print" href="/despliegue/docker/docs/10_reverse_proxy/_print/"><i class="fa-solid fa-print fa-fw"></i> Imprimir la sección entera</a>
 
 </div>
 
@@ -194,7 +183,7 @@ Un usuario quiere acceder a una página web. Su solicitud pasa primero por un se
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
   <li class="breadcrumb-item">
-    <a href="/docs/">Docker</a></li>
+    <a href="/despliegue/docker/docs/">Docker</a></li>
   <li class="breadcrumb-item active" aria-current="page">
     Proxy inverso</li>
   </ol>
@@ -254,12 +243,74 @@ Un
 <li>Ocultar la identidad del cliente (anonimato).</li>
 <li>Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché.</li>
 </ul>
-<p><strong>Ejemplo</strong>:<br>
-Un usuario quiere acceder a una página web. Su solicitud pasa primero por un servidor proxy que redirige la conexión, de modo que el servidor web no ve directamente al cliente, sino al proxy.</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 710px">
+<img class="card-img-top" src="/despliegue/docker/docs/10_reverse_proxy/proxy_hu342787633500672969.png" width="700" height="529">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+Imagen obtenida de https://www.redeszone.net/tutoriales/servidores/diferencias-proxy-vs-proxy-inverso/
+
+</p>
+</figcaption>
+</figure>
+
+<p>En la imagen podemos ver el ejemplo:</p>
+<blockquote>
+<ul>
+<li>Un usuario quiere acceder a una página web.</li>
+<li>Su solicitud pasa primero por un servidor proxy que redirige la conexión, de modo que el servidor web no ve directamente al cliente, sino al proxy.</li>
+</ul>
+</blockquote>
 <hr>
 <h2 id="2-proxy-inverso">2. Proxy Inverso</h2>
-<p>Un <strong>proxy inverso</strong> (también llamado <em>reverse proxy</em>) es un servidor que se sitúa frente a uno o más servidores y gestiona las solicitudes de los clientes antes de enviarlas a los servidores finales.</p>
-<p><strong>Función principal</strong>:</p>
+<p>Un <strong>proxy inverso</strong> (también llamado <em>reverse proxy</em>) es un servidor que se sitúa frente a uno o más servidores y gestiona las solicitudes de los clientes antes de enviarlas a los servidores finales.
+De alguna forma la diferencia es que colocamos el servidor proxy después de internet, y no antes
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Proxy directo
+
+
+</span>
+</strong>
+
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 710px">
+<img class="card-img-top" src="/despliegue/docker/docs/10_reverse_proxy/proxy_directo_hu4033920156410999965.webp" width="700" height="297">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Proxy reverse
+
+
+</span>
+</strong>
+
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 710px">
+<img class="card-img-top" src="/despliegue/docker/docs/10_reverse_proxy/proxy_reverse_hu4033920156410999965.webp" width="700" height="297">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<strong>Función principal</strong>:</p>
 <ul>
 <li>Actuar como intermediario entre los clientes y los servidores internos, con objetivos como:
 <ul>
@@ -577,9 +628,9 @@ En cada carpeta, ejecuta:
 </footer>
 
     </div>
-    <script src="/js/main.js"></script>
-<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
-<script src='/js/tabpane-persist.js'></script>
+    <script src="/despliegue/docker/js/main.js"></script>
+<script defer src="/despliegue/docker/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/despliegue/docker/js/tabpane-persist.js'></script>
 
   </body>
 </html>

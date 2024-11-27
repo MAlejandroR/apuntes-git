@@ -1,46 +1,49 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/despliegue/docker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=despliegue/docker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="http://localhost:1313/docs/07_docker-compose/">
-<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docs/07_docker-compose/index.xml">
+<link rel="canonical" type="text/html" href="http://localhost:1313/despliegue/docker/docs/07_docker-compose/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/despliegue/docker/docs/07_docker-compose/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
-<link rel="shortcut icon" href="/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+<link rel="shortcut icon" href="/despliegue/docker/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/despliegue/docker/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/despliegue/docker/favicons/android-192x192.png" sizes="192x192">
 
-<title>Docker Prácticas | Despliegue de aplicacones Web</title>
+<title>Docker compose | Despliegue de aplicacones Web</title>
 <meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
 
-<meta property="og:url" content="http://localhost:1313/docs/07_docker-compose/">
+<meta property="og:url" content="http://localhost:1313/despliegue/docker/docs/07_docker-compose/">
   <meta property="og:site_name" content="Despliegue de aplicacones Web">
-  <meta property="og:title" content="Docker Prácticas">
-  <meta property="og:description" content="⭐ Comandos Repaso de comandos usados en docker en línea de comados
-1.- Obteniendo una Imagen Obtención de Imágenes Las imágenes en Docker son las bases para crear contenedores . Puedes obtener diferentes versiones de una imagen usando etiquetas. Comandos a estudiar docker pull docker images docker search Descargando imágenes pull">
+  <meta property="og:title" content="Docker compose">
+  <meta property="og:description" content="Si quiero desarrollar una aplicación web, puedo necesitar tener en el sistema:
+Un servidor web: p.e apache Un intérprete de código: p.e php Un servidor de bases de datos: p.e mysql Una herramienta para gestionar: p.e phpmyadmin Ante esta situación qué hacemos
+* Podría tener un contenedor con todos los servicios. * Pero vaya lío tener todo en un contenedor * ¿Podría tener un contenedor con cada servicio?">
   <meta property="og:locale" content="es">
   <meta property="og:type" content="website">
 
-  <meta itemprop="name" content="Docker Prácticas">
-  <meta itemprop="description" content="⭐ Comandos Repaso de comandos usados en docker en línea de comados
-1.- Obteniendo una Imagen Obtención de Imágenes Las imágenes en Docker son las bases para crear contenedores . Puedes obtener diferentes versiones de una imagen usando etiquetas. Comandos a estudiar docker pull docker images docker search Descargando imágenes pull">
-  <meta itemprop="wordCount" content="958">
+  <meta itemprop="name" content="Docker compose">
+  <meta itemprop="description" content="Si quiero desarrollar una aplicación web, puedo necesitar tener en el sistema:
+Un servidor web: p.e apache Un intérprete de código: p.e php Un servidor de bases de datos: p.e mysql Una herramienta para gestionar: p.e phpmyadmin Ante esta situación qué hacemos
+* Podría tener un contenedor con todos los servicios. * Pero vaya lío tener todo en un contenedor * ¿Podría tener un contenedor con cada servicio?">
+  <meta itemprop="wordCount" content="658">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Docker Prácticas">
-  <meta name="twitter:description" content="⭐ Comandos Repaso de comandos usados en docker en línea de comados
-1.- Obteniendo una Imagen Obtención de Imágenes Las imágenes en Docker son las bases para crear contenedores . Puedes obtener diferentes versiones de una imagen usando etiquetas. Comandos a estudiar docker pull docker images docker search Descargando imágenes pull">
+  <meta name="twitter:title" content="Docker compose">
+  <meta name="twitter:description" content="Si quiero desarrollar una aplicación web, puedo necesitar tener en el sistema:
+Un servidor web: p.e apache Un intérprete de código: p.e php Un servidor de bases de datos: p.e mysql Una herramienta para gestionar: p.e phpmyadmin Ante esta situación qué hacemos
+* Podría tener un contenedor con todos los servicios. * Pero vaya lío tener todo en un contenedor * ¿Podría tener un contenedor con cada servicio?">
 
 
-<link href="/scss/main.css" rel="stylesheet">
+<link href="/despliegue/docker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -51,8 +54,8 @@
     <header>
       <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
 <div class="container-fluid flex-column flex-md-row ">
-  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo">
-    <img src="/images/logo.png" alt="Logo" width="150" height="auto" />
+  <a class="navbar-brand" href="/despliegue/docker/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/despliegue/docker/images/logo.png" alt="Logo" width="150" height="auto" />
     </span><span class="navbar-brand__name">Despliegue de aplicacones Web</span></a>
   <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
     <ul class="navbar-nav">
@@ -60,8 +63,8 @@
         <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/en/">English</a></li>
-    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/despliegue/docker/en/">English</a></li>
+    <li><a class="dropdown-item" href="/despliegue/docker/fr/">Francés</a></li>
     </ul>
 </div></li>
       </ul>
@@ -88,13 +91,13 @@
 Versión imprimible multipagina.
 <a href="#" onclick="print();return false;">Haga click aquí para imprimir</a>.
 </p><p>
-<a href="/docs/07_docker-compose/">Volver a la vista normal de esta página</a>.
+<a href="/despliegue/docker/docs/07_docker-compose/">Volver a la vista normal de esta página</a>.
 </p>
 </div>
 
 
 
-<h1 class="title">Docker Prácticas</h1>
+<h1 class="title">Docker compose</h1>
 
 
 
@@ -113,570 +116,422 @@ Versión imprimible multipagina.
 
 
 <div class="content">
-      
+      <p>Si quiero desarrollar una aplicación web,  puedo necesitar tener en el sistema:</p>
+<blockquote>
+<ul>
+<li>Un servidor web: p.e  apache</li>
+<li>Un intérprete de código: p.e  php</li>
+<li>Un servidor de bases de datos: p.e mysql
+<ul>
+<li>Una herramienta para gestionar: p.e phpmyadmin</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 410px">
+<img class="card-img-top" src="/despliegue/docker/docs/07_docker-compose/ejemplo1_hu3089509083010952372.png" width="400" height="450">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
-<div class="pageinfo pageinfo-primary">
-<h4 id="__star-comandos__"><strong>&#x2b50; Comandos</strong></h4>
-<p>Repaso de <strong>comandos</strong> usados en <strong>docker</strong> en <strong>línea de comados</strong></p>
 
-</div>
 
-<h3 id="1--obteniendo-una-imagenh3">1.- Obteniendo una Imagen</h3></h3>
-<p><div class="definicion-concepto">
-  <div class="definicion-titulo">
-    
-    <i class="fas fa-info-circle" aria-hidden="true"></i>
-    
-    <strong>Obtención de Imágenes</strong>
-  </div>
-  <div class="definicion-contenido">
-    
-Las imágenes en 
+
+</p>
+</figcaption>
+</figure>
+
+<p>Ante esta situación qué hacemos</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 410px">
+<img class="card-img-top" src="/despliegue/docker/docs/07_docker-compose/pensando_hu899626355106468084.png" width="400" height="450">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+* Podría tener un contenedor con todos los servicios.
+ <br />
+* Pero vaya lío tener todo en un contenedor
+ <br />
+* ¿Podría tener un contenedor con cada servicio?
+
+</p>
+</figcaption>
+</figure>
+
+
 <strong>
 <span class="font-weight-bold text-primary">
 
-    Docker
+    Qué me va a permtir docker compose
 
 
 </span>
 </strong>
- son las bases para crear 
+
+<blockquote>
+<ul>
+<li>Docker compose me va a permitir especificar en un fichero los servicios que necesito</li>
+<li>Va a crear un contenedor por cada servicio</li>
+<li>Va a crear una red interna para que dichos servicios se vean entre sí</li>
+<li>Me va a permitir, mediante comandos poder gestionar todos los servicios de manera individual</li>
+<li>Todo centralizado en un comando de docker : compose.</li>
+<li>Evitamos tener que tener varios ficheros Dockerfile y gestionarlos uno por uno para que se ejecuten .</li>
+<li>La ejecución de docker-compose va a generar contenedores con servicios.</li>
+</ul>
+</blockquote>
+<h3 id="fichero-de-configuración">Fichero de configuración</h3>
+<ul>
+<li>
+<p>Es un fichero llamado 
 <strong>
 <span class="font-weight-bold text-primary">
 
-    contenedores
+    docker-compose.yaml  o (docker-compose.yml)
+
+
+</span>
+</strong>
+</p>
+<ul>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    yaml
+
+
+</span>
+</strong>
+ o 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    yml
+
+
+</span>
+</strong>
+ es un tipo de 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    fichero de declarativo
+
+
+</span>
+</strong>
+, cuya  configuracioń y sintaxis es muy sencilla.
+yaml viene de YAML Ain’t Markdown Language (Yaml no es un lenguaje de marcado) especificando que no es como XML o HTML:</li>
+</ul>
+<blockquote>
+<p>*
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Tiene en cuenta la indentación creando bloques
 
 
 </span>
 </strong>
 .
-<br />
-Puedes obtener diferentes versiones de una imagen usando etiquetas.
+*Asigno valores a variables utilizando : (dos puntos), debiendo de haber una separación entre los dos puntos y el valor</p>
+<ul>
+<li>Para crear listas usa los guiones</li>
+</ul>
+</blockquote>
+<p>Es un fichero muy fácil de entender</p>
+</li>
+</ul>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Creando el fichero
+
+
+</span>
+</strong>
+
+1.- Vamos a ver la construcción del fichero 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    docker-compose.yaml
+
+
+</span>
+</strong>
+. <br>
+2.- Posteriormente veremos cómo 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    ejecutar el fichero
+
+
+</span>
+</strong>
+ y construir nuestro 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    entorno de desarrollo
+
+
+</span>
+</strong>
+.</p>
+<h3 id="sintaxis-del-fichero">Sintaxis del fichero</h3>
+<p>El fichero docker-compose va a tener opciones de configuración que podemos jerarquizar</p>
+<p>Es un fichero de configuración con formato yaml
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 410px">
+<img class="card-img-top" src="/despliegue/docker/docs/07_docker-compose/config1_hu4873949124926257436.png" width="400" height="450">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
 
 
 
 
+</p>
+</figcaption>
+</figure>
 
-<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
-    <div style="background-color:darkgreen; color:white;
-    font-weight:bold; padding:10px; display: flex; align-items: center;">
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 410px">
+<img class="card-img-top" src="/despliegue/docker/docs/07_docker-compose/config2_hu18173720500454314908.png" width="400" height="450">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+Sintaxis YAML (<a href="https://es.wikipedia.org/wiki/YAML)">https://es.wikipedia.org/wiki/YAML)</a>:
+La indentación establece la agrupación.
+Si queremos establecer una lista, usamos guiones
+Hay que dejar un espacio entre los dos puntos y el valor.</p>
+<h1 id="tema-3-docker-compose">Tema 3: Docker Compose</h1>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Docker Compose
+
+
+</span>
+</strong>
+ es una herramienta que permite definir y ejecutar aplicaciones multicontenedor con un archivo de configuración llamado <code>docker-compose.yml</code>.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="introducción-a-docker-compose">Introducción a Docker Compose</h2>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="docker" aria-hidden="true"></i>
+    
+    <strong>Docker Compose</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+Docker Compose es una herramienta que nos permite gestionar sistemas dockerizados, facilitando la configuración y ejecución de aplicaciones multicontenedor de forma sencilla y ordenada, utilizando un único archivo YAML.
+
+  </div>
+</div>
+<hr>
+<h2 id="beneficios-de-docker-compose">Beneficios de Docker Compose</h2>
+
+
+<div class="alert alert-green" role="alert">
+<h4 class="alert-heading">Ventajas de Docker Compose</h4>
+
+    <ul>
+<li>Facilita la creación y gestión de entornos complejos.</li>
+<li>Centraliza la configuración de varios contenedores en un único archivo.</li>
+<li>Automatiza la creación de redes internas para la comunicación entre servicios.</li>
+<li>Simplifica la administración de contenedores relacionados.</li>
+</ul>
+
+
+</div>
+
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="cómo-funciona-docker-compose">¿Cómo funciona Docker Compose?</h2>
+<p>Docker Compose utiliza un archivo <code>docker-compose.yml</code> para definir servicios, redes y volúmenes necesarios para una aplicación.</p>
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Estructura básica de un archivo docker-compose.yml
+
+
+</span>
+</strong>
+
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>services:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>    web:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>        image: nginx:latest<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>        ports:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>            - <span style="color:#cd5555">&#34;8080:80&#34;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>    db:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>        image: mysql:5.7<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>        environment:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>            - MYSQL_ROOT_PASSWORD: example<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>            - MYSQL_DATABASE: test<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span></code></pre></div><hr>
+<h2 id="sintaxis-del-archivo-yaml">Sintaxis del archivo YAML</h2>
+<p>El archivo <code>docker-compose.yml</code> utiliza la sintaxis YAML, la cual es declarativa y fácil de entender.</p>
+
+
+<div class="alert alert-blue" role="alert">
+<h4 class="alert-heading">Características de YAML</h4>
+
+    <ul>
+<li>La indentación establece la agrupación.</li>
+<li>Se usan dos puntos <code>:</code> para asignar valores a variables.</li>
+<li>Para crear listas, se emplean guiones <code>-</code>.</li>
+</ul>
+
+
+</div>
+
+<p>Ejemplo de sintaxis básica en YAML:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>services:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#a61717;background-color:#e3d2d2"></span>    web:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#a61717;background-color:#e3d2d2"></span>        image: nginx:latest<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#a61717;background-color:#e3d2d2"></span>        ports:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#a61717;background-color:#e3d2d2"></span>            - <span style="color:#cd5555">&#34;8080:80&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<hr>
+<h2 id="opciones-principales-del-archivo-docker-composeyml">Opciones principales del archivo docker-compose.yml</h2>
+<ol>
+<li><strong>services</strong>: Define los contenedores que forman parte de la aplicación.</li>
+<li><strong>volumes</strong>: Especifica volúmenes para persistir datos.</li>
+<li><strong>networks</strong>: Configura redes internas para los servicios.</li>
+</ol>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="ejemplo-práctico-servidor-web-y-base-de-datos">Ejemplo práctico: Servidor web y base de datos</h2>
+<p>Creamos una configuración para un servidor web con Nginx y una base de datos MySQL.</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>services:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>web:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#a61717;background-color:#e3d2d2"></span>    image: php:8.3-apache<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>    ports:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>        - <span style="color:#cd5555">&#34;8080:80&#34;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>    <span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#a61717;background-color:#e3d2d2"></span>    db:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>        image: mysql<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>        environment:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>            - MYSQL_ROOT_PASSWORD: root<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>            - MYSQL_DATABASE: ejemplo<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>            - MYSQL_USER: usuario<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>            - MYSQL_PASSWORD: contraseña</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Ejecución:</p>
+<ol>
+<li>
+<p>Levantar los servicios:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>docker compose up -d</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p>Verificar contenedores activos:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>docker compose ps</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p>Detener los servicios:
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>docker compose down</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+</ol>
+<hr>
+<h2 id="referencias">Referencias</h2>
+
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
         
         <span style="margin-right: 8px;">
             
-                <i class="fas fa-check-circle"></i> 
+                <i class="fas fa-book"></i> 
             
         </span>
         
-        <span>Comandos a estudiar</span>
+        <span>Documentación oficial</span>
     </div>
 
-    <h3 style="padding: 5px; font-weight:bold"> </h3>
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Fuentes de Información</h3>
 
-    <hr style="border-color:seagreen; border-width:3px"/>
+    <hr style="border-color: lightblue; border-width: 3px"/>
     
-    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
         <ul>
             
-            <li>docker pull</li>
+            <li><ul>
+<li><a href="https://docs.docker.com/compose/">Docker Compose Overview</a></li>
+</ul>
+</li>
             
-            <li>docker images</li>
+            <li><ul>
+<li><a href="https://docs.docker.com/compose/compose-file/">Compose File Reference</a></li>
+</ul>
+</li>
             
-            <li>docker search</li>
-            
+            <li></li>
             
             
         </ul>
     </div>
-    
-
-
 </div>
 
-
-  </div>
-</div>
-
-<strong>
-<span class="font-weight-bold text-primary">
-
-    Descargando imágenes
-
-
-</span>
-</strong>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<blockquote>
-<p><strong>pull</strong></p>
-<blockquote>
-<p>Obtener en local una imagen llamada <strong>ubuntu:latest</strong>::</p>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    docker pull ubunut:latest
-</span></span></code></pre></div>
-</div>
-</p>
-<p>
-<strong>
-<span class="font-weight-bold text-primary">
-
-    Visualizar imágenes en local
-
-
-</span>
-</strong>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<blockquote>
-<p><strong>images</strong></p>
-<blockquote>
-<p>Listar todas las imágenes del sistema</p>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker images
-</span></span></code></pre></div>
-</div>
-
-
-<strong>
-<span class="font-weight-bold text-primary">
-
-    Buscar imágenes
-
-
-</span>
-</strong>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<blockquote>
-<p><strong>docker search</strong></p>
-<blockquote>
-<p>Buscar todas las imágenes que contengan ubuntu cuya distribución empiece por 1</p>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker search ubuntu:1
-</span></span></code></pre></div>
-</div>
-</p>
-
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="crear--un-__contenedor__">Crear  un <strong>contenedor</strong></h4>
-<div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">docker create</h4>
-<pre><code>&lt;p&gt;Hay varios comandos para crear contenedores&lt;/p&gt;
-</code></pre>
-<p>El comando <strong>create</strong> tiene varias opciones, pero no lo vamos a utilizar nosotras.</p>
-<p>No obstante lo comento es este post</p>
-</div>
-<blockquote>
-<p><strong>docker create</strong></p>
-<blockquote>
-<p>Crea un contenedor basado en la imagen <strong>ubuntu:latest</strong></p>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker create ubuntu:latest
-</span></span></code></pre></div><hr>
-<h5 id="crearlo-vinculándolo-al-terminal">Crearlo vinculándolo al terminal</h5>
-<blockquote>
-<p><strong>docker create -t</strong></p>
-<blockquote>
-<p>Crea un contenedor que quede vinculado a un terminal <strong>tty</strong></p>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    docker create -t ubuntu:latest
-</span></span></code></pre></div><hr>
-<h5 id="nombrar-el-contenedor">Nombrar el contenedor</h5>
-<blockquote>
-<p><strong>docker create  &ndash;name</strong></p>
-<blockquote>
-<p>Crear un contenedor llamado <strong>web</strong> a partir de la imagen ubuntu:latest y vincúlalo al terminal</p>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    docker create --name web_old -t ubuntu:latest
-</span></span></code></pre></div><h4 id="creando-comandos-para-interactuar-en-un-terminal">Creando comandos para interactuar en un terminal</h4>
-<blockquote>
-<p><strong>docker create -t -i</strong></p>
-<blockquote>
-<p>Crear un contenedor llamada web para interactuar y luego ejecuta un bash <em>(Este comando ejecuta un intérprete de comandos de un sistema operativo)</em></p>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker rm web_old
-</span></span><span style="display:flex;"><span> docker create --name web_old -t -i ubuntu:latest
-</span></span><span style="display:flex;"><span> docker start web_old
-</span></span><span style="display:flex;"><span> docker <span style="color:#658b00">exec</span> -ti bash
-</span></span></code></pre></div><div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Revisa</h4>
-<pre><code>Antes de crear el contenedor lo borramos  &lt;br&gt;
-</code></pre>
-<p>Antes de ejectuar algo, lo tenemos que arrancar  <br>
-En este caso el comando start lo deja en estado up, ya que el contenedor fue coreado con <strong>-i</strong>  y <strong>-t</strong></p>
-</div>
-
-</div>
-
-
-
-
-<hr style="border-color: red; border-width: 3px;"/>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="crear-un-contenedor-con-run">Crear un contenedor con run</h4>
-<blockquote>
-<p><strong>run</strong></p>
-<blockquote>
-<p>Este es uno de los comandos que más vamos a utilizar
-Es un comando que tiene muchas opciones, puedes verlas con el comando help</p>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker <span style="color:#658b00">help</span> run
-</span></span></code></pre></div><p>Nosotros lo vamos a usar comos se muestra a continuación</p>
-<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1010px">
-<img class="card-img-top" src="/docs/07_docker-compose/run_hu15092407158152754042.png" width="1000" height="300">
-<figcaption class="card-body px-0 pt-2 pb-0">
-<p class="card-text">
-</p>
-</figcaption>
-</figure>
-
-</div>
-
-<p>
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="listar-todos--los-contenedores">Listar todos  los contenedores</h4>
-<blockquote>
-<p><strong>docker ps -a</strong></p>
-<blockquote>
-<p>Lista todos los contenedores que tenemos en el sistema</p>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker ps -a
-</span></span></code></pre></div><h4 id="listar-los-contenesores-arrancados">Listar los contenesores arrancados</h4>
-<blockquote>
-<p>__docker ps __</p>
-<blockquote>
-<p>Lista todos los contenedores en estado Up</p>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker ps 
-</span></span></code></pre></div>
-</div>
-
-
-
-<div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Prueba</h4>
-
-    Si no ponemos <strong>-a</strong> que viene de <strong>all</strong> solo nos mostrará los contenedores que actualmente tenemos arrancados (en estado Up)
-
-</div>
-
-
-
-
-<hr style="border-color: red; border-width: 3px;"/>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="parar-un-contenedor">Parar un contenedor</h4>
-<blockquote>
-<p><strong>stop</strong></p>
-<blockquote>
-<p>Para un contenedor (previamente creado)</p>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker start web_old
-</span></span></code></pre></div>
-</div>
-</p>
-<p>
-
-
-<hr style="border-color: red; border-width: 3px;"/>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="estados-de-un-contenedor">Estados de un contenedor</h4>
-<blockquote>
-<p><strong>Un contenedor está en uno de los siguientes estados</strong></p>
-</blockquote>
-<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1210px">
-<img class="card-img-top" src="/docs/07_docker-compose/estados_hu1039576990795223337.png" width="1200" height="600">
-<figcaption class="card-body px-0 pt-2 pb-0">
-<p class="card-text">
-</p>
-</figcaption>
-</figure>
-
-</div>
-</p>
-<p>
-
-<div class="pageinfo pageinfo-primary">
-<p>h#### Arrancar el contenedor web</p>
-<blockquote>
-<p><strong>start</strong></p>
-<blockquote>
-<p>Arranca un contenedor (previamente creado)</p>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker start web_old
-</span></span></code></pre></div>
-</div>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="ejecutar-un-comando-en-un-contenedor">Ejecutar un comando en un contenedor</h4>
-<p><strong>&#x2b50; El contenedor tiene que estar en estado Up</strong></p>
-<blockquote>
-<p><strong>exec</strong></p>
-<blockquote>
-<p>Ejecuta en un contenedor previamente creado llamado <strong>web</strong> el comando ls <em>(Este comando muestra un listado de ficheros del contenedor)</em></p>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    docker <span style="color:#658b00">exec</span> -ti  web_old ls
-</span></span></code></pre></div>
-</div>
-
-
-
-
-<hr style="border-color: red; border-width: 3px;"/>
-</p>
-<p>
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="crear-un-contenedor-que-ejecute-una-instrucción-ls">Crear un contenedor que ejecute una instrucción: ls</h4>
-<ul>
-<li>El contenedor se crea a partir de la imagen <strong>ubuntu:latest</strong></li>
-<li>La instrucción que queremos ejecutar es ls</li>
-</ul>
-<blockquote>
-<p><strong>docker run</strong></p>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker run  ubuntu:latest ls
-</span></span></code></pre></div><h4 id="crear-un-contenedor-dejarlo-arrancado--ejecuta-una-instrucción-bash">Crear un contenedor, dejarlo arrancado  ejecuta una instrucción: bash</h4>
-<ul>
-<li>El contenedor queremos que deje abierta un terminal para interactuar con el  bash</li>
-</ul>
-<blockquote>
-<p><strong>docker run</strong></p>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker run  -ti ubuntu:latest bash
-</span></span></code></pre></div>
-</div>
-
-
-
-<div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Importante</h4>
-
-    <blockquote>
-<p>Entiende bien las opciones
--ti se pone para que se quede abierto el terminal que está ejecutando el <strong>bash</strong></p>
-</blockquote>
-
-</div>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="crando-un-contenedor-con-run-y-que-tenga-nombre">Crando un contenedor con run y que tenga nombre</h4>
-<blockquote>
-<p><strong>docker run &ndash;name</strong></p>
-<blockquote>
-<p>Crea un contenedor llamado web y deja abierto un bash</p>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    docker rm web_old 
-</span></span><span style="display:flex;"><span>    docker run -ti --name web_old ubuntu:latest bash    
-</span></span></code></pre></div>
-</div>
-
-
-
-<div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Cuidado</h4>
-
-    Si intentamos crear un contenedor cuyo nombre ya exista nos dará un error.
-En este
-
-</div>
-
-
-
-
-<hr style="border-color: red; border-width: 3px;"/>
-</p>
-<p>
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="forward-de-puertos">Forward de puertos</h4>
-<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1010px">
-<img class="card-img-top" src="/docs/07_docker-compose/puertos_hu5404208802846507613.png" width="1000" height="800">
-<figcaption class="card-body px-0 pt-2 pb-0">
-<p class="card-text">
-</p>
-</figcaption>
-</figure>
-<blockquote>
-<p><strong>docker run -p XXXX:XXXX</strong></p>
-<blockquote>
-<p>Crea un contenedor llamado web, abriendo un terminal y mapea el puerto 8000 del anfitrión al 80 del contenedor</p>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker rm web_old 
-</span></span><span style="display:flex;"><span> docker run -ti --name web_old  -p 8000:80 ubuntu:latest bash
-</span></span></code></pre></div>
-</div>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
-<img class="card-img-top" src="/docs/07_docker-compose/volumenes_hu17492957187689460622.png" width="800" height="500">
-<figcaption class="card-body px-0 pt-2 pb-0">
-<p class="card-text">
-</p>
-</figcaption>
-</figure>
-<h4 id="compartiendo-carpetas">Compartiendo carpetas</h4>
-<blockquote>
-<p><strong>docker run -v c:\carpeta_origen:/var/www/html</strong></p>
-<blockquote>
-<p>Crea un contenedor llamado <strong>web</strong>, abriendo un terminal y comparte la carpeta del directorio actual llamada <strong>app</strong> con la carpeta del docker ubicada en <strong>/var/www/html</strong>. Mapea los puertos anteriores</p>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker rm web_old 
-</span></span><span style="display:flex;"><span> docker run -ti --name web_old -p 8000:80  -v .<span style="color:#cd5555">\a</span>pp:/var/www/html ubuntu:latest  bash
-</span></span></code></pre></div>
-</div>
-
-
-
-<div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Warning</h4>
-
-    <ul>
-<li>Cuidado con la barra de separacion de carpetas o directorios <strong>(en windows &ldquo;&quot;, en linux &ldquo;/&rdquo;)</strong>
-<ul>
-<li>Si la carpeta no existe la crea</li>
-</ul>
-</li>
-</ul>
-
-
-</div>
-
-
-
-
-<hr style="border-color: red; border-width: 3px;"/>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="creando-una-imagen-a-partir-de-un-contenedor">Creando una imagen a partir de un contenedor</h4>
-<blockquote>
-<p><strong>docker commit</strong></p>
-</blockquote>
-<blockquote>
-<blockquote>
-<p>Para crear una imagen a partir de un contenedor, este debe estar detenido.</p>
-<ul>
-<li>La imagen que creemos incluirá todo lo que hayamos configurado dentro del contenedor.</li>
-<li>El contenido de los volúmenes compartidos no se guarda en la imagen, ya que estos se cargan desde la carpeta compartida por el anfitrión.</li>
-<li>La forma de referenciar una imagen, el nombre que le pongamos en este caso,  siempre será con su nombre y tag (separados por dos puntos),lo que nos permitirá crear diferentes versiones (mismo nombre, diferente tag).</li>
-</ul>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker commit nombre_contenedor nombre_imagen:tag 
-</span></span></code></pre></div>
-</div>
-</p>
-<p>
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="login-en-docker-hub">Login en Docker Hub</h4>
-<p><strong>docker login</strong></p>
-<blockquote>
-<blockquote>
-<p>Permite autenticarse en Docker Hub para poder interactuar con los repositorios de imágenes.<br>
-Se utiliza para subir, descargar o gestionar imágenes desde la cuenta de Docker Hub.<br>
-Solicita las credenciales de acceso (usuario y contraseña).</p>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker login
-</span></span></code></pre></div><div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Nota</h4>
-<pre><code>&lt;blockquote&gt;
-</code></pre>
-<p>Este comando es necesario para poder hacer un push de imágenes a Docker Hub.
-Tras ejecutar docker login, se te solicitará el nombre de usuario y la contraseña.</p>
-</blockquote>
-</div>
-
-</div>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="subir-una-imagen-a-docker-hub">Subir una imagen a Docker Hub</h4>
-<p><strong>docker push</strong></p>
-<blockquote>
-<blockquote>
-<p>Sube una imagen local a un repositorio en Docker Hub.
-Debes estar autenticado en Docker Hub (previamente con docker login).
-La imagen debe estar correctamente etiquetada con el formato <usuario>/&lt;nombre_imagen&gt;:<tag>.</p>
-</blockquote>
-</blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker push usuario/nombre_imagen:tag
-</span></span></code></pre></div><h5 id="ejemplos">Ejemplos:</h5>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker push miusuario/miapp:v1.0
-</span></span><span style="display:flex;"><span>docker push miusuario/miapp:latest
-</span></span></code></pre></div><div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Nota</h4>
-<pre><code>&lt;blockquote&gt;
-</code></pre>
-<p>El comando docker <strong>push</strong> requiere que la imagen esté etiquetada con el nombre del usuario de Docker Hub.
-tag puede ser cualquier etiqueta que se desee utilizar para versionar la imagen (latest, v1.0, etc.).
-Si no especificas un tag, Docker usará latest por defecto.</p>
-</blockquote>
-</div>
-
-</div>
-</p>
-<p><div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"></code></pre></td></tr></table>
-</div>
-</div>
-<div class="definicion-concepto">
-  <div class="definicion-titulo">
-    
-    <i class="fas fa-info-circle" aria-hidden="true"></i>
-    
-    <strong></strong>
-  </div>
-  <div class="definicion-contenido">
-    
-
-  </div>
-</div></p>
 
 </div>
 </div>
@@ -729,9 +584,9 @@ Si no especificas un tag, Docker usará latest por defecto.</p>
 </footer>
 
     </div>
-    <script src="/js/main.js"></script>
-<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
-<script src='/js/tabpane-persist.js'></script>
+    <script src="/despliegue/docker/js/main.js"></script>
+<script defer src="/despliegue/docker/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/despliegue/docker/js/tabpane-persist.js'></script>
 
   </body>
 </html>

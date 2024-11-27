@@ -3,7 +3,7 @@ title: "Docker en  línea de comandos "
 linkTitle: "Comandos docker"
 weight: 40
 icon: fa-solid fa-terminal
-draft: false    
+draft: true    
 ---
 {{< objetivos title="Docker" sub_title="Actuando en el terminal" >}}
 Cómo usar docker en línea de comandos

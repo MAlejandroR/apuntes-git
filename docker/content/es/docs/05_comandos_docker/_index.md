@@ -1,9 +1,9 @@
 ---
 title: "Docker Prácticas"
-linkTitle: "comandos"
+linkTitle: "comandos ultimo"
 weight: 50
 icon: fa-solid fa-terminal
-draft: false    
+draft: true    
 ---
 
 {{% pageinfo %}}

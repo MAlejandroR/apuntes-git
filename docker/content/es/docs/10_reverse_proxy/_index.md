@@ -18,14 +18,27 @@ Cuando un cliente solicita acceder a un recurso en Internet, el proxy redirige e
 - Ocultar la identidad del cliente (anonimato).
 - Filtrar contenido, controlar accesos o mejorar el rendimiento mediante caché.
 
-**Ejemplo**:  
-Un usuario quiere acceder a una página web. Su solicitud pasa primero por un servidor proxy que redirige la conexión, de modo que el servidor web no ve directamente al cliente, sino al proxy.
+{{< imgproc proxy Fill "700x529" >}}
+Imagen obtenida de https://www.redeszone.net/tutoriales/servidores/diferencias-proxy-vs-proxy-inverso/
+{{< /imgproc >}}
+
+En la imagen podemos ver el ejemplo:
+> * Un usuario quiere acceder a una página web.
+> * Su solicitud pasa primero por un servidor proxy que redirige la conexión, de modo que el servidor web no ve directamente al cliente, sino al proxy.
 
 ---
 
 ## 2. Proxy Inverso
 Un **proxy inverso** (también llamado *reverse proxy*) es un servidor que se sitúa frente a uno o más servidores y gestiona las solicitudes de los clientes antes de enviarlas a los servidores finales.
+De alguna forma la diferencia es que colocamos el servidor proxy después de internet, y no antes
+{{< color >}} Proxy directo {{< /color >}}
+{{< imgproc proxy_directo Fill "700x297" >}}
 
+{{< /imgproc >}}
+{{< color >}} Proxy reverse {{< /color >}}
+{{< imgproc proxy_reverse Fill "700x297" >}}
+
+{{< /imgproc >}}
 **Función principal**:
 - Actuar como intermediario entre los clientes y los servidores internos, con objetivos como:
     - Distribuir la carga entre varios servidores (balanceo de carga).
