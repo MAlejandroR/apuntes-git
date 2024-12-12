@@ -1,10 +1,14 @@
     # Contenido
-Esta página es la presentación para el máster realizado en NEtt
-Constituye material de apoyo para dicho máster
+Esta página corresponde a los apuntes para el certificado de profesionalidad **Desarrollo de aplicaciones con tecnologías web**
+
+Concretamente para el módulo de desarrollo de aplicaciones en el entorno servidor
+
+Constituye material de apoyo para las clases
 
 Estará desplegado en la siguiente dirección:
- https://proyectodwa.es/manuel
+ https://web.infenlaces.com./certificado/web
 
 
 # Pendientes
-16/05/2023 Pendiente realizar las traducciones a en y fr
+03/11/2024 Pendiente realizar las traducciones a en y fr.
+

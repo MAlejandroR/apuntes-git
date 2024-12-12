@@ -1,18 +1,11 @@
 ---
-title: "www"
-linkTitle: "www"
-weight: 30
-icon: fas fa-exchange-alt
+title: "Instalaciones"
+linkTitle: "Creando arquitectura"
+weight: 50
+icon: "fa fa-layer-group"
 ---
 {{< objetivos sub_title="Intenet una red de tipo TCP/IP" >}}
-Breve historia de la World Wide Web.
-Arquitectura general de la Web. Diseño.
-El cliente web.
-Servidores web.
-Servidores de aplicaciones.
-Servidores de bases de datos.
-Servidores complementarios.
-Infraestructura para los servicios.
+Realizar instalaciones
 {{< /objetivos >}}
 
 

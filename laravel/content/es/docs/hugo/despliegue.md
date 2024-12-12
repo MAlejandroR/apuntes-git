@@ -1,7 +1,7 @@
 ---
 title: "Despliegue"
 draft: true
-description:  "Desplegar el sitio web en github pages y en sitio web creado con vesta"
+description:  "Desplegar el sitio web_old en github pages y en sitio web_old creado con vesta"
 weight: 30
 ---
 

@@ -5,39 +5,25 @@ https://www.docsy.dev/docs/adding-content/lookandfeel/#project-style-files
 */
 /* Define el tamaño de fuente específico para el menú */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i&display=swap");
-p {
-  font-size: 24px;
-  /* Cambia el tamaño según prefieras */ }
+.td-sidebar-nav__section-title {
+  font-size: 1.2 rem;
+  /* Cambia el tamaño de las secciones principales del menú */ }
 
-:root {
-  --bs-body-font-size:3rem;
-  /* Ajusta el valor según tus necesidades */ }
+.td-sidebar-link {
+  font-size: 1.2 rem;
+  /* Cambia el tamaño de los enlaces del menú */ }
 
-.cover-title-background {
-  display: inline-block;
-  background-color: rgba(0, 50, 0, 0.2);
-  /* Fondo negro con 60% de transparencia */
-  color: #ffffff;
-  /* Texto en blanco para un buen contraste */
-  padding: 10px 15px;
-  /* Espaciado interno para que no esté pegado al texto */
-  border-radius: 5px;
-  /* Bordes redondeados para estilo */
-  text-align: center;
-  font-size: 3em;
-  font-weight: bold; }
+.td-sidebar-nav__section.with-child {
+  font-size: 1.2 rem;
+  /* Cambia el tamaño de las secciones con submenús */ }
 
-.navbar-brand img {
-  width: 120px;
-  /* Cambia este valor para ajustar el ancho */
-  height: auto;
-  /* Mantiene la proporción del logo */ }
-
-.iframe-container {
-  zoom: 1.5;
-  /* Aumenta el tamaño del contenido */
-  transform-origin: 0 0;
-  overflow: auto; }
+/* Define un tamaño más pequeño para los submenús */
+.td-sidebar-nav__section .ul-1,
+.td-sidebar-nav__section .ul-2,
+.td-sidebar-nav__section .ul-3,
+.td-sidebar-nav__section .ul-4 {
+  font-size: 1rem;
+  /* Ajusta según el tamaño que prefieras */ }
 
 :root,
 [data-bs-theme="light"] {
@@ -19832,12 +19818,1062 @@ div.drawioframe {
     height: 5rem;
     visibility: hidden; } }
 
-/*
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?ou6vf1#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?ou6vf1") format("truetype"), url("fonts/icomoon.woff?ou6vf1") format("woff"), url("fonts/icomoon.svg?ou6vf1#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
 
-Nothing defined here. The Hugo project that uses this theme can override Bootstrap by adding a file to:
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
-assets/scss/_styles_project.scss
+.icon-web-link-2 .path1:before {
+  content: "\e90e";
+  color: black; }
 
-*/
+.icon-web-link-2 .path2:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: #14b5f0; }
+
+.icon-web-link-2 .path3:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: #02cffb; }
+
+.icon-web-link-2 .path4:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: #18b0ee; }
+
+.icon-web-link-2 .path5:before {
+  content: "\e913";
+  margin-left: -1em;
+  color: #1bacec; }
+
+.icon-web-link-2 .path6:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: #13b7f1; }
+
+.icon-web-link-2 .path7:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: #1da9eb; }
+
+.icon-web-link-2 .path8:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: #1ea8eb; }
+
+.icon-web-link-2 .path9:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: #21d5fb; }
+
+.icon-web-link-2 .path10:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: #269de6; }
+
+.icon-web-link-2 .path11:before {
+  content: "\e919";
+  margin-left: -1em;
+  color: #09c5f7; }
+
+.icon-web-link-2 .path12:before {
+  content: "\e91a";
+  margin-left: -1em;
+  color: #2a98e4; }
+
+.icon-web-link-2 .path13:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: #35d8fb; }
+
+.icon-web-link-2 .path14:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: #3090e1; }
+
+.icon-web-link-2 .path15:before {
+  content: "\e91d";
+  margin-left: -1em;
+  color: #45dafb; }
+
+.icon-web-link-2 .path16:before {
+  content: "\e91e";
+  margin-left: -1em;
+  color: #318ee0; }
+
+.icon-web-link-2 .path17:before {
+  content: "\e91f";
+  margin-left: -1em;
+  color: #13b7f1; }
+
+.icon-web-link-2 .path18:before {
+  content: "\e920";
+  margin-left: -1em;
+  color: #348adf; }
+
+.icon-web-link-2 .path19:before {
+  content: "\e921";
+  margin-left: -1em;
+  color: #0fd2fb; }
+
+.icon-web-link-2 .path20:before {
+  content: "\e922";
+  margin-left: -1em;
+  color: #06c9f8; }
+
+.icon-web-link-2 .path21:before {
+  content: "\e923";
+  margin-left: -1em;
+  color: #07c8f8; }
+
+.icon-web-link-2 .path22:before {
+  content: "\e924";
+  margin-left: -1em;
+  color: #1fa6ea; }
+
+.icon-web-link-2 .path23:before {
+  content: "\e925";
+  margin-left: -1em;
+  color: #3589de; }
+
+.icon-web-link-2 .path24:before {
+  content: "\e926";
+  margin-left: -1em;
+  color: #3984dc; }
+
+.icon-web-link-2 .path25:before {
+  content: "\e927";
+  margin-left: -1em;
+  color: #15d3fb; }
+
+.icon-web-link-2 .path26:before {
+  content: "\e928";
+  margin-left: -1em;
+  color: #11b9f2; }
+
+.icon-web-link-2 .path27:before {
+  content: "\e929";
+  margin-left: -1em;
+  color: #05cbf9; }
+
+.icon-web-link-2 .path28:before {
+  content: "\e92a";
+  margin-left: -1em;
+  color: #5addfc; }
+
+.icon-web-link-2 .path29:before {
+  content: "\e92b";
+  margin-left: -1em;
+  color: #16b3ef; }
+
+.icon-web-link-2 .path30:before {
+  content: "\e92c";
+  margin-left: -1em;
+  color: #1cd4fb; }
+
+.icon-web-link-2 .path31:before {
+  content: "\e92d";
+  margin-left: -1em;
+  color: #05cbf9; }
+
+.icon-web-link-2 .path32:before {
+  content: "\e92e";
+  margin-left: -1em;
+  color: #18b0ee; }
+
+.icon-web-link-2 .path33:before {
+  content: "\e92f";
+  margin-left: -1em;
+  color: #20a5e9; }
+
+.icon-web-link-2 .path34:before {
+  content: "\e930";
+  margin-left: -1em;
+  color: #3e7eda; }
+
+.icon-web-link-2 .path35:before {
+  content: "\e931";
+  margin-left: -1em;
+  color: #11baf2; }
+
+.icon-web-link-2 .path36:before {
+  content: "\e932";
+  margin-left: -1em;
+  color: #25d5fb; }
+
+.icon-web-link-2 .path37:before {
+  content: "\e933";
+  margin-left: -1em;
+  color: #1cabec; }
+
+.icon-web-link-2 .path38:before {
+  content: "\e934";
+  margin-left: -1em;
+  color: #66dffc; }
+
+.icon-web-link-2 .path39:before {
+  content: "\e935";
+  margin-left: -1em;
+  color: #21a3e9; }
+
+.icon-web-link-2 .path40:before {
+  content: "\e936";
+  margin-left: -1em;
+  color: #10bbf3; }
+
+.icon-web-link-2 .path41:before {
+  content: "\e937";
+  margin-left: -1em;
+  color: #2fd7fb; }
+
+.icon-web-link-2 .path42:before {
+  content: "\e938";
+  margin-left: -1em;
+  color: #02cefa; }
+
+.icon-web-link-2 .path43:before {
+  content: "\e939";
+  margin-left: -1em;
+  color: #4278d7; }
+
+.icon-web-link-2 .path44:before {
+  content: "\e93a";
+  margin-left: -1em;
+  color: #348adf; }
+
+.icon-web-link-2 .path45:before {
+  content: "\e93b";
+  margin-left: -1em;
+  color: #72e0fc; }
+
+.icon-web-link-2 .path46:before {
+  content: "\e93c";
+  margin-left: -1em;
+  color: #0fbcf3; }
+
+.icon-web-link-2 .path47:before {
+  content: "\e93d";
+  margin-left: -1em;
+  color: #21a4e9; }
+
+.icon-web-link-2 .path48:before {
+  content: "\e93e";
+  margin-left: -1em;
+  color: #3688de; }
+
+.icon-web-link-2 .path49:before {
+  content: "\e93f";
+  margin-left: -1em;
+  color: #22a2e8; }
+
+.icon-web-link-2 .path50:before {
+  content: "\e940";
+  margin-left: -1em;
+  color: #4475d6; }
+
+.icon-web-link-2 .path51:before {
+  content: "\e941";
+  margin-left: -1em;
+  color: #3984dc; }
+
+.icon-web-link-2 .path52:before {
+  content: "\e942";
+  margin-left: -1em;
+  color: #4673d5; }
+
+.icon-web-link-2 .path53:before {
+  content: "\e943";
+  margin-left: -1em;
+  color: #7ee2fc; }
+
+.icon-web-link-2 .path54:before {
+  content: "\e944";
+  margin-left: -1em;
+  color: #23a1e8; }
+
+.icon-web-link-2 .path55:before {
+  content: "\e945";
+  margin-left: -1em;
+  color: #279ce6; }
+
+.icon-web-link-2 .path56:before {
+  content: "\e946";
+  margin-left: -1em;
+  color: #44dafb; }
+
+.icon-web-link-2 .path57:before {
+  content: "\e947";
+  margin-left: -1em;
+  color: #02d0fb; }
+
+.icon-web-link-2 .path58:before {
+  content: "\e948";
+  margin-left: -1em;
+  color: #4870d4; }
+
+.icon-web-link-2 .path59:before {
+  content: "\e949";
+  margin-left: -1em;
+  color: #3b82db; }
+
+.icon-web-link-2 .path60:before {
+  content: "\e94a";
+  margin-left: -1em;
+  color: #0dbff4; }
+
+.icon-web-link-2 .path61:before {
+  content: "\e94b";
+  margin-left: -1em;
+  color: #4a6dd3; }
+
+.icon-web-link-2 .path62:before {
+  content: "\e94c";
+  margin-left: -1em;
+  color: #3d7fda; }
+
+.icon-web-link-2 .path63:before {
+  content: "\e94d";
+  margin-left: -1em;
+  color: #06d1fb; }
+
+.icon-web-link-2 .path64:before {
+  content: "\e94e";
+  margin-left: -1em;
+  color: #259fe7; }
+
+.icon-web-link-2 .path65:before {
+  content: "\e94f";
+  margin-left: -1em;
+  color: #89e4fc; }
+
+.icon-web-link-2 .path66:before {
+  content: "\e950";
+  margin-left: -1em;
+  color: #18b0ee; }
+
+.icon-web-link-2 .path67:before {
+  content: "\e951";
+  margin-left: -1em;
+  color: #289ae5; }
+
+.icon-web-link-2 .path68:before {
+  content: "\e952";
+  margin-left: -1em;
+  color: #4b6bd2; }
+
+.icon-web-link-2 .path69:before {
+  content: "\e953";
+  margin-left: -1em;
+  color: #06c9f8; }
+
+.icon-web-link-2 .path70:before {
+  content: "\e954";
+  margin-left: -1em;
+  color: #318ee0; }
+
+.icon-web-link-2 .path71:before {
+  content: "\e955";
+  margin-left: -1em;
+  color: #0ad1fb; }
+
+.icon-web-link-2 .path72:before {
+  content: "\e956";
+  margin-left: -1em;
+  color: #4e67d1; }
+
+.icon-web-link-2 .path73:before {
+  content: "\e957";
+  margin-left: -1em;
+  color: #07c8f8; }
+
+.icon-web-link-2 .path74:before {
+  content: "\e958";
+  margin-left: -1em;
+  color: #08c6f7; }
+
+.icon-web-link-2 .path75:before {
+  content: "\e959";
+  margin-left: -1em;
+  color: #3f7cd9; }
+
+.icon-web-link-2 .path76:before {
+  content: "\e95a";
+  margin-left: -1em;
+  color: #03cefa; }
+
+.icon-web-link-2 .path77:before {
+  content: "\e95b";
+  margin-left: -1em;
+  color: #05caf9; }
+
+.icon-web-link-2 .path78:before {
+  content: "\e95c";
+  margin-left: -1em;
+  color: #0dbff4; }
+
+.icon-web-link-2 .path79:before {
+  content: "\e95d";
+  margin-left: -1em;
+  color: #16d3fb; }
+
+.icon-web-link-2 .path80:before {
+  content: "\e95e";
+  margin-left: -1em;
+  color: #18b0ee; }
+
+.icon-web-link-2 .path81:before {
+  content: "\e95f";
+  margin-left: -1em;
+  color: #0ed2fb; }
+
+.icon-web-link-2 .path82:before {
+  content: "\e960";
+  margin-left: -1em;
+  color: #25d5fb; }
+
+.icon-web-link-2 .path83:before {
+  content: "\e961";
+  margin-left: -1em;
+  color: #1bacec; }
+
+.icon-web-link-2 .path84:before {
+  content: "\e962";
+  margin-left: -1em;
+  color: #407ad8; }
+
+.icon-web-link-2 .path85:before {
+  content: "\e963";
+  margin-left: -1em;
+  color: #2dd6fb; }
+
+.icon-web-link-2 .path86:before {
+  content: "\e964";
+  margin-left: -1em;
+  color: #21a4e9; }
+
+.icon-web-link-2 .path87:before {
+  content: "\e965";
+  margin-left: -1em;
+  color: #3ad8fb; }
+
+.icon-web-link-2 .path88:before {
+  content: "\e966";
+  margin-left: -1em;
+  color: #4f66d0; }
+
+.icon-web-link-2 .path89:before {
+  content: "\e967";
+  margin-left: -1em;
+  color: #2999e5; }
+
+.icon-web-link-2 .path90:before {
+  content: "\e968";
+  margin-left: -1em;
+  color: #1dd4fb; }
+
+.icon-web-link-2 .path91:before {
+  content: "\e969";
+  margin-left: -1em;
+  color: #4cdbfb; }
+
+.icon-web-link-2 .path92:before {
+  content: "\e96a";
+  margin-left: -1em;
+  color: #2e92e2; }
+
+.icon-web-link-2 .path93:before {
+  content: "\e96b";
+  margin-left: -1em;
+  color: #21d5fb; }
+
+.icon-web-link-2 .path94:before {
+  content: "\e96c";
+  margin-left: -1em;
+  color: #24d5fb; }
+
+.icon-web-link-2 .path95:before {
+  content: "\e96d";
+  margin-left: -1em;
+  color: #28d6fb; }
+
+.icon-web-link-2 .path96:before {
+  content: "\e96e";
+  margin-left: -1em;
+  color: #6ee0fc; }
+
+.icon-web-link-2 .path97:before {
+  content: "\e96f";
+  margin-left: -1em;
+  color: #40dafc; }
+
+.icon-web-link-2 .path98:before {
+  content: "\e970";
+  margin-left: -1em;
+  color: #328de0; }
+
+.icon-web-link-2 .path99:before {
+  content: "\e971";
+  margin-left: -1em;
+  color: #04cbf9; }
+
+.icon-web-link-2 .path100:before {
+  content: "\e972";
+  margin-left: -1em;
+  color: #18b0ee; }
+
+.icon-web-link-2 .path101:before {
+  content: "\e973";
+  margin-left: -1em;
+  color: #2a98e4; }
+
+.icon-web-link-2 .path102:before {
+  content: "\e974";
+  margin-left: -1em;
+  color: #93e5fc; }
+
+.icon-web-link-2 .path103:before {
+  content: "\e975";
+  margin-left: -1em;
+  color: #40dafc; }
+
+.icon-web-link-2 .path104:before {
+  content: "\e976";
+  margin-left: -1em;
+  color: #1fd4fb; }
+
+.icon-web-link-2 .path105:before {
+  content: "\e977";
+  margin-left: -1em;
+  color: #6ee0fc; }
+
+.icon-web-link-2 .path106:before {
+  content: "\e978";
+  margin-left: -1em;
+  color: #4cdbfb; }
+
+.icon-web-link-2 .path107:before {
+  content: "\e979";
+  margin-left: -1em;
+  color: #42d9fb; }
+
+.icon-web-link-2 .path108:before {
+  content: "\e97a";
+  margin-left: -1em;
+  color: #35d7fb; }
+
+.icon-web-link-2 .path109:before {
+  content: "\e97b";
+  margin-left: -1em;
+  color: #29d6fb; }
+
+.icon-web-link-2 .path110:before {
+  content: "\e97c";
+  margin-left: -1em;
+  color: #05caf9; }
+
+.icon-web-link-2 .path111:before {
+  content: "\e97d";
+  margin-left: -1em;
+  color: #0cc0f5; }
+
+.icon-web-link-2 .path112:before {
+  content: "\e97e";
+  margin-left: -1em;
+  color: #1bacec; }
+
+.icon-web-link-2 .path113:before {
+  content: "\e97f";
+  margin-left: -1em;
+  color: #21a4e9; }
+
+.icon-web-link-2 .path114:before {
+  content: "\e980";
+  margin-left: -1em;
+  color: #2c95e3; }
+
+.icon-web-link-2 .path115:before {
+  content: "\e981";
+  margin-left: -1em;
+  color: #3b81db; }
+
+.icon-web-link-2 .path116:before {
+  content: "\e982";
+  margin-left: -1em;
+  color: #f8f6f7; }
+
+.icon-web-link-2 .path117:before {
+  content: "\e983";
+  margin-left: -1em;
+  color: #dcf0f7; }
+
+.icon-web-link-2 .path118:before {
+  content: "\e984";
+  margin-left: -1em;
+  color: #d4e5f4; }
+
+.icon-web-link-2 .path119:before {
+  content: "\e985";
+  margin-left: -1em;
+  color: #d1ceeb; }
+
+.icon-web-link-2 .path120:before {
+  content: "\e986";
+  margin-left: -1em;
+  color: #f7f5f7; }
+
+.icon-web-link-2 .path121:before {
+  content: "\e987";
+  margin-left: -1em;
+  color: #f6f4f7; }
+
+.icon-web-link-2 .path122:before {
+  content: "\e988";
+  margin-left: -1em;
+  color: #f5f3f7; }
+
+.icon-web-link-2 .path123:before {
+  content: "\e989";
+  margin-left: -1em;
+  color: #f4f2f7; }
+
+.icon-web-link-2 .path124:before {
+  content: "\e98a";
+  margin-left: -1em;
+  color: #f3f1f6; }
+
+.icon-web-link-2 .path125:before {
+  content: "\e98b";
+  margin-left: -1em;
+  color: #f2f1f6; }
+
+.icon-web-link-2 .path126:before {
+  content: "\e98c";
+  margin-left: -1em;
+  color: #f2f0f6; }
+
+.icon-web-link-2 .path127:before {
+  content: "\e98d";
+  margin-left: -1em;
+  color: #f1f0f6; }
+
+.icon-web-link-2 .path128:before {
+  content: "\e98e";
+  margin-left: -1em;
+  color: #f1eff6; }
+
+.icon-web-link-2 .path129:before {
+  content: "\e98f";
+  margin-left: -1em;
+  color: #f0eff6; }
+
+.icon-web-link-2 .path130:before {
+  content: "\e990";
+  margin-left: -1em;
+  color: #f0eef6; }
+
+.icon-web-link-2 .path131:before {
+  content: "\e991";
+  margin-left: -1em;
+  color: #efeef6; }
+
+.icon-web-link-2 .path132:before {
+  content: "\e992";
+  margin-left: -1em;
+  color: #efedf6; }
+
+.icon-web-link-2 .path133:before {
+  content: "\e993";
+  margin-left: -1em;
+  color: #eeedf6; }
+
+.icon-web-link-2 .path134:before {
+  content: "\e994";
+  margin-left: -1em;
+  color: #edecf6; }
+
+.icon-web-link-2 .path135:before {
+  content: "\e995";
+  margin-left: -1em;
+  color: #ecebf6; }
+
+.icon-web-link-2 .path136:before {
+  content: "\e996";
+  margin-left: -1em;
+  color: #eceaf6; }
+
+.icon-web-link-2 .path137:before {
+  content: "\e997";
+  margin-left: -1em;
+  color: #ebeaf6; }
+
+.icon-web-link-2 .path138:before {
+  content: "\e998";
+  margin-left: -1em;
+  color: #7a6d79; }
+
+.icon-web-link-2 .path139:before {
+  content: "\e999";
+  margin-left: -1em;
+  color: #7a6d79; }
+
+.icon-web-link-2 .path140:before {
+  content: "\e99a";
+  margin-left: -1em;
+  color: #dcd9ef; }
+
+.icon-web-link-2 .path141:before {
+  content: "\e99b";
+  margin-left: -1em;
+  color: #a59ba3; }
+
+.icon-web-link-2 .path142:before {
+  content: "\e99c";
+  margin-left: -1em;
+  color: #b5adb4; }
+
+.icon-web-link-2 .path143:before {
+  content: "\e99d";
+  margin-left: -1em;
+  color: #7a6d79; }
+
+.icon-web-link-2 .path144:before {
+  content: "\e99e";
+  margin-left: -1em;
+  color: #7a6d79; }
+
+.icon-web-link-2 .path145:before {
+  content: "\e99f";
+  margin-left: -1em;
+  color: #968c95; }
+
+.icon-web-link-2 .path146:before {
+  content: "\e9a0";
+  margin-left: -1em;
+  color: #a097a1; }
+
+.icon-web-link-2 .path147:before {
+  content: "\e9a1";
+  margin-left: -1em;
+  color: #dcd8de; }
+
+.icon-web-link-2 .path148:before {
+  content: "\e9a2";
+  margin-left: -1em;
+  color: #7a6d79; }
+
+.icon-web-link-2 .path149:before {
+  content: "\e9a3";
+  margin-left: -1em;
+  color: #7a6d79; }
+
+.icon-web-link-2 .path150:before {
+  content: "\e9a4";
+  margin-left: -1em;
+  color: #d7d2d9; }
+
+.icon-web-link-2 .path151:before {
+  content: "\e9a5";
+  margin-left: -1em;
+  color: #edebf6; }
+
+.icon-web-link-2 .path152:before {
+  content: "\e9a6";
+  margin-left: -1em;
+  color: #c2bbc1; }
+
+.icon-web-link-2 .path153:before {
+  content: "\e9a7";
+  margin-left: -1em;
+  color: #d9d3d7; }
+
+.icon-web-link-2 .path154:before {
+  content: "\e9a8";
+  margin-left: -1em;
+  color: #b5adb4; }
+
+.icon-web-link-2 .path155:before {
+  content: "\e9a9";
+  margin-left: -1em;
+  color: #eeedf6; }
+
+.icon-web-link-2 .path156:before {
+  content: "\e9aa";
+  margin-left: -1em;
+  color: #edecf6; }
+
+.icon-web-link-2 .path157:before {
+  content: "\e9ab";
+  margin-left: -1em;
+  color: #f3f1f6; }
+
+.icon-web-link-2 .path158:before {
+  content: "\e9ac";
+  margin-left: -1em;
+  color: #f5f3f7; }
+
+.icon-web-link-2 .path159:before {
+  content: "\e9ad";
+  margin-left: -1em;
+  color: #8d818d; }
+
+.icon-web-link-2 .path160:before {
+  content: "\e9ae";
+  margin-left: -1em;
+  color: #a49ba5; }
+
+.icon-web-link-2 .path161:before {
+  content: "\e9af";
+  margin-left: -1em;
+  color: #f1eff6; }
+
+.icon-web-link-2 .path162:before {
+  content: "\e9b0";
+  margin-left: -1em;
+  color: #bfb8c2; }
+
+.icon-web-link-2 .path163:before {
+  content: "\e9b1";
+  margin-left: -1em;
+  color: #a9a2ac; }
+
+.icon-web-link-2 .path164:before {
+  content: "\e9b2";
+  margin-left: -1em;
+  color: #aba3ae; }
+
+.icon-web-link-2 .path165:before {
+  content: "\e9b3";
+  margin-left: -1em;
+  color: #ada5af; }
+
+.icon-web-link-2 .path166:before {
+  content: "\e9b4";
+  margin-left: -1em;
+  color: #aca4af; }
+
+.icon-web-link-2 .path167:before {
+  content: "\e9b5";
+  margin-left: -1em;
+  color: #bfb7c2; }
+
+.icon-web-link-2 .path168:before {
+  content: "\e9b6";
+  margin-left: -1em;
+  color: #b3abb6; }
+
+.icon-web-link-2 .path169:before {
+  content: "\e9b7";
+  margin-left: -1em;
+  color: #c3bec7; }
+
+.icon-web-link-2 .path170:before {
+  content: "\e9b8";
+  margin-left: -1em;
+  color: #bfb9c4; }
+
+.icon-web-link-2 .path171:before {
+  content: "\e9b9";
+  margin-left: -1em;
+  color: black; }
+
+.icon-web-link-2 .path172:before {
+  content: "\e9ba";
+  margin-left: -1em;
+  color: #c6c0c7; }
+
+.icon-web-link-2 .path173:before {
+  content: "\e9bb";
+  margin-left: -1em;
+  color: #aaa2aa; }
+
+.icon-web-link-2 .path174:before {
+  content: "\e9bc";
+  margin-left: -1em;
+  color: #bcb6be; }
+
+.icon-web-link-2 .path175:before {
+  content: "\e9bd";
+  margin-left: -1em;
+  color: #cbc4cc; }
+
+.icon-web-link-2 .path176:before {
+  content: "\e9be";
+  margin-left: -1em;
+  color: #b0a8b0; }
+
+.icon-web-link-2 .path177:before {
+  content: "\e9bf";
+  margin-left: -1em;
+  color: #aca4ac; }
+
+.icon-web-link-2 .path178:before {
+  content: "\e9c0";
+  margin-left: -1em;
+  color: #dbd8ef; }
+
+.icon-web-link-2 .path179:before {
+  content: "\e9c1";
+  margin-left: -1em;
+  color: #89e4fa; }
+
+.icon-web-link-2 .path180:before {
+  content: "\e9c2";
+  margin-left: -1em;
+  color: #6dcef2; }
+
+.icon-web-link-2 .path181:before {
+  content: "\e9c3";
+  margin-left: -1em;
+  color: #79bceb; }
+
+.icon-web-link-2 .path182:before {
+  content: "\e9c4";
+  margin-left: -1em;
+  color: #37d8fb; }
+
+.icon-web-link-2 .path183:before {
+  content: "\e9c5";
+  margin-left: -1em;
+  color: #2cd6fb; }
+
+.icon-web-link-2 .path184:before {
+  content: "\e9c6";
+  margin-left: -1em;
+  color: #0dbff4; }
+
+.icon-web-link-2 .path185:before {
+  content: "\e9c7";
+  margin-left: -1em;
+  color: #13b7f1; }
+
+.icon-web-link-2 .path186:before {
+  content: "\e9c8";
+  margin-left: -1em;
+  color: #17b1ee; }
+
+.icon-web-link-2 .path187:before {
+  content: "\e9c9";
+  margin-left: -1em;
+  color: #1bacec; }
+
+.icon-web-link-2 .path188:before {
+  content: "\e9ca";
+  margin-left: -1em;
+  color: #23a1e8; }
+
+.icon-web-link-2 .path189:before {
+  content: "\e9cb";
+  margin-left: -1em;
+  color: #2a98e4; }
+
+.icon-web-link-2 .path190:before {
+  content: "\e9cc";
+  margin-left: -1em;
+  color: #318ee0; }
+
+.icon-web-link-2 .path191:before {
+  content: "\e9cd";
+  margin-left: -1em;
+  color: #21d5fb; }
+
+.icon-web-link-2 .path192:before {
+  content: "\e9ce";
+  margin-left: -1em;
+  color: cyan; }
+
+.icon-web-link-2 .path193:before {
+  content: "\e9cf";
+  margin-left: -1em;
+  color: #0dd2fb; }
+
+.icon-web-link-2 .path194:before {
+  content: "\e9d0";
+  margin-left: -1em;
+  color: cyan; }
+
+.icon-laravel:before {
+  content: "\e904";
+  color: #ff2d20; }
+
+.icon-hugo:before {
+  content: "\e905"; }
+
+.icon-document-file-php:before {
+  content: "\e900"; }
+
+.icon-document-file-php1:before {
+  content: "\e901"; }
+
+.icon-file-php:before {
+  content: "\e902"; }
+
+.icon-file-php1:before {
+  content: "\e903"; }
+
+.small-bold-text {
+  font-size: 0.70em !important;
+  /* Ajusta el tamaño para que sea pequeño */
+  font-weight: 400 !important;
+  /* Hace el texto en negrita */
+  color: #800080   !important;
+  /* Color de texto; puedes ajustarlo según el diseño */ }
+
+.cover-title-background {
+  display: inline-block;
+  background-color: rgba(0, 50, 0, 0.2);
+  /* Fondo negro con 60% de transparencia */
+  color: #ffffff;
+  /* Texto en blanco para un buen contraste */
+  padding: 10px 15px;
+  /* Espaciado interno para que no esté pegado al texto */
+  border-radius: 5px;
+  /* Bordes redondeados para estilo */
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold; }
+
+.navbar-brand img {
+  width: 120px;
+  /* Cambia este valor para ajustar el ancho */
+  height: auto;
+  /* Mantiene la proporción del logo */ }
+
+.iframe-container {
+  zoom: 1.5;
+  /* Aumenta el tamaño del contenido */
+  transform-origin: 0 0;
+  overflow: auto; }
+
+.sidebar .nav .nav-link {
+  font-size: 10px;
+  /* Ajusta el tamaño según lo que necesites */ }
+
+.navbar-brand img {
+  width: 120px;
+  /* Cambia este valor para ajustar el ancho */
+  height: auto;
+  /* Mantiene la proporción del logo */ }
+
+.iframe-container {
+  zoom: 1.5;
+  /* Aumenta el tamaño del contenido */
+  transform-origin: 0 0;
+  overflow: auto; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,643 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="alternate" type="application/rss&#43;xml" href="https://web.infenlaces.com/certificado/web/es/docs/06_instalaciones/apache/index.xml">
+<meta name="robots" content="index, follow">
+
+
+<link rel="shortcut icon" href="/certificado/web/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/certificado/web/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/android-192x192.png" sizes="192x192">
+
+<title>Apache | Certificado de profesionalidad Desarrollo de aplicaciones con tecnologías web</title>
+<meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
+
+<meta property="og:url" content="https://web.infenlaces.com/certificado/web/es/docs/06_instalaciones/apache/">
+  <meta property="og:site_name" content="Certificado de profesionalidad Desarrollo de aplicaciones con tecnologías web">
+  <meta property="og:title" content="Apache">
+  <meta property="og:description" content="Servidor Web Servidor Apache y su funcionamiento modular Como se muestra en la imagen, Apache funciona mediante un sistema de módulos.
+Cada uno de estos módulos (como PHP, MySQL, XML, entre otros) añade funcionalidades específicas y se conecta al núcleo de Apache.
+Puedes activar o desactivar, instalar o desinstalar módulos según tus necesidades, manteniendo solo aquellos que sean esenciales.">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Apache">
+  <meta itemprop="description" content="Servidor Web Servidor Apache y su funcionamiento modular Como se muestra en la imagen, Apache funciona mediante un sistema de módulos.
+Cada uno de estos módulos (como PHP, MySQL, XML, entre otros) añade funcionalidades específicas y se conecta al núcleo de Apache.
+Puedes activar o desactivar, instalar o desinstalar módulos según tus necesidades, manteniendo solo aquellos que sean esenciales.">
+  <meta itemprop="datePublished" content="2024-10-15T07:04:49+02:00">
+  <meta itemprop="dateModified" content="2024-10-15T07:04:49+02:00">
+  <meta itemprop="wordCount" content="765">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Apache">
+  <meta name="twitter:description" content="Servidor Web Servidor Apache y su funcionamiento modular Como se muestra en la imagen, Apache funciona mediante un sistema de módulos.
+Cada uno de estos módulos (como PHP, MySQL, XML, entre otros) añade funcionalidades específicas y se conecta al núcleo de Apache.
+Puedes activar o desactivar, instalar o desinstalar módulos según tus necesidades, manteniendo solo aquellos que sean esenciales.">
+
+
+<link rel="preload" href="/certificado/web/scss/main.min.12e7d3ae2a858efd3cf9b95e11c324172bee6b9d2562bd9833415a6e89f5bdeb.css" as="style"><link href="/certificado/web/scss/main.min.12e7d3ae2a858efd3cf9b95e11c324172bee6b9d2562bd9833415a6e89f5bdeb.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/certificado/web/es/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/certificado/web/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Certificado de profesionalidad Desarrollo de aplicaciones con tecnologías web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/certificado/web/en/">English</a></li>
+    <li><a class="dropdown-item" href="/certificado/web/fr/">Francés</a></li>
+    </ul>
+</div></li>
+      <li class="td-light-dark-menu nav-item dropdown">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+  <symbol id="circle-half" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+  </symbol>
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+  </symbol>
+</svg>
+
+<button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        data-bs-display="static"
+        aria-label="Toggle theme (auto)">
+  <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+</button>
+<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#sun-fill"></use></svg>
+      Light
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#moon-stars-fill"></use></svg>
+      Dark
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+      <svg class="bi me-2 opacity-50"><use href="#circle-half"></use></svg>
+      Auto
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+</ul>
+
+      </li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <div class="td-sidebar-nav__section nav-item dropdown d-block d-lg-none">
+      <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/certificado/web/en/">English</a></li>
+    <li><a class="dropdown-item" href="/certificado/web/fr/">Francés</a></li>
+    </ul>
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-certificadowebesdocs-li">
+  <a href="/certificado/web/es/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-certificadowebesdocs"><i class="code-web_old"></i><span class="">La web_old y www</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-certificadowebesdocs01_conceptos_generales-li">
+  <input type="checkbox" id="m-certificadowebesdocs01_conceptos_generales-check"/>
+  <label for="m-certificadowebesdocs01_conceptos_generales-check"><a href="/certificado/web/es/docs/01_conceptos_generales/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs01_conceptos_generales"><i class="fas fa-book"></i><span class="">Introducción</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-certificadowebesdocs02_conceptos_basicos-li">
+  <input type="checkbox" id="m-certificadowebesdocs02_conceptos_basicos-check"/>
+  <label for="m-certificadowebesdocs02_conceptos_basicos-check"><a href="/certificado/web/es/docs/02_conceptos_basicos/" title="Ideas básicas de redes" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs02_conceptos_basicos"><i class="fa-solid fa-network-wired"></i><span class="">Redes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-certificadowebesdocs03_osi-li">
+  <input type="checkbox" id="m-certificadowebesdocs03_osi-check"/>
+  <label for="m-certificadowebesdocs03_osi-check"><a href="/certificado/web/es/docs/03_osi/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs03_osi"><i class="fas fa-comments"></i><span class="">Modelo OSI</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-certificadowebesdocs04_internet-li">
+  <input type="checkbox" id="m-certificadowebesdocs04_internet-check"/>
+  <label for="m-certificadowebesdocs04_internet-check"><a href="/certificado/web/es/docs/04_internet/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs04_internet"><i class="fas fa-globe"></i><span class="">Internet</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-certificadowebesdocs05_www-li">
+  <input type="checkbox" id="m-certificadowebesdocs05_www-check"/>
+  <label for="m-certificadowebesdocs05_www-check"><a href="/certificado/web/es/docs/05_www/" title="Instalaciones" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs05_www"><i class="fa fa-layer-group"></i><span class="">Creando arquitectura</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-certificadowebesdocs06_instalaciones-li">
+  <input type="checkbox" id="m-certificadowebesdocs06_instalaciones-check" checked/>
+  <label for="m-certificadowebesdocs06_instalaciones-check"><a href="/certificado/web/es/docs/06_instalaciones/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs06_instalaciones"><i class="fas fa-download"></i><span class="">Instalación</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-certificadowebesdocs06_instalacionesapache-li">
+  <input type="checkbox" id="m-certificadowebesdocs06_instalacionesapache-check" checked/>
+  <label for="m-certificadowebesdocs06_instalacionesapache-check"><a href="/certificado/web/es/docs/06_instalaciones/apache/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs06_instalacionesapache"><i class="fas fa-feather"></i><span class="td-sidebar-nav-active-item">Apache</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-certificadowebesdocs06_instalacionesapachepractica-li">
+  <input type="checkbox" id="m-certificadowebesdocs06_instalacionesapachepractica-check"/>
+  <label for="m-certificadowebesdocs06_instalacionesapachepractica-check"><a href="/certificado/web/es/docs/06_instalaciones/apache/practica/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs06_instalacionesapachepractica"><i class="fas fa-chalkboard-teacher"></i><span class="">practicando</span></a></label>
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+        <li><a href="#servidor-apache-y-su-funcionamiento-modular">Servidor Apache y su funcionamiento modular</a></li>
+      </ul>
+    </li>
+    <li><a href="#consideraciones-de-seguridad">Consideraciones de seguridad</a>
+      <ul>
+        <li><a href="#módulos-a-instalar">Módulos a instalar</a></li>
+        <li><a href="#concepto-del-virtual-host">Concepto del virtual host</a></li>
+        <li><a href="#dónde-se-configura-cada-virtual-host">Dónde se configura cada Virtual Host</a></li>
+        <li><a href="#directivas-a-configurar">Directivas a configurar</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/certificado/web/es/docs/">La web_old y www</a></li>
+  <li class="breadcrumb-item">
+    <a href="/certificado/web/es/docs/06_instalaciones/">Instalación</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    Apache</li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Apache</h1>
+  
+	<header class="article-meta">
+		
+</header>
+	<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 328px">
+<img class="card-img-top" src="/certificado/web/es/docs/06_instalaciones/apache/apache_hu1649457868340022384.jpeg" width="318" height="159">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+Servidor Web
+
+</p>
+</figcaption>
+</figure>
+
+<h4 id="heading"></h4>
+<hr>
+<h3 id="servidor-apache-y-su-funcionamiento-modular">Servidor Apache y su funcionamiento modular</h3>
+<p><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 940px">
+<img class="card-img-top" src="/certificado/web/es/docs/06_instalaciones/apache/apache2_hu11909948979439000136.png" width="930" height="454">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+Como se muestra en la imagen, Apache funciona mediante un sistema de módulos.</p>
+<p>Cada uno de estos módulos (como <strong>PHP</strong>, <strong>MySQL</strong>, <strong>XML</strong>, entre otros) añade funcionalidades específicas y se conecta al <strong>núcleo de Apache</strong>.</p>
+<p>Puedes activar o desactivar, instalar o desinstalar módulos según tus necesidades, manteniendo solo aquellos que sean esenciales.</p>
+<p>Es importante recordar que, al instalar Apache, se abre una &ldquo;puerta&rdquo; en el sistema hacia redes externas, lo que puede representar una exposición al exterior.</p>
+<p>Mantener activos solo los módulos necesarios reduce esta exposición y ayuda a mejorar la seguridad del servidor.</p>
+<h2 id="consideraciones-de-seguridad">Consideraciones de seguridad</h2>
+<p>Cuando instalas y configuras Apache en tu sistema, estás abriendo una &ldquo;puerta&rdquo; que permite el acceso desde redes externas. Esto significa que, en cierta medida, tu sistema está expuesto al exterior, lo que podría representar un riesgo de seguridad si no se toman las precauciones adecuadas.</p>
+<p>Para minimizar esta exposición, es importante:</p>
+<ul>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Mantener actualizados
+
+
+</span>
+</strong>
+ tanto Apache como sus módulos.</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Configurar adecuadamente
+
+
+</span>
+</strong>
+ los permisos y accesos, limitando el acceso a solo aquellos que necesiten interactuar con el servidor.</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Deshabilitar módulos innecesarios
+
+
+</span>
+</strong>
+, ya que cada módulo adicional aumenta las posibles vulnerabilidades.</li>
+</ul>
+<p>Recuerda que el uso seguro de Apache es esencial para proteger la infraestructura de red y los datos alojados en el servidor.</p>
+<h3 id="módulos-a-instalar">Módulos a instalar</h3>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 722px">
+<img class="card-img-top" src="/certificado/web/es/docs/06_instalaciones/apache/Instalacion_web_hu18134935763993778466.png" width="712" height="484">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Instalación en windows</h4>
+
+    <ul>
+<li>
+<p>En windows se instala todo instalando el paquete Xampp(<a href="https://www.apachefriends.org/es/index.html)">https://www.apachefriends.org/es/index.html)</a>, o Wampp (<a href="https://www.wampserver.com/en/">https://www.wampserver.com/en/</a>)</p>
+</li>
+<li>
+<p>Una vez instalado debes de activarlo o arrancar los servicios correspondientes</p>
+</li>
+</ul>
+
+
+</div>
+
+<h3 id="concepto-del-virtual-host">Concepto del virtual host</h3>
+<p>Ponamos la siguiente analogía:
+Imaginemos que tenemos una persona llamada Manuel. En el trabajo, le llaman &ldquo;Manuel&rdquo; y adopta una actitud profesional y seria. En casa o con amigos, le llaman &ldquo;Manolo&rdquo; y su actitud es más relajada y cercana. Aunque es la misma persona, responde de manera diferente según cómo le llamen.</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 410px">
+<img class="card-img-top" src="/certificado/web/es/docs/06_instalaciones/apache/manuel-manolo_hu13058195514737110978.webp" width="400" height="400">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<p>De forma similar, en Apache, 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    un Virtual Host permite que el mismo servidor web responda de manera distinta según el nombre de dominio o dirección con la que se le acceda
+
+
+</span>
+</strong>
+.</p>
+<p>Siguiendo con la metáfora, es como si fuera <strong>Manuel</strong> en un contexto y <strong>Manolo</strong> en otro.</p>
+<p>Con 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Virtual Hosts
+
+
+</span>
+</strong>
+, Apache puede manejar varios sitios web en un solo servidor, mostrando diferentes contenidos o configuraciones según el dominio que se utilice.</p>
+<h3 id="dónde-se-configura-cada-virtual-host">Dónde se configura cada Virtual Host</h3>
+<p>Los ficheros de configuración de Apache están en <code>/etc/apache2</code>. En la imagen puedes ver cómo ubicarte y qué ficheros contiene.
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 815px">
+<img class="card-img-top" src="/certificado/web/es/docs/06_instalaciones/apache/ficheros_configuracion_apache_hu2167108248019024510.png" width="805" height="712">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+Observa los comandos utilizados
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>cd <span style="color:#228b22">#change directory para cambiar de directorio
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>pwd <span style="color:#228b22">#print work directory ver el directorio actual de trabajo
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>tree -L <span style="color:#b452cd">1</span> <span style="color:#228b22"># ver el contenido de un directorio con nivel 1 de profundidad con formato arbolescente. nivel 1 es no mostrar los subdirectorios
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+La configuración de los 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    sitios web
+
+
+</span>
+</strong>
+ está bajo los directorios 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    sites-available
+
+
+</span>
+</strong>
+ y 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    sites-enabled
+
+
+</span>
+</strong>
+.</p>
+<ul>
+<li>Después, para  actívalo en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    sites-enabled
+
+
+</span>
+</strong>
+ usando el comando  
+<strong>
+<span class="font-weight-bold text-primary">
+
+    a2ensite nombre_sitio
+
+
+</span>
+</strong>
+. Este comando crea un enlace simbólico que permite poner el sitio en funcionamiento.</li>
+</ul>
+<h4 id="cómo-crear-nombres-diferentes-para-mi-máquina">Cómo crear nombres diferentes para mi máquina</h4>
+<p>Para tener nombres únicos accesibles desde internet, lo ideal es comprar un dominio en un <strong>ISP</strong> (Proveedor de Servicios de Internet) y configurarlo para que apunte a tu máquina.</p>
+<p>Sin embargo, para hacer pruebas en local, puedes modificar el archivo 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    hosts
+
+
+</span>
+</strong>
+ en tu equipo.
+En ubuntu este fichero está ubicado en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    /etc/hosts
+
+
+</span>
+</strong>
+, y en Windows en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    c:\windows\system32\drivers\etc\hosts
+
+
+</span>
+</strong>
+.</p>
+<p>Este archivo permite asignar nombres personalizados a direcciones IP en tu red local.</p>
+<p>Por ejemplo, puedes añadir las siguientes líneas al archivo <code>hosts</code> para asociar los dominios locales a <code>localhost</code>:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>127.0.0.1 www.informatica.com 
+</span></span><span style="display:flex;"><span>127.0.0.1 www.musica.com </span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Una vez que hayas agregado el nombre en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    hosts
+
+
+</span>
+</strong>
+, puedes probar que funciona ejecutando un 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    <code>ping</code>
+
+
+</span>
+</strong>
+ al nombre que has configurado, como por ejemplo:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>ping www.informatica.com</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="directivas-a-configurar">Directivas a configurar</h3>
+<p>Apache se configura a través de 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    <strong>directivas</strong>
+
+
+</span>
+</strong>
+, que son como variables que definen el comportamiento del servidor al cargar el servicio.</p>
+<p>Siguiendo con la metáfora anterior de &ldquo;Manuel&rdquo; y &ldquo;Manolo&rdquo;, donde se establecen comportamientos distintos según el contexto, aquí concretaremos esos comportamientos deseados.</p>
+<p>Algunas de las directivas más importantes son:</p>
+<ul>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    ServerName
+
+
+</span>
+</strong>
+: Define el nombre del servidor o dominio que vamos a asociar a una configuración específica. Esto indica el nombre con el que el servidor responderá.</p>
+</li>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    DocumentRoot
+
+
+</span>
+</strong>
+: Especifica el directorio donde Apache debe buscar los archivos de los recursos. Aquí se encuentra el contenido que será servido a los usuarios cuando accedan al sitio.</p>
+</li>
+</ul>
+<p>Al configurar estas directivas, estamos definiendo cómo se comportará Apache y cómo gestionará las solicitudes para cada sitio web.</p>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Muy importante</h4>
+
+    <p>Siempre que modifiquemos alguna directiva de configuración, debemos rebotar el servicio</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>sudo service apache2 restart</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+</div>
+
+
+  <div class="section-index">
+    
+    
+    <hr class="panel-line">
+        <div class="entry">
+                <h5>
+                    <a href="/certificado/web/es/docs/06_instalaciones/apache/practica/">practicando</a>
+                </h5>
+                <p></p>
+            </div>
+        </div>
+</div>
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="manuelromeromiguel@gmail.com" aria-label="manuelromeromiguel@gmail.com">
+    <a target="_blank" rel="noopener" href="mailto:manuelromeromiguel@gmail.com" aria-label="manuelromeromiguel@gmail.com">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2024
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/certificado/web/js/main.min.757d55adba0f820111ac58e559dbac4b350e7c33e2e44340ffc847e8cacbbf98.js" integrity="sha256-dX1VrboPggERrFjlWdusSzUOfDPi5ENA/8hH6MrLv5g=" crossorigin="anonymous"></script>
+<script defer src="/certificado/web/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+<script src='/certificado/web/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

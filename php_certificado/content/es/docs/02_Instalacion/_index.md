@@ -96,3 +96,98 @@ La imagen de la estructura la podríamos organizar de la siguiente manera
 {{< imgproc estructura_docker Fill "504x297" >}}
 
 {{< /imgproc >}}
+
+### Temas de permisos de **Apache**
+
+A pesar de que no somos administradores/as, debemos tener conocimientos sobre ciertos temas.  
+Lo primero que debemos tener claro es que cuando **PHP** le dice en el script a Apache que actúe sobre el sistema de ficheros, en última instancia, es el usuario **apache** quien ejecuta las acciones.
+
+Lee atentamente el siguiente cuadro y asegúrate de entender cada punto; si no, pregunta.
+
+#### Puntos fundamentales sobre permisos
+
+1. En **Linux**, todo **fichero** tiene un **propietario**, y también todo **proceso** o **aplicación**, como lo es {{< color >}} el servidor web apache {{< /color >}}.
+    - El **propietario** del proceso es el **usuario que lanzó** dicho proceso.
+    - Cuando un proceso quiere actuar sobre un fichero, el usuario que lo lanzó debe tener **permisos sobre el fichero**.
+    - El usuario que lanza el programa o servicio **Apache** es **www-data**.
+    - Para cambiar el propietario de un fichero o su grupo, usamos la siguiente sentencia:
+
+   {{< highlight php "linenos=table, hl_lines=1" >}}
+   sudo chown usuario:grupo fichero (-R)
+   {{< / highlight >}}
+
+   **Nota**: El parámetro `-R` es opcional y actúa de forma recursiva.
+
+2. En PHP, un **directorio es igual que un fichero** cuyo contenido son los ficheros y directorios que contiene.
+
+#### Para dar permisos sobre un fichero a un usuario
+
+Usamos la siguiente sentencia:
+
+{{< highlight php "linenos=table, hl_lines=1" >}}
+sudo chmod permisos fichero (-R)
+{{< / highlight >}}
+
+**Nota**:
+- **permisos** es un número de tres dígitos en **octal** (ver tabla abajo).
+- **fichero** es el archivo al cual queremos asignar permisos; se puede usar `*` para aplicar a todos.
+- `-R` es un parámetro opcional que actúa de forma recursiva.
+
+| Número | Binario | Lectura (r) | Escritura (w) | Ejecución (x) |
+| ------ | ------- | ----------- | ------------- | ------------- |
+| 0      | 000     | ❌          | ❌            | ❌            |
+| 1      | 001     | ❌          | ❌            | ✔️            |
+| 2      | 010     | ❌          | ✔️            | ❌            |
+| 3      | 011     | ❌          | ✔️            | ✔️            |
+| 4      | 100     | ✔️          | ❌            | ❌            |
+| 5      | 101     | ✔️          | ❌            | ✔️            |
+| 6      | 110     | ✔️          | ✔️            | ❌            |
+| 7      | 111     | ✔️          | ✔️            | ✔️            |
+
+Por ejemplo:
+
+{{< highlight php "linenos=table, hl_lines=1" >}}
+chmod 766 file.txt   # Brinda acceso total al dueño, y lectura y escritura a los demás
+chmod 770 file.txt   # Brinda acceso total al dueño y al grupo, y elimina permisos a los demás
+chmod 635 file.txt   # Permite lectura y escritura al dueño, escritura y ejecución al grupo, y lectura y ejecución al resto
+{{< / highlight >}}
+
+> **Nota**: Recuerda que es el usuario **apache** quien debe tener los permisos necesarios (**leer (r), escribir (w), ejecutar (x)**).
+
+#### Establecer propietaro a carpetas
+
+El comando {{< color >}} chown {{< /color >}} en Linux, permite {{< color >}} cambiar el propietario y el grupo de uno o varios archivos o directorios {{< /color >}}. 
+
+{{< highlight bash "linenos=table, hl_lines=1" >}}
+    sudo chown usuario:grupo archivo_o_directorio
+{{< / highlight >}}
+
+* {{< color >}} Usuario {{< /color >}} se refiere al nuevo propietario del archivo o directorio.
+* {{< color >}} grupo  {{< /color >}} es el grupo al que se le asignarán los permisos sobre ese archivo o directorio. 
+* Al añadir el parámetro {{< color >}} -R {{< /color >}} al comando, {{< color >}} chown {{< /color >}} aplica el cambio de propietario y grupo de manera recursiva, afectando todos los archivos y carpetas dentro del directorio especificado.
+
+
+Para el caso de servidores web, el directorio {{< color >}} /var/www/html {{< /color >}} es donde suelen almacenarse los archivos públicos del sitio (valor que contiene la directiva {{< color >}} DocumentRoot {{< /color >}} en la configuración del virtual host del servidor.
+
+{{< color >}} El propietario {{< /color >}} de este directorio debería ser {{< color >}} el usuario del sistema {{< /color >}} que necesita subir o modificar los archivos.
+
+{{< color >}} El grupo {{< /color >}} debería asignarse al usuario que ejecuta Apache {{< color >}} (generalmente `www-data`) {{< /color >}}
+
+ Esto permite que el sistema gestione los archivos correctamente
+
+{{< alert title="Importante" color="success" >}}
+* El usuario del sistema tiene permisos de escritura para crear, modificar o eliminar archivos según sea necesario.
+* El grupo de Apache (`www-data`) puede acceder a los archivos para servirlos a través del servidor web.
+ {{< /alert >}}
+
+Para establecer este tipo de permisos en `/var/www/html`, puedes ejecutar:
+
+{{< highlight php "linenos=table, hl_lines=1" >}}
+sudo chown usuario:www-data /var/www/html -R
+{{< / highlight >}}
+
+Con esta configuración, los archivos se gestionarán con permisos de usuario para editar contenido y permisos de grupo para que Apache pueda acceder y servir el sitio web de manera segura.
+
+
+
+

@@ -2,5 +2,13 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../dwes" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../dwes/ejercicios/T2/T2_Adivina2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../dwes/ejercicios/vocabulario/vocabulario3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../dwes/vesta/adivina_numero" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../dwes/vesta/practicas/2022_mm/DIEGO GARCÍA TORRES/garcia_torres_diego_DEWS_Tarea06/MasterMind_juego" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../dwes/vesta/practicas/22022_ficheros/Daniel Radomirov Yordanov/Radomirov_Yordanov_Daniel_DWES_Practica_Ficheros/enunciado_pactica_descargas" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../dwes/vesta/practicas/22022_ficheros/MARTA PORTOLÉS BARGALLO/PORTOLES_BARGALLO_MARTA_ficheros_tema7/tema7" vcs="Git" />
   </component>
 </project>

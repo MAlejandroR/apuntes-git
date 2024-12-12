@@ -1,0 +1,553 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="alternate" type="application/rss&#43;xml" href="https://web.infenlaces.com/certificado/web/es/docs/03_osi/index.xml">
+<meta name="robots" content="index, follow">
+
+
+<link rel="shortcut icon" href="/certificado/web/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/certificado/web/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/certificado/web/favicons/android-192x192.png" sizes="192x192">
+
+<title>Modelo OSI | Certificado de profesionalidad Desarrollo de aplicaciones con tecnologías web</title>
+<meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
+
+<meta property="og:url" content="https://web.infenlaces.com/certificado/web/es/docs/03_osi/">
+  <meta property="og:site_name" content="Certificado de profesionalidad Desarrollo de aplicaciones con tecnologías web">
+  <meta property="og:title" content="Modelo OSI">
+  <meta property="og:description" content="Objetivos Qué veremos aquí Modelo OSI Modelo TCP_IP Concepto de protocolo Proceso de comunicación extremo a extremo Introducción al Modelo OSI El modelo OSI (Open Systems Interconnection) es un marco conceptual (es la base para la construcción y definición de redes), que define cómo las aplicaciones en una red pueden comunicarse entre sí.">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Modelo OSI">
+  <meta itemprop="description" content="Objetivos Qué veremos aquí Modelo OSI Modelo TCP_IP Concepto de protocolo Proceso de comunicación extremo a extremo Introducción al Modelo OSI El modelo OSI (Open Systems Interconnection) es un marco conceptual (es la base para la construcción y definición de redes), que define cómo las aplicaciones en una red pueden comunicarse entre sí.">
+  <meta itemprop="wordCount" content="1200">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Modelo OSI">
+  <meta name="twitter:description" content="Objetivos Qué veremos aquí Modelo OSI Modelo TCP_IP Concepto de protocolo Proceso de comunicación extremo a extremo Introducción al Modelo OSI El modelo OSI (Open Systems Interconnection) es un marco conceptual (es la base para la construcción y definición de redes), que define cómo las aplicaciones en una red pueden comunicarse entre sí.">
+
+
+<link rel="preload" href="/certificado/web/scss/main.min.12e7d3ae2a858efd3cf9b95e11c324172bee6b9d2562bd9833415a6e89f5bdeb.css" as="style"><link href="/certificado/web/scss/main.min.12e7d3ae2a858efd3cf9b95e11c324172bee6b9d2562bd9833415a6e89f5bdeb.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/certificado/web/es/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/certificado/web/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Certificado de profesionalidad Desarrollo de aplicaciones con tecnologías web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/certificado/web/en/">English</a></li>
+    <li><a class="dropdown-item" href="/certificado/web/fr/">Francés</a></li>
+    </ul>
+</div></li>
+      <li class="td-light-dark-menu nav-item dropdown">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+  <symbol id="circle-half" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+  </symbol>
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+  </symbol>
+</svg>
+
+<button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        data-bs-display="static"
+        aria-label="Toggle theme (auto)">
+  <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+</button>
+<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#sun-fill"></use></svg>
+      Light
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#moon-stars-fill"></use></svg>
+      Dark
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+      <svg class="bi me-2 opacity-50"><use href="#circle-half"></use></svg>
+      Auto
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+</ul>
+
+      </li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <div class="td-sidebar-nav__section nav-item dropdown d-block d-lg-none">
+      <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/certificado/web/en/">English</a></li>
+    <li><a class="dropdown-item" href="/certificado/web/fr/">Francés</a></li>
+    </ul>
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-certificadowebesdocs-li">
+  <a href="/certificado/web/es/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-certificadowebesdocs"><i class="code-web_old"></i><span class="">La web_old y www</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-certificadowebesdocs01_conceptos_generales-li">
+  <input type="checkbox" id="m-certificadowebesdocs01_conceptos_generales-check"/>
+  <label for="m-certificadowebesdocs01_conceptos_generales-check"><a href="/certificado/web/es/docs/01_conceptos_generales/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs01_conceptos_generales"><i class="fas fa-book"></i><span class="">Introducción</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-certificadowebesdocs02_conceptos_basicos-li">
+  <input type="checkbox" id="m-certificadowebesdocs02_conceptos_basicos-check"/>
+  <label for="m-certificadowebesdocs02_conceptos_basicos-check"><a href="/certificado/web/es/docs/02_conceptos_basicos/" title="Ideas básicas de redes" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs02_conceptos_basicos"><i class="fa-solid fa-network-wired"></i><span class="">Redes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-certificadowebesdocs03_osi-li">
+  <input type="checkbox" id="m-certificadowebesdocs03_osi-check" checked/>
+  <label for="m-certificadowebesdocs03_osi-check"><a href="/certificado/web/es/docs/03_osi/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs03_osi"><i class="fas fa-comments"></i><span class="td-sidebar-nav-active-item">Modelo OSI</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-certificadowebesdocs04_internet-li">
+  <input type="checkbox" id="m-certificadowebesdocs04_internet-check"/>
+  <label for="m-certificadowebesdocs04_internet-check"><a href="/certificado/web/es/docs/04_internet/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs04_internet"><i class="fas fa-globe"></i><span class="">Internet</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-certificadowebesdocs05_www-li">
+  <input type="checkbox" id="m-certificadowebesdocs05_www-check"/>
+  <label for="m-certificadowebesdocs05_www-check"><a href="/certificado/web/es/docs/05_www/" title="Instalaciones" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs05_www"><i class="fa fa-layer-group"></i><span class="">Creando arquitectura</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-certificadowebesdocs06_instalaciones-li">
+  <input type="checkbox" id="m-certificadowebesdocs06_instalaciones-check"/>
+  <label for="m-certificadowebesdocs06_instalaciones-check"><a href="/certificado/web/es/docs/06_instalaciones/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs06_instalaciones"><i class="fas fa-download"></i><span class="">Instalación</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-certificadowebesdocs06_instalacionesapache-li">
+  <input type="checkbox" id="m-certificadowebesdocs06_instalacionesapache-check"/>
+  <label for="m-certificadowebesdocs06_instalacionesapache-check"><a href="/certificado/web/es/docs/06_instalaciones/apache/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs06_instalacionesapache"><i class="fas fa-feather"></i><span class="">Apache</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-certificadowebesdocs06_instalacionesapachepractica-li">
+  <input type="checkbox" id="m-certificadowebesdocs06_instalacionesapachepractica-check"/>
+  <label for="m-certificadowebesdocs06_instalacionesapachepractica-check"><a href="/certificado/web/es/docs/06_instalaciones/apache/practica/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-certificadowebesdocs06_instalacionesapachepractica"><i class="fas fa-chalkboard-teacher"></i><span class="">practicando</span></a></label>
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introducción-al-modelo-osi">Introducción al Modelo OSI</a>
+      <ul>
+        <li><a href="#protocolos">Protocolos</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#proceso-de-comunicación-en-redes">Proceso de comunicación en redes</a>
+      <ul>
+        <li><a href="#proceso-de-comunicación-1">Proceso de comunicación</a></li>
+        <li><a href="#términos-clave">Términos clave:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/certificado/web/es/docs/">La web_old y www</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    Modelo OSI</li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Modelo OSI</h1>
+  
+	<header class="article-meta">
+		
+</header>
+	
+
+
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-check-circle"></i> 
+            
+        </span>
+        
+        <span>Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight:bold">Qué veremos aquí</h3>
+
+    <hr style="border-color:seagreen; border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            <li>Modelo OSI</li>
+            
+            <li>Modelo TCP_IP</li>
+            
+            <li>Concepto de protocolo</li>
+            
+            <li>Proceso de comunicación extremo a extremo</li>
+            
+            
+            
+        </ul>
+    </div>
+    
+
+
+</div>
+
+<h2 id="introducción-al-modelo-osi">Introducción al Modelo OSI</h2>
+<p>El 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    modelo OSI
+
+
+</span>
+</strong>
+ (Open Systems Interconnection) es un marco conceptual (es la base para la construcción y definición de redes), que define 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    cómo las aplicaciones en una red pueden comunicarse entre sí.
+
+
+</span>
+</strong>
+</p>
+<p>Fue desarrollado por la 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    ISO (Organización Internacional de Normalización)
+
+
+</span>
+</strong>
+ en 1984 para estandarizar las funciones de comunicación de los sistemas de red.</p>
+<p>El modelo OSI se divide en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    siete capas
+
+
+</span>
+</strong>
+, cada una de las cuales describe una parte específica del proceso de comunicación.</p>
+<p>Estas capas van desde el 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    nivel físico
+
+
+</span>
+</strong>
+, donde se produce la transferencia física de bits a través de señales eléctricas o inalámbricas, hasta las 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    aplicaciones de usuario
+
+
+</span>
+</strong>
+, facilitando la cominucación entre distintos sistemas y aplicaciones de red.</p>
+<p>Las siete capas son:</p>
+<ol>
+<li><strong>Capa Física</strong></li>
+<li><strong>Capa de Enlace de Datos</strong></li>
+<li><strong>Capa de Red</strong></li>
+<li><strong>Capa de Transporte</strong></li>
+<li><strong>Capa de Sesión</strong></li>
+<li><strong>Capa de Presentación</strong></li>
+<li><strong>Capa de Aplicación</strong></li>
+</ol>
+<p>El modelo OSI es fundamental para entender cómo las redes organizan y gestionan las comunicaciones entre dispositivos.</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 410px">
+<img class="card-img-top" src="/certificado/web/es/docs/03_osi/pila_osi_hu13122866684684601851.png" width="400" height="600">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<p>La idea es que cada capa de diferentes dispositivos se comuniquen de forma directa a través de lo que es el protocolo.</p>
+<p>El modelo OSI es una especificación formal y en él se basan la construccion de redes reales como conjunto de protocolos que permiten la comunicación.</p>
+<p>Una red real, que todos conocemos, es la red TCP/IP o red de internet</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 826px">
+<img class="card-img-top" src="/certificado/web/es/docs/03_osi/1_tcp_ip_hu15012397835962900428.jpg" width="816" height="1056">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+https://www.lawebdelprogramador.com/pdf/15788-Modelo-OSI-y-dispositivos-de-red-por-capa.html
+
+</p>
+</figcaption>
+</figure>
+
+<hr style="border-color: red; border-width: 3px;"/>
+<p>La siguiente imagen muestra la responsabilidad de capas agrupadas, que constituirán una sola capa en el modelo real de la red de internet o  TCP_IP</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 510px">
+<img class="card-img-top" src="/certificado/web/es/docs/03_osi/capas_tcp_ip_hu12874915975522276256.png" width="500" height="371">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+https://domoticaparatodos.com/2016/11/capas-en-los-protocolos/
+
+</p>
+</figcaption>
+</figure>
+
+<p>De forma ilustrativa muestra la siguiente imagen la relación de capa/s OSI con las capas de la red de tipo TPC/IP</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 510px">
+<img class="card-img-top" src="/certificado/web/es/docs/03_osi/Internet_osi_hu15399016997486246024.png" width="500" height="375">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<h3 id="protocolos">Protocolos</h3>
+<h4 id="qué-es-un-protocolo">¿Qué es un protocolo?</h4>
+<p>Un <strong>protocolo</strong> es un conjunto de <strong>reglas</strong> que permite que dos dispositivos diferentes puedan intercambiar <strong>datos</strong>, no información, de manera que ambos dispositivos se <strong>entiendan</strong>. Estas reglas aseguran que la comunicación entre los dispositivos sea <strong>lógica</strong> y de <strong>extremo a extremo</strong>, es decir, desde el origen hasta el destino sin perder coherencia en el proceso.</p>
+<h4 id="protocolo-como-software">Protocolo como software</h4>
+<p>Un protocolo no es un concepto abstracto, se materializa en un <strong>software</strong> o <strong>programa</strong> que implementa estas reglas, permitiendo que la comunicación se lleve a cabo.</p>
+<p>Los <strong>protocolos de nivel superior</strong> (como los de la capa de aplicación) se materializan en programas que el usuario o el administrador pueden instalar y configurar como un <strong>servicio</strong> o <strong>servidor</strong> en un equipo, que generalmente se denomina <strong>servidor</strong> y suele ser más potente que un equipo normal.</p>
+<h4 id="protocolos-y-el-sistema-operativo">Protocolos y el sistema operativo</h4>
+<p>Los <strong>protocolos de nivel inferior</strong> (capa de sesión, red, enlace-físico) forman parte del <strong>sistema operativo</strong> y se instalan automáticamente con él. Esto sucedió por primera vez en una distribución de <strong>Unix</strong> desarrollada por la Universidad de <strong>Berkeley</strong>, que integró de manera nativa estos protocolos en el sistema.</p>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    El Unix de Berkeley (BSD)
+
+
+</span>
+</strong>
+ integró 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    los protocolos TCP/IP de forma nativa en 1983
+
+
+</span>
+</strong>
+, lo que contribuyó de manera significativa a la expansión de las redes de computadoras y, eventualmente, de Internet.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p>La siguiente imagen muestra las capas de nivel de una red de internet de tipo TCP/IP
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1683px">
+<img class="card-img-top" src="/certificado/web/es/docs/03_osi/1_comunicacion_hu11408564360994070784.png" width="1673" height="859">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+<h1 id="proceso-de-comunicación">Proceso de comunicación</h1>
+<p>Analiza la siguiente imagen para concretar cómo se produce una comunicación lógica de información  a nivel de capas y la comunicación física o intercambio de datos a nivel lógico</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1683px">
+<img class="card-img-top" src="/certificado/web/es/docs/03_osi/2_comunicacion_hu1963045609883682173.png" width="1673" height="859">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<h2 id="proceso-de-comunicación-en-redes">Proceso de comunicación en redes</h2>
+<p>Para que se produzca una <strong>comunicación lógica de extremo a extremo</strong> en los diferentes niveles o capas, cada <strong>protocolo</strong> incluye (cuando se encapsula en el emisor) o extrae y analiza (cuando desencapsula en recepción o destino), añadiendo a los datos una <strong>cabecera</strong> o información correspondiente al nivel en el que se encuentra.</p>
+<h3 id="proceso-de-comunicación-1">Proceso de comunicación</h3>
+<p>El proceso de encapsulación y desencapsulación sigue una serie de pasos que involucran diferentes capas del modelo OSI y TCP/IP.</p>
+<h4 id="en-el-emisor">En el emisor:</h4>
+<ol>
+<li>
+<p><strong>Nivel de Aplicación</strong>:
+En la capa de aplicación, los datos que el usuario quiere enviar se procesan según el protocolo de la aplicación (HTTP, FTP, SMTP, etc.). Aquí, se trocea la información (habitualmente llamada <strong>datos o mensaje</strong>), que se pasa al nivel de transporte.</p>
+</li>
+<li>
+<p><strong>Nivel de Transporte</strong>:
+En esta capa, el protocolo de transporte (TCP o UDP) añade una <strong>cabecera</strong> a cada trozo de datos, que se denomina <strong>segmento</strong> (en el caso de TCP) o <strong>datagrama</strong> (en el caso de UDP). Esta cabecera incluye, entre otras cosas, el <strong>número de puerto</strong>, que es un identificador único que permite saber qué aplicación en el dispositivo de destino debe recibir los datos.</p>
+<ul>
+<li><strong>TCP</strong> es un protocolo orientado a la conexión que asegura la entrega fiable de los datos.</li>
+<li><strong>UDP</strong> es un protocolo no orientado a la conexión, que ofrece una entrega más rápida pero sin garantías de fiabilidad.</li>
+</ul>
+</li>
+<li>
+<p><strong>Nivel de Red</strong>:
+El nivel de red utiliza el protocolo <strong>IP</strong> para realizar el enrutamiento de los datos. En este nivel, los <strong>segmentos</strong> de la capa de transporte se encapsulan en <strong>paquetes IP</strong>. La cabecera de IP contiene información clave, como la <strong>dirección IP de origen y destino</strong>, lo que permite a los routers dirigir el paquete al dispositivo correcto.</p>
+<p>Es importante destacar que para <strong>IP</strong>, todo lo que recibe de la capa de transporte, incluidos los datos y las cabeceras de TCP o UDP, es tratado como una unidad de datos. Cada nivel del modelo nunca accede al contenido interno de los datos, solo manipula y analiza su propia cabecera.</p>
+</li>
+<li>
+<p><strong>Nivel de Enlace</strong>:
+En el nivel de enlace, los <strong>paquetes</strong> de IP se encapsulan en <strong>tramas</strong>. La cabecera de una trama contiene información como las <strong>direcciones MAC</strong> (que identifican de forma única a los dispositivos dentro de la red local). Además, la trama incluye mecanismos de control de errores, como bits de redundancia para detectar y corregir errores. Un protocolo como <strong>Hamming</strong> puede ser utilizado para este propósito, permitiendo detectar y corregir un porcentaje de errores en la transmisión.</p>
+</li>
+<li>
+<p><strong>Nivel Físico</strong>:<br>
+Finalmente, la capa física se encarga de transmitir las <strong>señales eléctricas</strong>, <strong>ondas electromagnéticas</strong> (en redes inalámbricas), <strong>señales luminosas</strong> (si usamos medios de fibra óptica) o de otra naturaleza, en función del medio que usemos para la transmisión. Estas señales representan los bits que viajan a través del medio de transmisión (como cables de cobre, fibra óptica, o aire en redes inalámbricas). En este nivel, se lleva a cabo la <strong>conversión de los datos</strong> en señales físicas que pueden viajar por el medio de comunicación.</p>
+</li>
+</ol>
+<h4 id="proceso-inverso-receptor">Proceso inverso (receptor):</h4>
+<p>En el receptor, ocurre el <strong>proceso inverso</strong>, conocido como <strong>desencapsulación</strong>. Los datos recibidos en la capa física son convertidos de señales a bits, que pasan a la capa de enlace, donde se analizan las tramas y se verifica la integridad de los datos. Después, el paquete IP es enviado a la capa de red, donde se lee la cabecera IP y se entrega el segmento al nivel de transporte, que finalmente entrega los datos a la aplicación correspondiente según el número de puerto.</p>
+<hr>
+<h3 id="términos-clave">Términos clave:</h3>
+<ul>
+<li><strong>Segmento</strong>: Unidad de datos en el nivel de transporte (TCP).</li>
+<li><strong>Datagrama</strong>: Unidad de datos en el nivel de transporte (UDP).</li>
+<li><strong>Paquete</strong>: Unidad de datos en el nivel de red (IP).</li>
+<li><strong>Trama</strong>: Unidad de datos en el nivel de enlace.</li>
+<li><strong>Señal</strong>: Representación física de los datos en el nivel físico.</li>
+</ul>
+
+  <div class="section-index">
+    
+    
+    </div>
+</div>
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="manuelromeromiguel@gmail.com" aria-label="manuelromeromiguel@gmail.com">
+    <a target="_blank" rel="noopener" href="mailto:manuelromeromiguel@gmail.com" aria-label="manuelromeromiguel@gmail.com">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2024
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/certificado/web/js/main.min.757d55adba0f820111ac58e559dbac4b350e7c33e2e44340ffc847e8cacbbf98.js" integrity="sha256-dX1VrboPggERrFjlWdusSzUOfDPi5ENA/8hH6MrLv5g=" crossorigin="anonymous"></script>
+<script defer src="/certificado/web/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+<script src='/certificado/web/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

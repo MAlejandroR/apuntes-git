@@ -114,7 +114,7 @@ Y ahora implmentamos el método del cliente
         }
 {{< / highlight >}}
 
-Nos quedaría terminar el proceso, es decir, agregar la ruta **/paginate** en el fichero de rutas **web.php_** e implementar el método correspondiente
+Nos quedaría terminar el proceso, es decir, agregar la ruta **/paginate** en el fichero de rutas **web_old.php_** e implementar el método correspondiente
 
 {{%pageinfo%}}
 Cuidado al añadir la ruta, si la ponemos después de resources, no funcionará.

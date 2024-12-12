@@ -3,7 +3,7 @@ title: "PHP Leguaje de programacioń"
 date: 2023-04-08T18:21:47+02:00
 draft: false
 weight: 30
-icon: fa-brands fa-php
+icon: fa-brands fa-php_
 ---
 ## Lenguaje del servidor
 Se instala con Xampp junto con el resto de aplicaciones

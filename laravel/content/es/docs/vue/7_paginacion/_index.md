@@ -114,7 +114,7 @@ Y ahora implmentamos el método del cliente
         }
 {{< / highlight >}}
 
-Nos quedaría terminar el proceso, es decir, agregar la ruta **/paginate** en el fichero de rutas **web.php** e implementar el método correspondiente
+Nos quedaría terminar el proceso, es decir, agregar la ruta **/paginate** en el fichero de rutas **web_old.php_** e implementar el método correspondiente
 
 {{%pageinfo%}}
 Cuidado al añadir la ruta, si la ponemos después de resources, no funcionará.
@@ -130,7 +130,7 @@ Para solucionarlo tenemos dos opciones:
  2.- Establecer un patrón para {empresa}, especificando que tiene que ser un número
 {{%/pageinfo%}}
 
-{{< highlight php "linenos=table,anclorlinenos=true, hl_lines=3" >}}
+{{< highlight php_ "linenos=table,anclorlinenos=true, hl_lines=3" >}}
     Route::get("alumnos/paginate",[ \App\Http\Controllers\AlumnoController::class,"get_paginate"] );
 {{< / highlight >}}
  Y en el fichero del controlador agretamos el método **get_paginate**
