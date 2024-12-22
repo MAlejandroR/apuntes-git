@@ -1,7 +1,7 @@
-baseURL = 'http://proyectosdwa.es/manuel'
+baseURL = 'https://web.infenlaces.com/laravel/'
 #baseURL = 'http://localhost'
 languageCode = 'es-es'
-title = 'Conceptos sobre desarrollo web'
+title = 'Laravel'
 
 
 
@@ -64,12 +64,12 @@ pygmentsStyle = "perldoc"
 #    tabWidth = 4
 
 [languages.en]
-title = "Docsy"
+title = "Laravel"
 languageName = "English"
 contentDir = "content/en"
 
 [languages.es]
-title = "Máster en  Web"
+title = "Laravel: Framework de php"
 languageName = "Español"
 contentDir = "content/es"
 

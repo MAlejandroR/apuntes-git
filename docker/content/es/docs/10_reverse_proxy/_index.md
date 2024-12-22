@@ -5,9 +5,9 @@ weight: 80
 
 icon: fa-regular fa-file-code
 ---
-# Explicación: Proxy y Proxy Inverso
+## Proxy y Proxy Inverso
 
-## 1. Proxy
+### 1. Proxy
 {{<definicion title="Qué es un proxy" icon="fas fa-network-wired">}}
 Un {{< color >}}proxy{{< /color >}} es un servidor intermedio que actúa como {{< color >}} puente {{< /color >}} entre {{< color >}} un cliente y un servidor {{< /color >}}.
 {{</definicion>}}
@@ -28,17 +28,21 @@ En la imagen podemos ver el ejemplo:
 
 ---
 
-## 2. Proxy Inverso
-Un **proxy inverso** (también llamado *reverse proxy*) es un servidor que se sitúa frente a uno o más servidores y gestiona las solicitudes de los clientes antes de enviarlas a los servidores finales.
-De alguna forma la diferencia es que colocamos el servidor proxy después de internet, y no antes
+#### 2. Proxy Inverso (reverse proxy)
+Un {{< color >}} proxy inverso {{< /color >}} (también llamado **reverse proxy**) es un servidor que se sitúa frente a uno o más servidores y gestiona las solicitudes de los clientes antes de enviarlas a los servidores finales.
+De alguna forma la diferencia es que colocamos el servidor proxy después de internet, y no antes (*proxy directo*)
+{{% line %}}
+
 {{< color >}} Proxy directo {{< /color >}}
 {{< imgproc proxy_directo Fill "700x297" >}}
-
+https://www.cloudflare.com/es-es/learning/cdn/glossary/reverse-proxy/
 {{< /imgproc >}}
 {{< color >}} Proxy reverse {{< /color >}}
 {{< imgproc proxy_reverse Fill "700x297" >}}
-
+https://www.cloudflare.com/es-es/learning/cdn/glossary/reverse-proxy/
 {{< /imgproc >}}
+{{% line %}}
+
 **Función principal**:
 - Actuar como intermediario entre los clientes y los servidores internos, con objetivos como:
     - Distribuir la carga entre varios servidores (balanceo de carga).
@@ -51,17 +55,19 @@ Cuando accedes a `www.miweb.com`, el proxy inverso determina si tu solicitud deb
 
 ---
 
-## 3. ¿Por qué se llama "proxy inverso"?
+{{< color >}} ¿Por qué se llama "proxy inverso"? {{< /color >}}
 El término "inverso" refleja que el proxy inverso actúa del lado del servidor (recibiendo solicitudes de los clientes) en lugar del lado del cliente (como un proxy convencional). Mientras el proxy normal protege al cliente, el proxy inverso protege y organiza a los servidores.
 
 ---
 
-**Nota**:  
-El término "prosy inverter" es incorrecto. El término correcto en inglés es **reverse proxy**, traducido al español como **proxy inverso**.
+### Práctica: crear un proxy reverse
 
-# Configuración de Proxy Inverso con Docker
+{{< alert title="Práctica" color="warning" >}}
+Vamos a practicar con docker para crer un servidor inverso que nos permita atender varias solicitudes
+{{< /alert >}}
+### Configuración de Proxy Inverso con Docker
 
-## 1. Preparar el entorno
+#### 1. Preparar el entorno
 Editar el archivo `hosts` en tu máquina local:
 
 Agrega las siguientes líneas para simular los dominios:
@@ -69,10 +75,15 @@ Agrega las siguientes líneas para simular los dominios:
 127.0.0.1 dwes.com
 127.0.0.1 alumno1.dwes.com
 127.0.0.1 alumno2.dwes.com
+127.0.0.1 alumno3.dwes.com
+127.0.0.1 alumno4.dwes.com
+127.0.0.1 alumno5.dwes.com
 {{< /highlight >}}
-Esto permite que los subdominios apunten a tu máquina local.
 
-Instala {{< color >}}Docker{{< /color >}} y {{< color >}}Docker Compose{{< /color >}} si aún no los tienes.
+Esto permite que los subdominios apunten a tu máquina local.
+En un caso real, necesitaríamos que a través del dns, estos dominios apunten a la máquina donde está nuestro proxy
+
+Ahora crearemos un docker-compose con los siguientes servicios
 
 ---
 

@@ -1,11 +1,11 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head>
+  <head><script src="/despliegue/docker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=despliegue/docker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="alternate" type="application/rss&#43;xml" href="http://web.infenlaces.com/despliegue/docker/docs/06_dockefile/index.xml">
-<link rel="alternate" type="text/html" href="http://web.infenlaces.com/despliegue/docker/docs/06_dockefile/_print/">
-<meta name="robots" content="index, follow">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/despliegue/docker/docs/06_dockefile/index.xml">
+<link rel="alternate" type="text/html" href="http://localhost:1313/despliegue/docker/docs/06_dockefile/_print/">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/despliegue/docker/favicons/favicon.ico" >
@@ -22,7 +22,7 @@
 <title>Fichero de ejecución para crear imágenes DockerFile | Despliegue de aplicacones Web</title>
 <meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
 
-<meta property="og:url" content="http://web.infenlaces.com/despliegue/docker/docs/06_dockefile/">
+<meta property="og:url" content="http://localhost:1313/despliegue/docker/docs/06_dockefile/">
   <meta property="og:site_name" content="Despliegue de aplicacones Web">
   <meta property="og:title" content="Fichero de ejecución para crear imágenes DockerFile">
   <meta property="og:description" content="Dockerfile Un Dockerfile es un fichero de texto que contiene una serie de instrucciones para crear una imagen . Este fichero tiene un formato concreto y necesita al menos la instrucción FROM para especificar la imagen base a partir de la cual construiremos nuestra imagen personalizada. Para qué La idea es que partiendo de una imagen personalicemos la imagen quequeremos crear,
@@ -40,7 +40,7 @@ Después, a partir de esta imagen, levantaremos el contenedor)">
 Después, a partir de esta imagen, levantaremos el contenedor)">
 
 
-<link rel="preload" href="/despliegue/docker/scss/main.min.a1a4e66c6f4dd103dc041fb68e4ebc96264fb0f2dd7cd8f7448e2b9f810a0f50.css" as="style"><link href="/despliegue/docker/scss/main.min.a1a4e66c6f4dd103dc041fb68e4ebc96264fb0f2dd7cd8f7448e2b9f810a0f50.css" rel="stylesheet">
+<link href="/despliegue/docker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -273,7 +273,7 @@ Este fichero tiene un formato concreto y necesita al menos la instrucción
 </p>
 <hr style="border-color: red; border-width: 3px;"/>
 <h2 id="construcción-del-dockerfile">Construcción del Dockerfile</h2>
-<p><img alt="img_1.png" src="/despliegue/docker/docs/06_dockefile/img_1.png">
+<p><img src="/despliegue/docker/docs/06_dockefile/img_1.png" alt="img_1.png">
 Para ejecutar las instrucciones del Dockerfile, utilizamos el comando 
 <strong>
 <span class="font-weight-bold text-primary">
@@ -497,7 +497,7 @@ Para ejecutar las instrucciones del Dockerfile, utilizamos el comando
 </div>
 <hr style="border-color: red; border-width: 3px;"/>
 <h2 id="declaración-de-variables-env-vs-arg">Declaración de variables: <code>ENV</code> vs <code>ARG</code></h2>
-<p><img alt="img_2.png" src="/despliegue/docker/docs/06_dockefile/img_2.png">
+<p><img src="/despliegue/docker/docs/06_dockefile/img_2.png" alt="img_2.png">
 Diferencias clave:</p>
 <ul>
 <li><strong><code>ENV</code></strong>: Define variables accesibles dentro del contenedor en tiempo de ejecución.</li>
@@ -542,7 +542,7 @@ Diferencias clave:</p>
 <h2 id="solución-de-problemas-instalación-de-php">Solución de problemas: Instalación de PHP</h2>
 <h3 id="problema">Problema</h3>
 <p>Al instalar PHP, puede requerirse configurar la zona horaria (<code>tzone</code>), lo que interrumpe la construcción al no poder interactuar con el contenedor.
-<img alt="img_3.png" src="/despliegue/docker/docs/06_dockefile/img_3.png"></p>
+<img src="/despliegue/docker/docs/06_dockefile/img_3.png" alt="img_3.png"></p>
 <h3 id="solución">Solución</h3>
 <p>Configurar el entorno en modo no interactivo:</p>
 <div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
@@ -786,8 +786,8 @@ Diferencias clave:</p>
 </footer>
 
     </div>
-    <script src="/despliegue/docker/js/main.min.32339ee7e1e5f837349cf41279909ad84968bc2ee74435b18ec15a70da0bdc2a.js" integrity="sha256-MjOe5&#43;Hl&#43;Dc0nPQSeZCa2ElovC7nRDWxjsFacNoL3Co=" crossorigin="anonymous"></script>
-<script defer src="/despliegue/docker/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <script src="/despliegue/docker/js/main.js"></script>
+<script defer src="/despliegue/docker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/despliegue/docker/js/tabpane-persist.js'></script>
 
   </body>

@@ -5,8 +5,8 @@ weight: 20
 menu:
   main:
     weight: 20
-icon: fa-brands fa-laravel
-draft: true
+icon: fa-brands fa-laravel_
+draft: false
 ---
 
 {{< pageinfo >}}

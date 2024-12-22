@@ -1,0 +1,8 @@
+{{ $color := .Get "color" | default "text-warning" }}
+<span class="font-weight-bold {{ $color }}">
+{{ if eq .Page.File.Ext "md" }}
+    {{ .Inner | markdownify }}
+{{ else }}
+    {{ .Inner | htmlUnescape | safeHTML }}
+{{ end }}
+</span>

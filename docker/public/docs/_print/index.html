@@ -1,10 +1,10 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head>
+  <head><script src="/despliegue/docker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=despliegue/docker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="http://web.infenlaces.com/despliegue/docker/docs/">
-<link rel="alternate" type="application/rss&#43;xml" href="http://web.infenlaces.com/despliegue/docker/docs/index.xml">
+<link rel="canonical" type="text/html" href="http://localhost:1313/despliegue/docker/docs/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/despliegue/docker/docs/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -22,7 +22,7 @@
 <title>Introducción | Despliegue de aplicacones Web</title>
 <meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
 
-<meta property="og:url" content="http://web.infenlaces.com/despliegue/docker/docs/">
+<meta property="og:url" content="http://localhost:1313/despliegue/docker/docs/">
   <meta property="og:site_name" content="Despliegue de aplicacones Web">
   <meta property="og:title" content="Introducción">
   <meta property="og:description" content="Docker Objetivos de este tema Entender qué es docker Crear contenedores Crear Imágenes Trabajar con entornos dockerizados para desarrollo Crear imágenes con DockerFile Crear servicios con docker compose Referencias Fuentes de Información La mejor la oficial: https://docs.docker.com/engine/">
@@ -37,7 +37,7 @@
   <meta name="twitter:description" content="Docker Objetivos de este tema Entender qué es docker Crear contenedores Crear Imágenes Trabajar con entornos dockerizados para desarrollo Crear imágenes con DockerFile Crear servicios con docker compose Referencias Fuentes de Información La mejor la oficial: https://docs.docker.com/engine/">
 
 
-<link rel="preload" href="/despliegue/docker/scss/main.min.a1a4e66c6f4dd103dc041fb68e4ebc96264fb0f2dd7cd8f7448e2b9f810a0f50.css" as="style"><link href="/despliegue/docker/scss/main.min.a1a4e66c6f4dd103dc041fb68e4ebc96264fb0f2dd7cd8f7448e2b9f810a0f50.css" rel="stylesheet">
+<link href="/despliegue/docker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -1677,7 +1677,7 @@ Este fichero tiene un formato concreto y necesita al menos la instrucción
 </p>
 <hr style="border-color: red; border-width: 3px;"/>
 <h2 id="construcción-del-dockerfile">Construcción del Dockerfile</h2>
-<p><img alt="img_1.png" src="/despliegue/docker/docs/06_dockefile/img_1.png">
+<p><img src="/despliegue/docker/docs/06_dockefile/img_1.png" alt="img_1.png">
 Para ejecutar las instrucciones del Dockerfile, utilizamos el comando 
 <strong>
 <span class="font-weight-bold text-primary">
@@ -1901,7 +1901,7 @@ Para ejecutar las instrucciones del Dockerfile, utilizamos el comando
 </div>
 <hr style="border-color: red; border-width: 3px;"/>
 <h2 id="declaración-de-variables-env-vs-arg">Declaración de variables: <code>ENV</code> vs <code>ARG</code></h2>
-<p><img alt="img_2.png" src="/despliegue/docker/docs/06_dockefile/img_2.png">
+<p><img src="/despliegue/docker/docs/06_dockefile/img_2.png" alt="img_2.png">
 Diferencias clave:</p>
 <ul>
 <li><strong><code>ENV</code></strong>: Define variables accesibles dentro del contenedor en tiempo de ejecución.</li>
@@ -1946,7 +1946,7 @@ Diferencias clave:</p>
 <h2 id="solución-de-problemas-instalación-de-php">Solución de problemas: Instalación de PHP</h2>
 <h3 id="problema">Problema</h3>
 <p>Al instalar PHP, puede requerirse configurar la zona horaria (<code>tzone</code>), lo que interrumpe la construcción al no poder interactuar con el contenedor.
-<img alt="img_3.png" src="/despliegue/docker/docs/06_dockefile/img_3.png"></p>
+<img src="/despliegue/docker/docs/06_dockefile/img_3.png" alt="img_3.png"></p>
 <h3 id="solución">Solución</h3>
 <p>Configurar el entorno en modo no interactivo:</p>
 <div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
@@ -2368,7 +2368,7 @@ yaml viene de YAML Ain’t Markdown Language (Yaml no es un lenguaje de marcado)
 </figcaption>
 </figure>
 
-Sintaxis YAML (<a href="https://es.wikipedia.org/wiki/YAML)">https://es.wikipedia.org/wiki/YAML)</a>:
+Sintaxis YAML (<a href="https://es.wikipedia.org/wiki/YAML%29">https://es.wikipedia.org/wiki/YAML)</a>:
 La indentación establece la agrupación.
 Si queremos establecer una lista, usamos guiones
 Hay que dejar un espacio entre los dos puntos y el valor.</p>
@@ -2622,8 +2622,8 @@ Docker Compose es una herramienta que nos permite gestionar sistemas dockerizado
     
 	<h1 id="pg-db70193927a58cc58192654a75aef445">6 - Proxy inverso o Reverse prxy</h1>
     
-	<h1 id="explicación-proxy-y-proxy-inverso">Explicación: Proxy y Proxy Inverso</h1>
-<h2 id="1-proxy">1. Proxy</h2>
+	<h2 id="proxy-y-proxy-inverso">Proxy y Proxy Inverso</h2>
+<h3 id="1-proxy">1. Proxy</h3>
 <div class="definicion-concepto">
   <div class="definicion-titulo">
     
@@ -2690,10 +2690,20 @@ Imagen obtenida de https://www.redeszone.net/tutoriales/servidores/diferencias-p
 </ul>
 </blockquote>
 <hr>
-<h2 id="2-proxy-inverso">2. Proxy Inverso</h2>
-<p>Un <strong>proxy inverso</strong> (también llamado <em>reverse proxy</em>) es un servidor que se sitúa frente a uno o más servidores y gestiona las solicitudes de los clientes antes de enviarlas a los servidores finales.
-De alguna forma la diferencia es que colocamos el servidor proxy después de internet, y no antes
+<h4 id="2-proxy-inverso-reverse-proxy">2. Proxy Inverso (reverse proxy)</h4>
+<p>Un 
+<strong>
+<span class="font-weight-bold text-primary">
 
+    proxy inverso
+
+
+</span>
+</strong>
+ (también llamado <strong>reverse proxy</strong>) es un servidor que se sitúa frente a uno o más servidores y gestiona las solicitudes de los clientes antes de enviarlas a los servidores finales.
+De alguna forma la diferencia es que colocamos el servidor proxy después de internet, y no antes (<em>proxy directo</em>)</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p>
 <strong>
 <span class="font-weight-bold text-primary">
 
@@ -2704,12 +2714,12 @@ De alguna forma la diferencia es que colocamos el servidor proxy después de int
 </strong>
 
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 710px">
-<img class="card-img-top" src="/despliegue/docker/docs/10_reverse_proxy/proxy_directo_hu4033920156410999965.webp" width="700" height="297">
+<img class="card-img-top" src="/despliegue/docker/docs/10_reverse_proxy/proxy_directo_hu16039520143035292699.png" width="700" height="297">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
 
-
+https://www.cloudflare.com/es-es/learning/cdn/glossary/reverse-proxy/
 
 </p>
 </figcaption>
@@ -2731,13 +2741,14 @@ De alguna forma la diferencia es que colocamos el servidor proxy después de int
 <p class="card-text">
 
 
-
+https://www.cloudflare.com/es-es/learning/cdn/glossary/reverse-proxy/
 
 </p>
 </figcaption>
 </figure>
-
-<strong>Función principal</strong>:</p>
+</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p><strong>Función principal</strong>:</p>
 <ul>
 <li>Actuar como intermediario entre los clientes y los servidores internos, con objetivos como:
 <ul>
@@ -2751,13 +2762,30 @@ De alguna forma la diferencia es que colocamos el servidor proxy después de int
 <p><strong>Ejemplo</strong>:<br>
 Cuando accedes a <code>www.miweb.com</code>, el proxy inverso determina si tu solicitud debe ser atendida por un servidor web, un servidor de imágenes, o un servicio API, redirigiéndola al servidor correspondiente.</p>
 <hr>
-<h2 id="3-por-qué-se-llama-proxy-inverso">3. ¿Por qué se llama &ldquo;proxy inverso&rdquo;?</h2>
-<p>El término &ldquo;inverso&rdquo; refleja que el proxy inverso actúa del lado del servidor (recibiendo solicitudes de los clientes) en lugar del lado del cliente (como un proxy convencional). Mientras el proxy normal protege al cliente, el proxy inverso protege y organiza a los servidores.</p>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    ¿Por qué se llama &ldquo;proxy inverso&rdquo;?
+
+
+</span>
+</strong>
+
+El término &ldquo;inverso&rdquo; refleja que el proxy inverso actúa del lado del servidor (recibiendo solicitudes de los clientes) en lugar del lado del cliente (como un proxy convencional). Mientras el proxy normal protege al cliente, el proxy inverso protege y organiza a los servidores.</p>
 <hr>
-<p><strong>Nota</strong>:<br>
-El término &ldquo;prosy inverter&rdquo; es incorrecto. El término correcto en inglés es <strong>reverse proxy</strong>, traducido al español como <strong>proxy inverso</strong>.</p>
-<h1 id="configuración-de-proxy-inverso-con-docker">Configuración de Proxy Inverso con Docker</h1>
-<h2 id="1-preparar-el-entorno">1. Preparar el entorno</h2>
+<h3 id="práctica-crear-un-proxy-reverse">Práctica: crear un proxy reverse</h3>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Práctica</h4>
+
+    Vamos a practicar con docker para crer un servidor inverso que nos permita atender varias solicitudes
+
+</div>
+
+<h3 id="configuración-de-proxy-inverso-con-docker">Configuración de Proxy Inverso con Docker</h3>
+<h4 id="1-preparar-el-entorno">1. Preparar el entorno</h4>
 <p>Editar el archivo <code>hosts</code> en tu máquina local:</p>
 <p>Agrega las siguientes líneas para simular los dominios:
 <div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
@@ -2765,33 +2793,22 @@ El término &ldquo;prosy inverter&rdquo; es incorrecto. El término correcto en 
 <pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span></span></code></pre></td>
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>127.0.0.1 dwes.com
 </span></span><span style="display:flex; background-color:#d6d6c6"><span>127.0.0.1 alumno1.dwes.com
-</span></span><span style="display:flex; background-color:#d6d6c6"><span>127.0.0.1 alumno2.dwes.com</span></span></code></pre></td></tr></table>
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>127.0.0.1 alumno2.dwes.com
+</span></span><span style="display:flex;"><span>127.0.0.1 alumno3.dwes.com
+</span></span><span style="display:flex;"><span>127.0.0.1 alumno4.dwes.com
+</span></span><span style="display:flex;"><span>127.0.0.1 alumno5.dwes.com</span></span></code></pre></td></tr></table>
 </div>
-</div>
-Esto permite que los subdominios apunten a tu máquina local.</p>
-<p>Instala 
-<strong>
-<span class="font-weight-bold text-primary">
-
-    Docker
-
-
-</span>
-</strong>
- y 
-<strong>
-<span class="font-weight-bold text-primary">
-
-    Docker Compose
-
-
-</span>
-</strong>
- si aún no los tienes.</p>
+</div></p>
+<p>Esto permite que los subdominios apunten a tu máquina local.
+En un caso real, necesitaríamos que a través del dns, estos dominios apunten a la máquina donde está nuestro proxy</p>
+<p>Ahora crearemos un docker-compose con los siguientes servicios</p>
 <hr>
 <h2 id="2-crear-los-contenedores-para-los-alumnos">2. Crear los contenedores para los alumnos</h2>
 <p>Cada alumno tendrá un contenedor Docker con 
@@ -3071,8 +3088,8 @@ En cada carpeta, ejecuta:
 </footer>
 
     </div>
-    <script src="/despliegue/docker/js/main.min.32339ee7e1e5f837349cf41279909ad84968bc2ee74435b18ec15a70da0bdc2a.js" integrity="sha256-MjOe5&#43;Hl&#43;Dc0nPQSeZCa2ElovC7nRDWxjsFacNoL3Co=" crossorigin="anonymous"></script>
-<script defer src="/despliegue/docker/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <script src="/despliegue/docker/js/main.js"></script>
+<script defer src="/despliegue/docker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/despliegue/docker/js/tabpane-persist.js'></script>
 
   </body>
