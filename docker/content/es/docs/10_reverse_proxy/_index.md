@@ -29,7 +29,7 @@ En la imagen podemos ver el ejemplo:
 ---
 
 #### 2. Proxy Inverso (reverse proxy)
-Un {{< color >}} proxy inverso {{< /color >}} (también llamado **reverse proxy**) es un servidor que se sitúa frente a uno o más servidores y gestiona las solicitudes de los clientes antes de enviarlas a los servidores finales.
+Un {{< color >}} 1_proxy inverso {{< /color >}} (también llamado **reverse proxy**) es un servidor que se sitúa frente a uno o más servidores y gestiona las solicitudes de los clientes antes de enviarlas a los servidores finales.
 De alguna forma la diferencia es que colocamos el servidor proxy después de internet, y no antes (*proxy directo*)
 {{% line %}}
 
@@ -38,10 +38,12 @@ De alguna forma la diferencia es que colocamos el servidor proxy después de int
 https://www.cloudflare.com/es-es/learning/cdn/glossary/reverse-proxy/
 {{< /imgproc >}}
 {{< color >}} Proxy reverse {{< /color >}}
-{{< imgproc proxy_reverse Fill "700x297" >}}
+{{< imgproc 3_proxy_reverse Fill "700x297" >}}
 https://www.cloudflare.com/es-es/learning/cdn/glossary/reverse-proxy/
 {{< /imgproc >}}
 {{% line %}}
+{{< color >}} El serivido proxy {{< /color >}}
+
 
 **Función principal**:
 - Actuar como intermediario entre los clientes y los servidores internos, con objetivos como:
@@ -68,6 +70,11 @@ Vamos a practicar con docker para crer un servidor inverso que nos permita atend
 ### Configuración de Proxy Inverso con Docker
 
 #### 1. Preparar el entorno
+{{< alert title="Primer paso" color="success" >}}
+El primer paso es tener resueltas las ip de los dominios
+{{< /alert >}}
+
+
 Editar el archivo `hosts` en tu máquina local:
 
 Agrega las siguientes líneas para simular los dominios:
@@ -83,16 +90,57 @@ Agrega las siguientes líneas para simular los dominios:
 Esto permite que los subdominios apunten a tu máquina local.
 En un caso real, necesitaríamos que a través del dns, estos dominios apunten a la máquina donde está nuestro proxy
 
-Ahora crearemos un docker-compose con los siguientes servicios
+La imagen siguiente trata de mostrar este primer  proceso
+{{< imgproc proxy_reverse_dns_1.webp Fill "990x334" >}}
 
----
 
-## 2. Crear los contenedores para los alumnos
-Cada alumno tendrá un contenedor Docker con {{< color >}}Apache{{< /color >}} y {{< color >}}PHP{{< /color >}} instalados:
+{{< /imgproc >}}
 
-### Crear el Dockerfile para Apache y PHP:
-En una carpeta, crea un archivo `Dockerfile` con este contenido:
-{{< highlight dockerfile "linenos=table, hl_lines=1 3" >}}
+{{% line %}}
+
+
+#### 1. Configurando las virtualizaciones
+{{< alert title="Segundo paso" color="success" >}}
+* Ahora vamos a crear el **docker-compose**
+* Ahí irán todos **los entornos** de ejecución  virtualizados
+* Crearemos **el proxy**, y una virtualización por **cada servicio web** que queramos
+{{< /alert >}}
+{{< imgproc docker_proxy_reverse_1 Fill "672x462" >}}
+
+{{< /imgproc >}}
+{{< color >}} El servicio de proxy quedaría especificado así {{< /color >}}
+{{< highlight docker "linenos=table, hl_lines=3 4 6 8" >}}
+services:
+  proxy_reverse:
+    image: nginx
+    ports:
+      - 8200:80
+    volumes:
+      - ./ngynx-proxy/ngynx.conf:/etc/nginx/nginx.conf:ro
+    container_name: proxy_reverse
+  {{< / highlight >}}
+* Vemos cómdo tenemos mapeado o compartido un fichero de configuración({{< color >}} ngynx.conf {{< /color >}}) entre el hosts y el contenedor. Necesitamos especificar en el servidor web (nginx), {{< color >}} los host virtuales que queremos resolver {{< /color >}}.
+* Este es un concepto que estudiaremos en el próximo capítulo de servidores web: Apache y nginx.
+* Por otro lado, mapeamos el puerto 8200 del host al 80 del nginx del contenedor. 
+* El contenido del fichero de configuración se puede entender viendo su especificación.
+{{< highlight php "linenos=table, hl_lines=4 6" >}}
+
+http {
+  server {
+    listen 80;
+    server_name alumno1.dwes.com;
+    location / {
+        proxy_pass http://alumno1:80;
+    }
+  }
+  server { .. lo mismo para alumno2.dwes.com y alumno3.dwes.com .. }}
+{{< / highlight >}}
+* {{< color >}} Crear los contenedores para los alumnos {{< /color >}}
+
+ Cada alumno tendrá un contenedor Docker con {{< color >}}Apache{{< /color >}} y {{< color >}}PHP{{< /color >}} instalados:
+
+En una carpeta, crea un archivo {{< color >}} Dockerfile {{< /color >}} con este contenido:
+{{< highlight dockerfile "linenos=table, hl_lines=1" >}}
 FROM php:8.3-apache
 COPY ./public_html/ /var/www/html/
 EXPOSE 80
@@ -105,87 +153,22 @@ echo "Bienvenido al servidor de alumno1";
 ?>
 {{< /highlight >}}
 
-### Construir las imágenes para cada alumno:
-Copia la carpeta del proyecto para cada alumno (`alumno1/`, `alumno2/`) y personaliza los contenidos.
-En cada carpeta, ejecuta:
-{{< highlight bash "linenos=table, hl_lines=1" >}}
-docker build -t alumno1-apache .
-docker build -t alumno2-apache .
-{{< /highlight >}}
-
 ### Levantar los contenedores:
-Ejecuta:
-{{< highlight bash "linenos=table, hl_lines=1 2" >}}
-docker run -d --name alumno1 -p 8081:80 alumno1-apache
-docker run -d --name alumno2 -p 8082:80 alumno2-apache
-{{< /highlight >}}
+Ahora solo queda levantar el contenedor y ver el resultado 
 
----
-
-## 3. Configurar el proxy inverso con Nginx
-### Crear un archivo de configuración para Nginx:
-En una carpeta `nginx-proxy`, crea un archivo `nginx.conf`:
-{{< highlight nginx "linenos=table, hl_lines=4 14" >}}
-events {}
-http {
-server {
-listen 80;
-server_name alumno1.dwes.com;
-
-        location / {
-            proxy_pass http://alumno1:80;
-            proxy_set_header Host $host;
-            proxy_set_header X-Real-IP $remote_addr;
-        }
-    }
-
-    server {
-        listen 80;
-        server_name alumno2.dwes.com;
-
-        location / {
-            proxy_pass http://alumno2:80;
-            proxy_set_header Host $host;
-            proxy_set_header X-Real-IP $remote_addr;
-        }
-    }
-}
-{{< /highlight >}}
-
-### Levantar el contenedor de Nginx como proxy inverso:
-Usa el siguiente comando para ejecutar el proxy inverso:
-{{< highlight bash "linenos=table, hl_lines=1 3" >}}
-docker run -d --name nginx-proxy \
---network bridge \
--v $(pwd)/nginx.conf:/etc/nginx/nginx.conf:ro \
--p 80:80 nginx
-{{< /highlight >}}
-
----
-
-## 4. Configurar una red común en Docker
-### Crear una red personalizada para los contenedores:
+En la misma carpeta donde tenemos el fichero de configuración docker-compose.yaml:
 {{< highlight bash "linenos=table, hl_lines=1" >}}
-docker network create dwes-network
+  docker compose up -d
 {{< /highlight >}}
+Y vemos el resultado:
+{{< imgproc 1_web Fill "486x279" >}}
 
-### Conectar los contenedores a esta red:
-{{< highlight bash "linenos=table, hl_lines=1 3" >}}
-docker network connect dwes-network alumno1
-docker network connect dwes-network alumno2
-docker network connect dwes-network nginx-proxy
-{{< /highlight >}}
+{{< /imgproc >}}
+{{< imgproc 2_web Fill "486x279" >}}
 
+{{< /imgproc >}}
+{{< imgproc 3_web Fill "486x279" >}}
+
+{{< /imgproc >}}
 ---
 
-## 5. Probar la configuración
-Abre en el navegador:
-- {{< color >}}http://alumno1.dwes.com{{< /color >}}
-- {{< color >}}http://alumno2.dwes.com{{< /color >}}
-
-Deberías ver el contenido de cada contenedor.
-
----
-
-## 6. Aspecto importantes
-- Resalta las diferencias entre usar {{< color >}}Nginx{{< /color >}} y {{< color >}}Apache{{< /color >}} como proxy inverso.

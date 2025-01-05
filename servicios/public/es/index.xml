@@ -1,25 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Desarrollo web en entorno servidor on Desarrollo Web en Entorno Servidor</title>
-    <link>https://web.infenlaces.com/php/es/</link>
-    <description>Recent content in Desarrollo web en entorno servidor on Desarrollo Web en Entorno Servidor</description>
+    <title>Despliegue de aplicaciones web on Despliegue de Aplicaciones Web</title>
+    <link>http://localhost:1313/php/es/</link>
+    <description>Recent content in Despliegue de aplicaciones web on Despliegue de Aplicaciones Web</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Tue, 15 Oct 2024 07:04:49 +0200</lastBuildDate>
-    <atom:link href="https://web.infenlaces.com/php/es/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/php/es/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Prácticas</title>
-      <link>https://web.infenlaces.com/php/es/docs/11_funciones/pracitca/</link>
-      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
-      <guid>https://web.infenlaces.com/php/es/docs/11_funciones/pracitca/</guid>
-      <description>&lt;h2 id=&#34;practica-de-gestión-de-tareas&#34;&gt;Practica de gestión de tareas&lt;/h2&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=6704&#34; width=&#34;100%&#34; height=&#34;1221&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+      <title>Sistema base de entorno</title>
+      <link>http://localhost:1313/php/es/docs/00_entorno/</link>
+      <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/php/es/docs/00_entorno/</guid>
+      <description>&lt;p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div style=&#34;border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;&#34;&gt;&#xA;    &lt;div style=&#34;background-color:darkgreen; color:white;&#xA;    font-weight:bold; padding:10px; display: flex; align-items: center;&#34;&gt;&#xA;        &#xA;        &lt;span style=&#34;margin-right: 8px;&#34;&gt;&#xA;            &#xA;                &lt;i class=&#34;fas fa-check-circle&#34;&gt;&lt;/i&gt; &#xA;            &#xA;        &lt;/span&gt;&#xA;        &#xA;        &lt;span&gt;Objetivos&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &lt;h3 style=&#34;padding: 5px; font-weight:bold&#34;&gt;Configuración de Apache&lt;/h3&gt;&#xA;&#xA;    &lt;hr style=&#34;border-color:seagreen; border-width:3px&#34;/&gt;&#xA;    &#xA;    &lt;div style=&#34;background-color:#d0f0d0; color:darkgreen; padding: 10px;&#34;&gt;&#xA;        &lt;ul&gt;&#xA;            &#xA;            &lt;li&gt;Usar Vagrant  &lt;/li&gt;&#xA;            &#xA;            &lt;li&gt;Revisar fichero de configuración  &lt;/li&gt;&#xA;            &#xA;            &lt;li&gt;Instalar Ubuntu Server  &lt;/li&gt;&#xA;            &#xA;            &lt;li&gt;Conectar o levantar la máquina de Ubuntu para trabajar  &lt;/li&gt;&#xA;            &#xA;            &#xA;            &#xA;        &lt;/ul&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div style=&#34;border: 1px solid navy; border-radius: 5px; overflow: hidden;&#34;&gt;&#xA;    &lt;div style=&#34;background-color: navy; color: white;&#xA;    font-weight: bold; padding: 10px; display: flex; align-items: center;&#34;&gt;&#xA;        &#xA;        &lt;span style=&#34;margin-right: 8px;&#34;&gt;&#xA;            &#xA;                &lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; &#xA;            &#xA;        &lt;/span&gt;&#xA;        &#xA;        &lt;span&gt;Referencias&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &lt;h3 style=&#34;padding: 5px; font-weight: bold; color: navy;&#34;&gt;Fuentes de Información&lt;/h3&gt;&#xA;&#xA;    &lt;hr style=&#34;border-color: lightblue; border-width: 3px&#34;/&gt;&#xA;    &#xA;    &lt;div style=&#34;background-color: #e0f7fa; color: navy; padding: 10px;&#34;&gt;&#xA;        &lt;ul&gt;&#xA;            &#xA;            &lt;li&gt;&lt;a href=&#34;https://web.infenlaces.com/despliegue/contenido/docs/02_linux/&#34;&gt;https://web.infenlaces.com/despliegue/contenido/docs/02_linux/&lt;/a&gt;&lt;/li&gt;&#xA;            &#xA;            &#xA;            &#xA;            &#xA;        &lt;/ul&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Servicios Web con Apache</title>
+      <link>http://localhost:1313/php/es/docs/01_apache/</link>
+      <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/php/es/docs/01_apache/</guid>
+      <description>&lt;div style=&#34;border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;&#34;&gt;&#xA;    &lt;div style=&#34;background-color:darkgreen; color:white;&#xA;    font-weight:bold; padding:10px; display: flex; align-items: center;&#34;&gt;&#xA;        &#xA;        &lt;span style=&#34;margin-right: 8px;&#34;&gt;&#xA;            &#xA;                &lt;i class=&#34;fas fa-check-circle&#34;&gt;&lt;/i&gt; &#xA;            &#xA;        &lt;/span&gt;&#xA;        &#xA;        &lt;span&gt;Objetivos&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &lt;h3 style=&#34;padding: 5px; font-weight:bold&#34;&gt;Configuración de Apache&lt;/h3&gt;&#xA;&#xA;    &lt;hr style=&#34;border-color:seagreen; border-width:3px&#34;/&gt;&#xA;    &#xA;    &lt;div style=&#34;background-color:#d0f0d0; color:darkgreen; padding: 10px;&#34;&gt;&#xA;        &lt;ul&gt;&#xA;            &#xA;            &lt;li&gt;Instalar, configurar y personalizar Apache.&lt;/li&gt;&#xA;            &#xA;            &lt;li&gt;Hosts Virtuales.&lt;/li&gt;&#xA;            &#xA;            &lt;li&gt;Opciones de Directorio.&lt;/li&gt;&#xA;            &#xA;            &lt;li&gt;Alias.&lt;/li&gt;&#xA;            &#xA;            &lt;li&gt;Autenticación en el servidor.&lt;/li&gt;&#xA;            &#xA;            &lt;li&gt;Páginas dinámicas.&lt;/li&gt;&#xA;            &#xA;            &lt;li&gt;SSL.&lt;/li&gt;&#xA;            &#xA;            &lt;li&gt;Rewrite.&lt;/li&gt;&#xA;            &#xA;            &#xA;            &#xA;        &lt;/ul&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h3 id=&#34;introducción&#34;&gt;Introducción&lt;/h3&gt;&#xA;&lt;p&gt;&lt;strong&gt;Apache HTTP Server&lt;/strong&gt;, comúnmente conocido como Apache, es uno de los servidores web más utilizados en el mundo.&lt;/p&gt;&#xA;&lt;p&gt;Como características, podrímos destacar su flexibilidad, estabilidad y gran cantidad de módulos lo convierten en una opción ideal para gestionar servicios web en entornos variados.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Servicios Web con Apache</title>
+      <link>http://localhost:1313/php/es/docs/02_nginx/</link>
+      <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/php/es/docs/02_nginx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Servicios Web con Apache</title>
+      <link>http://localhost:1313/php/es/docs/03_dns/</link>
+      <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/php/es/docs/03_dns/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Servicios Web con Apache</title>
+      <link>http://localhost:1313/php/es/docs/04_ssh/</link>
+      <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/php/es/docs/04_ssh/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Servicios Web con Apache</title>
+      <link>http://localhost:1313/php/es/docs/05_fpt/</link>
+      <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/php/es/docs/05_fpt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Servicios Web con Apache</title>
+      <link>http://localhost:1313/php/es/docs/05_sfpt/</link>
+      <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/php/es/docs/05_sfpt/</guid>
+      <description></description>
     </item>
     <item>
       <title>Search Results</title>
-      <link>https://web.infenlaces.com/php/es/search/</link>
+      <link>http://localhost:1313/php/es/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://web.infenlaces.com/php/es/search/</guid>
+      <guid>http://localhost:1313/php/es/search/</guid>
       <description></description>
     </item>
   </channel>

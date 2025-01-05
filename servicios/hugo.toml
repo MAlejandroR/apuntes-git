@@ -3,7 +3,7 @@ baseURL = 'https://web.infenlaces.com/php/'
 #baseURL = 'http://localhost:1313/'
 
 languageCode = 'es-es'
-title = 'Desarrollo Web en entorno servidor: PHP" '
+title = 'Despliegue de aplicacones web" '
 
 
 # Para poder cargar emogin https://www.webfx.com/tools/emoji-cheat-sheet/
@@ -76,7 +76,7 @@ languageName = "English"
 contentDir = "content/en"
 
 [languages.es]
-title = "Desarrollo Web en Entorno Servidor"
+title = "Despliegue de Aplicaciones Web"
 languageName = "Español"
 contentDir = "content/es"
 
