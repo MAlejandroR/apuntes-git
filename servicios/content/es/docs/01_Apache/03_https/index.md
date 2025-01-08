@@ -8,13 +8,17 @@ draft: false
 ---
 {{<referencias>}}
 https://aws.amazon.com/es/what-is/ssl-certificate/
+https://letsencrypt.org/es/getting-started/
 
 {{</referencias>}}
 
 
-## Configuración de HTTP, HTTPS y Certificados SSL en Apache
+## HTTP, HTTPS y Certificados SSL en Apache
 
-**Apache** permite configurar servidores web para admitir  **conexiones HTTP y HTTPS**. 
+**Apache** permite configurar servidores web para admitir  **conexiones HTTP y HTTPS**.
+Sus siglas se corresponden con **Hypertext Transfer Protocol Secure** lo que ya indica que añade seguridad a HTTP. 
+
+En realidad, no es un protocolo propio, sino que se basa en introducir una capa con el protocolo SSL/TLS entre la capa de transporte y la capa de aplicación en el conjunto de protocolos TCP/IP. Mediante el uso de SSL/TLS, HTTPS consigue que la comunicación en la web sea segura.
 
 La configuración de **HTTPS** requiere el uso de **certificados SSL/TLS _protocolo (Secure Socket Layers/ Transport Layer Aecurity)_**, que garantizan una comunicación segura mediante cifrado.
 
@@ -30,16 +34,29 @@ La configuración de **HTTPS** requiere el uso de **certificados SSL/TLS _protoc
 - **HTTPS (HyperText Transfer Protocol Secure)**:
 	- Es una versión segura de HTTP que utiliza los protocolos SSL/TLS para cifrar las comunicaciones.
 	- SSL/TLS son protocolos que garantizan la confidencialidad, integridad y autenticación de las comunicaciones.
+    - SSL/TLS, se utiliza para asegurar **confidencialidad, autenticidad, integridad y no repudio** entre el cliente y el servidor:
+      - **Confidencialidad**: La confidencialidad se entiende en el ámbito de la seguridad informática, como la protección de datos y de información intercambiada entre un emisor y uno o más destinatarios frente a terceros.
+      - **Integridad**: Es la propiedad que busca mantener los datos libres de modificaciones no autorizadas.
+      - **Autenticación o autentificación**: Propiedad que permite identificar el generador de la información.
+      - **No repudio**: Propiedad que prueba que el autor envió la comunicación (no repudio en origen) y que el destinatario la recibió (no repudio en destino)
+
+
 	- Para establecer una conexión HTTPS, se necesita un certificado digital válido (emitido por una autoridad certificadora, CA), también llamado **certificado SSL/TLS** que permita la autenticación del servidor y la negociación de claves seguras.
-  
- ### Las características
+    
+### Las características
 Las características de una página web protegida por SSL/TLS son las siguientes:
 
 * **Un ícono de candado** y una barra de direcciones verde en el navegador web
 * **Un prefijo https** en la dirección del sitio web del navegador
 * **Un certificado SSL/TLS válido**. Puede comprobar si el certificado SSL/TLS es válido haciendo clic y expandiendo el ícono del candado en la barra de direcciones URL
 * Una vez establecida la conexión cifrada, **solo el cliente y el servidor web** pueden ver los datos que se envían.
- 
+
+Una transacción segura SSL de manera simplificada sigue el siguiente modelo:
+
+1. Primero, el cliente se conecta al servidor comercial protegido por SSL y pide la autenticación. El cliente también envía la lista de los criptosistemas que soporta, clasificada en orden descendente por la longitud de la clave.
+2. El servidor que recibe la solicitud envía un certificado al cliente que contiene la clave pública del servidor firmado por una entidad de certificación (CA), y también el nombre del criptosistema que está más alto en la lista de compatibilidades
+2. El cliente verifica la validez del certificado, luego crea una clave secreta al azar, cifra esta clave con la clave pública del servidor y envía el resultado al servidor (clave de sesión).
+3. El servidor es capaz de descifrar la clave de sesión con su clave privada. De esta manera, hay dos entidades que comparten una clave que sólo ellos conocen. Las transacciones restantes pueden realizarse utilizando la clave de sesión, garantizando la integridad y la confidencialidad de los datos que se intercambian.
 ---
 
 ### 2. **Pasos para configurar HTTPS en Apache**
@@ -95,8 +112,13 @@ DocumentRoot /var/www/html
 - **`SSLEngine On`**: Habilita SSL/TLS.
 - **`SSLCertificateFile` y `SSLCertificateKeyFile`**: Especifican las rutas a los archivos del certificado y la clave privada.
 
-#### Paso 4: Reiniciar Apache
+{{< alert title="Certificados usados" color="success" >}}
+Dichos certificados “de aceite de serpiente” (Wikipedia: Snake oil (cryptography)) los genera el script de postinstalación del paquete ssl-cert de Ubuntu asociados al hostname del sistema.
 
+
+{{< /alert >}}
+
+#### Paso 4: Reiniciar Apache
 Reinicia el servidor para aplicar los cambios:
 {{< highlight bash "linenos=table" >}}
 sudo systemctl restart apache2

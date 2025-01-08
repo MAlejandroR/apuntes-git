@@ -18,14 +18,12 @@
 <link rel="icon" type="image/png" href="/servicios/favicons/android-192x192.png" sizes="192x192">
 
 <title>Https | Despliegue de Aplicaciones Web</title>
-<meta name="description" content=" Referencias Fuentes de Información https://aws.amazon.com/es/what-is/ssl-certificate/ Configuración de HTTP, HTTPS y Certificados SSL en Apache Apache permite configurar servidores web para admitir conexiones HTTP y HTTPS.
-La configuración de HTTPS requiere el uso de certificados SSL/TLS protocolo (Secure Socket Layers/ Transport Layer Aecurity), que garantizan una comunicación segura mediante cifrado.">
+<meta name="description" content=" Referencias Fuentes de Información https://aws.amazon.com/es/what-is/ssl-certificate/ https://letsencrypt.org/es/getting-started/ HTTP, HTTPS y Certificados SSL en Apache Apache permite configurar servidores web para admitir conexiones HTTP y HTTPS. Sus siglas se corresponden con Hypertext Transfer Protocol Secure lo que ya indica que añade seguridad a HTTP.">
 
 <meta property="og:url" content="http://localhost:1313/servicios/es/docs/01_apache/03_https/">
   <meta property="og:site_name" content="Despliegue de Aplicaciones Web">
   <meta property="og:title" content="Https">
-  <meta property="og:description" content="Referencias Fuentes de Información https://aws.amazon.com/es/what-is/ssl-certificate/ Configuración de HTTP, HTTPS y Certificados SSL en Apache Apache permite configurar servidores web para admitir conexiones HTTP y HTTPS.
-La configuración de HTTPS requiere el uso de certificados SSL/TLS protocolo (Secure Socket Layers/ Transport Layer Aecurity), que garantizan una comunicación segura mediante cifrado.">
+  <meta property="og:description" content="Referencias Fuentes de Información https://aws.amazon.com/es/what-is/ssl-certificate/ https://letsencrypt.org/es/getting-started/ HTTP, HTTPS y Certificados SSL en Apache Apache permite configurar servidores web para admitir conexiones HTTP y HTTPS. Sus siglas se corresponden con Hypertext Transfer Protocol Secure lo que ya indica que añade seguridad a HTTP.">
   <meta property="og:locale" content="es">
   <meta property="og:type" content="article">
     <meta property="article:section" content="docs">
@@ -33,15 +31,13 @@ La configuración de HTTPS requiere el uso de certificados SSL/TLS protocolo (Se
     <meta property="article:modified_time" content="2024-12-18T00:00:00+00:00">
 
   <meta itemprop="name" content="Https">
-  <meta itemprop="description" content="Referencias Fuentes de Información https://aws.amazon.com/es/what-is/ssl-certificate/ Configuración de HTTP, HTTPS y Certificados SSL en Apache Apache permite configurar servidores web para admitir conexiones HTTP y HTTPS.
-La configuración de HTTPS requiere el uso de certificados SSL/TLS protocolo (Secure Socket Layers/ Transport Layer Aecurity), que garantizan una comunicación segura mediante cifrado.">
+  <meta itemprop="description" content="Referencias Fuentes de Información https://aws.amazon.com/es/what-is/ssl-certificate/ https://letsencrypt.org/es/getting-started/ HTTP, HTTPS y Certificados SSL en Apache Apache permite configurar servidores web para admitir conexiones HTTP y HTTPS. Sus siglas se corresponden con Hypertext Transfer Protocol Secure lo que ya indica que añade seguridad a HTTP.">
   <meta itemprop="datePublished" content="2024-12-18T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-12-18T00:00:00+00:00">
-  <meta itemprop="wordCount" content="551">
+  <meta itemprop="wordCount" content="915">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Https">
-  <meta name="twitter:description" content="Referencias Fuentes de Información https://aws.amazon.com/es/what-is/ssl-certificate/ Configuración de HTTP, HTTPS y Certificados SSL en Apache Apache permite configurar servidores web para admitir conexiones HTTP y HTTPS.
-La configuración de HTTPS requiere el uso de certificados SSL/TLS protocolo (Secure Socket Layers/ Transport Layer Aecurity), que garantizan una comunicación segura mediante cifrado.">
+  <meta name="twitter:description" content="Referencias Fuentes de Información https://aws.amazon.com/es/what-is/ssl-certificate/ https://letsencrypt.org/es/getting-started/ HTTP, HTTPS y Certificados SSL en Apache Apache permite configurar servidores web para admitir conexiones HTTP y HTTPS. Sus siglas se corresponden con Hypertext Transfer Protocol Secure lo que ya indica que añade seguridad a HTTP.">
 
 
 <link href="/servicios/scss/main.css" rel="stylesheet">
@@ -216,7 +212,7 @@ La configuración de HTTPS requiere el uso de certificados SSL/TLS protocolo (Se
             <div class="td-toc">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#configuración-de-http-https-y-certificados-ssl-en-apache">Configuración de HTTP, HTTPS y Certificados SSL en Apache</a>
+    <li><a href="#http-https-y-certificados-ssl-en-apache">HTTP, HTTPS y Certificados SSL en Apache</a>
       <ul>
         <li><a href="#1-diferencia-entre-http-y-https">1. <strong>Diferencia entre HTTP y HTTPS</strong></a></li>
         <li><a href="#las-características">Las características</a></li>
@@ -280,6 +276,8 @@ La configuración de HTTPS requiere el uso de certificados SSL/TLS protocolo (Se
             
             <li><a href="https://aws.amazon.com/es/what-is/ssl-certificate/">https://aws.amazon.com/es/what-is/ssl-certificate/</a></li>
             
+            <li><a href="https://letsencrypt.org/es/getting-started/">https://letsencrypt.org/es/getting-started/</a></li>
+            
             
             
             
@@ -287,8 +285,10 @@ La configuración de HTTPS requiere el uso de certificados SSL/TLS protocolo (Se
     </div>
 </div>
 
-<h2 id="configuración-de-http-https-y-certificados-ssl-en-apache">Configuración de HTTP, HTTPS y Certificados SSL en Apache</h2>
-<p><strong>Apache</strong> permite configurar servidores web para admitir  <strong>conexiones HTTP y HTTPS</strong>.</p>
+<h2 id="http-https-y-certificados-ssl-en-apache">HTTP, HTTPS y Certificados SSL en Apache</h2>
+<p><strong>Apache</strong> permite configurar servidores web para admitir  <strong>conexiones HTTP y HTTPS</strong>.
+Sus siglas se corresponden con <strong>Hypertext Transfer Protocol Secure</strong> lo que ya indica que añade seguridad a HTTP.</p>
+<p>En realidad, no es un protocolo propio, sino que se basa en introducir una capa con el protocolo SSL/TLS entre la capa de transporte y la capa de aplicación en el conjunto de protocolos TCP/IP. Mediante el uso de SSL/TLS, HTTPS consigue que la comunicación en la web sea segura.</p>
 <p>La configuración de <strong>HTTPS</strong> requiere el uso de <strong>certificados SSL/TLS <em>protocolo (Secure Socket Layers/ Transport Layer Aecurity)</em></strong>, que garantizan una comunicación segura mediante cifrado.</p>
 <hr>
 <h3 id="1-diferencia-entre-http-y-https">1. <strong>Diferencia entre HTTP y HTTPS</strong></h3>
@@ -304,9 +304,24 @@ La configuración de HTTPS requiere el uso de certificados SSL/TLS protocolo (Se
 <li>
 <p><strong>HTTPS (HyperText Transfer Protocol Secure)</strong>:</p>
 <ul>
-<li>Es una versión segura de HTTP que utiliza los protocolos SSL/TLS para cifrar las comunicaciones.</li>
-<li>SSL/TLS son protocolos que garantizan la confidencialidad, integridad y autenticación de las comunicaciones.</li>
-<li>Para establecer una conexión HTTPS, se necesita un certificado digital válido (emitido por una autoridad certificadora, CA), también llamado <strong>certificado SSL/TLS</strong> que permita la autenticación del servidor y la negociación de claves seguras.</li>
+<li>
+<p>Es una versión segura de HTTP que utiliza los protocolos SSL/TLS para cifrar las comunicaciones.</p>
+</li>
+<li>
+<p>SSL/TLS son protocolos que garantizan la confidencialidad, integridad y autenticación de las comunicaciones.</p>
+</li>
+<li>
+<p>SSL/TLS, se utiliza para asegurar <strong>confidencialidad, autenticidad, integridad y no repudio</strong> entre el cliente y el servidor:</p>
+<ul>
+<li><strong>Confidencialidad</strong>: La confidencialidad se entiende en el ámbito de la seguridad informática, como la protección de datos y de información intercambiada entre un emisor y uno o más destinatarios frente a terceros.</li>
+<li><strong>Integridad</strong>: Es la propiedad que busca mantener los datos libres de modificaciones no autorizadas.</li>
+<li><strong>Autenticación o autentificación</strong>: Propiedad que permite identificar el generador de la información.</li>
+<li><strong>No repudio</strong>: Propiedad que prueba que el autor envió la comunicación (no repudio en origen) y que el destinatario la recibió (no repudio en destino)</li>
+</ul>
+</li>
+<li>
+<p>Para establecer una conexión HTTPS, se necesita un certificado digital válido (emitido por una autoridad certificadora, CA), también llamado <strong>certificado SSL/TLS</strong> que permita la autenticación del servidor y la negociación de claves seguras.</p>
+</li>
 </ul>
 </li>
 </ul>
@@ -318,6 +333,13 @@ La configuración de HTTPS requiere el uso de certificados SSL/TLS protocolo (Se
 <li><strong>Un certificado SSL/TLS válido</strong>. Puede comprobar si el certificado SSL/TLS es válido haciendo clic y expandiendo el ícono del candado en la barra de direcciones URL</li>
 <li>Una vez establecida la conexión cifrada, <strong>solo el cliente y el servidor web</strong> pueden ver los datos que se envían.</li>
 </ul>
+<p>Una transacción segura SSL de manera simplificada sigue el siguiente modelo:</p>
+<ol>
+<li>Primero, el cliente se conecta al servidor comercial protegido por SSL y pide la autenticación. El cliente también envía la lista de los criptosistemas que soporta, clasificada en orden descendente por la longitud de la clave.</li>
+<li>El servidor que recibe la solicitud envía un certificado al cliente que contiene la clave pública del servidor firmado por una entidad de certificación (CA), y también el nombre del criptosistema que está más alto en la lista de compatibilidades</li>
+<li>El cliente verifica la validez del certificado, luego crea una clave secreta al azar, cifra esta clave con la clave pública del servidor y envía el resultado al servidor (clave de sesión).</li>
+<li>El servidor es capaz de descifrar la clave de sesión con su clave privada. De esta manera, hay dos entidades que comparten una clave que sólo ellos conocen. Las transacciones restantes pueden realizarse utilizando la clave de sesión, garantizando la integridad y la confidencialidad de los datos que se intercambian.</li>
+</ol>
 <hr>
 <h3 id="2-pasos-para-configurar-https-en-apache">2. <strong>Pasos para configurar HTTPS en Apache</strong></h3>
 <h4 id="paso-1-activar-el-módulo-ssl">Paso 1: Activar el módulo SSL</h4>
@@ -414,6 +436,15 @@ La configuración de HTTPS requiere el uso de certificados SSL/TLS protocolo (Se
 <li><strong><code>SSLEngine On</code></strong>: Habilita SSL/TLS.</li>
 <li><strong><code>SSLCertificateFile</code> y <code>SSLCertificateKeyFile</code></strong>: Especifican las rutas a los archivos del certificado y la clave privada.</li>
 </ul>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Certificados usados</h4>
+
+    Dichos certificados “de aceite de serpiente” (Wikipedia: Snake oil (cryptography)) los genera el script de postinstalación del paquete ssl-cert de Ubuntu asociados al hostname del sistema.
+
+</div>
+
 <h4 id="paso-4-reiniciar-apache">Paso 4: Reiniciar Apache</h4>
 <p>Reinicia el servidor para aplicar los cambios:
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
