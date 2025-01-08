@@ -1,5 +1,5 @@
 #baseURL = 'http://proyectosdwa.es/manuel'
-baseURL = 'https://web.infenlaces.com/php/'
+baseURL = 'https://web.infenlaces.com/servicios/'
 #baseURL = 'http://localhost:1313/'
 
 languageCode = 'es-es'
@@ -90,6 +90,8 @@ contentDir = "content/fr"
 custom_css=['/css/custom.css']
 copyright = "@MRomero"
 privacy_policy = "https://policies.google.com/privacy"
+sectionNumbering = true
+notoc = true
 
 logo= "/images/logo.png"
 [params.ui]
@@ -157,4 +159,4 @@ disable = false
 [markup.goldmark.renderer]
 unsafe = true
 [outputs]
-section = [ "HTML", "RSS", "print" ]
+section = [ "HTML", "RSS", "print"  ]

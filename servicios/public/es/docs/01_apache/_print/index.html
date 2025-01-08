@@ -1,29 +1,29 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head><script src="/php/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=php/livereload" data-no-instant defer></script>
+  <head><script src="/servicios/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=servicios/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="http://localhost:1313/php/es/docs/01_apache/">
-<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/php/es/docs/01_apache/index.xml">
+<link rel="canonical" type="text/html" href="http://localhost:1313/servicios/es/docs/01_apache/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/servicios/es/docs/01_apache/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
-<link rel="shortcut icon" href="/php/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/php/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/php/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/php/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/php/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/php/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/php/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/php/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/php/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/php/favicons/android-192x192.png" sizes="192x192">
+<link rel="shortcut icon" href="/servicios/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/servicios/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/servicios/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/servicios/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-192x192.png" sizes="192x192">
 
 <title>Servicios Web con Apache | Despliegue de Aplicaciones Web</title>
 <meta name="description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.
 ">
 
-<meta property="og:url" content="http://localhost:1313/php/es/docs/01_apache/">
+<meta property="og:url" content="http://localhost:1313/servicios/es/docs/01_apache/">
   <meta property="og:site_name" content="Despliegue de Aplicaciones Web">
   <meta property="og:title" content="Servicios Web con Apache">
   <meta property="og:description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.">
@@ -34,13 +34,13 @@
   <meta itemprop="description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.">
   <meta itemprop="datePublished" content="2024-12-18T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-12-18T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1603">
+  <meta itemprop="wordCount" content="1072">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Servicios Web con Apache">
   <meta name="twitter:description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.">
 
 
-<link href="/php/scss/main.css" rel="stylesheet">
+<link href="/servicios/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -51,8 +51,8 @@
     <header>
       <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
 <div class="container-fluid flex-column flex-md-row ">
-  <a class="navbar-brand" href="/php/es/"><span class="navbar-brand__logo navbar-logo">
-    <img src="/php/images/logo.png" alt="Logo" width="150" height="auto" />
+  <a class="navbar-brand" href="/servicios/es/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/servicios/images/logo.png" alt="Logo" width="150" height="auto" />
     </span><span class="navbar-brand__name">Despliegue de Aplicaciones Web</span></a>
   <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
     <ul class="navbar-nav">
@@ -60,8 +60,8 @@
         <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/php/en/">English</a></li>
-    <li><a class="dropdown-item" href="/php/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/servicios/en/">English</a></li>
+    <li><a class="dropdown-item" href="/servicios/fr/">Francés</a></li>
     </ul>
 </div></li>
       <li class="td-light-dark-menu nav-item dropdown">
@@ -139,7 +139,7 @@
 Versión imprimible multipagina.
 <a href="#" onclick="print();return false;">Haga click aquí para imprimir</a>.
 </p><p>
-<a href="/php/es/docs/01_apache/">Volver a la vista normal de esta página</a>.
+<a href="/servicios/es/docs/01_apache/">Volver a la vista normal de esta página</a>.
 </p>
 </div>
 
@@ -159,12 +159,44 @@ Versión imprimible multipagina.
   
 
   
+    
+    
+	
+<li>1: <a href="#pg-1af48ff7b32f6aa5ae768fc9ed45ab29">VirtualHost</a></li>
+
+
+    
+  
+    
+    
+	
+<li>2: <a href="#pg-9dc78ee6e08d94a9f192f8bd5511ea84">Auth</a></li>
+
+
+    
+  
+    
+    
+	
+<li>3: <a href="#pg-3bb0c1cf4b5aed9fc2005a19ccb20d57">Https</a></li>
+
+
+    
+  
+    
+    
+	
+<li>4: <a href="#pg-a7c6ee1e33612d9ceaf6bbdec00c003c">Rewrite</a></li>
+
+
+    
+  
 
     </ul>
 
 
 <div class="content">
-      <p>
+      
 
 
 
@@ -189,23 +221,21 @@ Versión imprimible multipagina.
     <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
         <ul>
             
-            <li>En este tema exploraremos cómo instalar, configurar y personalizar Apache, destacando las siguientes funcionalidades:</li>
+            <li>Instalar, configurar y personalizar Apache.</li>
             
-            <li>Hosts Virtuales</li>
+            <li>Hosts Virtuales.</li>
             
-            <li>Opciones de Directorio</li>
+            <li>Opciones de Directorio.</li>
             
-            <li>Alias</li>
+            <li>Alias.</li>
             
-            <li>Autenticación en el servidor</li>
+            <li>Autenticación en el servidor.</li>
             
-            <li>Páginas dinámicas</li>
+            <li>Páginas dinámicas.</li>
             
-            <li>SSL</li>
+            <li>SSL.</li>
             
-            <li>Rewrite</li>
-            
-            <li>Concluiremos con ejemplos prácticos</li>
+            <li>Rewrite.</li>
             
             
             
@@ -216,16 +246,14 @@ Versión imprimible multipagina.
 
 </div>
 
-;</p>
+<h3 id="1--introducción">1.- Introducción</h3>
+<p><strong>Apache HTTP Server</strong>, comúnmente conocido como Apache, es uno de los servidores web más utilizados en el mundo.</p>
+<p>Como características, podrímos destacar su flexibilidad, estabilidad y gran cantidad de módulos lo convierten en una opción ideal para gestionar servicios web en entornos variados.</p>
+<p>Vemos en la siguiente imagen cómo apache es escalable a través de módulos que podremos ir integrando según vayamos necesitando
+<img src="/servicios/es/docs/01_apache/apache.png" alt="apache.png"></p>
 <hr style="border-color: red; border-width: 3px;"/>
-<p>En nuestro curso, vamos a levantar el virtual host que tenemos configurado con Vagrant, y realizaremos ahí las configuraciones necesarias para practicar con Apache. Para ello, utilizaremos los siguientes comandos:</p>
-<ol>
-<li>Inicia la máquina virtual con Vagrant:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vagrant up
-</span></span></code></pre></div><p>Una vez dentro de la máquina virtual, trabajremos con Apache y realizar las configuraciones necesarias para los ejercicios prácticos.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vagrant ssh
-</span></span></code></pre></div><h3 id="instalación">Instalación</h3>
+<p>En este tema, exploraremos cómo instalar Apache, configurarlo y aprovechar sus funcionalidades clave para implementar servicios web efectivos. También aprenderemos a utilizarlo en un entorno virtualizado con Vagrant, facilitando la práctica en un entorno controlado y replicable.</p>
+<h3 id="2--instalación">2.- Instalación</h3>
 <p>Para instalar Apache en sistemas basados en Debian/Ubuntu.</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -246,517 +274,50 @@ Versión imprimible multipagina.
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>sudo systemctl status apache2</span></span></code></pre></td></tr></table>
 </div>
 </div>
-<p>Igualmente podemos tener un listado de comandos que podemos ejecutar, así como ver la versión</p>
-<h3 id="archivos-de-configuración">Archivos de configuración</h3>
-<p>Apache organiza su configuración en varios archivos:</p>
+<h3 id="3--archivos-de-configuración">3.- <strong>Archivos de configuración</strong></h3>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Apache2
+
+
+</span>
+</strong>
+ en su configuración presenta un sistema descentralizado donde vemos como  organiza su configuración en varios archivos:</p>
 <ul>
 <li><strong>/etc/apache2/apache2.conf</strong>: Archivo principal de configuración.</li>
 <li><strong>/etc/apache2/ports.conf</strong>: Define los puertos en los que Apache escucha.</li>
 <li><strong>/etc/apache2/sites-available/</strong>: Directorios para configuraciones específicas de sitios.</li>
 <li><strong>/etc/apache2/sites-enabled/</strong>: Enlaces simbólicos a los sitios habilitados.</li>
 </ul>
-<h3 id="hosts-virtuales">Hosts Virtuales</h3>
-<p>Apache permite alojar múltiples sitios web mediante Hosts Virtuales. Estos pueden ser:</p>
-<h4 id="basados-en-ip">Basados en IP</h4>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>&lt;VirtualHost *:80&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>DocumentRoot /var/www/misitio<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;/VirtualHost&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;VirtualHost *:8080&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>DocumentRoot /var/www/otrositio<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;/VirtualHost&gt;</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<h4 id="basados-en-nombre">Basados en nombre</h4>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>&lt;VirtualHost *:80&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>DocumentRoot /var/www/uno<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>ServerName www.unsitio.com<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;/VirtualHost&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;VirtualHost *:80&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>DocumentRoot /var/www/otro<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>ServerName www.otrositio.org<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;/VirtualHost&gt;</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<p>Para gestionar los hosts, edita el archivo /etc/hosts o configura un DNS local.</p>
-<hr style="border-color: red; border-width: 3px;"/>
-<p><strong>Nota:</strong> Si hemos configurado nuestro sitio con opciones específicas, estas deben establecerse en la zona del VirtualHost que use SSL (puerto 443). Esto se debe a que las peticiones redirigidas desde HTTP (puerto 80) a HTTPS (puerto 443) solo aplicarán configuraciones realizadas en este último. Por ejemplo:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>&lt;VirtualHost *:443&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>DocumentRoot /var/www/seguro<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLEngine On<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLCertificateFile /etc/ssl/certs/ssl-cert-snakeoil.pem<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;/VirtualHost&gt;</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<hr style="border-color: red; border-width: 3px;"/>
-<h3 id="opciones-de-seguridad-obligatoria">Opciones de Seguridad Obligatoria</h3>
-<p>Para garantizar comunicaciones seguras, considera implementar las siguientes medidas:</p>
-<h4 id="forzar-cifrados-fuertes">Forzar cifrados fuertes</h4>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>SSLCipherSuite RC4-SHA:AES128-SHA:HIGH:!aNULL:!MD5<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLHonorCipherOrder on</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<h4 id="evitar-ataques-conocidos-como-poodle">Evitar ataques conocidos (como POODLE)</h4>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>ssl_protocols TLSv1 TLSv1.1 TLSv1.2;</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<h4 id="forward-secrecy-fs">Forward Secrecy (FS)</h4>
-<p>Asegura la creación de claves efímeras para mejorar la privacidad:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>SSLCipherSuite <span style="color:#e6db74">&#34;ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384&#34;</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLHonorCipherOrder on</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<h3 id="letsencrypt">LetsEncrypt</h3>
-<p>Para obtener certificados gratuitos y reconocidos por navegadores comunes, utiliza LetsEncrypt. Es una solución automatizada que verifica el dominio y configura Apache para usar HTTPS. Pasos:</p>
-<ol>
-<li>Instala Certbot:</li>
-</ol>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>sudo apt install certbot python3-certbot-apache</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<ol start="2">
-<li>Obtén un certificado:</li>
-</ol>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>sudo certbot --apache</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<ol start="3">
-<li>Renueva automáticamente los certificados:</li>
-</ol>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>sudo certbot renew --dry-run</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<p><strong>Práctica:</strong> Implementa un servidor web con LetsEncrypt. Asegúrate de que el servidor sea público y abre los puertos necesarios para que Certbot pueda verificar el dominio.</p>
-<hr style="border-color: red; border-width: 3px;"/>
-<h3 id="alias">Alias</h3>
-<p>Los alias permiten &ldquo;camuflar&rdquo; directorios largos o fuera del DocumentRoot:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>Alias /icons/ <span style="color:#e6db74">&#34;/usr/local/apache2.4/icons/&#34;</span></span></span></code></pre></td></tr></table>
-</div>
-</div>
-<h3 id="autenticación">Autenticación</h3>
-<p>Configura autenticación básica para proteger secciones del sitio:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>&lt;Directory <span style="color:#e6db74">&#34;/var/www/miweb/privado&#34;</span>&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>AuthUserFile <span style="color:#e6db74">&#34;/etc/apache2/claves/passwd.txt&#34;</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>AuthName <span style="color:#e6db74">&#34;Acceso restringido&#34;</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>AuthType Basic<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>Require valid-user<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;/Directory&gt;</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<p>Genera el archivo de contraseñas con <code>htpasswd</code>:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>htpasswd -c /etc/apache2/claves/passwd.txt usuario</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<h3 id="rewrite">Rewrite</h3>
-<p>El módulo <code>mod_rewrite</code> permite redireccionar dinámicamente peticiones HTTP. Esto es útil, por ejemplo, para redirigir todo el tráfico HTTP hacia HTTPS. Para habilitar este módulo:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>sudo a2enmod rewrite<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>sudo systemctl restart apache2</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<p>Ejemplo de redirección de HTTP a HTTPS:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>&lt;VirtualHost *:80&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>DocumentRoot /var/www<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>RewriteEngine On<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>RewriteCond %<span style="color:#f92672">{</span>HTTPS<span style="color:#f92672">}</span> !<span style="color:#f92672">=</span>on<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>RewriteRule ^/<span style="color:#f92672">(</span>.*<span style="color:#f92672">)</span>$ https://%<span style="color:#f92672">{</span>SERVER_NAME<span style="color:#f92672">}</span>/$1 <span style="color:#f92672">[</span>R,L<span style="color:#f92672">]</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;/VirtualHost&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;VirtualHost *:443&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>DocumentRoot /var/www<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLEngine On<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLCertificateFile /etc/ssl/certs/ssl-cert-snakeoil.pem<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;/VirtualHost&gt;</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<p>En este ejemplo, cualquier petición recibida en el puerto 80 será redirigida automáticamente al puerto 443 utilizando HTTPS.</p>
-<hr style="border-color: red; border-width: 3px;"/>
-<h3 id="referencias">Referencias</h3>
 
 
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Editando ficheros</h4>
 
-
-<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
-    <div style="background-color: navy; color: white;
-    font-weight: bold; padding: 10px; display: flex; align-items: center;">
-        
-        <span style="margin-right: 8px;">
-            
-                <img src="apache.png" alt="Icono de Referencias" style="width: 24px; height: 24px;">
-            
-        </span>
-        
-        <span>Documentación de Apache</span>
-    </div>
-
-    <h3 style="padding: 5px; font-weight: bold; color: navy;">Fuentes confiables</h3>
-
-    <hr style="border-color: lightblue; border-width: 3px"/>
-    
-    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
-        <ul>
-            
-            
-            <li><ul>
-<li><a href="https://httpd.apache.org/docs/">Guía oficial de Apache</a></li>
-</ul>
-</li>
-            
-            <li><ul>
-<li><a href="https://httpd.apache.org/docs/2.4/vhosts/">Configuración de Hosts Virtuales</a></li>
-</ul>
-</li>
-            
-            <li><ul>
-<li><a href="https://httpd.apache.org/docs/2.4/mod/mod_ssl.html">Módulo SSL en Apache</a></li>
-</ul>
-</li>
-            
-            <li><ul>
-<li><a href="https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html">Módulo Rewrite en Apache</a></li>
-</ul>
-</li>
-            
-            
-            
-            
-        </ul>
-    </div>
-</div>
-
-<hr style="border-color: red; border-width: 3px;"/>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#75715e"># Instalación básica de Apache en Ubuntu</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> apt-get update <span style="color:#f92672">&amp;&amp;</span> apt-get install -y apache2</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<h4 id="hahahugoshortcode40s25hbhb-y-hahahugoshortcode40s26hbhb">
-<strong>
-<span class="font-weight-bold text-primary">
-
-    SSH
-
-
-</span>
-</strong>
- y 
-<strong>
-<span class="font-weight-bold text-primary">
-
-    Telnet
-
-
-</span>
-</strong>
-</h4>
-
-
-<div class="alert alert-green" role="alert">
-<h4 class="alert-heading">Acceso remoto</h4>
-
-    SSH permite conexiones seguras a través de una red para administración remota. Telnet, aunque menos seguro, puede ser útil para pruebas específicas.
-
-</div>
-
-<h4 id="hahahugoshortcode40s28hbhb">
-<strong>
-<span class="font-weight-bold text-primary">
-
-    FTP
-
-
-</span>
-</strong>
-</h4>
-
-
-<div class="alert alert-orange" role="alert">
-<h4 class="alert-heading">Transferencia de Archivos</h4>
-
-    FTP es un protocolo para transferir archivos entre clientes y servidores. Aunque ha sido en parte reemplazado por SFTP y SCP, sigue siendo relevante en entornos específicos.
-
-</div>
-
-<h4 id="hahahugoshortcode40s30hbhb">
-<strong>
-<span class="font-weight-bold text-primary">
-
-    DNS
-
-
-</span>
-</strong>
-</h4>
-
-
-<div class="alert alert-purple" role="alert">
-<h4 class="alert-heading">Resolución de nombres</h4>
-
-    El servicio DNS traduce nombres de dominio legibles para humanos (como ejemplo.com) en direcciones IP que las computadoras entienden.
-
-</div>
-
-<hr style="border-color: red; border-width: 3px;"/>
-<h3 id="finalidad">Finalidad</h3>
-
-
-
-
-<div style="border: 1px solid royalblue; border-radius: 5px; overflow: hidden;">
-  <div style="background-color: royalblue; color: white;
-    font-weight: bold; padding: 10px; display: flex; align-items: center;">
-    
-    <span style="margin-right: 8px;">
-            
-                <i class="fas fa-flag-checkered"></i> 
-            
-        </span>
-    
-    <span>Finalidad</span>
-  </div>
-
-  <h3 style="padding: 5px; font-weight: bold; color: royalblue;">Al terminar el tema deberás...</h3>
-
-  <hr style="border-color: lightsteelblue; border-width: 3px"/>
-  
-  <div style="background-color: #f0f8ff; color: royalblue; padding: 10px;">
     <ul>
-      
-      
-      <li><ul>
-<li>Comprender qué es un servicio y su función en el despliegue de aplicaciones web.</li>
+<li>Para poder acceder a los ficheros desde un editor, podemos compartir una carpeta y crear un enlace simbólico</li>
+<li>También podríamos conectar por ssh desde nuestro edi.</li>
 </ul>
-</li>
-      
-      <li><ul>
-<li>Instalar, configurar y administrar servicios como Apache, Nginx, SSH, FTP y DNS.</li>
-</ul>
-</li>
-      
-      <li><ul>
-<li>Identificar las diferencias y casos de uso de cada servicio.</li>
-</ul>
-</li>
-      
-      
-      
-      
-    </ul>
-  </div>
+
+
 </div>
 
-<hr style="border-color: red; border-width: 3px;"/>
-<h3 id="referencias-1">Referencias</h3>
-
-
-
-
-<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
-    <div style="background-color: navy; color: white;
-    font-weight: bold; padding: 10px; display: flex; align-items: center;">
-        
-        <span style="margin-right: 8px;">
-            
-                <img src="documentacion.png" alt="Icono de Referencias" style="width: 24px; height: 24px;">
-            
-        </span>
-        
-        <span>Referencias</span>
-    </div>
-
-    <h3 style="padding: 5px; font-weight: bold; color: navy;">Fuentes de información confiables</h3>
-
-    <hr style="border-color: lightblue; border-width: 3px"/>
-    
-    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
-        <ul>
-            
-            
-            <li><ul>
-<li><a href="https://httpd.apache.org/docs/">Documentación oficial de Apache</a></li>
-</ul>
-</li>
-            
-            <li><ul>
-<li><a href="https://nginx.org/en/docs/">Guía oficial de Nginx</a></li>
-</ul>
-</li>
-            
-            <li><ul>
-<li><a href="https://www.ssh.com/ssh/">Introducción a SSH</a></li>
-</ul>
-</li>
-            
-            <li><ul>
-<li><a href="https://tools.ietf.org/html/rfc959">Protocolo FTP</a></li>
-</ul>
-</li>
-            
-            <li><ul>
-<li><a href="https://www.cloudflare.com/learning/dns/what-is-dns/">DNS explicado</a></li>
-</ul>
-</li>
-            
-            
-            
-            
-        </ul>
-    </div>
-</div>
-
-<h3 id="apache">Apache</h3>
-<p>
-<strong>
-<span class="font-weight-bold text-primary">
-
-    Instalar apache
-
-
-</span>
-</strong>
-
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">sudo</span> <span style="color:#a6e22e">apt</span> <span style="color:#a6e22e">install</span> <span style="color:#a6e22e">apache2</span></span></span></code></pre></td></tr></table>
-</div>
-</div>
-
-<strong>
-<span class="font-weight-bold text-primary">
-
-    Utilizar apache en línea de comandos
-
-
-</span>
-</strong>
-
-Para tareas de configuración y administración, es importante conocer comandos de Apache en el terminal.<br>
-Disponemos de una serie de aplicaciones o utilidades:</p>
-<h3 id="principales-herramientas"><strong>Principales herramientas</strong></h3>
+<h3 id="4--principales-herramientas">4.- <strong>Principales herramientas</strong></h3>
 <ol>
-<li>
-<p><strong>apache2</strong><br>
-Binario principal para ejecutar el servidor Apache.</p>
-</li>
-<li>
-<p><strong>apachectl</strong><br>
-Interfaz para administrar Apache, recomendada para tareas como iniciar, detener y reiniciar el servidor.</p>
-</li>
+<li><strong>apache2</strong><br>
+Binario principal para ejecutar el servidor Apache.</li>
+<li><strong>apachectl</strong><br>
+Interfaz para administrar Apache, recomendada para tareas como iniciar, detener y reiniciar el servidor.</li>
+</ol>
+<blockquote>
+<blockquote>
+<p>Por lo que se comenta posteriormente, usaremos <strong>apachectl</strong> en lugar de <strong>apache2</strong>, ya que ambas herramientas permiten interactuar con Apache, pero <strong>apachectl</strong> simplifica la administración al abstraer configuraciones y proporcionar comandos específicos como <code>configtest</code> o <code>graceful</code>, logrando los mismos objetivos de forma más práctica.
+<strong>apachectl</strong> simplifica la administración al abstraer configuraciones y proporcionar comandos específicos como <code>configtest</code> o <code>graceful</code>, logrando los mismos objetivos de forma más práctica.</p>
+</blockquote>
+</blockquote>
+<ol start="3">
 <li>
 <p><strong>systemctl</strong><br>
 Herramienta para gestionar servicios en sistemas basados en <code>systemd</code>.</p>
@@ -771,7 +332,7 @@ Comando heredado para manejar servicios, útil en sistemas sin <code>systemd</co
 </li>
 </ol>
 <hr>
-<h3 id="comandos-específicos-de-apache"><strong>Comandos específicos de Apache</strong></h3>
+<h3 id="5--comandos-específicos-de-apache">5.- <strong>Comandos específicos de Apache</strong></h3>
 <ol>
 <li>
 <p><strong>a2enmod</strong><br>
@@ -846,7 +407,7 @@ Deshabilita configuraciones adicionales.</p>
 </div>
 </li>
 </ol>
-<h3 id="herramientas-relacionadas-con-seguridad-y-autenticación"><strong>Herramientas relacionadas con seguridad y autenticación</strong></h3>
+<h3 id="6--herramientas-relacionadas-con-seguridad-y-autenticación">6.- <strong>Herramientas relacionadas con seguridad y autenticación</strong></h3>
 <ol>
 <li>
 <p><strong>htpasswd</strong><br>
@@ -874,7 +435,7 @@ Genera certificados SSL para configuraciones HTTPS.</p>
 </li>
 </ol>
 <hr>
-<h3 id="herramientas-adicionales"><strong>Herramientas adicionales</strong></h3>
+<h3 id="7--herramientas-adicionales">7.- <strong>Herramientas adicionales</strong></h3>
 <ol>
 <li>
 <p><strong>logrotate</strong><br>
@@ -887,6 +448,11 @@ Herramienta para implementar reglas de seguridad web (integrada como módulo en 
 <li>
 <p><strong>ab (Apache Benchmark)</strong><br>
 Realiza pruebas de carga en servidores web.</p>
+</li>
+</ol>
+<blockquote>
+<blockquote>
+<p>Enviamos 100 solicitudas <strong>(-n 100)</strong> con 10 <strong>(-c 10)</strong> conexiones a un url <strong>(http://localhost/)</strong> y vemos estadísticas que genera.
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -894,11 +460,16 @@ Realiza pruebas de carga en servidores web.</p>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ab -n <span style="color:#ae81ff">100</span> -c <span style="color:#ae81ff">10</span> http://localhost/</span></span></code></pre></td></tr></table>
 </div>
-</div>
-</li>
-<li>
-<p><strong>htcacheclean</strong><br>
-Limpia la caché de Apache.</p>
+</div></p>
+</blockquote>
+</blockquote>
+<ol start="4">
+<li><strong>htcacheclean</strong><br>
+Limpia la caché de Apache.</li>
+</ol>
+<blockquote>
+<blockquote>
+<p>Establecemos una limplieza de cache cada 30 segundos de ficheros antiguos o innecesarios en el directorio /var/cache/apache2/proxy que es el que utiliza apache por defecto (Configurable en la directiva CacheRoot). Lo hace en modo bloqueante (por defecto), lo que implica que está activo mientras esté el proceso corriendo.
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -907,8 +478,30 @@ Limpia la caché de Apache.</p>
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>htcacheclean -d <span style="color:#ae81ff">30</span> -p /var/cache/apache2/proxy</span></span></code></pre></td></tr></table>
 </div>
 </div>
-</li>
-</ol>
+ejemplo de configuración para la cache
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span>   <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">IfModule</span> <span style="color:#a6e22e">mod_cache_disk</span><span style="color:#f92672">.</span><span style="color:#a6e22e">c</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">CacheRoot</span> <span style="color:#f92672">/</span><span style="color:#66d9ef">var</span><span style="color:#f92672">/</span><span style="color:#a6e22e">cache</span><span style="color:#f92672">/</span><span style="color:#a6e22e">apache2</span><span style="color:#f92672">/</span><span style="color:#a6e22e">proxy</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">CacheEnable</span> <span style="color:#a6e22e">disk</span> <span style="color:#f92672">/</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">CacheDirLevels</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">CacheDirLength</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">IfModule</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&gt;</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</blockquote>
+</blockquote>
 <h4 id="1-apache2-binario-directo"><strong>1. apache2 (binario directo)</strong></h4>
 <p>El binario <strong>apache2</strong> permite interactuar directamente con el servidor Apache. Este método es menos común ya que requiere configuraciones específicas.
 
@@ -922,27 +515,31 @@ Concretamente:</p>
 <li><strong>APACHE_RUN_USER</strong> y <strong>APACHE_RUN_GROUP</strong>: Determinan el usuario y grupo bajo los cuales Apache se ejecuta.</li>
 <li><strong>APACHE_RUN_DIR</strong>: Define el directorio de ejecución donde Apache almacena su PID (por ejemplo, /var/run/apache2).</li>
 <li><strong>APACHE_LOG_DIR</strong>: Especifica el directorio donde se guardan los logs.</li>
-<li><strong>APACHE_PID_FILE</strong>: Indica la ubicación del archivo que contiene el ID de proceso (PID) de Apache.
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-</li>
+<li><strong>APACHE_PID_FILE</strong>: Indica la ubicación del archivo que contiene el ID de proceso (PID) de Apache.</li>
 </ul>
+
+</div>
+</p>
+<p><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export APACHE_RUN_USER<span style="color:#f92672">=</span>www-data
-</span></span><span style="display:flex;"><span>export APACHE_RUN_GROUP<span style="color:#f92672">=</span>www-data
-</span></span><span style="display:flex;"><span>export APACHE_RUN_DIR<span style="color:#f92672">=</span>/var/run/apache2
-</span></span><span style="display:flex;"><span>export APACHE_LOG_DIR<span style="color:#f92672">=</span>/var/log/apache2
-</span></span><span style="display:flex;"><span>export APACHE_PID_FILE<span style="color:#f92672">=</span>/var/run/apache2/apache2.pid</span></span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  export APACHE_RUN_USER<span style="color:#f92672">=</span>www-data
+</span></span><span style="display:flex;"><span>  export APACHE_RUN_GROUP<span style="color:#f92672">=</span>www-data
+</span></span><span style="display:flex;"><span>  export APACHE_RUN_DIR<span style="color:#f92672">=</span>/var/run/apache2
+</span></span><span style="display:flex;"><span>  export APACHE_LOG_DIR<span style="color:#f92672">=</span>/var/log/apache2
+</span></span><span style="display:flex;"><span>  export APACHE_PID_FILE<span style="color:#f92672">=</span>/var/run/apache2/apache2.pid
+</span></span><span style="display:flex;"><span>  </span></span></code></pre></td></tr></table>
 </div>
 </div>
-  Sin embargo, para simplificar la administración, se recomienda utilizar herramientas como:
-  <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+Sin embargo, para simplificar la administración, se recomienda utilizar herramientas como:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
@@ -951,14 +548,10 @@ Concretamente:</p>
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#3c3d38"><span>apachectl.
 </span></span><span style="display:flex; background-color:#3c3d38"><span>systemctl.</span></span></code></pre></td></tr></table>
 </div>
-</div>
+</div></p>
 <blockquote>
 <p>Estas abstraen estas configuraciones y hacen que la experiencia sea más segura y sencilla, <strong>consiguiendo los mismos propósitos</strong>.</p>
 </blockquote>
-
-
-</div>
-</p>
 <p><strong>Uso común:</strong></p>
 <ul>
 <li><strong>Mostrar ayuda:</strong></li>
@@ -1154,77 +747,1641 @@ Concretamente:</p>
 <li><strong><code>apachectl</code></strong> es más específico y práctico para tareas relacionadas únicamente con Apache.</li>
 <li><strong><code>systemctl</code></strong> es más general y se usa para administrar múltiples servicios en sistemas modernos.</li>
 </ul>
-<h3 id="diferencias-clave-entre-systemctl-y-apachectl"><strong>Diferencias clave entre systemctl y apachectl</strong></h3>
-<h4 id="lo-que-systemctl-puede-hacer-y-apachectl-no"><strong>Lo que <code>systemctl</code> puede hacer y <code>apachectl</code> no:</strong></h4>
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-1af48ff7b32f6aa5ae768fc9ed45ab29">1 - VirtualHost</h1>
+    
+	
+
+
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-check-circle"></i> 
+            
+        </span>
+        
+        <span>Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight:bold">Configuración de Apache</h3>
+
+    <hr style="border-color:seagreen; border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            <li>Hosts Virtuales.</li>
+            
+            
+            
+        </ul>
+    </div>
+    
+
+
+</div>
+
+<h2 id="hosts-virtuales">Hosts Virtuales</h2>
+<p>Para entender qué son los hosts virtuales vamos a establecer una analogía.
+Imaginemos que tenemos una persona llamada <strong>Manuel</strong>. En el trabajo, le llaman <strong><em>Manuel</em></strong> y adopta una actitud profesional y
+seria. En casa o con amigos, le llaman <strong><em>Manolo</em></strong> y su actitud es más relajada y cercana. Aunque es la misma persona,
+<em>responde de manera diferente según cómo le llamen.</em></p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 410px">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/manuel-manolo_hu13058195514737110978.webp" width="400" height="400">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<p>De forma similar, en Apache, 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    un Virtual Host permite que el mismo servidor web responda de manera distinta
+según el nombre de dominio o dirección con la que se le acceda
+
+
+</span>
+</strong>
+, en función de la configuración que tenga
+establecdida para cada uno de los Host Virtuales.</p>
+<p>Siguiendo con la metáfora, es como si fuera <strong>Manuel</strong> en un contexto y <strong>Manolo</strong> en otro.</p>
+<p>Con 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Virtual Hosts
+
+
+</span>
+</strong>
+, Apache puede manejar varios sitios web en un solo servidor, mostrando
+diferentes contenidos o configuraciones según el dominio que se utilice.
+Lógicamente primero tendremos que establecer que varios nombres de dominio cada uno de los cuales va a corresponder a un
+host virtual, apunten a la misma ip.
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 683px">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/virtual_host_hu596676614878131368.png" width="673" height="295">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+https://medium.com/@jhordydelaguila/creando-y-configurando-virtual-host-con-apache-para-xampp-windows-f90c2b0527ac
+
+</p>
+</figcaption>
+</figure>
+</p>
+<p>Apache permite alojar múltiples sitios web mediante Hosts Virtuales, que son configuraciones específicas para cada sitio
+en el servidor. Los Virtual Hosts pueden clasificarse según cómo Apache distingue entre ellos:</p>
 <ol>
 <li>
-<p><strong>Administrar servicios en general:</strong>
-<code>systemctl</code> puede gestionar cualquier servicio del sistema, no solo Apache.</p>
+<p><strong>Basados en IP:</strong><br>
+El servidor responde a diferentes direcciones IP configuradas en la máquina. Este método es útil cuando se dispone de
+múltiples IPs.
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#3c3d38"><span>   &lt;VirtualHost 192.168.56.100:80&gt;
+</span></span><span style="display:flex;"><span>       DocumentRoot /var/www/misitio1
+</span></span><span style="display:flex;"><span>   &lt;/VirtualHost&gt;
+</span></span><span style="display:flex;"><span>   &lt;VirtualHost 192.168.56.200:80&gt;
+</span></span><span style="display:flex;"><span>         DocumentRoot /var/www/misitio2
+</span></span><span style="display:flex;"><span>   &lt;/VirtualHost&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<ol start="2">
+<li><strong>Basados en puerto de escucha:</strong><br>
+El servidor distingue entre solicitudes que llegan a puertos diferentes, como 80 para HTTP y 443 para HTTPS,u otros
+que estableciéramos.
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#3c3d38"><span>   &lt;VirtualHost *:80&gt;
+</span></span><span style="display:flex;"><span>      DocumentRoot /var/www/misitio1
+</span></span><span style="display:flex;"><span>   &lt;/VirtualHost&gt;
+</span></span><span style="display:flex;"><span>   &lt;VirtualHost *:443&gt;
+</span></span><span style="display:flex;"><span>       DocumentRoot /var/www/misitio2
+</span></span><span style="display:flex;"><span>   &lt;/VirtualHost&gt;
+</span></span><span style="display:flex;"><span>   &lt;VirtualHost *:8080&gt;
+</span></span><span style="display:flex;"><span>        DocumentRoot /var/www/misitio3
+</span></span><span style="display:flex;"><span>   &lt;/VirtualHost&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
 </li>
 <li>
-<p><strong>Habilitar o deshabilitar Apache en el arranque:</strong>
+<p><strong>Basados en nombre de servidor (el más común):</strong><br>
+El servidor utiliza el encabezado HTTP <code>Host</code> enviado por el cliente para identificar el sitio solicitado. Este
+método permite alojar múltiples sitios en una misma IP y puerto.
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#3c3d38"><span>&lt;VirtualHost *:80&gt;
+</span></span><span style="display:flex;"><span>   DocumentRoot /var/www/misitio1
+</span></span><span style="display:flex;"><span>   ServerName www.sitio1 
+</span></span><span style="display:flex;"><span>&lt;/VirtualHost&gt;
+</span></span><span style="display:flex;"><span>&lt;VirtualHost *:80&gt;
+</span></span><span style="display:flex;"><span>   DocumentRoot /var/www/misitio2
+</span></span><span style="display:flex;"><span>   ServerName www.sitio2
+</span></span><span style="display:flex;"><span>&lt;/VirtualHost&gt;
+</span></span><span style="display:flex;"><span>&lt;VirtualHost *:80&gt;
+</span></span><span style="display:flex;"><span>   DocumentRoot /var/www/misitio3
+</span></span><span style="display:flex;"><span>   ServerName www.sitio3 
+</span></span><span style="display:flex;"><span>&lt;/VirtualHost&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+</ol>
+<p>Para gestionar los hosts, edita el archivo /etc/hosts o configura un DNS local.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p><strong>Nota:</strong> Si hemos configurado nuestro sitio con opciones específicas, estas deben establecerse en la zona del VirtualHost que use SSL (puerto 443). Esto se debe a que las peticiones redirigidas desde HTTP (puerto 80) a HTTPS (puerto 443) solo aplicarán configuraciones realizadas en este último. Por ejemplo:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>&lt;VirtualHost *:443&gt;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>DocumentRoot /var/www/seguro<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLEngine On<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLCertificateFile /etc/ssl/certs/ssl-cert-snakeoil.pem<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;/VirtualHost&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h3 id="practicando">Practicando:</h3>
+<p>Vamos a crear tres sitios web con Virtual Hosts en Apache, cada uno con un DocumentRoot diferente, y configurarlos para que sean accesibles desde los siguientes nombres de dominio:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#3c3d38"><span>www.musica.com
+</span></span><span style="display:flex; background-color:#3c3d38"><span>www.informatica.com
+</span></span><span style="display:flex; background-color:#3c3d38"><span>www.nombre_alumno.com</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Cada sitio tendrá su propio archivo HTML en su directorio correspondiente.</p>
+<h4 id="hahahugoshortcode31s12hbhb">
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Pasos a realizar
+
+
+</span>
+</strong>
+</h4>
+<ol>
+<li><strong>Crear los directorios para los sitios web</strong>.<br>
+Primero, crea los directorios donde estarán los archivos de cada sitio web:</li>
+</ol>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> mkdir -p /var/www/musica 
+</span></span><span style="display:flex;"><span> mkdir -p /var/www/informatica 
+</span></span><span style="display:flex;"><span> mkdir -p /var/www/nombre_alumno </span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ol start="2">
+<li><strong>Crear archivos HTML básicos</strong> <br>
+Agrega un archivo index.html en cada directorio con contenido personalizado para cada sitio:</li>
+</ol>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> echo <span style="color:#e6db74">&#34;&lt;h1&gt;Bienvenidos a Música&lt;/h1&gt;&#34;</span> &gt;&gt; /var/www/musica/index.html  
+</span></span><span style="display:flex;"><span> echo <span style="color:#e6db74">&#34;&lt;h1&gt;Bienvenidos a Informática&lt;/h1&gt;&#34;</span>&gt;&gt;  /var/www/informatica/index.html
+</span></span><span style="display:flex;"><span> echo <span style="color:#e6db74">&#34;&lt;h1&gt;Bienvenidos a Mi Sitio&lt;/h1&gt;&#34;</span> &gt;&gt; /var/www/nombre_alumno/index.html</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ol start="3">
+<li><strong>Configurar Virtual Hosts en Apache</strong><br>
+Edita o crea los archivos de configuración de Virtual Hosts en /etc/apache2/sites-available/.</li>
+</ol>
+<p>Primero, crea el archivo para musica:</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl enable apache2
-</span></span><span style="display:flex;"><span>sudo systemctl disable apache2</span></span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>sudo nano /etc/apache2/sites-available/musica.conf </span></span></code></pre></td></tr></table>
 </div>
 </div>
-Con <code>apachectl</code>, no se pueden gestionar servicios al arranque.</p>
-</li>
-<li>
-<p><strong>Supervisar el estado del servicio Apache:</strong>
+<p>Contenido del archivo <strong>musica.conf</strong>:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>   <span style="color:#f92672">&lt;VirtualHost</span> <span style="color:#e6db74">*:80</span><span style="color:#f92672">&gt;</span> 
+</span></span><span style="display:flex;"><span>      ServerName www.musica.com 
+</span></span><span style="display:flex;"><span>      DocumentRoot <span style="color:#e6db74">/var/www/musica</span> 
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;/VirtualHost&gt;</span> </span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Repetimos  para los otros sitios:</p>
+<p>Contenido del archivo informatica.conf:</p>
+<p><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>   sudo nano /etc/apache2/sites-available/informatica.conf </span></span></code></pre></td></tr></table>
+</div>
+</div>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>   <span style="color:#f92672">&lt;VirtualHost</span> <span style="color:#e6db74">*:80</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>      ServerName www.informatica.com
+</span></span><span style="display:flex;"><span>      DocumentRoot <span style="color:#e6db74">/var/www/informatica</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;/VirtualHost&gt;</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<p>Y para nombre_alumno:
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl status apache2</span></span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>   sudo nano /etc/apache2/sites-available/nombre_alumno.conf</span></span></code></pre></td></tr></table>
 </div>
 </div>
-Esto incluye información detallada del servicio, como logs y errores recientes.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>   <span style="color:#f92672">&lt;VirtualHost</span> <span style="color:#e6db74">*:80</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>      ServerName www.nombre_alumno.com
+</span></span><span style="display:flex;"><span>      DocumentRoot <span style="color:#e6db74">/var/www/nombre_alumno</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;/VirtualHost&gt;</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<ol start="4">
+<li><strong>Habilitar los Virtual Hosts</strong>
+Habilita los sitios usando 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    a2ensite
+
+
+</span>
+</strong>
+ y reinicia Apache:</li>
+</ol>
+<p><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>   sudo a2ensite musica.conf 
+</span></span><span style="display:flex;"><span>   sudo a2ensite informatica.conf 
+</span></span><span style="display:flex;"><span>   sudo a2ensite nombre_alumno.conf
+</span></span><span style="display:flex;"><span>   sudo systemctl reload apache2 </span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Observa</h4>
+
+    Ahora puedes observar cómo en la carpeta <strong>site_enabled</strong>, están los ficheros como enlaces simbólicos
+
+</div>
+</p>
+<ol start="5">
+<li><strong>Editar el archivo /etc/hosts</strong><br>
+Debemos de acceder al servidor con una sola ip usando los diferentes nombres establecidos en los server name.  <br>
+Para ello editamos el archivo /etc/hosts en tu máquina para probar los sitios localmente:</li>
+</ol>
+<p><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/hosts </span></span></code></pre></td></tr></table>
+</div>
+</div>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#ae81ff">127.0</span><span style="color:#f92672">.</span><span style="color:#ae81ff">0.1</span> <span style="color:#a6e22e">www</span><span style="color:#f92672">.</span><span style="color:#a6e22e">musica</span><span style="color:#f92672">.</span><span style="color:#a6e22e">com</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">127.0</span><span style="color:#f92672">.</span><span style="color:#ae81ff">0.1</span> <span style="color:#a6e22e">www</span><span style="color:#f92672">.</span><span style="color:#a6e22e">informatica</span><span style="color:#f92672">.</span><span style="color:#a6e22e">com</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">127.0</span><span style="color:#f92672">.</span><span style="color:#ae81ff">0.1</span> <span style="color:#a6e22e">www</span><span style="color:#f92672">.</span><span style="color:#a6e22e">nombre_alumno</span><span style="color:#f92672">.</span><span style="color:#a6e22e">com</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+6. <strong>Probar los sitios</strong>
+Ahora es el momento de probar el funcionamiento de los dominios establecidos</p>
+<blockquote>
+<blockquote>
+<p><a href="http://www.musica.com">http://www.musica.com</a><br>
+<a href="http://www.informatica.com">http://www.informatica.com</a> <br>
+<a href="http://www.nombre_alumno.com">http://www.nombre_alumno.com</a></p>
+</blockquote>
+</blockquote>
+<h4 id="serveralias">ServerAlias</h4>
+<p>La directiva 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    ServerAlias
+
+
+</span>
+</strong>
+ en Apache permite añadir nombres de dominio alternativos que serán gestionados por el mismo Virtual Host. <br>
+Esto puede ser útil cuando queremos que un sitio web responda a diferentes nombres de dominio, como versiones con o sin &ldquo;www&rdquo; o dominios adicionales.</p>
+<p>La configuración del Virtual Host sería:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>   <span style="color:#f92672">&lt;VirtualHost</span> <span style="color:#e6db74">*:80</span><span style="color:#f92672">&gt;</span> 
+</span></span><span style="display:flex;"><span>      ServerName www.musica.com 
+</span></span><span style="display:flex;"><span>      ServerAlias musica.com www.musica.es musica.es 
+</span></span><span style="display:flex;"><span>      DocumentRoot <span style="color:#e6db74">/var/www/musica</span> 
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;/VirtualHost&gt;</span> </span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ul>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    ServerName
+
+
+</span>
+</strong>
+: Define el dominio principal del sitio (<a href="https://www.musica.com">www.musica.com</a> en este caso).</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    ServerAlias
+
+
+</span>
+</strong>
+: Añade dominios adicionales que apuntan al mismo sitio, permitiendo que Apache gestione las solicitudes correctamente.</li>
+</ul>
+<p>Supongamos que queremos que el sitio <a href="https://www.musica.com">www.musica.com</a> también responda a los siguientes nombres:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">http</span><span style="color:#f92672">://</span><span style="color:#a6e22e">www</span><span style="color:#f92672">.</span><span style="color:#a6e22e">musica</span><span style="color:#f92672">.</span><span style="color:#a6e22e">com</span><span style="color:#f92672">:</span><span style="color:#ae81ff">8080</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">http</span><span style="color:#f92672">://</span><span style="color:#a6e22e">musica</span><span style="color:#f92672">.</span><span style="color:#a6e22e">com</span><span style="color:#f92672">:</span><span style="color:#ae81ff">8080</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">http</span><span style="color:#f92672">://</span><span style="color:#a6e22e">musica</span><span style="color:#f92672">.</span><span style="color:#a6e22e">es</span><span style="color:#f92672">:</span><span style="color:#ae81ff">8080</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+Y vemos las imágenes:</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 470px">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/1_musica_hu11949293887405770643.png" width="460" height="89">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 470px">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/2_musica_hu11684716105411578636.png" width="460" height="89">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 470px">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/3_musica_hu5792214064372680345.png" width="460" height="89">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Importante</h4>
+
+    <p>Es necesario  modificar también el fichero /etc/hosts para conseguir alcanzar con esos nombres de dominio <strong><em>al equipo</em></strong> donde está instalado el servicio <strong>apache</strong></p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#ae81ff">127.0</span><span style="color:#f92672">.</span><span style="color:#ae81ff">0.1</span>  <span style="color:#a6e22e">www</span><span style="color:#f92672">.</span><span style="color:#a6e22e">informatica</span><span style="color:#f92672">.</span><span style="color:#a6e22e">com</span>  <span style="color:#a6e22e">informatica</span><span style="color:#f92672">.</span><span style="color:#a6e22e">com</span> <span style="color:#a6e22e">informatica</span><span style="color:#f92672">.</span><span style="color:#a6e22e">es</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#ae81ff">127.0</span><span style="color:#f92672">.</span><span style="color:#ae81ff">0.1</span>  <span style="color:#a6e22e">www</span><span style="color:#f92672">.</span><span style="color:#a6e22e">musica</span><span style="color:#f92672">.</span><span style="color:#a6e22e">com</span> <span style="color:#a6e22e">musica</span><span style="color:#f92672">.</span><span style="color:#a6e22e">com</span> <span style="color:#a6e22e">musica</span><span style="color:#f92672">.</span><span style="color:#a6e22e">es</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#ae81ff">127.0</span><span style="color:#f92672">.</span><span style="color:#ae81ff">0.1</span>  <span style="color:#a6e22e">www</span><span style="color:#f92672">.</span><span style="color:#a6e22e">manuel</span><span style="color:#f92672">.</span><span style="color:#a6e22e">com</span> <span style="color:#a6e22e">manuel</span><span style="color:#f92672">.</span><span style="color:#a6e22e">com</span> <span style="color:#a6e22e">manuel</span><span style="color:#f92672">.</span><span style="color:#a6e22e">es</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+</div>
+
+<h3 id="usuarios-y-grupos">usuarios y grupos</h3>
+<p>Podemos personalizar a qué usuarios queremos dejar acceso, es decir, no tiene por qué tener acceso todos los usuarios al mismo sitio indistintamente que estén incluídos en el fichero de password establecido</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-9dc78ee6e08d94a9f192f8bd5511ea84">2 - Auth</h1>
+    
+	
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Referencias</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Fuentes de Información</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
+    
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            <li><a href="https://httpd.apache.org/docs/2.4/es/howto/auth.html">https://httpd.apache.org/docs/2.4/es/howto/auth.html</a></li>
+            
+            
+            
+        </ul>
+    </div>
+</div>
+
+<hr style="border-color: red; border-width: 3px;"/>
+
+
+
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-check-circle"></i> 
+            
+        </span>
+        
+        <span>Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight:bold">Qué veremos aquí</h3>
+
+    <hr style="border-color:seagreen; border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            <li>Fichero .htaccess</li>
+            
+            <li>Autenticación basic</li>
+            
+            <li>Autenticación digest</li>
+            
+            <li>Autenticación de usuarios</li>
+            
+            <li>Autenticación de grupo de usuarios</li>
+            
+            
+            
+        </ul>
+    </div>
+    
+
+
+</div>
+
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="1--el-fichero-htacces">1.- El fichero .htacces</h2>
+<p>Antes de empezar con la autneticación, vamos a ver un fichero de configuración especial en apache: 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    .htaccess
+
+
+</span>
+</strong>
+</p>
+<p>En apache podemos configurar a nivel global (afectará a todos los proyectos), o bien podemos establecer una configuracion particular a un directorio y todos sus subdirectorios.</p>
+<p>La sigueinte imagen trata de ilustrar este concepto:
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 823px">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/02_auth/apache_conf_hu14476145889970730402.png" width="813" height="849">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+<p>El archivo 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    .htaccess
+
+
+</span>
+</strong>
+ es un archivo de configuración utilizado en servidores web Apache para aplicar configuraciones específicas a un directorio.</p>
+<p>Este archivo permite modificar ciertos comportamientos del servidor sin necesidad de acceder al archivo principal de configuración 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    httpd.conf
+
+
+</span>
+</strong>
+, o el fichero correspondiente 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    apache2.conf
+
+
+</span>
+</strong>
+.</p>
+<h3 id="funciones-de-htaccess">Funciones de <code>.htaccess</code></h3>
+<ol>
+<li>
+<p><strong>Control de acceso</strong>:</p>
+<ul>
+<li>Implementar autenticación (<strong>Basic</strong> y <strong>Digest</strong>).</li>
+<li>Restringir acceso a usuarios según IP o nombre de usuario.</li>
+<li>Este tema es objeto de estudio en esta sección</li>
+</ul>
 </li>
 <li>
-<p><strong>Ver y gestionar logs con <code>journalctl</code>:</strong>
+<p><strong>Redirecciones</strong>:</p>
+<ul>
+<li>Configurar redirecciones 301 (permanentes) y 302 (temporales).</li>
+<li>Ejemplo:
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo journalctl -u apache2</span></span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>Redirect <span style="color:#ae81ff">301</span> <span style="color:#e6db74">/antigua-pagina.html</span> <span style="color:#e6db74">/nueva-pagina.html</span></span></span></code></pre></td></tr></table>
 </div>
+</div></li>
+<li>Sencillo de utilizar y a veces práctico</li>
+</ul>
+</li>
+<li>
+<p><strong>Reescritura de URLs</strong>:</p>
+<ul>
+<li>Utilizar el módulo <code>mod_rewrite</code> para crear URLs amigables.</li>
+<li>Ejemplo:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>RewriteEngine <span style="color:#66d9ef">On</span>
+</span></span><span style="display:flex;"><span>RewriteRule ^pagina-amigable$ pagina-real.php [L]</span></span></code></pre></td></tr></table>
 </div>
-<code>apachectl</code> no tiene acceso directo a los logs gestionados por <code>systemd</code>.</p>
+</div></li>
+<li>Este apartado se aborda en otra sección</li>
+</ul>
+</li>
+<li>
+<p><strong>Seguridad</strong>:</p>
+<ul>
+<li>Proteger directorios con contraseñas.</li>
+<li>Restringir el acceso según IP:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>Order Deny,Allow
+</span></span><span style="display:flex;"><span>Deny from <span style="color:#66d9ef">all</span>
+</span></span><span style="display:flex;"><span>Allow from <span style="color:#ae81ff">192.168.1.0/24</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p><strong>Configuraciones específicas</strong>:</p>
+<ul>
+<li>Establecer una página de error personalizada.
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>ErrorDocument <span style="color:#ae81ff">404</span> <span style="color:#e6db74">/error-404.html</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>Especificar el archivo predeterminado al acceder a un directorio.
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>DirectoryIndex index.php index.html</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
 </li>
 </ol>
-<h4 id="lo-que-apachectl-puede-hacer-y-systemctl-no"><strong>Lo que <code>apachectl</code> puede hacer y <code>systemctl</code> no:</strong></h4>
+<h3 id="ventajas-de-htaccess">Ventajas de <code>.htaccess</code></h3>
+<ul>
+<li><strong>Flexibilidad</strong>: Permite configuraciones personalizadas para cada directorio.</li>
+<li><strong>Rapidez</strong>: No requiere reiniciar el servidor para aplicar cambios.</li>
+</ul>
+<h3 id="desventajas-de-htaccess">Desventajas de <code>.htaccess</code></h3>
+<ul>
+<li><strong>Rendimiento</strong>: Apache revisa este archivo en cada solicitud, lo que puede impactar en el rendimiento si se usa excesivamente. Si no es necesario, es importante que no esté.</li>
+<li><strong>Seguridad</strong>: Es un fichero de configuración que puede exponer información sensible, por lo que hay que saber bien lo que se está haciendo.</li>
+</ul>
+<h3 id="activar-htaccess">Activar <code>.htaccess</code></h3>
+<p>Para que el archivo <code>.htaccess</code> funcione, el archivo principal de configuración de Apache (<code>httpd.conf</code>) debe permitirlo mediante la directiva <code>AllowOverride</code></p>
+<p>Para nuestro ejemplo vamos a establecer un directorio a partir del cual (ese directorio o cualquier otro subdirectorio), si tiene un fichero <strong><em>.htaccess</em></strong>, se tenga en cuenta y sea leído. <br>
+Si en cualquier otro directorio estuviera ese fichero de configuración <strong>.htaccess</strong>, no se tendrá en cuenta</p>
+<p><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span><span style="color:#f92672">&lt;Directory</span> <span style="color:#e6db74">/var/www/html/seguridad</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	AllowOverride <span style="color:#66d9ef">All</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/Directory&gt;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Importante</h4>
+
+    <p>No olvides rebotar el servicio para que la configuracion tenga efecto</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">sudo</span> <span style="color:#a6e22e">apachectl</span> <span style="color:#a6e22e">restart</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+</div>
+</p>
+<h2 id="2--autenticación-en-apache">2.- Autenticación en Apache</h2>
+<p>Apache ofrece diferentes métodos de autenticación para proteger recursos en un servidor web. Los más comunes son:</p>
+<ul>
+<li>Basic</li>
+<li>Digest</li>
+</ul>
+<h3 id="1--autenticación-basic">1.- <strong>Autenticación Basic</strong></h3>
+<p>La autenticación <strong>Basic</strong> es un método sencillo que solicita al usuario un nombre de usuario y una contraseña. Esta información se transmite codificada en base64 (no cifrada), lo que hace que si queremos  garantizar seguridad,deberíamos de usar HTTPS.</p>
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Configuración de Basic Authentication
+
+
+</span>
+</strong>
+
 <ol>
-<li><strong>Verificar la configuración de Apache:</strong>
+<li><strong>Crear un archivo de contraseñas</strong>:
+Usa el comando <code>htpasswd</code> para generar el archivo que almacenará las credenciales:
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apachectl configtest</span></span></code></pre></td></tr></table>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>htpasswd -c /home/vagrant .pass manuel</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ol>
+<blockquote>
+<blockquote>
+<ul>
+<li>Este comando creará el fichero llamado <strong>.pass</strong> (establece el nombre que consideres)</li>
+</ul>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<ul>
+<li>El parámetro <code>-c</code> crea el archivo; Si ya existe (para añadir nuevos usuarios), se dede de omitir, ya que si no lo creará de nuevo y se perderán los anteriores.</li>
+</ul>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<ul>
+<li>El último parámetro es el nombre de usuario, entonces se nos solicatará la password</li>
+</ul>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><img src="/servicios/es/docs/01_apache/02_auth/img.png" alt="img.png"></p>
+</blockquote>
+</blockquote>
+<ol start="3">
+<li><strong>Configurar el archivo <code>.htaccess</code></strong>:
+En el directorio que deseas proteger, crea un archivo <code>.htaccess</code> con el siguiente contenido:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>AuthType Basic
+</span></span><span style="display:flex;"><span>AuthName <span style="color:#e6db74">&#34;Área Restringida&#34;</span>
+</span></span><span style="display:flex;"><span>AuthUserFile <span style="color:#e6db74">/ruta/a/.htpasswd</span>
+</span></span><span style="display:flex;"><span>Require valid-user</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ul>
+<li><code>AuthType Basic</code>: Especifica el tipo de autenticación.</li>
+<li><code>AuthName</code>: Mensaje mostrado en el cuadro de diálogo de autenticación.</li>
+<li><code>AuthUserFile</code>: Ruta al archivo <code>.htpasswd</code>.</li>
+<li><code>Require valid-user</code>: Permite el acceso solo a usuarios válidos.</li>
+</ul>
+</li>
+</ol>
+<p><img src="/servicios/es/docs/01_apache/02_auth/img_1.png" alt="img_1.png"></p>
+<hr>
+<h3 id="2-autenticación-digest">2. <strong>Autenticación Digest</strong></h3>
+<p>La autenticación <strong>Digest</strong> es más segura que Basic, ya que cifra las credenciales del usuario usando un hash antes de enviarlas. A pesar de ser más seguro por el hecho de que se cifran las credneciales, también se recomienda usar  HTTPS para mayor seguridad.</p>
+<p>El proceso es muy similar al visto anteriormente</p>
 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Configuración de Digest Authentication
+
+
+</span>
+</strong>
+
+<ol>
+<li><strong>Crear un archivo de contraseñas para Digest</strong>:
+Usa el comando <code>htdigest</code> para crear un archivo de contraseñas:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>htdigest -c /ruta/a/.htdigest <span style="color:#e6db74">&#34;Área Restringida&#34;</span> usuario</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ul>
+<li><code>&quot;Área Restringida&quot;</code>: corresponde al ambito (realm), y su valor, que es obligatorio, debe coincidir con el valor de <code>AuthName</code> del fichero de configuración  <code>.htaccess</code>.
+<img src="/servicios/es/docs/01_apache/02_auth/img_2.png" alt="img_2.png"></li>
+</ul>
+</li>
+<li><strong>Configurar el archivo <code>.htaccess</code></strong>:
+En el directorio que deseas proteger, crea un archivo <code>.htaccess</code> con el siguiente contenido:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>AuthType Digest
+</span></span><span style="display:flex;"><span>AuthName <span style="color:#e6db74">&#34;Área Restringida&#34;</span>
+</span></span><span style="display:flex;"><span>AuthDigestProvider file
+</span></span><span style="display:flex;"><span>AuthUserFile <span style="color:#e6db74">/ruta/a/.htdigest</span>
+</span></span><span style="display:flex;"><span>Require valid-user</span></span></code></pre></td></tr></table>
+</div>
+</div>
+- <code>AuthType Digest</code>: Especifica el tipo de autenticación.
+- <code>AuthDigestProvider file</code>: Define el proveedor de autenticación (archivo).
+- <code>AuthUserFile</code>: Ruta al archivo <code>.htdigest</code>.
+- <code>Require valid-user</code>: Permite el acceso solo a usuarios válidos (<strong>valid-user</strong>), o podríamos especificar un solo usuario, en tal caso, solo ese usuario, si se identifica correctamente, tendrá acceso.</li>
+</ol>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Importante <Directory></h4>
+
+    <p>En ambos casos, <strong>basic</strong> o <strong>digest</strong>,, hay que asegúrarse de que el archivo principal de configuración de Apache permite el uso de <code>.htaccess</code>.   <br>
+Previamente hemos establecido el valor <strong>all</strong>, pero en realidad sería suficiente con establecer <strong>AuthConfig</strong>, ya que es la única configuración que vamos a establecer en el fichero
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"></p>
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>	<span style="color:#f92672">&lt;Directory</span> <span style="color:#e6db74">&#34;/var/www/html/seguridad&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>		AllowOverride AuthConfig
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/Directory&gt;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+</div>
+
+<h2 id="3--configuración-de-usuarios">3.- Configuración de usuarios</h2>
+<p>Ahora queremos utilizar el servidor apache para autenticar recursos a determinados usuarios y/o grupo de usuarios.
+Para ello vamos a crear un entorno con una serie de restricciones, según se muestran en la imagen.</p>
+<ul>
+<li>Tenemos 3 grupos de usuarios (contabilidad, informatica y resto)</li>
+<li>Tenemos 4 páginas web (publico.html, contabilidad.html, administracion.html y desarrollo.html)</li>
+<li>Los accesos permitidos son los que se muestran</li>
+<li>Debemos hacerlo tanto con <strong>basic</strong> como con <strong>digest</strong>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 406px">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/02_auth/auth_group_hu15630721514128836839.webp" width="396" height="682">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+</li>
+</ul>
+<h4 id="configuración-de-usuarios-y-grupos">Configuración de usuarios y grupos</h4>
+<p>Lo primero que tenemos que hacer es crear los usuarios y grupo en el fichero corresondiente.
+Para este comentido, revisamos las directivas importantes del fichero de configuración .htaccess
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#f92672">-</span> <span style="color:#a6e22e">AuthUserFile</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Ruta</span> <span style="color:#a6e22e">al</span> <span style="color:#a6e22e">archivo</span> <span style="color:#a6e22e">de</span> <span style="color:#a6e22e">usuarios</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#a6e22e">AuthGroupFile</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Ruta</span> <span style="color:#a6e22e">al</span> <span style="color:#a6e22e">archivo</span> <span style="color:#a6e22e">de</span> <span style="color:#a6e22e">grupos</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#66d9ef">Require</span> <span style="color:#a6e22e">group</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Especifica</span> <span style="color:#a6e22e">qué</span> <span style="color:#a6e22e">grupo</span> <span style="color:#a6e22e">tiene</span> <span style="color:#a6e22e">acceso</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#66d9ef">Require</span> <span style="color:#a6e22e">user</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Especifica</span> <span style="color:#a6e22e">qué</span> <span style="color:#a6e22e">usuario</span> <span style="color:#a6e22e">tiene</span> <span style="color:#a6e22e">acceso</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#66d9ef">Require</span> <span style="color:#a6e22e">valid</span><span style="color:#f92672">-</span><span style="color:#a6e22e">user</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Especifica</span> <span style="color:#a6e22e">qué</span> <span style="color:#a6e22e">cualquier</span> <span style="color:#a6e22e">usuario</span> <span style="color:#a6e22e">registrado</span> <span style="color:#a6e22e">tiene</span> <span style="color:#a6e22e">acceso</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<p>También es importante revisar los módulos instalados. Para la autenticación de usuarios y grupos necesitamos tener instalados estos módulos:</p>
+<p><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span>	<span style="color:#a6e22e">mod_authz_groupfile</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">mod_authz_user</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+Se puede revisar con el comando para ver los módulos instalados
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">apachectl</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">M</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+En caso de no tenerlo (es posible que el de grupo no lo esté por defecto)
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span>	<span style="color:#a6e22e">sudo</span> <span style="color:#a6e22e">a2enmod</span> <span style="color:#a6e22e">authz_groupfile</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h3 id="acciones-a-realizar">Acciones a realizar</h3>
+<ol>
+<li><strong>Crear un archivo de contraseñas (<code>.htpasswd</code>)</strong>, con los usuarios:
+Utiliza el comando <code>htpasswd</code> para crear usuarios:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>     htpasswd -c /home/vagrant/ .htpasswd luis
+</span></span><span style="display:flex;"><span>     htpasswd  /home/vagrant/ .htpasswd lourdes
+</span></span><span style="display:flex;"><span>     htpasswd  /home/vagrant/ .htpasswd teresa
+</span></span><span style="display:flex;"><span>     htpasswd  /home/vagrant/ .htpasswd sonia
+</span></span><span style="display:flex;"><span>     htpasswd  /home/vagrant/ .htpasswd pedro
+</span></span><span style="display:flex;"><span>     htpasswd  /home/vagrant/ .htpasswd mario</span></span></code></pre></td></tr></table>
 </div>
 </div>
 
 
-  
-  
-  
-  
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Observa</h4>
 
-  
-  
+    Observa cómo solo en el primer usuario especificamos <strong>-c</strong> para crear el fichero
 
+</div>
+
+2. <strong>Crear un archivo de grupos (<code>.htgroup</code>)</strong>:
+Define grupos y asigna usuarios:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>  informatica: sonia teresa lourdes
+</span></span><span style="display:flex;"><span>  contabilidad: luis pedro mario</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Nota</h4>
+
+    Vemos que el fichero de grupos es un fichero de texto que editaremos con nuestro editor (vim, o nano o gedit, &hellip;) y escribimos simplemente las líneas especificadas
+
+</div>
+</li>
+<li><strong>Entorno web</strong></li>
+</ol>
+<ul>
+<li>
+<p>Debemos crear las carpetas con los ficheros html</p>
+</li>
+<li>
+<p>Deben de ser directorios para poder establecer configuración por directorio con el fichero de configuración 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    .htaccess
+
+
+</span>
+</strong>
+</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 260px">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/02_auth/carpetas_web_hu4404206977500153289.png" width="250" height="300">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+    
+</p>
+</figcaption>
+</figure>
+
+</li>
+</ul>
+<ol start="3">
+<li><strong>Configurar el archivo <code>.htaccess</code></strong>:
+Configura la autenticación en el directorio deseado, en cada directios establecemos:
+<ul>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    administrador
+
+
+</span>
+</strong>
+  <br>
+En este caso sólo el usuario <strong>luis</strong> puede acceder
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>	     AuthType Basic
+</span></span><span style="display:flex;"><span>	     AuthName <span style="color:#e6db74">&#34;Área Restringida Dirección&#34;</span>
+</span></span><span style="display:flex;"><span>	     AuthUserFile <span style="color:#e6db74">/home/vagrant/.htpasswd</span>
+</span></span><span style="display:flex;"><span>	     Require <span style="color:#66d9ef">user</span> luis</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<ul>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    contabilidad
+
+
+</span>
+</strong>
+   <br>
+En este caso puede acceder cualquier usuario del grupo de <strong>contabilidad</strong> y la usuaria <strong>lourdes</strong></li>
+</ul>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>  AuthType Basic
+</span></span><span style="display:flex;"><span>  AuthName <span style="color:#e6db74">&#34;Área Restringida de contabilidad&#34;</span>
+</span></span><span style="display:flex;"><span>  AuthUserFile <span style="color:#e6db74">/home/vagrant/.htpasswd</span>
+</span></span><span style="display:flex;"><span>  AuthGroupFile <span style="color:#e6db74">/home/vagrant/.htgroup</span>
+</span></span><span style="display:flex;"><span>  Require <span style="color:#66d9ef">group</span> contabilidad
+</span></span><span style="display:flex;"><span>  Require <span style="color:#66d9ef">user</span> lourdes
+</span></span><span style="display:flex;"><span>    </span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ul>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    informatica
+
+
+</span>
+</strong>
+   <br>
+En este caso puede acceder cualquier usuario del grupo de <strong>informática</strong> y solo ellos
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>   AuthType Basic
+</span></span><span style="display:flex;"><span>   AuthName <span style="color:#e6db74">&#34;Área Restringida de contabilidad&#34;</span>
+</span></span><span style="display:flex;"><span>   AuthUserFile <span style="color:#e6db74">/home/vagrant/.htpasswd</span>
+</span></span><span style="display:flex;"><span>   AuthGroupFile <span style="color:#e6db74">/home/vagrant/.htgroup</span>
+</span></span><span style="display:flex;"><span>   Require <span style="color:#66d9ef">group</span> informatica</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="notas-adicionales">Notas adicionales</h3>
+<ul>
+<li><strong>Grupos</strong>: Puedes asignar un usuario a múltiples grupos simplemente listándolo en varios grupos dentro del archivo <code>.htgroup</code>.</li>
+<li><strong>Permisos de archivo</strong>: Asegúrate de que los archivos <code>.htpasswd</code>, <code>.htdigest</code> y <code>.htgroup</code> sean accesibles por Apache, pero no por usuarios externos. El usuario apache tiene que tener permiso de ejecución en las carpetas con contengan los ficheros, si no, no podrá acceder a ellos, Si los ficheros están en /var/vagrant: Este comando con <strong>o+x</strong> aplica un permiso de ejecución (+x) al directorio /home/vagrant para el grupo de otros (o), con lo que cualquier puede acceder al directorio, también <strong>www-data</strong>.
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">sudo</span> <span style="color:#a6e22e">chown</span> <span style="color:#a6e22e">o</span><span style="color:#f92672">+</span><span style="color:#a6e22e">x</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">home</span><span style="color:#f92672">/</span><span style="color:#a6e22e">vagrant</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<ul>
+<li><strong>Visualiza errores</strong>: si hubiera errores visualiza el fichero de errores de apache2
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span>   <span style="color:#a6e22e">tail</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">f</span> <span style="color:#f92672">/</span><span style="color:#66d9ef">var</span><span style="color:#f92672">/</span><span style="color:#a6e22e">log</span><span style="color:#f92672">/</span><span style="color:#a6e22e">apache2</span><span style="color:#f92672">/</span><span style="color:#a6e22e">error</span><span style="color:#f92672">.</span><span style="color:#a6e22e">log</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-3bb0c1cf4b5aed9fc2005a19ccb20d57">3 - Https</h1>
+    
+	
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Referencias</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Fuentes de Información</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
+    
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            <li><a href="https://aws.amazon.com/es/what-is/ssl-certificate/">https://aws.amazon.com/es/what-is/ssl-certificate/</a></li>
+            
+            
+            
+            
+        </ul>
+    </div>
+</div>
+
+<h2 id="configuración-de-http-https-y-certificados-ssl-en-apache">Configuración de HTTP, HTTPS y Certificados SSL en Apache</h2>
+<p><strong>Apache</strong> permite configurar servidores web para admitir  <strong>conexiones HTTP y HTTPS</strong>.</p>
+<p>La configuración de <strong>HTTPS</strong> requiere el uso de <strong>certificados SSL/TLS <em>protocolo (Secure Socket Layers/ Transport Layer Aecurity)</em></strong>, que garantizan una comunicación segura mediante cifrado.</p>
+<hr>
+<h3 id="1-diferencia-entre-http-y-https">1. <strong>Diferencia entre HTTP y HTTPS</strong></h3>
+<ul>
+<li>
+<p><strong>HTTP (HyperText Transfer Protocol)</strong>:</p>
+<ul>
+<li>Es un protocolo no cifrado.</li>
+<li>Las comunicaciones entre el cliente y el servidor viajan con el texto tal cual se envía y se podrían capturar y ver por un tercero.</li>
+<li>Se utiliza para sitios web que no manejan información sensible.</li>
+</ul>
+</li>
+<li>
+<p><strong>HTTPS (HyperText Transfer Protocol Secure)</strong>:</p>
+<ul>
+<li>Es una versión segura de HTTP que utiliza los protocolos SSL/TLS para cifrar las comunicaciones.</li>
+<li>SSL/TLS son protocolos que garantizan la confidencialidad, integridad y autenticación de las comunicaciones.</li>
+<li>Para establecer una conexión HTTPS, se necesita un certificado digital válido (emitido por una autoridad certificadora, CA), también llamado <strong>certificado SSL/TLS</strong> que permita la autenticación del servidor y la negociación de claves seguras.</li>
+</ul>
+</li>
+</ul>
+<h3 id="las-características">Las características</h3>
+<p>Las características de una página web protegida por SSL/TLS son las siguientes:</p>
+<ul>
+<li><strong>Un ícono de candado</strong> y una barra de direcciones verde en el navegador web</li>
+<li><strong>Un prefijo https</strong> en la dirección del sitio web del navegador</li>
+<li><strong>Un certificado SSL/TLS válido</strong>. Puede comprobar si el certificado SSL/TLS es válido haciendo clic y expandiendo el ícono del candado en la barra de direcciones URL</li>
+<li>Una vez establecida la conexión cifrada, <strong>solo el cliente y el servidor web</strong> pueden ver los datos que se envían.</li>
+</ul>
+<hr>
+<h3 id="2-pasos-para-configurar-https-en-apache">2. <strong>Pasos para configurar HTTPS en Apache</strong></h3>
+<h4 id="paso-1-activar-el-módulo-ssl">Paso 1: Activar el módulo SSL</h4>
+<p>Habilita el módulo SSL en Apache:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo a2enmod ssl
+</span></span><span style="display:flex;"><span>sudo systemctl restart apache2</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<h4 id="paso-2-crear-o-instalar-un-certificado-ssl">Paso 2: Crear o instalar un certificado SSL</h4>
+<ol>
+<li>
+<p><strong>Crear un certificado autofirmado (solo para pruebas):</strong>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo openssl req -x509 -nodes -days <span style="color:#ae81ff">365</span> -newkey rsa:2048 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-keyout /etc/ssl/private/apache-selfsigned.key <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-out /etc/ssl/certs/apache-selfsigned.crt</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p><strong>Usar un certificado emitido por una CA (recomendado):</strong></p>
+<ul>
+<li>Solicita un certificado SSL/TLS de una autoridad certificadora como Let&rsquo;s Encrypt, DigiCert, o Comodo.</li>
+<li>Puedes usar herramientas como <code>certbot</code> para automatizar este proceso:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install certbot python3-certbot-apache
+</span></span><span style="display:flex;"><span>sudo certbot --apache</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ol>
+<h4 id="paso-3-configurar-apache-para-https">Paso 3: Configurar Apache para HTTPS</h4>
+<p>Edita el archivo de configuración del sitio web en <code>/etc/apache2/sites-available/mi-sitio.conf</code>:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span><span style="color:#f92672">&lt;VirtualHost</span> <span style="color:#e6db74">*:80</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>ServerName example.com
+</span></span><span style="display:flex;"><span>Redirect permanent / https://example.com/
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/VirtualHost&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;VirtualHost</span> <span style="color:#e6db74">*:443</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>ServerName example.com
+</span></span><span style="display:flex;"><span>DocumentRoot <span style="color:#e6db74">/var/www/html</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    SSLEngine <span style="color:#66d9ef">On</span>
+</span></span><span style="display:flex;"><span>    SSLCertificateFile <span style="color:#e6db74">/etc/ssl/certs/apache-selfsigned.crt</span>
+</span></span><span style="display:flex;"><span>    SSLCertificateKeyFile <span style="color:#e6db74">/etc/ssl/private/apache-selfsigned.key</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;Directory</span> <span style="color:#e6db74">/var/www/html</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>        AllowOverride <span style="color:#66d9ef">All</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/Directory&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/VirtualHost&gt;</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<ul>
+<li><strong><code>Redirect permanent</code></strong>: Redirige todo el tráfico HTTP al puerto HTTPS.</li>
+<li><strong><code>SSLEngine On</code></strong>: Habilita SSL/TLS.</li>
+<li><strong><code>SSLCertificateFile</code> y <code>SSLCertificateKeyFile</code></strong>: Especifican las rutas a los archivos del certificado y la clave privada.</li>
+</ul>
+<h4 id="paso-4-reiniciar-apache">Paso 4: Reiniciar Apache</h4>
+<p>Reinicia el servidor para aplicar los cambios:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl restart apache2</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<hr>
+<h3 id="3-redirigir-http-a-https-automáticamente">3. <strong>Redirigir HTTP a HTTPS automáticamente</strong></h3>
+<p>Configura una redirección en el archivo <code>.htaccess</code>:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>RewriteEngine <span style="color:#66d9ef">On</span>
+</span></span><span style="display:flex;"><span>RewriteCond %{HTTPS} <span style="color:#66d9ef">off</span>
+</span></span><span style="display:flex;"><span>RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<hr>
+<h3 id="4-verificar-la-configuración">4. <strong>Verificar la configuración</strong></h3>
+<ol>
+<li>Accede a tu dominio usando <code>https://</code> y asegúrate de que la conexión es segura.</li>
+<li>Utiliza herramientas como <a href="https://www.ssllabs.com/">SSL Labs</a> para analizar la configuración SSL/TLS.</li>
+</ol>
+<hr>
+<h3 id="notas-adicionales">Notas adicionales</h3>
+<ul>
+<li>
+<p><strong>Renovación automática de certificados</strong>: Si usas Let&rsquo;s Encrypt, configura un cron job para renovar los certificados automáticamente:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo certbot renew --quiet</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p><strong>Seguridad adicional</strong>: Configura encabezados HTTP como <code>Strict-Transport-Security</code> para reforzar HTTPS:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>Header always set Strict-Transport-Security <span style="color:#e6db74">&#34;max-age=31536000; includeSubDomains&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+</ul>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-a7c6ee1e33612d9ceaf6bbdec00c003c">4 - Rewrite</h1>
+    
+	<h2 id="reescritura-de-urls-en-apache-mod_rewrite">Reescritura de URLs en Apache (mod_rewrite)</h2>
+<p>El módulo <code>mod_rewrite</code> de Apache permite reescribir URLs de forma dinámica, haciendo que las direcciones sean más amigables para los usuarios y motores de búsqueda. Este módulo es muy potente y flexible, ya que permite redirigir o transformar URLs en función de reglas definidas.</p>
+<h3 id="por-qué-usar-mod_rewrite">¿Por qué usar mod_rewrite?</h3>
+<ol>
+<li>
+<p><strong>URLs amigables</strong>: Transformar URLs complejas en direcciones más fáciles de leer.</p>
+<ul>
+<li>Ejemplo: Cambiar <code>https://example.com/product.php?id=123</code> a <code>https://example.com/product/123</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Redirecciones permanentes o temporales</strong>: Mover páginas sin perder tráfico o SEO.</p>
+<ul>
+<li>Ejemplo: Redirigir de <code>http://example.com</code> a <code>https://example.com</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Reescritura interna</strong>: Mapear una URL visible a una ruta interna en el servidor.</p>
+<ul>
+<li>Ejemplo: Redirigir <code>https://example.com/blog/post</code> a <code>https://example.com/blog.php?post=post</code>.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="ejemplo-básico-de-reescritura-con-htaccess">Ejemplo básico de reescritura con .htaccess</h3>
+<ol>
+<li>
+<p><strong>Activar el módulo <code>mod_rewrite</code></strong>:
+Si no está activado, habilítalo en Apache:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo a2enmod rewrite
+</span></span><span style="display:flex;"><span>sudo systemctl restart apache2</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p><strong>Permitir el uso de .htaccess</strong>:
+Asegúrate de que el archivo de configuración de Apache (<code>apache2.conf</code>) permite la directiva <code>AllowOverride</code>:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span><span style="color:#f92672">&lt;Directory</span> <span style="color:#e6db74">&#34;/var/www/html&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>AllowOverride <span style="color:#66d9ef">All</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/Directory&gt;</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p><strong>Crear las reglas de reescritura en .htaccess</strong>:
+Un ejemplo típico de reescritura para URLs amigables:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>RewriteEngine <span style="color:#66d9ef">On</span>
+</span></span><span style="display:flex;"><span>RewriteRule ^producto/([0-9]+)$ producto.php?id=$1 [L]</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<ul>
+<li><strong><code>RewriteEngine On</code></strong>: Activa el motor de reescritura.</li>
+<li><strong><code>RewriteRule</code></strong>:
+<ul>
+<li><code>^producto/([0-9]+)$</code>: Coincide con URLs que empiecen por <code>producto/</code> seguido de un número.</li>
+<li><code>producto.php?id=$1</code>: Reescribe la URL para redirigir al archivo <code>producto.php</code> pasando el número como parámetro.</li>
+<li><code>[L]</code>: Indica que esta es la última regla si coincide.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="prueba-del-ejemplo">Prueba del ejemplo</h3>
+<ul>
+<li>URL solicitada: <code>https://example.com/producto/123</code></li>
+<li>URL interna a la que se redirige: <code>https://example.com/producto.php?id=123</code></li>
+</ul>
+<hr>
+<h3 id="notas-adicionales">Notas adicionales</h3>
+<ul>
+<li>
+<p><strong>Depuración</strong>: Habilita el registro de errores para verificar las reglas:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>RewriteLog <span style="color:#e6db74">&#34;/var/log/apache2/rewrite.log&#34;</span>
+</span></span><span style="display:flex;"><span>RewriteLogLevel <span style="color:#ae81ff">3</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p><strong>Reglas avanzadas</strong>: Se pueden usar condiciones (<code>RewriteCond</code>) para añadir lógica condicional a las reglas de reescritura, como verificar el dominio o parámetros específicos.</p>
+</li>
+</ul>
+
+</div>
+
+
+
+    
+	
   
 
 
@@ -1264,9 +2421,9 @@ Esto incluye información detallada del servicio, como logs y errores recientes.
 </footer>
 
     </div>
-    <script src="/php/js/main.js"></script>
-<script defer src="/php/js/click-to-copy.js" crossorigin="anonymous"></script>
-<script src='/php/js/tabpane-persist.js'></script>
+    <script src="/servicios/js/main.js"></script>
+<script defer src="/servicios/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/servicios/js/tabpane-persist.js'></script>
 
   </body>
 </html>

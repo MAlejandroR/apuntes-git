@@ -1,59 +1,58 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head><script src="/php/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=php/livereload" data-no-instant defer></script>
+  <head><script src="/servicios/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=servicios/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/servicios/es/docs/01_apache/index.xml">
+<link rel="alternate" type="text/html" href="http://localhost:1313/servicios/es/docs/01_apache/_print/">
 <meta name="robots" content="noindex, nofollow">
 
 
-<link rel="shortcut icon" href="/php/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/php/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/php/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/php/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/php/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/php/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/php/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/php/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/php/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/php/favicons/android-192x192.png" sizes="192x192">
+<link rel="shortcut icon" href="/servicios/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/servicios/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/servicios/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/servicios/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-192x192.png" sizes="192x192">
 
 <title>Servicios Web con Apache | Despliegue de Aplicaciones Web</title>
 <meta name="description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.
 ">
 
-<meta property="og:url" content="http://localhost:1313/php/es/docs/01_apache/">
+<meta property="og:url" content="http://localhost:1313/servicios/es/docs/01_apache/">
   <meta property="og:site_name" content="Despliegue de Aplicaciones Web">
   <meta property="og:title" content="Servicios Web con Apache">
   <meta property="og:description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.">
   <meta property="og:locale" content="es">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="docs">
-    <meta property="article:published_time" content="2024-12-18T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-12-18T00:00:00+00:00">
+  <meta property="og:type" content="website">
 
   <meta itemprop="name" content="Servicios Web con Apache">
   <meta itemprop="description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.">
   <meta itemprop="datePublished" content="2024-12-18T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-12-18T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1607">
+  <meta itemprop="wordCount" content="1072">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Servicios Web con Apache">
   <meta name="twitter:description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.">
 
 
-<link href="/php/scss/main.css" rel="stylesheet">
+<link href="/servicios/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
   crossorigin="anonymous"></script>
 
   </head>
-  <body class="td-page">
+  <body class="td-section">
     <header>
       <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
 <div class="container-fluid flex-column flex-md-row ">
-  <a class="navbar-brand" href="/php/es/"><span class="navbar-brand__logo navbar-logo">
-    <img src="/php/images/logo.png" alt="Logo" width="150" height="auto" />
+  <a class="navbar-brand" href="/servicios/es/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/servicios/images/logo.png" alt="Logo" width="150" height="auto" />
     </span><span class="navbar-brand__name">Despliegue de Aplicaciones Web</span></a>
   <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
     <ul class="navbar-nav">
@@ -61,8 +60,8 @@
         <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/php/en/">English</a></li>
-    <li><a class="dropdown-item" href="/php/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/servicios/en/">English</a></li>
+    <li><a class="dropdown-item" href="/servicios/fr/">Francés</a></li>
     </ul>
 </div></li>
       <li class="td-light-dark-menu nav-item dropdown">
@@ -140,42 +139,61 @@
       <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/php/en/">English</a></li>
-    <li><a class="dropdown-item" href="/php/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/servicios/en/">English</a></li>
+    <li><a class="dropdown-item" href="/servicios/fr/">Francés</a></li>
     </ul>
 </div>
     </div>
     <ul class="td-sidebar-nav__section pe-md-3 ul-0">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-phpesdocs-li">
-  <a href="/php/es/docs/" title="Servicios en Despliegue de Aplicaciones Web" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-phpesdocs"><i class="fas fa-network-wired"></i><span class="">Servicios</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-serviciosesdocs-li">
+  <a href="/servicios/es/docs/" title="Servicios en Despliegue de Aplicaciones Web" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-serviciosesdocs"><i class="fas fa-network-wired"></i><span class="">Servicios</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-phpesdocs00_entorno-li">
-  <input type="checkbox" id="m-phpesdocs00_entorno-check"/>
-  <label for="m-phpesdocs00_entorno-check"><a href="/php/es/docs/00_entorno/" title="Sistema base de entorno" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-phpesdocs00_entorno"><i class="fas fa-cube"></i><span class="">Entorno de ejecución </span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs00_entorno-li">
+  <input type="checkbox" id="m-serviciosesdocs00_entorno-check"/>
+  <label for="m-serviciosesdocs00_entorno-check"><a href="/servicios/es/docs/00_entorno/" title="Sistema base de entorno" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs00_entorno"><i class="fas fa-cube"></i><span class="">Entorno de ejecución </span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-phpesdocs01_apache-li">
-  <input type="checkbox" id="m-phpesdocs01_apache-check" checked/>
-  <label for="m-phpesdocs01_apache-check"><a href="/php/es/docs/01_apache/" title="Servicios Web con Apache" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-phpesdocs01_apache"><i class="fas fa-feather"></i><span class="td-sidebar-nav-active-item">Apache</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-serviciosesdocs01_apache-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache-check" checked/>
+  <label for="m-serviciosesdocs01_apache-check"><a href="/servicios/es/docs/01_apache/" title="Servicios Web con Apache" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-serviciosesdocs01_apache"><i class="fas fa-feather"></i><span class="td-sidebar-nav-active-item">Apache</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-phpesdocs02_nginx-li">
-  <input type="checkbox" id="m-phpesdocs02_nginx-check"/>
-  <label for="m-phpesdocs02_nginx-check"><a href="/php/es/docs/02_nginx/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-phpesdocs02_nginx"><i class="fas fa-server"></i><span class="">Nginx</span></a></label>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs01_apache01_virtualhost-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache01_virtualhost-check"/>
+  <label for="m-serviciosesdocs01_apache01_virtualhost-check"><a href="/servicios/es/docs/01_apache/01_virtualhost/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache01_virtualhost"><i class="fas fa-key"></i><span class="">VirtualHost</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-phpesdocs03_dns-li">
-  <input type="checkbox" id="m-phpesdocs03_dns-check"/>
-  <label for="m-phpesdocs03_dns-check"><a href="/php/es/docs/03_dns/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-phpesdocs03_dns"><i class="fas fa-globe"></i><span class="">Bind (dns)</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs01_apache02_auth-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache02_auth-check"/>
+  <label for="m-serviciosesdocs01_apache02_auth-check"><a href="/servicios/es/docs/01_apache/02_auth/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache02_auth"><i class="fas fa-key"></i><span class="">Auth</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-phpesdocs04_ssh-li">
-  <input type="checkbox" id="m-phpesdocs04_ssh-check"/>
-  <label for="m-phpesdocs04_ssh-check"><a href="/php/es/docs/04_ssh/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-phpesdocs04_ssh"><i class="fas fa-terminal"></i><span class="">SSH</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs01_apache03_https-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache03_https-check"/>
+  <label for="m-serviciosesdocs01_apache03_https-check"><a href="/servicios/es/docs/01_apache/03_https/" title="Https" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache03_https"><i class="fas fa-key"></i><span class="">Https y certificados</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-phpesdocs05_fpt-li">
-  <input type="checkbox" id="m-phpesdocs05_fpt-check"/>
-  <label for="m-phpesdocs05_fpt-check"><a href="/php/es/docs/05_fpt/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-phpesdocs05_fpt"><i class="fas fa-folder-open"></i><span class="">FTP</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs01_apache04_rewrite-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache04_rewrite-check"/>
+  <label for="m-serviciosesdocs01_apache04_rewrite-check"><a href="/servicios/es/docs/01_apache/04_rewrite/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache04_rewrite"><i class="fas fa-cogs"></i><span class="">Rewrite</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-phpesdocs05_sfpt-li">
-  <input type="checkbox" id="m-phpesdocs05_sfpt-check"/>
-  <label for="m-phpesdocs05_sfpt-check"><a href="/php/es/docs/05_sfpt/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-phpesdocs05_sfpt"><i class="fas fa-lock"></i><span class="">SFTP</span></a></label>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs02_nginx-li">
+  <input type="checkbox" id="m-serviciosesdocs02_nginx-check"/>
+  <label for="m-serviciosesdocs02_nginx-check"><a href="/servicios/es/docs/02_nginx/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs02_nginx"><i class="fas fa-server"></i><span class="">Nginx</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs03_dns-li">
+  <input type="checkbox" id="m-serviciosesdocs03_dns-check"/>
+  <label for="m-serviciosesdocs03_dns-check"><a href="/servicios/es/docs/03_dns/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs03_dns"><i class="fas fa-globe"></i><span class="">Bind (dns)</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs04_ssh-li">
+  <input type="checkbox" id="m-serviciosesdocs04_ssh-check"/>
+  <label for="m-serviciosesdocs04_ssh-check"><a href="/servicios/es/docs/04_ssh/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs04_ssh"><i class="fas fa-terminal"></i><span class="">SSH</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs05_fpt-li">
+  <input type="checkbox" id="m-serviciosesdocs05_fpt-check"/>
+  <label for="m-serviciosesdocs05_fpt-check"><a href="/servicios/es/docs/05_fpt/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs05_fpt"><i class="fas fa-folder-open"></i><span class="">FTP</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs05_sfpt-li">
+  <input type="checkbox" id="m-serviciosesdocs05_sfpt-check"/>
+  <label for="m-serviciosesdocs05_sfpt-check"><a href="/servicios/es/docs/05_sfpt/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs05_sfpt"><i class="fas fa-lock"></i><span class="">SFTP</span></a></label>
   
 </li>
   </ul>
@@ -187,7 +205,7 @@
           </aside>
           <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
             <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
-<a id="print" href="/php/es/docs/_print/"><i class="fa-solid fa-print fa-fw"></i> Imprimir la sección entera</a>
+<a id="print" href="/servicios/es/docs/01_apache/_print/"><i class="fa-solid fa-print fa-fw"></i> PDF</a>
 
 </div>
 
@@ -196,23 +214,15 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#introducción">Introducción</a></li>
-        <li><a href="#instalación">Instalación</a></li>
-        <li><a href="#archivos-de-configuración"><strong>Archivos de configuración</strong></a></li>
-        <li><a href="#principales-herramientas"><strong>Principales herramientas</strong></a></li>
-        <li><a href="#comandos-específicos-de-apache"><strong>Comandos específicos de Apache</strong></a></li>
-        <li><a href="#herramientas-relacionadas-con-seguridad-y-autenticación"><strong>Herramientas relacionadas con seguridad y autenticación</strong></a></li>
-        <li><a href="#herramientas-adicionales"><strong>Herramientas adicionales</strong></a></li>
+        <li><a href="#1--introducción">1.- Introducción</a></li>
+        <li><a href="#2--instalación">2.- Instalación</a></li>
+        <li><a href="#3--archivos-de-configuración">3.- <strong>Archivos de configuración</strong></a></li>
+        <li><a href="#4--principales-herramientas">4.- <strong>Principales herramientas</strong></a></li>
+        <li><a href="#5--comandos-específicos-de-apache">5.- <strong>Comandos específicos de Apache</strong></a></li>
+        <li><a href="#6--herramientas-relacionadas-con-seguridad-y-autenticación">6.- <strong>Herramientas relacionadas con seguridad y autenticación</strong></a></li>
+        <li><a href="#7--herramientas-adicionales">7.- <strong>Herramientas adicionales</strong></a></li>
         <li><a href="#comparación-entre-apachectl-y-systemctl"><strong>Comparación entre apachectl y systemctl</strong></a></li>
         <li><a href="#conclusión"><strong>Conclusión</strong></a></li>
-        <li><a href="#diferencias-clave-entre-systemctl-y-apachectl"><strong>Diferencias clave entre systemctl y apachectl</strong></a></li>
-        <li><a href="#hosts-virtuales">Hosts Virtuales</a></li>
-        <li><a href="#opciones-de-seguridad-obligatoria">Opciones de Seguridad Obligatoria</a></li>
-        <li><a href="#letsencrypt">LetsEncrypt</a></li>
-        <li><a href="#alias">Alias</a></li>
-        <li><a href="#autenticación">Autenticación</a></li>
-        <li><a href="#rewrite">Rewrite</a></li>
-        <li><a href="#referencias">Referencias</a></li>
       </ul>
     </li>
   </ul>
@@ -229,7 +239,7 @@
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
   <li class="breadcrumb-item">
-    <a href="/php/es/docs/">Servicios</a></li>
+    <a href="/servicios/es/docs/">Servicios</a></li>
   <li class="breadcrumb-item active" aria-current="page">
     Apache</li>
   </ol>
@@ -237,7 +247,7 @@
             
 <div class="td-content">
 	<h1>Servicios Web con Apache</h1>
-	<div class="lead">Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.</div>
+  <div class="lead">Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.</div>
 	<header class="article-meta">
 		
 </header>
@@ -291,14 +301,14 @@
 
 </div>
 
-<h3 id="introducción">Introducción</h3>
+<h3 id="1--introducción">1.- Introducción</h3>
 <p><strong>Apache HTTP Server</strong>, comúnmente conocido como Apache, es uno de los servidores web más utilizados en el mundo.</p>
 <p>Como características, podrímos destacar su flexibilidad, estabilidad y gran cantidad de módulos lo convierten en una opción ideal para gestionar servicios web en entornos variados.</p>
 <p>Vemos en la siguiente imagen cómo apache es escalable a través de módulos que podremos ir integrando según vayamos necesitando
-<img src="/php/es/docs/01_apache/apache.png" alt="apache.png"></p>
+<img src="/servicios/es/docs/01_apache/apache.png" alt="apache.png"></p>
 <hr style="border-color: red; border-width: 3px;"/>
 <p>En este tema, exploraremos cómo instalar Apache, configurarlo y aprovechar sus funcionalidades clave para implementar servicios web efectivos. También aprenderemos a utilizarlo en un entorno virtualizado con Vagrant, facilitando la práctica en un entorno controlado y replicable.</p>
-<h3 id="instalación">Instalación</h3>
+<h3 id="2--instalación">2.- Instalación</h3>
 <p>Para instalar Apache en sistemas basados en Debian/Ubuntu.</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -319,7 +329,7 @@
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>sudo systemctl status apache2</span></span></code></pre></td></tr></table>
 </div>
 </div>
-<h3 id="archivos-de-configuración"><strong>Archivos de configuración</strong></h3>
+<h3 id="3--archivos-de-configuración">3.- <strong>Archivos de configuración</strong></h3>
 <p>
 <strong>
 <span class="font-weight-bold text-primary">
@@ -336,7 +346,20 @@
 <li><strong>/etc/apache2/sites-available/</strong>: Directorios para configuraciones específicas de sitios.</li>
 <li><strong>/etc/apache2/sites-enabled/</strong>: Enlaces simbólicos a los sitios habilitados.</li>
 </ul>
-<h3 id="principales-herramientas"><strong>Principales herramientas</strong></h3>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Editando ficheros</h4>
+
+    <ul>
+<li>Para poder acceder a los ficheros desde un editor, podemos compartir una carpeta y crear un enlace simbólico</li>
+<li>También podríamos conectar por ssh desde nuestro edi.</li>
+</ul>
+
+
+</div>
+
+<h3 id="4--principales-herramientas">4.- <strong>Principales herramientas</strong></h3>
 <ol>
 <li><strong>apache2</strong><br>
 Binario principal para ejecutar el servidor Apache.</li>
@@ -346,7 +369,7 @@ Interfaz para administrar Apache, recomendada para tareas como iniciar, detener 
 <blockquote>
 <blockquote>
 <p>Por lo que se comenta posteriormente, usaremos <strong>apachectl</strong> en lugar de <strong>apache2</strong>, ya que ambas herramientas permiten interactuar con Apache, pero <strong>apachectl</strong> simplifica la administración al abstraer configuraciones y proporcionar comandos específicos como <code>configtest</code> o <code>graceful</code>, logrando los mismos objetivos de forma más práctica.
-Por lo que se comenta posteriormente, usaremos <strong>apachectl</strong> en lugar de <strong>apache2</strong>, ya que ambas herramientas permiten interactuar con Apache, pero <strong>apachectl</strong> simplifica la administración al abstraer configuraciones y proporcionar comandos específicos como <code>configtest</code> o <code>graceful</code>, logrando los mismos objetivos de forma más práctica.</p>
+<strong>apachectl</strong> simplifica la administración al abstraer configuraciones y proporcionar comandos específicos como <code>configtest</code> o <code>graceful</code>, logrando los mismos objetivos de forma más práctica.</p>
 </blockquote>
 </blockquote>
 <ol start="3">
@@ -364,7 +387,7 @@ Comando heredado para manejar servicios, útil en sistemas sin <code>systemd</co
 </li>
 </ol>
 <hr>
-<h3 id="comandos-específicos-de-apache"><strong>Comandos específicos de Apache</strong></h3>
+<h3 id="5--comandos-específicos-de-apache">5.- <strong>Comandos específicos de Apache</strong></h3>
 <ol>
 <li>
 <p><strong>a2enmod</strong><br>
@@ -439,7 +462,7 @@ Deshabilita configuraciones adicionales.</p>
 </div>
 </li>
 </ol>
-<h3 id="herramientas-relacionadas-con-seguridad-y-autenticación"><strong>Herramientas relacionadas con seguridad y autenticación</strong></h3>
+<h3 id="6--herramientas-relacionadas-con-seguridad-y-autenticación">6.- <strong>Herramientas relacionadas con seguridad y autenticación</strong></h3>
 <ol>
 <li>
 <p><strong>htpasswd</strong><br>
@@ -467,7 +490,7 @@ Genera certificados SSL para configuraciones HTTPS.</p>
 </li>
 </ol>
 <hr>
-<h3 id="herramientas-adicionales"><strong>Herramientas adicionales</strong></h3>
+<h3 id="7--herramientas-adicionales">7.- <strong>Herramientas adicionales</strong></h3>
 <ol>
 <li>
 <p><strong>logrotate</strong><br>
@@ -501,7 +524,7 @@ Limpia la caché de Apache.</li>
 </ol>
 <blockquote>
 <blockquote>
-<p>Establecemos una limplieza de cache cada 30 segundos de ficheros antiguos o innecesarios  en el directorio /var/cache/apache2/proxy que es el que utiliza apache por defecto (Configurable en la directiva CacheRoot). Lo hace en modo bloqueante (por defecto), lo que implica que está activo mientras esté el proceso corriendo.
+<p>Establecemos una limplieza de cache cada 30 segundos de ficheros antiguos o innecesarios en el directorio /var/cache/apache2/proxy que es el que utiliza apache por defecto (Configurable en la directiva CacheRoot). Lo hace en modo bloqueante (por defecto), lo que implica que está activo mientras esté el proceso corriendo.
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -519,6 +542,7 @@ ejemplo de configuración para la cache
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span>   <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">IfModule</span> <span style="color:#a6e22e">mod_cache_disk</span><span style="color:#f92672">.</span><span style="color:#a6e22e">c</span><span style="color:#f92672">&gt;</span>
@@ -526,7 +550,9 @@ ejemplo de configuración para la cache
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">CacheEnable</span> <span style="color:#a6e22e">disk</span> <span style="color:#f92672">/</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">CacheDirLevels</span> <span style="color:#ae81ff">2</span>
 </span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">CacheDirLength</span> <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">IfModule</span><span style="color:#f92672">&gt;</span></span></span></code></pre></td></tr></table>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">&lt;/</span><span style="color:#a6e22e">IfModule</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&gt;</span> <span style="color:#f92672">&gt;</span> 
+</span></span></code></pre></td></tr></table>
 </div>
 </div></p>
 </blockquote>
@@ -776,345 +802,37 @@ Sin embargo, para simplificar la administración, se recomienda utilizar herrami
 <li><strong><code>apachectl</code></strong> es más específico y práctico para tareas relacionadas únicamente con Apache.</li>
 <li><strong><code>systemctl</code></strong> es más general y se usa para administrar múltiples servicios en sistemas modernos.</li>
 </ul>
-<h3 id="diferencias-clave-entre-systemctl-y-apachectl"><strong>Diferencias clave entre systemctl y apachectl</strong></h3>
-<h4 id="lo-que-systemctl-puede-hacer-y-apachectl-no"><strong>Lo que <code>systemctl</code> puede hacer y <code>apachectl</code> no:</strong></h4>
-<ol>
-<li>
-<p><strong>Administrar servicios en general:</strong>
-<code>systemctl</code> puede gestionar cualquier servicio del sistema, no solo Apache.</p>
-</li>
-<li>
-<p><strong>Habilitar o deshabilitar Apache en el arranque:</strong>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl enable apache2
-</span></span><span style="display:flex;"><span>sudo systemctl disable apache2</span></span></code></pre></td></tr></table>
-</div>
-</div>
-Con <code>apachectl</code>, no se pueden gestionar servicios al arranque.</p>
-</li>
-<li>
-<p><strong>Supervisar el estado del servicio Apache:</strong>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl status apache2</span></span></code></pre></td></tr></table>
-</div>
-</div>
-Esto incluye información detallada del servicio, como logs y errores recientes.</p>
-</li>
-<li>
-<p><strong>Ver y gestionar logs con <code>journalctl</code>:</strong>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo journalctl -u apache2</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<code>apachectl</code> no tiene acceso directo a los logs gestionados por <code>systemd</code>.</p>
-</li>
-</ol>
-<h4 id="lo-que-apachectl-puede-hacer-y-systemctl-no"><strong>Lo que <code>apachectl</code> puede hacer y <code>systemctl</code> no:</strong></h4>
-<ol>
-<li><strong>Verificar la configuración de Apache:</strong>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apachectl configtest</span></span></code></pre></td></tr></table>
-</div>
-</div></li>
-</ol>
-<h3 id="hosts-virtuales">Hosts Virtuales</h3>
-<p>Apache permite alojar múltiples sitios web mediante Hosts Virtuales. Estos pueden ser:</p>
-<h4 id="basados-en-ip">Basados en IP</h4>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>&lt;VirtualHost *:80&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>DocumentRoot /var/www/misitio<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;/VirtualHost&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;VirtualHost *:8080&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>DocumentRoot /var/www/otrositio<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;/VirtualHost&gt;</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<h4 id="basados-en-nombre">Basados en nombre</h4>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>&lt;VirtualHost *:80&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>DocumentRoot /var/www/uno<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>ServerName www.unsitio.com<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;/VirtualHost&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;VirtualHost *:80&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>DocumentRoot /var/www/otro<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>ServerName www.otrositio.org<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;/VirtualHost&gt;</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<p>Para gestionar los hosts, edita el archivo /etc/hosts o configura un DNS local.</p>
-<hr style="border-color: red; border-width: 3px;"/>
-<p><strong>Nota:</strong> Si hemos configurado nuestro sitio con opciones específicas, estas deben establecerse en la zona del VirtualHost que use SSL (puerto 443). Esto se debe a que las peticiones redirigidas desde HTTP (puerto 80) a HTTPS (puerto 443) solo aplicarán configuraciones realizadas en este último. Por ejemplo:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>&lt;VirtualHost *:443&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>DocumentRoot /var/www/seguro<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLEngine On<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLCertificateFile /etc/ssl/certs/ssl-cert-snakeoil.pem<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;/VirtualHost&gt;</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<hr style="border-color: red; border-width: 3px;"/>
-<h3 id="opciones-de-seguridad-obligatoria">Opciones de Seguridad Obligatoria</h3>
-<p>Para garantizar comunicaciones seguras, considera implementar las siguientes medidas:</p>
-<h4 id="forzar-cifrados-fuertes">Forzar cifrados fuertes</h4>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>SSLCipherSuite RC4-SHA:AES128-SHA:HIGH:!aNULL:!MD5<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLHonorCipherOrder on</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<h4 id="evitar-ataques-conocidos-como-poodle">Evitar ataques conocidos (como POODLE)</h4>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>ssl_protocols TLSv1 TLSv1.1 TLSv1.2;</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<h4 id="forward-secrecy-fs">Forward Secrecy (FS)</h4>
-<p>Asegura la creación de claves efímeras para mejorar la privacidad:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>SSLCipherSuite <span style="color:#e6db74">&#34;ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384&#34;</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLHonorCipherOrder on</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<h3 id="letsencrypt">LetsEncrypt</h3>
-<p>Para obtener certificados gratuitos y reconocidos por navegadores comunes, utiliza LetsEncrypt. Es una solución automatizada que verifica el dominio y configura Apache para usar HTTPS. Pasos:</p>
-<ol>
-<li>Instala Certbot:</li>
-</ol>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>sudo apt install certbot python3-certbot-apache</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<ol start="2">
-<li>Obtén un certificado:</li>
-</ol>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>sudo certbot --apache</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<ol start="3">
-<li>Renueva automáticamente los certificados:</li>
-</ol>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>sudo certbot renew --dry-run</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<p><strong>Práctica:</strong> Implementa un servidor web con LetsEncrypt. Asegúrate de que el servidor sea público y abre los puertos necesarios para que Certbot pueda verificar el dominio.</p>
-<hr style="border-color: red; border-width: 3px;"/>
-<h3 id="alias">Alias</h3>
-<p>Los alias permiten &ldquo;camuflar&rdquo; directorios largos o fuera del DocumentRoot:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>Alias /icons/ <span style="color:#e6db74">&#34;/usr/local/apache2.4/icons/&#34;</span></span></span></code></pre></td></tr></table>
-</div>
-</div>
-<h3 id="autenticación">Autenticación</h3>
-<p>Configura autenticación básica para proteger secciones del sitio:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>&lt;Directory <span style="color:#e6db74">&#34;/var/www/miweb/privado&#34;</span>&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>AuthUserFile <span style="color:#e6db74">&#34;/etc/apache2/claves/passwd.txt&#34;</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>AuthName <span style="color:#e6db74">&#34;Acceso restringido&#34;</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>AuthType Basic<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>Require valid-user<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;/Directory&gt;</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<p>Genera el archivo de contraseñas con <code>htpasswd</code>:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>htpasswd -c /etc/apache2/claves/passwd.txt usuario</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<h3 id="rewrite">Rewrite</h3>
-<p>El módulo <code>mod_rewrite</code> permite redireccionar dinámicamente peticiones HTTP. Esto es útil, por ejemplo, para redirigir todo el tráfico HTTP hacia HTTPS. Para habilitar este módulo:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>sudo a2enmod rewrite<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>sudo systemctl restart apache2</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<p>Ejemplo de redirección de HTTP a HTTPS:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>&lt;VirtualHost *:80&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>DocumentRoot /var/www<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>RewriteEngine On<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>RewriteCond %<span style="color:#f92672">{</span>HTTPS<span style="color:#f92672">}</span> !<span style="color:#f92672">=</span>on<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>RewriteRule ^/<span style="color:#f92672">(</span>.*<span style="color:#f92672">)</span>$ https://%<span style="color:#f92672">{</span>SERVER_NAME<span style="color:#f92672">}</span>/$1 <span style="color:#f92672">[</span>R,L<span style="color:#f92672">]</span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;/VirtualHost&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;VirtualHost *:443&gt;<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>DocumentRoot /var/www<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLEngine On<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLCertificateFile /etc/ssl/certs/ssl-cert-snakeoil.pem<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>SSLCertificateKeyFile /etc/ssl/private/ssl-cert-snakeoil.key<span style="color:#960050;background-color:#1e0010">
-</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>&lt;/VirtualHost&gt;</span></span></code></pre></td></tr></table>
-</div>
-</div>
-<p>En este ejemplo, cualquier petición recibida en el puerto 80 será redirigida automáticamente al puerto 443 utilizando HTTPS.</p>
-<hr style="border-color: red; border-width: 3px;"/>
-<h3 id="referencias">Referencias</h3>
 
-
-
-
-<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
-    <div style="background-color: navy; color: white;
-    font-weight: bold; padding: 10px; display: flex; align-items: center;">
-        
-        <span style="margin-right: 8px;">
-            
-                <img src="apache.png" alt="Icono de Referencias" style="width: 24px; height: 24px;">
-            
-        </span>
-        
-        <span>Documentación de Apache</span>
-    </div>
-
-    <h3 style="padding: 5px; font-weight: bold; color: navy;">Fuentes confiables</h3>
-
-    <hr style="border-color: lightblue; border-width: 3px"/>
+  <div class="section-index">
     
-    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
-        <ul>
-            
-            
-            <li><ul>
-<li><a href="https://httpd.apache.org/docs/">Guía oficial de Apache</a></li>
-</ul>
-</li>
-            
-            <li><ul>
-<li><a href="https://httpd.apache.org/docs/2.4/vhosts/">Configuración de Hosts Virtuales</a></li>
-</ul>
-</li>
-            
-            <li><ul>
-<li><a href="https://httpd.apache.org/docs/2.4/mod/mod_ssl.html">Módulo SSL en Apache</a></li>
-</ul>
-</li>
-            
-            <li><ul>
-<li><a href="https://httpd.apache.org/docs/2.4/mod/mod_rewrite.html">Módulo Rewrite en Apache</a></li>
-</ul>
-</li>
-            
-            
-            
-            
-        </ul>
-    </div>
+    
+    <hr class="panel-line">
+        <div class="entry">
+                <h5>
+                    <a href="/servicios/es/docs/01_apache/01_virtualhost/">VirtualHost</a>
+                </h5>
+                <p></p>
+            </div>
+        <div class="entry">
+                <h5>
+                    <a href="/servicios/es/docs/01_apache/02_auth/">Auth</a>
+                </h5>
+                <p></p>
+            </div>
+        <div class="entry">
+                <h5>
+                    <a href="/servicios/es/docs/01_apache/03_https/">Https</a>
+                </h5>
+                <p></p>
+            </div>
+        <div class="entry">
+                <h5>
+                    <a href="/servicios/es/docs/01_apache/04_rewrite/">Rewrite</a>
+                </h5>
+                <p></p>
+            </div>
+        </div>
 </div>
-
-<hr style="border-color: red; border-width: 3px;"/>
-
-	
-</div>
-
 
           </main>
         </div>
@@ -1151,9 +869,9 @@ Esto incluye información detallada del servicio, como logs y errores recientes.
 </footer>
 
     </div>
-    <script src="/php/js/main.js"></script>
-<script defer src="/php/js/click-to-copy.js" crossorigin="anonymous"></script>
-<script src='/php/js/tabpane-persist.js'></script>
+    <script src="/servicios/js/main.js"></script>
+<script defer src="/servicios/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/servicios/js/tabpane-persist.js'></script>
 
   </body>
 </html>

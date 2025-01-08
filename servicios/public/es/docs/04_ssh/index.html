@@ -1,27 +1,27 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head><script src="/php/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=php/livereload" data-no-instant defer></script>
+  <head><script src="/servicios/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=servicios/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
 
 
-<link rel="shortcut icon" href="/php/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/php/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/php/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/php/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/php/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/php/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/php/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/php/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/php/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/php/favicons/android-192x192.png" sizes="192x192">
+<link rel="shortcut icon" href="/servicios/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/servicios/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/servicios/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/servicios/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-192x192.png" sizes="192x192">
 
 <title>Servicios Web con Apache | Despliegue de Aplicaciones Web</title>
 <meta name="description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.
 ">
 
-<meta property="og:url" content="http://localhost:1313/php/es/docs/04_ssh/">
+<meta property="og:url" content="http://localhost:1313/servicios/es/docs/04_ssh/">
   <meta property="og:site_name" content="Despliegue de Aplicaciones Web">
   <meta property="og:title" content="Servicios Web con Apache">
   <meta property="og:description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.">
@@ -40,7 +40,7 @@
   <meta name="twitter:description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.">
 
 
-<link href="/php/scss/main.css" rel="stylesheet">
+<link href="/servicios/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -51,8 +51,8 @@
     <header>
       <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
 <div class="container-fluid flex-column flex-md-row ">
-  <a class="navbar-brand" href="/php/es/"><span class="navbar-brand__logo navbar-logo">
-    <img src="/php/images/logo.png" alt="Logo" width="150" height="auto" />
+  <a class="navbar-brand" href="/servicios/es/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/servicios/images/logo.png" alt="Logo" width="150" height="auto" />
     </span><span class="navbar-brand__name">Despliegue de Aplicaciones Web</span></a>
   <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
     <ul class="navbar-nav">
@@ -60,8 +60,8 @@
         <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/php/en/">English</a></li>
-    <li><a class="dropdown-item" href="/php/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/servicios/en/">English</a></li>
+    <li><a class="dropdown-item" href="/servicios/fr/">Francés</a></li>
     </ul>
 </div></li>
       <li class="td-light-dark-menu nav-item dropdown">
@@ -139,42 +139,61 @@
       <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/php/en/">English</a></li>
-    <li><a class="dropdown-item" href="/php/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/servicios/en/">English</a></li>
+    <li><a class="dropdown-item" href="/servicios/fr/">Francés</a></li>
     </ul>
 </div>
     </div>
     <ul class="td-sidebar-nav__section pe-md-3 ul-0">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-phpesdocs-li">
-  <a href="/php/es/docs/" title="Servicios en Despliegue de Aplicaciones Web" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-phpesdocs"><i class="fas fa-network-wired"></i><span class="">Servicios</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-serviciosesdocs-li">
+  <a href="/servicios/es/docs/" title="Servicios en Despliegue de Aplicaciones Web" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-serviciosesdocs"><i class="fas fa-network-wired"></i><span class="">Servicios</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-phpesdocs00_entorno-li">
-  <input type="checkbox" id="m-phpesdocs00_entorno-check"/>
-  <label for="m-phpesdocs00_entorno-check"><a href="/php/es/docs/00_entorno/" title="Sistema base de entorno" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-phpesdocs00_entorno"><i class="fas fa-cube"></i><span class="">Entorno de ejecución </span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs00_entorno-li">
+  <input type="checkbox" id="m-serviciosesdocs00_entorno-check"/>
+  <label for="m-serviciosesdocs00_entorno-check"><a href="/servicios/es/docs/00_entorno/" title="Sistema base de entorno" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs00_entorno"><i class="fas fa-cube"></i><span class="">Entorno de ejecución </span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-phpesdocs01_apache-li">
-  <input type="checkbox" id="m-phpesdocs01_apache-check"/>
-  <label for="m-phpesdocs01_apache-check"><a href="/php/es/docs/01_apache/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-phpesdocs01_apache"><i class="fas fa-feather"></i><span class="">Apache</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-serviciosesdocs01_apache-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache-check"/>
+  <label for="m-serviciosesdocs01_apache-check"><a href="/servicios/es/docs/01_apache/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-serviciosesdocs01_apache"><i class="fas fa-feather"></i><span class="">Apache</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-phpesdocs02_nginx-li">
-  <input type="checkbox" id="m-phpesdocs02_nginx-check"/>
-  <label for="m-phpesdocs02_nginx-check"><a href="/php/es/docs/02_nginx/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-phpesdocs02_nginx"><i class="fas fa-server"></i><span class="">Nginx</span></a></label>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs01_apache01_virtualhost-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache01_virtualhost-check"/>
+  <label for="m-serviciosesdocs01_apache01_virtualhost-check"><a href="/servicios/es/docs/01_apache/01_virtualhost/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache01_virtualhost"><i class="fas fa-key"></i><span class="">VirtualHost</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-phpesdocs03_dns-li">
-  <input type="checkbox" id="m-phpesdocs03_dns-check"/>
-  <label for="m-phpesdocs03_dns-check"><a href="/php/es/docs/03_dns/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-phpesdocs03_dns"><i class="fas fa-globe"></i><span class="">Bind (dns)</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs01_apache02_auth-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache02_auth-check"/>
+  <label for="m-serviciosesdocs01_apache02_auth-check"><a href="/servicios/es/docs/01_apache/02_auth/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache02_auth"><i class="fas fa-key"></i><span class="">Auth</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-phpesdocs04_ssh-li">
-  <input type="checkbox" id="m-phpesdocs04_ssh-check" checked/>
-  <label for="m-phpesdocs04_ssh-check"><a href="/php/es/docs/04_ssh/" title="Servicios Web con Apache" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-phpesdocs04_ssh"><i class="fas fa-terminal"></i><span class="td-sidebar-nav-active-item">SSH</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs01_apache03_https-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache03_https-check"/>
+  <label for="m-serviciosesdocs01_apache03_https-check"><a href="/servicios/es/docs/01_apache/03_https/" title="Https" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache03_https"><i class="fas fa-key"></i><span class="">Https y certificados</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-phpesdocs05_fpt-li">
-  <input type="checkbox" id="m-phpesdocs05_fpt-check"/>
-  <label for="m-phpesdocs05_fpt-check"><a href="/php/es/docs/05_fpt/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-phpesdocs05_fpt"><i class="fas fa-folder-open"></i><span class="">FTP</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs01_apache04_rewrite-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache04_rewrite-check"/>
+  <label for="m-serviciosesdocs01_apache04_rewrite-check"><a href="/servicios/es/docs/01_apache/04_rewrite/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache04_rewrite"><i class="fas fa-cogs"></i><span class="">Rewrite</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-phpesdocs05_sfpt-li">
-  <input type="checkbox" id="m-phpesdocs05_sfpt-check"/>
-  <label for="m-phpesdocs05_sfpt-check"><a href="/php/es/docs/05_sfpt/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-phpesdocs05_sfpt"><i class="fas fa-lock"></i><span class="">SFTP</span></a></label>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs02_nginx-li">
+  <input type="checkbox" id="m-serviciosesdocs02_nginx-check"/>
+  <label for="m-serviciosesdocs02_nginx-check"><a href="/servicios/es/docs/02_nginx/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs02_nginx"><i class="fas fa-server"></i><span class="">Nginx</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs03_dns-li">
+  <input type="checkbox" id="m-serviciosesdocs03_dns-check"/>
+  <label for="m-serviciosesdocs03_dns-check"><a href="/servicios/es/docs/03_dns/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs03_dns"><i class="fas fa-globe"></i><span class="">Bind (dns)</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-serviciosesdocs04_ssh-li">
+  <input type="checkbox" id="m-serviciosesdocs04_ssh-check" checked/>
+  <label for="m-serviciosesdocs04_ssh-check"><a href="/servicios/es/docs/04_ssh/" title="Servicios Web con Apache" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs04_ssh"><i class="fas fa-terminal"></i><span class="td-sidebar-nav-active-item">SSH</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs05_fpt-li">
+  <input type="checkbox" id="m-serviciosesdocs05_fpt-check"/>
+  <label for="m-serviciosesdocs05_fpt-check"><a href="/servicios/es/docs/05_fpt/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs05_fpt"><i class="fas fa-folder-open"></i><span class="">FTP</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs05_sfpt-li">
+  <input type="checkbox" id="m-serviciosesdocs05_sfpt-check"/>
+  <label for="m-serviciosesdocs05_sfpt-check"><a href="/servicios/es/docs/05_sfpt/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs05_sfpt"><i class="fas fa-lock"></i><span class="">SFTP</span></a></label>
   
 </li>
   </ul>
@@ -186,7 +205,7 @@
           </aside>
           <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
             <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
-<a id="print" href="/php/es/docs/_print/"><i class="fa-solid fa-print fa-fw"></i> Imprimir la sección entera</a>
+<a id="print" href="/servicios/es/docs/_print/"><i class="fa-solid fa-print fa-fw"></i> PDF</a>
 
 </div>
 
@@ -201,7 +220,7 @@
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
   <li class="breadcrumb-item">
-    <a href="/php/es/docs/">Servicios</a></li>
+    <a href="/servicios/es/docs/">Servicios</a></li>
   <li class="breadcrumb-item active" aria-current="page">
     SSH</li>
   </ol>
@@ -253,9 +272,9 @@
 </footer>
 
     </div>
-    <script src="/php/js/main.js"></script>
-<script defer src="/php/js/click-to-copy.js" crossorigin="anonymous"></script>
-<script src='/php/js/tabpane-persist.js'></script>
+    <script src="/servicios/js/main.js"></script>
+<script defer src="/servicios/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/servicios/js/tabpane-persist.js'></script>
 
   </body>
 </html>

@@ -25,6 +25,16 @@ https://www.docsy.dev/docs/adding-content/lookandfeel/#project-style-files
   font-size: 1rem;
   /* Ajusta según el tamaño que prefieras */ }
 
+#TableOfContents {
+  font-size: 0.6em;
+  /* Ajusta el tamaño según tus necesidades */
+  line-height: 1.4;
+  /* Opcional: Mejora el espaciado entre líneas */ }
+
+#TableOfContents ul {
+  padding-left: 1rem;
+  /* Opcional: Ajusta la indentación */ }
+
 :root,
 [data-bs-theme="light"] {
   --td-pre-bg: var(--bs-tertiary-bg); }
@@ -20875,5 +20885,37 @@ div.drawioframe {
   /* Aumenta el tamaño del contenido */
   transform-origin: 0 0;
   overflow: auto; }
+
+/* Auto Numbering */
+body {
+  counter-reset: h2; }
+
+h2, .h2 {
+  counter-reset: h3; }
+
+h3, .h3, .td-footer__links-item {
+  counter-reset: h4; }
+
+h4, .h4 {
+  counter-reset: h5; }
+
+article[autonumbering] h2:before, article[autonumbering] .h2:before {
+  counter-increment: h2;
+  content: counter(h2) ". "; }
+
+article[autonumbering] h3:before, article[autonumbering] .h3:before, article[autonumbering] .td-footer__links-item:before {
+  counter-increment: h3;
+  content: counter(h2) "." counter(h3) ". "; }
+
+article[autonumbering] h4:before, article[autonumbering] .h4:before {
+  counter-increment: h4;
+  content: counter(h2) "." counter(h3) "." counter(h4) ". "; }
+
+article[autonumbering] .toc__menu ul {
+  counter-reset: item; }
+
+article[autonumbering] .toc__menu li a:before {
+  content: counters(item, ".") ". ";
+  counter-increment: item; }
 
 /*# sourceMappingURL=main.css.map */

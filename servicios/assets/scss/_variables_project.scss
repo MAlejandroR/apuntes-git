@@ -25,3 +25,12 @@ $sidebar-font-size: 1.2 rem; /* Define el tamaño de fuente específico para el 
 .td-sidebar-nav__section .ul-4 {
   font-size: 1rem; /* Ajusta según el tamaño que prefieras */
 }
+
+#TableOfContents {
+  font-size: 0.6em; /* Ajusta el tamaño según tus necesidades */
+  line-height: 1.4; /* Opcional: Mejora el espaciado entre líneas */
+}
+
+#TableOfContents ul {
+  padding-left: 1rem; /* Opcional: Ajusta la indentación */
+}

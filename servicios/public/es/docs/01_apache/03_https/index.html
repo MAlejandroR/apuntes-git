@@ -1,0 +1,519 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/servicios/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=servicios/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/servicios/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/servicios/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/servicios/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/servicios/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-192x192.png" sizes="192x192">
+
+<title>Https | Despliegue de Aplicaciones Web</title>
+<meta name="description" content=" Referencias Fuentes de Información https://aws.amazon.com/es/what-is/ssl-certificate/ Configuración de HTTP, HTTPS y Certificados SSL en Apache Apache permite configurar servidores web para admitir conexiones HTTP y HTTPS.
+La configuración de HTTPS requiere el uso de certificados SSL/TLS protocolo (Secure Socket Layers/ Transport Layer Aecurity), que garantizan una comunicación segura mediante cifrado.">
+
+<meta property="og:url" content="http://localhost:1313/servicios/es/docs/01_apache/03_https/">
+  <meta property="og:site_name" content="Despliegue de Aplicaciones Web">
+  <meta property="og:title" content="Https">
+  <meta property="og:description" content="Referencias Fuentes de Información https://aws.amazon.com/es/what-is/ssl-certificate/ Configuración de HTTP, HTTPS y Certificados SSL en Apache Apache permite configurar servidores web para admitir conexiones HTTP y HTTPS.
+La configuración de HTTPS requiere el uso de certificados SSL/TLS protocolo (Secure Socket Layers/ Transport Layer Aecurity), que garantizan una comunicación segura mediante cifrado.">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2024-12-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-18T00:00:00+00:00">
+
+  <meta itemprop="name" content="Https">
+  <meta itemprop="description" content="Referencias Fuentes de Información https://aws.amazon.com/es/what-is/ssl-certificate/ Configuración de HTTP, HTTPS y Certificados SSL en Apache Apache permite configurar servidores web para admitir conexiones HTTP y HTTPS.
+La configuración de HTTPS requiere el uso de certificados SSL/TLS protocolo (Secure Socket Layers/ Transport Layer Aecurity), que garantizan una comunicación segura mediante cifrado.">
+  <meta itemprop="datePublished" content="2024-12-18T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-12-18T00:00:00+00:00">
+  <meta itemprop="wordCount" content="551">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Https">
+  <meta name="twitter:description" content="Referencias Fuentes de Información https://aws.amazon.com/es/what-is/ssl-certificate/ Configuración de HTTP, HTTPS y Certificados SSL en Apache Apache permite configurar servidores web para admitir conexiones HTTP y HTTPS.
+La configuración de HTTPS requiere el uso de certificados SSL/TLS protocolo (Secure Socket Layers/ Transport Layer Aecurity), que garantizan una comunicación segura mediante cifrado.">
+
+
+<link href="/servicios/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-page">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/servicios/es/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/servicios/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Despliegue de Aplicaciones Web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/servicios/en/">English</a></li>
+    <li><a class="dropdown-item" href="/servicios/fr/">Francés</a></li>
+    </ul>
+</div></li>
+      <li class="td-light-dark-menu nav-item dropdown">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+  <symbol id="circle-half" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+  </symbol>
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+  </symbol>
+</svg>
+
+<button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        data-bs-display="static"
+        aria-label="Toggle theme (auto)">
+  <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+</button>
+<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#sun-fill"></use></svg>
+      Light
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#moon-stars-fill"></use></svg>
+      Dark
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+      <svg class="bi me-2 opacity-50"><use href="#circle-half"></use></svg>
+      Auto
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+</ul>
+
+      </li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <div class="td-sidebar-nav__section nav-item dropdown d-block d-lg-none">
+      <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/servicios/en/">English</a></li>
+    <li><a class="dropdown-item" href="/servicios/fr/">Francés</a></li>
+    </ul>
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-serviciosesdocs-li">
+  <a href="/servicios/es/docs/" title="Servicios en Despliegue de Aplicaciones Web" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-serviciosesdocs"><i class="fas fa-network-wired"></i><span class="">Servicios</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs00_entorno-li">
+  <input type="checkbox" id="m-serviciosesdocs00_entorno-check"/>
+  <label for="m-serviciosesdocs00_entorno-check"><a href="/servicios/es/docs/00_entorno/" title="Sistema base de entorno" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs00_entorno"><i class="fas fa-cube"></i><span class="">Entorno de ejecución </span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-serviciosesdocs01_apache-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache-check" checked/>
+  <label for="m-serviciosesdocs01_apache-check"><a href="/servicios/es/docs/01_apache/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-serviciosesdocs01_apache"><i class="fas fa-feather"></i><span class="">Apache</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs01_apache01_virtualhost-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache01_virtualhost-check"/>
+  <label for="m-serviciosesdocs01_apache01_virtualhost-check"><a href="/servicios/es/docs/01_apache/01_virtualhost/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache01_virtualhost"><i class="fas fa-key"></i><span class="">VirtualHost</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs01_apache02_auth-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache02_auth-check"/>
+  <label for="m-serviciosesdocs01_apache02_auth-check"><a href="/servicios/es/docs/01_apache/02_auth/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache02_auth"><i class="fas fa-key"></i><span class="">Auth</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-serviciosesdocs01_apache03_https-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache03_https-check" checked/>
+  <label for="m-serviciosesdocs01_apache03_https-check"><a href="/servicios/es/docs/01_apache/03_https/" title="Https" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache03_https"><i class="fas fa-key"></i><span class="td-sidebar-nav-active-item">Https y certificados</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs01_apache04_rewrite-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache04_rewrite-check"/>
+  <label for="m-serviciosesdocs01_apache04_rewrite-check"><a href="/servicios/es/docs/01_apache/04_rewrite/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache04_rewrite"><i class="fas fa-cogs"></i><span class="">Rewrite</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs02_nginx-li">
+  <input type="checkbox" id="m-serviciosesdocs02_nginx-check"/>
+  <label for="m-serviciosesdocs02_nginx-check"><a href="/servicios/es/docs/02_nginx/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs02_nginx"><i class="fas fa-server"></i><span class="">Nginx</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs03_dns-li">
+  <input type="checkbox" id="m-serviciosesdocs03_dns-check"/>
+  <label for="m-serviciosesdocs03_dns-check"><a href="/servicios/es/docs/03_dns/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs03_dns"><i class="fas fa-globe"></i><span class="">Bind (dns)</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs04_ssh-li">
+  <input type="checkbox" id="m-serviciosesdocs04_ssh-check"/>
+  <label for="m-serviciosesdocs04_ssh-check"><a href="/servicios/es/docs/04_ssh/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs04_ssh"><i class="fas fa-terminal"></i><span class="">SSH</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs05_fpt-li">
+  <input type="checkbox" id="m-serviciosesdocs05_fpt-check"/>
+  <label for="m-serviciosesdocs05_fpt-check"><a href="/servicios/es/docs/05_fpt/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs05_fpt"><i class="fas fa-folder-open"></i><span class="">FTP</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs05_sfpt-li">
+  <input type="checkbox" id="m-serviciosesdocs05_sfpt-check"/>
+  <label for="m-serviciosesdocs05_sfpt-check"><a href="/servicios/es/docs/05_sfpt/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs05_sfpt"><i class="fas fa-lock"></i><span class="">SFTP</span></a></label>
+  
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+<a id="print" href="/servicios/es/docs/01_apache/_print/"><i class="fa-solid fa-print fa-fw"></i> PDF</a>
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#configuración-de-http-https-y-certificados-ssl-en-apache">Configuración de HTTP, HTTPS y Certificados SSL en Apache</a>
+      <ul>
+        <li><a href="#1-diferencia-entre-http-y-https">1. <strong>Diferencia entre HTTP y HTTPS</strong></a></li>
+        <li><a href="#las-características">Las características</a></li>
+        <li><a href="#2-pasos-para-configurar-https-en-apache">2. <strong>Pasos para configurar HTTPS en Apache</strong></a></li>
+        <li><a href="#3-redirigir-http-a-https-automáticamente">3. <strong>Redirigir HTTP a HTTPS automáticamente</strong></a></li>
+        <li><a href="#4-verificar-la-configuración">4. <strong>Verificar la configuración</strong></a></li>
+        <li><a href="#notas-adicionales">Notas adicionales</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/servicios/es/docs/">Servicios</a></li>
+  <li class="breadcrumb-item">
+    <a href="/servicios/es/docs/01_apache/">Apache</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    Https y certificados</li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Https</h1>
+	
+	<header class="article-meta">
+		
+</header>
+	
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Referencias</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Fuentes de Información</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
+    
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            <li><a href="https://aws.amazon.com/es/what-is/ssl-certificate/">https://aws.amazon.com/es/what-is/ssl-certificate/</a></li>
+            
+            
+            
+            
+        </ul>
+    </div>
+</div>
+
+<h2 id="configuración-de-http-https-y-certificados-ssl-en-apache">Configuración de HTTP, HTTPS y Certificados SSL en Apache</h2>
+<p><strong>Apache</strong> permite configurar servidores web para admitir  <strong>conexiones HTTP y HTTPS</strong>.</p>
+<p>La configuración de <strong>HTTPS</strong> requiere el uso de <strong>certificados SSL/TLS <em>protocolo (Secure Socket Layers/ Transport Layer Aecurity)</em></strong>, que garantizan una comunicación segura mediante cifrado.</p>
+<hr>
+<h3 id="1-diferencia-entre-http-y-https">1. <strong>Diferencia entre HTTP y HTTPS</strong></h3>
+<ul>
+<li>
+<p><strong>HTTP (HyperText Transfer Protocol)</strong>:</p>
+<ul>
+<li>Es un protocolo no cifrado.</li>
+<li>Las comunicaciones entre el cliente y el servidor viajan con el texto tal cual se envía y se podrían capturar y ver por un tercero.</li>
+<li>Se utiliza para sitios web que no manejan información sensible.</li>
+</ul>
+</li>
+<li>
+<p><strong>HTTPS (HyperText Transfer Protocol Secure)</strong>:</p>
+<ul>
+<li>Es una versión segura de HTTP que utiliza los protocolos SSL/TLS para cifrar las comunicaciones.</li>
+<li>SSL/TLS son protocolos que garantizan la confidencialidad, integridad y autenticación de las comunicaciones.</li>
+<li>Para establecer una conexión HTTPS, se necesita un certificado digital válido (emitido por una autoridad certificadora, CA), también llamado <strong>certificado SSL/TLS</strong> que permita la autenticación del servidor y la negociación de claves seguras.</li>
+</ul>
+</li>
+</ul>
+<h3 id="las-características">Las características</h3>
+<p>Las características de una página web protegida por SSL/TLS son las siguientes:</p>
+<ul>
+<li><strong>Un ícono de candado</strong> y una barra de direcciones verde en el navegador web</li>
+<li><strong>Un prefijo https</strong> en la dirección del sitio web del navegador</li>
+<li><strong>Un certificado SSL/TLS válido</strong>. Puede comprobar si el certificado SSL/TLS es válido haciendo clic y expandiendo el ícono del candado en la barra de direcciones URL</li>
+<li>Una vez establecida la conexión cifrada, <strong>solo el cliente y el servidor web</strong> pueden ver los datos que se envían.</li>
+</ul>
+<hr>
+<h3 id="2-pasos-para-configurar-https-en-apache">2. <strong>Pasos para configurar HTTPS en Apache</strong></h3>
+<h4 id="paso-1-activar-el-módulo-ssl">Paso 1: Activar el módulo SSL</h4>
+<p>Habilita el módulo SSL en Apache:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo a2enmod ssl
+</span></span><span style="display:flex;"><span>sudo systemctl restart apache2</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<h4 id="paso-2-crear-o-instalar-un-certificado-ssl">Paso 2: Crear o instalar un certificado SSL</h4>
+<ol>
+<li>
+<p><strong>Crear un certificado autofirmado (solo para pruebas):</strong>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo openssl req -x509 -nodes -days <span style="color:#ae81ff">365</span> -newkey rsa:2048 <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-keyout /etc/ssl/private/apache-selfsigned.key <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>-out /etc/ssl/certs/apache-selfsigned.crt</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p><strong>Usar un certificado emitido por una CA (recomendado):</strong></p>
+<ul>
+<li>Solicita un certificado SSL/TLS de una autoridad certificadora como Let&rsquo;s Encrypt, DigiCert, o Comodo.</li>
+<li>Puedes usar herramientas como <code>certbot</code> para automatizar este proceso:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt install certbot python3-certbot-apache
+</span></span><span style="display:flex;"><span>sudo certbot --apache</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ol>
+<h4 id="paso-3-configurar-apache-para-https">Paso 3: Configurar Apache para HTTPS</h4>
+<p>Edita el archivo de configuración del sitio web en <code>/etc/apache2/sites-available/mi-sitio.conf</code>:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span><span style="color:#f92672">&lt;VirtualHost</span> <span style="color:#e6db74">*:80</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>ServerName example.com
+</span></span><span style="display:flex;"><span>Redirect permanent / https://example.com/
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/VirtualHost&gt;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;VirtualHost</span> <span style="color:#e6db74">*:443</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>ServerName example.com
+</span></span><span style="display:flex;"><span>DocumentRoot <span style="color:#e6db74">/var/www/html</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    SSLEngine <span style="color:#66d9ef">On</span>
+</span></span><span style="display:flex;"><span>    SSLCertificateFile <span style="color:#e6db74">/etc/ssl/certs/apache-selfsigned.crt</span>
+</span></span><span style="display:flex;"><span>    SSLCertificateKeyFile <span style="color:#e6db74">/etc/ssl/private/apache-selfsigned.key</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;Directory</span> <span style="color:#e6db74">/var/www/html</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>        AllowOverride <span style="color:#66d9ef">All</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&lt;/Directory&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/VirtualHost&gt;</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<ul>
+<li><strong><code>Redirect permanent</code></strong>: Redirige todo el tráfico HTTP al puerto HTTPS.</li>
+<li><strong><code>SSLEngine On</code></strong>: Habilita SSL/TLS.</li>
+<li><strong><code>SSLCertificateFile</code> y <code>SSLCertificateKeyFile</code></strong>: Especifican las rutas a los archivos del certificado y la clave privada.</li>
+</ul>
+<h4 id="paso-4-reiniciar-apache">Paso 4: Reiniciar Apache</h4>
+<p>Reinicia el servidor para aplicar los cambios:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl restart apache2</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<hr>
+<h3 id="3-redirigir-http-a-https-automáticamente">3. <strong>Redirigir HTTP a HTTPS automáticamente</strong></h3>
+<p>Configura una redirección en el archivo <code>.htaccess</code>:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>RewriteEngine <span style="color:#66d9ef">On</span>
+</span></span><span style="display:flex;"><span>RewriteCond %{HTTPS} <span style="color:#66d9ef">off</span>
+</span></span><span style="display:flex;"><span>RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<hr>
+<h3 id="4-verificar-la-configuración">4. <strong>Verificar la configuración</strong></h3>
+<ol>
+<li>Accede a tu dominio usando <code>https://</code> y asegúrate de que la conexión es segura.</li>
+<li>Utiliza herramientas como <a href="https://www.ssllabs.com/">SSL Labs</a> para analizar la configuración SSL/TLS.</li>
+</ol>
+<hr>
+<h3 id="notas-adicionales">Notas adicionales</h3>
+<ul>
+<li>
+<p><strong>Renovación automática de certificados</strong>: Si usas Let&rsquo;s Encrypt, configura un cron job para renovar los certificados automáticamente:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo certbot renew --quiet</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p><strong>Seguridad adicional</strong>: Configura encabezados HTTP como <code>Strict-Transport-Security</code> para reforzar HTTPS:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>Header always set Strict-Transport-Security <span style="color:#e6db74">&#34;max-age=31536000; includeSubDomains&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+</ul>
+
+	
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="manuelromeromiguel@gmail.com" aria-label="manuelromeromiguel@gmail.com">
+    <a target="_blank" rel="noopener" href="mailto:manuelromeromiguel@gmail.com" aria-label="manuelromeromiguel@gmail.com">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2025
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/servicios/js/main.js"></script>
+<script defer src="/servicios/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/servicios/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

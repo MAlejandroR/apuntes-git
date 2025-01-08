@@ -1,0 +1,1004 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/servicios/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=servicios/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/servicios/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/servicios/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/servicios/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/servicios/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-192x192.png" sizes="192x192">
+
+<title>Auth | Despliegue de Aplicaciones Web</title>
+<meta name="description" content=" Referencias Fuentes de Información https://httpd.apache.org/docs/2.4/es/howto/auth.html Objetivos Qué veremos aquí Fichero .htaccess Autenticación basic Autenticación digest Autenticación de usuarios Autenticación de grupo de usuarios 1.- El fichero .htacces Antes de empezar con la autneticación, vamos a ver un fichero de configuración especial en apache: .htaccess ">
+
+<meta property="og:url" content="http://localhost:1313/servicios/es/docs/01_apache/02_auth/">
+  <meta property="og:site_name" content="Despliegue de Aplicaciones Web">
+  <meta property="og:title" content="Auth">
+  <meta property="og:description" content="Referencias Fuentes de Información https://httpd.apache.org/docs/2.4/es/howto/auth.html Objetivos Qué veremos aquí Fichero .htaccess Autenticación basic Autenticación digest Autenticación de usuarios Autenticación de grupo de usuarios 1.- El fichero .htacces Antes de empezar con la autneticación, vamos a ver un fichero de configuración especial en apache: .htaccess">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2024-12-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-12-18T00:00:00+00:00">
+
+  <meta itemprop="name" content="Auth">
+  <meta itemprop="description" content="Referencias Fuentes de Información https://httpd.apache.org/docs/2.4/es/howto/auth.html Objetivos Qué veremos aquí Fichero .htaccess Autenticación basic Autenticación digest Autenticación de usuarios Autenticación de grupo de usuarios 1.- El fichero .htacces Antes de empezar con la autneticación, vamos a ver un fichero de configuración especial en apache: .htaccess">
+  <meta itemprop="datePublished" content="2024-12-18T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-12-18T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1454">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Auth">
+  <meta name="twitter:description" content="Referencias Fuentes de Información https://httpd.apache.org/docs/2.4/es/howto/auth.html Objetivos Qué veremos aquí Fichero .htaccess Autenticación basic Autenticación digest Autenticación de usuarios Autenticación de grupo de usuarios 1.- El fichero .htacces Antes de empezar con la autneticación, vamos a ver un fichero de configuración especial en apache: .htaccess">
+
+
+<link href="/servicios/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-page">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/servicios/es/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/servicios/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Despliegue de Aplicaciones Web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/servicios/en/">English</a></li>
+    <li><a class="dropdown-item" href="/servicios/fr/">Francés</a></li>
+    </ul>
+</div></li>
+      <li class="td-light-dark-menu nav-item dropdown">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+  <symbol id="circle-half" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+  </symbol>
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+  </symbol>
+</svg>
+
+<button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        data-bs-display="static"
+        aria-label="Toggle theme (auto)">
+  <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+</button>
+<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#sun-fill"></use></svg>
+      Light
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#moon-stars-fill"></use></svg>
+      Dark
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+      <svg class="bi me-2 opacity-50"><use href="#circle-half"></use></svg>
+      Auto
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+</ul>
+
+      </li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <div class="td-sidebar-nav__section nav-item dropdown d-block d-lg-none">
+      <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/servicios/en/">English</a></li>
+    <li><a class="dropdown-item" href="/servicios/fr/">Francés</a></li>
+    </ul>
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-serviciosesdocs-li">
+  <a href="/servicios/es/docs/" title="Servicios en Despliegue de Aplicaciones Web" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-serviciosesdocs"><i class="fas fa-network-wired"></i><span class="">Servicios</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs00_entorno-li">
+  <input type="checkbox" id="m-serviciosesdocs00_entorno-check"/>
+  <label for="m-serviciosesdocs00_entorno-check"><a href="/servicios/es/docs/00_entorno/" title="Sistema base de entorno" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs00_entorno"><i class="fas fa-cube"></i><span class="">Entorno de ejecución </span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-serviciosesdocs01_apache-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache-check" checked/>
+  <label for="m-serviciosesdocs01_apache-check"><a href="/servicios/es/docs/01_apache/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-serviciosesdocs01_apache"><i class="fas fa-feather"></i><span class="">Apache</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs01_apache01_virtualhost-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache01_virtualhost-check"/>
+  <label for="m-serviciosesdocs01_apache01_virtualhost-check"><a href="/servicios/es/docs/01_apache/01_virtualhost/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache01_virtualhost"><i class="fas fa-key"></i><span class="">VirtualHost</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-serviciosesdocs01_apache02_auth-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache02_auth-check" checked/>
+  <label for="m-serviciosesdocs01_apache02_auth-check"><a href="/servicios/es/docs/01_apache/02_auth/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache02_auth"><i class="fas fa-key"></i><span class="td-sidebar-nav-active-item">Auth</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs01_apache03_https-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache03_https-check"/>
+  <label for="m-serviciosesdocs01_apache03_https-check"><a href="/servicios/es/docs/01_apache/03_https/" title="Https" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache03_https"><i class="fas fa-key"></i><span class="">Https y certificados</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs01_apache04_rewrite-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache04_rewrite-check"/>
+  <label for="m-serviciosesdocs01_apache04_rewrite-check"><a href="/servicios/es/docs/01_apache/04_rewrite/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache04_rewrite"><i class="fas fa-cogs"></i><span class="">Rewrite</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs02_nginx-li">
+  <input type="checkbox" id="m-serviciosesdocs02_nginx-check"/>
+  <label for="m-serviciosesdocs02_nginx-check"><a href="/servicios/es/docs/02_nginx/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs02_nginx"><i class="fas fa-server"></i><span class="">Nginx</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs03_dns-li">
+  <input type="checkbox" id="m-serviciosesdocs03_dns-check"/>
+  <label for="m-serviciosesdocs03_dns-check"><a href="/servicios/es/docs/03_dns/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs03_dns"><i class="fas fa-globe"></i><span class="">Bind (dns)</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs04_ssh-li">
+  <input type="checkbox" id="m-serviciosesdocs04_ssh-check"/>
+  <label for="m-serviciosesdocs04_ssh-check"><a href="/servicios/es/docs/04_ssh/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs04_ssh"><i class="fas fa-terminal"></i><span class="">SSH</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs05_fpt-li">
+  <input type="checkbox" id="m-serviciosesdocs05_fpt-check"/>
+  <label for="m-serviciosesdocs05_fpt-check"><a href="/servicios/es/docs/05_fpt/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs05_fpt"><i class="fas fa-folder-open"></i><span class="">FTP</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs05_sfpt-li">
+  <input type="checkbox" id="m-serviciosesdocs05_sfpt-check"/>
+  <label for="m-serviciosesdocs05_sfpt-check"><a href="/servicios/es/docs/05_sfpt/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs05_sfpt"><i class="fas fa-lock"></i><span class="">SFTP</span></a></label>
+  
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+<a id="print" href="/servicios/es/docs/01_apache/_print/"><i class="fa-solid fa-print fa-fw"></i> PDF</a>
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1--el-fichero-htacces">1.- El fichero .htacces</a>
+      <ul>
+        <li><a href="#funciones-de-htaccess">Funciones de <code>.htaccess</code></a></li>
+        <li><a href="#ventajas-de-htaccess">Ventajas de <code>.htaccess</code></a></li>
+        <li><a href="#desventajas-de-htaccess">Desventajas de <code>.htaccess</code></a></li>
+        <li><a href="#activar-htaccess">Activar <code>.htaccess</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#2--autenticación-en-apache">2.- Autenticación en Apache</a>
+      <ul>
+        <li><a href="#1--autenticación-basic">1.- <strong>Autenticación Basic</strong></a></li>
+        <li><a href="#2-autenticación-digest">2. <strong>Autenticación Digest</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#3--configuración-de-usuarios">3.- Configuración de usuarios</a>
+      <ul>
+        <li></li>
+        <li><a href="#acciones-a-realizar">Acciones a realizar</a></li>
+        <li><a href="#notas-adicionales">Notas adicionales</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/servicios/es/docs/">Servicios</a></li>
+  <li class="breadcrumb-item">
+    <a href="/servicios/es/docs/01_apache/">Apache</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    Auth</li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Auth</h1>
+	
+	<header class="article-meta">
+		
+</header>
+	
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Referencias</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Fuentes de Información</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
+    
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            <li><a href="https://httpd.apache.org/docs/2.4/es/howto/auth.html">https://httpd.apache.org/docs/2.4/es/howto/auth.html</a></li>
+            
+            
+            
+        </ul>
+    </div>
+</div>
+
+<hr style="border-color: red; border-width: 3px;"/>
+
+
+
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-check-circle"></i> 
+            
+        </span>
+        
+        <span>Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight:bold">Qué veremos aquí</h3>
+
+    <hr style="border-color:seagreen; border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            <li>Fichero .htaccess</li>
+            
+            <li>Autenticación basic</li>
+            
+            <li>Autenticación digest</li>
+            
+            <li>Autenticación de usuarios</li>
+            
+            <li>Autenticación de grupo de usuarios</li>
+            
+            
+            
+        </ul>
+    </div>
+    
+
+
+</div>
+
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="1--el-fichero-htacces">1.- El fichero .htacces</h2>
+<p>Antes de empezar con la autneticación, vamos a ver un fichero de configuración especial en apache: 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    .htaccess
+
+
+</span>
+</strong>
+</p>
+<p>En apache podemos configurar a nivel global (afectará a todos los proyectos), o bien podemos establecer una configuracion particular a un directorio y todos sus subdirectorios.</p>
+<p>La sigueinte imagen trata de ilustrar este concepto:
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 823px">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/02_auth/apache_conf_hu14476145889970730402.png" width="813" height="849">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+<p>El archivo 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    .htaccess
+
+
+</span>
+</strong>
+ es un archivo de configuración utilizado en servidores web Apache para aplicar configuraciones específicas a un directorio.</p>
+<p>Este archivo permite modificar ciertos comportamientos del servidor sin necesidad de acceder al archivo principal de configuración 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    httpd.conf
+
+
+</span>
+</strong>
+, o el fichero correspondiente 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    apache2.conf
+
+
+</span>
+</strong>
+.</p>
+<h3 id="funciones-de-htaccess">Funciones de <code>.htaccess</code></h3>
+<ol>
+<li>
+<p><strong>Control de acceso</strong>:</p>
+<ul>
+<li>Implementar autenticación (<strong>Basic</strong> y <strong>Digest</strong>).</li>
+<li>Restringir acceso a usuarios según IP o nombre de usuario.</li>
+<li>Este tema es objeto de estudio en esta sección</li>
+</ul>
+</li>
+<li>
+<p><strong>Redirecciones</strong>:</p>
+<ul>
+<li>Configurar redirecciones 301 (permanentes) y 302 (temporales).</li>
+<li>Ejemplo:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>Redirect <span style="color:#ae81ff">301</span> <span style="color:#e6db74">/antigua-pagina.html</span> <span style="color:#e6db74">/nueva-pagina.html</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>Sencillo de utilizar y a veces práctico</li>
+</ul>
+</li>
+<li>
+<p><strong>Reescritura de URLs</strong>:</p>
+<ul>
+<li>Utilizar el módulo <code>mod_rewrite</code> para crear URLs amigables.</li>
+<li>Ejemplo:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>RewriteEngine <span style="color:#66d9ef">On</span>
+</span></span><span style="display:flex;"><span>RewriteRule ^pagina-amigable$ pagina-real.php [L]</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>Este apartado se aborda en otra sección</li>
+</ul>
+</li>
+<li>
+<p><strong>Seguridad</strong>:</p>
+<ul>
+<li>Proteger directorios con contraseñas.</li>
+<li>Restringir el acceso según IP:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>Order Deny,Allow
+</span></span><span style="display:flex;"><span>Deny from <span style="color:#66d9ef">all</span>
+</span></span><span style="display:flex;"><span>Allow from <span style="color:#ae81ff">192.168.1.0/24</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<p><strong>Configuraciones específicas</strong>:</p>
+<ul>
+<li>Establecer una página de error personalizada.
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>ErrorDocument <span style="color:#ae81ff">404</span> <span style="color:#e6db74">/error-404.html</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>Especificar el archivo predeterminado al acceder a un directorio.
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>DirectoryIndex index.php index.html</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ol>
+<h3 id="ventajas-de-htaccess">Ventajas de <code>.htaccess</code></h3>
+<ul>
+<li><strong>Flexibilidad</strong>: Permite configuraciones personalizadas para cada directorio.</li>
+<li><strong>Rapidez</strong>: No requiere reiniciar el servidor para aplicar cambios.</li>
+</ul>
+<h3 id="desventajas-de-htaccess">Desventajas de <code>.htaccess</code></h3>
+<ul>
+<li><strong>Rendimiento</strong>: Apache revisa este archivo en cada solicitud, lo que puede impactar en el rendimiento si se usa excesivamente. Si no es necesario, es importante que no esté.</li>
+<li><strong>Seguridad</strong>: Es un fichero de configuración que puede exponer información sensible, por lo que hay que saber bien lo que se está haciendo.</li>
+</ul>
+<h3 id="activar-htaccess">Activar <code>.htaccess</code></h3>
+<p>Para que el archivo <code>.htaccess</code> funcione, el archivo principal de configuración de Apache (<code>httpd.conf</code>) debe permitirlo mediante la directiva <code>AllowOverride</code></p>
+<p>Para nuestro ejemplo vamos a establecer un directorio a partir del cual (ese directorio o cualquier otro subdirectorio), si tiene un fichero <strong><em>.htaccess</em></strong>, se tenga en cuenta y sea leído. <br>
+Si en cualquier otro directorio estuviera ese fichero de configuración <strong>.htaccess</strong>, no se tendrá en cuenta</p>
+<p><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span><span style="color:#f92672">&lt;Directory</span> <span style="color:#e6db74">/var/www/html/seguridad</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>	AllowOverride <span style="color:#66d9ef">All</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;/Directory&gt;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Importante</h4>
+
+    <p>No olvides rebotar el servicio para que la configuracion tenga efecto</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">sudo</span> <span style="color:#a6e22e">apachectl</span> <span style="color:#a6e22e">restart</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+</div>
+</p>
+<h2 id="2--autenticación-en-apache">2.- Autenticación en Apache</h2>
+<p>Apache ofrece diferentes métodos de autenticación para proteger recursos en un servidor web. Los más comunes son:</p>
+<ul>
+<li>Basic</li>
+<li>Digest</li>
+</ul>
+<h3 id="1--autenticación-basic">1.- <strong>Autenticación Basic</strong></h3>
+<p>La autenticación <strong>Basic</strong> es un método sencillo que solicita al usuario un nombre de usuario y una contraseña. Esta información se transmite codificada en base64 (no cifrada), lo que hace que si queremos  garantizar seguridad,deberíamos de usar HTTPS.</p>
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Configuración de Basic Authentication
+
+
+</span>
+</strong>
+
+<ol>
+<li><strong>Crear un archivo de contraseñas</strong>:
+Usa el comando <code>htpasswd</code> para generar el archivo que almacenará las credenciales:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>htpasswd -c /home/vagrant .pass manuel</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<blockquote>
+<blockquote>
+<ul>
+<li>Este comando creará el fichero llamado <strong>.pass</strong> (establece el nombre que consideres)</li>
+</ul>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<ul>
+<li>El parámetro <code>-c</code> crea el archivo; Si ya existe (para añadir nuevos usuarios), se dede de omitir, ya que si no lo creará de nuevo y se perderán los anteriores.</li>
+</ul>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<ul>
+<li>El último parámetro es el nombre de usuario, entonces se nos solicatará la password</li>
+</ul>
+</blockquote>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><img src="/servicios/es/docs/01_apache/02_auth/img.png" alt="img.png"></p>
+</blockquote>
+</blockquote>
+<ol start="3">
+<li><strong>Configurar el archivo <code>.htaccess</code></strong>:
+En el directorio que deseas proteger, crea un archivo <code>.htaccess</code> con el siguiente contenido:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>AuthType Basic
+</span></span><span style="display:flex;"><span>AuthName <span style="color:#e6db74">&#34;Área Restringida&#34;</span>
+</span></span><span style="display:flex;"><span>AuthUserFile <span style="color:#e6db74">/ruta/a/.htpasswd</span>
+</span></span><span style="display:flex;"><span>Require valid-user</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ul>
+<li><code>AuthType Basic</code>: Especifica el tipo de autenticación.</li>
+<li><code>AuthName</code>: Mensaje mostrado en el cuadro de diálogo de autenticación.</li>
+<li><code>AuthUserFile</code>: Ruta al archivo <code>.htpasswd</code>.</li>
+<li><code>Require valid-user</code>: Permite el acceso solo a usuarios válidos.</li>
+</ul>
+</li>
+</ol>
+<p><img src="/servicios/es/docs/01_apache/02_auth/img_1.png" alt="img_1.png"></p>
+<hr>
+<h3 id="2-autenticación-digest">2. <strong>Autenticación Digest</strong></h3>
+<p>La autenticación <strong>Digest</strong> es más segura que Basic, ya que cifra las credenciales del usuario usando un hash antes de enviarlas. A pesar de ser más seguro por el hecho de que se cifran las credneciales, también se recomienda usar  HTTPS para mayor seguridad.</p>
+<p>El proceso es muy similar al visto anteriormente</p>
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Configuración de Digest Authentication
+
+
+</span>
+</strong>
+
+<ol>
+<li><strong>Crear un archivo de contraseñas para Digest</strong>:
+Usa el comando <code>htdigest</code> para crear un archivo de contraseñas:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>htdigest -c /ruta/a/.htdigest <span style="color:#e6db74">&#34;Área Restringida&#34;</span> usuario</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ul>
+<li><code>&quot;Área Restringida&quot;</code>: corresponde al ambito (realm), y su valor, que es obligatorio, debe coincidir con el valor de <code>AuthName</code> del fichero de configuración  <code>.htaccess</code>.
+<img src="/servicios/es/docs/01_apache/02_auth/img_2.png" alt="img_2.png"></li>
+</ul>
+</li>
+<li><strong>Configurar el archivo <code>.htaccess</code></strong>:
+En el directorio que deseas proteger, crea un archivo <code>.htaccess</code> con el siguiente contenido:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>AuthType Digest
+</span></span><span style="display:flex;"><span>AuthName <span style="color:#e6db74">&#34;Área Restringida&#34;</span>
+</span></span><span style="display:flex;"><span>AuthDigestProvider file
+</span></span><span style="display:flex;"><span>AuthUserFile <span style="color:#e6db74">/ruta/a/.htdigest</span>
+</span></span><span style="display:flex;"><span>Require valid-user</span></span></code></pre></td></tr></table>
+</div>
+</div>
+- <code>AuthType Digest</code>: Especifica el tipo de autenticación.
+- <code>AuthDigestProvider file</code>: Define el proveedor de autenticación (archivo).
+- <code>AuthUserFile</code>: Ruta al archivo <code>.htdigest</code>.
+- <code>Require valid-user</code>: Permite el acceso solo a usuarios válidos (<strong>valid-user</strong>), o podríamos especificar un solo usuario, en tal caso, solo ese usuario, si se identifica correctamente, tendrá acceso.</li>
+</ol>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Importante <Directory></h4>
+
+    <p>En ambos casos, <strong>basic</strong> o <strong>digest</strong>,, hay que asegúrarse de que el archivo principal de configuración de Apache permite el uso de <code>.htaccess</code>.   <br>
+Previamente hemos establecido el valor <strong>all</strong>, pero en realidad sería suficiente con establecer <strong>AuthConfig</strong>, ya que es la única configuración que vamos a establecer en el fichero
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"></p>
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>	<span style="color:#f92672">&lt;Directory</span> <span style="color:#e6db74">&#34;/var/www/html/seguridad&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>		AllowOverride AuthConfig
+</span></span><span style="display:flex;"><span>	<span style="color:#f92672">&lt;/Directory&gt;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+</div>
+
+<h2 id="3--configuración-de-usuarios">3.- Configuración de usuarios</h2>
+<p>Ahora queremos utilizar el servidor apache para autenticar recursos a determinados usuarios y/o grupo de usuarios.
+Para ello vamos a crear un entorno con una serie de restricciones, según se muestran en la imagen.</p>
+<ul>
+<li>Tenemos 3 grupos de usuarios (contabilidad, informatica y resto)</li>
+<li>Tenemos 4 páginas web (publico.html, contabilidad.html, administracion.html y desarrollo.html)</li>
+<li>Los accesos permitidos son los que se muestran</li>
+<li>Debemos hacerlo tanto con <strong>basic</strong> como con <strong>digest</strong>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 406px">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/02_auth/auth_group_hu15630721514128836839.webp" width="396" height="682">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+</li>
+</ul>
+<h4 id="configuración-de-usuarios-y-grupos">Configuración de usuarios y grupos</h4>
+<p>Lo primero que tenemos que hacer es crear los usuarios y grupo en el fichero corresondiente.
+Para este comentido, revisamos las directivas importantes del fichero de configuración .htaccess
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#f92672">-</span> <span style="color:#a6e22e">AuthUserFile</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Ruta</span> <span style="color:#a6e22e">al</span> <span style="color:#a6e22e">archivo</span> <span style="color:#a6e22e">de</span> <span style="color:#a6e22e">usuarios</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#a6e22e">AuthGroupFile</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Ruta</span> <span style="color:#a6e22e">al</span> <span style="color:#a6e22e">archivo</span> <span style="color:#a6e22e">de</span> <span style="color:#a6e22e">grupos</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#66d9ef">Require</span> <span style="color:#a6e22e">group</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Especifica</span> <span style="color:#a6e22e">qué</span> <span style="color:#a6e22e">grupo</span> <span style="color:#a6e22e">tiene</span> <span style="color:#a6e22e">acceso</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#66d9ef">Require</span> <span style="color:#a6e22e">user</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Especifica</span> <span style="color:#a6e22e">qué</span> <span style="color:#a6e22e">usuario</span> <span style="color:#a6e22e">tiene</span> <span style="color:#a6e22e">acceso</span><span style="color:#f92672">.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">-</span> <span style="color:#66d9ef">Require</span> <span style="color:#a6e22e">valid</span><span style="color:#f92672">-</span><span style="color:#a6e22e">user</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Especifica</span> <span style="color:#a6e22e">qué</span> <span style="color:#a6e22e">cualquier</span> <span style="color:#a6e22e">usuario</span> <span style="color:#a6e22e">registrado</span> <span style="color:#a6e22e">tiene</span> <span style="color:#a6e22e">acceso</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<p>También es importante revisar los módulos instalados. Para la autenticación de usuarios y grupos necesitamos tener instalados estos módulos:</p>
+<p><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span>	<span style="color:#a6e22e">mod_authz_groupfile</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">mod_authz_user</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+Se puede revisar con el comando para ver los módulos instalados
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">apachectl</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">M</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+En caso de no tenerlo (es posible que el de grupo no lo esté por defecto)
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span>	<span style="color:#a6e22e">sudo</span> <span style="color:#a6e22e">a2enmod</span> <span style="color:#a6e22e">authz_groupfile</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h3 id="acciones-a-realizar">Acciones a realizar</h3>
+<ol>
+<li><strong>Crear un archivo de contraseñas (<code>.htpasswd</code>)</strong>, con los usuarios:
+Utiliza el comando <code>htpasswd</code> para crear usuarios:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>     htpasswd -c /home/vagrant/ .htpasswd luis
+</span></span><span style="display:flex;"><span>     htpasswd  /home/vagrant/ .htpasswd lourdes
+</span></span><span style="display:flex;"><span>     htpasswd  /home/vagrant/ .htpasswd teresa
+</span></span><span style="display:flex;"><span>     htpasswd  /home/vagrant/ .htpasswd sonia
+</span></span><span style="display:flex;"><span>     htpasswd  /home/vagrant/ .htpasswd pedro
+</span></span><span style="display:flex;"><span>     htpasswd  /home/vagrant/ .htpasswd mario</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Observa</h4>
+
+    Observa cómo solo en el primer usuario especificamos <strong>-c</strong> para crear el fichero
+
+</div>
+
+2. <strong>Crear un archivo de grupos (<code>.htgroup</code>)</strong>:
+Define grupos y asigna usuarios:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>  informatica: sonia teresa lourdes
+</span></span><span style="display:flex;"><span>  contabilidad: luis pedro mario</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Nota</h4>
+
+    Vemos que el fichero de grupos es un fichero de texto que editaremos con nuestro editor (vim, o nano o gedit, &hellip;) y escribimos simplemente las líneas especificadas
+
+</div>
+</li>
+<li><strong>Entorno web</strong></li>
+</ol>
+<ul>
+<li>
+<p>Debemos crear las carpetas con los ficheros html</p>
+</li>
+<li>
+<p>Deben de ser directorios para poder establecer configuración por directorio con el fichero de configuración 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    .htaccess
+
+
+</span>
+</strong>
+</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 260px">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/02_auth/carpetas_web_hu4404206977500153289.png" width="250" height="300">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+    
+</p>
+</figcaption>
+</figure>
+
+</li>
+</ul>
+<ol start="3">
+<li><strong>Configurar el archivo <code>.htaccess</code></strong>:
+Configura la autenticación en el directorio deseado, en cada directios establecemos:
+<ul>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    administrador
+
+
+</span>
+</strong>
+  <br>
+En este caso sólo el usuario <strong>luis</strong> puede acceder
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>	     AuthType Basic
+</span></span><span style="display:flex;"><span>	     AuthName <span style="color:#e6db74">&#34;Área Restringida Dirección&#34;</span>
+</span></span><span style="display:flex;"><span>	     AuthUserFile <span style="color:#e6db74">/home/vagrant/.htpasswd</span>
+</span></span><span style="display:flex;"><span>	     Require <span style="color:#66d9ef">user</span> luis</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<ul>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    contabilidad
+
+
+</span>
+</strong>
+   <br>
+En este caso puede acceder cualquier usuario del grupo de <strong>contabilidad</strong> y la usuaria <strong>lourdes</strong></li>
+</ul>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>  AuthType Basic
+</span></span><span style="display:flex;"><span>  AuthName <span style="color:#e6db74">&#34;Área Restringida de contabilidad&#34;</span>
+</span></span><span style="display:flex;"><span>  AuthUserFile <span style="color:#e6db74">/home/vagrant/.htpasswd</span>
+</span></span><span style="display:flex;"><span>  AuthGroupFile <span style="color:#e6db74">/home/vagrant/.htgroup</span>
+</span></span><span style="display:flex;"><span>  Require <span style="color:#66d9ef">group</span> contabilidad
+</span></span><span style="display:flex;"><span>  Require <span style="color:#66d9ef">user</span> lourdes
+</span></span><span style="display:flex;"><span>    </span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ul>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    informatica
+
+
+</span>
+</strong>
+   <br>
+En este caso puede acceder cualquier usuario del grupo de <strong>informática</strong> y solo ellos
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span>   AuthType Basic
+</span></span><span style="display:flex;"><span>   AuthName <span style="color:#e6db74">&#34;Área Restringida de contabilidad&#34;</span>
+</span></span><span style="display:flex;"><span>   AuthUserFile <span style="color:#e6db74">/home/vagrant/.htpasswd</span>
+</span></span><span style="display:flex;"><span>   AuthGroupFile <span style="color:#e6db74">/home/vagrant/.htgroup</span>
+</span></span><span style="display:flex;"><span>   Require <span style="color:#66d9ef">group</span> informatica</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="notas-adicionales">Notas adicionales</h3>
+<ul>
+<li><strong>Grupos</strong>: Puedes asignar un usuario a múltiples grupos simplemente listándolo en varios grupos dentro del archivo <code>.htgroup</code>.</li>
+<li><strong>Permisos de archivo</strong>: Asegúrate de que los archivos <code>.htpasswd</code>, <code>.htdigest</code> y <code>.htgroup</code> sean accesibles por Apache, pero no por usuarios externos. El usuario apache tiene que tener permiso de ejecución en las carpetas con contengan los ficheros, si no, no podrá acceder a ellos, Si los ficheros están en /var/vagrant: Este comando con <strong>o+x</strong> aplica un permiso de ejecución (+x) al directorio /home/vagrant para el grupo de otros (o), con lo que cualquier puede acceder al directorio, también <strong>www-data</strong>.
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">sudo</span> <span style="color:#a6e22e">chown</span> <span style="color:#a6e22e">o</span><span style="color:#f92672">+</span><span style="color:#a6e22e">x</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">home</span><span style="color:#f92672">/</span><span style="color:#a6e22e">vagrant</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<ul>
+<li><strong>Visualiza errores</strong>: si hubiera errores visualiza el fichero de errores de apache2
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span>   <span style="color:#a6e22e">tail</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">f</span> <span style="color:#f92672">/</span><span style="color:#66d9ef">var</span><span style="color:#f92672">/</span><span style="color:#a6e22e">log</span><span style="color:#f92672">/</span><span style="color:#a6e22e">apache2</span><span style="color:#f92672">/</span><span style="color:#a6e22e">error</span><span style="color:#f92672">.</span><span style="color:#a6e22e">log</span></span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+	
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="manuelromeromiguel@gmail.com" aria-label="manuelromeromiguel@gmail.com">
+    <a target="_blank" rel="noopener" href="mailto:manuelromeromiguel@gmail.com" aria-label="manuelromeromiguel@gmail.com">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2025
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/servicios/js/main.js"></script>
+<script defer src="/servicios/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/servicios/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

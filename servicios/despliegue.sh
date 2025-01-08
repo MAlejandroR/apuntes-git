@@ -5,7 +5,7 @@ git add *
 git commit -m "$1"
 git push origin main
 
-# Elimina el directorio public
+# Elimina el directorio publico
 sudo rm -r ./public
 
 # Genera el sitio con Hugo

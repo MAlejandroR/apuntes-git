@@ -93,3 +93,16 @@ Para que los servicios como Apache o FTP funcionen correctamente en los puertos 
 ### Conexiones a la red
 Es importante recordad los tipos de conexiónes que establecemos en el fichero Vagrantfile
 ![net_vagrant.webp](net_vagrant.webp)
+| **Conexiones**       | **Red Host-VirtualHost** | **Red Local**          | **Internet**          | **Red entre Host y todas las Virtual Host** | **Parámetro de conexión**        |
+|-----------------------|--------------------------|-------------------------|------------------------|--------------------------------------------|-----------------------------------|
+| **Private Network**   | Sí                      | No                      | No (salvo con NAT)    | Sí                                         | `private_network`                |
+| **Host-Only Network** | Sí                      | No                      | No                    | No                                         | Automática (Host-Only)           |
+| **Bridged Network**   | Sí                      | Sí                      | Sí                    | No                                         | `public_network`                 |
+| **NAT**               | No                      | No                      | Sí                    | No                                         | NAT por defecto                  |
+
+{{< color >}} Explicación {{< /color >}}
+* **Red Host-VirtualHost**: Conexión directa entre el anfitrión y la máquina virtual.
+* **Red Local**: Acceso desde y hacia otros dispositivos en la red local del anfitrión.
+* **Internet**: Acceso a Internet desde la máquina virtual.
+* **Red** entre Host y todas las Virtual Host: Conexión entre el anfitrión y todas las máquinas virtuales configuradas.
+* **Parámetro de conexión**: Configuración utilizada en el archivo Vagrantfile.
