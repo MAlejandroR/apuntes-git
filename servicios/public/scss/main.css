@@ -20918,4 +20918,7 @@ article[autonumbering] .toc__menu li a:before {
   content: counters(item, ".") ". ";
   counter-increment: item; }
 
+h1, .h1, h2, .h2, h3, .h3, .td-footer__links-item, h4, .h4 {
+  color: darkgreen; }
+
 /*# sourceMappingURL=main.css.map */

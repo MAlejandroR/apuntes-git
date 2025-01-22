@@ -175,25 +175,9 @@
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs02_nginx-li">
-  <input type="checkbox" id="m-serviciosesdocs02_nginx-check"/>
-  <label for="m-serviciosesdocs02_nginx-check"><a href="/servicios/es/docs/02_nginx/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs02_nginx"><i class="fas fa-server"></i><span class="">Nginx</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs03_dns-li">
-  <input type="checkbox" id="m-serviciosesdocs03_dns-check"/>
-  <label for="m-serviciosesdocs03_dns-check"><a href="/servicios/es/docs/03_dns/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs03_dns"><i class="fas fa-globe"></i><span class="">Bind (dns)</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs04_ssh-li">
-  <input type="checkbox" id="m-serviciosesdocs04_ssh-check"/>
-  <label for="m-serviciosesdocs04_ssh-check"><a href="/servicios/es/docs/04_ssh/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs04_ssh"><i class="fas fa-terminal"></i><span class="">SSH</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs05_fpt-li">
-  <input type="checkbox" id="m-serviciosesdocs05_fpt-check"/>
-  <label for="m-serviciosesdocs05_fpt-check"><a href="/servicios/es/docs/05_fpt/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs05_fpt"><i class="fas fa-folder-open"></i><span class="">FTP</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs05_sfpt-li">
-  <input type="checkbox" id="m-serviciosesdocs05_sfpt-check"/>
-  <label for="m-serviciosesdocs05_sfpt-check"><a href="/servicios/es/docs/05_sfpt/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs05_sfpt"><i class="fas fa-lock"></i><span class="">SFTP</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs03_ssh-li">
+  <input type="checkbox" id="m-serviciosesdocs03_ssh-check"/>
+  <label for="m-serviciosesdocs03_ssh-check"><a href="/servicios/es/docs/03_ssh/" title="SSH Secure Shell" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs03_ssh"><i class="fas fa-terminal"></i><span class="">SSH</span></a></label>
   
 </li>
   </ul>
@@ -341,8 +325,9 @@
 <hr style="border-color: red; border-width: 3px;"/>
 <h2 id="1--el-fichero-htacces">1.- El fichero .htacces</h2>
 <p>Antes de empezar con la autneticación, vamos a ver un fichero de configuración especial en apache: 
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     .htaccess
 
@@ -365,8 +350,9 @@
 </figure>
 </p>
 <p>El archivo 
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     .htaccess
 
@@ -375,8 +361,9 @@
 </strong>
  es un archivo de configuración utilizado en servidores web Apache para aplicar configuraciones específicas a un directorio.</p>
 <p>Este archivo permite modificar ciertos comportamientos del servidor sin necesidad de acceder al archivo principal de configuración 
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     httpd.conf
 
@@ -384,8 +371,9 @@
 </span>
 </strong>
 , o el fichero correspondiente 
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     apache2.conf
 
@@ -532,8 +520,9 @@ Si en cualquier otro directorio estuviera ese fichero de configuración <strong>
 <h3 id="1--autenticación-basic">1.- <strong>Autenticación Basic</strong></h3>
 <p>La autenticación <strong>Basic</strong> es un método sencillo que solicita al usuario un nombre de usuario y una contraseña. Esta información se transmite codificada en base64 (no cifrada), lo que hace que si queremos  garantizar seguridad,deberíamos de usar HTTPS.</p>
 
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     Configuración de Basic Authentication
 
@@ -610,8 +599,9 @@ En el directorio que deseas proteger, crea un archivo <code>.htaccess</code> con
 <p>La autenticación <strong>Digest</strong> es más segura que Basic, ya que cifra las credenciales del usuario usando un hash antes de enviarlas. A pesar de ser más seguro por el hecho de que se cifran las credneciales, también se recomienda usar  HTTPS para mayor seguridad.</p>
 <p>El proceso es muy similar al visto anteriormente</p>
 
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     Configuración de Digest Authentication
 
@@ -811,8 +801,9 @@ Define grupos y asigna usuarios:
 </li>
 <li>
 <p>Deben de ser directorios para poder establecer configuración por directorio con el fichero de configuración 
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     .htaccess
 
@@ -840,8 +831,9 @@ Configura la autenticación en el directorio deseado, en cada directios establec
 <ul>
 <li>
 <p>
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     administrador
 
@@ -866,8 +858,9 @@ En este caso sólo el usuario <strong>luis</strong> puede acceder
 </div></p>
 <ul>
 <li>
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     contabilidad
 
@@ -899,8 +892,9 @@ En este caso puede acceder cualquier usuario del grupo de <strong>contabilidad</
 </div>
 <ul>
 <li>
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     informatica
 

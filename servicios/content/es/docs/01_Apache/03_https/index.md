@@ -9,7 +9,7 @@ draft: false
 {{<referencias>}}
 https://aws.amazon.com/es/what-is/ssl-certificate/
 https://letsencrypt.org/es/getting-started/
-
+https://www.ssllabs.com/index.html
 {{</referencias>}}
 
 
@@ -98,7 +98,6 @@ Redirect permanent / https://example.com/
 <VirtualHost *:443>
 ServerName example.com
 DocumentRoot /var/www/html
-
     SSLEngine On
     SSLCertificateFile /etc/ssl/certs/apache-selfsigned.crt
     SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key
@@ -114,8 +113,6 @@ DocumentRoot /var/www/html
 
 {{< alert title="Certificados usados" color="success" >}}
 Dichos certificados “de aceite de serpiente” (Wikipedia: Snake oil (cryptography)) los genera el script de postinstalación del paquete ssl-cert de Ubuntu asociados al hostname del sistema.
-
-
 {{< /alert >}}
 
 #### Paso 4: Reiniciar Apache

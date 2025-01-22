@@ -51,3 +51,8 @@ article[autonumbering] h4:before {counter-increment: h4; content: counter(h2) ".
 
 article[autonumbering] .toc__menu ul { counter-reset: item }
 article[autonumbering] .toc__menu li a:before { content: counters(item, ".") ". "; counter-increment: item }
+
+h1, h2,h3,h4{
+  color:darkgreen;
+
+}

@@ -276,8 +276,9 @@ Versión imprimible multipagina.
 </div>
 <h3 id="3--archivos-de-configuración">3.- <strong>Archivos de configuración</strong></h3>
 <p>
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     Apache2
 
@@ -824,8 +825,9 @@ seria. En casa o con amigos, le llaman <strong><em>Manolo</em></strong> y su act
 </figure>
 
 <p>De forma similar, en Apache, 
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     un Virtual Host permite que el mismo servidor web responda de manera distinta
 según el nombre de dominio o dirección con la que se le acceda
@@ -837,8 +839,9 @@ según el nombre de dominio o dirección con la que se le acceda
 establecdida para cada uno de los Host Virtuales.</p>
 <p>Siguiendo con la metáfora, es como si fuera <strong>Manuel</strong> en un contexto y <strong>Manolo</strong> en otro.</p>
 <p>Con 
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     Virtual Hosts
 
@@ -990,8 +993,9 @@ método permite alojar múltiples sitios en una misma IP y puerto.
 </div>
 <p>Cada sitio tendrá su propio archivo HTML en su directorio correspondiente.</p>
 <h4 id="hahahugoshortcode7s12hbhb">
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     Pasos a realizar
 
@@ -1111,8 +1115,9 @@ Edita o crea los archivos de configuración de Virtual Hosts en /etc/apache2/sit
 <ol start="4">
 <li><strong>Habilitar los Virtual Hosts</strong>
 Habilita los sitios usando 
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     a2ensite
 
@@ -1182,8 +1187,9 @@ Ahora es el momento de probar el funcionamiento de los dominios establecidos</p>
 </blockquote>
 <h4 id="serveralias">ServerAlias</h4>
 <p>La directiva 
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     ServerAlias
 
@@ -1211,8 +1217,9 @@ Esto puede ser útil cuando queremos que un sitio web responda a diferentes nomb
 </div>
 <ul>
 <li>
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     ServerName
 
@@ -1221,8 +1228,9 @@ Esto puede ser útil cuando queremos que un sitio web responda a diferentes nomb
 </strong>
 : Define el dominio principal del sitio (<a href="https://www.musica.com">www.musica.com</a> en este caso).</li>
 <li>
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     ServerAlias
 
@@ -1402,8 +1410,9 @@ Y vemos las imágenes:</p>
 <hr style="border-color: red; border-width: 3px;"/>
 <h2 id="1--el-fichero-htacces">1.- El fichero .htacces</h2>
 <p>Antes de empezar con la autneticación, vamos a ver un fichero de configuración especial en apache: 
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     .htaccess
 
@@ -1426,8 +1435,9 @@ Y vemos las imágenes:</p>
 </figure>
 </p>
 <p>El archivo 
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     .htaccess
 
@@ -1436,8 +1446,9 @@ Y vemos las imágenes:</p>
 </strong>
  es un archivo de configuración utilizado en servidores web Apache para aplicar configuraciones específicas a un directorio.</p>
 <p>Este archivo permite modificar ciertos comportamientos del servidor sin necesidad de acceder al archivo principal de configuración 
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     httpd.conf
 
@@ -1445,8 +1456,9 @@ Y vemos las imágenes:</p>
 </span>
 </strong>
 , o el fichero correspondiente 
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     apache2.conf
 
@@ -1593,8 +1605,9 @@ Si en cualquier otro directorio estuviera ese fichero de configuración <strong>
 <h3 id="1--autenticación-basic">1.- <strong>Autenticación Basic</strong></h3>
 <p>La autenticación <strong>Basic</strong> es un método sencillo que solicita al usuario un nombre de usuario y una contraseña. Esta información se transmite codificada en base64 (no cifrada), lo que hace que si queremos  garantizar seguridad,deberíamos de usar HTTPS.</p>
 
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     Configuración de Basic Authentication
 
@@ -1671,8 +1684,9 @@ En el directorio que deseas proteger, crea un archivo <code>.htaccess</code> con
 <p>La autenticación <strong>Digest</strong> es más segura que Basic, ya que cifra las credenciales del usuario usando un hash antes de enviarlas. A pesar de ser más seguro por el hecho de que se cifran las credneciales, también se recomienda usar  HTTPS para mayor seguridad.</p>
 <p>El proceso es muy similar al visto anteriormente</p>
 
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     Configuración de Digest Authentication
 
@@ -1872,8 +1886,9 @@ Define grupos y asigna usuarios:
 </li>
 <li>
 <p>Deben de ser directorios para poder establecer configuración por directorio con el fichero de configuración 
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     .htaccess
 
@@ -1901,8 +1916,9 @@ Configura la autenticación en el directorio deseado, en cada directios establec
 <ul>
 <li>
 <p>
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     administrador
 
@@ -1927,8 +1943,9 @@ En este caso sólo el usuario <strong>luis</strong> puede acceder
 </div></p>
 <ul>
 <li>
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     contabilidad
 
@@ -1960,8 +1977,9 @@ En este caso puede acceder cualquier usuario del grupo de <strong>contabilidad</
 </div>
 <ul>
 <li>
+
 <strong>
-<span class="font-weight-bold text-primary">
+<span class="font-weight-bold text-primary fs-1.5">
 
     informatica
 
@@ -2062,6 +2080,7 @@ En este caso puede acceder cualquier usuario del grupo de <strong>informática</
             
             <li><a href="https://letsencrypt.org/es/getting-started/">https://letsencrypt.org/es/getting-started/</a></li>
             
+            <li><a href="https://www.ssllabs.com/index.html">https://www.ssllabs.com/index.html</a></li>
             
             
             
@@ -2193,7 +2212,6 @@ Sus siglas se corresponden con <strong>Hypertext Transfer Protocol Secure</stron
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-apache" data-lang="apache"><span style="display:flex;"><span><span style="color:#f92672">&lt;VirtualHost</span> <span style="color:#e6db74">*:80</span><span style="color:#f92672">&gt;</span>
@@ -2204,7 +2222,6 @@ Sus siglas se corresponden con <strong>Hypertext Transfer Protocol Secure</stron
 </span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;VirtualHost</span> <span style="color:#e6db74">*:443</span><span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>ServerName example.com
 </span></span><span style="display:flex;"><span>DocumentRoot <span style="color:#e6db74">/var/www/html</span>
-</span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    SSLEngine <span style="color:#66d9ef">On</span>
 </span></span><span style="display:flex;"><span>    SSLCertificateFile <span style="color:#e6db74">/etc/ssl/certs/apache-selfsigned.crt</span>
 </span></span><span style="display:flex;"><span>    SSLCertificateKeyFile <span style="color:#e6db74">/etc/ssl/private/apache-selfsigned.key</span>

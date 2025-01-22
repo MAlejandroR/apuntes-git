@@ -16,39 +16,11 @@
       <description>&lt;p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div style=&#34;border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;&#34;&gt;&#xA;    &lt;div style=&#34;background-color:darkgreen; color:white;&#xA;    font-weight:bold; padding:10px; display: flex; align-items: center;&#34;&gt;&#xA;        &#xA;        &lt;span style=&#34;margin-right: 8px;&#34;&gt;&#xA;            &#xA;                &lt;i class=&#34;fas fa-check-circle&#34;&gt;&lt;/i&gt; &#xA;            &#xA;        &lt;/span&gt;&#xA;        &#xA;        &lt;span&gt;Objetivos&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &lt;h3 style=&#34;padding: 5px; font-weight:bold&#34;&gt;Configuración de Apache&lt;/h3&gt;&#xA;&#xA;    &lt;hr style=&#34;border-color:seagreen; border-width:3px&#34;/&gt;&#xA;    &#xA;    &lt;div style=&#34;background-color:#d0f0d0; color:darkgreen; padding: 10px;&#34;&gt;&#xA;        &lt;ul&gt;&#xA;            &#xA;            &lt;li&gt;Usar Vagrant  &lt;/li&gt;&#xA;            &#xA;            &lt;li&gt;Revisar fichero de configuración  &lt;/li&gt;&#xA;            &#xA;            &lt;li&gt;Instalar Ubuntu Server  &lt;/li&gt;&#xA;            &#xA;            &lt;li&gt;Conectar o levantar la máquina de Ubuntu para trabajar  &lt;/li&gt;&#xA;            &#xA;            &#xA;            &#xA;        &lt;/ul&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div style=&#34;border: 1px solid navy; border-radius: 5px; overflow: hidden;&#34;&gt;&#xA;    &lt;div style=&#34;background-color: navy; color: white;&#xA;    font-weight: bold; padding: 10px; display: flex; align-items: center;&#34;&gt;&#xA;        &#xA;        &lt;span style=&#34;margin-right: 8px;&#34;&gt;&#xA;            &#xA;                &lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; &#xA;            &#xA;        &lt;/span&gt;&#xA;        &#xA;        &lt;span&gt;Referencias&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &lt;h3 style=&#34;padding: 5px; font-weight: bold; color: navy;&#34;&gt;Fuentes de Información&lt;/h3&gt;&#xA;&#xA;    &lt;hr style=&#34;border-color: lightblue; border-width: 3px&#34;/&gt;&#xA;    &#xA;    &lt;div style=&#34;background-color: #e0f7fa; color: navy; padding: 10px;&#34;&gt;&#xA;        &lt;ul&gt;&#xA;            &#xA;            &lt;li&gt;&lt;a href=&#34;https://web.infenlaces.com/despliegue/contenido/docs/02_linux/&#34;&gt;https://web.infenlaces.com/despliegue/contenido/docs/02_linux/&lt;/a&gt;&lt;/li&gt;&#xA;            &#xA;            &#xA;            &#xA;            &#xA;        &lt;/ul&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Servicios Web con Apache</title>
-      <link>http://localhost:1313/servicios/es/docs/02_nginx/</link>
+      <title>SSH Secure Shell</title>
+      <link>http://localhost:1313/servicios/es/docs/03_ssh/</link>
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/servicios/es/docs/02_nginx/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Servicios Web con Apache</title>
-      <link>http://localhost:1313/servicios/es/docs/03_dns/</link>
-      <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/servicios/es/docs/03_dns/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Servicios Web con Apache</title>
-      <link>http://localhost:1313/servicios/es/docs/04_ssh/</link>
-      <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/servicios/es/docs/04_ssh/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Servicios Web con Apache</title>
-      <link>http://localhost:1313/servicios/es/docs/05_fpt/</link>
-      <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/servicios/es/docs/05_fpt/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Servicios Web con Apache</title>
-      <link>http://localhost:1313/servicios/es/docs/05_sfpt/</link>
-      <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/servicios/es/docs/05_sfpt/</guid>
-      <description></description>
+      <guid>http://localhost:1313/servicios/es/docs/03_ssh/</guid>
+      <description>&lt;p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div style=&#34;border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;&#34;&gt;&#xA;    &lt;div style=&#34;background-color:darkgreen; color:white;&#xA;    font-weight:bold; padding:10px; display: flex; align-items: center;&#34;&gt;&#xA;        &#xA;        &lt;span style=&#34;margin-right: 8px;&#34;&gt;&#xA;            &#xA;                &lt;i class=&#34;fas fa-check-circle&#34;&gt;&lt;/i&gt; &#xA;            &#xA;        &lt;/span&gt;&#xA;        &#xA;        &lt;span&gt;Objetivos&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &lt;h3 style=&#34;padding: 5px; font-weight:bold&#34;&gt;Qué veremos aquí&lt;/h3&gt;&#xA;&#xA;    &lt;hr style=&#34;border-color:seagreen; border-width:3px&#34;/&gt;&#xA;    &#xA;    &lt;div style=&#34;background-color:#d0f0d0; color:darkgreen; padding: 10px;&#34;&gt;&#xA;        &lt;ul&gt;&#xA;            &#xA;            &#xA;            &#xA;            &#xA;        &lt;/ul&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div style=&#34;border: 1px solid navy; border-radius: 5px; overflow: hidden;&#34;&gt;&#xA;    &lt;div style=&#34;background-color: navy; color: white;&#xA;    font-weight: bold; padding: 10px; display: flex; align-items: center;&#34;&gt;&#xA;        &#xA;        &lt;span style=&#34;margin-right: 8px;&#34;&gt;&#xA;            &#xA;                &lt;i class=&#34;fas fa-book&#34;&gt;&lt;/i&gt; &#xA;            &#xA;        &lt;/span&gt;&#xA;        &#xA;        &lt;span&gt;Referencias&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &lt;h3 style=&#34;padding: 5px; font-weight: bold; color: navy;&#34;&gt;Fuentes de Información&lt;/h3&gt;&#xA;&#xA;    &lt;hr style=&#34;border-color: lightblue; border-width: 3px&#34;/&gt;&#xA;    &#xA;    &lt;div style=&#34;background-color: #e0f7fa; color: navy; padding: 10px;&#34;&gt;&#xA;        &lt;ul&gt;&#xA;            &#xA;            &lt;li&gt;&lt;a href=&#34;https://www.openssh.com/manual.html&#34;&gt;https://www.openssh.com/manual.html&lt;/a&gt;&lt;/li&gt;&#xA;            &#xA;            &#xA;            &#xA;            &#xA;        &lt;/ul&gt;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;ssh-secure-shell&#34;&gt;SSH (Secure Shell)&lt;/h2&gt;&#xA;&lt;p&gt;&#xA;&#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary fs-1.5&#34;&gt;&#xA;&#xA;    SSH&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA; es un protocolo que permite iniciar sesiones seguras en máquinas remotas. Utiliza el puerto 22 y su objetivo es establecer conexiones remotas que permitan la transmisión segura de todo tipo de datos. Es parecido a Telnet, con la diferencia de que la información en el caso de SSH se intercambia de forma cifrada.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

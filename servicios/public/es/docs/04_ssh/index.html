@@ -17,13 +17,13 @@
 <link rel="icon" type="image/png" href="/servicios/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/servicios/favicons/android-192x192.png" sizes="192x192">
 
-<title>Servicios Web con Apache | Despliegue de Aplicaciones Web</title>
+<title>SSH Secure Shell | Despliegue de Aplicaciones Web</title>
 <meta name="description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.
 ">
 
 <meta property="og:url" content="http://localhost:1313/servicios/es/docs/04_ssh/">
   <meta property="og:site_name" content="Despliegue de Aplicaciones Web">
-  <meta property="og:title" content="Servicios Web con Apache">
+  <meta property="og:title" content="SSH Secure Shell">
   <meta property="og:description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.">
   <meta property="og:locale" content="es">
   <meta property="og:type" content="article">
@@ -31,12 +31,13 @@
     <meta property="article:published_time" content="2024-12-18T00:00:00+00:00">
     <meta property="article:modified_time" content="2024-12-18T00:00:00+00:00">
 
-  <meta itemprop="name" content="Servicios Web con Apache">
+  <meta itemprop="name" content="SSH Secure Shell">
   <meta itemprop="description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.">
   <meta itemprop="datePublished" content="2024-12-18T00:00:00+00:00">
   <meta itemprop="dateModified" content="2024-12-18T00:00:00+00:00">
+  <meta itemprop="wordCount" content="593">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Servicios Web con Apache">
+  <meta name="twitter:title" content="SSH Secure Shell">
   <meta name="twitter:description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.">
 
 
@@ -175,25 +176,9 @@
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs02_nginx-li">
-  <input type="checkbox" id="m-serviciosesdocs02_nginx-check"/>
-  <label for="m-serviciosesdocs02_nginx-check"><a href="/servicios/es/docs/02_nginx/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs02_nginx"><i class="fas fa-server"></i><span class="">Nginx</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs03_dns-li">
-  <input type="checkbox" id="m-serviciosesdocs03_dns-check"/>
-  <label for="m-serviciosesdocs03_dns-check"><a href="/servicios/es/docs/03_dns/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs03_dns"><i class="fas fa-globe"></i><span class="">Bind (dns)</span></a></label>
-  
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-serviciosesdocs04_ssh-li">
   <input type="checkbox" id="m-serviciosesdocs04_ssh-check" checked/>
-  <label for="m-serviciosesdocs04_ssh-check"><a href="/servicios/es/docs/04_ssh/" title="Servicios Web con Apache" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs04_ssh"><i class="fas fa-terminal"></i><span class="td-sidebar-nav-active-item">SSH</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs05_fpt-li">
-  <input type="checkbox" id="m-serviciosesdocs05_fpt-check"/>
-  <label for="m-serviciosesdocs05_fpt-check"><a href="/servicios/es/docs/05_fpt/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs05_fpt"><i class="fas fa-folder-open"></i><span class="">FTP</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs05_sfpt-li">
-  <input type="checkbox" id="m-serviciosesdocs05_sfpt-check"/>
-  <label for="m-serviciosesdocs05_sfpt-check"><a href="/servicios/es/docs/05_sfpt/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs05_sfpt"><i class="fas fa-lock"></i><span class="">SFTP</span></a></label>
+  <label for="m-serviciosesdocs04_ssh-check"><a href="/servicios/es/docs/04_ssh/" title="SSH Secure Shell" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs04_ssh"><i class="fas fa-terminal"></i><span class="td-sidebar-nav-active-item">SSH</span></a></label>
   
 </li>
   </ul>
@@ -209,7 +194,22 @@
 
 </div>
 
-            
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ssh-secure-shell">SSH (Secure Shell)</a></li>
+    <li><a href="#instalación-de-ssh">Instalación de SSH</a></li>
+    <li><a href="#conexión-remota-con-ssh">Conexión remota con SSH</a></li>
+    <li><a href="#archivos-de-configuración-de-ssh">Archivos de configuración de SSH</a></li>
+    <li><a href="#transferencia-de-archivos-con-scp">Transferencia de archivos con SCP</a></li>
+    <li><a href="#parámetros-importantes-de-configuración">Parámetros importantes de configuración</a></li>
+    <li><a href="#conexión-gráfica-con-x11forwarding">Conexión gráfica con X11Forwarding</a></li>
+    <li><a href="#notas-importantes">Notas importantes</a></li>
+    <li><a href="#referencias">Referencias</a></li>
+  </ul>
+</nav>
+      </div>
+    
             
 
           </aside>
@@ -227,12 +227,352 @@
 </nav>
             
 <div class="td-content">
-	<h1>Servicios Web con Apache</h1>
+	<h1>SSH Secure Shell</h1>
 	<div class="lead">Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.</div>
 	<header class="article-meta">
 		
 </header>
-	
+	<h2 id="ssh-secure-shell">SSH (Secure Shell)</h2>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    SSH
+
+
+</span>
+</strong>
+ es un protocolo que permite iniciar sesiones seguras en máquinas remotas. Utiliza el puerto 22 y su objetivo es establecer conexiones remotas que permitan la transmisión segura de todo tipo de datos. Es parecido a Telnet, con la diferencia de que la información en el caso de SSH viaja encriptada.</p>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fa-shield-alt" aria-hidden="true"></i>
+    
+    <strong>Conexión remota segura</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+SSH permite conectarte a una máquina remota de manera segura y evitar que la información sensible sea capturada por sniffers.
+
+  </div>
+</div>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    SSH
+
+
+</span>
+</strong>
+ utiliza técnicas de criptografía para autenticar a los usuarios y garantizar la confidencialidad al cifrar las conexiones entre dispositivos.</p>
+<p>Una técnica muy interesante que podemos lograr con SSH es la 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    tunelización
+
+
+</span>
+</strong>
+. Crear un túnel una comunicación  consiste en redirigir puertos con el objetivo de que los paquetes enviados en una comunicación puedan atravesar redes que, de otro modo, estarían bloqueadas.</p>
+<p>Gracias a SSH, podemos conectarnos a servidores remotos para gestionar infraestructuras y transferir archivos de forma segura.</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 648px">
+<img class="card-img-top" src="/servicios/es/docs/04_ssh/tunel_hu17983528553436272562.png" width="638" height="241">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+https://geekland.eu/que-es-y-para-que-sirve-un-tunel-ssh/
+
+
+</p>
+</figcaption>
+</figure>
+
+<h2 id="instalación-de-ssh">Instalación de SSH</h2>
+<p>Para instalar un servidor SSH en Ubuntu 24, ejecuta el siguiente comando:
+En nuestro caso vamos a utilizar un virtual box configurado con el siguiente fichero de configuración.
+Obligatoriamente necesitamos conocer la ip del equipo al que tenemos que conectarnos o bien su nombre, por lo que le vamos a asigar una ip
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#a6e22e">Vagrant</span><span style="color:#f92672">.</span><span style="color:#a6e22e">configure</span>(<span style="color:#e6db74">&#34;2&#34;</span>) <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span><span style="color:#a6e22e">config</span><span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">config</span><span style="color:#f92672">.</span><span style="color:#a6e22e">vm</span><span style="color:#f92672">.</span><span style="color:#a6e22e">box</span> <span style="color:#f92672">=</span><span style="color:#e6db74">&#34;bento/ubuntu-24.04&#34;</span>
+</span></span><span style="display:flex; background-color:#3c3d38"><span>  <span style="color:#a6e22e">config</span><span style="color:#f92672">.</span><span style="color:#a6e22e">vm</span><span style="color:#f92672">.</span><span style="color:#a6e22e">network</span> <span style="color:#e6db74">&#34;private_network&#34;</span>, <span style="color:#a6e22e">ip</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;192.168.56.101&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">end</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+Una vez dentro de nuestra máquina procedemos a instalar el <strong>servidor ssh</strong></p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#3c3d38"><span>sudo apt-get install openssh-server</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Una vez instalado, prueba a conectar desde tu máquina local, recordando que la máquina virtual, en este caso, tiene la ip 192.168.56.101.</p>
+<h2 id="conexión-remota-con-ssh">Conexión remota con SSH</h2>
+<p><div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#3c3d38"><span>ssh 192.168.56.101</span></span></code></pre></td></tr></table>
+</div>
+</div>
+*Al contectar vemos que nos sale el siguiente mensaje:</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 883px">
+<img class="card-img-top" src="/servicios/es/docs/04_ssh/1_conexion_hu16712801616747936806.png" width="873" height="119">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+<p><strong>Nos pide la pass del usuario con el que estamos actualmente</strong>  (en mi caso, <em>manuel</em>)</p>
+<blockquote>
+<p>Si este usuario no existe en la máquina, no nos permitirá conectarnos</p>
+</blockquote>
+</p>
+</figcaption>
+</figure>
+<p>Si trabajas en windows, tenemos varios programa para ejecutar un cliente ssh, pero lo mejor es abrir un termina de powershell, que trae el cliente de ssh en línea de comandos y podrás especificar estas mismas acciones.
+Por lo que vamos a analizar los ficheros de configuración, por qué está siendo rechazada la conexión y como lo debemos configurar</p>
+<p>Para conectarte a un servidor remoto utiliza:
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    ssh usuario@host
+
+
+</span>
+</strong>
+
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#3c3d38"><span>ssh vagrant@192.168.56.101 </span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<p><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 410px">
+<img class="card-img-top" src="/servicios/es/docs/04_ssh/2_conexion_hu17301673764636424065.png" width="400" height="450">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+Si el servidor usa un puerto diferente al predeterminado, añade el parámetro 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    -p
+
+
+</span>
+</strong>
+:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#3c3d38"><span>ssh -p <span style="color:#ae81ff">4440</span> usuario@host</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="archivos-de-configuración-de-ssh">Archivos de configuración de SSH</h2>
+<p>Los archivos principales de configuración de SSH están en el directorio 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    /etc/ssh
+
+
+</span>
+</strong>
+. Algunos de los más importantes son:</p>
+<ul>
+<li><strong>sshd_config</strong>: Configuración del servidor SSH.</li>
+<li><strong>ssh_config</strong>: Configuración del cliente SSH.</li>
+<li><strong>ssh_host_rsa_key</strong>: Clave RSA privada de la máquina.</li>
+<li><strong>ssh_host_rsa_key.pub</strong>: Clave RSA pública.</li>
+<li><strong>~/.ssh/authorized_keys</strong>: Claves públicas autorizadas del usuario.</li>
+</ul>
+<h2 id="transferencia-de-archivos-con-scp">Transferencia de archivos con SCP</h2>
+<p>Para copiar archivos de cliente a servidor o viceversa:</p>
+<ul>
+<li>
+<p>Copiar un archivo al servidor:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#3c3d38"><span>scp archivo_local usuario@máquina:archivo_remoto</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p>Copiar un archivo desde el servidor:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#3c3d38"><span>scp usuario@máquina:archivo_remoto archivo_local</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+</ul>
+<h2 id="parámetros-importantes-de-configuración">Parámetros importantes de configuración</h2>
+<p>Algunos parámetros relevantes del archivo 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    sshd_config
+
+
+</span>
+</strong>
+ son:</p>
+<ul>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Port
+
+
+</span>
+</strong>
+: Puerto de escucha (por defecto, 22).</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    PermitRootLogin
+
+
+</span>
+</strong>
+: Permitir o no conexiones como root.</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    AllowUsers
+
+
+</span>
+</strong>
+: Usuarios autorizados para conectarse.</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    X11Forwarding
+
+
+</span>
+</strong>
+: Permitir ejecución de aplicaciones gráficas.</li>
+</ul>
+<h2 id="conexión-gráfica-con-x11forwarding">Conexión gráfica con X11Forwarding</h2>
+<p>Habilita la opción 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    X11Forwarding yes
+
+
+</span>
+</strong>
+ en los archivos de configuración del cliente y servidor. Luego, conéctate utilizando:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#3c3d38"><span>ssh -X usuario@máquina</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Ejecuta una aplicación gráfica como xclock para verificar.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="notas-importantes">Notas importantes</h2>
+
+
+<div class="alert alert-red" role="alert">
+<h4 class="alert-heading">Seguridad</h4>
+
+    <p>Nunca permitas conexiones como root directamente desde SSH (
+<strong>
+<span class="font-weight-bold text-primary"></p>
+<pre><code>PermitRootLogin no
+</code></pre>
+</span>
+</strong>
+).
+
+</div>
+
+
+
+<div class="alert alert-blue" role="alert">
+<h4 class="alert-heading">Práctica</h4>
+
+    <p>Genera una clave RSA y prueba a conectarte sin contraseña con
+<strong>
+<span class="font-weight-bold text-primary"></p>
+<pre><code>ssh-copy-id
+</code></pre>
+</span>
+</strong>
+.
+
+</div>
+
+<h2 id="referencias">Referencias</h2>
+
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Documentación oficial de SSH</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Fuentes de Información</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
+    
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            
+            
+        </ul>
+    </div>
+</div>
+
+
 	
 </div>
 
