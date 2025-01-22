@@ -9,7 +9,10 @@ icon: fas fa-terminal
 draft: false
 ---
 {{< objetivos  >}}
-
+ssh
+ficheros de configuración
+clave pública y privada
+rsync
 {{< /objetivos >}}
 {{<referencias>}}
 https://www.openssh.com/manual.html
