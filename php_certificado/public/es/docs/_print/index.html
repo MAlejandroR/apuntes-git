@@ -363,7 +363,91 @@ Versión imprimible multipagina.
     
     
 	
-<li>11: <a href="#pg-01129368cb76c7cd31e1d83bb80c1969">Ejercicios</a></li>
+<li>11: <a href="#pg-a9b8c97faaa229c72749c8bb0f6add4a">Formularios</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>11.1: <a href="#pg-172cc178351e8a42f66dde48df6b2dde">header(...)</a></li>
+
+
+    
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>12: <a href="#pg-aedd68530c2611dba1a093828bab0626">Arrays</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>13: <a href="#pg-2eb594d35ea7d36e10526ff0602dbc4a">Objetos</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>14: <a href="#pg-01129368cb76c7cd31e1d83bb80c1969">Ejercicios</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>15: <a href="#pg-34695c83f1c5f4ba6faeee24c1ea1bd3">Prácticas</a></li>
 
 
     
@@ -1685,7 +1769,543 @@ Nos permitirá realizar programas mas interactivos
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-01129368cb76c7cd31e1d83bb80c1969">11 - Ejercicios</h1>
+	<h1 id="pg-a9b8c97faaa229c72749c8bb0f6add4a">11 - Formularios</h1>
+    
+	<h3 id="formularios">Formularios</h3>
+<h3 id="objetivos-de-este-tema">Objetivos de este tema</h3>
+<div class="iframe-container">
+<iframe src="https://es.wikieducator.org/index.php?curid=6707" width="100%" height="938">WikiEducator </iframe>
+</div>
+<h3 id="teoría-sobre-formularios">Teoría sobre formularios</h3>
+<div class="iframe-container">
+<iframe src="https://es.wikieducator.org/index.php?curid=6678" width="100%" height="14072">WikiEducator </iframe>
+</div>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="">
+    
+	<h1 id="pg-172cc178351e8a42f66dde48df6b2dde">11.1 - header(...)</h1>
+    
+	<h3 id="redirigiendo-páginas-la-función-heeder">Redirigiendo páginas: la función heeder</h3>
+<div class="iframe-container">
+<iframe src="https://es.wikieducator.org/index.php?curid=6708" width="100%" height="6000">WikiEducator </iframe>
+</div>
+</div>
+
+
+
+    
+	
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-aedd68530c2611dba1a093828bab0626">12 - Arrays</h1>
+    
+	<h3 id="objetivos-de-este-tema">Objetivos de este tema</h3>
+<div class="iframe-container">
+<iframe src="https://es.wikieducator.org/index.php?curid=6673" width="100%" height="1095">WikiEducator </iframe>
+</div>
+<h3 id="teoría-sobre-arrays-en-php">Teoría sobre arrays en php</h3>
+<div class="iframe-container"> 
+<iframe src="https://es.wikieducator.org/index.php?curid=6674" width="100%" height="15171">WikiEducator </iframe>
+</div>
+<h3 id="ejercicio-gestión-de-canales-de-tv">Ejercicio: Gestión de canales de tv</h3>
+<p>Se trata de realizar un programa que me muestre canales de televisión según la descripción que se muestra a continuación:</p>
+<div class="iframe-container"></div> 
+<iframe src="https://es.wikieducator.org/index.php?oldid=31770" width="100%" height="603">WikiEducator </iframe>
+</div>
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Estructura general del Array
+
+
+</span>
+</strong>
+
+<p>El array principal es un array indexado, donde cada elemento tiene las claves <code>name</code> y <code>channels</code>.</p>
+<table>
+  <thead>
+      <tr>
+          <th>Índice (Elemento)</th>
+          <th>Clave</th>
+          <th>Descripción</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>[0]</code></td>
+          <td><code>name</code></td>
+          <td>Nombre del grupo de canales. Ejemplo: <code>'Grupo 1'</code>.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>channels</code></td>
+          <td>Array indexado que contiene los datos de los canales. Véase abajo.</td>
+      </tr>
+      <tr>
+          <td><code>[1]</code></td>
+          <td><code>name</code></td>
+          <td>Nombre del grupo de canales. Ejemplo: <code>'Grupo 2'</code>.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>channels</code></td>
+          <td>Array indexado que contiene los datos de los canales. Véase abajo.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p>El array <code>channels</code>, dentro de cada elemento, contiene un listado de canales con la siguiente estructura:
+; Estructura del elemento <code>channels</code> de cada elemento</p>
+<table>
+  <thead>
+      <tr>
+          <th>Índice (Canal)</th>
+          <th>Clave</th>
+          <th>Descripción</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>[0]</code></td>
+          <td><code>name</code></td>
+          <td>Nombre del canal. Ejemplo: <code>'La 1'</code>.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>web</code></td>
+          <td>URL del sitio web del canal. Ejemplo: <code>'https://www.rtve.es/play/videos/directo/la-1/'</code>.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>logo</code></td>
+          <td>URL del logo del canal. Ejemplo: <code>'https://pbs.twimg.com/profile_images/899385012801470464/akSvNCqE_200x200.jpg'</code>.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>epg_id</code></td>
+          <td>Identificador del canal para la guía de programación. Ejemplo: <code>'La1.TV'</code>.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>options</code></td>
+          <td>Array indexado con opciones relacionadas. Contiene varios elementos, cada uno con 5 claves. Ejemplo: <code>[...]</code>.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>extra_info</code></td>
+          <td>Array vacío para información adicional. Ejemplo: <code>[]</code>.</td>
+      </tr>
+      <tr>
+          <td><code>[1]</code></td>
+          <td><code>name</code></td>
+          <td>Nombre del canal. Ejemplo: <code>'La 2'</code>.</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td><code>web</code></td>
+          <td>URL del sitio web del canal. Ejemplo: `&lsquo;https</td>
+      </tr>
+  </tbody>
+</table>
+<ul>
+<li>Nos interesa el 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    name
+
+
+</span>
+</strong>
+, la 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    web
+
+
+</span>
+</strong>
+ y el 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    web
+
+
+</span>
+</strong>
+ para nuestra aplicación</li>
+</ul>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 805px">
+<img class="card-img-top" src="/certificado/php/es/docs/14_arrays/array_hu11300175386747427628.png" width="795" height="125">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Resultado
+
+
+</span>
+</strong>
+:
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Opción 1
+
+
+</span>
+</strong>
+</p>
+<ul>
+<li>La app, debe de mostrar agrupados los canales por temática (name del primer nivel)</li>
+<li>En cada nivel mostraremos la imagen del canal de forma que si hacemos click sobre ella, nos lleve a su url y podamos ver dicho canal.</li>
+</ul>
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Opción 2
+
+
+</span>
+</strong>
+
+<ul>
+<li>Un desplegable con los name de los canales (grupo de canales)</li>
+<li>Al seleccionar uno de ellos, nos mostrará los logos de los canales de ese grupo</li>
+<li>Se debe de quedar seleccionado dicho grupo</li>
+</ul>
+ <hr style="border-color: red; border-width: 3px;"/>
+<h3 id="anexo">Anexo:</h3>
+<ul>
+<li><em><strong>Funciones estudiadas</strong></em> :</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    array_map
+
+
+</span>
+</strong>
+ que usa callback en su argumento.</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    array_fill
+
+
+</span>
+</strong>
+ para rellenar una función .</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    range
+
+
+</span>
+</strong>
+para crear una secuencia de valores en un array.</li>
+</ul>
+<h4 id="función-array_map">Función <code>array_map</code></h4>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-code" aria-hidden="true"></i>
+    
+    <strong>array_map</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+La función array_map aplica una función callback a cada elemento de uno o más arrays y devuelve un array con los resultados.
+
+  </div>
+</div>
+<p><strong>Sintaxis:</strong>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">array_map</span>(<span style="color:#a6e22e">callable</span> $callback, <span style="color:#66d9ef">array</span> $array, <span style="color:#66d9ef">array</span> <span style="color:#f92672">...</span>$arrays)<span style="color:#f92672">:</span> <span style="color:#66d9ef">array</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<p><strong>Ejemplo:</strong>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">sumarUno</span>($n) {
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#66d9ef">return</span> $n <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>$resultado <span style="color:#f92672">=</span> <span style="color:#a6e22e">array_map</span>(<span style="color:#e6db74">&#39;sumarUno&#39;</span>, [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>]);
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Resultado: [2, 3, 4]
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<p>Usamos un 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    callback
+
+
+</span>
+</strong>
+ para transformar los elementos.
+Un callback representa un tipo de dato que corresponde al código de una función, es el tipo del parámetro (en lugar de ser de otro tipo el parámetro, como entero, real, &hellip;)</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h4 id="función-array_fill">Función <code>array_fill</code></h4>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-clipboard" aria-hidden="true"></i>
+    
+    <strong>array_fill</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+La función `array_fill` llena un array con valores específicos, comenzando desde un índice dado.
+
+  </div>
+</div>
+<p><strong>Sintaxis:</strong>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">array_fill</span>(<span style="color:#a6e22e">int</span> $start_index, <span style="color:#a6e22e">int</span> $count, <span style="color:#a6e22e">mixed</span> $value)<span style="color:#f92672">:</span> <span style="color:#66d9ef">array</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<p><strong>Ejemplo:</strong>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$resultado <span style="color:#f92672">=</span> <span style="color:#a6e22e">array_fill</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">5</span>, <span style="color:#e6db74">&#39;PHP&#39;</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#75715e">// Resultado: [&#39;PHP&#39;, &#39;PHP&#39;, &#39;PHP&#39;, &#39;PHP&#39;, &#39;PHP&#39;]
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<p>Se genera un array con un valor repetido 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    n
+
+
+</span>
+</strong>
+ veces.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h4 id="función-range">Función range</h4>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-list" aria-hidden="true"></i>
+    
+    <strong>range</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+La función range crea un array con una secuencia de valores entre un inicio y un final, opcionalmente con un paso.
+
+  </div>
+</div>
+<p><strong>Sintaxis:</strong>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#a6e22e">range</span>(<span style="color:#a6e22e">mixed</span> $start, <span style="color:#a6e22e">mixed</span> $end, <span style="color:#a6e22e">int</span><span style="color:#f92672">|</span><span style="color:#a6e22e">float</span> $step <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)<span style="color:#f92672">:</span> <span style="color:#66d9ef">array</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<p><strong>Ejemplo:</strong>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$resultado <span style="color:#f92672">=</span> <span style="color:#a6e22e">range</span>(<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">10</span>, <span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex; background-color:#3c3d38"><span><span style="color:#75715e">// Resultado: [1, 3, 5, 7, 9]
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<p>Genera un 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    array secuencial
+
+
+</span>
+</strong>
+ entre valores.</p>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-2eb594d35ea7d36e10526ff0602dbc4a">13 - Objetos</h1>
+    
+	
+
+
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-check-circle"></i> 
+            
+        </span>
+        
+        <span>Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight:bold">Qué veremos aquí</h3>
+
+    <hr style="border-color:seagreen; border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            <li>POO</li>
+            
+            <li>Sintaxis</li>
+            
+            <li>Atributos</li>
+            
+            <li>Métodos</li>
+            
+            <li>Métodos mágicos</li>
+            
+            <li>Sobrecarga</li>
+            
+            
+            
+        </ul>
+    </div>
+    
+
+
+</div>
+
+<div class="iframe-container">
+<iframe src="https://es.wikieducator.org/index.php?oldid=31800" width="100%" height="4500">WikiEducator </iframe>
+</div>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-01129368cb76c7cd31e1d83bb80c1969">14 - Ejercicios</h1>
     
 	
 
@@ -1967,6 +2587,44 @@ Nos permitirá realizar programas mas interactivos
     
 	
   
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-34695c83f1c5f4ba6faeee24c1ea1bd3">15 - Prácticas</h1>
+    
+	<h2 id="realiza-el-programa-de-adivinar-un-número">Realiza el programa de adivinar un número</h2>
+<blockquote>
+<p>Prueba aquí la ejecucuión de la práctica
+<a href="https://web.infenlaces.com/dwes/practicas/adivina_numero/">https://web.infenlaces.com/dwes/practicas/adivina_numero/</a></p>
+</blockquote>
+<p>Para hacerla, puedes editar el código de la página y copiarla. De esta forma ya tendrás un punto de partida.</p>
+<div class="iframe-container">
+<iframe src="https://es.wikieducator.org/index.php?oldid=31774" width="100%" height="2082">WikiEducator </iframe>
+</div>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
 
 
 
@@ -1997,7 +2655,7 @@ Nos permitirá realizar programas mas interactivos
         
       </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
         <span class="td-footer__copyright">&copy;
-    2024
+    2025
     <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
       </div>
     </div>

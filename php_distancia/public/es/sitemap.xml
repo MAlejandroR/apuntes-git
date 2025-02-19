@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://web.infenlaces.com/distancia/dwes/php/es/docs/15_peristencia/1_cookies/</loc>
+    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
+  </url><url>
     <loc>https://web.infenlaces.com/distancia/dwes/php/es/docs/01_introduccion/</loc>
     <lastmod>2024-10-15T07:04:49+02:00</lastmod>
   </url><url>
@@ -9,6 +12,9 @@
     <lastmod>2024-10-15T07:04:49+02:00</lastmod>
   </url><url>
     <loc>https://web.infenlaces.com/distancia/dwes/php/es/docs/03_empezando/</loc>
+    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
+  </url><url>
+    <loc>https://web.infenlaces.com/distancia/dwes/php/es/docs/15_peristencia/2_sesiones/</loc>
     <lastmod>2024-10-15T07:04:49+02:00</lastmod>
   </url><url>
     <loc>https://web.infenlaces.com/distancia/dwes/php/es/docs/04_escribiendo/</loc>
@@ -38,7 +44,22 @@
     <loc>https://web.infenlaces.com/distancia/dwes/php/es/docs/11_funciones/</loc>
     <lastmod>2024-10-15T07:04:49+02:00</lastmod>
   </url><url>
-    <loc>https://web.infenlaces.com/distancia/dwes/php/es/docs/20_ejercicios/</loc>
+    <loc>https://web.infenlaces.com/distancia/dwes/php/es/docs/12_ejercicios/</loc>
+    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
+  </url><url>
+    <loc>https://web.infenlaces.com/distancia/dwes/php/es/docs/13_arrays/ejercicios/</loc>
+    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
+  </url><url>
+    <loc>https://web.infenlaces.com/distancia/dwes/php/es/docs/14_formularios/ejercicios/</loc>
+    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
+  </url><url>
+    <loc>https://web.infenlaces.com/distancia/dwes/php/es/docs/13_arrays/</loc>
+    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
+  </url><url>
+    <loc>https://web.infenlaces.com/distancia/dwes/php/es/docs/14_formularios/</loc>
+    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
+  </url><url>
+    <loc>https://web.infenlaces.com/distancia/dwes/php/es/docs/15_peristencia/</loc>
     <lastmod>2024-10-15T07:04:49+02:00</lastmod>
   </url><url>
     <loc>https://web.infenlaces.com/distancia/dwes/php/es/</loc>

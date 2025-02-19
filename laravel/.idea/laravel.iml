@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="01_seguimiento_alumnos" />
+    <orderEntry type="module" module-name="01_seguimiento_blade" />
+    <orderEntry type="module" module-name="utilidades" />
+    <orderEntry type="module" module-name="apuntes-laravel" />
+    <orderEntry type="module" module-name="apuntes" />
+  </component>
+</module>

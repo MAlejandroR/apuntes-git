@@ -1,34 +1,4 @@
 @import "icons";
-.definicion-concepto {
-
-  width: 75%;
-  border: 2px solid #007bff; /* Borde azul */
-  border-radius: 5px;
-  margin: 15px auto;
-  overflow: hidden; /* Para evitar que el contenido salga de los bordes redondeados */
-}
-
-.definicion-titulo {
-  background-color: #007bff; /* Fondo azul */
-  color: #ffffff; /* Texto blanco */
-  padding: 8px;
-  font-size: 1em;
-  display: flex;
-  align-items: center;
-}
-
-.definicion-titulo i {
-  margin-right: 5px;
-  font-size: 1.2em; /* Tamaño del icono */
-}
-
-.definicion-contenido {
-  padding: 10px;
-  background-color: #f9f9f9; /* Fondo gris claro para el contenido */
-  color: #0b2e13; /* Color de texto para el contenido */
-  font-weight: bold;
-}
-
 .small-bold-text {
   font-size: 0.70em !important;  /* Ajusta el tamaño para que sea pequeño */
   font-weight: 400 !important ;  /* Hace el texto en negrita */

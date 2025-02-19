@@ -83,7 +83,7 @@ En Laravel Breeze, la redirección después de que un usuario se registre se ges
 
 {{% line %}}
 
-#### **Ubicación del Controlador**
+#### Ubicación del Controlador
 
 El controlador se encuentra en la siguiente ruta dentro del proyecto:
 
@@ -93,7 +93,7 @@ app/Http/Controllers/Auth/RegisteredUserController.php
 
 {{% line %}}
 
-#### **Modificar la Redirección**
+#### Modificar la Redirección
 
 Para cambiar la redirección una vez que el usuario se registre, edita el método `store` en el controlador. Este es el fragmento relevante:
 
@@ -119,7 +119,7 @@ $user = User::create([
 
 {{% line %}}
 
-#### **Ejemplo Práctico**
+#### Ejemplo Práctico
 
 Si deseas redirigir a los usuarios recién registrados a una página de bienvenida personalizada (`/welcome`), edita el método de la siguiente manera:
 
@@ -129,6 +129,14 @@ return redirect('/welcome');
 
 {{% line %}}
 
-#### **Nota Adicional**
+#### Nota Adicional
 
-La autenticación del usuario tras el registro está integrada en el método `Auth::login($user)`. Esto asegura que el usuario esté
+La autenticación del usuario tras el registro está integrada en el método `Auth::login($user)`. Esto asegura que el usuario esté autenticado inmediatamente después de registrarse y sea redirigido a la página deseada.
+
+{{< alert title="Nota importante" color="blue" >}}
+Si usas middleware como `auth` para proteger las rutas, asegúrate de que la ruta de redirección esté correctamente configurada para usuarios autenticados.
+{{< /alert >}}
+
+{{% line %}}
+
+

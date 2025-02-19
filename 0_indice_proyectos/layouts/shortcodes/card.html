@@ -1,0 +1,14 @@
+<div class="card bg-base-100 image-full w-96 shadow-xl">
+  <figure>
+    <img src="{{ .Get "image" }}" alt="{{ .Get "title" }}" />
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title">{{ .Get "title" }}</h2>
+    <p>{{ .Inner }}</p>
+    <div class="card-actions justify-end">
+      <div class="card-actions justify-center">-->
+       <a href='{{ .Get "url" }}' class="btn btn-primary" target="_blank">Ver más</a>
+            </div>
+    </div>
+  </div>
+</div>

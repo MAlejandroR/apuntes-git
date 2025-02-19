@@ -36,7 +36,7 @@ Posteriormente, hay que cargarla en el componente de **listado_tabla.vue**
 {{< highlight javascript "linenos=table,anclorlinenos=true, hl_lines=3 7-9" >}}
 <script>
 import axios from 'axios';
-import {TailwindPagination} from 'laravel-vue-pagination';
+import {TailwindPagination} from 'laravel_-vue-pagination';
 
 export default {
     name: "tabla",
@@ -117,7 +117,7 @@ Y ahora implmentamos el método del cliente
 Nos quedaría terminar el proceso, es decir, agregar la ruta **/paginate** en el fichero de rutas **web_old.php_** e implementar el método correspondiente
 
 {{%pageinfo%}}
-Cuidado al añadir la ruta, si la ponemos después de resources, no funcionará.
+Cuidado al añadir la ruta, si la ponemos después de resources_, no funcionará.
 
 Esto sucede porque la ruta asignada para los métodos del resource que tienen parámetros, concretamente la ruta EmpresaController@show
 
@@ -126,7 +126,7 @@ Esto sucede porque la ruta asignada para los métodos del resource que tienen pa
 
 no tiene restricciones, es decir, puede ser un número o una cadena de texto
 Para solucionarlo tenemos dos opciones:
- 1.- Establecer la ruta de paginate antes que la de resources
+ 1.- Establecer la ruta de paginate antes que la de resources_
  2.- Establecer un patrón para {empresa}, especificando que tiene que ser un número
 {{%/pageinfo%}}
 

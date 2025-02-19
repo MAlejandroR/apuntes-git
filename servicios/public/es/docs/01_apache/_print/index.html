@@ -1,10 +1,10 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head>
+  <head><script src="/servicios/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=servicios/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="https://web.infenlaces.com/servicios/es/docs/01_apache/">
-<link rel="alternate" type="application/rss&#43;xml" href="https://web.infenlaces.com/servicios/es/docs/01_apache/index.xml">
+<link rel="canonical" type="text/html" href="http://localhost:1313/servicios/es/docs/01_apache/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/servicios/es/docs/01_apache/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -23,24 +23,20 @@
 <meta name="description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.
 ">
 
-<meta property="og:url" content="https://web.infenlaces.com/servicios/es/docs/01_apache/">
-  <meta property="og:site_name" content="Despliegue de Aplicaciones Web">
-  <meta property="og:title" content="Servicios Web con Apache">
-  <meta property="og:description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.">
-  <meta property="og:locale" content="es">
-  <meta property="og:type" content="website">
+<meta property="og:title" content="Servicios Web con Apache" />
+<meta property="og:description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.
+" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/servicios/es/docs/01_apache/" />
 
-  <meta itemprop="name" content="Servicios Web con Apache">
-  <meta itemprop="description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.">
-  <meta itemprop="datePublished" content="2024-12-18T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-12-18T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1072">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Servicios Web con Apache">
-  <meta name="twitter:description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.">
+<meta itemprop="name" content="Servicios Web con Apache">
+<meta itemprop="description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.
+"><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Servicios Web con Apache"/>
+<meta name="twitter:description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.
+"/>
 
 
-<link rel="preload" href="/servicios/scss/main.min.ba292a34f2e97a668d6a63a7413b2870bc1caed016b8cee371c06c9aeb16806c.css" as="style"><link href="/servicios/scss/main.min.ba292a34f2e97a668d6a63a7413b2870bc1caed016b8cee371c06c9aeb16806c.css" rel="stylesheet">
+<link href="/servicios/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -250,7 +246,7 @@ Versión imprimible multipagina.
 <p><strong>Apache HTTP Server</strong>, comúnmente conocido como Apache, es uno de los servidores web más utilizados en el mundo.</p>
 <p>Como características, podrímos destacar su flexibilidad, estabilidad y gran cantidad de módulos lo convierten en una opción ideal para gestionar servicios web en entornos variados.</p>
 <p>Vemos en la siguiente imagen cómo apache es escalable a través de módulos que podremos ir integrando según vayamos necesitando
-<img src="/servicios/es/docs/01_apache/apache.png" alt="apache.png"></p>
+<img alt="apache.png" src="/servicios/es/docs/01_apache/apache.png"></p>
 <hr style="border-color: red; border-width: 3px;"/>
 <p>En este tema, exploraremos cómo instalar Apache, configurarlo y aprovechar sus funcionalidades clave para implementar servicios web efectivos. También aprenderemos a utilizarlo en un entorno virtualizado con Vagrant, facilitando la práctica en un entorno controlado y replicable.</p>
 <h3 id="2--instalación">2.- Instalación</h3>
@@ -702,45 +698,45 @@ Sin embargo, para simplificar la administración, se recomienda utilizar herrami
 </div>
 <h3 id="comparación-entre-apachectl-y-systemctl"><strong>Comparación entre apachectl y systemctl</strong></h3>
 <table>
-  <thead>
-      <tr>
-          <th>Característica</th>
-          <th><code>apachectl</code></th>
-          <th><code>systemctl</code></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Propósito</strong></td>
-          <td>Administra específicamente Apache.</td>
-          <td>Administra servicios en general, incluyendo Apache.</td>
-      </tr>
-      <tr>
-          <td><strong>Nivel de enfoque</strong></td>
-          <td>Solo para Apache.</td>
-          <td>Para cualquier servicio del sistema.</td>
-      </tr>
-      <tr>
-          <td><strong>Comandos básicos</strong></td>
-          <td>start, stop, restart, graceful, configtest.</td>
-          <td>start, stop, restart, status, enable.</td>
-      </tr>
-      <tr>
-          <td><strong>Dependencia de systemd</strong></td>
-          <td>No depende de <code>systemd</code>.</td>
-          <td>Necesita <code>systemd</code> para funcionar.</td>
-      </tr>
-      <tr>
-          <td><strong>Verificación de configuración</strong></td>
-          <td>Incluye opción <code>configtest</code>.</td>
-          <td>No verifica configuración.</td>
-      </tr>
-      <tr>
-          <td><strong>Simplicidad</strong></td>
-          <td>Directo y específico para Apache.</td>
-          <td>Requiere más comandos para detalles específicos.</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Característica</th>
+<th><code>apachectl</code></th>
+<th><code>systemctl</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Propósito</strong></td>
+<td>Administra específicamente Apache.</td>
+<td>Administra servicios en general, incluyendo Apache.</td>
+</tr>
+<tr>
+<td><strong>Nivel de enfoque</strong></td>
+<td>Solo para Apache.</td>
+<td>Para cualquier servicio del sistema.</td>
+</tr>
+<tr>
+<td><strong>Comandos básicos</strong></td>
+<td>start, stop, restart, graceful, configtest.</td>
+<td>start, stop, restart, status, enable.</td>
+</tr>
+<tr>
+<td><strong>Dependencia de systemd</strong></td>
+<td>No depende de <code>systemd</code>.</td>
+<td>Necesita <code>systemd</code> para funcionar.</td>
+</tr>
+<tr>
+<td><strong>Verificación de configuración</strong></td>
+<td>Incluye opción <code>configtest</code>.</td>
+<td>No verifica configuración.</td>
+</tr>
+<tr>
+<td><strong>Simplicidad</strong></td>
+<td>Directo y específico para Apache.</td>
+<td>Requiere más comandos para detalles específicos.</td>
+</tr>
+</tbody>
 </table>
 <h3 id="conclusión"><strong>Conclusión</strong></h3>
 <ul>
@@ -813,7 +809,7 @@ Imaginemos que tenemos una persona llamada <strong>Manuel</strong>. En el trabaj
 seria. En casa o con amigos, le llaman <strong><em>Manolo</em></strong> y su actitud es más relajada y cercana. Aunque es la misma persona,
 <em>responde de manera diferente según cómo le llamen.</em></p>
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 410px">
-<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/manuel-manolo_hu13058195514737110978.webp" width="400" height="400">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/manuel-manolo_hu6f20535f519bb318fa3f2b990b61a956_45386_400x400_fill_q75_h2_box_smart1_2.webp" width="400" height="400">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -853,7 +849,7 @@ diferentes contenidos o configuraciones según el dominio que se utilice.
 Lógicamente primero tendremos que establecer que varios nombres de dominio cada uno de los cuales va a corresponder a un
 host virtual, apunten a la misma ip.
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 683px">
-<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/virtual_host_hu596676614878131368.png" width="673" height="295">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/virtual_host_hua8b914b33f5ddd74141fa466e9bcddb4_148923_673x295_fill_box_smart1_3.png" width="673" height="295">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -1255,7 +1251,7 @@ Esto puede ser útil cuando queremos que un sitio web responda a diferentes nomb
 Y vemos las imágenes:</p>
 <hr style="border-color: red; border-width: 3px;"/>
 <p><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 470px">
-<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/1_musica_hu11949293887405770643.png" width="460" height="89">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/1_musica_hucc49d5f82678c23dcbb191a3fc39e33c_8722_460x89_fill_box_smart1_3.png" width="460" height="89">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -1267,7 +1263,7 @@ Y vemos las imágenes:</p>
 </figure>
 
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 470px">
-<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/2_musica_hu11684716105411578636.png" width="460" height="89">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/2_musica_hufbe3537923e754ea531daf3191b14aa1_7370_460x89_fill_box_smart1_3.png" width="460" height="89">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -1279,7 +1275,7 @@ Y vemos las imágenes:</p>
 </figure>
 
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 470px">
-<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/3_musica_hu5792214064372680345.png" width="460" height="89">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/3_musica_hu00d4a358146cbc95276018960a167170_7342_460x89_fill_box_smart1_3.png" width="460" height="89">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -1423,7 +1419,7 @@ Y vemos las imágenes:</p>
 <p>En apache podemos configurar a nivel global (afectará a todos los proyectos), o bien podemos establecer una configuracion particular a un directorio y todos sus subdirectorios.</p>
 <p>La sigueinte imagen trata de ilustrar este concepto:
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 823px">
-<img class="card-img-top" src="/servicios/es/docs/01_apache/02_auth/apache_conf_hu14476145889970730402.png" width="813" height="849">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/02_auth/apache_conf_hu4a0e455f421e5f16619552ba6e3f53ec_194324_813x849_fill_box_smart1_3.png" width="813" height="849">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -1650,7 +1646,7 @@ Usa el comando <code>htpasswd</code> para generar el archivo que almacenará las
 </blockquote>
 <blockquote>
 <blockquote>
-<p><img src="/servicios/es/docs/01_apache/02_auth/img.png" alt="img.png"></p>
+<p><img alt="img.png" src="/servicios/es/docs/01_apache/02_auth/img.png"></p>
 </blockquote>
 </blockquote>
 <ol start="3">
@@ -1678,7 +1674,7 @@ En el directorio que deseas proteger, crea un archivo <code>.htaccess</code> con
 </ul>
 </li>
 </ol>
-<p><img src="/servicios/es/docs/01_apache/02_auth/img_1.png" alt="img_1.png"></p>
+<p><img alt="img_1.png" src="/servicios/es/docs/01_apache/02_auth/img_1.png"></p>
 <hr>
 <h3 id="2-autenticación-digest">2. <strong>Autenticación Digest</strong></h3>
 <p>La autenticación <strong>Digest</strong> es más segura que Basic, ya que cifra las credenciales del usuario usando un hash antes de enviarlas. A pesar de ser más seguro por el hecho de que se cifran las credneciales, también se recomienda usar  HTTPS para mayor seguridad.</p>
@@ -1707,7 +1703,7 @@ Usa el comando <code>htdigest</code> para crear un archivo de contraseñas:
 </div>
 <ul>
 <li><code>&quot;Área Restringida&quot;</code>: corresponde al ambito (realm), y su valor, que es obligatorio, debe coincidir con el valor de <code>AuthName</code> del fichero de configuración  <code>.htaccess</code>.
-<img src="/servicios/es/docs/01_apache/02_auth/img_2.png" alt="img_2.png"></li>
+<img alt="img_2.png" src="/servicios/es/docs/01_apache/02_auth/img_2.png"></li>
 </ul>
 </li>
 <li><strong>Configurar el archivo <code>.htaccess</code></strong>:
@@ -1764,7 +1760,7 @@ Para ello vamos a crear un entorno con una serie de restricciones, según se mue
 <li>Los accesos permitidos son los que se muestran</li>
 <li>Debemos hacerlo tanto con <strong>basic</strong> como con <strong>digest</strong>
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 406px">
-<img class="card-img-top" src="/servicios/es/docs/01_apache/02_auth/auth_group_hu15630721514128836839.webp" width="396" height="682">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/02_auth/auth_group_hu8b0bf761f61ca92f748a95f646b38857_14624_396x682_fill_q75_h2_box_smart1_2.webp" width="396" height="682">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -1897,7 +1893,7 @@ Define grupos y asigna usuarios:
 </strong>
 </p>
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 260px">
-<img class="card-img-top" src="/servicios/es/docs/01_apache/02_auth/carpetas_web_hu4404206977500153289.png" width="250" height="300">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/02_auth/carpetas_web_hu8c18d5b2a6c194f6afb61a029f6a2336_11463_250x300_fill_box_smart1_3.png" width="250" height="300">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -2473,8 +2469,8 @@ Un ejemplo típico de reescritura para URLs amigables:
 </footer>
 
     </div>
-    <script src="/servicios/js/main.min.c14cc2cfea8ce4989015e42e06e3457753ca6e6901fa5f0fc09a569308faeb19.js" integrity="sha256-wUzCz&#43;qM5JiQFeQuBuNFd1PKbmkB&#43;l8PwJpWkwj66xk=" crossorigin="anonymous"></script>
-<script defer src="/servicios/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <script src="/servicios/js/main.js"></script>
+<script defer src="/servicios/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/servicios/js/tabpane-persist.js'></script>
 
   </body>

@@ -1,9 +1,9 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head>
+  <head><script src="/servicios/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=servicios/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/servicios/favicons/favicon.ico" >
@@ -18,29 +18,24 @@
 <link rel="icon" type="image/png" href="/servicios/favicons/android-192x192.png" sizes="192x192">
 
 <title>Auth | Despliegue de Aplicaciones Web</title>
-<meta name="description" content=" Referencias Fuentes de Información https://httpd.apache.org/docs/2.4/es/howto/auth.html Objetivos Qué veremos aquí Fichero .htaccess Autenticación basic Autenticación digest Autenticación de usuarios Autenticación de grupo de usuarios 1.- El fichero .htacces Antes de empezar con la autneticación, vamos a ver un fichero de configuración especial en apache: .htaccess ">
+<meta name="description" content="Referencias Fuentes de Información https://httpd.apache.org/docs/2.4/es/howto/auth.html Objetivos Qué veremos aquí Fichero .htaccess Autenticación basic Autenticación digest Autenticación de usuarios Autenticación de grupo de usuarios 1.- El fichero .htacces Antes de empezar con la autneticación, vamos a ver un fichero de configuración especial en apache: .htaccess En apache podemos configurar a nivel global (afectará a todos los proyectos), o bien podemos establecer una configuracion particular a un directorio y todos sus subdirectorios.">
 
-<meta property="og:url" content="https://web.infenlaces.com/servicios/es/docs/01_apache/02_auth/">
-  <meta property="og:site_name" content="Despliegue de Aplicaciones Web">
-  <meta property="og:title" content="Auth">
-  <meta property="og:description" content="Referencias Fuentes de Información https://httpd.apache.org/docs/2.4/es/howto/auth.html Objetivos Qué veremos aquí Fichero .htaccess Autenticación basic Autenticación digest Autenticación de usuarios Autenticación de grupo de usuarios 1.- El fichero .htacces Antes de empezar con la autneticación, vamos a ver un fichero de configuración especial en apache: .htaccess">
-  <meta property="og:locale" content="es">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="docs">
-    <meta property="article:published_time" content="2024-12-18T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-12-18T00:00:00+00:00">
+<meta property="og:title" content="Auth" />
+<meta property="og:description" content="Referencias Fuentes de Información https://httpd.apache.org/docs/2.4/es/howto/auth.html Objetivos Qué veremos aquí Fichero .htaccess Autenticación basic Autenticación digest Autenticación de usuarios Autenticación de grupo de usuarios 1.- El fichero .htacces Antes de empezar con la autneticación, vamos a ver un fichero de configuración especial en apache: .htaccess En apache podemos configurar a nivel global (afectará a todos los proyectos), o bien podemos establecer una configuracion particular a un directorio y todos sus subdirectorios." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/servicios/es/docs/01_apache/02_auth/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2024-12-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-12-18T00:00:00+00:00" />
 
-  <meta itemprop="name" content="Auth">
-  <meta itemprop="description" content="Referencias Fuentes de Información https://httpd.apache.org/docs/2.4/es/howto/auth.html Objetivos Qué veremos aquí Fichero .htaccess Autenticación basic Autenticación digest Autenticación de usuarios Autenticación de grupo de usuarios 1.- El fichero .htacces Antes de empezar con la autneticación, vamos a ver un fichero de configuración especial en apache: .htaccess">
-  <meta itemprop="datePublished" content="2024-12-18T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-12-18T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1454">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Auth">
-  <meta name="twitter:description" content="Referencias Fuentes de Información https://httpd.apache.org/docs/2.4/es/howto/auth.html Objetivos Qué veremos aquí Fichero .htaccess Autenticación basic Autenticación digest Autenticación de usuarios Autenticación de grupo de usuarios 1.- El fichero .htacces Antes de empezar con la autneticación, vamos a ver un fichero de configuración especial en apache: .htaccess">
+<meta itemprop="name" content="Auth">
+<meta itemprop="description" content="Referencias Fuentes de Información https://httpd.apache.org/docs/2.4/es/howto/auth.html Objetivos Qué veremos aquí Fichero .htaccess Autenticación basic Autenticación digest Autenticación de usuarios Autenticación de grupo de usuarios 1.- El fichero .htacces Antes de empezar con la autneticación, vamos a ver un fichero de configuración especial en apache: .htaccess En apache podemos configurar a nivel global (afectará a todos los proyectos), o bien podemos establecer una configuracion particular a un directorio y todos sus subdirectorios."><meta itemprop="datePublished" content="2024-12-18T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-12-18T00:00:00+00:00" />
+<meta itemprop="wordCount" content="1454">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Auth"/>
+<meta name="twitter:description" content="Referencias Fuentes de Información https://httpd.apache.org/docs/2.4/es/howto/auth.html Objetivos Qué veremos aquí Fichero .htaccess Autenticación basic Autenticación digest Autenticación de usuarios Autenticación de grupo de usuarios 1.- El fichero .htacces Antes de empezar con la autneticación, vamos a ver un fichero de configuración especial en apache: .htaccess En apache podemos configurar a nivel global (afectará a todos los proyectos), o bien podemos establecer una configuracion particular a un directorio y todos sus subdirectorios."/>
 
 
-<link rel="preload" href="/servicios/scss/main.min.ba292a34f2e97a668d6a63a7413b2870bc1caed016b8cee371c06c9aeb16806c.css" as="style"><link href="/servicios/scss/main.min.ba292a34f2e97a668d6a63a7413b2870bc1caed016b8cee371c06c9aeb16806c.css" rel="stylesheet">
+<link href="/servicios/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -338,7 +333,7 @@
 <p>En apache podemos configurar a nivel global (afectará a todos los proyectos), o bien podemos establecer una configuracion particular a un directorio y todos sus subdirectorios.</p>
 <p>La sigueinte imagen trata de ilustrar este concepto:
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 823px">
-<img class="card-img-top" src="/servicios/es/docs/01_apache/02_auth/apache_conf_hu14476145889970730402.png" width="813" height="849">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/02_auth/apache_conf_hu4a0e455f421e5f16619552ba6e3f53ec_194324_813x849_fill_box_smart1_3.png" width="813" height="849">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -565,7 +560,7 @@ Usa el comando <code>htpasswd</code> para generar el archivo que almacenará las
 </blockquote>
 <blockquote>
 <blockquote>
-<p><img src="/servicios/es/docs/01_apache/02_auth/img.png" alt="img.png"></p>
+<p><img alt="img.png" src="/servicios/es/docs/01_apache/02_auth/img.png"></p>
 </blockquote>
 </blockquote>
 <ol start="3">
@@ -593,7 +588,7 @@ En el directorio que deseas proteger, crea un archivo <code>.htaccess</code> con
 </ul>
 </li>
 </ol>
-<p><img src="/servicios/es/docs/01_apache/02_auth/img_1.png" alt="img_1.png"></p>
+<p><img alt="img_1.png" src="/servicios/es/docs/01_apache/02_auth/img_1.png"></p>
 <hr>
 <h3 id="2-autenticación-digest">2. <strong>Autenticación Digest</strong></h3>
 <p>La autenticación <strong>Digest</strong> es más segura que Basic, ya que cifra las credenciales del usuario usando un hash antes de enviarlas. A pesar de ser más seguro por el hecho de que se cifran las credneciales, también se recomienda usar  HTTPS para mayor seguridad.</p>
@@ -622,7 +617,7 @@ Usa el comando <code>htdigest</code> para crear un archivo de contraseñas:
 </div>
 <ul>
 <li><code>&quot;Área Restringida&quot;</code>: corresponde al ambito (realm), y su valor, que es obligatorio, debe coincidir con el valor de <code>AuthName</code> del fichero de configuración  <code>.htaccess</code>.
-<img src="/servicios/es/docs/01_apache/02_auth/img_2.png" alt="img_2.png"></li>
+<img alt="img_2.png" src="/servicios/es/docs/01_apache/02_auth/img_2.png"></li>
 </ul>
 </li>
 <li><strong>Configurar el archivo <code>.htaccess</code></strong>:
@@ -679,7 +674,7 @@ Para ello vamos a crear un entorno con una serie de restricciones, según se mue
 <li>Los accesos permitidos son los que se muestran</li>
 <li>Debemos hacerlo tanto con <strong>basic</strong> como con <strong>digest</strong>
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 406px">
-<img class="card-img-top" src="/servicios/es/docs/01_apache/02_auth/auth_group_hu15630721514128836839.webp" width="396" height="682">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/02_auth/auth_group_hu8b0bf761f61ca92f748a95f646b38857_14624_396x682_fill_q75_h2_box_smart1_2.webp" width="396" height="682">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -812,7 +807,7 @@ Define grupos y asigna usuarios:
 </strong>
 </p>
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 260px">
-<img class="card-img-top" src="/servicios/es/docs/01_apache/02_auth/carpetas_web_hu4404206977500153289.png" width="250" height="300">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/02_auth/carpetas_web_hu8c18d5b2a6c194f6afb61a029f6a2336_11463_250x300_fill_box_smart1_3.png" width="250" height="300">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -990,8 +985,8 @@ En este caso puede acceder cualquier usuario del grupo de <strong>informática</
 </footer>
 
     </div>
-    <script src="/servicios/js/main.min.c14cc2cfea8ce4989015e42e06e3457753ca6e6901fa5f0fc09a569308faeb19.js" integrity="sha256-wUzCz&#43;qM5JiQFeQuBuNFd1PKbmkB&#43;l8PwJpWkwj66xk=" crossorigin="anonymous"></script>
-<script defer src="/servicios/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <script src="/servicios/js/main.js"></script>
+<script defer src="/servicios/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/servicios/js/tabpane-persist.js'></script>
 
   </body>

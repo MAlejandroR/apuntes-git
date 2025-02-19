@@ -1,11 +1,11 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head>
+  <head><script src="/servicios/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=servicios/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="alternate" type="application/rss&#43;xml" href="https://web.infenlaces.com/servicios/es/docs/01_apache/index.xml">
-<link rel="alternate" type="text/html" href="https://web.infenlaces.com/servicios/es/docs/01_apache/_print/">
-<meta name="robots" content="index, follow">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/servicios/es/docs/01_apache/index.xml">
+<link rel="alternate" type="text/html" href="http://localhost:1313/servicios/es/docs/01_apache/_print/">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/servicios/favicons/favicon.ico" >
@@ -23,24 +23,20 @@
 <meta name="description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.
 ">
 
-<meta property="og:url" content="https://web.infenlaces.com/servicios/es/docs/01_apache/">
-  <meta property="og:site_name" content="Despliegue de Aplicaciones Web">
-  <meta property="og:title" content="Servicios Web con Apache">
-  <meta property="og:description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.">
-  <meta property="og:locale" content="es">
-  <meta property="og:type" content="website">
+<meta property="og:title" content="Servicios Web con Apache" />
+<meta property="og:description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.
+" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/servicios/es/docs/01_apache/" />
 
-  <meta itemprop="name" content="Servicios Web con Apache">
-  <meta itemprop="description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.">
-  <meta itemprop="datePublished" content="2024-12-18T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-12-18T00:00:00+00:00">
-  <meta itemprop="wordCount" content="1072">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Servicios Web con Apache">
-  <meta name="twitter:description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.">
+<meta itemprop="name" content="Servicios Web con Apache">
+<meta itemprop="description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.
+"><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Servicios Web con Apache"/>
+<meta name="twitter:description" content="Aprendemos a instalar, configurar y personalizar Apache para implementar servicios web efectivos.
+"/>
 
 
-<link rel="preload" href="/servicios/scss/main.min.ba292a34f2e97a668d6a63a7413b2870bc1caed016b8cee371c06c9aeb16806c.css" as="style"><link href="/servicios/scss/main.min.ba292a34f2e97a668d6a63a7413b2870bc1caed016b8cee371c06c9aeb16806c.css" rel="stylesheet">
+<link href="/servicios/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -289,7 +285,7 @@
 <p><strong>Apache HTTP Server</strong>, comúnmente conocido como Apache, es uno de los servidores web más utilizados en el mundo.</p>
 <p>Como características, podrímos destacar su flexibilidad, estabilidad y gran cantidad de módulos lo convierten en una opción ideal para gestionar servicios web en entornos variados.</p>
 <p>Vemos en la siguiente imagen cómo apache es escalable a través de módulos que podremos ir integrando según vayamos necesitando
-<img src="/servicios/es/docs/01_apache/apache.png" alt="apache.png"></p>
+<img alt="apache.png" src="/servicios/es/docs/01_apache/apache.png"></p>
 <hr style="border-color: red; border-width: 3px;"/>
 <p>En este tema, exploraremos cómo instalar Apache, configurarlo y aprovechar sus funcionalidades clave para implementar servicios web efectivos. También aprenderemos a utilizarlo en un entorno virtualizado con Vagrant, facilitando la práctica en un entorno controlado y replicable.</p>
 <h3 id="2--instalación">2.- Instalación</h3>
@@ -741,45 +737,45 @@ Sin embargo, para simplificar la administración, se recomienda utilizar herrami
 </div>
 <h3 id="comparación-entre-apachectl-y-systemctl"><strong>Comparación entre apachectl y systemctl</strong></h3>
 <table>
-  <thead>
-      <tr>
-          <th>Característica</th>
-          <th><code>apachectl</code></th>
-          <th><code>systemctl</code></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>Propósito</strong></td>
-          <td>Administra específicamente Apache.</td>
-          <td>Administra servicios en general, incluyendo Apache.</td>
-      </tr>
-      <tr>
-          <td><strong>Nivel de enfoque</strong></td>
-          <td>Solo para Apache.</td>
-          <td>Para cualquier servicio del sistema.</td>
-      </tr>
-      <tr>
-          <td><strong>Comandos básicos</strong></td>
-          <td>start, stop, restart, graceful, configtest.</td>
-          <td>start, stop, restart, status, enable.</td>
-      </tr>
-      <tr>
-          <td><strong>Dependencia de systemd</strong></td>
-          <td>No depende de <code>systemd</code>.</td>
-          <td>Necesita <code>systemd</code> para funcionar.</td>
-      </tr>
-      <tr>
-          <td><strong>Verificación de configuración</strong></td>
-          <td>Incluye opción <code>configtest</code>.</td>
-          <td>No verifica configuración.</td>
-      </tr>
-      <tr>
-          <td><strong>Simplicidad</strong></td>
-          <td>Directo y específico para Apache.</td>
-          <td>Requiere más comandos para detalles específicos.</td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Característica</th>
+<th><code>apachectl</code></th>
+<th><code>systemctl</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Propósito</strong></td>
+<td>Administra específicamente Apache.</td>
+<td>Administra servicios en general, incluyendo Apache.</td>
+</tr>
+<tr>
+<td><strong>Nivel de enfoque</strong></td>
+<td>Solo para Apache.</td>
+<td>Para cualquier servicio del sistema.</td>
+</tr>
+<tr>
+<td><strong>Comandos básicos</strong></td>
+<td>start, stop, restart, graceful, configtest.</td>
+<td>start, stop, restart, status, enable.</td>
+</tr>
+<tr>
+<td><strong>Dependencia de systemd</strong></td>
+<td>No depende de <code>systemd</code>.</td>
+<td>Necesita <code>systemd</code> para funcionar.</td>
+</tr>
+<tr>
+<td><strong>Verificación de configuración</strong></td>
+<td>Incluye opción <code>configtest</code>.</td>
+<td>No verifica configuración.</td>
+</tr>
+<tr>
+<td><strong>Simplicidad</strong></td>
+<td>Directo y específico para Apache.</td>
+<td>Requiere más comandos para detalles específicos.</td>
+</tr>
+</tbody>
 </table>
 <h3 id="conclusión"><strong>Conclusión</strong></h3>
 <ul>
@@ -854,8 +850,8 @@ Sin embargo, para simplificar la administración, se recomienda utilizar herrami
 </footer>
 
     </div>
-    <script src="/servicios/js/main.min.c14cc2cfea8ce4989015e42e06e3457753ca6e6901fa5f0fc09a569308faeb19.js" integrity="sha256-wUzCz&#43;qM5JiQFeQuBuNFd1PKbmkB&#43;l8PwJpWkwj66xk=" crossorigin="anonymous"></script>
-<script defer src="/servicios/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <script src="/servicios/js/main.js"></script>
+<script defer src="/servicios/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/servicios/js/tabpane-persist.js'></script>
 
   </body>

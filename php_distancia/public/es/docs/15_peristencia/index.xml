@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Persistencia on Desarrollo Web en Entorno Servidor</title>
+    <link>https://web.infenlaces.com/distancia/dwes/php/es/docs/15_peristencia/</link>
+    <description>Recent content in Persistencia on Desarrollo Web en Entorno Servidor</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 15 Oct 2024 07:04:49 +0200</lastBuildDate>
+    <atom:link href="https://web.infenlaces.com/distancia/dwes/php/es/docs/15_peristencia/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cookies</title>
+      <link>https://web.infenlaces.com/distancia/dwes/php/es/docs/15_peristencia/1_cookies/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>https://web.infenlaces.com/distancia/dwes/php/es/docs/15_peristencia/1_cookies/</guid>
+      <description>&lt;h3 id=&#34;las-cookies-en-php&#34;&gt;Las cookies en php&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=4414&#34; width=&#34;100%&#34; height=&#34;8000&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Sesiones</title>
+      <link>https://web.infenlaces.com/distancia/dwes/php/es/docs/15_peristencia/2_sesiones/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>https://web.infenlaces.com/distancia/dwes/php/es/docs/15_peristencia/2_sesiones/</guid>
+      <description>&lt;h3 id=&#34;sesiones&#34;&gt;Sesiones&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=4545&#34; width=&#34;100%&#34; height=&#34;8000&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

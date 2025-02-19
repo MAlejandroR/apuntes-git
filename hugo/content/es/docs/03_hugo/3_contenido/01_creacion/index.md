@@ -123,7 +123,7 @@ Para crear las páginas de un tipo u otro, tiene una serie de argumentos
 
 En este tema tenemos una archtype que es el {{<color_green>}}chapter{{</color_green>}} que va a constituir una introducción a una sección ({{<color_green>}}El fichero _index.md{{</color_green>}})
 ```shell
- hugo new --kind chapter  01_teoria/_index.md
+ hugo new --kind chapter  01_teoria/pendiente_mirar_otro_index_old
 ```
 
 

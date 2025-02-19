@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../apuntes-laravel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../../apuntes-laravel/docsy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../0_indice_proyectos" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../hugo/themes" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../php" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../php_certificado" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../php_distancia" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../web_certificado" vcs="Git" />
+    <mapping directory="$USER_HOME$/laravel/01_seguimiento_alumnos" vcs="Git" />
+    <mapping directory="$USER_HOME$/laravel/01_seguimiento_blade" vcs="Git" />
+  </component>
+</project>

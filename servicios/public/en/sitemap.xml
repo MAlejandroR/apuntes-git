@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://web.infenlaces.com/servicios/en/categories/</loc>
+    <loc>http://localhost:1313/servicios/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://web.infenlaces.com/servicios/es/categories/"
+                href="http://localhost:1313/servicios/es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://web.infenlaces.com/servicios/fr/categories/"
+                href="http://localhost:1313/servicios/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://web.infenlaces.com/servicios/en/categories/"
+                href="http://localhost:1313/servicios/en/categories/"
                 />
   </url><url>
-    <loc>https://web.infenlaces.com/servicios/en/</loc>
+    <loc>http://localhost:1313/servicios/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://web.infenlaces.com/servicios/es/"
+                href="http://localhost:1313/servicios/es/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://web.infenlaces.com/servicios/fr/"
+                href="http://localhost:1313/servicios/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://web.infenlaces.com/servicios/en/"
+                href="http://localhost:1313/servicios/en/"
                 />
   </url><url>
-    <loc>https://web.infenlaces.com/servicios/en/tags/</loc>
+    <loc>http://localhost:1313/servicios/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="https://web.infenlaces.com/servicios/es/tags/"
+                href="http://localhost:1313/servicios/es/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://web.infenlaces.com/servicios/fr/tags/"
+                href="http://localhost:1313/servicios/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://web.infenlaces.com/servicios/en/tags/"
+                href="http://localhost:1313/servicios/en/tags/"
                 />
   </url>
 </urlset>

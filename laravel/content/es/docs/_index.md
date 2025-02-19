@@ -1,5 +1,5 @@
 ---
-title: "Laravel"
+title: "Laravel Framework de php"
 linkTitle: "Laravel"
 weight: 20
 menu:
@@ -7,52 +7,48 @@ menu:
     weight: 20
 icon: fa-brands fa-laravel
 draft: false
+noList: true
+layout: single
+toc: false
 ---
-## Roadmap
-Un Roadmap es cómo vamos a enfocar el aprendizaje de esta nueva forma de desarrollar una aplicación web
-Vamos a estudiar un framework de php.
-### Conocimientos previos
-{{% pageinfo%}}
-### Punto de partida
-****
-Para aprenderlo tomamos este punto de partida:
-![img.png](img.png)
-{{% /pageinfo%}}
+### Roadmap
+{{< color >}} Partimos de los siguientes conceptos {{< /color >}}
+
+{{< imgproc 01_road_map Fill "1253x667" >}}
+Conceptos previos 
+{{< /imgproc >}}
+
+
+
 ### Aspectos a estudiar
-{{% pageinfo%}}
 Vamos a realizar un proceso no secuencial, pero iremos viendo, analizando y practicando con estos aspectos
 
-Los aspectos que vamos a tratar los podemos representar en la sigueinte imagen:
-{{< imgproc roadmap Resize "500x right">}}
+Los aspectos que vamos a tratar los podemos representar en la sigueinte imagen
+
+{{< imgproc 02_laravel_roadmap.webp Resize "801x449">}}
 Roadmap Laravel
 {{< /imgproc >}}
 
 
-{{% /pageinfo%}}
-### Referencias
 
-{{% pageinfo%}}
-#### 
-****
-### Referencias en la web ![](web.png)
-***
-1. {{<color_green>}}Laravel Documentation{{</color_green>}}
+### Referencias en la web !
+{{<referencias>}}
+Documentación oficial de Laravel  https://laravel.com/
+Laracasts https://laracasts.com/
+>Videos tutoriales sobre  Laravel y tecnologías web. 
+Laravel News: . Laravel News https://laravel-news.com/
+> Noticias, tutoriales y paquetes relacionados con Laravel
 
- Documentación oficial de Laravel. Laravel Documentation (https://laravel.com/)    
+**Laravel Daily** https://laraveldaily.com/
+ >>  Es un sitio dedicado a tutoriales y recursos para desarrolladores de Laravel, ofreciendo desde consejos rápidos hasta cursos y tutoriales premium. Contiene una variedad de contenidos que cubren aspectos básicos hasta avanzados de Laravel, como Eloquent ORM y nuevas funcionalidades en Laravel 11. Además, provee ejemplos de código, ofertas de trabajo, y herramientas premium, haciéndolo un recurso valioso tanto para aprendices como para desarrolladores experimentados en busca de mantenerse actualizados con Laravel.    
+* **GitHub y Packagist** (https://github.com/search?q=laravel&type=repositories) 
+>>Para buscar paquetes de Laravel y proyectos de código abierto. GitHub  Packagist
+{{</referencias>}}
 
-2. {{<color_green>}}Laracasts{{</color_green>}} 
+### Temario sencicial
+Este esquema muestra cómo vamos a abordar los aspectos de laravel
 
-Videos tutoriales sobre  Laravel y tecnologías web. Laracasts (https://laracasts.com/)    
-3. Laravel News: Noticias, tutoriales y paquetes relacionados con Laravel. Laravel News https://laravel-news.com/
-
-4. {{<color_green>}}Laravel Daily{{</color_green>}} https://laraveldaily.com/
- Es un sitio dedicado a tutoriales y recursos para desarrolladores de Laravel, ofreciendo desde consejos rápidos hasta cursos y tutoriales premium. Contiene una variedad de contenidos que cubren aspectos básicos hasta avanzados de Laravel, como Eloquent ORM y nuevas funcionalidades en Laravel 11. Además, provee ejemplos de código, ofertas de trabajo, y herramientas premium, haciéndolo un recurso valioso tanto para aprendices como para desarrolladores experimentados en busca de mantenerse actualizados con Laravel.    
-
-5. {{<color_green>}}GitHub y Packagist{{</color_green>}} Para buscar paquetes de Laravel y proyectos de código abierto. GitHub (https://github.com/search?q=laravel&type=repositories) Packagist
-
-
-{{% /pageinfo%}}
-
+{{% line %}}
 ```markmap
 # Laravel
 ## Instalación
@@ -72,4 +68,8 @@ Videos tutoriales sobre  Laravel y tecnologías web. Laracasts (https://laracast
 ## Autenticacion
 ## Roles
 ```
+
+
+{{% line %}}
+
 

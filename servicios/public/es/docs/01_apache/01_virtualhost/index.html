@@ -1,9 +1,9 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head>
+  <head><script src="/servicios/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=servicios/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/servicios/favicons/favicon.ico" >
@@ -18,29 +18,24 @@
 <link rel="icon" type="image/png" href="/servicios/favicons/android-192x192.png" sizes="192x192">
 
 <title>VirtualHost | Despliegue de Aplicaciones Web</title>
-<meta name="description" content=" Objetivos Configuración de Apache Hosts Virtuales. Hosts Virtuales Para entender qué son los hosts virtuales vamos a establecer una analogía. Imaginemos que tenemos una persona llamada Manuel. En el trabajo, le llaman Manuel y adopta una actitud profesional y seria. En casa o con amigos, le llaman Manolo y su actitud es más relajada y cercana. Aunque es la misma persona, responde de manera diferente según cómo le llamen.">
+<meta name="description" content="Objetivos Configuración de Apache Hosts Virtuales. Hosts Virtuales Para entender qué son los hosts virtuales vamos a establecer una analogía. Imaginemos que tenemos una persona llamada Manuel. En el trabajo, le llaman Manuel y adopta una actitud profesional y seria. En casa o con amigos, le llaman Manolo y su actitud es más relajada y cercana. Aunque es la misma persona, responde de manera diferente según cómo le llamen.">
 
-<meta property="og:url" content="https://web.infenlaces.com/servicios/es/docs/01_apache/01_virtualhost/">
-  <meta property="og:site_name" content="Despliegue de Aplicaciones Web">
-  <meta property="og:title" content="VirtualHost">
-  <meta property="og:description" content="Objetivos Configuración de Apache Hosts Virtuales. Hosts Virtuales Para entender qué son los hosts virtuales vamos a establecer una analogía. Imaginemos que tenemos una persona llamada Manuel. En el trabajo, le llaman Manuel y adopta una actitud profesional y seria. En casa o con amigos, le llaman Manolo y su actitud es más relajada y cercana. Aunque es la misma persona, responde de manera diferente según cómo le llamen.">
-  <meta property="og:locale" content="es">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="docs">
-    <meta property="article:published_time" content="2024-12-18T00:00:00+00:00">
-    <meta property="article:modified_time" content="2024-12-18T00:00:00+00:00">
+<meta property="og:title" content="VirtualHost" />
+<meta property="og:description" content="Objetivos Configuración de Apache Hosts Virtuales. Hosts Virtuales Para entender qué son los hosts virtuales vamos a establecer una analogía. Imaginemos que tenemos una persona llamada Manuel. En el trabajo, le llaman Manuel y adopta una actitud profesional y seria. En casa o con amigos, le llaman Manolo y su actitud es más relajada y cercana. Aunque es la misma persona, responde de manera diferente según cómo le llamen." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/servicios/es/docs/01_apache/01_virtualhost/" /><meta property="article:section" content="docs" />
+<meta property="article:published_time" content="2024-12-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2024-12-18T00:00:00+00:00" />
 
-  <meta itemprop="name" content="VirtualHost">
-  <meta itemprop="description" content="Objetivos Configuración de Apache Hosts Virtuales. Hosts Virtuales Para entender qué son los hosts virtuales vamos a establecer una analogía. Imaginemos que tenemos una persona llamada Manuel. En el trabajo, le llaman Manuel y adopta una actitud profesional y seria. En casa o con amigos, le llaman Manolo y su actitud es más relajada y cercana. Aunque es la misma persona, responde de manera diferente según cómo le llamen.">
-  <meta itemprop="datePublished" content="2024-12-18T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2024-12-18T00:00:00+00:00">
-  <meta itemprop="wordCount" content="961">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="VirtualHost">
-  <meta name="twitter:description" content="Objetivos Configuración de Apache Hosts Virtuales. Hosts Virtuales Para entender qué son los hosts virtuales vamos a establecer una analogía. Imaginemos que tenemos una persona llamada Manuel. En el trabajo, le llaman Manuel y adopta una actitud profesional y seria. En casa o con amigos, le llaman Manolo y su actitud es más relajada y cercana. Aunque es la misma persona, responde de manera diferente según cómo le llamen.">
+<meta itemprop="name" content="VirtualHost">
+<meta itemprop="description" content="Objetivos Configuración de Apache Hosts Virtuales. Hosts Virtuales Para entender qué son los hosts virtuales vamos a establecer una analogía. Imaginemos que tenemos una persona llamada Manuel. En el trabajo, le llaman Manuel y adopta una actitud profesional y seria. En casa o con amigos, le llaman Manolo y su actitud es más relajada y cercana. Aunque es la misma persona, responde de manera diferente según cómo le llamen."><meta itemprop="datePublished" content="2024-12-18T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2024-12-18T00:00:00+00:00" />
+<meta itemprop="wordCount" content="961">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="VirtualHost"/>
+<meta name="twitter:description" content="Objetivos Configuración de Apache Hosts Virtuales. Hosts Virtuales Para entender qué son los hosts virtuales vamos a establecer una analogía. Imaginemos que tenemos una persona llamada Manuel. En el trabajo, le llaman Manuel y adopta una actitud profesional y seria. En casa o con amigos, le llaman Manolo y su actitud es más relajada y cercana. Aunque es la misma persona, responde de manera diferente según cómo le llamen."/>
 
 
-<link rel="preload" href="/servicios/scss/main.min.ba292a34f2e97a668d6a63a7413b2870bc1caed016b8cee371c06c9aeb16806c.css" as="style"><link href="/servicios/scss/main.min.ba292a34f2e97a668d6a63a7413b2870bc1caed016b8cee371c06c9aeb16806c.css" rel="stylesheet">
+<link href="/servicios/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -272,7 +267,7 @@ Imaginemos que tenemos una persona llamada <strong>Manuel</strong>. En el trabaj
 seria. En casa o con amigos, le llaman <strong><em>Manolo</em></strong> y su actitud es más relajada y cercana. Aunque es la misma persona,
 <em>responde de manera diferente según cómo le llamen.</em></p>
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 410px">
-<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/manuel-manolo_hu13058195514737110978.webp" width="400" height="400">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/manuel-manolo_hu6f20535f519bb318fa3f2b990b61a956_45386_400x400_fill_q75_h2_box_smart1_2.webp" width="400" height="400">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -312,7 +307,7 @@ diferentes contenidos o configuraciones según el dominio que se utilice.
 Lógicamente primero tendremos que establecer que varios nombres de dominio cada uno de los cuales va a corresponder a un
 host virtual, apunten a la misma ip.
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 683px">
-<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/virtual_host_hu596676614878131368.png" width="673" height="295">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/virtual_host_hua8b914b33f5ddd74141fa466e9bcddb4_148923_673x295_fill_box_smart1_3.png" width="673" height="295">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -714,7 +709,7 @@ Esto puede ser útil cuando queremos que un sitio web responda a diferentes nomb
 Y vemos las imágenes:</p>
 <hr style="border-color: red; border-width: 3px;"/>
 <p><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 470px">
-<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/1_musica_hu11949293887405770643.png" width="460" height="89">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/1_musica_hucc49d5f82678c23dcbb191a3fc39e33c_8722_460x89_fill_box_smart1_3.png" width="460" height="89">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -726,7 +721,7 @@ Y vemos las imágenes:</p>
 </figure>
 
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 470px">
-<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/2_musica_hu11684716105411578636.png" width="460" height="89">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/2_musica_hufbe3537923e754ea531daf3191b14aa1_7370_460x89_fill_box_smart1_3.png" width="460" height="89">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -738,7 +733,7 @@ Y vemos las imágenes:</p>
 </figure>
 
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 470px">
-<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/3_musica_hu5792214064372680345.png" width="460" height="89">
+<img class="card-img-top" src="/servicios/es/docs/01_apache/01_virtualhost/3_musica_hu00d4a358146cbc95276018960a167170_7342_460x89_fill_box_smart1_3.png" width="460" height="89">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -812,8 +807,8 @@ Y vemos las imágenes:</p>
 </footer>
 
     </div>
-    <script src="/servicios/js/main.min.c14cc2cfea8ce4989015e42e06e3457753ca6e6901fa5f0fc09a569308faeb19.js" integrity="sha256-wUzCz&#43;qM5JiQFeQuBuNFd1PKbmkB&#43;l8PwJpWkwj66xk=" crossorigin="anonymous"></script>
-<script defer src="/servicios/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <script src="/servicios/js/main.js"></script>
+<script defer src="/servicios/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/servicios/js/tabpane-persist.js'></script>
 
   </body>

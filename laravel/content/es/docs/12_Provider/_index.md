@@ -1,7 +1,7 @@
 ---
 title : '12_Provider'
 date : 2024-08-08T18:23:50+02:00
-draft : false
+draft : true
 weight: 120
 icon: fa-brands fa-critical-role
 ---
@@ -13,7 +13,7 @@ icon: fa-brands fa-critical-role
 {{% pageinfo%}}
 #### 
 ****
-* Todos los proveedores de servicios en Laravel tienen una clase disponible en la carpetag  {{<color_green>}}** ./app/Providers/.**{{</color_green>}}  Dentro de esta clase, encontrarás dos métodos clave:
+* Todos los proveedores de servicios en Laravel tienen una clase disponible en la carpeta  {{<color_green>}}** ./app/Providers/.**{{</color_green>}}  Dentro de esta clase, encontrarás dos métodos clave:
 ****
 
 >* register(): Este método se utiliza para enlazar servicios al contenedor de servicios de Laravel. Aquí es donde se registran bindings, se configuran clases singleton, y se preparan otras dependencias necesarias antes de que la aplicación comience a manejar solicitudes. Es el primer método que se ejecuta cuando se inicializan los proveedores de servicios.

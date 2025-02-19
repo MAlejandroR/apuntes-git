@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8473a062-eb20-4ec8-9af3-351708dde43b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../base/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../base/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/_print/docs/08_ejercicios/5_dockercompose/3_web_1/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/_print/docs/08_ejercicios/5_dockercompose/3_web_1/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/_print/docs/08_ejercicios/5_dockercompose/4_web_2/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/_print/docs/08_ejercicios/5_dockercompose/4_web_2/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/_print/docs/08_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/_print/docs/08_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/_print/docs/08_ejercicios/5_dockercompose/7_web_developer/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/_print/docs/08_ejercicios/5_dockercompose/7_web_developer/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/_print/docs/08_ejercicios/5_dockercompose/apache/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/_print/docs/08_ejercicios/5_dockercompose/apache/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/_print/docs/08_ejercicios/5_dockercompose/docker_proyectos/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/_print/docs/08_ejercicios/5_dockercompose/docker_proyectos/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/_print/docs/08_ejercicios/5_dockercompose/nginx/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/_print/docs/08_ejercicios/5_dockercompose/nginx/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/_print/politica-de-privacidad/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/_print/politica-de-privacidad/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/categories/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/categories/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/01_conceptos/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/01_conceptos/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/01_conceptos/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/01_conceptos/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/01_conceptos/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/01_conceptos/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/02_contenedores-e-imágenes/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/02_contenedores-e-imágenes/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/02_contenedores-e-imágenes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/02_contenedores-e-imágenes/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/02_contenedores-e-imágenes/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/02_contenedores-e-imágenes/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/03_instalacion/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/03_instalacion/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/03_instalacion/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/03_instalacion/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/03_instalacion/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/03_instalacion/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/06_dockefile/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/06_dockefile/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/06_dockefile/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/06_dockefile/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/06_dockefile/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/06_dockefile/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/07_docker-compose/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/07_docker-compose/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/07_docker-compose/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/07_docker-compose/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/07_docker-compose/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/07_docker-compose/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/1_imagenes/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/1_imagenes/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/1_imagenes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/1_imagenes/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/1_imagenes/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/1_imagenes/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/2_contenedores/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/2_contenedores/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/2_contenedores/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/2_contenedores/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/2_contenedores/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/2_contenedores/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/3_contenedores_imagenes/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/3_contenedores_imagenes/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/3_contenedores_imagenes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/3_contenedores_imagenes/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/3_contenedores_imagenes/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/3_contenedores_imagenes/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/5_dockercompose/3_web_1/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/5_dockercompose/3_web_1/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/5_dockercompose/4_web_2/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/5_dockercompose/4_web_2/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/5_dockercompose/7_web_developer/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/5_dockercompose/7_web_developer/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/5_dockercompose/apache/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/5_dockercompose/apache/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/5_dockercompose/docker_proyectos/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/5_dockercompose/docker_proyectos/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/5_dockercompose/nginx/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/08_ejercicios/5_dockercompose/nginx/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/10_reverse_proxy/1_web_hu12711444392779492742.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/10_reverse_proxy/2_web_hu12954636686201992832.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/10_reverse_proxy/3_web_hu6845615565459670660.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/10_reverse_proxy/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/10_reverse_proxy/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/10_reverse_proxy/docker_proxy_reverse_1_hu3870979036376086556.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/10_reverse_proxy/docker_proxy_reverse_1_hu5534467186510337609.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/10_reverse_proxy/docker_proxy_reverse_1_hu8000307809434998502.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/10_reverse_proxy/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/10_reverse_proxy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/10_reverse_proxy/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/10_reverse_proxy/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/10_reverse_proxy/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/10_reverse_proxy/proxy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/10_reverse_proxy/proxy_hu342787633500672969.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/10_reverse_proxy/proxy_reverse.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/10_reverse_proxy/proxy_reverse_hu4033920156410999965.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/docs/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/docs/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/en/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/en/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/en/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/en/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/en/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/en/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/en/categories/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/en/categories/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/en/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/en/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/en/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/en/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/en/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/en/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/en/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/en/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/en/tags/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/en/tags/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/es/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/es/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/es/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/es/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/fr/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/fr/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/fr/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/fr/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/fr/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/fr/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/fr/categories/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/fr/categories/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/fr/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/fr/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/fr/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/fr/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/fr/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/fr/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/fr/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/fr/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/fr/tags/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/fr/tags/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/js/click-to-copy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/politica-de-privacidad/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/politica-de-privacidad/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/scss/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/scss/main.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../docker/public/tags/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../docker/public/tags/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../error" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hestia/content/es/docs/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../hestia/content/es/docs/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hestia/public/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hestia/public/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hestia/public/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hestia/public/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hestia/public/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hestia/public/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hestia/public/docs/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hestia/public/docs/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hestia/public/es/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hestia/public/es/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hestia/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hestia/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hestia/public/scss/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/../hestia/public/scss/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hestia/public/search/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hestia/public/search/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hestia/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hestia/public/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hestia/public/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../hestia/public/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hugo/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hugo/.idea/webServers.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hugo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hugo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hugo/content/es/docs/03_hugo/3_contenido/01_creacion/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../hugo/content/es/docs/03_hugo/3_contenido/01_creacion/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hugo/seg/hugo/3_contenido/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../hugo/seg/hugo/3_contenido/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hugo/themes" beforeDir="false" afterPath="$PROJECT_DIR$/../hugo/themes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/assets/scss/_styles_project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/assets/scss/_styles_project.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/assets/scss/_variables_project.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/assets/scss/_variables_project.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/01_Introducción/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/01_Introducción/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/02_Instalación/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/02_Instalación/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/03_rutas/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/03_rutas/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/05_controlador/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/05_controlador/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/05_controlador_API/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/05_controlador_API/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/05_multilenguaje/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/05_multilenguaje/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/06_autenticacion/Breeze/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/06_autenticacion/Breeze/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/06_autenticacion/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/06_autenticacion/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/07_migraciones/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/07_migraciones/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/08_crud/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/08_crud/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/09_API/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/09_API/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/09_inertia/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/09_inertia/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/1000_instalacion (api's)/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/1000_instalacion (api's)/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/100_anexos/bootstrap/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/100_anexos/bootstrap/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/10_API/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/10_API/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/10_Test/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/10_Test/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/11_roles/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/11_roles/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/12_Provider/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/12_Provider/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/999_cheatseet/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/999_cheatseet/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/content/es/docs/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/content/es/docs/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/hugo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/hugo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/layouts/shortcodes/blocks/cover.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/layouts/shortcodes/blocks/cover.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/layouts/shortcodes/color.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/layouts/shortcodes/color.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/docs/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/controlador/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/controlador/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/controlador/post_header.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/controlador/post_header_hu1238924716215242232.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/controlador/post_man1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/controlador/post_man1_hu2831064506690592818.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/controlador/post_patch_form_endocode.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/controlador/post_patch_form_endocode_hu2831064506690592818.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/instalacion/api_rest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/instalacion/api_rest2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/instalacion/api_rest2_hu4421873333406682171.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/instalacion/api_rest_hu4146969686739111099.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/instalacion/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/instalacion/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/test/base_datos_test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/test/base_datos_test_hu15155752662622886739.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/test/chat/base_datos_test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/test/chat/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/test/chat/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/test/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/docs/laravel/test/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/en/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/en/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/en/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/en/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/en/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/en/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/en/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/en/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/es/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/es/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/favicons/favicon-16x16.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/favicons/favicon-16x16.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/favicons/favicon-32x32.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/favicons/favicon-32x32.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/favicons/favicon-64x64.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/favicons/favicon-64x64.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/favicons/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/favicons/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/favicons/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/favicons/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/fr/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/fr/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/fr/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/fr/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/fr/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/fr/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/fr/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/fr/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/js/main.min.ac1cebd29ede1b2cf9394c322a5e68efedada819196e8138dde1ff146d632007.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/scss/main.min.a1a4e66c6f4dd103dc041fb68e4ebc96264fb0f2dd7cd8f7448e2b9f810a0f50.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/search/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/search/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/public/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/public/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/resources/_gen/assets/scss/main.scss_a7b64cfe358ca0f98a9b572608f3a01d.content" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/resources/_gen/assets/scss/main.scss_a7b64cfe358ca0f98a9b572608f3a01d.content" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/resources/_gen/assets/scss/main.scss_a7b64cfe358ca0f98a9b572608f3a01d.json" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/resources/_gen/assets/scss/main.scss_a7b64cfe358ca0f98a9b572608f3a01d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/resources/_gen/assets/scss/main.scss_fae17086e470d8c6ed0d487092f631b7.content" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/resources/_gen/assets/scss/main.scss_fae17086e470d8c6ed0d487092f631b7.content" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/static/favicons/favicon-16x16.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/static/favicons/favicon-16x16.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/static/favicons/favicon-32x32.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/static/favicons/favicon-32x32.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/static/favicons/favicon-64x64.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/static/favicons/favicon-64x64.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/static/favicons/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/static/favicons/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel/static/favicons/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel/static/favicons/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel_/content/es/docs/hugo/3_contenido/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel_/content/es/docs/hugo/3_contenido/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel_/content/es/docs/laravel/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel_/content/es/docs/laravel/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../laravel_/content/es/docs/vue/7_paginacion/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../laravel_/content/es/docs/vue/7_paginacion/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/en/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/en/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/en/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/en/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/en/categories/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/en/categories/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/en/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/en/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/en/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/en/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/en/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/en/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/en/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/en/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/en/tags/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/en/tags/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/categories/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/categories/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/01_introduccion/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/01_introduccion/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/01_introduccion/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/01_introduccion/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/01_introduccion/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/01_introduccion/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/02_instalacion/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/02_instalacion/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/02_instalacion/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/02_instalacion/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/02_instalacion/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/02_instalacion/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/03_empezando/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/03_empezando/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/03_empezando/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/03_empezando/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/03_empezando/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/03_empezando/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/04_escribiendo/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/04_escribiendo/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/04_escribiendo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/04_escribiendo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/04_escribiendo/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/04_escribiendo/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/05_declaraciones/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/05_declaraciones/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/05_declaraciones/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/05_declaraciones/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/05_declaraciones/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/05_declaraciones/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/06_control_selectivo/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/06_control_selectivo/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/06_control_selectivo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/06_control_selectivo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/06_control_selectivo/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/06_control_selectivo/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/07_control_repetitivo/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/07_control_repetitivo/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/07_control_repetitivo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/07_control_repetitivo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/07_control_repetitivo/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/07_control_repetitivo/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/08_expresiones/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/08_expresiones/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/08_expresiones/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/08_expresiones/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/08_expresiones/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/08_expresiones/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/11_funciones/pracitca/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/11_funciones/pracitca/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/20_ejercicios/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/20_ejercicios/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/20_ejercicios/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/20_ejercicios/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/20_ejercicios/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/20_ejercicios/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/docs/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/docs/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/search/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/search/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/es/tags/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/es/tags/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/fr/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/fr/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/fr/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/fr/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/fr/categories/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/fr/categories/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/fr/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/fr/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/fr/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/fr/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/fr/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/fr/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/fr/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/fr/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/fr/tags/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/fr/tags/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php/public/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_/content/es/docs/hugo/3_contenido/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../php_/content/es/docs/hugo/3_contenido/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_/content/es/docs/laravel/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../php_/content/es/docs/laravel/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_/content/es/docs/vue/7_paginacion/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../php_/content/es/docs/vue/7_paginacion/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/content/es/docs/13_Arrays/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/content/es/docs/14_Objetos/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/en/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/en/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/en/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/en/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/en/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/en/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/en/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/en/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/01_introduccion/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/01_introduccion/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/01_introduccion/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/01_introduccion/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/02_instalacion/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/02_instalacion/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/02_instalacion/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/02_instalacion/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/03_empezando/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/03_empezando/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/03_empezando/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/03_empezando/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/04_escribiendo/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/04_escribiendo/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/04_escribiendo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/04_escribiendo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/05_declaraciones/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/05_declaraciones/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/05_declaraciones/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/05_declaraciones/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/06_control_selectivo/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/06_control_selectivo/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/06_control_selectivo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/06_control_selectivo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/07_control_repetitivo/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/07_control_repetitivo/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/07_control_repetitivo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/07_control_repetitivo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/08_expresiones/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/08_expresiones/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/08_expresiones/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/08_expresiones/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/11_funciones/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/11_funciones/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/11_funciones/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/11_funciones/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/11_funciones/pracitca/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/11_funciones/pracitca/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/12_formularios/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/12_formularios/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/12_formularios/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/12_formularios/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/20_ejercicios/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/20_ejercicios/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/20_ejercicios/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/20_ejercicios/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/search/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/search/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/es/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/es/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/fr/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/fr/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/fr/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/fr/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/fr/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/fr/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_certificado/public/fr/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_certificado/public/fr/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/content/es/docs/12_Formularios/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/content/es/docs/13_Arrays/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/content/es/docs/13_Arrays/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/content/es/docs/14_Objetos/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/content/es/docs/20_Ejercicios/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/en/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/en/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/en/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/en/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/en/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/en/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/en/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/en/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/01_introduccion/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/01_introduccion/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/01_introduccion/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/01_introduccion/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/02_instalacion/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/02_instalacion/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/02_instalacion/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/02_instalacion/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/03_empezando/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/03_empezando/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/03_empezando/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/03_empezando/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/04_escribiendo/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/04_escribiendo/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/04_escribiendo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/04_escribiendo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/05_declaraciones/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/05_declaraciones/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/05_declaraciones/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/05_declaraciones/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/06_control_selectivo/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/06_control_selectivo/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/06_control_selectivo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/06_control_selectivo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/07_control_repetitivo/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/07_control_repetitivo/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/07_control_repetitivo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/07_control_repetitivo/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/08_expresiones/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/08_expresiones/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/08_expresiones/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/08_expresiones/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/09_mas_detalles_php/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/09_mas_detalles_php/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/09_mas_detalles_php/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/09_mas_detalles_php/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/10_funciones_propias/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/10_funciones_propias/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/10_funciones_propias/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/10_funciones_propias/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/11_funciones/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/11_funciones/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/11_funciones/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/11_funciones/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/20_ejercicios/_print/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/20_ejercicios/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/20_ejercicios/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/search/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/search/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/es/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/es/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/fr/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/fr/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/fr/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/fr/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/fr/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/fr/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php_distancia/public/fr/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../php_distancia/public/fr/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea-personal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/en/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/en/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/en/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/en/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/en/categories/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/en/categories/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/en/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/en/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/en/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/en/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/en/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/en/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/en/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/en/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/en/tags/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/en/tags/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/categories/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/categories/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/00_entorno/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/docs/00_entorno/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/01_apache/01_virtualhost/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/docs/01_apache/01_virtualhost/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/01_apache/02_auth/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/docs/01_apache/02_auth/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/01_apache/03_https/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/docs/01_apache/03_https/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/01_apache/04_rewrite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/docs/01_apache/04_rewrite/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/01_apache/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/docs/01_apache/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/01_apache/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/docs/01_apache/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/01_apache/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/docs/01_apache/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/03_ssh/1_conexion_hu16712801616747936806.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/03_ssh/2_conexion_hu17301673764636424065.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/03_ssh/candado_hu4540490972136199642.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/03_ssh/candado_hu7288823330169678809.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/03_ssh/claves_privada_hu8585309742465334207.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/03_ssh/claves_publica_hu5453148287230748485.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/03_ssh/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/docs/03_ssh/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/03_ssh/privada.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/03_ssh/publica.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/04_ssh/1_conexion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/04_ssh/1_conexion_hu16712801616747936806.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/04_ssh/1_conexion_hu554965656768556122.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/04_ssh/1_conexion_hu5619378252003177487.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/04_ssh/2_conexion.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/04_ssh/2_conexion_hu17301673764636424065.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/04_ssh/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/04_ssh/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/04_ssh/no_ok.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/04_ssh/ok.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/04_ssh/tunel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/04_ssh/tunel_hu12396502712236260788.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/04_ssh/tunel_hu17983528553436272562.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/_print/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/docs/_print/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/docs/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/docs/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/search/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/search/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/tags/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/tags/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fr/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/fr/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fr/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/fr/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fr/categories/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/fr/categories/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fr/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/fr/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fr/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/fr/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fr/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/fr/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fr/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/fr/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fr/tags/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/fr/tags/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/click-to-copy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/main.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/main.min.664846790740e4527ed7c2d82086e558a4b3569e7e0e6c94fdf1a0cda15ac23a.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/_gen/assets/scss/main.scss_a7b64cfe358ca0f98a9b572608f3a01d.content" beforeDir="false" afterPath="$PROJECT_DIR$/resources/_gen/assets/scss/main.scss_a7b64cfe358ca0f98a9b572608f3a01d.content" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/_gen/assets/scss/main.scss_a7b64cfe358ca0f98a9b572608f3a01d.json" beforeDir="false" afterPath="$PROJECT_DIR$/resources/_gen/assets/scss/main.scss_a7b64cfe358ca0f98a9b572608f3a01d.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes" beforeDir="false" afterPath="$PROJECT_DIR$/themes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/i18n/en.toml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/i18n/en.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/i18n/es.toml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/i18n/es.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/userguide/.htmltest.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/userguide/.htmltest.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/content/es/docs/Web Developer/Elementos en el proceso/AplicacioneWeb1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/content/es/docs/Web Developer/Elementos en el proceso/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/content/es/docs/Web Developer/Elementos en el proceso/cliente.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/content/es/docs/Web Developer/Elementos en el proceso/red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/content/es/docs/Web Developer/Elementos en el proceso/servidor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/content/es/docs/Web Developer/Instalacion/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/content/es/docs/Web Developer/Instalacion/api_rest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/content/es/docs/Web Developer/Instalacion/api_rest2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/content/es/docs/Web Developer/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/content/es/docs/Web Developer/php/_index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/content/es/docs/Web Developer/php/base_datos_test.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web_old/content/es/docs/hugo/3_contenido/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../web_old/content/es/docs/hugo/3_contenido/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web_old/content/es/docs/laravel/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../web_old/content/es/docs/laravel/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web_old/content/es/docs/vue/7_paginacion/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/../web_old/content/es/docs/vue/7_paginacion/_index.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2rtySPs1jvZukzUO7Ehre4r9kZb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/manuel/hugo/apuntes/php_distancia",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/es/docs/03_SSH" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-PS-243.23654.115" />
+        <option value="bundled-php-predefined-a98d8de5180a-4c3855d0ab16-com.jetbrains.php.sharedIndexes-PS-243.23654.115" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8473a062-eb20-4ec8-9af3-351708dde43b" name="Changes" comment="" />
+      <created>1737392665718</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737392665718</updated>
+      <workItem from="1737392667590" duration="5414000" />
+      <workItem from="1737405638124" duration="37000" />
+      <workItem from="1737436485575" duration="16000" />
+      <workItem from="1737535730151" duration="1044000" />
+      <workItem from="1737557148705" duration="6004000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

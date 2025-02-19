@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7a3a176f-457c-406c-b13e-93519b08a6af" name="hestia">
+        <fileTransfer rootFolder="/home/admin/web/web.infenlaces.com/public_html" accessType="SFTP" host="web.infenlaces.com" port="22123" sshConfigId="1930de1d-61d3-4969-8a30-c3090b81e130" sshConfig="admin@web.infenlaces.com:22123 key" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -92,8 +92,8 @@ $exceptions->handler(CustomExceptionHandler::class);
 3. **Flexibilidad:**
 	- Facilita añadir configuraciones personalizadas como middlewares o manejadores de excepciones.
 
-{{< alert title="Nota" color="green" >}}
-Este nuevo enfoque permite trabajar de manera más explícita con la configuración de Laravel y reduce la dependencia de archivos distribuidos.
+{{< alert title="Nota" color="success" >}}
+Este es un nuevo enfoque en la versión 11 que  permite trabajar de manera más explícita con la configuración de Laravel y reduce la dependencia de archivos distribuidos.
 {{< /alert >}}
 
 {{% line %}}

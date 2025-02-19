@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Formularios on Desarrollo Web en Entorno Servidor</title>
+    <link>https://web.infenlaces.com/distancia/dwes/php/es/docs/14_formularios/</link>
+    <description>Recent content in Formularios on Desarrollo Web en Entorno Servidor</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 15 Oct 2024 07:04:49 +0200</lastBuildDate>
+    <atom:link href="https://web.infenlaces.com/distancia/dwes/php/es/docs/14_formularios/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ejercicios </title>
+      <link>https://web.infenlaces.com/distancia/dwes/php/es/docs/14_formularios/ejercicios/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>https://web.infenlaces.com/distancia/dwes/php/es/docs/14_formularios/ejercicios/</guid>
+      <description>&lt;h3 id=&#34;practicando-con-formularios&#34;&gt;Practicando con formularios&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?oldid=31869&#34; width=&#34;100%&#34; height=&#34;6500&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

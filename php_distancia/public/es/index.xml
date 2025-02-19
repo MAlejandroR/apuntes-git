@@ -6,8 +6,36 @@
     <description>Recent content in Desarrollo web en entorno servidor on Desarrollo Web en Entorno Servidor</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 15 Oct 2024 07:04:49 +0200</lastBuildDate>
     <atom:link href="https://web.infenlaces.com/distancia/dwes/php/es/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cookies</title>
+      <link>https://web.infenlaces.com/distancia/dwes/php/es/docs/15_peristencia/1_cookies/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>https://web.infenlaces.com/distancia/dwes/php/es/docs/15_peristencia/1_cookies/</guid>
+      <description>&lt;h3 id=&#34;las-cookies-en-php&#34;&gt;Las cookies en php&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=4414&#34; width=&#34;100%&#34; height=&#34;8000&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Sesiones</title>
+      <link>https://web.infenlaces.com/distancia/dwes/php/es/docs/15_peristencia/2_sesiones/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>https://web.infenlaces.com/distancia/dwes/php/es/docs/15_peristencia/2_sesiones/</guid>
+      <description>&lt;h3 id=&#34;sesiones&#34;&gt;Sesiones&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=4545&#34; width=&#34;100%&#34; height=&#34;8000&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Ejercicios </title>
+      <link>https://web.infenlaces.com/distancia/dwes/php/es/docs/13_arrays/ejercicios/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>https://web.infenlaces.com/distancia/dwes/php/es/docs/13_arrays/ejercicios/</guid>
+      <description>&lt;h3 id=&#34;practicando&#34;&gt;Practicando&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=6675&#34; width=&#34;100%&#34; height=&#34;5437&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Ejercicios </title>
+      <link>https://web.infenlaces.com/distancia/dwes/php/es/docs/14_formularios/ejercicios/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>https://web.infenlaces.com/distancia/dwes/php/es/docs/14_formularios/ejercicios/</guid>
+      <description>&lt;h3 id=&#34;practicando-con-formularios&#34;&gt;Practicando con formularios&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?oldid=31869&#34; width=&#34;100%&#34; height=&#34;6500&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+    </item>
     <item>
       <title>Search Results</title>
       <link>https://web.infenlaces.com/distancia/dwes/php/es/search/</link>

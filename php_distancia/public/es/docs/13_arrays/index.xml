@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arrays on Desarrollo Web en Entorno Servidor</title>
+    <link>https://web.infenlaces.com/distancia/dwes/php/es/docs/13_arrays/</link>
+    <description>Recent content in Arrays on Desarrollo Web en Entorno Servidor</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 15 Oct 2024 07:04:49 +0200</lastBuildDate>
+    <atom:link href="https://web.infenlaces.com/distancia/dwes/php/es/docs/13_arrays/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ejercicios </title>
+      <link>https://web.infenlaces.com/distancia/dwes/php/es/docs/13_arrays/ejercicios/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>https://web.infenlaces.com/distancia/dwes/php/es/docs/13_arrays/ejercicios/</guid>
+      <description>&lt;h3 id=&#34;practicando&#34;&gt;Practicando&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=6675&#34; width=&#34;100%&#34; height=&#34;5437&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

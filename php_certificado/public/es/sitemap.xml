@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://web.infenlaces.com/certificado/php/es/docs/13_formularios/redirigiendo/</loc>
+    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
+  </url><url>
     <loc>https://web.infenlaces.com/certificado/php/es/docs/01_introduccion/</loc>
     <lastmod>2024-10-15T07:04:49+02:00</lastmod>
   </url><url>
@@ -38,7 +41,19 @@
     <loc>https://web.infenlaces.com/certificado/php/es/docs/12_formularios/</loc>
     <lastmod>2024-10-15T07:04:49+02:00</lastmod>
   </url><url>
+    <loc>https://web.infenlaces.com/certificado/php/es/docs/13_formularios/</loc>
+    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
+  </url><url>
+    <loc>https://web.infenlaces.com/certificado/php/es/docs/14_arrays/</loc>
+    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
+  </url><url>
+    <loc>https://web.infenlaces.com/certificado/php/es/docs/15_objetos/</loc>
+    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
+  </url><url>
     <loc>https://web.infenlaces.com/certificado/php/es/docs/20_ejercicios/</loc>
+    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
+  </url><url>
+    <loc>https://web.infenlaces.com/certificado/php/es/docs/21_practicas/</loc>
     <lastmod>2024-10-15T07:04:49+02:00</lastmod>
   </url><url>
     <loc>https://web.infenlaces.com/certificado/php/es/</loc>

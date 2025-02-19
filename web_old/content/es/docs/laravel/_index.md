@@ -5,7 +5,7 @@ weight: 20
 menu:
   main:
     weight: 20
-icon: fa-brands fa-laravel
+icon: fa-brands fa-laravel_
 draft: true
 ---
 
