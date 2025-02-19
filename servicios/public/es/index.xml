@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Despliegue de aplicaciones web on Despliegue de Aplicaciones Web</title>
-    <link>http://localhost:1313/servicios/es/</link>
+    <link>https://web.infenlaces.com/servicios/es/</link>
     <description>Recent content in Despliegue de aplicaciones web on Despliegue de Aplicaciones Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <lastBuildDate>Wed, 18 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/servicios/es/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://web.infenlaces.com/servicios/es/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sistema base de entorno</title>
-      <link>http://localhost:1313/servicios/es/docs/00_entorno/</link>
+      <link>https://web.infenlaces.com/servicios/es/docs/00_entorno/</link>
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/servicios/es/docs/00_entorno/</guid>
+      <guid>https://web.infenlaces.com/servicios/es/docs/00_entorno/</guid>
       <description>Objetivos Configuración de Apache Usar Vagrant Revisar fichero de configuración Instalar Ubuntu Server Conectar o levantar la máquina de Ubuntu para trabajar Referencias Fuentes de Información https://web.infenlaces.com/despliegue/contenido/docs/02_linux/ Comandos básicos de Vagrant Para gestionar las máquinas virtuales con Vagrant utilizaremos los siguientes comandos:&#xA;Iniciar la máquina virtual&#xA;1 vagrant up Conectarse a la máquina virtual&#xA;1 vagrant ssh Detener la máquina virtual&#xA;1 vagrant halt Reiniciar la máquina virtual&#xA;1 vagrant reload Destruir la máquina virtual (elimina todos los datos asociados):</description>
     </item>
     <item>
       <title>VirtualHost</title>
-      <link>http://localhost:1313/servicios/es/docs/01_apache/01_virtualhost/</link>
+      <link>https://web.infenlaces.com/servicios/es/docs/01_apache/01_virtualhost/</link>
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/servicios/es/docs/01_apache/01_virtualhost/</guid>
+      <guid>https://web.infenlaces.com/servicios/es/docs/01_apache/01_virtualhost/</guid>
       <description>Objetivos Configuración de Apache Hosts Virtuales. Hosts Virtuales Para entender qué son los hosts virtuales vamos a establecer una analogía. Imaginemos que tenemos una persona llamada Manuel. En el trabajo, le llaman Manuel y adopta una actitud profesional y seria. En casa o con amigos, le llaman Manolo y su actitud es más relajada y cercana. Aunque es la misma persona, responde de manera diferente según cómo le llamen.</description>
     </item>
     <item>
       <title>Auth</title>
-      <link>http://localhost:1313/servicios/es/docs/01_apache/02_auth/</link>
+      <link>https://web.infenlaces.com/servicios/es/docs/01_apache/02_auth/</link>
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/servicios/es/docs/01_apache/02_auth/</guid>
+      <guid>https://web.infenlaces.com/servicios/es/docs/01_apache/02_auth/</guid>
       <description>Referencias Fuentes de Información https://httpd.apache.org/docs/2.4/es/howto/auth.html Objetivos Qué veremos aquí Fichero .htaccess Autenticación basic Autenticación digest Autenticación de usuarios Autenticación de grupo de usuarios 1.- El fichero .htacces Antes de empezar con la autneticación, vamos a ver un fichero de configuración especial en apache: .htaccess En apache podemos configurar a nivel global (afectará a todos los proyectos), o bien podemos establecer una configuracion particular a un directorio y todos sus subdirectorios.</description>
     </item>
     <item>
       <title>Https</title>
-      <link>http://localhost:1313/servicios/es/docs/01_apache/03_https/</link>
+      <link>https://web.infenlaces.com/servicios/es/docs/01_apache/03_https/</link>
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/servicios/es/docs/01_apache/03_https/</guid>
+      <guid>https://web.infenlaces.com/servicios/es/docs/01_apache/03_https/</guid>
       <description>Referencias Fuentes de Información https://aws.amazon.com/es/what-is/ssl-certificate/ https://letsencrypt.org/es/getting-started/ https://www.ssllabs.com/index.html HTTP, HTTPS y Certificados SSL en Apache Apache permite configurar servidores web para admitir conexiones HTTP y HTTPS. Sus siglas se corresponden con Hypertext Transfer Protocol Secure lo que ya indica que añade seguridad a HTTP.&#xA;En realidad, no es un protocolo propio, sino que se basa en introducir una capa con el protocolo SSL/TLS entre la capa de transporte y la capa de aplicación en el conjunto de protocolos TCP/IP.</description>
     </item>
     <item>
       <title>Rewrite</title>
-      <link>http://localhost:1313/servicios/es/docs/01_apache/04_rewrite/</link>
+      <link>https://web.infenlaces.com/servicios/es/docs/01_apache/04_rewrite/</link>
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/servicios/es/docs/01_apache/04_rewrite/</guid>
+      <guid>https://web.infenlaces.com/servicios/es/docs/01_apache/04_rewrite/</guid>
       <description>Reescritura de URLs en Apache (mod_rewrite) El módulo mod_rewrite de Apache permite reescribir URLs de forma dinámica, haciendo que las direcciones sean más amigables para los usuarios y motores de búsqueda. Este módulo es muy potente y flexible, ya que permite redirigir o transformar URLs en función de reglas definidas.&#xA;¿Por qué usar mod_rewrite? URLs amigables: Transformar URLs complejas en direcciones más fáciles de leer.&#xA;Ejemplo: Cambiar https://example.com/product.php?id=123 a https://example.com/product/123. Redirecciones permanentes o temporales: Mover páginas sin perder tráfico o SEO.</description>
     </item>
     <item>
       <title>SSH Secure Shell</title>
-      <link>http://localhost:1313/servicios/es/docs/03_ssh/</link>
+      <link>https://web.infenlaces.com/servicios/es/docs/03_ssh/</link>
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/servicios/es/docs/03_ssh/</guid>
+      <guid>https://web.infenlaces.com/servicios/es/docs/03_ssh/</guid>
       <description>Objetivos Qué veremos aquí ssh ficheros de configuración clave pública y privada rsync Referencias Fuentes de Información https://www.openssh.com/manual.html SSH (Secure Shell) SSH es un protocolo que permite iniciar sesiones seguras en máquinas remotas. Utiliza el puerto 22 y su objetivo es establecer conexiones remotas que permitan la transmisión segura de todo tipo de datos. Es parecido a Telnet, con la diferencia de que la información en el caso de SSH se intercambia de forma cifrada.</description>
     </item>
     <item>
       <title>Search Results</title>
-      <link>http://localhost:1313/servicios/es/search/</link>
+      <link>https://web.infenlaces.com/servicios/es/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/servicios/es/search/</guid>
+      <guid>https://web.infenlaces.com/servicios/es/search/</guid>
       <description></description>
     </item>
   </channel>

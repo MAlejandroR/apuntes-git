@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Servicios en Despliegue de Aplicaciones Web on Despliegue de Aplicaciones Web</title>
-    <link>http://localhost:1313/servicios/es/docs/</link>
+    <link>https://web.infenlaces.com/servicios/es/docs/</link>
     <description>Recent content in Servicios en Despliegue de Aplicaciones Web on Despliegue de Aplicaciones Web</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
     <lastBuildDate>Wed, 18 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/servicios/es/docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://web.infenlaces.com/servicios/es/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sistema base de entorno</title>
-      <link>http://localhost:1313/servicios/es/docs/00_entorno/</link>
+      <link>https://web.infenlaces.com/servicios/es/docs/00_entorno/</link>
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/servicios/es/docs/00_entorno/</guid>
+      <guid>https://web.infenlaces.com/servicios/es/docs/00_entorno/</guid>
       <description>Objetivos Configuración de Apache Usar Vagrant Revisar fichero de configuración Instalar Ubuntu Server Conectar o levantar la máquina de Ubuntu para trabajar Referencias Fuentes de Información https://web.infenlaces.com/despliegue/contenido/docs/02_linux/ Comandos básicos de Vagrant Para gestionar las máquinas virtuales con Vagrant utilizaremos los siguientes comandos:&#xA;Iniciar la máquina virtual&#xA;1 vagrant up Conectarse a la máquina virtual&#xA;1 vagrant ssh Detener la máquina virtual&#xA;1 vagrant halt Reiniciar la máquina virtual&#xA;1 vagrant reload Destruir la máquina virtual (elimina todos los datos asociados):</description>
     </item>
     <item>
       <title>SSH Secure Shell</title>
-      <link>http://localhost:1313/servicios/es/docs/03_ssh/</link>
+      <link>https://web.infenlaces.com/servicios/es/docs/03_ssh/</link>
       <pubDate>Wed, 18 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/servicios/es/docs/03_ssh/</guid>
+      <guid>https://web.infenlaces.com/servicios/es/docs/03_ssh/</guid>
       <description>Objetivos Qué veremos aquí ssh ficheros de configuración clave pública y privada rsync Referencias Fuentes de Información https://www.openssh.com/manual.html SSH (Secure Shell) SSH es un protocolo que permite iniciar sesiones seguras en máquinas remotas. Utiliza el puerto 22 y su objetivo es establecer conexiones remotas que permitan la transmisión segura de todo tipo de datos. Es parecido a Telnet, con la diferencia de que la información en el caso de SSH se intercambia de forma cifrada.</description>
     </item>
   </channel>
