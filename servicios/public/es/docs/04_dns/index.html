@@ -1,0 +1,899 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/servicios/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=servicios/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/servicios/es/docs/04_dns/index.xml">
+<link rel="alternate" type="text/html" href="http://localhost:1313/servicios/es/docs/04_dns/_print/">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/servicios/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/servicios/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/servicios/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/servicios/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/servicios/favicons/android-192x192.png" sizes="192x192">
+
+<title>Servidor DNS con BIND | Despliegue de Aplicaciones Web</title>
+<meta name="description" content="Instalación y configuración de un servidor DNS utilizando BIND9 para la resolución de nombres en red local.
+">
+
+<meta property="og:title" content="Servidor DNS con BIND" />
+<meta property="og:description" content="Instalación y configuración de un servidor DNS utilizando BIND9 para la resolución de nombres en red local.
+" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/servicios/es/docs/04_dns/" />
+
+<meta itemprop="name" content="Servidor DNS con BIND">
+<meta itemprop="description" content="Instalación y configuración de un servidor DNS utilizando BIND9 para la resolución de nombres en red local.
+"><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Servidor DNS con BIND"/>
+<meta name="twitter:description" content="Instalación y configuración de un servidor DNS utilizando BIND9 para la resolución de nombres en red local.
+"/>
+
+
+<link href="/servicios/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/servicios/es/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/servicios/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Despliegue de Aplicaciones Web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/servicios/en/">English</a></li>
+    <li><a class="dropdown-item" href="/servicios/fr/">Francés</a></li>
+    </ul>
+</div></li>
+      <li class="td-light-dark-menu nav-item dropdown">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+  <symbol id="circle-half" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+  </symbol>
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+  </symbol>
+</svg>
+
+<button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        data-bs-display="static"
+        aria-label="Toggle theme (auto)">
+  <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+</button>
+<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#sun-fill"></use></svg>
+      Light
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#moon-stars-fill"></use></svg>
+      Dark
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+      <svg class="bi me-2 opacity-50"><use href="#circle-half"></use></svg>
+      Auto
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+</ul>
+
+      </li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <div class="td-sidebar-nav__section nav-item dropdown d-block d-lg-none">
+      <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/servicios/en/">English</a></li>
+    <li><a class="dropdown-item" href="/servicios/fr/">Francés</a></li>
+    </ul>
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-serviciosesdocs-li">
+  <a href="/servicios/es/docs/" title="Servicios en Despliegue de Aplicaciones Web" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-serviciosesdocs"><i class="fas fa-network-wired"></i><span class="">Servicios</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs00_entorno-li">
+  <input type="checkbox" id="m-serviciosesdocs00_entorno-check"/>
+  <label for="m-serviciosesdocs00_entorno-check"><a href="/servicios/es/docs/00_entorno/" title="Sistema base de entorno" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs00_entorno"><i class="fas fa-cube"></i><span class="">Entorno de ejecución </span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-serviciosesdocs01_apache-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache-check"/>
+  <label for="m-serviciosesdocs01_apache-check"><a href="/servicios/es/docs/01_apache/" title="Servicios Web con Apache" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-serviciosesdocs01_apache"><i class="fas fa-feather"></i><span class="">Apache</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs01_apache01_virtualhost-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache01_virtualhost-check"/>
+  <label for="m-serviciosesdocs01_apache01_virtualhost-check"><a href="/servicios/es/docs/01_apache/01_virtualhost/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache01_virtualhost"><i class="fas fa-key"></i><span class="">VirtualHost</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs01_apache02_auth-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache02_auth-check"/>
+  <label for="m-serviciosesdocs01_apache02_auth-check"><a href="/servicios/es/docs/01_apache/02_auth/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache02_auth"><i class="fas fa-key"></i><span class="">Auth</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs01_apache03_https-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache03_https-check"/>
+  <label for="m-serviciosesdocs01_apache03_https-check"><a href="/servicios/es/docs/01_apache/03_https/" title="Https" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache03_https"><i class="fas fa-key"></i><span class="">Https y certificados</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs01_apache04_rewrite-li">
+  <input type="checkbox" id="m-serviciosesdocs01_apache04_rewrite-check"/>
+  <label for="m-serviciosesdocs01_apache04_rewrite-check"><a href="/servicios/es/docs/01_apache/04_rewrite/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs01_apache04_rewrite"><i class="fas fa-cogs"></i><span class="">Rewrite</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs03_ssh-li">
+  <input type="checkbox" id="m-serviciosesdocs03_ssh-check"/>
+  <label for="m-serviciosesdocs03_ssh-check"><a href="/servicios/es/docs/03_ssh/" title="SSH Secure Shell" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs03_ssh"><i class="fas fa-terminal"></i><span class="">SSH</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-serviciosesdocs04_dns-li">
+  <input type="checkbox" id="m-serviciosesdocs04_dns-check" checked/>
+  <label for="m-serviciosesdocs04_dns-check"><a href="/servicios/es/docs/04_dns/" title="Servidor DNS con BIND" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-serviciosesdocs04_dns"><i class="fas fa-server"></i><span class="td-sidebar-nav-active-item">DNS (BIND)</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs04_dns01_instalacion-li">
+  <input type="checkbox" id="m-serviciosesdocs04_dns01_instalacion-check"/>
+  <label for="m-serviciosesdocs04_dns01_instalacion-check"><a href="/servicios/es/docs/04_dns/01_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-serviciosesdocs04_dns01_instalacion"><i class="fas fa-cogs"></i><span class="">Instalación</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs04_dns02_configuracion-li">
+  <input type="checkbox" id="m-serviciosesdocs04_dns02_configuracion-check"/>
+  <label for="m-serviciosesdocs04_dns02_configuracion-check"><a href="/servicios/es/docs/04_dns/02_configuracion/" title="Configuración Avanzada de BIND" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-serviciosesdocs04_dns02_configuracion"><i class="fas fa-tools"></i><span class="">Configuración Avanzada</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-serviciosesdocs04_dns03_ejercicios-li">
+  <input type="checkbox" id="m-serviciosesdocs04_dns03_ejercicios-check"/>
+  <label for="m-serviciosesdocs04_dns03_ejercicios-check"><a href="/servicios/es/docs/04_dns/03_ejercicios/" title="Ejercicios Prácticos DNS" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-serviciosesdocs04_dns03_ejercicios"><i class="fas fa-graduation-cap"></i><span class="">Ejercicios</span></a></label>
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+<a id="print" href="/servicios/es/docs/04_dns/_print/"><i class="fa-solid fa-print fa-fw"></i> PDF</a>
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#conceptos-básicos-de-dns">Conceptos Básicos de DNS</a></li>
+    <li><a href="#bind-berkeley-internet-name-domain">BIND (Berkeley Internet Name Domain)</a></li>
+    <li><a href="#resolución-de-nombres-de-dominio">Resolución de nombres de dominio</a>
+      <ul>
+        <li><a href="#clasificación-de-tipos-de-serividores-dns">Clasificación de tipos de serividores DNS</a></li>
+        <li><a href="#proceso-de-resolución-de-un-nombre-de-dominio">Proceso de resolución de un nombre de dominio</a></li>
+        <li><a href="#ejecución-iterativa-o-jerarquica-vs-recursiva">Ejecución iterativa o jerarquica Vs recursiva</a></li>
+      </ul>
+    </li>
+    <li><a href="#-comparación-rápida">📊 Comparación rápida</a></li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/servicios/es/docs/">Servicios</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    DNS (BIND)</li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Servidor DNS con BIND</h1>
+  <div class="lead">Instalación y configuración de un servidor DNS utilizando BIND9 para la resolución de nombres en red local.</div>
+	<header class="article-meta">
+		
+</header>
+	
+
+
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-check-circle"></i> 
+            
+        </span>
+        
+        <span>Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight:bold">Qué veremos aquí</h3>
+
+    <hr style="border-color:seagreen; border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            <li>Concepto de DNS</li>
+            
+            <li>Instalación de servicio o aplicación Bind</li>
+            
+            <li>Configuración</li>
+            
+            <li>Puesta en marcha y uso </li>
+            
+            
+            
+        </ul>
+    </div>
+    
+
+
+</div>
+
+<hr style="border-color: red; border-width: 3px;"/>
+
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Referencias DNS</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Documentación Oficial y Recursos</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
+    
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            <li><ul>
+<li><a href="https://www.isc.org/bind/">Documentación oficial de BIND9</a></li>
+</ul>
+</li>
+            
+            <li><ul>
+<li><a href="https://tools.ietf.org/html/rfc1034">RFC 1034 - Domain Names - Concepts and Facilities</a></li>
+</ul>
+</li>
+            
+            <li><ul>
+<li><a href="https://tools.ietf.org/html/rfc1035">RFC 1035 - Domain Names - Implementation and Specification</a></li>
+</ul>
+</li>
+            
+            <li></li>
+            
+            
+        </ul>
+    </div>
+</div>
+
+<hr style="border-color: red; border-width: 3px;"/>
+<h1 id="introducción-al-servicio-dns">Introducción al Servicio DNS</h1>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-book" aria-hidden="true"></i>
+    
+    <strong>DNS</strong>
+  </div>
+  <div class="definicion-contenido ">
+      <ul>
+        
+        <li>El Sistema de Nombres de Dominio (DNS) es un servicio fundamental en Internet.   </li>
+        
+        <li>Corresponde a la capa de aplicación y tiene asociado el puerto  52.</li>
+        
+        <li>Traduce nombres de dominio legibles por humanos en direcciones IP que las máquinas pueden entender y procesar.</li>
+        
+        
+        
+      </ul>
+  </div>
+</div>
+<h2 id="conceptos-básicos-de-dns">Conceptos Básicos de DNS</h2>
+
+
+<div class="alert alert-info" role="alert">
+<h4 class="alert-heading">Componentes principales</h4>
+
+    <ul>
+<li><strong>Servidor DNS</strong>: Software que responde a las consultas de resolución de nombres</li>
+<li><strong>Registros DNS</strong>: Entradas que asocian nombres con direcciones IP u otros datos</li>
+<li><strong>Zonas DNS</strong>: Porciones del espacio de nombres de dominio</li>
+<li><strong>Cache DNS</strong>: Almacenamiento temporal de resoluciones previas</li>
+</ul>
+
+
+</div>
+
+<p>
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    Protocolos de capa inferior
+
+
+</span>
+</strong>
+
+DNS utiliza de capas inferiores principalmente UDP, pero también puede usar TCP:</p>
+<ul>
+<li><strong>Puerto 53 (UDP y TCP)</strong> → Se usa para resolver nombres de dominio en direcciones IP.</li>
+<li><strong>UDP 53</strong> → Se utiliza principalmente para consultas normales de DNS porque es más rápido y eficiente.</li>
+<li><strong>TCP 53</strong> → Se usa cuando la respuesta es demasiado grande para caber en un paquete UDP o para operaciones más seguras como transferencias de zona (AXFR/IXFR).</li>
+</ul>
+<h2 id="bind-berkeley-internet-name-domain">BIND (Berkeley Internet Name Domain)</h2>
+<p>
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    BIND
+
+
+</span>
+</strong>
+ es el servidor (aplicación que instalaremos) DNS más utilizado en Internet, especialmente en sistemas Unix/Linux. Proporciona una implementación completa del protocolo DNS.
+Bind9, implementa el protocolo DNS.</p>
+<p>Basa su funcionamiento en 
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    un  sistema de nombres jerárquico
+
+
+</span>
+</strong>
+ (vs espacio de nombre planos, que tenemos en el fichero hosts, inmanejable dado el tamaño de internet), que  
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    tiene estructura de árbol
+
+
+</span>
+</strong>
+ de forma que cada nodo del árbol tiene un significado.</p>
+<table>
+<thead>
+<tr>
+<th>Objetivo</th>
+<th>Sistema jerarquizado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="img_1.png" src="/servicios/es/docs/04_dns/img_1.png"></td>
+<td><img alt="img.png" src="/servicios/es/docs/04_dns/img.png"></td>
+</tr>
+</tbody>
+</table>
+<p>
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    El sistema de nombres de dominio
+
+
+</span>
+</strong>
+es un sistema de nombres jerárquico y distribuido.</p>
+<p>La estructura del sistema de nombres de dominio en una estructura en forma de árbol. Cada nodo del árbol se llama 
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    nombre de dominio
+
+
+</span>
+</strong>
+ y consiste en una etiqueta de hastac    63 caracteres.
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">estructura del árbol</h4>
+
+    <ul>
+<li>La raíz del árbol siempre es un <strong>PUNTO</strong>.</li>
+<li>A la etiqueta de segundo nivel se le llama dominio de nivel superior o <strong>Top Level Domain (TLD)</strong>.</li>
+<li><strong>El extremo de la bifurcación se denomina host</strong> y corresponde a un equipo en la red.</li>
+</ul>
+
+
+</div>
+
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">FQDN</h4>
+
+    <p><strong>FQDN (Nombre de Dominio totalmente calificado)</strong>  es la dirección que corresponde con todas las etiquetas de nodo de una estructura arbórea, separadas por puntos y que termina con un punto final.</p>
+<p>La profundidad máxima de una estructura arbórea es 127 niveles y la longitud máxima para un nombre FQDN es 255 caracteres.</p>
+
+
+</div>
+
+<img alt="img_3.png" src="/servicios/es/docs/04_dns/img_3.png"></p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p><img alt="img_4.png" src="/servicios/es/docs/04_dns/img_4.png"></p>
+<p>Por ejemplo el espacio de nombres de los ficheros en disco (se pueden crear ficheros con el mismo nombre siempre que estén en otra carpeta)
+A continuación vamos a proceder a instalarlo y configurarlo</p>
+<p><strong>El Centro de Información de la Red Internet (Internet Network Information Center)</strong> 
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    administra
+
+
+</span>
+</strong>
+ la raíz de la base de datos DNS en Internet.</p>
+<p>Los dominios superiores se han asignado a organizaciones y países. Estos nombres de dominio siguen un estándar internacional. Para los países se usan abreviaturas de dos y de tres letras (es, it, de…), y se han reservado varias abreviaturas para que las usen las organizaciones, como se muestra en los siguientes ejemplos:</p>
+<p><img alt="img_5.png" src="/servicios/es/docs/04_dns/img_5.png"></p>
+<h2 id="resolución-de-nombres-de-dominio">Resolución de nombres de dominio</h2>
+<p>La estructura del árbol, ya comentada anteriormente,está fomrada por nodos interconectos</p>
+<p><div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-network-wired" aria-hidden="true"></i>
+    
+    <strong>Dominio</strong>
+  </div>
+  <div class="definicion-contenido ">
+      <ul>
+        
+        <li>Cada nodo del árbol de una base de datos DNS, junto con todos los nodos por debajo del mismo</li>
+        
+        
+        <li>Los dominios pueden contener host (equipos) y otros dominios (subdominios).</li>
+        
+        
+        
+      </ul>
+  </div>
+</div>
+Por ejemplo, el dominio Midominio (midominio.com), podría contener a la vez equipos, como host.midominio.com, y subdominios, como subdom.midominio.com, que a su vez podría contener host, como por ejemplo host.subdom.midominio.com.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-server" aria-hidden="true"></i>
+    
+    <strong>Servidores de nombres de dominio</strong>
+  </div>
+  <div class="definicion-contenido ">
+      <ul>
+        
+        <li>Equipos  que permiten establecer la relación entre los nombres de dominio y las direcciones IP de los equipos de una red.</li>
+        
+        
+        
+      </ul>
+  </div>
+</div>
+<p>
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    El sistema de servidores de nombres de dominio
+
+
+</span>
+</strong>
+ es una <strong>arquitectura jeráquica y distribuida</strong>, y permite su administración descentralizada mediante la delegación de dominios. Es decir como no habría un ordenador tan potente como para traducir todos los nombres de todos los ordenadores de Internet, lo que se hizo es que existen <strong>varios servidores DNS</strong> que trabajan de forma <em>jerárquica y delegándose tareas unos en otros</em>.  Cada  servidor DNS almacena información acerca de algunas partes del espacio de nombres del dominio. Cada una de esas partes se llama zona. <strong>Se dice el servidor DNS tiene autoridad sobre una o varias zonas</strong>.
+<img alt="img_6.png" src="/servicios/es/docs/04_dns/img_6.png"></p>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+    
+    <strong>Delegacion de dominios</strong>
+  </div>
+  <div class="definicion-contenido ">
+      <ul>
+        
+        <li>La delegación de dominios es el proceso mediante el cual un servidor de nombres de dominio (DNS) transfiere la autoridad de resolución de una parte de un dominio (una zona DNS) a otro servidor.</li>
+        
+        
+        <li>Esto permite dividir un dominio en subdominios y asignar su gestión a servidores diferentes, manteniendo una estructura jerárquica y distribuida.</li>
+        
+        
+        
+      </ul>
+  </div>
+</div>
+<p><img alt="img_7.png" src="/servicios/es/docs/04_dns/img_7.png"></p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p><img alt="img_8.png" src="/servicios/es/docs/04_dns/img_8.png"></p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p><img alt="img_9.png" src="/servicios/es/docs/04_dns/img_9.png"></p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p>Los servidores relacionados con <strong>los dominios de nivel superior (TLD)</strong> se llaman 
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    servidores de dominio de nivel superior
+
+
+</span>
+</strong>
+.
+Son <strong>13</strong>, están distribuidos por todo el mundo y sus nombres van desde 
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    a.root-servers.net
+
+
+</span>
+</strong>
+ hasta 
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    m.root-servers.net
+
+
+</span>
+</strong>
+.</p>
+<p><img alt="img_10.png" src="/servicios/es/docs/04_dns/img_10.png"></p>
+<h3 id="clasificación-de-tipos-de-serividores-dns">Clasificación de tipos de serividores DNS</h3>
+<p>Hay 3 tipos de servidores DNS.</p>
+<ul>
+<li>
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    Servidores primarios (maestros)
+
+
+</span>
+</strong>
+</li>
+</ul>
+<blockquote>
+<p>La información de una zona la obtienen de sus archivos locales. Todas las modificaciones sobre una zona (añadir dominios, modificarlos, etc) se llevan a cabo en el servidor primario.</p>
+</blockquote>
+<ul>
+<li>
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    Servidores secundarios (esclavos)
+
+
+</span>
+</strong>
+</li>
+</ul>
+<blockquote>
+<p>Contiene una copia de sólo lectura de los archivos de zona de los servidores maestros con autoridad sobre esas zonas.</p>
+</blockquote>
+<blockquote>
+<p>Cuando la información del servidor primario cambia, el esclavo la copia para actualizarse. Al proceso mediante el cual se obtiene información actualizada de la zona a través de internet se le llama “transferencia de zona”.</p>
+</blockquote>
+<ul>
+<li>
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    Servidores caché
+
+
+</span>
+</strong>
+</li>
+</ul>
+<blockquote>
+<p>Cuando se les hace una consulta, si no tiene la respuesta, la reenvían a los servidores que puedan responder. Al recibir la respuesta la almacenan en caché para poder usarla en sucesivas peticiones.</p>
+</blockquote>
+<blockquote>
+<p>Si se almacena la información en el servidor caché por mucho tiempo, la info puede estar desactualizada, pero si se almacena muy poco tiempo, mayor carga para el sevidor de nombres. Hay que mirar lo que sea mejor para cada caso. Esto es el TTL o Time To Live (Tiempo de vida).</p>
+</blockquote>
+<h3 id="proceso-de-resolución-de-un-nombre-de-dominio">Proceso de resolución de un nombre de dominio</h3>
+<p>El proceso de resolución de un nombre de dominio sigue una serie de pasos estructurados que permiten encontrar la dirección IP asociada a un dominio.</p>
+<h4 id="1-consulta-al-archivo-de-hosts-local">1. Consulta al archivo de hosts local</h4>
+<p>El sistema operativo primero busca el nombre de dominio en el archivo de configuración local:</p>
+<ul>
+<li>En <strong>Linux/macOS</strong>: <code>/etc/hosts</code></li>
+<li>En <strong>Windows</strong>: <code>C:\Windows\System32\drivers\etc\hosts</code></li>
+</ul>
+<blockquote>
+<p>Si el dominio se encuentra en este archivo, se usa la dirección IP correspondiente y el proceso termina aquí.</p>
+</blockquote>
+<h4 id="2-consulta-a-la-caché-del-sistema-y-del-navegador">2. Consulta a la caché del sistema y del navegador</h4>
+<p>Si el dominio no está en el archivo <code>hosts</code>, el sistema verifica su <strong>caché DNS local</strong>, en el caso de que  la dirección se haya resuelto recientemente, estará aquí.</p>
+<ul>
+<li>El navegador suele tener  su propia caché DNS, que puede evitar consultas adicionales al sistema operativo.</li>
+<li>El sistema operativo también mantiene una caché DNS local (ejemplo: systemd-resolved en Linux, dnscache en .</li>
+</ul>
+<blockquote>
+<p>Si alguna caché contiene la respuesta, el proceso finaliza aquí.</p>
+</blockquote>
+<h4 id="3-consulta-al-servidor-dns-configurado">3. Consulta al servidor DNS configurado</h4>
+<p>Si el dominio no está en la caché, el sistema consulta el <strong>servidor DNS configurado</strong> (normalmente el del proveedor de Internet o un DNS público como Google <code>8.8.8.8</code> o Cloudflare <code>1.1.1.1</code>), pero también podría ser un servidor interno.</p>
+
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    El servidor DNS puede actuar de tres maneras:
+
+
+</span>
+</strong>
+
+<ol>
+<li><strong>Responder con la dirección IP</strong> si la tiene almacenada en su caché.</li>
+<li><strong>Delegar la consulta</strong> a otro servidor DNS si no tiene la información.</li>
+<li><strong>Realizar una consulta recursiva</strong> para encontrar la respuesta.</li>
+</ol>
+<h4 id="4-resolución-jerárquica-en-los-servidores-dns">4. Resolución jerárquica en los servidores DNS</h4>
+<p>Si el servidor DNS consultado no conoce la dirección, sigue el <strong>modelo jerárquico de DNS</strong>:</p>
+<ol>
+<li><strong>Servidor raíz (Root DNS)</strong> → Responde con la dirección de los servidores de dominio de nivel superior (TLD, como <code>.com</code>, <code>.org</code>, <code>.es</code>).</li>
+<li><strong>Servidor TLD</strong> → Responde con la dirección del servidor autoritativo del dominio solicitado.</li>
+<li><strong>Servidor autoritativo</strong> → Contiene la información definitiva sobre el dominio y devuelve la dirección IP.</li>
+</ol>
+<p><strong>Una vez encontrada la dirección, se envía al usuario y se almacena en caché para futuras consultas.</strong></p>
+<h3 id="ejecución-iterativa-o-jerarquica-vs-recursiva">Ejecución iterativa o jerarquica Vs recursiva</h3>
+<p>Existen <strong>dos tipos de resolución DNS principales</strong>: <strong>iterativa (jerárquica)</strong> y <strong>recursiva</strong>, que quedan establecidas en los puntos 3 y 4 anteriores.</p>
+
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    Resolución iterativa (jerarquizada)
+
+
+</span>
+</strong>
+
+<blockquote>
+<p>Este proceso se basa en que el servidor DNS <strong>no realiza la resolución completa</strong>, sino que va consultando diferentes servidores DNS en la jerarquía hasta obtener una respuesta.</p>
+</blockquote>
+<blockquote>
+<p><img alt="img_11.png" src="/servicios/es/docs/04_dns/img_11.png"></p>
+</blockquote>
+<blockquote>
+<ul>
+<li>Flujo del proceso iterativo:</li>
+</ul>
+<blockquote>
+<ol>
+<li><strong>El servidor DNS local consulta un servidor raíz (root DNS).</strong></li>
+<li><strong>El servidor raíz responde con el servidor DNS del dominio de nivel superior (TLD, como .es, .com, .org, etc.).</strong></li>
+<li><strong>El servidor DNS local consulta al servidor del TLD (por ejemplo, el DNS de <code>.es</code>).</strong></li>
+<li><strong>El servidor TLD responde con la dirección del servidor DNS del dominio (por ejemplo, <code>upc.es</code>).</strong></li>
+<li><strong>El servidor DNS local consulta al servidor DNS autoritativo del dominio (<code>upc.es</code>).</strong></li>
+<li><strong>El servidor autoritativo devuelve la dirección IP solicitada.</strong></li>
+<li><strong>El servidor inicial informa al cliente con la dirección IP encontrada.</strong></li>
+</ol>
+</blockquote>
+</blockquote>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Importante</h4>
+
+    En este caso, <strong>el servidor inicial (DNS local) no resuelve directamente el dominio, sino que recibe referencias hasta llegar al servidor autoritativo</strong>.
+
+</div>
+
+
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    Resolución recursiva
+
+
+</span>
+</strong>
+
+<blockquote>
+<p>En este caso, el servidor DNS <strong>se encarga de resolver completamente la consulta por el cliente</strong> y solo le devuelve la dirección IP final.</p>
+</blockquote>
+<blockquote>
+<p><img alt="img_12.png" src="/servicios/es/docs/04_dns/img_12.png"></p>
+</blockquote>
+<blockquote>
+<ul>
+<li>Flujo del proceso recursivo:</li>
+</ul>
+</blockquote>
+<blockquote>
+<blockquote>
+<ol>
+<li><strong>El cliente (host) consulta su servidor DNS configurado.</strong></li>
+<li><strong>Este servidor DNS consulta a un servidor raíz para obtener la información.</strong></li>
+<li><strong>El servidor raíz responde con la dirección del servidor TLD (<code>.es</code>).</strong></li>
+<li><strong>El servidor DNS consulta al TLD y obtiene la dirección del servidor DNS del dominio (<code>upc.es</code>).</strong></li>
+<li><strong>El servidor DNS consulta al servidor autoritativo (<code>ftp.upc.es</code>) y obtiene la IP.</strong></li>
+<li><strong>El servidor DNS devuelve la IP al cliente.</strong></li>
+</ol>
+</blockquote>
+</blockquote>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Importante</h4>
+
+    En este caso, <strong>el cliente solo pregunta una vez y el servidor DNS hace todo el trabajo de resolución hasta obtener la IP</strong>.
+
+</div>
+
+<hr>
+<h2 id="-comparación-rápida">📊 Comparación rápida</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Tipo de Resolución</strong></th>
+<th><strong>Quién resuelve la consulta</strong></th>
+<th><strong>Proceso</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Iterativa (jerárquica)</strong></td>
+<td>El cliente DNS sigue referencias hasta obtener la respuesta.</td>
+<td>El cliente pregunta a varios servidores DNS hasta llegar al autoritativo.</td>
+</tr>
+<tr>
+<td><strong>Recursiva</strong></td>
+<td>El servidor DNS configurado resuelve completamente y responde al cliente.</td>
+<td>El cliente solo hace una consulta y el servidor se encarga de todo.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+  <div class="section-index">
+    
+    
+    <hr class="panel-line">
+        <div class="entry">
+                <h5>
+                    <a href="/servicios/es/docs/04_dns/01_instalacion/">Instalación</a>
+                </h5>
+                <p>Instalación y configuración de un servidor DNS utilizando BIND9 para la resolución de nombres en red local.</p>
+            </div>
+        <div class="entry">
+                <h5>
+                    <a href="/servicios/es/docs/04_dns/02_configuracion/">Configuración Avanzada de BIND</a>
+                </h5>
+                <p>Configuraciones avanzadas de BIND9 incluyendo vistas, ACLs y DNSSEC.</p>
+            </div>
+        <div class="entry">
+                <h5>
+                    <a href="/servicios/es/docs/04_dns/03_ejercicios/">Ejercicios Prácticos DNS</a>
+                </h5>
+                <p>Ejercicios prácticos para configurar y administrar un servidor DNS con BIND9.</p>
+            </div>
+        </div>
+</div>
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="manuelromeromiguel@gmail.com" aria-label="manuelromeromiguel@gmail.com">
+    <a target="_blank" rel="noopener" href="mailto:manuelromeromiguel@gmail.com" aria-label="manuelromeromiguel@gmail.com">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2025
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/servicios/js/main.js"></script>
+<script defer src="/servicios/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/servicios/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

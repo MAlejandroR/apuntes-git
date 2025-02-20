@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Servidor DNS con BIND on Despliegue de Aplicaciones Web</title>
+    <link>http://localhost:1313/servicios/es/docs/04_dns/</link>
+    <description>Recent content in Servidor DNS con BIND on Despliegue de Aplicaciones Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/servicios/es/docs/04_dns/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ejercicios Prácticos DNS</title>
+      <link>http://localhost:1313/servicios/es/docs/04_dns/03_ejercicios/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/servicios/es/docs/04_dns/03_ejercicios/</guid>
+      <description>Ejercicios Prácticos DNS Ejercicio 1: Configuración Básica Objetivo Configurar un servidor DNS primario para una red local con resolución directa e inversa. Pasos del Ejercicio Crear el entorno Vagrant: 1 2 3 4 5 Vagrant.configure(&amp;#34;2&amp;#34;) do |config| config.vm.box = &amp;#34;ubuntu/focal64&amp;#34; config.vm.network &amp;#34;private_network&amp;#34;, ip: &amp;#34;192.168.33.10&amp;#34; config.vm.hostname = &amp;#34;dns1&amp;#34; end Configurar zona directa: 1 2 3 4 5 6 7 8 9 10 11 12 $TTL 604800 @ IN SOA dns1.lab.local. admin.lab.local. ( 2024021901 ; Serial 604800 ; Refresh 86400 ; Retry 2419200 ; Expire 604800 ) ; Negative Cache TTL ; @ IN NS dns1.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,10 +1,10 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head>
+  <head><script src="/servicios/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=servicios/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="https://web.infenlaces.com/servicios/es/docs/">
-<link rel="alternate" type="application/rss&#43;xml" href="https://web.infenlaces.com/servicios/es/docs/index.xml">
+<link rel="canonical" type="text/html" href="http://localhost:1313/servicios/es/docs/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/servicios/es/docs/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
@@ -27,7 +27,7 @@
 <meta property="og:description" content="Exploramos servicios esenciales para el despliegue de aplicaciones web.
 " />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://web.infenlaces.com/servicios/es/docs/" />
+<meta property="og:url" content="http://localhost:1313/servicios/es/docs/" />
 
 <meta itemprop="name" content="Servicios en Despliegue de Aplicaciones Web">
 <meta itemprop="description" content="Exploramos servicios esenciales para el despliegue de aplicaciones web.
@@ -36,7 +36,7 @@
 "/>
 
 
-<link rel="preload" href="/servicios/scss/main.min.c84a0e9ada33ecff5b6f47d659a8af496d2cc4bfd102d9b89c766c7107e86dec.css" as="style"><link href="/servicios/scss/main.min.c84a0e9ada33ecff5b6f47d659a8af496d2cc4bfd102d9b89c766c7107e86dec.css" rel="stylesheet">
+<link href="/servicios/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -222,6 +222,71 @@ Versión imprimible multipagina.
 
     
   
+    
+    
+	
+<li>4: <a href="#pg-c03644e270700c618778d25f9cdeb686">Servidor DNS con BIND</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>4.1: <a href="#pg-a0beb9f7a15cf85318ae0b811f50cca3">Instalación</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>4.2: <a href="#pg-58b7419fde94cadcdd42f0085c515df7">Configuración Avanzada de BIND</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>4.3: <a href="#pg-9467889650d4d6c94c518d751c87c8df">Ejercicios Prácticos DNS</a></li>
+
+
+    
+  
+
+    </ul>
+    
+  
 
     </ul>
 
@@ -375,31 +440,47 @@ Versión imprimible multipagina.
     
     <strong>¿Qué es un servicio?</strong>
   </div>
-  <div class="definicion-contenido">
-    
-Un 
-
-<strong>
-<span class="font-weight-bold text-primary fs-1.5">
-
-    servicio
-
-
-</span>
-</strong>
- en el contexto del despliegue web es 
-
-<strong>
-<span class="font-weight-bold text-primary fs-1.5">
-
-    un programa o conjunto de programas
-
-
-</span>
-</strong>
- diseñados para proporcionar funcionalidades específicas a través de una red, facilitando la comunicación y operación de aplicaciones.     
-
-
+  <div class="definicion-contenido ">
+      <ul>
+        
+        <li>Un </li>
+        
+        
+        <li>&lt;strong&gt;</li>
+        
+        <li>&lt;span class=&#34;font-weight-bold text-primary fs-1.5&#34;&gt;</li>
+        
+        
+        <li>    servicio</li>
+        
+        
+        
+        <li>&lt;/span&gt;</li>
+        
+        <li>&lt;/strong&gt;</li>
+        
+        <li> en el contexto del despliegue web es </li>
+        
+        
+        <li>&lt;strong&gt;</li>
+        
+        <li>&lt;span class=&#34;font-weight-bold text-primary fs-1.5&#34;&gt;</li>
+        
+        
+        <li>    un programa o conjunto de programas</li>
+        
+        
+        
+        <li>&lt;/span&gt;</li>
+        
+        <li>&lt;/strong&gt;</li>
+        
+        <li> diseñados para proporcionar funcionalidades específicas a través de una red, facilitando la comunicación y operación de aplicaciones.     </li>
+        
+        
+        
+        
+      </ul>
   </div>
 </div>
 <hr style="border-color: red; border-width: 3px;"/>
@@ -515,7 +596,7 @@ Un
 </tr>
 </tbody>
 </table>
-<h4 id="hahahugoshortcode5s20hbhb-y-hahahugoshortcode5s21hbhb">
+<h4 id="hahahugoshortcode4s20hbhb-y-hahahugoshortcode4s21hbhb">
 
 <strong>
 <span class="font-weight-bold text-primary fs-1.5">
@@ -545,7 +626,7 @@ Un
 
 </div>
 
-<h4 id="hahahugoshortcode5s23hbhb-y-hahahugoshortcode5s24hbhb">
+<h4 id="hahahugoshortcode4s23hbhb-y-hahahugoshortcode4s24hbhb">
 
 <strong>
 <span class="font-weight-bold text-primary fs-1.5">
@@ -575,7 +656,7 @@ Un
 
 </div>
 
-<h4 id="hahahugoshortcode5s26hbhb">
+<h4 id="hahahugoshortcode4s26hbhb">
 
 <strong>
 <span class="font-weight-bold text-primary fs-1.5">
@@ -595,7 +676,7 @@ Un
 
 </div>
 
-<h4 id="hahahugoshortcode5s28hbhb">
+<h4 id="hahahugoshortcode4s28hbhb">
 
 <strong>
 <span class="font-weight-bold text-primary fs-1.5">
@@ -3377,10 +3458,14 @@ Un ejemplo típico de reescritura para URLs amigables:
     
     <strong>Conexión remota segura</strong>
   </div>
-  <div class="definicion-contenido">
-    
-SSH permite conectarte a una máquina remota de manera segura y evitar que la información sensible sea capturada por sniffers.
-
+  <div class="definicion-contenido ">
+      <ul>
+        
+        <li>SSH permite conectarte a una máquina remota de manera segura y evitar que la información sensible sea capturada por sniffers.</li>
+        
+        
+        
+      </ul>
   </div>
 </div>
 <p>
@@ -4506,10 +4591,14 @@ Se puede usar para realizar despliegues. Por ejemplo estos apuntes los genero en
     
     <strong>EDI y conexiones SSH</strong>
   </div>
-  <div class="definicion-contenido">
-    
-Un EDI (Entorno de Desarrollo Integrado) como Visual Studio Code, PHPStorm o IntelliJ, permite conexiones directas a servidores mediante SSH.
-
+  <div class="definicion-contenido ">
+      <ul>
+        
+        <li>Un EDI (Entorno de Desarrollo Integrado) como Visual Studio Code, PHPStorm o IntelliJ, permite conexiones directas a servidores mediante SSH.</li>
+        
+        
+        
+      </ul>
   </div>
 </div>
 Ejemplo con phpstorm tenemos la opción en <em><strong>Tools=&gt;Deployment=&gt;Browse Remote Host</strong></em></p>
@@ -4613,6 +4702,1649 @@ Ejemplo con phpstorm tenemos la opción en <em><strong>Tools=&gt;Deployment=&gt;
     
 	
   
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-c03644e270700c618778d25f9cdeb686">4 - Servidor DNS con BIND</h1>
+    <div class="lead">Instalación y configuración de un servidor DNS utilizando BIND9 para la resolución de nombres en red local.</div>
+	
+
+
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-check-circle"></i> 
+            
+        </span>
+        
+        <span>Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight:bold">Qué veremos aquí</h3>
+
+    <hr style="border-color:seagreen; border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            <li>Concepto de DNS</li>
+            
+            <li>Instalación de servicio o aplicación Bind</li>
+            
+            <li>Configuración</li>
+            
+            <li>Puesta en marcha y uso </li>
+            
+            
+            
+        </ul>
+    </div>
+    
+
+
+</div>
+
+<hr style="border-color: red; border-width: 3px;"/>
+
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Referencias DNS</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Documentación Oficial y Recursos</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
+    
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            <li><ul>
+<li><a href="https://www.isc.org/bind/">Documentación oficial de BIND9</a></li>
+</ul>
+</li>
+            
+            <li><ul>
+<li><a href="https://tools.ietf.org/html/rfc1034">RFC 1034 - Domain Names - Concepts and Facilities</a></li>
+</ul>
+</li>
+            
+            <li><ul>
+<li><a href="https://tools.ietf.org/html/rfc1035">RFC 1035 - Domain Names - Implementation and Specification</a></li>
+</ul>
+</li>
+            
+            <li></li>
+            
+            
+        </ul>
+    </div>
+</div>
+
+<hr style="border-color: red; border-width: 3px;"/>
+<h1 id="introducción-al-servicio-dns">Introducción al Servicio DNS</h1>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-book" aria-hidden="true"></i>
+    
+    <strong>DNS</strong>
+  </div>
+  <div class="definicion-contenido ">
+      <ul>
+        
+        <li>El Sistema de Nombres de Dominio (DNS) es un servicio fundamental en Internet.   </li>
+        
+        <li>Corresponde a la capa de aplicación y tiene asociado el puerto  52.</li>
+        
+        <li>Traduce nombres de dominio legibles por humanos en direcciones IP que las máquinas pueden entender y procesar.</li>
+        
+        
+        
+      </ul>
+  </div>
+</div>
+<h2 id="conceptos-básicos-de-dns">Conceptos Básicos de DNS</h2>
+
+
+<div class="alert alert-info" role="alert">
+<h4 class="alert-heading">Componentes principales</h4>
+
+    <ul>
+<li><strong>Servidor DNS</strong>: Software que responde a las consultas de resolución de nombres</li>
+<li><strong>Registros DNS</strong>: Entradas que asocian nombres con direcciones IP u otros datos</li>
+<li><strong>Zonas DNS</strong>: Porciones del espacio de nombres de dominio</li>
+<li><strong>Cache DNS</strong>: Almacenamiento temporal de resoluciones previas</li>
+</ul>
+
+
+</div>
+
+<p>
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    Protocolos de capa inferior
+
+
+</span>
+</strong>
+
+DNS utiliza de capas inferiores principalmente UDP, pero también puede usar TCP:</p>
+<ul>
+<li><strong>Puerto 53 (UDP y TCP)</strong> → Se usa para resolver nombres de dominio en direcciones IP.</li>
+<li><strong>UDP 53</strong> → Se utiliza principalmente para consultas normales de DNS porque es más rápido y eficiente.</li>
+<li><strong>TCP 53</strong> → Se usa cuando la respuesta es demasiado grande para caber en un paquete UDP o para operaciones más seguras como transferencias de zona (AXFR/IXFR).</li>
+</ul>
+<h2 id="bind-berkeley-internet-name-domain">BIND (Berkeley Internet Name Domain)</h2>
+<p>
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    BIND
+
+
+</span>
+</strong>
+ es el servidor (aplicación que instalaremos) DNS más utilizado en Internet, especialmente en sistemas Unix/Linux. Proporciona una implementación completa del protocolo DNS.
+Bind9, implementa el protocolo DNS.</p>
+<p>Basa su funcionamiento en 
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    un  sistema de nombres jerárquico
+
+
+</span>
+</strong>
+ (vs espacio de nombre planos, que tenemos en el fichero hosts, inmanejable dado el tamaño de internet), que  
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    tiene estructura de árbol
+
+
+</span>
+</strong>
+ de forma que cada nodo del árbol tiene un significado.</p>
+<table>
+<thead>
+<tr>
+<th>Objetivo</th>
+<th>Sistema jerarquizado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="img_1.png" src="/servicios/es/docs/04_dns/img_1.png"></td>
+<td><img alt="img.png" src="/servicios/es/docs/04_dns/img.png"></td>
+</tr>
+</tbody>
+</table>
+<p>
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    El sistema de nombres de dominio
+
+
+</span>
+</strong>
+es un sistema de nombres jerárquico y distribuido.</p>
+<p>La estructura del sistema de nombres de dominio en una estructura en forma de árbol. Cada nodo del árbol se llama 
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    nombre de dominio
+
+
+</span>
+</strong>
+ y consiste en una etiqueta de hastac    63 caracteres.
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">estructura del árbol</h4>
+
+    <ul>
+<li>La raíz del árbol siempre es un <strong>PUNTO</strong>.</li>
+<li>A la etiqueta de segundo nivel se le llama dominio de nivel superior o <strong>Top Level Domain (TLD)</strong>.</li>
+<li><strong>El extremo de la bifurcación se denomina host</strong> y corresponde a un equipo en la red.</li>
+</ul>
+
+
+</div>
+
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">FQDN</h4>
+
+    <p><strong>FQDN (Nombre de Dominio totalmente calificado)</strong>  es la dirección que corresponde con todas las etiquetas de nodo de una estructura arbórea, separadas por puntos y que termina con un punto final.</p>
+<p>La profundidad máxima de una estructura arbórea es 127 niveles y la longitud máxima para un nombre FQDN es 255 caracteres.</p>
+
+
+</div>
+
+<img alt="img_3.png" src="/servicios/es/docs/04_dns/img_3.png"></p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p><img alt="img_4.png" src="/servicios/es/docs/04_dns/img_4.png"></p>
+<p>Por ejemplo el espacio de nombres de los ficheros en disco (se pueden crear ficheros con el mismo nombre siempre que estén en otra carpeta)
+A continuación vamos a proceder a instalarlo y configurarlo</p>
+<p><strong>El Centro de Información de la Red Internet (Internet Network Information Center)</strong> 
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    administra
+
+
+</span>
+</strong>
+ la raíz de la base de datos DNS en Internet.</p>
+<p>Los dominios superiores se han asignado a organizaciones y países. Estos nombres de dominio siguen un estándar internacional. Para los países se usan abreviaturas de dos y de tres letras (es, it, de…), y se han reservado varias abreviaturas para que las usen las organizaciones, como se muestra en los siguientes ejemplos:</p>
+<p><img alt="img_5.png" src="/servicios/es/docs/04_dns/img_5.png"></p>
+<h2 id="resolución-de-nombres-de-dominio">Resolución de nombres de dominio</h2>
+<p>La estructura del árbol, ya comentada anteriormente,está fomrada por nodos interconectos</p>
+<p><div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-network-wired" aria-hidden="true"></i>
+    
+    <strong>Dominio</strong>
+  </div>
+  <div class="definicion-contenido ">
+      <ul>
+        
+        <li>Cada nodo del árbol de una base de datos DNS, junto con todos los nodos por debajo del mismo</li>
+        
+        
+        <li>Los dominios pueden contener host (equipos) y otros dominios (subdominios).</li>
+        
+        
+        
+      </ul>
+  </div>
+</div>
+Por ejemplo, el dominio Midominio (midominio.com), podría contener a la vez equipos, como host.midominio.com, y subdominios, como subdom.midominio.com, que a su vez podría contener host, como por ejemplo host.subdom.midominio.com.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-server" aria-hidden="true"></i>
+    
+    <strong>Servidores de nombres de dominio</strong>
+  </div>
+  <div class="definicion-contenido ">
+      <ul>
+        
+        <li>Equipos  que permiten establecer la relación entre los nombres de dominio y las direcciones IP de los equipos de una red.</li>
+        
+        
+        
+      </ul>
+  </div>
+</div>
+<p>
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    El sistema de servidores de nombres de dominio
+
+
+</span>
+</strong>
+ es una <strong>arquitectura jeráquica y distribuida</strong>, y permite su administración descentralizada mediante la delegación de dominios. Es decir como no habría un ordenador tan potente como para traducir todos los nombres de todos los ordenadores de Internet, lo que se hizo es que existen <strong>varios servidores DNS</strong> que trabajan de forma <em>jerárquica y delegándose tareas unos en otros</em>.  Cada  servidor DNS almacena información acerca de algunas partes del espacio de nombres del dominio. Cada una de esas partes se llama zona. <strong>Se dice el servidor DNS tiene autoridad sobre una o varias zonas</strong>.
+<img alt="img_6.png" src="/servicios/es/docs/04_dns/img_6.png"></p>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-exchange-alt" aria-hidden="true"></i>
+    
+    <strong>Delegacion de dominios</strong>
+  </div>
+  <div class="definicion-contenido ">
+      <ul>
+        
+        <li>La delegación de dominios es el proceso mediante el cual un servidor de nombres de dominio (DNS) transfiere la autoridad de resolución de una parte de un dominio (una zona DNS) a otro servidor.</li>
+        
+        
+        <li>Esto permite dividir un dominio en subdominios y asignar su gestión a servidores diferentes, manteniendo una estructura jerárquica y distribuida.</li>
+        
+        
+        
+      </ul>
+  </div>
+</div>
+<p><img alt="img_7.png" src="/servicios/es/docs/04_dns/img_7.png"></p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p><img alt="img_8.png" src="/servicios/es/docs/04_dns/img_8.png"></p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p><img alt="img_9.png" src="/servicios/es/docs/04_dns/img_9.png"></p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p>Los servidores relacionados con <strong>los dominios de nivel superior (TLD)</strong> se llaman 
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    servidores de dominio de nivel superior
+
+
+</span>
+</strong>
+.
+Son <strong>13</strong>, están distribuidos por todo el mundo y sus nombres van desde 
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    a.root-servers.net
+
+
+</span>
+</strong>
+ hasta 
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    m.root-servers.net
+
+
+</span>
+</strong>
+.</p>
+<p><img alt="img_10.png" src="/servicios/es/docs/04_dns/img_10.png"></p>
+<h3 id="clasificación-de-tipos-de-serividores-dns">Clasificación de tipos de serividores DNS</h3>
+<p>Hay 3 tipos de servidores DNS.</p>
+<ul>
+<li>
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    Servidores primarios (maestros)
+
+
+</span>
+</strong>
+</li>
+</ul>
+<blockquote>
+<p>La información de una zona la obtienen de sus archivos locales. Todas las modificaciones sobre una zona (añadir dominios, modificarlos, etc) se llevan a cabo en el servidor primario.</p>
+</blockquote>
+<ul>
+<li>
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    Servidores secundarios (esclavos)
+
+
+</span>
+</strong>
+</li>
+</ul>
+<blockquote>
+<p>Contiene una copia de sólo lectura de los archivos de zona de los servidores maestros con autoridad sobre esas zonas.</p>
+</blockquote>
+<blockquote>
+<p>Cuando la información del servidor primario cambia, el esclavo la copia para actualizarse. Al proceso mediante el cual se obtiene información actualizada de la zona a través de internet se le llama “transferencia de zona”.</p>
+</blockquote>
+<ul>
+<li>
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    Servidores caché
+
+
+</span>
+</strong>
+</li>
+</ul>
+<blockquote>
+<p>Cuando se les hace una consulta, si no tiene la respuesta, la reenvían a los servidores que puedan responder. Al recibir la respuesta la almacenan en caché para poder usarla en sucesivas peticiones.</p>
+</blockquote>
+<blockquote>
+<p>Si se almacena la información en el servidor caché por mucho tiempo, la info puede estar desactualizada, pero si se almacena muy poco tiempo, mayor carga para el sevidor de nombres. Hay que mirar lo que sea mejor para cada caso. Esto es el TTL o Time To Live (Tiempo de vida).</p>
+</blockquote>
+<h3 id="proceso-de-resolución-de-un-nombre-de-dominio">Proceso de resolución de un nombre de dominio</h3>
+<p>El proceso de resolución de un nombre de dominio sigue una serie de pasos estructurados que permiten encontrar la dirección IP asociada a un dominio.</p>
+<h4 id="1-consulta-al-archivo-de-hosts-local">1. Consulta al archivo de hosts local</h4>
+<p>El sistema operativo primero busca el nombre de dominio en el archivo de configuración local:</p>
+<ul>
+<li>En <strong>Linux/macOS</strong>: <code>/etc/hosts</code></li>
+<li>En <strong>Windows</strong>: <code>C:\Windows\System32\drivers\etc\hosts</code></li>
+</ul>
+<blockquote>
+<p>Si el dominio se encuentra en este archivo, se usa la dirección IP correspondiente y el proceso termina aquí.</p>
+</blockquote>
+<h4 id="2-consulta-a-la-caché-del-sistema-y-del-navegador">2. Consulta a la caché del sistema y del navegador</h4>
+<p>Si el dominio no está en el archivo <code>hosts</code>, el sistema verifica su <strong>caché DNS local</strong>, en el caso de que  la dirección se haya resuelto recientemente, estará aquí.</p>
+<ul>
+<li>El navegador suele tener  su propia caché DNS, que puede evitar consultas adicionales al sistema operativo.</li>
+<li>El sistema operativo también mantiene una caché DNS local (ejemplo: systemd-resolved en Linux, dnscache en .</li>
+</ul>
+<blockquote>
+<p>Si alguna caché contiene la respuesta, el proceso finaliza aquí.</p>
+</blockquote>
+<h4 id="3-consulta-al-servidor-dns-configurado">3. Consulta al servidor DNS configurado</h4>
+<p>Si el dominio no está en la caché, el sistema consulta el <strong>servidor DNS configurado</strong> (normalmente el del proveedor de Internet o un DNS público como Google <code>8.8.8.8</code> o Cloudflare <code>1.1.1.1</code>), pero también podría ser un servidor interno.</p>
+
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    El servidor DNS puede actuar de tres maneras:
+
+
+</span>
+</strong>
+
+<ol>
+<li><strong>Responder con la dirección IP</strong> si la tiene almacenada en su caché.</li>
+<li><strong>Delegar la consulta</strong> a otro servidor DNS si no tiene la información.</li>
+<li><strong>Realizar una consulta recursiva</strong> para encontrar la respuesta.</li>
+</ol>
+<h4 id="4-resolución-jerárquica-en-los-servidores-dns">4. Resolución jerárquica en los servidores DNS</h4>
+<p>Si el servidor DNS consultado no conoce la dirección, sigue el <strong>modelo jerárquico de DNS</strong>:</p>
+<ol>
+<li><strong>Servidor raíz (Root DNS)</strong> → Responde con la dirección de los servidores de dominio de nivel superior (TLD, como <code>.com</code>, <code>.org</code>, <code>.es</code>).</li>
+<li><strong>Servidor TLD</strong> → Responde con la dirección del servidor autoritativo del dominio solicitado.</li>
+<li><strong>Servidor autoritativo</strong> → Contiene la información definitiva sobre el dominio y devuelve la dirección IP.</li>
+</ol>
+<p><strong>Una vez encontrada la dirección, se envía al usuario y se almacena en caché para futuras consultas.</strong></p>
+<h3 id="ejecución-iterativa-o-jerarquica-vs-recursiva">Ejecución iterativa o jerarquica Vs recursiva</h3>
+<p>Existen <strong>dos tipos de resolución DNS principales</strong>: <strong>iterativa (jerárquica)</strong> y <strong>recursiva</strong>, que quedan establecidas en los puntos 3 y 4 anteriores.</p>
+
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    Resolución iterativa (jerarquizada)
+
+
+</span>
+</strong>
+
+<blockquote>
+<p>Este proceso se basa en que el servidor DNS <strong>no realiza la resolución completa</strong>, sino que va consultando diferentes servidores DNS en la jerarquía hasta obtener una respuesta.</p>
+</blockquote>
+<blockquote>
+<p><img alt="img_11.png" src="/servicios/es/docs/04_dns/img_11.png"></p>
+</blockquote>
+<blockquote>
+<ul>
+<li>Flujo del proceso iterativo:</li>
+</ul>
+<blockquote>
+<ol>
+<li><strong>El servidor DNS local consulta un servidor raíz (root DNS).</strong></li>
+<li><strong>El servidor raíz responde con el servidor DNS del dominio de nivel superior (TLD, como .es, .com, .org, etc.).</strong></li>
+<li><strong>El servidor DNS local consulta al servidor del TLD (por ejemplo, el DNS de <code>.es</code>).</strong></li>
+<li><strong>El servidor TLD responde con la dirección del servidor DNS del dominio (por ejemplo, <code>upc.es</code>).</strong></li>
+<li><strong>El servidor DNS local consulta al servidor DNS autoritativo del dominio (<code>upc.es</code>).</strong></li>
+<li><strong>El servidor autoritativo devuelve la dirección IP solicitada.</strong></li>
+<li><strong>El servidor inicial informa al cliente con la dirección IP encontrada.</strong></li>
+</ol>
+</blockquote>
+</blockquote>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Importante</h4>
+
+    En este caso, <strong>el servidor inicial (DNS local) no resuelve directamente el dominio, sino que recibe referencias hasta llegar al servidor autoritativo</strong>.
+
+</div>
+
+
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    Resolución recursiva
+
+
+</span>
+</strong>
+
+<blockquote>
+<p>En este caso, el servidor DNS <strong>se encarga de resolver completamente la consulta por el cliente</strong> y solo le devuelve la dirección IP final.</p>
+</blockquote>
+<blockquote>
+<p><img alt="img_12.png" src="/servicios/es/docs/04_dns/img_12.png"></p>
+</blockquote>
+<blockquote>
+<ul>
+<li>Flujo del proceso recursivo:</li>
+</ul>
+</blockquote>
+<blockquote>
+<blockquote>
+<ol>
+<li><strong>El cliente (host) consulta su servidor DNS configurado.</strong></li>
+<li><strong>Este servidor DNS consulta a un servidor raíz para obtener la información.</strong></li>
+<li><strong>El servidor raíz responde con la dirección del servidor TLD (<code>.es</code>).</strong></li>
+<li><strong>El servidor DNS consulta al TLD y obtiene la dirección del servidor DNS del dominio (<code>upc.es</code>).</strong></li>
+<li><strong>El servidor DNS consulta al servidor autoritativo (<code>ftp.upc.es</code>) y obtiene la IP.</strong></li>
+<li><strong>El servidor DNS devuelve la IP al cliente.</strong></li>
+</ol>
+</blockquote>
+</blockquote>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Importante</h4>
+
+    En este caso, <strong>el cliente solo pregunta una vez y el servidor DNS hace todo el trabajo de resolución hasta obtener la IP</strong>.
+
+</div>
+
+<hr>
+<h2 id="-comparación-rápida">📊 Comparación rápida</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Tipo de Resolución</strong></th>
+<th><strong>Quién resuelve la consulta</strong></th>
+<th><strong>Proceso</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Iterativa (jerárquica)</strong></td>
+<td>El cliente DNS sigue referencias hasta obtener la respuesta.</td>
+<td>El cliente pregunta a varios servidores DNS hasta llegar al autoritativo.</td>
+</tr>
+<tr>
+<td><strong>Recursiva</strong></td>
+<td>El servidor DNS configurado resuelve completamente y responde al cliente.</td>
+<td>El cliente solo hace una consulta y el servidor se encarga de todo.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-a0beb9f7a15cf85318ae0b811f50cca3">4.1 - Instalación</h1>
+    <div class="lead">Instalación y configuración de un servidor DNS utilizando BIND9 para la resolución de nombres en red local.</div>
+	
+
+
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-check-circle"></i> 
+            
+        </span>
+        
+        <span>Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight:bold">Qué veremos aquí</h3>
+
+    <hr style="border-color:seagreen; border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            <li>Concepto de DNS</li>
+            
+            <li>Instalación de servicio o aplicación Bind</li>
+            
+            <li>Configuración</li>
+            
+            <li>Puesta en marcha y uso </li>
+            
+            
+            
+        </ul>
+    </div>
+    
+
+
+</div>
+
+<h1 id="introducción-al-servicio-dns">Introducción al Servicio DNS</h1>
+<h1 id="instalación-y-configuración">Instalación y Configuración</h1>
+<h2 id="entorno-de-práctica">Entorno de Práctica</h2>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-ruby" data-lang="ruby"><span style="display:flex; background-color:#3c3d38"><span><span style="color:#66d9ef">Vagrant</span><span style="color:#f92672">.</span>configure(<span style="color:#e6db74">&#34;2&#34;</span>) <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>config<span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span>  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>box <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ubuntu/focal64&#34;</span>
+</span></span><span style="display:flex;"><span>  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>hostname <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dns-server&#34;</span>
+</span></span><span style="display:flex;"><span>  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>network <span style="color:#e6db74">&#34;private_network&#34;</span>, <span style="color:#e6db74">ip</span>: <span style="color:#e6db74">&#34;192.168.33.10&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="instalación-de-bind9">Instalación de BIND9</h2>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install bind9 bind9utils bind9-doc</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="configuración-básica">Configuración Básica</h2>
+<p>Los archivos principales de configuración se encuentran en 
+
+<strong>
+<span class="font-weight-bold text-primary fs-1.5">
+
+    /etc/bind/
+
+
+</span>
+</strong>
+:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>/etc/bind/
+</span></span><span style="display:flex;"><span>├── named.conf          # Configuración principal
+</span></span><span style="display:flex;"><span>├── named.conf.local    # Zonas locales
+</span></span><span style="display:flex;"><span>├── named.conf.options  # Opciones globales
+</span></span><span style="display:flex;"><span>└── zones/             # Directorio para archivos de zona</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="configuración-de-opciones-globales">Configuración de Opciones Globales</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>options {
+</span></span><span style="display:flex;"><span>        directory &#34;/var/cache/bind&#34;;
+</span></span><span style="display:flex;"><span>        recursion yes;
+</span></span><span style="display:flex;"><span>        allow-recursion { localhost; 192.168.33.0/24; };
+</span></span><span style="display:flex;"><span>        listen-on { 192.168.33.10; };
+</span></span><span style="display:flex;"><span>        allow-transfer { none; };
+</span></span><span style="display:flex;"><span>        dnssec-validation auto;
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="configuración-de-zona-local">Configuración de Zona Local</h2>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>zone &#34;ejemplo.local&#34; {
+</span></span><span style="display:flex;"><span>        type master;
+</span></span><span style="display:flex;"><span>        file &#34;/etc/bind/zones/db.ejemplo.local&#34;;
+</span></span><span style="display:flex;"><span>        allow-update { none; };
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>zone &#34;33.168.192.in-addr.arpa&#34; {
+</span></span><span style="display:flex;"><span>        type master;
+</span></span><span style="display:flex;"><span>        file &#34;/etc/bind/zones/db.192.168.33&#34;;
+</span></span><span style="display:flex;"><span>        allow-update { none; };
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="archivo-de-zona-directa">Archivo de Zona Directa</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>$TTL    604800
+</span></span><span style="display:flex;"><span>@       IN      SOA     ns1.ejemplo.local. admin.ejemplo.local. (
+</span></span><span style="display:flex;"><span>                     2024021901         ; Serial
+</span></span><span style="display:flex;"><span>                         604800         ; Refresh
+</span></span><span style="display:flex;"><span>                          86400         ; Retry
+</span></span><span style="display:flex;"><span>                        2419200         ; Expire
+</span></span><span style="display:flex;"><span>                         604800 )       ; Negative Cache TTL
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>@       IN      NS      ns1.ejemplo.local.
+</span></span><span style="display:flex;"><span>@       IN      A       192.168.33.10
+</span></span><span style="display:flex;"><span>ns1     IN      A       192.168.33.10
+</span></span><span style="display:flex;"><span>www     IN      A       192.168.33.20
+</span></span><span style="display:flex;"><span>db      IN      A       192.168.33.30</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h1 id="verificación-y-pruebas">Verificación y Pruebas</h1>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Comandos de Verificación</h4>
+
+    <ul>
+<li>Verificar sintaxis: <code>named-checkconf</code></li>
+<li>Verificar zona: <code>named-checkzone ejemplo.local /etc/bind/zones/db.ejemplo.local</code></li>
+<li>Consultar registros: <code>dig @192.168.33.10 www.ejemplo.local</code></li>
+</ul>
+
+
+</div>
+
+<details>
+    <summary>Ejemplo de consulta DNS exitosa</summary>
+    <div class="solution-content">
+        
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>; &lt;&lt;&gt;&gt; DiG 9.16.1-Ubuntu &lt;&lt;&gt;&gt; @192.168.33.10 www.ejemplo.local
+</span></span><span style="display:flex;"><span>; (1 server found)
+</span></span><span style="display:flex;"><span>;; global options: +cmd
+</span></span><span style="display:flex;"><span>;; Got answer:
+</span></span><span style="display:flex;"><span>;; -&gt;&gt;HEADER&lt;&lt;- opcode: QUERY, status: NOERROR, id: 12345
+</span></span><span style="display:flex;"><span>;; flags: qr aa rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 1, ADDITIONAL: 1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>;; ANSWER SECTION:
+</span></span><span style="display:flex;"><span>www.ejemplo.local.    604800  IN      A       192.168.33.20</span></span></code></pre></div>
+
+
+</details>
+
+<style>
+    .solution-content {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-top: 5px;
+        background-color: #f9f9f9;
+    }
+    summary {
+        cursor: pointer;
+        font-weight: bold;
+        color: #0073e6;
+    }
+</style>
+
+<h1 id="consideraciones-de-seguridad">Consideraciones de Seguridad</h1>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Medidas de Seguridad Importantes</h4>
+
+    <ol>
+<li>Limitar la recursión solo a redes confiables</li>
+<li>Implementar DNSSEC para proteger la integridad de las respuestas</li>
+<li>Mantener BIND actualizado con los últimos parches de seguridad</li>
+<li>Configurar correctamente los permisos de archivos</li>
+</ol>
+
+
+</div>
+
+
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Referencias DNS</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Documentación Oficial y Recursos</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
+    
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            <li><ul>
+<li><a href="https://www.isc.org/bind/">Documentación oficial de BIND9</a></li>
+</ul>
+</li>
+            
+            <li><ul>
+<li><a href="https://tools.ietf.org/html/rfc1034">RFC 1034 - Domain Names - Concepts and Facilities</a></li>
+</ul>
+</li>
+            
+            <li><ul>
+<li><a href="https://tools.ietf.org/html/rfc1035">RFC 1035 - Domain Names - Implementation and Specification</a></li>
+</ul>
+</li>
+            
+            
+            
+        </ul>
+    </div>
+</div>
+
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-58b7419fde94cadcdd42f0085c515df7">4.2 - Configuración Avanzada de BIND</h1>
+    <div class="lead">Configuraciones avanzadas de BIND9 incluyendo vistas, ACLs y DNSSEC.</div>
+	<h1 id="configuración-avanzada-de-bind9">Configuración Avanzada de BIND9</h1>
+<h2 id="vistas-dns-split-dns">Vistas DNS (Split DNS)</h2>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-code-branch" aria-hidden="true"></i>
+    
+    <strong>Split DNS</strong>
+  </div>
+  <div class="definicion-contenido ">
+      <ul>
+        
+        <li>Split DNS permite servir diferentes respuestas DNS según el origen de la consulta, útil para separar resolución interna y externa.</li>
+        
+        
+        
+      </ul>
+  </div>
+</div>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>view &#34;internal&#34; {
+</span></span><span style="display:flex;"><span>    match-clients { 192.168.33.0/24; localhost; };
+</span></span><span style="display:flex;"><span>    zone &#34;ejemplo.local&#34; {
+</span></span><span style="display:flex;"><span>        type master;
+</span></span><span style="display:flex;"><span>        file &#34;/etc/bind/zones/internal/db.ejemplo.local&#34;;
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>view &#34;external&#34; {
+</span></span><span style="display:flex;"><span>    match-clients { any; };
+</span></span><span style="display:flex;"><span>    zone &#34;ejemplo.local&#34; {
+</span></span><span style="display:flex;"><span>        type master;
+</span></span><span style="display:flex;"><span>        file &#34;/etc/bind/zones/external/db.ejemplo.local&#34;;
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="configuración-de-acls">Configuración de ACLs</h2>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>acl &#34;trusted&#34; {
+</span></span><span style="display:flex;"><span>    192.168.33.0/24;    # Red local
+</span></span><span style="display:flex;"><span>    localhost;          # Servidor local
+</span></span><span style="display:flex;"><span>    localnets;         # Redes locales
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>options {
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>    allow-query { trusted; };
+</span></span><span style="display:flex;"><span>    allow-recursion { trusted; };
+</span></span><span style="display:flex;"><span>    ...
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="implementación-de-dnssec">Implementación de DNSSEC</h2>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Importante</h4>
+
+    DNSSEC añade firmas digitales a los registros DNS para garantizar su autenticidad.
+
+</div>
+
+<h3 id="generación-de-claves">Generación de Claves</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Generar clave ZSK (Zone Signing Key)</span>
+</span></span><span style="display:flex;"><span>dnssec-keygen -a NSEC3RSASHA1 -b <span style="color:#ae81ff">2048</span> -n ZONE ejemplo.local
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Generar clave KSK (Key Signing Key)</span>
+</span></span><span style="display:flex;"><span>dnssec-keygen -f KSK -a NSEC3RSASHA1 -b <span style="color:#ae81ff">4096</span> -n ZONE ejemplo.local</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="firma-de-zona">Firma de Zona</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Firmar la zona</span>
+</span></span><span style="display:flex;"><span>dnssec-signzone -A -3 <span style="color:#66d9ef">$(</span>head -c <span style="color:#ae81ff">1000</span> /dev/random | sha1sum | cut -b 1-16<span style="color:#66d9ef">)</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>    -N INCREMENT -o ejemplo.local -t db.ejemplo.local</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="replicación-de-zonas">Replicación de Zonas</h2>
+<h3 id="configuración-del-servidor-maestro">Configuración del Servidor Maestro</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>zone &#34;ejemplo.local&#34; {
+</span></span><span style="display:flex;"><span>    type master;
+</span></span><span style="display:flex;"><span>    file &#34;/etc/bind/zones/db.ejemplo.local&#34;;
+</span></span><span style="display:flex;"><span>    allow-transfer { 192.168.33.11; };
+</span></span><span style="display:flex;"><span>    notify yes;
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="configuración-del-servidor-esclavo">Configuración del Servidor Esclavo</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>zone &#34;ejemplo.local&#34; {
+</span></span><span style="display:flex;"><span>    type slave;
+</span></span><span style="display:flex;"><span>    file &#34;/var/cache/bind/db.ejemplo.local&#34;;
+</span></span><span style="display:flex;"><span>    masters { 192.168.33.10; };
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="copyinsert">
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Referencias</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Fuentes de Información</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
+    
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            <li><ul>
+<li><a href="https://bind9.readthedocs.io/">BIND 9 Administrator Reference Manual</a></li>
+</ul>
+</li>
+            
+            <li><ul>
+<li><a href="https://dnssec-guide.readthedocs.io/">DNSSEC Guide</a></li>
+</ul>
+</li>
+            
+            
+            
+        </ul>
+    </div>
+</div>
+
+troubleshooting.md:
+markdown
+CopyInsert</h2>
+<h2 id="guía-de-resolución-de-problemas-comunes-en-servidores-dns-con-bind9">title: &ldquo;Resolución de Problemas DNS&rdquo;
+linkTitle: &ldquo;Troubleshooting&rdquo;
+weight: 32
+description: &gt;
+Guía de resolución de problemas comunes en servidores DNS con BIND9.</h2>
+<h1 id="resolución-de-problemas-dns">Resolución de Problemas DNS</h1>
+<h2 id="herramientas-de-diagnóstico">Herramientas de Diagnóstico</h2>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-tools" aria-hidden="true"></i>
+    
+    <strong>Herramientas DNS</strong>
+  </div>
+  <div class="definicion-contenido ">
+      <ul>
+        
+        <li>Conjunto de utilidades para diagnosticar y resolver problemas en servidores DNS.</li>
+        
+        
+        
+      </ul>
+  </div>
+</div>
+<h3 id="dig-domain-information-groper">dig (Domain Information Groper)</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Consulta básica</span>
+</span></span><span style="display:flex;"><span>dig @localhost ejemplo.local
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Consulta reversa</span>
+</span></span><span style="display:flex;"><span>dig -x 192.168.33.10
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Consulta de registro específico</span>
+</span></span><span style="display:flex;"><span>dig @localhost ejemplo.local MX</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="nslookup">nslookup</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>nslookup www.ejemplo.local localhost
+</span></span><span style="display:flex;"><span>nslookup -type<span style="color:#f92672">=</span>mx ejemplo.local</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="problemas-comunes-y-soluciones">Problemas Comunes y Soluciones</h2>
+<h3 id="1-servidor-dns-no-responde">1. Servidor DNS No Responde</h3>
+
+
+<div class="alert alert-info" role="alert">
+<h4 class="alert-heading">Verificación</h4>
+
+    <ol>
+<li>Comprobar estado del servicio:
+<code>systemctl status named</code></li>
+<li>Verificar logs:
+<code>journalctl -u named</code></li>
+<li>Comprobar puerto 53:
+<code>netstat -tulpn | grep named</code></li>
+</ol>
+
+
+</div>
+
+<h3 id="2-errores-en-archivos-de-zona">2. Errores en Archivos de Zona</h3>
+<details>
+    <summary>Comandos de Verificación</summary>
+    <div class="solution-content">
+        
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Verificar sintaxis de configuración</span>
+</span></span><span style="display:flex;"><span>named-checkconf
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Verificar archivo de zona</span>
+</span></span><span style="display:flex;"><span>named-checkzone ejemplo.local /etc/bind/zones/db.ejemplo.local</span></span></code></pre></div>
+
+
+</details>
+
+<style>
+    .solution-content {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-top: 5px;
+        background-color: #f9f9f9;
+    }
+    summary {
+        cursor: pointer;
+        font-weight: bold;
+        color: #0073e6;
+    }
+</style>
+
+<h3 id="3-problemas-de-resolución">3. Problemas de Resolución</h3>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Pasos de Verificación</h4>
+
+    <ol>
+<li>Verificar archivo /etc/resolv.conf</li>
+<li>Comprobar conectividad al servidor DNS</li>
+<li>Revisar reglas de firewall</li>
+<li>Verificar permisos de archivos</li>
+</ol>
+
+
+</div>
+
+<h2 id="logs-y-depuración">Logs y Depuración</h2>
+<h3 id="configuración-de-logging">Configuración de Logging</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>logging {
+</span></span><span style="display:flex;"><span>    channel default_debug {
+</span></span><span style="display:flex;"><span>        file &#34;data/named.run&#34;;
+</span></span><span style="display:flex;"><span>        severity dynamic;
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="aumentar-nivel-de-debug">Aumentar Nivel de Debug</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>rndc trace 3
+</span></span><span style="display:flex;"><span>rndc notrace  # Para desactivar</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Referencias</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Fuentes de Información</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
+    
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            <li><ul>
+<li><a href="https://kb.isc.org/docs/aa-01123">BIND 9 Troubleshooting Guide</a></li>
+</ul>
+</li>
+            
+            <li><ul>
+<li><a href="https://www.zytrax.com/books/dns/ch7/">DNS and BIND Troubleshooting</a></li>
+</ul>
+</li>
+            
+            
+            
+        </ul>
+    </div>
+</div>
+
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-9467889650d4d6c94c518d751c87c8df">4.3 - Ejercicios Prácticos DNS</h1>
+    <div class="lead">Ejercicios prácticos para configurar y administrar un servidor DNS con BIND9.</div>
+	<h1 id="ejercicios-prácticos-dns">Ejercicios Prácticos DNS</h1>
+<h2 id="ejercicio-1-configuración-básica">Ejercicio 1: Configuración Básica</h2>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-bullseye" aria-hidden="true"></i>
+    
+    <strong>Objetivo</strong>
+  </div>
+  <div class="definicion-contenido ">
+      <ul>
+        
+        <li>Configurar un servidor DNS primario para una red local con resolución directa e inversa.</li>
+        
+        
+        
+      </ul>
+  </div>
+</div>
+<h3 id="pasos-del-ejercicio">Pasos del Ejercicio</h3>
+<ol>
+<li>Crear el entorno Vagrant:</li>
+</ol>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">Vagrant</span><span style="color:#f92672">.</span>configure(<span style="color:#e6db74">&#34;2&#34;</span>) <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>config<span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span>  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>box <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ubuntu/focal64&#34;</span>
+</span></span><span style="display:flex;"><span>  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>network <span style="color:#e6db74">&#34;private_network&#34;</span>, <span style="color:#e6db74">ip</span>: <span style="color:#e6db74">&#34;192.168.33.10&#34;</span>
+</span></span><span style="display:flex;"><span>  config<span style="color:#f92672">.</span>vm<span style="color:#f92672">.</span>hostname <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;dns1&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<ol start="2">
+<li>Configurar zona directa:</li>
+</ol>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>$TTL    604800
+</span></span><span style="display:flex;"><span>@       IN      SOA     dns1.lab.local. admin.lab.local. (
+</span></span><span style="display:flex;"><span>                     2024021901         ; Serial
+</span></span><span style="display:flex;"><span>                         604800         ; Refresh
+</span></span><span style="display:flex;"><span>                          86400         ; Retry
+</span></span><span style="display:flex;"><span>                        2419200         ; Expire
+</span></span><span style="display:flex;"><span>                         604800 )       ; Negative Cache TTL
+</span></span><span style="display:flex;"><span>;
+</span></span><span style="display:flex;"><span>@       IN      NS      dns1.lab.local.
+</span></span><span style="display:flex;"><span>dns1    IN      A       192.168.33.10
+</span></span><span style="display:flex;"><span>www     IN      A       192.168.33.20
+</span></span><span style="display:flex;"><span>db      IN      A       192.168.33.30</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="ejercicio-2-configuración-de-vistas">Ejercicio 2: Configuración de Vistas</h2>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-eye" aria-hidden="true"></i>
+    
+    <strong>Objetivo</strong>
+  </div>
+  <div class="definicion-contenido ">
+      <ul>
+        
+        <li>Implementar Split DNS para servir diferentes respuestas a consultas internas y externas.</li>
+        
+        
+        
+      </ul>
+  </div>
+</div>
+<h3 id="configuración-de-vistas">Configuración de Vistas</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>view &#34;internal&#34; {
+</span></span><span style="display:flex;"><span>    match-clients { 192.168.33.0/24; };
+</span></span><span style="display:flex;"><span>    zone &#34;lab.local&#34; {
+</span></span><span style="display:flex;"><span>        type master;
+</span></span><span style="display:flex;"><span>        file &#34;/etc/bind/zones/internal/db.lab.local&#34;;
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h2 id="ejercicio-3-replicación-dns">Ejercicio 3: Replicación DNS</h2>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-copy" aria-hidden="true"></i>
+    
+    <strong>Objetivo</strong>
+  </div>
+  <div class="definicion-contenido ">
+      <ul>
+        
+        <li>Configurar un servidor DNS secundario para redundancia.</li>
+        
+        
+        
+      </ul>
+  </div>
+</div>
+<h3 id="configuración">Configuración</h3>
+<ol>
+<li>
+<p>Servidor Primario:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>zone &#34;lab.local&#34; {
+</span></span><span style="display:flex;"><span>    type master;
+</span></span><span style="display:flex;"><span>    file &#34;/etc/bind/zones/db.lab.local&#34;;
+</span></span><span style="display:flex;"><span>    allow-transfer { 192.168.33.11; };
+</span></span><span style="display:flex;"><span>    notify yes;
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+<li>
+<p>Servidor Secundario:
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>zone &#34;lab.local&#34; {
+</span></span><span style="display:flex;"><span>    type slave;
+</span></span><span style="display:flex;"><span>    file &#34;/var/cache/bind/db.lab.local&#34;;
+</span></span><span style="display:flex;"><span>    masters { 192.168.33.10; };
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+</li>
+</ol>
+<h2 id="verificación-de-ejercicios">Verificación de Ejercicios</h2>
+
+
+<div class="alert alert-info" role="alert">
+<h4 class="alert-heading">Comandos de Verificación</h4>
+
+    <p>Para cada ejercicio, verifica:</p>
+<ol>
+<li>Sintaxis de configuración</li>
+<li>Resolución de nombres</li>
+<li>Transferencia de zona (si aplica)</li>
+<li>Logs del sistema</li>
+</ol>
+
+</div>
+
+<h3 id="pruebas-de-resolución">Pruebas de Resolución</h3>
+<details>
+    <summary>Comandos de Prueba</summary>
+    <div class="solution-content">
+        
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Prueba de resolución directa</span>
+</span></span><span style="display:flex;"><span>dig @192.168.33.10 www.lab.local
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Prueba de resolución inversa</span>
+</span></span><span style="display:flex;"><span>dig @192.168.33.10 -x 192.168.33.20
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Prueba de transferencia de zona</span>
+</span></span><span style="display:flex;"><span>dig @192.168.33.10 lab.local AXFR</span></span></code></pre></div>
+
+
+</details>
+
+<style>
+    .solution-content {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-top: 5px;
+        background-color: #f9f9f9;
+    }
+    summary {
+        cursor: pointer;
+        font-weight: bold;
+        color: #0073e6;
+    }
+</style>
+
+<hr style="border-color: red; border-width: 3px;"/>
+
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Referencias</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Fuentes de Información</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
+    
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            <li><ul>
+<li><a href="https://bind9.readthedocs.io/en/latest/configuration.html">BIND 9 Configuration Examples</a></li>
+</ul>
+</li>
+            
+            <li><ul>
+<li><a href="https://www.zytrax.com/books/dns/">DNS for Rocket Scientists</a></li>
+</ul>
+</li>
+            
+            
+            
+        </ul>
+    </div>
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+
+    
+	
+  
 
 
 
@@ -4651,8 +6383,8 @@ Ejemplo con phpstorm tenemos la opción en <em><strong>Tools=&gt;Deployment=&gt;
 </footer>
 
     </div>
-    <script src="/servicios/js/main.min.9a480ae8cd0b51e22303458ad59103c10e3f5391d92e1a80961baff9fc39849c.js" integrity="sha256-mkgK6M0LUeIjA0WK1ZEDwQ4/U5HZLhqAlhuv&#43;fw5hJw=" crossorigin="anonymous"></script>
-<script defer src="/servicios/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <script src="/servicios/js/main.js"></script>
+<script defer src="/servicios/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/servicios/js/tabpane-persist.js'></script>
 
   </body>

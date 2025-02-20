@@ -7,7 +7,13 @@
     {{ end }}
     <strong>{{ .Get "title" }}</strong>
   </div>
-  <div class="definicion-contenido">
-    {{ .Inner }}
+  <div class="definicion-contenido ">
+      <ul>
+        {{ range (split .Inner "\n") }}
+        {{- if gt (len .) 0 -}}
+        <li>{{ . }}</li>
+        {{ end }}
+        {{ end }}
+      </ul>
   </div>
 </div>
