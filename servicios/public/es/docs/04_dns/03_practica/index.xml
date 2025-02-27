@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Configuración Avanzada de BIND on Despliegue de Aplicaciones Web</title>
+    <link>http://localhost:1313/servicios/es/docs/04_dns/03_practica/</link>
+    <description>Recent content in Configuración Avanzada de BIND on Despliegue de Aplicaciones Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <atom:link href="http://localhost:1313/servicios/es/docs/04_dns/03_practica/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

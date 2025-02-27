@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Comandos para dns on Despliegue de Aplicaciones Web</title>
+    <link>http://localhost:44201/servicios/es/docs/04_dns/03_comandos/</link>
+    <description>Recent content in Comandos para dns on Despliegue de Aplicaciones Web</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="http://localhost:44201/servicios/es/docs/04_dns/03_comandos/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
