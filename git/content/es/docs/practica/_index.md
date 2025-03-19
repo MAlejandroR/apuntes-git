@@ -1,7 +1,7 @@
 ---
 title: "Git Instalación "
 linkTitle: "practica"
-draf: true
+draft: true
 weight: 10
 icon: fab fa-git
 ---

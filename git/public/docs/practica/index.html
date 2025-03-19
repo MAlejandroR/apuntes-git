@@ -1,0 +1,627 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/git/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=git/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/git/docs/practica/index.xml">
+<link rel="alternate" type="text/html" href="http://localhost:1313/git/docs/practica/_print/">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/git/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/git/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/git/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/git/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/git/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/git/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/git/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/git/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/git/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/git/favicons/android-192x192.png" sizes="192x192">
+
+<title>Git Instalación  | Git: Repositorios y Despliegue</title>
+<meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
+
+<meta property="og:title" content="Git Instalación " />
+<meta property="og:description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/git/docs/practica/" />
+
+<meta itemprop="name" content="Git Instalación ">
+<meta itemprop="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins."><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Git Instalación "/>
+<meta name="twitter:description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins."/>
+
+
+<link href="/git/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/git/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/git/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Git: Repositorios y Despliegue</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/git/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/git/en/">English</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <div class="td-sidebar-nav__section nav-item dropdown d-block d-lg-none">
+      <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/git/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/git/en/">English</a></li>
+    </ul>
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-gitdocs-li">
+  <a href="/git/docs/" title="Git Control de versiones" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-gitdocs"><i class="fab fa-git"></i><span class="">Git</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-gitdocsinstalacion-li">
+  <input type="checkbox" id="m-gitdocsinstalacion-check"/>
+  <label for="m-gitdocsinstalacion-check"><a href="/git/docs/instalacion/" title="Git Instalación " class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-gitdocsinstalacion"><i class="fab fa-git"></i><span class="">Funcionamiento</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-gitdocspractica-li">
+  <input type="checkbox" id="m-gitdocspractica-check" checked/>
+  <label for="m-gitdocspractica-check"><a href="/git/docs/practica/" title="Git Instalación " class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-gitdocspractica"><i class="fab fa-git"></i><span class="td-sidebar-nav-active-item">practica</span></a></label>
+  
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+<a id="print" href="/git/docs/practica/_print/"><i class="fa-solid fa-print fa-fw"></i> Imprimir la sección entera</a>
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#-1-verificar-la-instalación-de-git"><strong>📌 1. Verificar la instalación de Git</strong></a></li>
+    <li><a href="#-2-configurar-git"><strong>📌 2. Configurar Git</strong></a></li>
+    <li><a href="#-3-preparar-el-entorno-de-trabajo"><strong>📌 3. Preparar el entorno de trabajo</strong></a></li>
+    <li><a href="#-4-inicializar-git-en-el-proyecto"><strong>📌 4. Inicializar Git en el proyecto</strong></a></li>
+    <li><a href="#-5-primer-commit"><strong>📌 5. Primer commit</strong></a></li>
+    <li><a href="#-6-verificar-la-web-en-el-navegador"><strong>📌 6. Verificar la web en el navegador</strong></a></li>
+    <li><a href="#-7-realizar-cambios-en-los-archivos"><strong>📌 7. Realizar cambios en los archivos</strong></a></li>
+    <li><a href="#-8-confirmar-los-cambios"><strong>📌 8. Confirmar los cambios</strong></a></li>
+    <li><a href="#-9-modificación-y-reversión"><strong>📌 9. Modificación y reversión</strong></a></li>
+    <li><a href="#-10-volver-a-una-versión-anterior-sin-borrar-cambios"><strong>📌 10. Volver a una versión anterior sin borrar cambios</strong></a></li>
+    <li><a href="#-11-cambio-en-el-título-del-html"><strong>📌 11. Cambio en el título del HTML</strong></a></li>
+    <li><a href="#-12-eliminar-el-último-commit"><strong>📌 12. Eliminar el último commit</strong></a></li>
+    <li><a href="#-13-restaurar-a-la-segunda-versión-y-borrar-todo-lo-posterior"><strong>📌 13. Restaurar a la segunda versión y borrar todo lo posterior</strong></a></li>
+    <li><a href="#-14-crear-y-eliminar-un-archivo-en-git"><strong>📌 14. Crear y eliminar un archivo en Git</strong></a></li>
+    <li><a href="#-conclusión"><strong>🎯 Conclusión</strong></a></li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/git/docs/">Git</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    practica</li>
+  </ol>
+</nav>
+            
+<div class="td-content">
+	<h1>Git Instalación </h1>
+  
+	<header class="article-meta">
+		
+</header>
+	<h1 id="práctica-introducción-a-git-con-proyecto-web"><strong>Práctica: Introducción a Git con Proyecto Web</strong></h1>
+<p>En esta práctica aprenderemos a usar Git desde cero con un proyecto web sencillo. Seguiremos los pasos básicos para trabajar con Git en local, incluyendo inicialización, seguimiento de cambios, confirmaciones y reversión de commits.</p>
+<h2 id="-1-verificar-la-instalación-de-git"><strong>📌 1. Verificar la instalación de Git</strong></h2>
+<p>Abre la terminal y ejecuta:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git --version</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Si Git está instalado correctamente, verás la versión actual de Git en tu sistema.</p>
+<hr>
+<h2 id="-2-configurar-git"><strong>📌 2. Configurar Git</strong></h2>
+<p>Para verificar la configuración de Git, ejecuta:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git config --list</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Si no tienes configurado tu usuario y correo, configúralos con:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git config --global user.name <span style="color:#cd5555">&#34;Tu Nombre&#34;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>git config --global user.email <span style="color:#cd5555">&#34;tu@email.com&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Vuelve a ejecutar <code>git config --list</code> para confirmar que la configuración ha sido guardada.</p>
+<hr>
+<h2 id="-3-preparar-el-entorno-de-trabajo"><strong>📌 3. Preparar el entorno de trabajo</strong></h2>
+<p>1️⃣ Crea el directorio donde trabajaremos:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>mkdir -p ~/LosEnlaces2425/Despliegue/GIT/ejercicio1<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#658b00">cd</span> ~/LosEnlaces2425/Despliegue/GIT/ejercicio1</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>2️⃣ Descarga y descomprime el archivo de la práctica:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>unzip /ruta/al/archivo/practica1A.zip -d ~/LosEnlaces2425/Despliegue/GIT/ejercicio1</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr>
+<h2 id="-4-inicializar-git-en-el-proyecto"><strong>📌 4. Inicializar Git en el proyecto</strong></h2>
+<p>Inicia un repositorio Git en el directorio del proyecto:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git init</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Para verificar el estado del repositorio:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git status</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Si Git indica que el directorio no es seguro, puedes configurarlo como tal:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git config --global --add safe.directory ~/LosEnlaces2425/Despliegue/GIT/ejercicio1</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr>
+<h2 id="-5-primer-commit"><strong>📌 5. Primer commit</strong></h2>
+<p>Agrega todos los archivos al área de preparación:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git add .</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Verifica nuevamente el estado:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git status</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Confirma los cambios con el siguiente mensaje:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git commit -m <span style="color:#cd5555">&#34;Primera versión del ejercicio&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Revisa el estado actual de Git:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git status</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr>
+<h2 id="-6-verificar-la-web-en-el-navegador"><strong>📌 6. Verificar la web en el navegador</strong></h2>
+<p>Abre <code>ejercicio1.html</code> en tu navegador para ver cómo se visualiza la página.</p>
+<hr>
+<h2 id="-7-realizar-cambios-en-los-archivos"><strong>📌 7. Realizar cambios en los archivos</strong></h2>
+<p>1️⃣ Abre <code>ejercicio1.html</code> en tu editor y envuelve todo el contenido dentro de un <code>&lt;div&gt;</code> en el <code>&lt;body&gt;</code>.</p>
+<p>2️⃣ Guarda los cambios y revisa el estado de Git:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git status</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>3️⃣ Descarga y reemplaza el archivo <code>estilos.css</code> con el de <code>practica1B.zip</code>, luego revisa el estado de Git nuevamente.</p>
+<hr>
+<h2 id="-8-confirmar-los-cambios"><strong>📌 8. Confirmar los cambios</strong></h2>
+<p>Añade todos los cambios al área de preparación y haz un nuevo commit:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git commit -am <span style="color:#cd5555">&#34;Segunda versión con cambios en HTML y CSS&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Verifica el estado:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git status</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Muestra el historial de commits en una única línea:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git log --oneline</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr>
+<h2 id="-9-modificación-y-reversión"><strong>📌 9. Modificación y reversión</strong></h2>
+<p>1️⃣ Agrega la siguiente línea a <code>ejercicio1.html</code> dentro del <code>&lt;head&gt;</code>:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-html" data-lang="html"><span style="display:flex; background-color:#d6d6c6"><span>&lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">name</span>=<span style="color:#cd5555">&#34;author&#34;</span> <span style="color:#658b00">content</span>=<span style="color:#cd5555">&#34;Teresa Martínez&#34;</span> /&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>2️⃣ Verifica el estado:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git status</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>3️⃣ Añade solo ese archivo al área de preparación:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git add ejercicio1.html</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>4️⃣ Estado de Git:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git status</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>5️⃣ Confirma los cambios con un commit:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git commit -m <span style="color:#cd5555">&#34;Tercera versión: añadido meta author&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>6️⃣ Visualiza el historial de commits:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git log --oneline</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr>
+<h2 id="-10-volver-a-una-versión-anterior-sin-borrar-cambios"><strong>📌 10. Volver a una versión anterior sin borrar cambios</strong></h2>
+<p>1️⃣ Queremos recuperar nuestra versión anterior (antes de añadir la etiqueta <code>&lt;meta&gt;</code>). Para ello, usa <code>checkout</code> para situarte en el commit anterior:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git checkout HEAD~1</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>2️⃣ Comprueba el log de commits y verifica que <strong>HEAD ahora apunta a la segunda versión</strong>:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git log --all --oneline</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>3️⃣ Visualiza <code>ejercicio1.html</code> y notarás que la línea <code>&lt;meta&gt;</code> ya no está.</p>
+<p>4️⃣ Para volver a la última versión (tercera versión):</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git checkout main</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr>
+<h2 id="-11-cambio-en-el-título-del-html"><strong>📌 11. Cambio en el título del HTML</strong></h2>
+<p>1️⃣ Modifica <code>ejercicio1.html</code>, cambia la línea del <code>&lt;title&gt;</code>:</p>
+<p>Antes:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-html" data-lang="html"><span style="display:flex; background-color:#d6d6c6"><span>&lt;<span style="color:#8b008b;font-weight:bold">title</span>&gt;HTML <span style="color:#a61717;background-color:#e3d2d2">&amp;</span> CSS: Curso práctico avanzado&lt;/<span style="color:#8b008b;font-weight:bold">title</span>&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Después:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-html" data-lang="html"><span style="display:flex; background-color:#d6d6c6"><span>&lt;<span style="color:#8b008b;font-weight:bold">title</span>&gt;HTML y CSS: Curso práctico avanzado&lt;/<span style="color:#8b008b;font-weight:bold">title</span>&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>2️⃣ Añade el cambio al área de preparación:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git add ejercicio1.html</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>3️⃣ Verifica el estado de Git:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git status</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>4️⃣ <strong>Revierte la última acción</strong> (saca el archivo del área de preparación):</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git restore --staged ejercicio1.html</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>5️⃣ <strong>Elimina la última modificación</strong> en el archivo (deshace el cambio en el título):</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git checkout -- ejercicio1.html</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Ahora, abre <code>ejercicio1.html</code> en tu editor y verás que ha vuelto a la versión anterior.</p>
+<p>6️⃣ <strong>Vuelve a modificar el archivo</strong> (sustituye <code>&amp;</code> por <code>Y</code> nuevamente) y confirma los cambios:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git commit -am <span style="color:#cd5555">&#34;Cuarta versión: eliminado &amp; del title&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr>
+<h2 id="-12-eliminar-el-último-commit"><strong>📌 12. Eliminar el último commit</strong></h2>
+<p>1️⃣ Si queremos <strong>eliminar el último commit</strong> y volver al commit anterior:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git reset --hard HEAD~1</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>2️⃣ Comprueba con <code>git log</code> que <strong>&ldquo;Cuarta versión&rdquo; ya no existe</strong>:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git log --oneline</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>3️⃣ Ejecuta <code>git status</code> y observa que <strong>el archivo sigue modificado, pero no está en el commit</strong>:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git status</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>4️⃣ <strong>Vuelve a confirmar los cambios</strong>:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git commit -am <span style="color:#cd5555">&#34;Cuarta versión: eliminado &amp; del title&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr>
+<h2 id="-13-restaurar-a-la-segunda-versión-y-borrar-todo-lo-posterior"><strong>📌 13. Restaurar a la segunda versión y borrar todo lo posterior</strong></h2>
+<p>1️⃣ Para <strong>volver a la segunda versión y borrar los cambios posteriores</strong>:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git reset --hard HEAD~2</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>2️⃣ Verifica el historial de commits:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git log --oneline</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>3️⃣ Abre <code>ejercicio1.html</code> en el editor y verifica que el título <strong>ha vuelto a la segunda versión</strong>.</p>
+<hr>
+<h2 id="-14-crear-y-eliminar-un-archivo-en-git"><strong>📌 14. Crear y eliminar un archivo en Git</strong></h2>
+<p>1️⃣ Crea un nuevo archivo dentro del proyecto:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>touch ejercicio1/fichero.borrar</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>2️⃣ Añádelo al área de preparación:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git add ejercicio1/fichero.borrar</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>3️⃣ Ahora decidimos eliminar el archivo completamente:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git rm ejercicio1/fichero.borrar<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>git commit -m <span style="color:#cd5555">&#34;Eliminado fichero innecesario&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>✅ <strong>Verifica que el archivo ha sido eliminado</strong> con <code>ls ejercicio1/</code>.</p>
+<hr>
+<h2 id="-conclusión"><strong>🎯 Conclusión</strong></h2>
+<p>🚀 En esta práctica hemos aprendido a:
+✅ <strong>Modificar, añadir y confirmar cambios en Git</strong>.<br>
+✅ <strong>Revertir cambios y restaurar versiones anteriores</strong>.<br>
+✅ <strong>Eliminar commits y gestionar archivos ignorados en Git</strong>.<br>
+✅ <strong>Comprender el flujo de trabajo en Git y HEAD</strong>.</p>
+<p>¡Bien hecho! Ahora estás listo para trabajar con Git de manera eficiente. 😃🔥</p>
+
+  <div class="section-index">
+    
+    
+    </div>
+</div>
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2025
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/git/js/main.js"></script>
+<script defer src="/git/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/git/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

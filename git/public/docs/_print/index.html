@@ -1,0 +1,676 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/git/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=git/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" type="text/html" href="http://localhost:1313/git/docs/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/git/docs/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/git/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/git/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/git/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/git/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/git/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/git/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/git/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/git/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/git/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/git/favicons/android-192x192.png" sizes="192x192">
+
+<title>Git Control de versiones | Git: Repositorios y Despliegue</title>
+<meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
+
+<meta property="og:title" content="Git Control de versiones" />
+<meta property="og:description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/git/docs/" />
+
+<meta itemprop="name" content="Git Control de versiones">
+<meta itemprop="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins."><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Git Control de versiones"/>
+<meta name="twitter:description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins."/>
+
+
+<link href="/git/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/git/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/git/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Git: Repositorios y Despliegue</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/git/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/git/en/">English</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+Versión imprimible multipagina.
+<a href="#" onclick="print();return false;">Haga click aquí para imprimir</a>.
+</p><p>
+<a href="/git/docs/">Volver a la vista normal de esta página</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Git Control de versiones</h1>
+
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1: <a href="#pg-46dcc73dec163fea2faafb406f83a94e">Git Instalación </a></li>
+
+
+    
+  
+
+    </ul>
+
+
+<div class="content">
+      
+
+
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-check-circle"></i> 
+            
+        </span>
+        
+        <span>Docker</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight:bold">Objetivos de este tema</h3>
+
+    <hr style="border-color:seagreen; border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            <li>Entender qué es git</li>
+            
+            
+            
+        </ul>
+    </div>
+    
+
+
+</div>
+
+
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Referencias</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Fuentes de Información</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
+    
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            <li><blockquote>
+<p><a href="https://www.w3schools.com/git/default.asp">https://www.w3schools.com/git/default.asp</a></p>
+</blockquote></li>
+            
+            
+            
+            
+        </ul>
+    </div>
+</div>
+
+<h1 id="conceptos-de-git">Conceptos de Git</h1>
+
+
+<div class="alert alert-blue" role="alert">
+<h4 class="alert-heading">Importante</h4>
+
+    Git es una herramienta fundamental para el control de versiones en desarrollo de software.
+
+</div>
+
+<h2 id="qué-es-git">¿Qué es Git?</h2>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Git
+
+
+</span>
+</strong>
+ es un <strong>sistema de control de versiones</strong> distribuido que permite a los desarrolladores gestionar cambios en su código de manera eficiente. No depende de servidores centralizados, pero <em>puede usarse junto a plataformas como GitHub</em>, GitLab o Bitbucket 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    para almacenar y compartir repositorios de código versionado en la nube
+
+
+</span>
+</strong>
+.</p>
+<h2 id="tipos-de-control-de-versiones-y-características">Tipos de control de versiones y características</h2>
+<h3 id="1-sistemas-de-control-de-versiones-local">1. Sistemas de Control de Versiones Local</h3>
+<p>Un método común de control de versiones consiste en copiar archivos a otro directorio con la fecha y hora en el nombre. Aunque es simple, <strong>es altamente propenso a errores</strong>.</p>
+<p>Una mejor alternativa es utilizar una <strong>base de datos local</strong> que registre cada cambio realizado en los archivos. Sin embargo, esta solución no permite la colaboración entre múltiples usuarios.</p>
+<p><img alt="img1" src="/git/docs/img.png"></p>
+<h3 id="2-sistemas-de-control-de-versiones-centralizados-cvcs">2. Sistemas de Control de Versiones Centralizados (CVCS)</h3>
+<p>Para solucionar el problema de la colaboración, surgieron los <strong>sistemas de control de versiones centralizados</strong> (CVCS), como <strong>CVS, Subversion y Perforce</strong>. En estos sistemas:</p>
+<ul>
+<li>Un <strong>servidor central</strong> almacena la base de datos con el historial de versiones.</li>
+<li>Los desarrolladores descargan y suben archivos al servidor.</li>
+<li>Los administradores pueden controlar los permisos de los usuarios.</li>
+</ul>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Ventajas
+
+
+</span>
+</strong>
+
+
+
+<div class="alert alert-green" role="alert">
+<h4 class="alert-heading">Ventajas</h4>
+
+    ✅ Todos los desarrolladores pueden ver en qué están trabajando los demás.<br>
+✅ Es más fácil administrar un repositorio centralizado.<br>
+✅ Se pueden gestionar permisos y accesos.
+
+</div>
+</p>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Desventajas
+
+
+</span>
+</strong>
+
+
+
+<div class="alert alert-red" role="alert">
+<h4 class="alert-heading">Desventajas</h4>
+
+    ⚠️ <strong>Punto único de fallo</strong>: Si el servidor central falla, nadie puede trabajar.<br>
+⚠️ <strong>Riesgo de pérdida total</strong>: Si el servidor se corrompe y no hay copias de seguridad, se pierde todo el historial del proyecto.
+
+</div>
+</p>
+<p><strong>Ejemplo de un CVCS:</strong></p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p><img alt="img1" src="/git/docs/img_1.png"></p>
+<p>En la imagen, <strong>varias computadoras acceden a un servidor central</strong>, donde se almacenan todas las versiones del código. Si el servidor deja de funcionar, nadie puede acceder a los archivos.</p>
+<h3 id="3-sistemas-de-control-de-versiones-distribuidos-dvcs">3. Sistemas de Control de Versiones Distribuidos (DVCS)</h3>
+<p>Los **sistemas de control de versiones distribuidos (DVCS</p>
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Características principales
+
+
+</span>
+</strong>
+
+<ul>
+<li><strong>Distribuido</strong>: Cada copia del repositorio es un repositorio completo, lo que permite trabajar sin conexión.</li>
+<li><strong>Eficiencia</strong>: Usa técnicas avanzadas de compresión y almacenamiento para gestionar grandes proyectos.</li>
+<li><strong>Seguridad</strong>: Protege la integridad de los datos mediante sumas de verificación SHA-1.</li>
+<li><strong>Velocidad</strong>: Es mucho más rápido que otros sistemas de control de versiones como SVN o CVS.</li>
+</ul>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 410px">
+<img class="card-img-top" src="/git/docs/img_2_hu14ca78ea75f48786c4e805187be0280c_136866_400x450_fill_box_smart1_3.png" width="400" height="450">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<h3 id="introducción-a-git">Introducción a Git</h3>
+<p>En <strong>2005</strong>, la comunidad que desarrollaba el núcleo de Linux perdió el acceso gratuito a <strong>BitKeeper</strong>, la herramienta que utilizaban para el control de versiones. Esta situación llevó a <strong>Linus Torvalds</strong>, creador de Linux, a desarrollar una <strong>nueva herramienta</strong> basada en las lecciones aprendidas con <strong>BitKeeper</strong>.</p>
+<p>Así nació <strong>Git</strong>, con los siguientes objetivos principales:</p>
+<ul>
+<li><strong>Velocidad</strong></li>
+<li><strong>Diseño sencillo</strong></li>
+<li><strong>Soporte para desarrollo no lineal</strong> (múltiples ramas paralelas)</li>
+<li><strong>Completamente distribuido</strong></li>
+<li><strong>Capaz de manejar grandes proyectos</strong> de manera eficiente</li>
+</ul>
+<p>Desde su creación en 2005, <strong>Git ha evolucionado</strong> para ser una herramienta fácil de usar sin perder sus cualidades iniciales. Se ha convertido en una de las herramientas más populares del mundo debido a su:</p>
+<ul>
+<li><strong>Rapidez</strong></li>
+<li><strong>Eficiencia en proyectos grandes</strong></li>
+<li><strong>Sistema avanzado de ramificación (branching)</strong></li>
+</ul>
+<p>Hoy en día, <strong>Git es el estándar en control de versiones</strong> y es utilizado por millones de desarrolladores en todo el mundo.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h3 id="fundamentos-de-git">Fundamentos de Git**</h3>
+<p>####1. Instantáneas, no diferencias**</p>
+<p>A diferencia de otros sistemas como <strong>CVS</strong> o <strong>Subversion</strong>, que almacenan los datos como cambios respecto a una versión base, <strong>Git funciona con instantáneas</strong>.</p>
+<p>Cada vez que confirmas un cambio, Git <strong>toma una foto</strong> del estado de todos los archivos en ese momento. Si un archivo no ha cambiado, en lugar de almacenarlo de nuevo, <strong>Git simplemente crea un enlace a la versión anterior</strong>.
+<img src="/git/docs/img_3.png"></p>
+<h4 id="2-casi-cualquier-operación-es-local">2. Casi cualquier operación es local**</h4>
+<p>En <strong>Git</strong>, la mayoría de las operaciones solo requieren archivos locales, sin necesidad de acceder a un servidor. Esto lo hace extremadamente rápido y eficiente.</p>
+<p>🔹 <strong>Ventajas de operar localmente en Git</strong>:</p>
+<ul>
+<li>Puedes ver el historial del proyecto sin conexión.</li>
+<li>Puedes hacer comparaciones entre versiones sin depender de un servidor.</li>
+<li>Si te quedas sin conexión, puedes seguir trabajando y luego subir los cambios cuando sea posible.</li>
+</ul>
+<hr style="border-color: red; border-width: 3px;"/>
+<h4 id="3-git-tiene-integridad">3. Git tiene integridad</h4>
+<p>Git verifica <strong>todo</strong> mediante <strong>suma de comprobación</strong> (<strong>checksum</strong>), garantizando que <strong>no se pueden alterar archivos sin que el sistema lo detecte</strong>.</p>
+<p>El método utilizado es el <strong>hash SHA-1</strong>, una cadena única de 40 caracteres generada a partir del contenido de los archivos.<br>
+Ejemplo de un hash SHA-1:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>24b9da6552252987aa493b52f8696cd6d3b00373</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Esto significa que <strong>Git no almacena archivos por su nombre, sino por su contenido</strong>, lo que le da mayor seguridad y fiabilidad.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h4 id="4-git-solo-añade-información">4. Git solo añade información</h4>
+<p>Cuando realizas acciones en Git, <strong>casi siempre solo añades información</strong>.<br>
+Es muy difícil perder datos accidentalmente, ya que Git protege la información almacenada.</p>
+<p>🔹 <strong>Ejemplo</strong>:<br>
+Si confirmas (commit) una versión, <strong>es muy difícil perderla</strong>. Incluso si borras algo por error, puedes recuperarlo si has hecho un commit previo.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h4 id="5-los-tres-estados-en-git">5. Los tres estados en Git</h4>
+<p>Los archivos en Git pueden encontrarse en uno de  <strong>tres estados</strong> principales:</p>
+
+
+<div class="alert alert-blue" role="alert">
+<h4 class="alert-heading">Estados en Git</h4>
+
+    <strong>Modificado (Modified)</strong> → El archivo ha cambiado pero no ha sido preparado para commit.<br>
+<strong>Preparado (Staged)</strong> → El archivo ha sido marcado para incluirse en el próximo commit.<br>
+<strong>Confirmado (Committed)</strong> → El archivo ya está guardado en la base de datos de Git.
+
+</div>
+
+<h4 id="las-tres-áreas-principales-en-git">Las tres áreas principales en Git</h4>
+<p>Para gestionar estos estados, Git tiene tres secciones clave en su flujo de trabajo:</p>
+<ol>
+<li><strong>Directorio de trabajo (Working Directory)</strong> → Donde editas los archivos.</li>
+<li><strong>Área de preparación (Staging Area)</strong> → Zona intermedia antes de confirmar cambios.</li>
+<li><strong>Repositorio de Git (Git Directory)</strong> → Base de datos donde se almacenan las versiones confirmadas.</li>
+</ol>
+<p><img src="/git/docs/img_4.png"></p>
+<h4 id="flujo-de-trabajo-en-git"><strong>Flujo de trabajo en Git</strong></h4>
+<p>El flujo de trabajo en Git sigue estos pasos:</p>
+<ol>
+<li>Modificas archivos en el <strong>directorio de trabajo</strong>.</li>
+<li>Los <strong>añades al área de preparación</strong>.</li>
+<li><strong>Confirmas los cambios</strong> (commit), guardándolos en el repositorio de Git.</li>
+</ol>
+<p>Si una versión está en el <strong>directorio de Git</strong>, se considera <strong>confirmada</strong>.<br>
+Si está en la <strong>staging area</strong>, está <strong>preparada</strong>.<br>
+Si ha cambiado pero no está en staging,</p>
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-46dcc73dec163fea2faafb406f83a94e">1 - Git Instalación </h1>
+    
+	<h1 id="instalación-y-configuración-básica-de-git-en-ubuntu"><strong>Instalación y configuración básica de Git en Ubuntu</strong></h1>
+<p>Para comenzar a trabajar con Git en Ubuntu, necesitamos instalarlo y configurarlo correctamente.</p>
+<h2 id="1-instalación-de-git"><strong>1. Instalación de Git</strong></h2>
+<p>Para instalar Git en Ubuntu, ejecuta los siguientes comandos en la terminal:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>sudo apt update<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>sudo apt install git</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Una vez instalado, verifica la versión con:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git --version</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>✅ <strong>Si ves un número de versión como <code>git version 2.x.x</code>, Git se ha instalado correctamente.</strong></p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="2-configuración-inicial-de-git"><strong>2. Configuración inicial de Git</strong></h2>
+<p>Lo primero que debes hacer es configurar tu identidad.<br>
+Esto es necesario porque Git usa esta información en cada commit que hagas.</p>
+<p>Ejecuta los siguientes comandos, reemplazando <code>&quot;Tu Nombre&quot;</code> y <code>&quot;tu@email.com&quot;</code>:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git config --global user.name <span style="color:#cd5555">&#34;Tu Nombre&#34;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>git config --global user.email <span style="color:#cd5555">&#34;tu@email.com&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Para comprobar la configuración actual:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git config --list</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Esta configuración se guarda en el archivo <code>~/.gitconfig</code>.</p>
+<p>Si deseas cambiar el editor por defecto de Git, puedes hacerlo con:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git config --global core.editor <span style="color:#cd5555">&#34;nano&#34;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>git config --global core.editor <span style="color:#cd5555">&#34;gedit&#34;</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>git config --global core.editor <span style="color:#cd5555">&#34;code --wait&#34;</span>  <span style="color:#228b22"># Para Visual Studio Code</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="3-obtener-ayuda-en-git"><strong>3. Obtener ayuda en Git</strong></h2>
+<p>Si necesitas ayuda sobre un comando específico, usa:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git <span style="color:#658b00">help</span> &lt;comando&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Ejemplo:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git <span style="color:#658b00">help</span> commit</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Esto abrirá la documentación oficial de Git para ese comando.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h1 id="trabajando-con-git-en-local"><strong>Trabajando con Git en local</strong></h1>
+<h2 id="-ciclo-de-vida-de-los-archivos-en-git"><strong>📌 Ciclo de vida de los archivos en Git</strong></h2>
+<p>En un repositorio Git, los archivos pueden estar en uno de estos estados siguientes:</p>
+<p><img alt="img_1.png" src="/git/docs/instalacion/img_1.png"></p>
+
+
+<div class="alert alert-blue" role="alert">
+<h4 class="alert-heading">Estados en Git</h4>
+
+    ✅ <strong>Untracked (Sin seguimiento):</strong> Archivos nuevos que Git aún no rastrea.<br>
+✅ <strong>Tracked (En seguimiento):</strong> Archivos añadidos a Git y monitorizados para cambios.<br>
+✅ <strong>Modified (Modificado):</strong> Archivos editados pero aún no preparados para commit.<br>
+✅ <strong>Staged (Preparado):</strong> Archivos listos para ser confirmados.<br>
+✅ <strong>Committed (Confirmado):</strong> Archivos guardados en el historial del repositorio.
+
+</div>
+
+<h3 id="-las-tres-áreas-en-git"><strong>📌 Las tres áreas en Git</strong></h3>
+<p>Para gestionar estos estados, Git usa tres áreas principales:</p>
+<p><img alt="img.png" src="/git/docs/instalacion/img.png"></p>
+<p>1️⃣ <strong>Directorio de trabajo (Working Directory)</strong> → Donde editas los archivos.<br>
+2️⃣ <strong>Área de preparación (Staging Area)</strong> → Zona intermedia antes de confirmar cambios.<br>
+3️⃣ <strong>Repositorio de Git (Git Directory)</strong> → Base de datos donde se almacenan las versiones confirmadas.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h1 id="comandos-esenciales-en-git"><strong>Comandos esenciales en Git</strong></h1>
+<h2 id="1-inicializar-un-repositorio-git"><strong>1️⃣ Inicializar un repositorio Git</strong></h2>
+<p>Para empezar a usar Git en un proyecto, ejecuta:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git init</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Esto creará una carpeta <code>.git</code> en tu proyecto, donde se almacenará la información del repositorio.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="2-agregar-archivos-a-git"><strong>2️⃣ Agregar archivos a Git</strong></h2>
+<p>Cuando creas un nuevo archivo, Git <strong>no lo sigue automáticamente</strong>. Para rastrear un archivo:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git add nombre_archivo</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Para agregar <strong>todos los archivos</strong>:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git add .</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="3-ver-el-estado-del-repositorio"><strong>3️⃣ Ver el estado del repositorio</strong></h2>
+<p>Para ver el estado actual de los archivos:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git status</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Esto te dirá qué archivos están sin seguimiento, modificados o listos para confirmarse.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="4-confirmar-cambios"><strong>4️⃣ Confirmar cambios</strong></h2>
+<p>Para guardar los cambios en el historial de Git:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git commit -m <span style="color:#cd5555">&#34;Mensaje descriptivo del cambio&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Si quieres <strong>evitar usar <code>git add</code> manualmente</strong>, usa:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git commit -a -m <span style="color:#cd5555">&#34;Mensaje descriptivo del cambio&#34;</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Esto <strong>agrega y confirma</strong> los archivos en un solo paso.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="5-ignorar-archivos-en-git"><strong>5️⃣ Ignorar archivos en Git</strong></h2>
+<p>Si hay archivos que <strong>no quieres versionar</strong> (logs, configuraciones locales, etc.), usa un archivo <strong>.gitignore</strong>.</p>
+<p>Ejemplo de <code>.gitignore</code>:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>*.log<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>node_modules/<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>.env</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Esto hará que Git <strong>ignore esos archivos</strong> y no los agregue al repositorio.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="6-comparar-diferencias-entre-versiones"><strong>6️⃣ Comparar diferencias entre versiones</strong></h2>
+<p>Si quieres ver qué ha cambiado en tu código antes de confirmar:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git diff</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Si ya agregaste los cambios a la <strong>staging area</strong> y quieres ver las diferencias antes del commit:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#d6d6c6"><span>git diff --staged</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr>
+<h2 id="-conclusión"><strong>🌟 Conclusión</strong></h2>
+<p>🚀 <strong>Git es una herramienta esencial para cualquier desarrollador.</strong><br>
+Hemos aprendido cómo instalarlo, configurarlo y usarlo localmente.</p>
+<p>Próximamente exploraremos cómo <strong>subir repositorios a GitHub y colaborar en equipo</strong>. 💻🎯</p>
+
+</div>
+
+
+
+    
+	
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2025
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/git/js/main.js"></script>
+<script defer src="/git/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/git/js/tabpane-persist.js'></script>
+
+  </body>
+</html>
