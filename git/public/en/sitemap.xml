@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/git/en/categories/</loc>
+    <loc>http://web.infenlaces.com/git/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/git/categories/"
+                href="http://web.infenlaces.com/git/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/git/fr/categories/"
+                href="http://web.infenlaces.com/git/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/git/en/categories/"
+                href="http://web.infenlaces.com/git/en/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/git/en/</loc>
+    <loc>http://web.infenlaces.com/git/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/git/fr/"
+                href="http://web.infenlaces.com/git/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/git/"
+                href="http://web.infenlaces.com/git/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/git/en/"
+                href="http://web.infenlaces.com/git/en/"
                 />
   </url><url>
-    <loc>http://localhost:1313/git/en/tags/</loc>
+    <loc>http://web.infenlaces.com/git/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://localhost:1313/git/tags/"
+                href="http://web.infenlaces.com/git/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://localhost:1313/git/fr/tags/"
+                href="http://web.infenlaces.com/git/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://localhost:1313/git/en/tags/"
+                href="http://web.infenlaces.com/git/en/tags/"
                 />
   </url>
 </urlset>

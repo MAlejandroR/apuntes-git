@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git Control de versiones on Git: Repositorios y Despliegue</title>
-    <link>http://localhost:1313/git/docs/</link>
+    <link>http://web.infenlaces.com/git/docs/</link>
     <description>Recent content in Git Control de versiones on Git: Repositorios y Despliegue</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <atom:link href="http://localhost:1313/git/docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://web.infenlaces.com/git/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git Instalación </title>
-      <link>http://localhost:1313/git/docs/instalacion/</link>
+      <link>http://web.infenlaces.com/git/docs/instalacion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/git/docs/instalacion/</guid>
+      <guid>http://web.infenlaces.com/git/docs/instalacion/</guid>
       <description>Instalación y configuración básica de Git en Ubuntu Para comenzar a trabajar con Git en Ubuntu, necesitamos instalarlo y configurarlo correctamente.&#xA;1. Instalación de Git Para instalar Git en Ubuntu, ejecuta los siguientes comandos en la terminal:&#xA;1 2 sudo apt update sudo apt install git Una vez instalado, verifica la versión con:&#xA;1 git --version ✅ Si ves un número de versión como git version 2.x.x, Git se ha instalado correctamente.</description>
     </item>
   </channel>
