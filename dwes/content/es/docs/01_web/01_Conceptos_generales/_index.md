@@ -15,10 +15,6 @@ En el servidor
 {{< /objetivos >}}
 ### Introducción al desarrollo en la web
 
-<button onclick="document.querySelector('.slides').requestFullscreen()">
-  Ver en pantalla completa
-</button>
-
 <div class="iframe-container">
-<iframe src="https://es.wikieducator.org/index.php?curid=5762" width="100%" height="5378">WikiEducator </iframe>
+<iframe src="https://es.wikieducator.org/index.php?curid=6656" width="100%" height="5622">WikiEducator </iframe>
 </div>
