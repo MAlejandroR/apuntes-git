@@ -1,0 +1,6 @@
+p{
+    font-size: 18px; /* Cambia el tamaño según prefieras */
+}
+:root {
+    --bs-body-font-size:3rem; /* Ajusta el valor según tus necesidades */
+}

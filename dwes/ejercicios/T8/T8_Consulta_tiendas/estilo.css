@@ -1,0 +1,19 @@
+<style>
+table{
+    border: 1.5px saddlebrown;
+    border-collapse: collapse;
+
+}
+
+th{
+    background: bisque;
+    font-weight: bold;
+    text-align: center;
+}
+td, th {
+    padding: 10px
+}
+td{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}

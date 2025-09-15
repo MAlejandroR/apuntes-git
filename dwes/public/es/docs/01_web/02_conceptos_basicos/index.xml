@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ideas básicas de redes on Desarrollo Web</title>
+    <link>http://localhost:1313/dwes/es/docs/01_web/02_conceptos_basicos/</link>
+    <description>Recent content in Ideas básicas de redes on Desarrollo Web</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <atom:link href="http://localhost:1313/dwes/es/docs/01_web/02_conceptos_basicos/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

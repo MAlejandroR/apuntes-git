@@ -1,0 +1,312 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/dwes/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=dwes/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" type="text/html" href="http://localhost:1313/dwes/es/docs/04_php/15_peristencia/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/dwes/es/docs/04_php/15_peristencia/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/dwes/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/dwes/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/dwes/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/dwes/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-192x192.png" sizes="192x192">
+
+<title>Persistencia | Desarrollo Web</title>
+<meta name="description" content="La persistencia en php La persistencia permite conservar los datos entre distintas interacciones entre el cliente y el servidor, asegurando que la información no se pierda durante la navegación o el cierre de la sesión. En la programación web , el protocolo HTTP es sin estado (stateless), lo que significa que no guarda información sobre interacciones previas entre el cliente y el servidor.
+Esta característica, puede suponer una limitación () para aplicaciones que necesitan recordar datos entre solicitudes, como las preferencias de usuario, las sesiones activas o los datos en procesos largos.">
+
+<meta property="og:url" content="http://localhost:1313/dwes/es/docs/04_php/15_peristencia/">
+  <meta property="og:site_name" content="Desarrollo Web">
+  <meta property="og:title" content="Persistencia">
+  <meta property="og:description" content="La persistencia en php La persistencia permite conservar los datos entre distintas interacciones entre el cliente y el servidor, asegurando que la información no se pierda durante la navegación o el cierre de la sesión. En la programación web , el protocolo HTTP es sin estado (stateless), lo que significa que no guarda información sobre interacciones previas entre el cliente y el servidor.
+Esta característica, puede suponer una limitación () para aplicaciones que necesitan recordar datos entre solicitudes, como las preferencias de usuario, las sesiones activas o los datos en procesos largos.">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Persistencia">
+  <meta itemprop="description" content="La persistencia en php La persistencia permite conservar los datos entre distintas interacciones entre el cliente y el servidor, asegurando que la información no se pierda durante la navegación o el cierre de la sesión. En la programación web , el protocolo HTTP es sin estado (stateless), lo que significa que no guarda información sobre interacciones previas entre el cliente y el servidor.
+Esta característica, puede suponer una limitación () para aplicaciones que necesitan recordar datos entre solicitudes, como las preferencias de usuario, las sesiones activas o los datos en procesos largos.">
+  <meta itemprop="datePublished" content="2024-10-15T07:04:49+02:00">
+  <meta itemprop="dateModified" content="2024-10-15T07:04:49+02:00">
+  <meta itemprop="wordCount" content="302">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Persistencia">
+  <meta name="twitter:description" content="La persistencia en php La persistencia permite conservar los datos entre distintas interacciones entre el cliente y el servidor, asegurando que la información no se pierda durante la navegación o el cierre de la sesión. En la programación web , el protocolo HTTP es sin estado (stateless), lo que significa que no guarda información sobre interacciones previas entre el cliente y el servidor.
+Esta característica, puede suponer una limitación () para aplicaciones que necesitan recordar datos entre solicitudes, como las preferencias de usuario, las sesiones activas o los datos en procesos largos.">
+
+
+<link href="/dwes/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/dwes/es/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/dwes/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Desarrollo Web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/es/dwes/docs/02_docker/"><span>Docker</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/es/dwes/docs/03_hugo/"><span>Hugo</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/dwes/es/docs/02_docker/1_docker/"><span>Docker</span></a>
+      </li>
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/dwes/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/dwes/en/">English</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+Versión imprimible multipagina.
+<a href="#" onclick="print();return false;">Haga click aquí para imprimir</a>.
+</p><p>
+<a href="/dwes/es/docs/04_php/15_peristencia/">Volver a la vista normal de esta página</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Persistencia</h1>
+
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1: <a href="#pg-42682413653362eb857f644d1408f330">Cookies</a></li>
+
+
+    
+  
+    
+    
+	
+<li>2: <a href="#pg-83b9393e897c09d123d8fac3a0ffb675">Sesiones</a></li>
+
+
+    
+  
+
+    </ul>
+
+
+<div class="content">
+      <h3 id="la-persistencia-en-php">La persistencia en php</h3>
+<p><div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-info-circle" aria-hidden="true"></i>
+    
+    <strong></strong>
+  </div>
+  <div class="definicion-contenido">
+    
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    La persistencia
+
+
+</span>
+</strong>
+ permite conservar los datos entre distintas interacciones entre el cliente y el servidor, asegurando que la información no se pierda durante la navegación o el cierre de la sesión.
+
+  </div>
+</div>
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    En la programación web
+
+
+</span>
+</strong>
+, el protocolo HTTP es <strong>sin estado</strong> (stateless), lo que significa que no guarda información sobre interacciones previas entre el cliente y el servidor.</p>
+<p>Esta característica, puede suponer  una limitación () para aplicaciones que necesitan recordar datos entre solicitudes, como las preferencias de usuario, las sesiones activas o los datos en procesos largos.</p>
+<p>Para superar esta limitación, existen diversas estrategias de persistencia que permiten mantener la información necesaria:</p>
+<ul>
+<li><strong>Campos ocultos</strong>: Utilizar inputs ocultos en formularios para transferir datos entre páginas. Esta técnica es sencilla pero limitada a interacciones basadas en formularios.</li>
+<li><strong>Sesiones</strong>: Guardar información temporalmente en el servidor, asociada a un cliente mediante un identificador que suele almacenarse en cookies o en la URL.</li>
+<li><strong>Cookies</strong>: Almacenar pequeños fragmentos de datos en el navegador del cliente que persisten entre visitas. Son útiles para recordar preferencias o configuraciones, aunque tienen limitaciones de tamaño y posibles problemas de privacidad.</li>
+<li><strong>Ficheros</strong>: Guardar datos en archivos en el servidor. Es una solución simple y rápida para pequeños volúmenes de información, pero no escalable para sistemas grandes.</li>
+<li><strong>Bases de datos</strong>: Utilizar sistemas robustos para almacenar información estructurada y persistente. Son ideales para aplicaciones complejas que requieren escalabilidad.</li>
+</ul>
+<p>Además, en desarrollos modernos, encontramos otras opciones como:</p>
+<ul>
+<li><strong>Storage del navegador</strong>: APIs como <code>localStorage</code> y <code>sessionStorage</code> permiten guardar datos directamente en el navegador, facilitando aplicaciones dinámicas sin necesidad de enviar solicitudes constantes al servidor.</li>
+<li><strong>JWT (JSON Web Tokens)</strong>: Utilizar tokens para mantener el estado de la autenticación o datos entre cliente y servidor, especialmente en aplicaciones basadas en APIs REST.</li>
+</ul>
+<p>Estas estrategias pueden combinarse según las necesidades específicas de la aplicación.</p>
+<div class="iframe-container">
+<iframe src="https://es.wikieducator.org/index.php?curid=6679" width="100%" height="2500">WikiEducator </iframe>
+</div>
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-42682413653362eb857f644d1408f330">1 - Cookies</h1>
+    
+	<h3 id="las-cookies-en-php">Las cookies en php</h3>
+<div class="iframe-container">
+<iframe src="https://es.wikieducator.org/index.php?curid=4414" width="100%" height="8000">WikiEducator </iframe>
+</div>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-83b9393e897c09d123d8fac3a0ffb675">2 - Sesiones</h1>
+    
+	<h3 id="sesiones">Sesiones</h3>
+<div class="iframe-container">
+<iframe src="https://es.wikieducator.org/index.php?curid=4545" width="100%" height="8000">WikiEducator </iframe>
+</div>
+
+</div>
+
+
+
+    
+	
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2025
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script src="/dwes/js/main.js"></script>
+<script defer src="/dwes/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/dwes/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

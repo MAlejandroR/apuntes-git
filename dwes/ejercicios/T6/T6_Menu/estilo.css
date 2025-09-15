@@ -1,0 +1,45 @@
+.fichero{
+    border:1;
+    margin-left: 10%;
+    padding:15px ;
+    background-color: #CCCCCC;
+    width: 85%;
+    font-size: 1.8em;
+}
+fieldset{
+    background : #AEB6BF;
+    float:left;
+    margin: 10px;
+    width:35%;
+}
+legend{
+    color:darkblue;
+    font-weight: bold;
+    font-size:1.6em;
+    font-style:oblique;
+}
+
+input[type=text]{
+    color:blue;
+    font-weight: bold;
+    font-size:1.6em;
+}
+input[type=submit]{
+    color:maroon;
+    font-weight: bold;
+    font-size:1.8em;
+    margin-top:20px;
+}
+label{
+    color:blue;
+    font-weight: bold;
+    font-size:1.4em;
+
+}
+a{
+    color:darkmagenta;
+    font-weight: bold;
+    font-size:2em;
+    text-transform: uppercase;
+    margin:20px
+}

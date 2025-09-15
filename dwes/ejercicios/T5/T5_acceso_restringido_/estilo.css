@@ -1,0 +1,47 @@
+.fichero{
+    border:1;
+    margin-left: 10%;
+    padding:15px ;
+    background-color: #CCCCCC;
+    width: 85%;
+    font-size: 1.8em;
+}
+.r{/*Texto resaltado rojo, negrita y cursiva*/
+    color:darkred;
+    font-weight: bold;
+    font-style: oblique;
+}
+h1{
+    text-align: center;
+    color:darkblue;
+}
+ fieldset {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 800px;
+    margin-left: -115px;
+    height: 300px;
+    margin-top: -80px;
+    padding:10px;
+    border:1px solid #ccc;
+    background-color: #eee;
+    font-size:2em;
+}
+
+ legend {
+    font-family : Arial, sans-serif;
+    font-size: 1.3em;
+    font-weight:bold;
+    color:#333;
+}
+.bloque{
+
+    margin:100px;
+    margin-top:50px;
+    padding: 10px;
+    background: darkgrey;
+    color: darkred;
+    border: solid;
+
+}

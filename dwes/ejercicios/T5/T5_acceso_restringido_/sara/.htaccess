@@ -1,0 +1,4 @@
+AuthName "Sistema de autentificación"
+AuthType Basic
+AuthUserFile "/home/manuel/web/manuel.infenlaces.com/public_html/dwes/T3_acceso_restringido/misUsuarios"
+Require user sara

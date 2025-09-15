@@ -1,0 +1,32 @@
+            .medico{
+                font-family: sans-serif;
+                font-size: 22px;
+                font-weight: 400;
+                color:  #000033;
+                background: 	#e6e6e6;
+                width: 80%;
+                margin: 0 0 0px;
+                overflow: hidden;
+                padding: 0px;
+            }
+            .tituloAcciones{
+                font-family: Times;
+                font-size: 20px;
+                font-weight: 400;
+                color: #0000b3;
+                margin: 0 0 0 20px;
+                overflow: hidden;
+                padding: 0px;
+            }
+            .contenidoAcciones{
+                font-family: Times;
+                font-size: 18px;
+                font-weight: 400;
+                border :1px solid black;
+                width: 90%;
+                color:  #0000e6;
+                margin: 10px 10px 10px 30px;
+                overflow: hidden;
+                padding: 0px;
+
+            }

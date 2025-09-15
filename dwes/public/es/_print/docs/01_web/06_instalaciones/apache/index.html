@@ -1,0 +1,791 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/dwes/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=dwes/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" type="text/html" href="http://localhost:1313/dwes/es/docs/01_web/06_instalaciones/apache/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/dwes/es/docs/01_web/06_instalaciones/apache/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/dwes/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/dwes/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/dwes/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/dwes/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-192x192.png" sizes="192x192">
+
+<title>Apache | Desarrollo Web</title>
+<meta name="description" content="Servidor Web Servidor Apache y su funcionamiento modular Como se muestra en la imagen, Apache funciona mediante un sistema de módulos.
+Cada uno de estos módulos (como PHP, MySQL, XML, entre otros) añade funcionalidades específicas y se conecta al núcleo de Apache.
+Puedes activar o desactivar, instalar o desinstalar módulos según tus necesidades, manteniendo solo aquellos que sean esenciales.">
+
+<meta property="og:url" content="http://localhost:1313/dwes/es/docs/01_web/06_instalaciones/apache/">
+  <meta property="og:site_name" content="Desarrollo Web">
+  <meta property="og:title" content="Apache">
+  <meta property="og:description" content="Servidor Web Servidor Apache y su funcionamiento modular Como se muestra en la imagen, Apache funciona mediante un sistema de módulos.
+Cada uno de estos módulos (como PHP, MySQL, XML, entre otros) añade funcionalidades específicas y se conecta al núcleo de Apache.
+Puedes activar o desactivar, instalar o desinstalar módulos según tus necesidades, manteniendo solo aquellos que sean esenciales.">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Apache">
+  <meta itemprop="description" content="Servidor Web Servidor Apache y su funcionamiento modular Como se muestra en la imagen, Apache funciona mediante un sistema de módulos.
+Cada uno de estos módulos (como PHP, MySQL, XML, entre otros) añade funcionalidades específicas y se conecta al núcleo de Apache.
+Puedes activar o desactivar, instalar o desinstalar módulos según tus necesidades, manteniendo solo aquellos que sean esenciales.">
+  <meta itemprop="datePublished" content="2024-10-15T07:04:49+02:00">
+  <meta itemprop="dateModified" content="2024-10-15T07:04:49+02:00">
+  <meta itemprop="wordCount" content="765">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Apache">
+  <meta name="twitter:description" content="Servidor Web Servidor Apache y su funcionamiento modular Como se muestra en la imagen, Apache funciona mediante un sistema de módulos.
+Cada uno de estos módulos (como PHP, MySQL, XML, entre otros) añade funcionalidades específicas y se conecta al núcleo de Apache.
+Puedes activar o desactivar, instalar o desinstalar módulos según tus necesidades, manteniendo solo aquellos que sean esenciales.">
+
+
+<link href="/dwes/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/dwes/es/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/dwes/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Desarrollo Web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/es/dwes/docs/02_docker/"><span>Docker</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/es/dwes/docs/03_hugo/"><span>Hugo</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/dwes/es/docs/02_docker/1_docker/"><span>Docker</span></a>
+      </li>
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/dwes/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/dwes/en/">English</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+Versión imprimible multipagina.
+<a href="#" onclick="print();return false;">Haga click aquí para imprimir</a>.
+</p><p>
+<a href="/dwes/es/docs/01_web/06_instalaciones/apache/">Volver a la vista normal de esta página</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Apache</h1>
+
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1: <a href="#pg-6731e33131d9bb0a73e410e8c637ba0d">practicando</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+
+    </ul>
+
+
+<div class="content">
+      <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 328px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/06_instalaciones/apache/apache2_hu_430a03cb5234427e.png" width="318" height="159">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+Servidor Web
+
+</p>
+</figcaption>
+</figure>
+
+<h4></h4>
+<hr>
+<h3 id="servidor-apache-y-su-funcionamiento-modular">Servidor Apache y su funcionamiento modular</h3>
+<p><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 940px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/06_instalaciones/apache/apache2_hu_88d192e14eb6848d.png" width="930" height="454">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+Como se muestra en la imagen, Apache funciona mediante un sistema de módulos.</p>
+<p>Cada uno de estos módulos (como <strong>PHP</strong>, <strong>MySQL</strong>, <strong>XML</strong>, entre otros) añade funcionalidades específicas y se conecta al <strong>núcleo de Apache</strong>.</p>
+<p>Puedes activar o desactivar, instalar o desinstalar módulos según tus necesidades, manteniendo solo aquellos que sean esenciales.</p>
+<p>Es importante recordar que, al instalar Apache, se abre una &ldquo;puerta&rdquo; en el sistema hacia redes externas, lo que puede representar una exposición al exterior.</p>
+<p>Mantener activos solo los módulos necesarios reduce esta exposición y ayuda a mejorar la seguridad del servidor.</p>
+<h2 id="consideraciones-de-seguridad">Consideraciones de seguridad</h2>
+<p>Cuando instalas y configuras Apache en tu sistema, estás abriendo una &ldquo;puerta&rdquo; que permite el acceso desde redes externas. Esto significa que, en cierta medida, tu sistema está expuesto al exterior, lo que podría representar un riesgo de seguridad si no se toman las precauciones adecuadas.</p>
+<p>Para minimizar esta exposición, es importante:</p>
+<ul>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Mantener actualizados
+
+
+</span>
+</strong>
+ tanto Apache como sus módulos.</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Configurar adecuadamente
+
+
+</span>
+</strong>
+ los permisos y accesos, limitando el acceso a solo aquellos que necesiten interactuar con el servidor.</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Deshabilitar módulos innecesarios
+
+
+</span>
+</strong>
+, ya que cada módulo adicional aumenta las posibles vulnerabilidades.</li>
+</ul>
+<p>Recuerda que el uso seguro de Apache es esencial para proteger la infraestructura de red y los datos alojados en el servidor.</p>
+<h3 id="módulos-a-instalar">Módulos a instalar</h3>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 722px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/06_instalaciones/apache/Instalacion_web_hu_b7a6e3696d37f513.png" width="712" height="484">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Instalación en windows</h4>
+
+    <ul>
+<li>
+<p>En windows se instala todo instalando el paquete Xampp(<a href="https://www.apachefriends.org/es/index.html%29">https://www.apachefriends.org/es/index.html)</a>, o Wampp (<a href="https://www.wampserver.com/en/">https://www.wampserver.com/en/</a>)</p>
+</li>
+<li>
+<p>Una vez instalado debes de activarlo o arrancar los servicios correspondientes</p>
+</li>
+</ul>
+
+
+</div>
+
+<h3 id="concepto-del-virtual-host">Concepto del virtual host</h3>
+<p>Ponamos la siguiente analogía:
+Imaginemos que tenemos una persona llamada Manuel. En el trabajo, le llaman &ldquo;Manuel&rdquo; y adopta una actitud profesional y seria. En casa o con amigos, le llaman &ldquo;Manolo&rdquo; y su actitud es más relajada y cercana. Aunque es la misma persona, responde de manera diferente según cómo le llamen.</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 410px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/06_instalaciones/apache/manuel_hu_c8eaf271cad46dc3.png" width="400" height="400">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<p>De forma similar, en Apache, 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    un Virtual Host permite que el mismo servidor web responda de manera distinta según el nombre de dominio o dirección con la que se le acceda
+
+
+</span>
+</strong>
+.</p>
+<p>Siguiendo con la metáfora, es como si fuera <strong>Manuel</strong> en un contexto y <strong>Manolo</strong> en otro.</p>
+<p>Con 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Virtual Hosts
+
+
+</span>
+</strong>
+, Apache puede manejar varios sitios web en un solo servidor, mostrando diferentes contenidos o configuraciones según el dominio que se utilice.</p>
+<h3 id="dónde-se-configura-cada-virtual-host">Dónde se configura cada Virtual Host</h3>
+<p>Los ficheros de configuración de Apache están en <code>/etc/apache2</code>. En la imagen puedes ver cómo ubicarte y qué ficheros contiene.
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 815px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/06_instalaciones/apache/ficheros_configuracion_apache_hu_11deeb05bcbc58cb.png" width="805" height="712">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+Observa los comandos utilizados
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>cd <span style="color:#228b22">#change directory para cambiar de directorio
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>pwd <span style="color:#228b22">#print work directory ver el directorio actual de trabajo
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>tree -L <span style="color:#b452cd">1</span> <span style="color:#228b22"># ver el contenido de un directorio con nivel 1 de profundidad con formato arbolescente. nivel 1 es no mostrar los subdirectorios
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+La configuración de los 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    sitios web
+
+
+</span>
+</strong>
+ está bajo los directorios 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    sites-available
+
+
+</span>
+</strong>
+ y 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    sites-enabled
+
+
+</span>
+</strong>
+.</p>
+<ul>
+<li>Después, para  actívalo en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    sites-enabled
+
+
+</span>
+</strong>
+ usando el comando  
+<strong>
+<span class="font-weight-bold text-primary">
+
+    a2ensite nombre_sitio
+
+
+</span>
+</strong>
+. Este comando crea un enlace simbólico que permite poner el sitio en funcionamiento.</li>
+</ul>
+<h4 id="cómo-crear-nombres-diferentes-para-mi-máquina">Cómo crear nombres diferentes para mi máquina</h4>
+<p>Para tener nombres únicos accesibles desde internet, lo ideal es comprar un dominio en un <strong>ISP</strong> (Proveedor de Servicios de Internet) y configurarlo para que apunte a tu máquina.</p>
+<p>Sin embargo, para hacer pruebas en local, puedes modificar el archivo 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    hosts
+
+
+</span>
+</strong>
+ en tu equipo.
+En ubuntu este fichero está ubicado en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    /etc/hosts
+
+
+</span>
+</strong>
+, y en Windows en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    c:\windows\system32\drivers\etc\hosts
+
+
+</span>
+</strong>
+.</p>
+<p>Este archivo permite asignar nombres personalizados a direcciones IP en tu red local.</p>
+<p>Por ejemplo, puedes añadir las siguientes líneas al archivo <code>hosts</code> para asociar los dominios locales a <code>localhost</code>:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>127.0.0.1 www.informatica.com 
+</span></span><span style="display:flex;"><span>127.0.0.1 www.musica.com </span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Una vez que hayas agregado el nombre en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    hosts
+
+
+</span>
+</strong>
+, puedes probar que funciona ejecutando un 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    <code>ping</code>
+
+
+</span>
+</strong>
+ al nombre que has configurado, como por ejemplo:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>ping www.informatica.com</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="directivas-a-configurar">Directivas a configurar</h3>
+<p>Apache se configura a través de 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    <strong>directivas</strong>
+
+
+</span>
+</strong>
+, que son como variables que definen el comportamiento del servidor al cargar el servicio.</p>
+<p>Siguiendo con la metáfora anterior de &ldquo;Manuel&rdquo; y &ldquo;Manolo&rdquo;, donde se establecen comportamientos distintos según el contexto, aquí concretaremos esos comportamientos deseados.</p>
+<p>Algunas de las directivas más importantes son:</p>
+<ul>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    ServerName
+
+
+</span>
+</strong>
+: Define el nombre del servidor o dominio que vamos a asociar a una configuración específica. Esto indica el nombre con el que el servidor responderá.</p>
+</li>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    DocumentRoot
+
+
+</span>
+</strong>
+: Especifica el directorio donde Apache debe buscar los archivos de los recursos. Aquí se encuentra el contenido que será servido a los usuarios cuando accedan al sitio.</p>
+</li>
+</ul>
+<p>Al configurar estas directivas, estamos definiendo cómo se comportará Apache y cómo gestionará las solicitudes para cada sitio web.</p>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Muy importante</h4>
+
+    <p>Siempre que modifiquemos alguna directiva de configuración, debemos rebotar el servicio</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>sudo service apache2 restart</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-6731e33131d9bb0a73e410e8c637ba0d">1 - practicando</h1>
+    
+	
+
+<div class="pageinfo pageinfo-primary">
+<h4 id="practicando">Practicando</h4>
+<p>Creamos en nuestro servidor web, dos sitios virtuales o virtual host, llamados <a href="https://www.informatica.com">www.informatica.com</a> y <a href="https://www.musica.com">www.musica.com</a>
+Cada uno de ellos van a tener esta peculiaridad de comportameiento y es que <a href="https://www.informatica.com">www.informatica.com</a> va a ir a buscar los recursos a la carpeta /var/www/informatica, y <a href="https://www.muscia.com">www.muscia.com</a>, a /var/www/musica</p>
+
+</div>
+
+<h3 id="creando-los-ficheros-de-configuración">Creando los ficheros de configuración</h3>
+<p>Para configurar dos sitios en Apache, vamos a crear dos archivos de configuración en <code>sites-available</code> y luego activarlos.</p>
+<p>Lo primero vamos a la carpeta /etc/apache2/site-available, y nos copiamos el fichero de configuración que hay ahí 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    000-default.conf
+
+
+</span>
+</strong>
+ a por ejemplo 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    informatica.conf
+
+
+</span>
+</strong>
+ y 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    musica.conf
+
+
+</span>
+</strong>
+.
+Recuerda que son ficheros de confituración y debemos hacerlo como superusuario
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>sudo cp <span style="color:#b452cd">000</span>-<span style="color:#8b008b;font-weight:bold">default</span>.conf informatica.conf 
+</span></span><span style="display:flex;"><span>sudo cp <span style="color:#b452cd">000</span>-<span style="color:#8b008b;font-weight:bold">default</span>.conf musica.conf 
+</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<ul>
+<li>Modificamos el dfichero con la nueva configuración</li>
+<li>Para ello lo editamos con un editor, por ejemplo <strong>gedit</strong>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>sudo gedit informatica.conf</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>y añadimos las siguientes líneas
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>  &lt;VirtualHost *:<span style="color:#b452cd">80</span>&gt;
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>  ServerName www.informatica.com
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>  DocumentRoot /<span style="color:#8b008b;font-weight:bold">var</span>/www/informatica
+</span></span><span style="display:flex;"><span>  &lt;/VirtualHost&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>El fichero original tiene muchas más líneas que podemos eliminar</li>
+<li>Todas las líneas que empiecen por <strong>#</strong>, son comentarios que no tienen efecto en la configuración.</li>
+<li>Hacemos lo mismo en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    musica.conf
+
+
+</span>
+</strong>
+</li>
+<li><div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>sudo gedit musuca.conf</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>y añadimos su configuración
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>&lt;VirtualHost *:<span style="color:#b452cd">80</span>&gt;
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>ServerName www.musica.com
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>DocumentRoot /<span style="color:#8b008b;font-weight:bold">var</span>/www/musica
+</span></span><span style="display:flex;"><span>&lt;/VirtualHost&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<h3 id="modificación-del-archivo-hosts">Modificación del archivo hosts</h3>
+<p>Para realizar pruebas en local, añade los siguientes dominios al archivo <code>hosts</code> en tu equipo.</p>
+<p>En Ubuntu, el archivo se encuentra en <code>/etc/hosts</code>; en Windows, en <code>c:\windows\system32\drivers\etc\hosts</code>. Añade estas líneas:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>127.0.0.1 www.informatica.com 
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>127.0.0.1 www.musica.com </span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Luego, puedes probar que los dominios responden ejecutando:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>ping www.informatica.com
+</span></span><span style="display:flex;"><span>ping www.musica.com</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="activación-de-los-sitios">Activación de los sitios</h3>
+<p>Una vez que hayas creado estos archivos de configuración en <code>sites-available</code>, debes activarlos usando los siguientes comandos:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>sudo a2ensite informatica.conf
+</span></span><span style="display:flex;"><span>sudo a2ensite musica.conf
+</span></span><span style="display:flex;"><span>sudo systemctl reload apache2</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Esto creará los enlaces simbólicos en <code>sites-enabled</code> y recargará Apache para aplicar la configuración.</p>
+<h4 id="creando-el-directorio">Creando el directorio</h4>
+<p>Ahora debemos de crear los directorios que hemos especificado para que apache vaya ahí, a buscar los recursos cuando se los soliciten.</p>
+<p>Lo podemos hacer con nuestro edi, por ejemplo phpstorm.</p>
+<p>Vamos a crear carpetas en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    /var/www
+
+
+</span>
+</strong>
+, por lo que tenemos que tener permisos de escritura y ser propietarios.
+<img src="/dwes/es/docs/01_web/06_instalaciones/apache/practica/img.png" alt="img.png">
+Ahí vemos que esta carpeta es de root, y nosotros no podremos crear recuros
+Para ello ejecutamos el comando de cambiar de propietario (en nuestro ordenador somos 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    alumno
+
+
+</span>
+</strong>
+. Yo en el ejemplo, como en mi equipo soy 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    manuel
+
+
+</span>
+</strong>
+ pongo a ese usuario
+Podemos especificar la carpeta con ruta absoluta
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>sudo chown manuel:manuel /<span style="color:#8b008b;font-weight:bold">var</span>/www</span></span></code></pre></td></tr></table>
+</div>
+</div>
+y me habrá cambiado el propietario</p>
+<p><img src="/dwes/es/docs/01_web/06_instalaciones/apache/practica/img_1.png" alt="img_1.png"></p>
+<p>Ahora creamos las carpetas y recursos y ya los puedo acceder desde el navegador</p>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2025
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script src="/dwes/js/main.js"></script>
+<script defer src="/dwes/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/dwes/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

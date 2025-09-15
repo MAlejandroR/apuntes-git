@@ -1,0 +1,63 @@
+.error{
+    color:red;
+    background-color: #f5c6cb;
+}
+fieldset{
+    margin:10%;
+    background-color: #e6db74;
+    border-radius:10px;
+    width: 60%;
+}
+input[type=submit]{
+    color:#0d24bd;
+    background-color: #20c997;
+    font-size: 1.3em;
+    margin:2px ;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+input[type=text]{
+    color:#6f42c1;
+    font-size: 1.4em;
+    margin:2px ;
+}
+label{
+    color:#0d24bd;
+    font-size: 1.3em;
+    margin:2px ;
+    width: 100px;
+}
+legend{
+    color:#0d24bd;
+    font-weight: bold;
+    font-style:italic ;
+    font-size: 1.5em;
+    margin:2px ;
+    background-color: white;
+    border-bottom-right-radius: 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.fila{
+    display:flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.fila_header{
+    display:flex;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+    font-size: 0.5em;
+    align-items: center;
+    padding-left:10px ;
+}
+.logout input[type=submit]{
+    background-color: #f5c6cb;
+    font-size: 0.5em;
+    margin-left: 20px;
+}

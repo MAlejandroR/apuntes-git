@@ -1,0 +1,636 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/dwes/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=dwes/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/dwes/es/docs/02_docker/1_docker/02_contenedores_imagenes/index.xml">
+<link rel="alternate" type="text/html" href="http://localhost:1313/dwes/es/_print/docs/02_docker/1_docker/02_contenedores_imagenes/">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/dwes/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/dwes/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/dwes/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/dwes/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-192x192.png" sizes="192x192">
+
+<title>Contenedores e imágenes | Desarrollo Web</title>
+<meta name="description" content="Contenedores e imágnes La imagen La imagen es un fichero que contiene todo el conjunto de librerías, dependencias y configuraciones necesarias para ejecutar un entorno aislado, con servicios y procesos, junto con su propia IP, y que servirá como base para crear uno o varios contenedores.">
+
+<meta property="og:url" content="http://localhost:1313/dwes/es/docs/02_docker/1_docker/02_contenedores_imagenes/">
+  <meta property="og:site_name" content="Desarrollo Web">
+  <meta property="og:title" content="Contenedores e imágenes">
+  <meta property="og:description" content="Contenedores e imágnes La imagen La imagen es un fichero que contiene todo el conjunto de librerías, dependencias y configuraciones necesarias para ejecutar un entorno aislado, con servicios y procesos, junto con su propia IP, y que servirá como base para crear uno o varios contenedores.">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Contenedores e imágenes">
+  <meta itemprop="description" content="Contenedores e imágnes La imagen La imagen es un fichero que contiene todo el conjunto de librerías, dependencias y configuraciones necesarias para ejecutar un entorno aislado, con servicios y procesos, junto con su propia IP, y que servirá como base para crear uno o varios contenedores.">
+  <meta itemprop="wordCount" content="307">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contenedores e imágenes">
+  <meta name="twitter:description" content="Contenedores e imágnes La imagen La imagen es un fichero que contiene todo el conjunto de librerías, dependencias y configuraciones necesarias para ejecutar un entorno aislado, con servicios y procesos, junto con su propia IP, y que servirá como base para crear uno o varios contenedores.">
+
+
+<link href="/dwes/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/dwes/es/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/dwes/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Desarrollo Web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/es/dwes/docs/02_docker/"><span>Docker</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/es/dwes/docs/03_hugo/"><span>Hugo</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/dwes/es/docs/02_docker/1_docker/"><span>Docker</span></a>
+      </li>
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/dwes/fr/docs/02_docker/1_docker/02_contenedores_imagenes/">Francés</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <div class="td-sidebar-nav__section nav-item dropdown d-block d-lg-none">
+      <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/dwes/fr/docs/02_docker/1_docker/02_contenedores_imagenes/">Francés</a></li>
+    </ul>
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-dwesesdocs-li">
+  <a href="/dwes/es/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-dwesesdocs"><span class="">Docs</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs01_web-li">
+  <input type="checkbox" id="m-dwesesdocs01_web-check"/>
+  <label for="m-dwesesdocs01_web-check"><a href="/dwes/es/docs/01_web/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs01_web"><i class="code-web_old"></i><span class="">La web_old y www</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs01_web01_conceptos_generales-li">
+  <input type="checkbox" id="m-dwesesdocs01_web01_conceptos_generales-check"/>
+  <label for="m-dwesesdocs01_web01_conceptos_generales-check"><a href="/dwes/es/docs/01_web/01_conceptos_generales/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs01_web01_conceptos_generales"><i class="fas fa-book"></i><span class="">Introducción</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs01_web02_conceptos_basicos-li">
+  <input type="checkbox" id="m-dwesesdocs01_web02_conceptos_basicos-check"/>
+  <label for="m-dwesesdocs01_web02_conceptos_basicos-check"><a href="/dwes/es/docs/01_web/02_conceptos_basicos/" title="Ideas básicas de redes" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs01_web02_conceptos_basicos"><i class="fa-solid fa-network-wired"></i><span class="">Redes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs01_web03_osi-li">
+  <input type="checkbox" id="m-dwesesdocs01_web03_osi-check"/>
+  <label for="m-dwesesdocs01_web03_osi-check"><a href="/dwes/es/docs/01_web/03_osi/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs01_web03_osi"><i class="fas fa-comments"></i><span class="">Modelo OSI</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs01_web04_internet-li">
+  <input type="checkbox" id="m-dwesesdocs01_web04_internet-check"/>
+  <label for="m-dwesesdocs01_web04_internet-check"><a href="/dwes/es/docs/01_web/04_internet/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs01_web04_internet"><i class="fas fa-globe"></i><span class="">Internet</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs01_web05_www-li">
+  <input type="checkbox" id="m-dwesesdocs01_web05_www-check"/>
+  <label for="m-dwesesdocs01_web05_www-check"><a href="/dwes/es/docs/01_web/05_www/" title="Instalaciones" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs01_web05_www"><i class="fa fa-layer-group"></i><span class="">Creando arquitectura</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs01_web06_instalaciones-li">
+  <input type="checkbox" id="m-dwesesdocs01_web06_instalaciones-check"/>
+  <label for="m-dwesesdocs01_web06_instalaciones-check"><a href="/dwes/es/docs/01_web/06_instalaciones/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs01_web06_instalaciones"><i class="fas fa-download"></i><span class="">Instalación</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs01_web06_instalacionesapache-li">
+  <input type="checkbox" id="m-dwesesdocs01_web06_instalacionesapache-check"/>
+  <label for="m-dwesesdocs01_web06_instalacionesapache-check"><a href="/dwes/es/docs/01_web/06_instalaciones/apache/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs01_web06_instalacionesapache"><i class="fas fa-feather"></i><span class="">Apache</span></a></label>
+  
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs01_web06_instalacionesapachepractica-li">
+  <input type="checkbox" id="m-dwesesdocs01_web06_instalacionesapachepractica-check"/>
+  <label for="m-dwesesdocs01_web06_instalacionesapachepractica-check"><a href="/dwes/es/docs/01_web/06_instalaciones/apache/practica/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs01_web06_instalacionesapachepractica"><i class="fas fa-chalkboard-teacher"></i><span class="">practicando</span></a></label>
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-dwesesdocs02_docker-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker-check" checked/>
+  <label for="m-dwesesdocs02_docker-check"><a href="/dwes/es/docs/02_docker/" title="Documentación" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker"><i class="fa-solid fa-screwdriver-wrench"></i><span class="">Dócker</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-dwesesdocs02_docker1_docker-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker1_docker-check" checked/>
+  <label for="m-dwesesdocs02_docker1_docker-check"><a href="/dwes/es/docs/02_docker/1_docker/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker1_docker"><i class="fa-brands fa-docker"></i><span class="">Docker</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs02_docker1_docker01_conceptos-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker1_docker01_conceptos-check"/>
+  <label for="m-dwesesdocs02_docker1_docker01_conceptos-check"><a href="/dwes/es/docs/02_docker/1_docker/01_conceptos/" title="Conceptos sobre docker" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker1_docker01_conceptos"><i class="fa-regular fa-lightbulb"></i><span class="">Conceptos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-dwesesdocs02_docker1_docker02_contenedores_imagenes-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker1_docker02_contenedores_imagenes-check" checked/>
+  <label for="m-dwesesdocs02_docker1_docker02_contenedores_imagenes-check"><a href="/dwes/es/docs/02_docker/1_docker/02_contenedores_imagenes/" title="Contenedores e imágenes" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker1_docker02_contenedores_imagenes"><i class="fa-regular fa-box"></i><span class="td-sidebar-nav-active-item">Entornos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs02_docker1_docker03_comandos_docker-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker1_docker03_comandos_docker-check"/>
+  <label for="m-dwesesdocs02_docker1_docker03_comandos_docker-check"><a href="/dwes/es/docs/02_docker/1_docker/03_comandos_docker/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker1_docker03_comandos_docker"><i class="fa-solid fa-terminal"></i><span class="">Docker Prácticas</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs02_docker1_docker04_ejercicios-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker1_docker04_ejercicios-check"/>
+  <label for="m-dwesesdocs02_docker1_docker04_ejercicios-check"><a href="/dwes/es/docs/02_docker/1_docker/04_ejercicios/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker1_docker04_ejercicios"><i class="fa-solid fa-list-check"></i><span class="">Ejercicios</span></a></label>
+  
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs02_docker1_docker04_ejercicios1_imagenes-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker1_docker04_ejercicios1_imagenes-check"/>
+  <label for="m-dwesesdocs02_docker1_docker04_ejercicios1_imagenes-check"><a href="/dwes/es/docs/02_docker/1_docker/04_ejercicios/1_imagenes/" title="Crea imágenes" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker1_docker04_ejercicios1_imagenes"><i class="fa-regular fa-file-image"></i><span class="">Imágenes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs02_docker1_docker04_ejercicios2_contenedores-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker1_docker04_ejercicios2_contenedores-check"/>
+  <label for="m-dwesesdocs02_docker1_docker04_ejercicios2_contenedores-check"><a href="/dwes/es/docs/02_docker/1_docker/04_ejercicios/2_contenedores/" title="Crea Contenedores" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker1_docker04_ejercicios2_contenedores"><i class="fa-solid fa-box-open"></i><span class="">Contenedores</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs02_docker1_docker04_ejercicios3_contenedores_imagenes-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker1_docker04_ejercicios3_contenedores_imagenes-check"/>
+  <label for="m-dwesesdocs02_docker1_docker04_ejercicios3_contenedores_imagenes-check"><a href="/dwes/es/docs/02_docker/1_docker/04_ejercicios/3_contenedores_imagenes/" title="Contenedores" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker1_docker04_ejercicios3_contenedores_imagenes"><i class="fa-solid fa-trowel"></i><span class="">Container to images</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs02_docker1_docker05_resumen_instrucciones_docker_file-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker1_docker05_resumen_instrucciones_docker_file-check"/>
+  <label for="m-dwesesdocs02_docker1_docker05_resumen_instrucciones_docker_file-check"><a href="/dwes/es/docs/02_docker/1_docker/05_resumen_instrucciones_docker_file/" title="Gestión de archivos y directorios" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker1_docker05_resumen_instrucciones_docker_file"><i class="fa-regular fa-file-code"></i><span class="">Archivos y directorios</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs02_docker0_linux01_comandos_gestion_ficheros-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker0_linux01_comandos_gestion_ficheros-check"/>
+  <label for="m-dwesesdocs02_docker0_linux01_comandos_gestion_ficheros-check"><a href="/dwes/es/docs/02_docker/0_linux/01_comandos_gestion_ficheros/" title="Ficheros y directorios" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker0_linux01_comandos_gestion_ficheros"><i class="fa-solid fa-terminal"></i><span class="">ficheros y directorios</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs03_hugo-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo-check"/>
+  <label for="m-dwesesdocs03_hugo-check"><a href="/dwes/es/docs/03_hugo/" title="Crear Sitios Estáticos" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs03_hugo"><i class="icon-hugo"></i><span class="">Hugo (Web Static)</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo1_instalacion-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo1_instalacion-check"/>
+  <label for="m-dwesesdocs03_hugo1_instalacion-check"><a href="/dwes/es/docs/03_hugo/1_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo1_instalacion"><i class="fas fa-cogs"></i><span class="">Instalación</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo2_temas-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo2_temas-check"/>
+  <label for="m-dwesesdocs03_hugo2_temas-check"><a href="/dwes/es/docs/03_hugo/2_temas/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo2_temas"><i class="fa-solid fa-palette"></i><span class="">Temas o layouts base</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs03_hugo3_contenido-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo3_contenido-check"/>
+  <label for="m-dwesesdocs03_hugo3_contenido-check"><a href="/dwes/es/docs/03_hugo/3_contenido/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs03_hugo3_contenido"><i class="fas fa-pencil-alt"></i><span class="">Contenido</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo3_contenido01_creacion-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo3_contenido01_creacion-check"/>
+  <label for="m-dwesesdocs03_hugo3_contenido01_creacion-check"><a href="/dwes/es/docs/03_hugo/3_contenido/01_creacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo3_contenido01_creacion"><i class="fas fa-file-alt"></i><span class="">Añadiendo</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo3_contenido02_taxonomias-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo3_contenido02_taxonomias-check"/>
+  <label for="m-dwesesdocs03_hugo3_contenido02_taxonomias-check"><a href="/dwes/es/docs/03_hugo/3_contenido/02_taxonomias/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo3_contenido02_taxonomias"><i class="fas fa-file-alt"></i><span class="">Añadiendo</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs03_hugo3_git-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo3_git-check"/>
+  <label for="m-dwesesdocs03_hugo3_git-check"><a href="/dwes/es/docs/03_hugo/3_git/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs03_hugo3_git"><i class="fab fa-git-alt"></i><span class="">Uso básico de git</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo3_gitdespliegue-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo3_gitdespliegue-check"/>
+  <label for="m-dwesesdocs03_hugo3_gitdespliegue-check"><a href="/dwes/es/docs/03_hugo/3_git/despliegue/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo3_gitdespliegue"><i class="fab fa-git-alt"></i><span class="">Despliegue en git</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo4_shortcode-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo4_shortcode-check"/>
+  <label for="m-dwesesdocs03_hugo4_shortcode-check"><a href="/dwes/es/docs/03_hugo/4_shortcode/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo4_shortcode"><i class="fas fa-code"></i><span class="">Shortcode</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo5_estilo_plantilla-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo5_estilo_plantilla-check"/>
+  <label for="m-dwesesdocs03_hugo5_estilo_plantilla-check"><a href="/dwes/es/docs/03_hugo/5_estilo_plantilla/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo5_estilo_plantilla"><i class="fas fa-tools"></i><span class="">Personalizar la plantilla</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo6_multilenguajes-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo6_multilenguajes-check"/>
+  <label for="m-dwesesdocs03_hugo6_multilenguajes-check"><a href="/dwes/es/docs/03_hugo/6_multilenguajes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo6_multilenguajes"><i class="fas fa-globe"></i><span class="">Multilenguaje</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs03_hugo7_plantillas-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo7_plantillas-check"/>
+  <label for="m-dwesesdocs03_hugo7_plantillas-check"><a href="/dwes/es/docs/03_hugo/7_plantillas/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs03_hugo7_plantillas"><i class="fab fa-html5"></i><span class="">Plantillas </span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo7_plantillasdatos-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo7_plantillasdatos-check"/>
+  <label for="m-dwesesdocs03_hugo7_plantillasdatos-check"><a href="/dwes/es/docs/03_hugo/7_plantillas/datos/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo7_plantillasdatos"><i class="fas fa-file-alt"></i><span class="">Datos externos</span></a></label>
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs04_php-li">
+  <input type="checkbox" id="m-dwesesdocs04_php-check"/>
+  <label for="m-dwesesdocs04_php-check"><a href="/dwes/es/docs/04_php/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php"><i class="fa-brands fa-php_"></i><span class="">PHP </span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php01_introduccion-li">
+  <input type="checkbox" id="m-dwesesdocs04_php01_introduccion-check"/>
+  <label for="m-dwesesdocs04_php01_introduccion-check"><a href="/dwes/es/docs/04_php/01_introduccion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php01_introduccion"><i class="fas fa-book"></i><span class="">Introducción</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php02_instalacion-li">
+  <input type="checkbox" id="m-dwesesdocs04_php02_instalacion-check"/>
+  <label for="m-dwesesdocs04_php02_instalacion-check"><a href="/dwes/es/docs/04_php/02_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php02_instalacion"><i class="fas fa-download"></i><span class="">Instalación</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php03_empezando-li">
+  <input type="checkbox" id="m-dwesesdocs04_php03_empezando-check"/>
+  <label for="m-dwesesdocs04_php03_empezando-check"><a href="/dwes/es/docs/04_php/03_empezando/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php03_empezando"><i class="fas fa-play"></i><span class="">Empezando</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php04_escribiendo-li">
+  <input type="checkbox" id="m-dwesesdocs04_php04_escribiendo-check"/>
+  <label for="m-dwesesdocs04_php04_escribiendo-check"><a href="/dwes/es/docs/04_php/04_escribiendo/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php04_escribiendo"><i class="fas fa-keyboard"></i><span class="">Escribiendo</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php05_declaraciones-li">
+  <input type="checkbox" id="m-dwesesdocs04_php05_declaraciones-check"/>
+  <label for="m-dwesesdocs04_php05_declaraciones-check"><a href="/dwes/es/docs/04_php/05_declaraciones/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php05_declaraciones"><i class="fas fa-file-alt"></i><span class="">Declaraciones</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php06_control-li">
+  <input type="checkbox" id="m-dwesesdocs04_php06_control-check"/>
+  <label for="m-dwesesdocs04_php06_control-check"><a href="/dwes/es/docs/04_php/06_control/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php06_control"><i class="fas fa-cogs"></i><span class="">Control</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php07_expresiones-li">
+  <input type="checkbox" id="m-dwesesdocs04_php07_expresiones-check"/>
+  <label for="m-dwesesdocs04_php07_expresiones-check"><a href="/dwes/es/docs/04_php/07_expresiones/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php07_expresiones"><i class="fas fa-code"></i><span class="">Expresiones</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php08_mas_detalles_php-li">
+  <input type="checkbox" id="m-dwesesdocs04_php08_mas_detalles_php-check"/>
+  <label for="m-dwesesdocs04_php08_mas_detalles_php-check"><a href="/dwes/es/docs/04_php/08_mas_detalles_php/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php08_mas_detalles_php"><i class="fas fa-clipboard-list"></i><span class="">Fundamentos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php09_funciones_propias-li">
+  <input type="checkbox" id="m-dwesesdocs04_php09_funciones_propias-check"/>
+  <label for="m-dwesesdocs04_php09_funciones_propias-check"><a href="/dwes/es/docs/04_php/09_funciones_propias/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php09_funciones_propias"><i class="fas fa-cogs"></i><span class="">Func. integradas</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php10_funciones-li">
+  <input type="checkbox" id="m-dwesesdocs04_php10_funciones-check"/>
+  <label for="m-dwesesdocs04_php10_funciones-check"><a href="/dwes/es/docs/04_php/10_funciones/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php10_funciones"><i class="fas fa-list-ul"></i><span class="">Fuciones</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php11_formularios-li">
+  <input type="checkbox" id="m-dwesesdocs04_php11_formularios-check"/>
+  <label for="m-dwesesdocs04_php11_formularios-check"><a href="/dwes/es/docs/04_php/11_formularios/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php11_formularios"><i class="fa-brands fa-wpforms"></i><span class="">Formularios</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs04_php12_arrays-li">
+  <input type="checkbox" id="m-dwesesdocs04_php12_arrays-check"/>
+  <label for="m-dwesesdocs04_php12_arrays-check"><a href="/dwes/es/docs/04_php/12_arrays/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php12_arrays"><i class="fas fa-th-large"></i><span class="">Arrays</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php12_arraysejercicios-li">
+  <input type="checkbox" id="m-dwesesdocs04_php12_arraysejercicios-check"/>
+  <label for="m-dwesesdocs04_php12_arraysejercicios-check"><a href="/dwes/es/docs/04_php/12_arrays/ejercicios/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs04_php12_arraysejercicios"><i class="fas fa-layer-group"></i><span class="">Ejercicios </span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs04_php13_objetos-li">
+  <input type="checkbox" id="m-dwesesdocs04_php13_objetos-check"/>
+  <label for="m-dwesesdocs04_php13_objetos-check"><a href="/dwes/es/docs/04_php/13_objetos/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php13_objetos"><i class="fas fa-cube"></i><span class="">Objetos</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php13_objetos0_bc3a1sico-li">
+  <input type="checkbox" id="m-dwesesdocs04_php13_objetos0_bc3a1sico-check"/>
+  <label for="m-dwesesdocs04_php13_objetos0_bc3a1sico-check"><a href="/dwes/es/docs/04_php/13_objetos/0_b%C3%A1sico/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs04_php13_objetos0_bc3a1sico"><i class="fas fa-object-group"></i><span class="">OOP en PHP</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php13_objetos1_sintaxis-li">
+  <input type="checkbox" id="m-dwesesdocs04_php13_objetos1_sintaxis-check"/>
+  <label for="m-dwesesdocs04_php13_objetos1_sintaxis-check"><a href="/dwes/es/docs/04_php/13_objetos/1_sintaxis/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs04_php13_objetos1_sintaxis"><i class="fas fa-lightbulb"></i><span class="">Sintaxis</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php13_objetos2_herencia-li">
+  <input type="checkbox" id="m-dwesesdocs04_php13_objetos2_herencia-check"/>
+  <label for="m-dwesesdocs04_php13_objetos2_herencia-check"><a href="/dwes/es/docs/04_php/13_objetos/2_herencia/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs04_php13_objetos2_herencia"><i class="fas fa-code-branch"></i><span class="">Herencia</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php13_objetos4_estatico-li">
+  <input type="checkbox" id="m-dwesesdocs04_php13_objetos4_estatico-check"/>
+  <label for="m-dwesesdocs04_php13_objetos4_estatico-check"><a href="/dwes/es/docs/04_php/13_objetos/4_estatico/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs04_php13_objetos4_estatico"><i class="fas fa-layer-group"></i><span class="">Sobrecarga</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php13_objetos3_sobrecarga-li">
+  <input type="checkbox" id="m-dwesesdocs04_php13_objetos3_sobrecarga-check"/>
+  <label for="m-dwesesdocs04_php13_objetos3_sobrecarga-check"><a href="/dwes/es/docs/04_php/13_objetos/3_sobrecarga/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs04_php13_objetos3_sobrecarga"><i class="fas fa-anchor"></i><span class="">Elementos estáticos</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs04_php15_peristencia-li">
+  <input type="checkbox" id="m-dwesesdocs04_php15_peristencia-check"/>
+  <label for="m-dwesesdocs04_php15_peristencia-check"><a href="/dwes/es/docs/04_php/15_peristencia/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php15_peristencia"><i class="fas fa-hdd"></i><span class="">Persistencia</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php15_peristencia1_cookies-li">
+  <input type="checkbox" id="m-dwesesdocs04_php15_peristencia1_cookies-check"/>
+  <label for="m-dwesesdocs04_php15_peristencia1_cookies-check"><a href="/dwes/es/docs/04_php/15_peristencia/1_cookies/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs04_php15_peristencia1_cookies"><i class="fas fa-cookie"></i><span class="">Cookies</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php15_peristencia2_sesiones-li">
+  <input type="checkbox" id="m-dwesesdocs04_php15_peristencia2_sesiones-check"/>
+  <label for="m-dwesesdocs04_php15_peristencia2_sesiones-check"><a href="/dwes/es/docs/04_php/15_peristencia/2_sesiones/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs04_php15_peristencia2_sesiones"><i class="fas fa-user-clock"></i><span class="">Sesiones</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs04_php16_basesdatos-li">
+  <input type="checkbox" id="m-dwesesdocs04_php16_basesdatos-check"/>
+  <label for="m-dwesesdocs04_php16_basesdatos-check"><a href="/dwes/es/docs/04_php/16_basesdatos/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php16_basesdatos"><i class="fa fa-database"></i><span class="">Bases de datos en php</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php16_basesdatos01_repaso-li">
+  <input type="checkbox" id="m-dwesesdocs04_php16_basesdatos01_repaso-check"/>
+  <label for="m-dwesesdocs04_php16_basesdatos01_repaso-check"><a href="/dwes/es/docs/04_php/16_basesdatos/01_repaso/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php16_basesdatos01_repaso"><i class="fa fa-database"></i><span class="">Bases de datos en php</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php16_basesdatos02_sql-li">
+  <input type="checkbox" id="m-dwesesdocs04_php16_basesdatos02_sql-check"/>
+  <label for="m-dwesesdocs04_php16_basesdatos02_sql-check"><a href="/dwes/es/docs/04_php/16_basesdatos/02_sql/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php16_basesdatos02_sql"><i class="fas fa-table"></i><span class="">SQL</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php16_basesdatos03_mysql-li">
+  <input type="checkbox" id="m-dwesesdocs04_php16_basesdatos03_mysql-check"/>
+  <label for="m-dwesesdocs04_php16_basesdatos03_mysql-check"><a href="/dwes/es/docs/04_php/16_basesdatos/03_mysql/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php16_basesdatos03_mysql"><i class="fas fa-code"></i><span class="">Mysql</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php16_basesdatos04_mysqli-li">
+  <input type="checkbox" id="m-dwesesdocs04_php16_basesdatos04_mysqli-check"/>
+  <label for="m-dwesesdocs04_php16_basesdatos04_mysqli-check"><a href="/dwes/es/docs/04_php/16_basesdatos/04_mysqli/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php16_basesdatos04_mysqli"><i class="fas fa-server"></i><span class="">PHP: Mysqli</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php16_basesdatos05_pdo-li">
+  <input type="checkbox" id="m-dwesesdocs04_php16_basesdatos05_pdo-check"/>
+  <label for="m-dwesesdocs04_php16_basesdatos05_pdo-check"><a href="/dwes/es/docs/04_php/16_basesdatos/05_pdo/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php16_basesdatos05_pdo"><i class="fas fa-project-diagram"></i><span class="">PHP: PDO</span></a></label>
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocsprueba-li">
+  <input type="checkbox" id="m-dwesesdocsprueba-check"/>
+  <label for="m-dwesesdocsprueba-check"><a href="/dwes/es/docs/prueba/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocsprueba"><span class=""></span></a></label>
+  
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+<a id="print" href="/dwes/es/_print/docs/02_docker/1_docker/02_contenedores_imagenes/"><i class="fa-solid fa-print fa-fw"></i> Imprimir la sección entera</a>
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#contenedores-e-imágnes">Contenedores e imágnes</a>
+      <ul>
+        <li><a href="#la-imagen">La imagen</a></li>
+        <li><a href="#el-contenedor">El contenedor</a></li>
+        <li><a href="#contenedor-e-imagen">Contenedor e imagen</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/dwes/es/docs/">Docs</a></li>
+  <li class="breadcrumb-item">
+    <a href="/dwes/es/docs/02_docker/">Dócker</a></li>
+  <li class="breadcrumb-item">
+    <a href="/dwes/es/docs/02_docker/1_docker/">Docker</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    Entornos</li>
+  </ol>
+</nav>
+<div class="td-content">
+	<h1>Contenedores e imágenes</h1>
+  
+	<header class="article-meta">
+		
+</header>
+	<h2 id="contenedores-e-imágnes">Contenedores e imágnes</h2>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
+<img class="card-img-top" src="/dwes/es/docs/02_docker/1_docker/02_contenedores_imagenes/Contenedor_vs_img_hu_734b1215c17a38f4.png" width="600" height="350">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<h3 id="la-imagen">La imagen</h3>
+<blockquote>
+<p><strong>
+<span class="font-weight-bold text-primary">
+
+
+    La imagen
+
+</span>
+ es un fichero que contiene todo el conjunto de librerías, dependencias y configuraciones necesarias para ejecutar un entorno aislado, con servicios y procesos, junto con su propia IP, y que servirá como base para crear uno o varios contenedores.</strong></p></blockquote>
+<hr style="border-color: red; border-width: 3px;"/>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 621px">
+<img class="card-img-top" src="/dwes/es/docs/02_docker/1_docker/02_contenedores_imagenes/Imagen_hu_8230d263c40b74f7.png" width="611" height="812">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<p>
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Notas</h4>
+
+    No se emula hardware, sino únicamente servicios y software (como el sistema de archivos, el sistema operativo y los servicios). Por lo tanto, un contenedor no es una máquina virtual, aunque tenga su propia IP. Sin embargo, puede considerarse como un dispositivo o nodo independiente dentro de la red.
+
+</div>
+
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Notas</h4>
+
+    Para tener una idea general, podríamos compararlo con una ISO de instalación de un sistema operativo. Sin embargo, la imagen Docker no instala un sistema operativo completo, sino que contiene únicamente lo necesario para ejecutar aplicaciones en un entorno aislado.
+
+</div>
+</p>
+<h3 id="el-contenedor">El contenedor</h3>
+<blockquote>
+<p>El contenedor es una capa de lectura y escritura que se añade a una imagen, permitiendo interactuar con ella y ponerla en ejecución.
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
+<img class="card-img-top" src="/dwes/es/docs/02_docker/1_docker/02_contenedores_imagenes/container_hu_97b66a8d0e63f16a.jpg" width="800" height="600">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+Imagen obtenida de https://iesgn.github.io/curso_docker_2021/sesion2/organizacion.html
+
+</p>
+</figcaption>
+</figure>
+
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Notas</h4>
+
+    El contenedor se crea a partir de una imagen y siempre dependerá de ella. Esto significa que no podremos eliminar la imagen mientras exista un contenedor asociado a ella.
+
+</div>
+</p></blockquote>
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Notas</h4>
+
+    El contenedor almacena los cambios realizados sobre la imagen, funcionando como pequeños incrementos sobre un archivo base. Este enfoque lo convierte en un sistema muy robusto, ágil y ligero.
+
+</div>
+
+<h3 id="contenedor-e-imagen">Contenedor e imagen</h3>
+
+
+<div class="pageinfo pageinfo-primary">
+<h4></h4>
+<p><strong>La unión hace la fuerza</strong></p>
+<p>El funcionamiento de Docker se basa en crear un contenedor a partir de una imagen, por lo que los conceptos de imagen y contenedor están intrínsecamente relacionados (no se pueden usar de manera individual).</p>
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Nota</h4>
+<pre><code>Todo contenedor siempre dependerá de una única imagen.
+</code></pre>
+</div>
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">Nota</h4>
+<pre><code>Una imagen puede ser la base de uno o muchos contenedores.
+</code></pre>
+<p>Cada contenedor es un sistema independiente de los demás, con su propia IP y un entorno completamente aislado.</p>
+</div>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
+<img class="card-img-top" src="/dwes/es/docs/02_docker/1_docker/02_contenedores_imagenes/join_img_container_hu_b15ee302ffa6e676.png" width="800" height="200">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+</p>
+</figcaption>
+</figure>
+
+</div>
+
+
+	<div class="section-index">
+    
+    
+    </div>
+</div>
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2025
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script src="/dwes/js/main.js"></script>
+<script defer src="/dwes/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/dwes/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

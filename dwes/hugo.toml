@@ -1,0 +1,200 @@
+#baseURL = 'http://proyectosdwa.es/manuel'
+baseURL = 'http://web.infenlaces.com/dwes/'
+#baseURL = 'http://web.infenlaces.com/servidor/'
+
+#baseURL = 'http://localhost:1313/'
+
+#theme= 'docsy'
+
+
+#Language settings   content dir
+# contentDir = "content/es/docs"
+languageCode = 'es-es'
+defaultContentLanguage = "es"
+defaultContentLanguageInSubdir = true
+
+title = 'Recursos de apoyo al aprendizaje'
+
+
+
+# Para poder cargar emogin https://www.webfx.com/tools/emoji-cheat-sheet/
+enableEmoji = true
+
+
+
+
+
+# Enable syntax highlighting and copy buttons on code blocks with Prism
+prism_syntax_highlighting = true
+#
+## Highlighting config
+#pygmentsCodeFences = true
+#pygmentsUseClasses = false
+## Use the new Chroma Go highlighter in Hugo.
+#pygmentsUseClassic = false
+##pygmentsOptions = "linenos=table"
+## See https://help.farbox.com/pygments.html
+ShowCodeCopyButtons = true
+pygmentsStyle = "perldoc"
+[services]
+[services.googleAnalytics]
+googleAnalytics="G-R9HY931NLD"
+
+
+#
+#[markup]
+#[markup.highlight]
+#anchorLineNos = false
+#codeFences = true
+#guessSyntax = false
+#hl_Lines = ''
+#lineAnchors = ''
+#lineNoStart = 1
+#lineNos = false
+#lineNumbersInTable = true
+#noClasses = true
+#noHl = false
+#style = 'tango'
+#tabWidth = 4
+
+
+
+
+
+[parameter.ui]
+    showLightDarkModeMenu = true
+
+
+[languages.en]
+title = "Docsy"
+languageName = "English"
+contentDir = "content/en"
+
+[languages.es]
+title = "Desarrollo Web"
+languageName = "Español"
+contentDir = "content/es"
+
+[languages.fr]
+title = "Docsy"
+languageName = "Francés"
+contentDir = "content/fr"
+
+[params.ui]
+sidebar_menu_compact = true
+ul_show = 1
+sidebar_menu_foldable = true
+[menu]
+  [[menu.main]]
+    identifier = "docker"
+    name = "Docker"
+    url = "/docs/02_docker/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "hugo"
+    name = "Hugo"
+    url = "/docs/03_hugo/"
+    weight = 20
+    
+[params]
+custom_css=['/css/icons.css','custom.css']
+copyright = "@MRomero"
+privacy_policy = "https://policies.google.com/privacy"
+logo="images/logo.png"
+
+
+
+[params.links]
+# # End user relevant links. These will show up on left side of footer and in the community page if you have one.
+[[params.links.user]]
+name = "Correo del usuario"
+url = "https://example.org/mail"
+icon = "fa fa-envelope"
+desc = "Discussion and help from your fellow users"
+# [[params.links.user]]
+# 	name ="Twitter"
+# 	url = "https://example.org/twitter"
+# 	icon = "fab fa-twitter"
+#         desc = "Follow us on Twitter to get the latest news!"
+# [[params.links.user]]
+# 	name = "Stack Overflow"
+# 	url = "https://example.org/stack"
+# 	icon = "fab fa-stack-overflow"
+#         desc = "Practical questions and curated answers"
+# # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
+[[params.links.user]]
+name = "GitHub"
+url = "https://github.com/MAlejandroR"
+icon = "fab fa-github"
+desc = "Development takes place here!"
+# [[params.links.developer]]
+# 	name = "Slack"
+# 	url = "https://example.org/slack"
+# 	icon = "fab fa-slack"
+#         desc = "Chat with other project developers"
+# [[params.links.developer]]
+# 	name = "Developer mailing list"
+# 	url = "https://example.org/mail"
+# 	icon = "fa fa-envelope"
+#         desc = "Discuss development issues around the project"
+
+# Google Custom Search Engine ID. Remove or comment out to disable search.
+gcs_engine_id = "e0a656d2baca94d5b"
+#busquedas
+# gcs_engine_id = "e0a656d2baca94"
+
+
+# Enable Algolia DocSearch
+algolia_docsearch = false
+
+ [module]
+#  uncomment line below for temporary local development of module
+# replacements = "github.com/google/docsy -> ../../docsy"
+   [module.hugoVersion]
+     extended = true
+     min = "0.75.0"
+   [[module.imports]]
+     path = "github.com/google/docsy"
+     disable = false
+   [[module.imports]]
+      path = "github.com/google/docsy/dependencies"
+     disable = false
+
+
+
+# Para crear gráficos direccionales
+[params.markmap]
+    enable = true
+
+#Parámetros para que trabaje mermaid
+ [params.mermaid]
+enable = true
+
+# Para rederizar el html en md, y dentro de shortcodes
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+     [markup.goldmark.extensions]
+            alert = true  # Activa el uso de alertas
+            definitionList = true
+                  footnote = true
+                  linkify = true
+                  strikethrough = true
+                  table = true
+                  taskList = true
+                  typographer = true
+                  subscript = true  # Activa subíndices
+                  superscript = true  # Activa superíndices
+
+# Con print sale el botón de imprimir la página.
+[outputs]
+section = [ "HTML", "RSS", "print" ]
+
+[[resources]]
+src = "**.{png,jpg,webp}"
+title = "Image #:counter"
+
+  [resources.params]
+  byline = "Photo: Riona MacNamara / CC-BY-CA"

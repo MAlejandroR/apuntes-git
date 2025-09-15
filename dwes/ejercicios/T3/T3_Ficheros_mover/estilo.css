@@ -1,0 +1,47 @@
+.resaltado{
+    color:darkred;
+    font-weight: bold;
+    font-size:1.4em;
+}
+fieldset {
+    width: 90%;
+    background: lemonchiffon;
+    margin: 75px;
+    margin-left: 50px;
+    padding: 10px;
+}
+fieldset.in {
+    width: 60%;
+    background: lemonchiffon;
+    margin-left: 50px;
+    padding: 5px;
+}
+
+legend {
+    color: mediumblue;
+    font-size: 1.6em;
+    background:burlywood;
+}
+textarea{
+    width: 60%;
+}
+
+input, label, select, option{
+    font-size: 1.2em;
+    background: cadetblues;
+    margin: 10px;
+}
+input[type=radio]{
+    margin:0px;
+    margin-left:50px;
+
+}
+h2{
+    color:darkblue;
+    font-size: 1.6em;
+    text-align: center;
+}
+li {
+    font-weight: bold;
+    font-style: oblique;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ficheros y directorios on Docsy</title>
+    <link>http://localhost:1313/dwes/fr/docs/02_docker/0_linux/01_comandos_gestion_ficheros/</link>
+    <description>Recent content in Ficheros y directorios on Docsy</description>
+    <generator>Hugo</generator>
+    <language>fr</language>
+    <atom:link href="http://localhost:1313/dwes/fr/docs/02_docker/0_linux/01_comandos_gestion_ficheros/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

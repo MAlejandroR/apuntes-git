@@ -1,0 +1,977 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/dwes/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=dwes/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/dwes/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/dwes/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/dwes/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/dwes/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-192x192.png" sizes="192x192">
+
+<title>Personalizar la plantilla | Desarrollo Web</title>
+<meta name="description" content="Cómo modificar y personalizar la plantilla o tema">
+
+<meta property="og:url" content="http://localhost:1313/dwes/es/docs/03_hugo/5_estilo_plantilla/">
+  <meta property="og:site_name" content="Desarrollo Web">
+  <meta property="og:title" content="Personalizar la plantilla">
+  <meta property="og:description" content="Cómo modificar y personalizar la plantilla o tema">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+    <meta property="article:published_time" content="2021-10-22T16:23:31+02:00">
+    <meta property="article:modified_time" content="2021-10-22T16:23:31+02:00">
+
+  <meta itemprop="name" content="Personalizar la plantilla">
+  <meta itemprop="description" content="Cómo modificar y personalizar la plantilla o tema">
+  <meta itemprop="datePublished" content="2021-10-22T16:23:31+02:00">
+  <meta itemprop="dateModified" content="2021-10-22T16:23:31+02:00">
+  <meta itemprop="wordCount" content="940">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Personalizar la plantilla">
+  <meta name="twitter:description" content="Cómo modificar y personalizar la plantilla o tema">
+
+
+<link href="/dwes/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-page">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/dwes/es/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/dwes/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Desarrollo Web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/es/dwes/docs/02_docker/"><span>Docker</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/es/dwes/docs/03_hugo/"><span>Hugo</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/dwes/es/docs/02_docker/1_docker/"><span>Docker</span></a>
+      </li>
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/dwes/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/dwes/en/">English</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <aside class="col-12 col-md-3 col-xl-2 td-sidebar d-print-none">
+            <div id="td-sidebar-menu" class="td-sidebar__inner">
+  <form class="td-sidebar__search d-flex align-items-center">
+    
+    <button class="btn btn-link td-sidebar__toggle d-md-none p-0 ms-3 fas fa-bars" type="button" data-bs-toggle="collapse" data-bs-target="#td-section-nav" aria-controls="td-section-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    </button>
+  </form>
+  <nav class="td-sidebar-nav collapse foldable-nav" id="td-section-nav">
+    <div class="td-sidebar-nav__section nav-item dropdown d-block d-lg-none">
+      <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/dwes/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/dwes/en/">English</a></li>
+    </ul>
+</div>
+    </div>
+    <ul class="td-sidebar-nav__section pe-md-3 ul-0">
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-dwesesdocs-li">
+  <a href="/dwes/es/docs/" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-dwesesdocs"><span class="">Docs</span></a>
+  <ul class="ul-1">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs01_web-li">
+  <input type="checkbox" id="m-dwesesdocs01_web-check"/>
+  <label for="m-dwesesdocs01_web-check"><a href="/dwes/es/docs/01_web/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs01_web"><i class="code-web_old"></i><span class="">La web_old y www</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs01_web01_conceptos_generales-li">
+  <input type="checkbox" id="m-dwesesdocs01_web01_conceptos_generales-check"/>
+  <label for="m-dwesesdocs01_web01_conceptos_generales-check"><a href="/dwes/es/docs/01_web/01_conceptos_generales/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs01_web01_conceptos_generales"><i class="fas fa-book"></i><span class="">Introducción</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs01_web02_conceptos_basicos-li">
+  <input type="checkbox" id="m-dwesesdocs01_web02_conceptos_basicos-check"/>
+  <label for="m-dwesesdocs01_web02_conceptos_basicos-check"><a href="/dwes/es/docs/01_web/02_conceptos_basicos/" title="Ideas básicas de redes" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs01_web02_conceptos_basicos"><i class="fa-solid fa-network-wired"></i><span class="">Redes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs01_web03_osi-li">
+  <input type="checkbox" id="m-dwesesdocs01_web03_osi-check"/>
+  <label for="m-dwesesdocs01_web03_osi-check"><a href="/dwes/es/docs/01_web/03_osi/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs01_web03_osi"><i class="fas fa-comments"></i><span class="">Modelo OSI</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs01_web04_internet-li">
+  <input type="checkbox" id="m-dwesesdocs01_web04_internet-check"/>
+  <label for="m-dwesesdocs01_web04_internet-check"><a href="/dwes/es/docs/01_web/04_internet/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs01_web04_internet"><i class="fas fa-globe"></i><span class="">Internet</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs01_web05_www-li">
+  <input type="checkbox" id="m-dwesesdocs01_web05_www-check"/>
+  <label for="m-dwesesdocs01_web05_www-check"><a href="/dwes/es/docs/01_web/05_www/" title="Instalaciones" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs01_web05_www"><i class="fa fa-layer-group"></i><span class="">Creando arquitectura</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs01_web06_instalaciones-li">
+  <input type="checkbox" id="m-dwesesdocs01_web06_instalaciones-check"/>
+  <label for="m-dwesesdocs01_web06_instalaciones-check"><a href="/dwes/es/docs/01_web/06_instalaciones/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs01_web06_instalaciones"><i class="fas fa-download"></i><span class="">Instalación</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs01_web06_instalacionesapache-li">
+  <input type="checkbox" id="m-dwesesdocs01_web06_instalacionesapache-check"/>
+  <label for="m-dwesesdocs01_web06_instalacionesapache-check"><a href="/dwes/es/docs/01_web/06_instalaciones/apache/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs01_web06_instalacionesapache"><i class="fas fa-feather"></i><span class="">Apache</span></a></label>
+  
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs01_web06_instalacionesapachepractica-li">
+  <input type="checkbox" id="m-dwesesdocs01_web06_instalacionesapachepractica-check"/>
+  <label for="m-dwesesdocs01_web06_instalacionesapachepractica-check"><a href="/dwes/es/docs/01_web/06_instalaciones/apache/practica/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs01_web06_instalacionesapachepractica"><i class="fas fa-chalkboard-teacher"></i><span class="">practicando</span></a></label>
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs02_docker-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker-check"/>
+  <label for="m-dwesesdocs02_docker-check"><a href="/dwes/es/docs/02_docker/" title="Documentación" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker"><i class="fa-solid fa-screwdriver-wrench"></i><span class="">Dócker</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs02_docker1_docker-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker1_docker-check"/>
+  <label for="m-dwesesdocs02_docker1_docker-check"><a href="/dwes/es/docs/02_docker/1_docker/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker1_docker"><i class="fa-brands fa-docker"></i><span class="">Docker</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs02_docker1_docker01_conceptos-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker1_docker01_conceptos-check"/>
+  <label for="m-dwesesdocs02_docker1_docker01_conceptos-check"><a href="/dwes/es/docs/02_docker/1_docker/01_conceptos/" title="Conceptos sobre docker" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker1_docker01_conceptos"><i class="fa-regular fa-lightbulb"></i><span class="">Conceptos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs02_docker1_docker02_contenedores_imagenes-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker1_docker02_contenedores_imagenes-check"/>
+  <label for="m-dwesesdocs02_docker1_docker02_contenedores_imagenes-check"><a href="/dwes/es/docs/02_docker/1_docker/02_contenedores_imagenes/" title="Contenedores e imágenes" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker1_docker02_contenedores_imagenes"><i class="fa-regular fa-box"></i><span class="">Entornos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs02_docker1_docker03_comandos_docker-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker1_docker03_comandos_docker-check"/>
+  <label for="m-dwesesdocs02_docker1_docker03_comandos_docker-check"><a href="/dwes/es/docs/02_docker/1_docker/03_comandos_docker/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker1_docker03_comandos_docker"><i class="fa-solid fa-terminal"></i><span class="">Docker Prácticas</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs02_docker1_docker04_ejercicios-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker1_docker04_ejercicios-check"/>
+  <label for="m-dwesesdocs02_docker1_docker04_ejercicios-check"><a href="/dwes/es/docs/02_docker/1_docker/04_ejercicios/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker1_docker04_ejercicios"><i class="fa-solid fa-list-check"></i><span class="">Ejercicios</span></a></label>
+  
+  <ul class="ul-4 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs02_docker1_docker04_ejercicios1_imagenes-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker1_docker04_ejercicios1_imagenes-check"/>
+  <label for="m-dwesesdocs02_docker1_docker04_ejercicios1_imagenes-check"><a href="/dwes/es/docs/02_docker/1_docker/04_ejercicios/1_imagenes/" title="Crea imágenes" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker1_docker04_ejercicios1_imagenes"><i class="fa-regular fa-file-image"></i><span class="">Imágenes</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs02_docker1_docker04_ejercicios2_contenedores-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker1_docker04_ejercicios2_contenedores-check"/>
+  <label for="m-dwesesdocs02_docker1_docker04_ejercicios2_contenedores-check"><a href="/dwes/es/docs/02_docker/1_docker/04_ejercicios/2_contenedores/" title="Crea Contenedores" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker1_docker04_ejercicios2_contenedores"><i class="fa-solid fa-box-open"></i><span class="">Contenedores</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs02_docker1_docker04_ejercicios3_contenedores_imagenes-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker1_docker04_ejercicios3_contenedores_imagenes-check"/>
+  <label for="m-dwesesdocs02_docker1_docker04_ejercicios3_contenedores_imagenes-check"><a href="/dwes/es/docs/02_docker/1_docker/04_ejercicios/3_contenedores_imagenes/" title="Contenedores" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker1_docker04_ejercicios3_contenedores_imagenes"><i class="fa-solid fa-trowel"></i><span class="">Container to images</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs02_docker1_docker05_resumen_instrucciones_docker_file-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker1_docker05_resumen_instrucciones_docker_file-check"/>
+  <label for="m-dwesesdocs02_docker1_docker05_resumen_instrucciones_docker_file-check"><a href="/dwes/es/docs/02_docker/1_docker/05_resumen_instrucciones_docker_file/" title="Gestión de archivos y directorios" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker1_docker05_resumen_instrucciones_docker_file"><i class="fa-regular fa-file-code"></i><span class="">Archivos y directorios</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs02_docker0_linux01_comandos_gestion_ficheros-li">
+  <input type="checkbox" id="m-dwesesdocs02_docker0_linux01_comandos_gestion_ficheros-check"/>
+  <label for="m-dwesesdocs02_docker0_linux01_comandos_gestion_ficheros-check"><a href="/dwes/es/docs/02_docker/0_linux/01_comandos_gestion_ficheros/" title="Ficheros y directorios" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs02_docker0_linux01_comandos_gestion_ficheros"><i class="fa-solid fa-terminal"></i><span class="">ficheros y directorios</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-dwesesdocs03_hugo-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo-check" checked/>
+  <label for="m-dwesesdocs03_hugo-check"><a href="/dwes/es/docs/03_hugo/" title="Crear Sitios Estáticos" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs03_hugo"><i class="icon-hugo"></i><span class="">Hugo (Web Static)</span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo1_instalacion-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo1_instalacion-check"/>
+  <label for="m-dwesesdocs03_hugo1_instalacion-check"><a href="/dwes/es/docs/03_hugo/1_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo1_instalacion"><i class="fas fa-cogs"></i><span class="">Instalación</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo2_temas-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo2_temas-check"/>
+  <label for="m-dwesesdocs03_hugo2_temas-check"><a href="/dwes/es/docs/03_hugo/2_temas/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo2_temas"><i class="fa-solid fa-palette"></i><span class="">Temas o layouts base</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs03_hugo3_contenido-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo3_contenido-check"/>
+  <label for="m-dwesesdocs03_hugo3_contenido-check"><a href="/dwes/es/docs/03_hugo/3_contenido/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs03_hugo3_contenido"><i class="fas fa-pencil-alt"></i><span class="">Contenido</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo3_contenido01_creacion-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo3_contenido01_creacion-check"/>
+  <label for="m-dwesesdocs03_hugo3_contenido01_creacion-check"><a href="/dwes/es/docs/03_hugo/3_contenido/01_creacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo3_contenido01_creacion"><i class="fas fa-file-alt"></i><span class="">Añadiendo</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo3_contenido02_taxonomias-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo3_contenido02_taxonomias-check"/>
+  <label for="m-dwesesdocs03_hugo3_contenido02_taxonomias-check"><a href="/dwes/es/docs/03_hugo/3_contenido/02_taxonomias/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo3_contenido02_taxonomias"><i class="fas fa-file-alt"></i><span class="">Añadiendo</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs03_hugo3_git-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo3_git-check"/>
+  <label for="m-dwesesdocs03_hugo3_git-check"><a href="/dwes/es/docs/03_hugo/3_git/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs03_hugo3_git"><i class="fab fa-git-alt"></i><span class="">Uso básico de git</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo3_gitdespliegue-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo3_gitdespliegue-check"/>
+  <label for="m-dwesesdocs03_hugo3_gitdespliegue-check"><a href="/dwes/es/docs/03_hugo/3_git/despliegue/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo3_gitdespliegue"><i class="fab fa-git-alt"></i><span class="">Despliegue en git</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo4_shortcode-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo4_shortcode-check"/>
+  <label for="m-dwesesdocs03_hugo4_shortcode-check"><a href="/dwes/es/docs/03_hugo/4_shortcode/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo4_shortcode"><i class="fas fa-code"></i><span class="">Shortcode</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-dwesesdocs03_hugo5_estilo_plantilla-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo5_estilo_plantilla-check" checked/>
+  <label for="m-dwesesdocs03_hugo5_estilo_plantilla-check"><a href="/dwes/es/docs/03_hugo/5_estilo_plantilla/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo5_estilo_plantilla"><i class="fas fa-tools"></i><span class="td-sidebar-nav-active-item">Personalizar la plantilla</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo6_multilenguajes-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo6_multilenguajes-check"/>
+  <label for="m-dwesesdocs03_hugo6_multilenguajes-check"><a href="/dwes/es/docs/03_hugo/6_multilenguajes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo6_multilenguajes"><i class="fas fa-globe"></i><span class="">Multilenguaje</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs03_hugo7_plantillas-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo7_plantillas-check"/>
+  <label for="m-dwesesdocs03_hugo7_plantillas-check"><a href="/dwes/es/docs/03_hugo/7_plantillas/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs03_hugo7_plantillas"><i class="fab fa-html5"></i><span class="">Plantillas </span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo7_plantillasdatos-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo7_plantillasdatos-check"/>
+  <label for="m-dwesesdocs03_hugo7_plantillasdatos-check"><a href="/dwes/es/docs/03_hugo/7_plantillas/datos/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo7_plantillasdatos"><i class="fas fa-file-alt"></i><span class="">Datos externos</span></a></label>
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs04_php-li">
+  <input type="checkbox" id="m-dwesesdocs04_php-check"/>
+  <label for="m-dwesesdocs04_php-check"><a href="/dwes/es/docs/04_php/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php"><i class="fa-brands fa-php_"></i><span class="">PHP </span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php01_introduccion-li">
+  <input type="checkbox" id="m-dwesesdocs04_php01_introduccion-check"/>
+  <label for="m-dwesesdocs04_php01_introduccion-check"><a href="/dwes/es/docs/04_php/01_introduccion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php01_introduccion"><i class="fas fa-book"></i><span class="">Introducción</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php02_instalacion-li">
+  <input type="checkbox" id="m-dwesesdocs04_php02_instalacion-check"/>
+  <label for="m-dwesesdocs04_php02_instalacion-check"><a href="/dwes/es/docs/04_php/02_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php02_instalacion"><i class="fas fa-download"></i><span class="">Instalación</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php03_empezando-li">
+  <input type="checkbox" id="m-dwesesdocs04_php03_empezando-check"/>
+  <label for="m-dwesesdocs04_php03_empezando-check"><a href="/dwes/es/docs/04_php/03_empezando/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php03_empezando"><i class="fas fa-play"></i><span class="">Empezando</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php04_escribiendo-li">
+  <input type="checkbox" id="m-dwesesdocs04_php04_escribiendo-check"/>
+  <label for="m-dwesesdocs04_php04_escribiendo-check"><a href="/dwes/es/docs/04_php/04_escribiendo/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php04_escribiendo"><i class="fas fa-keyboard"></i><span class="">Escribiendo</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php05_declaraciones-li">
+  <input type="checkbox" id="m-dwesesdocs04_php05_declaraciones-check"/>
+  <label for="m-dwesesdocs04_php05_declaraciones-check"><a href="/dwes/es/docs/04_php/05_declaraciones/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php05_declaraciones"><i class="fas fa-file-alt"></i><span class="">Declaraciones</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php06_control-li">
+  <input type="checkbox" id="m-dwesesdocs04_php06_control-check"/>
+  <label for="m-dwesesdocs04_php06_control-check"><a href="/dwes/es/docs/04_php/06_control/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php06_control"><i class="fas fa-cogs"></i><span class="">Control</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php07_expresiones-li">
+  <input type="checkbox" id="m-dwesesdocs04_php07_expresiones-check"/>
+  <label for="m-dwesesdocs04_php07_expresiones-check"><a href="/dwes/es/docs/04_php/07_expresiones/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php07_expresiones"><i class="fas fa-code"></i><span class="">Expresiones</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php08_mas_detalles_php-li">
+  <input type="checkbox" id="m-dwesesdocs04_php08_mas_detalles_php-check"/>
+  <label for="m-dwesesdocs04_php08_mas_detalles_php-check"><a href="/dwes/es/docs/04_php/08_mas_detalles_php/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php08_mas_detalles_php"><i class="fas fa-clipboard-list"></i><span class="">Fundamentos</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php09_funciones_propias-li">
+  <input type="checkbox" id="m-dwesesdocs04_php09_funciones_propias-check"/>
+  <label for="m-dwesesdocs04_php09_funciones_propias-check"><a href="/dwes/es/docs/04_php/09_funciones_propias/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php09_funciones_propias"><i class="fas fa-cogs"></i><span class="">Func. integradas</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php10_funciones-li">
+  <input type="checkbox" id="m-dwesesdocs04_php10_funciones-check"/>
+  <label for="m-dwesesdocs04_php10_funciones-check"><a href="/dwes/es/docs/04_php/10_funciones/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php10_funciones"><i class="fas fa-list-ul"></i><span class="">Fuciones</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php11_formularios-li">
+  <input type="checkbox" id="m-dwesesdocs04_php11_formularios-check"/>
+  <label for="m-dwesesdocs04_php11_formularios-check"><a href="/dwes/es/docs/04_php/11_formularios/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php11_formularios"><i class="fa-brands fa-wpforms"></i><span class="">Formularios</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs04_php12_arrays-li">
+  <input type="checkbox" id="m-dwesesdocs04_php12_arrays-check"/>
+  <label for="m-dwesesdocs04_php12_arrays-check"><a href="/dwes/es/docs/04_php/12_arrays/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php12_arrays"><i class="fas fa-th-large"></i><span class="">Arrays</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php12_arraysejercicios-li">
+  <input type="checkbox" id="m-dwesesdocs04_php12_arraysejercicios-check"/>
+  <label for="m-dwesesdocs04_php12_arraysejercicios-check"><a href="/dwes/es/docs/04_php/12_arrays/ejercicios/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs04_php12_arraysejercicios"><i class="fas fa-layer-group"></i><span class="">Ejercicios </span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs04_php13_objetos-li">
+  <input type="checkbox" id="m-dwesesdocs04_php13_objetos-check"/>
+  <label for="m-dwesesdocs04_php13_objetos-check"><a href="/dwes/es/docs/04_php/13_objetos/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php13_objetos"><i class="fas fa-cube"></i><span class="">Objetos</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php13_objetos0_bc3a1sico-li">
+  <input type="checkbox" id="m-dwesesdocs04_php13_objetos0_bc3a1sico-check"/>
+  <label for="m-dwesesdocs04_php13_objetos0_bc3a1sico-check"><a href="/dwes/es/docs/04_php/13_objetos/0_b%C3%A1sico/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs04_php13_objetos0_bc3a1sico"><i class="fas fa-object-group"></i><span class="">OOP en PHP</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php13_objetos1_sintaxis-li">
+  <input type="checkbox" id="m-dwesesdocs04_php13_objetos1_sintaxis-check"/>
+  <label for="m-dwesesdocs04_php13_objetos1_sintaxis-check"><a href="/dwes/es/docs/04_php/13_objetos/1_sintaxis/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs04_php13_objetos1_sintaxis"><i class="fas fa-lightbulb"></i><span class="">Sintaxis</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php13_objetos2_herencia-li">
+  <input type="checkbox" id="m-dwesesdocs04_php13_objetos2_herencia-check"/>
+  <label for="m-dwesesdocs04_php13_objetos2_herencia-check"><a href="/dwes/es/docs/04_php/13_objetos/2_herencia/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs04_php13_objetos2_herencia"><i class="fas fa-code-branch"></i><span class="">Herencia</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php13_objetos4_estatico-li">
+  <input type="checkbox" id="m-dwesesdocs04_php13_objetos4_estatico-check"/>
+  <label for="m-dwesesdocs04_php13_objetos4_estatico-check"><a href="/dwes/es/docs/04_php/13_objetos/4_estatico/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs04_php13_objetos4_estatico"><i class="fas fa-layer-group"></i><span class="">Sobrecarga</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php13_objetos3_sobrecarga-li">
+  <input type="checkbox" id="m-dwesesdocs04_php13_objetos3_sobrecarga-check"/>
+  <label for="m-dwesesdocs04_php13_objetos3_sobrecarga-check"><a href="/dwes/es/docs/04_php/13_objetos/3_sobrecarga/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs04_php13_objetos3_sobrecarga"><i class="fas fa-anchor"></i><span class="">Elementos estáticos</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs04_php15_peristencia-li">
+  <input type="checkbox" id="m-dwesesdocs04_php15_peristencia-check"/>
+  <label for="m-dwesesdocs04_php15_peristencia-check"><a href="/dwes/es/docs/04_php/15_peristencia/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php15_peristencia"><i class="fas fa-hdd"></i><span class="">Persistencia</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php15_peristencia1_cookies-li">
+  <input type="checkbox" id="m-dwesesdocs04_php15_peristencia1_cookies-check"/>
+  <label for="m-dwesesdocs04_php15_peristencia1_cookies-check"><a href="/dwes/es/docs/04_php/15_peristencia/1_cookies/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs04_php15_peristencia1_cookies"><i class="fas fa-cookie"></i><span class="">Cookies</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php15_peristencia2_sesiones-li">
+  <input type="checkbox" id="m-dwesesdocs04_php15_peristencia2_sesiones-check"/>
+  <label for="m-dwesesdocs04_php15_peristencia2_sesiones-check"><a href="/dwes/es/docs/04_php/15_peristencia/2_sesiones/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs04_php15_peristencia2_sesiones"><i class="fas fa-user-clock"></i><span class="">Sesiones</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs04_php16_basesdatos-li">
+  <input type="checkbox" id="m-dwesesdocs04_php16_basesdatos-check"/>
+  <label for="m-dwesesdocs04_php16_basesdatos-check"><a href="/dwes/es/docs/04_php/16_basesdatos/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php16_basesdatos"><i class="fa fa-database"></i><span class="">Bases de datos en php</span></a></label>
+  
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php16_basesdatos01_repaso-li">
+  <input type="checkbox" id="m-dwesesdocs04_php16_basesdatos01_repaso-check"/>
+  <label for="m-dwesesdocs04_php16_basesdatos01_repaso-check"><a href="/dwes/es/docs/04_php/16_basesdatos/01_repaso/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php16_basesdatos01_repaso"><i class="fa fa-database"></i><span class="">Bases de datos en php</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php16_basesdatos02_sql-li">
+  <input type="checkbox" id="m-dwesesdocs04_php16_basesdatos02_sql-check"/>
+  <label for="m-dwesesdocs04_php16_basesdatos02_sql-check"><a href="/dwes/es/docs/04_php/16_basesdatos/02_sql/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php16_basesdatos02_sql"><i class="fas fa-table"></i><span class="">SQL</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php16_basesdatos03_mysql-li">
+  <input type="checkbox" id="m-dwesesdocs04_php16_basesdatos03_mysql-check"/>
+  <label for="m-dwesesdocs04_php16_basesdatos03_mysql-check"><a href="/dwes/es/docs/04_php/16_basesdatos/03_mysql/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php16_basesdatos03_mysql"><i class="fas fa-code"></i><span class="">Mysql</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php16_basesdatos04_mysqli-li">
+  <input type="checkbox" id="m-dwesesdocs04_php16_basesdatos04_mysqli-check"/>
+  <label for="m-dwesesdocs04_php16_basesdatos04_mysqli-check"><a href="/dwes/es/docs/04_php/16_basesdatos/04_mysqli/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php16_basesdatos04_mysqli"><i class="fas fa-server"></i><span class="">PHP: Mysqli</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs04_php16_basesdatos05_pdo-li">
+  <input type="checkbox" id="m-dwesesdocs04_php16_basesdatos05_pdo-check"/>
+  <label for="m-dwesesdocs04_php16_basesdatos05_pdo-check"><a href="/dwes/es/docs/04_php/16_basesdatos/05_pdo/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs04_php16_basesdatos05_pdo"><i class="fas fa-project-diagram"></i><span class="">PHP: PDO</span></a></label>
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocsprueba-li">
+  <input type="checkbox" id="m-dwesesdocsprueba-check"/>
+  <label for="m-dwesesdocsprueba-check"><a href="/dwes/es/docs/prueba/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocsprueba"><span class=""></span></a></label>
+  
+</li>
+  </ul>
+</li>
+    </ul>
+  </nav>
+</div>
+
+          </aside>
+          <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
+            <div class="td-page-meta ms-2 pb-1 pt-2 mb-0">
+<a id="print" href="/dwes/es/_print/docs/03_hugo/"><i class="fa-solid fa-print fa-fw"></i> Imprimir la sección entera</a>
+
+</div>
+
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#qué-partes-hay-en-la-plantilla">Qué partes hay en la plantilla</a>
+      <ul>
+        <li><a href="#logo">Logo</a></li>
+        <li><a href="#menú">Menú</a></li>
+        <li><a href="#estilo">Estilo</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#footer">footer</a></li>
+        <li><a href="#práctica">Práctica</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    
+            
+
+          </aside>
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+  
+
+            <nav aria-label="breadcrumb" class="td-breadcrumbs">
+  <ol class="breadcrumb">
+  <li class="breadcrumb-item">
+    <a href="/dwes/es/docs/">Docs</a></li>
+  <li class="breadcrumb-item">
+    <a href="/dwes/es/docs/03_hugo/">Hugo (Web Static)</a></li>
+  <li class="breadcrumb-item active" aria-current="page">
+    Personalizar la plantilla</li>
+  </ol>
+</nav>
+<div class="td-content">
+	<h1>Personalizar la plantilla</h1>
+	<div class="lead">Cómo modificar y personalizar la plantilla o tema</div>
+	<header class="article-meta">
+		
+</header>
+	
+
+<div class="pageinfo pageinfo-primary">
+<p>&#x2705;
+<strong>Objetivos</strong></p>
+<ul>
+<li>Vamos a modificar la plantilla utilizada</li>
+<li>Siempre se podrá hacer, pero en cada plantilla de una forma</li>
+<li>Acceder siempre a la información de la plantilla</li>
+<li>Modificar el logo, menú, etc</li>
+</ul>
+<hr>
+<p><strong>Páginas referenciadas</strong></p>
+<ul>
+<li>En este caso referenciamos el tema <a href="https://mcshelby.github.io/hugo-theme-relearn/basics/customization/"><strong>relearn</strong></a></li>
+</ul>
+
+</div>
+
+<h2 id="qué-partes-hay-en-la-plantilla">Qué partes hay en la plantilla</h2>
+<p>Debemos identificar las partes de una plantilla. Independientemente de la plantilla utilizada podemos hablar de:</p>
+<ol>
+<li>Logo</li>
+<li>Colores usados en el estilo</li>
+<li>Menú principal
+Identifiquemos esos elementos en nuestra plantilla y veamos cómo modificarlos para personalizarla a nuestro gusto.</li>
+</ol>
+<p>En la imagen siguiente hemos identificado diferentes partes en la plantilla que vemos tras instalarla, sin ninguna modificación.</p>
+<p><strong>Partes de la plantilla</strong></p>
+<hr>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
+<img class="card-img-top" src="/dwes/es/docs/03_hugo/5_estilo_plantilla/partes_plantilla_estilo_hu_3fdeab52d321e199.png" width="800" height="351">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<hr>
+<h3 id="logo">Logo</h3>
+<p>En esta plantilla, <strong>relearn</strong>,  el logo se carga a patir de un <strong>partial</strong>.
+La carpeta 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    partial
+
+
+</span>
+</strong>
+
+, va a contener ficheros html que serán parte una  página html, de forma que los podré invocar cuando los necesite. Por ejemplo un <strong>footer.html</strong> o un <strong>header.html</strong></p>
+<p><strong>Fichero logo.html del partial en relearn</strong>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 229px">
+<img class="card-img-top" src="/dwes/es/docs/03_hugo/5_estilo_plantilla/partial_logo_hu_c6da7d3f65399d1d.png" width="219" height="139">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+<p>En este caso la ubicación es 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    themes/layoout/partial/logo.html
+
+
+</span>
+</strong>
+</p>
+<p>Ahora lo que hay que hacer es copiar el fichero en el directorio layout y modificar incluyendo el logo que queremos que tenga, que irá ubicado en la carpeta 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    static/images
+
+
+</span>
+</strong>
+</p>
+<p><strong>Ficheros para establecer nuestro logo</strong></p>
+<hr>
+<p><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 224px">
+<img class="card-img-top" src="/dwes/es/docs/03_hugo/5_estilo_plantilla/ficheros_logo_hu_6b55bdc757d0ab7a.png" width="214" height="191">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+Modificamos el fichero actualizando al logo que queramos. En este caso el logo se rederiza a partir de un elemento <em><strong>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    svg
+
+
+</span>
+</strong>
+</strong></em>.
+Copiamos nuestro logo en la carpeta static y lo especificamos en un elemento 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    img
+
+
+</span>
+</strong>
+</p>
+<p>Para ello hacemos un diseño de logo. <a href="https://www.logaster.com.es/logo/">(hay muchas web gratuitas para ello)</a></p>
+<p>Luego modificamos el fichero 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    logo.html
+
+
+</span>
+</strong>
+ y sustituimos el elemento 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    svg
+
+
+</span>
+</strong>
+ por un elemento 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    img
+
+
+</span>
+</strong>
+</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#228b22">&lt;!--Lo anterior no lo escribo ....--&gt;</span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;logo&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;{{ .Site.Params.landingPageURL | default &#34;</span><span style="color:#a61717;background-color:#e3d2d2">/&#34;</span> <span style="color:#a61717;background-color:#e3d2d2">|</span> <span style="color:#658b00">relLangURL</span> <span style="color:#a61717;background-color:#e3d2d2">}}&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#658b00">style</span>=<span style="color:#cd5555">&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555">              color: #3d414d;
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555">              font-family: &#39;Novacento Sans Wide&#39;, &#39;Helvetica&#39;, &#39;Tahoma&#39;, &#39;Geneva&#39;, &#39;Arial&#39;, sans-serif;
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555">              font-size: 30px;
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555">              font-weight: bold;
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555">              margin-top: -2px;
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555">            &#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#8b008b;font-weight:bold">img</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;/images/logo.png&#34;</span> <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;Logo del ciclo&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            Desarrollo Web
+</span></span><span style="display:flex;"><span>          &lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Y nos quedará la página con el logo actualizado
+</span></span></code></pre></div><p><strong>Sitio web con el logo actualizado</strong></p>
+<hr>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 531px">
+<img class="card-img-top" src="/dwes/es/docs/03_hugo/5_estilo_plantilla/sitio_web_logo_hu_7ea1d1860e556cce.png" width="521" height="423">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<h3 id="menú">Menú</h3>
+<p>El menú es una sección muy importante. En esta plantilla el menú va a estar ubicado en la parte izquierda de la plantilla.
+Para añadir/modificarlo, debemos especificarlo en el fichero 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    config.toml
+
+
+</span>
+</strong>
+, añádiendo los elementos 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    [[menu.shortcuts]]
+
+
+</span>
+</strong>
+, para cada item que queremos añadir.
+Por ejemplo, vamos a añadir 3 items</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[[menu.shortcuts]]
+</span></span><span style="display:flex;"><span>name=<span style="color:#cd5555">&#34;&lt;i class=&#39;fab fa-php&#39;&gt;&lt;/i&gt;   Lenguaje php&#34;</span>
+</span></span><span style="display:flex;"><span>identified=<span style="color:#cd5555">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>url=<span style="color:#cd5555">&#34;https://php.net&#34;</span>
+</span></span><span style="display:flex;"><span>weight=<span style="color:#b452cd">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[menu.shortcuts]]
+</span></span><span style="display:flex;"><span>name=<span style="color:#cd5555">&#34;&lt;i class=&#39;fab fa-wikipedia-w&#39;&gt;&lt;/i&gt;   Wiki del curso&#34;</span>
+</span></span><span style="display:flex;"><span>identified=<span style="color:#cd5555">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>url=<span style="color:#cd5555">&#34;https://es.wikieducator.org/Usuario:ManuelRomero/ProgramacionWeb/Contenido&#34;</span>
+</span></span><span style="display:flex;"><span>weight=<span style="color:#b452cd">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[menu.shortcuts]]
+</span></span><span style="display:flex;"><span>name=<span style="color:#cd5555">&#34;&lt;i class=&#39;far fa-question-circle&#39;&gt;&lt;/i&gt;   Ejercicios resueltos&#34;</span>
+</span></span><span style="display:flex;"><span>identified=<span style="color:#cd5555">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>url=<span style="color:#cd5555">&#34;http://manuel.infenlaces.com/dwes/ejercicios/&#34;</span>
+</span></span><span style="display:flex;"><span>weight=<span style="color:#b452cd">3</span>
+</span></span></code></pre></div><p>Y vemos cómo se genera el menú en la parte izquierda</p>
+<p><strong>Menú principal ubicado en la parte izquierda</strong></p>
+<hr>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 299px">
+<img class="card-img-top" src="/dwes/es/docs/03_hugo/5_estilo_plantilla/menu_izquierdo_hu_f6a2d1be3a3ecce6.png" width="289" height="133">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Observa insertar icono</h4>
+
+    Hugo integra los iconos <a href="https://fontawesome.com/v5.15/icons?d=gallery&amp;p=2&amp;m=free">fab awesome</a> que son free, utilízalos para tener mejor visualización de tu sitio
+
+</div>
+
+<p>El título del menú se coge del fichero de traducción ubicado en <strong>theme/relearn/i18n/xx.toml</strong>, donde xx es el idioma establecido.
+Posteriormente veremos el tema de traducción y abordaremos esta cuestión</p>
+<p>El parámetro que establece la traducción para este título de menú es el siguiente que estableceremos en <strong>/i18n/es.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>[Shortcuts-Title]
+</span></span><span style="display:flex;"><span>other = &#34;Más opciones&#34;
+</span></span></code></pre></div><p>Debemos también establecer el idioma por defecto en el fichero de configuración <strong>config.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>defaultContentLanguage=<span style="color:#cd5555">&#34;es&#34;</span>
+</span></span></code></pre></div><p><strong>Menú con título establecido</strong></p>
+<hr>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 311px">
+<img class="card-img-top" src="/dwes/es/docs/03_hugo/5_estilo_plantilla/menu_titulo_hu_53e04d265c195c03.png" width="301" height="471">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<h3 id="estilo">Estilo</h3>
+<p>Esta plantilla tiene hasta tres estilos de colores diferentes preparados. Para utilizarlos basta con establecer el valor correspondiente de la variable 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    themeVariant
+
+
+</span>
+</strong>
+ en el fichero de configuración 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    config.toml
+
+
+</span>
+</strong>
+. Los valores permitidos son 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    red, green, blue
+
+
+</span>
+</strong>
+</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[params]
+</span></span><span style="display:flex;"><span>  themeVariant = <span style="color:#cd5555">&#34;blue&#34;</span> or <span style="color:#cd5555">&#34;green&#34;</span> or <span style="color:#cd5555">&#34;red&#34;</span>
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Red</th>
+          <th>Blue</th>
+          <th>Green</th>
+          <th>Default</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>themeVariant = &ldquo;red&rdquo;</td>
+          <td>themeVariant = &ldquo;blue&rdquo;</td>
+          <td>themeVariant = &ldquo;green&rdquo;</td>
+          <td>themeVariant = &quot;&quot;</td>
+      </tr>
+      <tr>
+          <td><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 210px">
+<img class="card-img-top" src="/dwes/es/docs/03_hugo/5_estilo_plantilla/style_red_hu_708211a924930b7e.png" width="200" height="229">
+</figure>
+</td>
+          <td><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 210px">
+<img class="card-img-top" src="/dwes/es/docs/03_hugo/5_estilo_plantilla/style_blue_hu_b406a711f01b459a.png" width="200" height="283">
+</figure>
+</td>
+          <td><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 210px">
+<img class="card-img-top" src="/dwes/es/docs/03_hugo/5_estilo_plantilla/style_green_hu_8ad1ea10ef306597.png" width="200" height="237">
+</figure>
+</td>
+          <td><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 210px">
+<img class="card-img-top" src="/dwes/es/docs/03_hugo/5_estilo_plantilla/style_default_hu_1495e6766c7263ec.png" width="200" height="219">
+</figure>
+</td>
+      </tr>
+  </tbody>
+</table>
+<p><em><strong>Modificar los colores de fondo</strong></em>
+El color se carga, ya que en realidad lo que hacemos es establecer los <strong>css</strong> concretos según el nombre. Los podemos ver en la carpeta de <strong>relearn</strong> como muestra la figura siguiente</p>
+<p><strong>Ficheros con diferentes temas</strong></p>
+<hr>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 296px">
+<img class="card-img-top" src="/dwes/es/docs/03_hugo/5_estilo_plantilla/temas_hu_fd4c3e1d73ea29c1.png" width="286" height="200">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+ 
+ 
+</p>
+</figcaption>
+</figure>
+
+<p>Si copiamos el fichero en nuestra ubicación <strong>static/css/theme</strong>También podemos crear nuestros propios ficheros css y cargarlos en nuestro proyecto, o modificar los valores de variables establecidos en el fichero de estilo css. Para ilustrar esta modificiación, copiamos en nuestro directiro <strong>./static/css</strong> el fichero de variables css y modificamos el color de fondo donde se ubica el menú que estamos trabajando, colocando otro color.
+Vamos a copiar <strong>/themes/relearn/static/css/theme-relearn</strong>  en <strong>/static/css/theme-dwes.css</strong>
+Ahora modificamos alguna de las variables de este tema y en el fichero de configuración especificamos que usamos este tema</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[params]
+</span></span><span style="display:flex;"><span>  themeVariant = <span style="color:#cd5555">&#34;dwes&#34;</span>
+</span></span></code></pre></div><p>Por otro lado copiamos también el fichero <strong>theme.css</strong> por si queremos modificar algún elemento más.
+Tras modificar dos colores de fondo bg y el color de la letra del título queda así la página</p>
+<p>**Nuevo estilo de la página **</p>
+<hr>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 355px">
+<img class="card-img-top" src="/dwes/es/docs/03_hugo/5_estilo_plantilla/pagina_nuevo_estilo_hu_56a83aeb56ebcbe1.png" width="345" height="550">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+ 
+ 
+</p>
+</figcaption>
+</figure>
+
+<h3 id="search">Search</h3>
+<p>Para modificar este botón accedemos a nuestro nuevo theme-dwes.css y modificamos las variables que afectan a search, según nuestro gusto</p>
+<h3 id="home">Home</h3>
+<p>Para modificar el home, debemos hacerlo desde el fichero de configuración.
+En este caso, como tenemos configurado el idioma español, para el título del menú, debemos especificar estas variables dentro de una sección de lenguaje
+Los parámetros modificados son los siguientes</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[Languages]
+</span></span><span style="display:flex;"><span>[Languages.es]
+</span></span><span style="display:flex;"><span>landingPageURL = <span style="color:#cd5555">&#34;http://cpilosenlaces.com&#34;</span>
+</span></span><span style="display:flex;"><span>landingPageName = <span style="color:#cd5555">&#34;&lt;i class=&#39;fas fa-university&#39;&gt;&lt;/i&gt; CPI Los Enlaces&#34;</span>
+</span></span></code></pre></div><p>Si no hubiéramos configurado el idioma, no sería necesaria la sección</p>
+<p><strong>Estilo de la página con el home modificado</strong></p>
+<hr>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 321px">
+<img class="card-img-top" src="/dwes/es/docs/03_hugo/5_estilo_plantilla/pagina_home_modificado_hu_562d776e1e97956.png" width="311" height="542">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+ 
+ 
+</p>
+</figcaption>
+</figure>
+
+<h3 id="footer">footer</h3>
+<p>El footer es esta plantilla, corresponde a un partial, por lo que tendríamos que acceder a él, copiarlo en nuestro directorio  y modificarlo.
+El fichero  que muestra el footer en la parte del menú se llama 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    menu-footer.html
+
+
+</span>
+</strong>
+
+Una pequeña modificación y observamos la actualización en la página</p>
+<p><strong>Footer del  menú modificado</strong></p>
+<hr>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 289px">
+<img class="card-img-top" src="/dwes/es/docs/03_hugo/5_estilo_plantilla/actualizado_footer_menu_hu_356ebc5f118c6459.png" width="279" height="534">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+ 
+ 
+</p>
+</figcaption>
+</figure>
+
+<h3 id="práctica">Práctica</h3>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Ahora practica tú</h4>
+
+    <p>&#x1f603;
+<strong>Modifica la plantilla según se ha visto en este tema</strong></p>
+<ol>
+<li>
+<p>Cambia el logo.</p>
+</li>
+<li>
+<p>Establece otros colores según consideres.</p>
+</li>
+<li>
+<p>Añade un menú principal</p>
+<ul>
+<li>Que tenga 4 opciones al menos</li>
+<li>Establece icono de fan awesome</li>
+<li>Establece un título para ese menú</li>
+</ul>
+</li>
+<li>
+<p>Modifica el footer de la página.</p>
+</li>
+</ol>
+
+
+</div>
+
+
+	
+</div>
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2025
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script src="/dwes/js/main.js"></script>
+<script defer src="/dwes/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/dwes/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

@@ -1,0 +1,15 @@
+@import "icons";
+
+.sidebar .nav .nav-link {
+  font-size: 10px; /* Ajusta el tamaño según lo que necesites */
+}
+// Tamaño para el logo
+.navbar-brand img {
+  width: 120px; /* Cambia este valor para ajustar el ancho */
+  height: auto; /* Mantiene la proporción del logo */
+}
+.iframe-container {
+  zoom: 1.5; /* Aumenta el tamaño del contenido */
+  transform-origin: 0 0;
+  overflow: auto;
+  }

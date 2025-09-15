@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  mysql:
+    image: mysql
+    container_name: bd_mysql
+    environment:
+      # ALLOW_EMPTY_PASSWORD is recommended only for development.
+      - ALLOW_EMPTY_PASSWORD=yes
+      - MYSQL_USER=manuel
+      - MYSQL_PASSWORD=manuel
+      - MYSQL_DATABASE=dwes
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - 23306:3306
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - 8800:80
+    depends_on:
+      - mysql
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=mysql

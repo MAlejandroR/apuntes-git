@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="7657f29a-874c-4dcd-b919-d6b86902195a" name="hestia" url="http://infenlaces.com">
+        <fileTransfer rootFolder="/home/admin/web/web.infenlaces.com/public_html/" host="infenlaces.com" port="22022" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="c30d6755-b549-4e1c-95a9-43bf0cc86ad8" name="vesta" url="http://infenlaces.com">
+        <fileTransfer rootFolder="/web/manuel.infenlaces.com/public_html" host="infenlaces.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

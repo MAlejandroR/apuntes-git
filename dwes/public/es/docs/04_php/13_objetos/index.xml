@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Objetos on Desarrollo Web</title>
+    <link>http://localhost:1313/dwes/es/docs/04_php/13_objetos/</link>
+    <description>Recent content in Objetos on Desarrollo Web</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 15 Oct 2024 07:04:49 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/dwes/es/docs/04_php/13_objetos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OOP en PHP</title>
+      <link>http://localhost:1313/dwes/es/docs/04_php/13_objetos/0_b%C3%A1sico/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>http://localhost:1313/dwes/es/docs/04_php/13_objetos/0_b%C3%A1sico/</guid>
+      <description>&lt;h3 id=&#34;conceptos-de-oop-en-php&#34;&gt;Conceptos de OOP en PHP&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=4406&#34; width=&#34;100%&#34; height=&#34;3500&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Sintaxis</title>
+      <link>http://localhost:1313/dwes/es/docs/04_php/13_objetos/1_sintaxis/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>http://localhost:1313/dwes/es/docs/04_php/13_objetos/1_sintaxis/</guid>
+      <description>&lt;h3 id=&#34;sintaxis-de-oop-en-php&#34;&gt;Sintaxis de OOP en PHP&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=4405&#34; width=&#34;100%&#34; height=&#34;13500&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Herencia</title>
+      <link>http://localhost:1313/dwes/es/docs/04_php/13_objetos/2_herencia/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>http://localhost:1313/dwes/es/docs/04_php/13_objetos/2_herencia/</guid>
+      <description>&lt;h3 id=&#34;herencia-en-php&#34;&gt;Herencia en php&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=4437&#34; width=&#34;100%&#34; height=&#34;7500&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Sobrecarga</title>
+      <link>http://localhost:1313/dwes/es/docs/04_php/13_objetos/4_estatico/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>http://localhost:1313/dwes/es/docs/04_php/13_objetos/4_estatico/</guid>
+      <description>&lt;h3 id=&#34;herencia-en-php&#34;&gt;Herencia en php&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=4430&#34; width=&#34;100%&#34; height=&#34;6400&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Elementos estáticos</title>
+      <link>http://localhost:1313/dwes/es/docs/04_php/13_objetos/3_sobrecarga/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>http://localhost:1313/dwes/es/docs/04_php/13_objetos/3_sobrecarga/</guid>
+      <description>&lt;h3 id=&#34;elementos-estáticos&#34;&gt;Elementos estáticos&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=4741&#34; width=&#34;100%&#34; height=&#34;4700&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>

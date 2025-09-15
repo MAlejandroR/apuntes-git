@@ -1,0 +1,2889 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="fr" class="no-js">
+  <head><script src="/dwes/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=dwes/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" type="text/html" href="http://localhost:1313/dwes/fr/docs/03_hugo/hugo/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/dwes/fr/docs/03_hugo/hugo/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/dwes/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/dwes/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/dwes/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/dwes/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-192x192.png" sizes="192x192">
+
+<title>Crear Sitios Estáticos | Docsy</title>
+<meta name="description" content="Introducción a la creación de sitios estáticos con Hugo">
+
+<meta property="og:url" content="http://localhost:1313/dwes/fr/docs/03_hugo/hugo/">
+  <meta property="og:site_name" content="Docsy">
+  <meta property="og:title" content="Crear Sitios Estáticos">
+  <meta property="og:description" content="Introducción a la creación de sitios estáticos con Hugo">
+  <meta property="og:locale" content="fr">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Crear Sitios Estáticos">
+  <meta itemprop="description" content="Introducción a la creación de sitios estáticos con Hugo">
+  <meta itemprop="datePublished" content="2021-09-15T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2021-09-15T00:00:00+00:00">
+  <meta itemprop="wordCount" content="61">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Crear Sitios Estáticos">
+  <meta name="twitter:description" content="Introducción a la creación de sitios estáticos con Hugo">
+
+
+<link href="/dwes/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/dwes/fr/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/dwes/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Docsy</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/fr/dwes/docs/02_docker/"><span>Docker</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="/dwes/fr/docs/03_hugo/"><span>Documentación</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/fr/dwes/docs/03_hugo/"><span>Hugo</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/dwes/fr/docs/02_docker/1_docker/"><span>Docker</span></a>
+      </li>
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Francés</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/dwes/es/">Español</a></li>
+    <li><a class="dropdown-item" href="/dwes/en/">English</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+Version imprimable multipages.
+<a href="#" onclick="print();return false;">Cliquer ici pour imprimer</a>.
+</p><p>
+<a href="/dwes/fr/docs/03_hugo/hugo/">Retour à la version par défaut</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Crear Sitios Estáticos</h1>
+<div class="lead">Introducción a la creación de sitios estáticos con Hugo</div>
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1: <a href="#pg-20bff6fd356c9f40dbaf6a19161ccf0c">Instalación</a></li>
+
+
+    
+  
+    
+    
+	
+<li>2: <a href="#pg-f68b63db6e5135a41ebd48c638beea22">Temas o layouts base</a></li>
+
+
+    
+  
+    
+    
+	
+<li>3: <a href="#pg-6a669596d88a44027e03ae44fdf78b91">Contenido</a></li>
+
+
+    
+  
+    
+    
+	
+<li>4: <a href="#pg-65d881a39e301b4b681fccb6a72c8d46">Uso básico de git</a></li>
+
+
+    
+  
+    
+    
+	
+<li>5: <a href="#pg-7fb6525eb96583e2f0c9b97df76528fc">Shortcode</a></li>
+
+
+    
+  
+    
+    
+	
+<li>6: <a href="#pg-c1674da16141cb40f7a8e58dea7a846f">Personalizar la plantilla</a></li>
+
+
+    
+  
+    
+    
+	
+<li>7: <a href="#pg-c226a579dd535373e8c2ac0582c89d56">Multilenguaje</a></li>
+
+
+    
+  
+    
+    
+	
+<li>8: <a href="#pg-7d0e42348ba515fc3743ff8251ea9594">Plantillas </a></li>
+
+
+    
+  
+    
+    
+	
+<li>9: <a href="#pg-b37c86737fdaab482b008eb3ea4cce91">Plantillas </a></li>
+
+
+    
+  
+    
+    
+	
+<li>10: <a href="#pg-47906cf4a05152d02536dc91832a3ad1">Datos externos</a></li>
+
+
+    
+  
+    
+    
+	
+<li>11: <a href="#pg-455150853f313a9623a258c3512c5806">Otros Aspectos</a></li>
+
+
+    
+  
+
+    </ul>
+
+
+<div class="content">
+      <p>Todo esto, está hecho con el &#x2764;&#xfe0f; &#x1f604;</p>
+
+
+<div class="pageinfo pageinfo-primary">
+<ul>
+<li>Introducción a la generación de sitios web con HUGO</li>
+<li>Crear un sitio estático con hugo</li>
+<li>Instala, configura y agrega contenidos usando una plantilla.</li>
+</ul>
+
+</div>
+
+<h2 id="por-qué-un-generador-de-sitios-estáticos">¿Por qué un generador de sitios estáticos?</h2>
+<ul>
+<li>Rapidez</li>
+<li>Seguridad</li>
+<li>Eficiencia</li>
+<li>Consistencia de contenidos y formatos</li>
+</ul>
+<hr>
+<h1 id="listado-de-la-teoría">Listado de la teoría:</h1>
+
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>Listado de páginas de referenica</strong></p>
+<hr>
+<p><a href="https://cloudcannon.com/community/learn/hugo-beginner-tutorial/">Manuale sencillos y muy completos</a></p>
+<blockquote>
+<p><em><strong><strong><a href="https://cloudcannon.com/community/learn/hugo-beginner-tutorial/">https://cloudcannon.com/community/learn/hugo-beginner-tutorial/</a></strong></strong></em></p></blockquote>
+
+</div>
+
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-20bff6fd356c9f40dbaf6a19161ccf0c">1 - Instalación</h1>
+    <div class="lead">Instalación e inicio de herramientas para el desarrollo y configuración</div>
+	
+
+<div class="pageinfo pageinfo-primary">
+<p>&#x2705;
+<strong>Objetivos</strong></p>
+<ul>
+<li>Aprenderemos a instalar <em>hugo</em> y crear un <strong>nuevo sitio web</strong></li>
+<li>No olvides, si se necesita, configurar el <strong>path</strong> del sistema para acceder desde cualquier invocación</li>
+<li>Gestionamos todo desde un <strong>terminal</strong> independientemente de usar linux o windows</li>
+<li>Verifica la versión instalada</li>
+</ul>
+<hr>
+<p><strong>Páginas referenciadas</strong></p>
+<ul>
+<li>
+<p>Web de visual code : <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+</li>
+<li>
+<p>Web de jetsbrain y phpstorm: <a href="https://www.jetbrains.com/">https://www.jetbrains.com/</a></p>
+</li>
+<li>
+<p>hugo: <a href="https://gohugo.io">https://gohugo.io</a></p>
+</li>
+<li>
+<p>página de snap : <a href="https://snapcraft.io/docs/snap-documentation">https://snapcraft.io/docs/snap-documentation</a></p>
+</li>
+</ul>
+
+</div>
+
+<hr>
+<h2 id="instalación">Instalación</h2>
+<p>Tiene instaladores para mac, windows y linux:</p>
+<ul>
+<li><a href="https://gohugo.io/getting-started/quick-start/#step-1-install-hugo">https://gohugo.io/getting-started/quick-start/#step-1-install-hugo</a></li>
+</ul>
+
+
+<div class="pageinfo pageinfo-primary">
+<p>Recuerda:</p>
+<ul>
+<li>Instalar la herramienta hugo</li>
+<li>No olvides, si se necesita, configurar el <strong>path</strong> del sistema para acceder desde cualquier invocación</li>
+<li>Gestionamos todo desde un <strong>terminal</strong> independientemente de usar linux o windows</li>
+<li>Verificamos la instalación con el comando</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> hugo version
+</span></span></code></pre></div>
+</div>
+
+
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>Instalación en terminal</strong></p>
+<ul class="nav nav-tabs" id="tabs-0" role="tablist">
+  <li class="nav-item">
+      <button class="nav-link active"
+          id="tabs-00-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-00" role="tab"
+          data-td-tp-persist="shell" aria-controls="tabs-00-00" aria-selected="true">
+        apt
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link"
+          id="tabs-00-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-01" role="tab"
+          data-td-tp-persist="bash" aria-controls="tabs-00-01" aria-selected="false">
+        snap
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link"
+          id="tabs-00-02-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-02" role="tab"
+          data-td-tp-persist="sh" aria-controls="tabs-00-02" aria-selected="false">
+        instalar chocolatey (windows)
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link"
+          id="tabs-00-03-tab" data-bs-toggle="tab" data-bs-target="#tabs-00-03" role="tab"
+          data-td-tp-persist="javascript" aria-controls="tabs-00-03" aria-selected="false">
+        chocolatey (windows)
+      </button>
+    </li>
+</ul>
+<div class="tab-content" id="tabs-0-content">
+    <div class="tab-pane fade show active"
+        id="tabs-00-00" role="tabpanel" aria-labelled-by="tabs-00-00-tab" tabindex="0">
+        <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>// Instalacion en ubuntu con apt (cuidado con la versión)
+</span></span><span style="display:flex;"><span>sudo apt-get install hugo</span></span></code></pre></div>
+    </div>
+    <div class="tab-pane fade"
+        id="tabs-00-01" role="tabpanel" aria-labelled-by="tabs-00-01-tab" tabindex="0">
+        <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>// Instalacion en ubuntu con snap, recomendado, instala última versión
+</span></span><span style="display:flex;"><span>sudo snap install hugo --classic</span></span></code></pre></div>
+    </div>
+    <div class="tab-pane fade"
+        id="tabs-00-02" role="tabpanel" aria-labelled-by="tabs-00-02-tab" tabindex="0">
+        <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>// Chocolat se instala en power shell por consola
+</span></span><span style="display:flex;"><span>Set-ExecutionPolicy Bypass -Scope Process -Force;
+</span></span><span style="display:flex;"><span>[System.Net.ServicePointManager]::SecurityProtocol =
+</span></span><span style="display:flex;"><span>[System.Net.ServicePointManager]::SecurityProtocol -bor 3072;
+</span></span><span style="display:flex;"><span>iex ((New-Object System.Net.WebClient).DownloadString(<span style="color:#cd5555">&#39;https://community.chocolatey.org/install.ps1&#39;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>choco --version</span></span></code></pre></div>
+    </div>
+    <div class="tab-pane fade"
+        id="tabs-00-03" role="tabpanel" aria-labelled-by="tabs-00-03-tab" tabindex="0">
+        <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#228b22">// Instalacion en Windows teniendo instalado chocolatey
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>choco install hugo -confirm</span></span></code></pre></div>
+    </div>
+</div>
+<p>Si no tuviera <a href="https://snapcraft.io/docs/snap-documentation" target="_blank">snap</a> instalado,</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install snapd
+</span></span></code></pre></div>
+</div>
+
+<p>
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>Referencias para instalar en windows</strong></p>
+<hr>
+<p><a href="https://github.com/gohugoio/hugo/releases">Versiones de hugo para diferentes plataformas</a></p>
+
+</div>
+
+
+
+<div class="alert alert-primary" role="alert">
+<h4 class="alert-heading">snap</h4>
+
+    Mejor instalamos con <strong>snap</strong> para obtener la versión última
+
+</div>
+</p>
+<p>Instalar con <em>apt-get</em> instala una versión 0.68 <strong>Versión actual 0.134.3-</strong><br>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Descarga del sitio oficial</h4>
+
+    También puedes descargar el paquete de la web oficial del sitio de hugo  <a href="https://gohugo.io">Página de hugo</a>
+
+</div>
+</p>
+<h2 id="editor-para-el-desarrollo">Editor para el desarrollo</h2>
+<p>Interesante usar <a href="https://code.visualstudio.com/">Visual Code</a>, aunque para el desarrollo del curso, vamos a utilizar <a href="https://www.jetbrains.com/phpstorm/">
+<em>phpstorm</em></a> de <a href="https://www.jetbrains.com/">jetbrains</a></p>
+
+
+
+<ul class="nav nav-tabs" id="tabs-6" role="tablist">
+  <li class="nav-item">
+      <button class="nav-link active"
+          id="tabs-06-00-tab" data-bs-toggle="tab" data-bs-target="#tabs-06-00" role="tab"
+          data-td-tp-persist="shell" aria-controls="tabs-06-00" aria-selected="true">
+        Visual code
+      </button>
+    </li><li class="nav-item">
+      <button class="nav-link"
+          id="tabs-06-01-tab" data-bs-toggle="tab" data-bs-target="#tabs-06-01" role="tab"
+          data-td-tp-persist="bash" aria-controls="tabs-06-01" aria-selected="false">
+        phpstorm
+      </button>
+    </li>
+</ul>
+
+<div class="tab-content" id="tabs-6-content">
+    <div class="tab-pane fade show active"
+        id="tabs-06-00" role="tabpanel" aria-labelled-by="tabs-06-00-tab" tabindex="6">
+        <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sudo snap install code --classic</span></span></code></pre></div>
+    </div>
+    <div class="tab-pane fade"
+        id="tabs-06-01" role="tabpanel" aria-labelled-by="tabs-06-01-tab" tabindex="6">
+        <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo snap install phpstorm --classic</span></span></code></pre></div>
+    </div>
+</div>
+
+<p>Una vez instalado si escriben en el terminal <em><strong>code .</strong></em> te abre el editor y te carga el directorio actual</p>
+<ul>
+<li>Puedes abrir el terminal desde el entorno</li>
+<li>Puedes commitear desde el editor y subir a git <em>Esto ya lo veremos más adelante</em></li>
+<li>Instalar muchos plugins según necesidades</li>
+</ul>
+<h2 id="crear-un-sitio-nuevo">Crear un sitio nuevo</h2>
+<p>Mejor tener una carpeta concreta para los sitios que vayamos a crear.</p>
+<p>En ella creamos un nuevo sitio con el comando <em>new</em> del <a href="https://gohugo.io/commands/hugo/">CLI de hugo</a></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo  new site &lt;nombre_del_sitio &gt;
+</span></span></code></pre></div><p>La instalación nos da información de que se ha creado el sitio nuevo y de los pasos a realizar para continuar con nuestro nuevo sitio web:</p>
+<p><img src="/dwes/fr/docs/03_hugo/hugo/1_instalacion/instalacion_hugo.png" alt="instalacion_hugo.png"></p>
+<p>Una vez que creamos un sitio nuevo, observamos 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    que se crea una carpeta o directorio con el nombre del sitio creado
+
+</span>
+</strong>
+.</p>
+<p>Dentro de ella vemos una estructura de
+directorios<a href="https://gohugo.io/getting-started/directory-structure/">(Web de referencia sobre los directorios)</a>  que hay
+que entender:</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 336px">
+<img class="card-img-top" src="/dwes/fr/docs/03_hugo/hugo/1_instalacion/carpetas_hugo_hu_ad90eaeb1312bb80.png" width="326" height="382">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+Listado de directorios creados
+
+</p>
+</figcaption>
+</figure>
+
+<p>Aquí tienes un <a href="https://desarrolloweb.com/articulos/componentes-principales-hugo-framework">artículo</a> muy claro sobre
+los directorios creados.</p>
+<ul>
+<li><em><strong>archetype</strong></em>
+<blockquote>
+<p>En este directorio tendremos <strong>los ficheros base</strong> a partir de los cuales crearemos nuevos ficheros de contenidos usando los comandos
+de  hugo.</p></blockquote>
+</li>
+<li><em><strong>content</strong></em>
+<blockquote>
+<p>Aquí ubicaremos 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    los contenidos que queremos publicar
+
+</span>
+</strong>
+. Dejaremos todos los ficheros
+<em><strong>Markdown</strong></em> que constituirán contenido de nuestro sitio.</p></blockquote>
+</li>
+<li><em><strong>data</strong></em>
+<blockquote>
+<p>Carpeta para dejar ficheros con datos para, por ejemplo, rederizar posteriormente en nuestro sitio
+web.
+Puede ser un fichero <em>json</em> con información, un csv (podríamos consumir un csv de nuestro drive también) o una carpeta
+con fotos o imágenes, como veremos en un ejemplo.</p></blockquote>
+</li>
+<li><em><strong>layouts</strong></em>
+<blockquote>
+<p>Carpeta muy importante donde podremos establecer 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    la plantilla para nuestro sitio web
+
+</span>
+</strong>
+. Lo más habitial es
+utilizar una plantilla de partida, que estará ubicada en la carpete <a href="/dwes/fr/docs/03_hugo/hugo/1_instalacion/#theme">theme</a>, manteniendo la misma estructura,
+modificaremos ficheros del tema o layout base de nuestro sitio según nuestras necesidades o gustos. Se entenderá en el
+ejemplo correspondiente</p></blockquote>
+</li>
+<li><em><strong>static</strong></em>
+<blockquote>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Ficheros estáticos
+
+</span>
+</strong>
+ que vayamos usando en nuestro sitio, como imágenes, vídeos, los cuales
+pueden ser consumidos directamente por el sitio, sin ninguna necesidad de procesamiento previo (como fichero scss que
+tienen que ser transpilados a css, que deben de ir en la carpeta assets) Lo iremos viendo principalmente con imágenes</p></blockquote>
+</li>
+<li><em><strong>asset</strong></em>
+<blockquote>
+<p>Al igual que static ubicaremos 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    ficheros estáticos
+
+</span>
+</strong>
+, pero en este caso, antes de ser utilizados, 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    deben de ser  procesados
+
+</span>
+</strong>
+   de alguna forma y transpilados para utilizarse. Por ejemplo un fichero <strong>sass</strong> o <strong>less</strong>, para transformarse en un *
+<em>css</em>*</p></blockquote>
+<ul>
+<li><em><strong>theme</strong></em></li>
+</ul>
+<blockquote>
+<p>Esta carpeta es donde se va a ggestablecer el tema, layout o plantilla base a partir del cual se va a ver nuestro
+sitio.  Es una buena recomendación, especialmente al principio, partir de una plantilla ya hecha. Tenemos
+muchos <a href="https://themes.gohugo.io/">temas disponibles</a>  en la página oficial de hugo. En el siguiente apartado
+comenzaremos instalando un tema para empezar a construir nuestro sitio web, es lo primero que hay que hacer.</p></blockquote>
+</li>
+</ul>
+<h3 id="práctica">Práctica</h3>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Ahora practica tú</h4>
+
+    <p>&#x1f603;</p>
+<ul>
+<li>Crea un sitio nuevo con el nombre que quieras</li>
+<li>Entra en el directorio creado y observa las diferentes carpetas que tienes</li>
+<li>Una vez creado el sitio</li>
+</ul>
+
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-f68b63db6e5135a41ebd48c638beea22">2 - Temas o layouts base</h1>
+    <div class="lead">Utilización de layouts o platillas html para visualizar el contenido</div>
+	
+
+<div class="pageinfo pageinfo-primary">
+<p>&#x2705;
+<strong>Objetivo</strong>:</p>
+<ul>
+<li>Asociar una plantilla o theme al sitio web</li>
+<li>Acceder al fichero de configuración del sitio web <strong>config.toml</strong>
+<strong>Páginas referenciadas o de consulta</strong></li>
+<li><a href="https://desarrolloweb.com/articulos/generar-contenido-site-hugo">https://desarrolloweb.com/articulos/generar-contenido-site-hugo</a> (primera parte)</li>
+<li>Plantillas disponibles en <em>hugo</em>  <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></li>
+<li>Plantilla usada como ejemplo<em>relearn</em>:  <a href="https://themes.gohugo.io/themes/hugo-theme-relearn/">https://themes.gohugo.io/themes/hugo-theme-relearn/</a></li>
+</ul>
+
+</div>
+
+<h1 id="tema-plantilla-o-layout-para-el-sitio-web">Tema, plantilla o layout para el sitio web</h1>
+<p>Ahora que tenemos nuestro sitio web, lo primero que tenemos que hacer es asociar una plantilla o theme a nuestro sitio para poder visualizar su contenido.
+Para referirnos a la plantilla usaremos el término  <strong>theme</strong> o <strong>layout</strong></p>
+<p>Esto va a dar un aspecto concreto y ya podríamos ver nuestro sitio web funcionando. Para ver las <a href="https://themes.gohugo.io/">plantillas disponibles</a>   disponibles en el sitio web de <a href="https://gohugo.io/">hugo</a></p>
+<p>Vamos a ir proponiendo una plantilla y la usaremos de ejemplo para el resto de las explicaciones</p>
+<p>Para la práctica final, podrás usar esta misma plantilla o bien usar otra según te guste más.
+Usaremos la plantilla <a href="https://themes.gohugo.io/themes/hugo-theme-relearn">relean</a></p>
+<p>La página que estáS viendo, está trabajada con la plantilla <a href="https://www.docsy.dev/docs/">docsy</a></p>
+<h2 id="instalar-una-plantilla">Instalar una plantilla</h2>
+<p>Tenemos diferentes modos de instalar una plantilla.</p>
+<p>Todas ellas han de dejar en la carpeta <strong>themes</strong> de nuestro proyecto una carpeta con el desarrollo de  la plantilla que nos vamos a descargar de <strong>git</strong><br>
+Las formas de obtener esta carpeta puede ser:</p>
+<ol>
+<li>Descargar el desarrollo y descomprimirlo en la carpeta</li>
+<li>Clonar directamente en el carpeta con <em>git clone</em></li>
+<li>Clonarlo como un <em>submodule</em> a partir de la carpeta del proyecto</li>
+</ol>
+<p>Para ver esta acciones vamos a realizarlo con la plantilla <em>relearn</em> que hemos comentado anteriormente</p>
+<p><strong>Git</strong> es una herramienta muy importante que hemos de conocer desde el principio, si bien, la estudiaréis en el módulo de <em>despliegue</em></p>
+<h3 id="descargar-la-carpeta">Descargar la carpeta</h3>
+<p>*Localizamos el sitio web del tema a partir de la página de hugo.</p>
+<p>Localizamos el sitio de esta plantilla ( a partir de hugo themes)
+<a href="https://relearn.netlify.app/">relearn site</a>
+Ahí podemos ver la documentación y guía de instalación
+Indicamos las acciones, una vez creado el sitio web con hugo y ubicado en la carpeta creada</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#658b00">cd</span> themes
+</span></span><span style="display:flex;"><span>git clone https://github.com/theNewDynamic/gohugo-theme-ananke.git relearn
+</span></span></code></pre></div><p>También puedes descargar directamente la carpeta o bien, hacer el git como un submodule desde la carpeta principal del proyecto.
+El nombre que especificamos para la carpeta  destino (en este caso <em>relearn</em>), es el que nosotros queramos
+Ahora toca modificar el fichero de configuración 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    config.toml
+
+
+</span>
+</strong>
+, especificando la ubicación del thema, en este caso el directorio <em>relearn</em></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>theme =[<span style="color:#cd5555">&#39;relearn&#39;</span>]
+</span></span></code></pre></div><p>Ahora ya podemos ver un despliegue del sitio web. Para ello invocamos al 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    comando cli
+
+
+</span>
+</strong>
+ siguiente:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo server &amp;
+</span></span></code></pre></div>
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Observación</h4>
+
+    el <em><strong>&amp;</strong></em> es para ejecutar el comando en backgroud y no bloquear el terminal
+
+</div>
+
+<p>Nos abrirá un puerto en el navegador según nos muestre la salida en el terminal con el puerto abierto y veremos nuestro proyecto</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 410px">
+<img class="card-img-top" src="/dwes/fr/docs/03_hugo/hugo/2_temas/first_page_hu_4d79bdb8db6a5cf7.png" width="400" height="160">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+Página inicial
+
+</p>
+</figcaption>
+</figure>
+
+<p>Dependiendo del tema, habrá un contenido u otro. Este tema en concreto nos muestra el contenido de una página <strong>themes/relearn/layouts/index.html</strong>.
+Si quisiéramos cambiar el contenido de la página, en lugar de cambiar el fichero, lo que haríamos es copiar el fichero en la carpeta <strong>layout</strong> del directorio del proyecto. volveremos a esto más adelante.</p>
+<h3 id="práctica">Práctica</h3>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Ahora practica tú </h4>
+
+    <p>&#x1f600;</p>
+<ul>
+<li>
+<p>Instala el tema <strong>relearn</strong> (u otro si deseas), en el sitio web que hayas construído (hay plantillas que tienen algún requerimiento especial para ser visualizado, como esta de <strong>docsy</strong> que usamos para estos apuntes). Mejor usa una más minimalista.</p>
+</li>
+<li>
+<p>Ejecuta el comando de hugo para abrir un puerto en local</p>
+</li>
+<li>
+<p>Visualiza tu proyecto en el servidor</p>
+</li>
+</ul>
+
+
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-6a669596d88a44027e03ae44fdf78b91">3 - Contenido</h1>
+    <div class="lead">Dotar a nuestro sitio de contenido para publicar</div>
+	
+
+<div class="pageinfo pageinfo-primary">
+<p>&#x2705;
+<strong>Objetivo</strong>:</p>
+<ul>
+<li>Asociar una plantilla o theme al sitio web</li>
+<li>Estructurar contenido para mejorar la visualización del sitio.</li>
+<li>Organizar los contenidos que vamos a publicar (Orgnaizaremos por directorios y ficheros)</li>
+</ul>
+<p><strong>Páginas referenciadas o de consulta</strong></p>
+<ul>
+<li><a href="https://gohugo.io/content-management/organization/">https://gohugo.io/content-management/organization/</a></li>
+<li><a href="https://desarrolloweb.com/articulos/generar-contenido-site-hugo">https://desarrolloweb.com/articulos/generar-contenido-site-hugo</a></li>
+<li>Plantillas disponibles en <em>hugo</em>  <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a></li>
+<li>Plantilla usada como ejemplo<em>relearn</em>:  <a href="https://themes.gohugo.io/themes/hugo-theme-relearn/">https://themes.gohugo.io/themes/hugo-theme-relearn/</a></li>
+</ul>
+
+</div>
+
+<h1 id="contenido">Contenido</h1>
+<p>Ahora que tenemos una plantilla, queda lo principal, que es aportar contenido a nuestro sitio web.
+Son sitios estáticos, por lo que nuestro objetivo es aportar ficheros de texto con datos, información, imágenes, efectos visuales para que sean publicados en la web.
+La idea va a ser aportar ficheros en formato <a href="">markdown</a> cuyo contenido queremos</p>
+<h2 id="qué-estructura-tiene-el-contenido-de-las-páginas">¿Qué estructura tiene el contenido de las páginas?</h2>
+<ul>
+<li>Ahora toca aportar contenido a nuestro sitio web. Las páginas Tipos de páginas de contenido. Agrupar las páginas por tipos.</li>
+<li>En Hugo el contenido se organiza como luego se va a ver en la web. Anidamos el contenido en subdirectorios (<strong>secciones</strong>): <code>content/&lt;directorios&gt;</code></li>
+<li>Pensar en <strong>front-matter</strong> - <strong>archetypes</strong></li>
+<li>Plantillas específicas para cada modelo</li>
+</ul>
+<h2 id="creando-contenido-markdown">Creando contenido: markdown</h2>
+<p>Para crear nuevo contenido vamos  a generar páginas de texto con formato <strong>markdown</strong> <a href="/dwes/fr/docs/03_hugo/hugo/3_contenido/#markdown"><em>(Hablamos más abajo sobre el tema)</em></a>
+Podemos consultar las siguientes referencias para el texto en markdown. Son las páginas que dirigen la web de hugo</p>
+<ul>
+<li><a href="https://daringfireball.net/projects/markdown/">Daring Fireball: Markdown, John Gruber (Creator of Markdown)</a></li>
+<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet, Adam Pritchard</a></li>
+<li><a href="https://www.markdowntutorial.com/">Markdown Tutorial (Interactive), Garen Torikian</a></li>
+<li><a href="https://www.markdownguide.org/">The Markdown Guide, Matt Cone</a>
+<strong>Otras referencias</strong></li>
+<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet</a></li>
+<li><a href="https://programminghistorian.org/es/lecciones/introduccion-a-markdown">https://programminghistorian.org/es/lecciones/introduccion-a-markdown</a></li>
+<li></li>
+</ul>
+<p>Este metalenguaje o lenguaje con marcas es muy utilizado en la documentación técnica.</p>
+<p>Es importante aprender a utilizarla con cierta flexibilidad</p>
+<h3 id="creando-páginas-de-contenido">Creando páginas de contenido</h3>
+<p>Lo primero establecemos la organización de nuestros contenidos</p>
+<pre tabindex="0"><code class="language-markmap" data-lang="markmap"># Sitio Web
+
+## Sección 1
+ directorio
+### _index.md (fichero indice de sección 1)
+### Tema 1 de la sección 2 (fichero md)
+### Tema 1 de la sección 2 (fichero md)
+## Sección 2
+### _index.md (fichero indice de sección 2)
+### Tema 1 de la sección 2 (fichero md)
+### Tema 1 de la sección 2 (fichero md)
+### Tema 1 de la sección 2 (fichero md)
+## Seccion 3 
+### ....
+## ...
+</code></pre><p>Observamos cómo usamos diferentes directorios para crear nuestra organización de nuestro contenido.</p>
+<p>Cada directorio corresponderá a una <strong>sección</strong></p>
+<p>Dentro de cada sección puede haber un fichero <strong>_index.md</strong> cuyo contenido se visualizará cuando seleccionemos el directorio concreto.
+Por ejemplo para el contenido del curso podría tener una organización como se muestra en la imagen siguiente:</p>
+<pre tabindex="0"><code class="language-markmap" data-lang="markmap"># DWES
+
+## Introducción al desarrollo web
+## Sitios estáticos
+### Teoría
+### Práctica
+
+## PHP
+- [Web de referencia](https://php.net)
+### Sintaxis básica
+### Arrays y formularios
+### PHP orientado a objetos
+### Bases de datos
+#### Repaso de sql y concetos de BD
+#### Mysqli en php
+#### PDO en php
+### Librerías y utilidades de php
+### Laravel
+- [Web de referencia](https://laravel.com/docs/8.x)
+#### Uso de un framework en la programación web
+#### Rutas
+#### Controladores y vistas
+#### Eloquent y bases de datos
+</code></pre><h4 id="creando-ficheros-y-secciones">Creando ficheros y secciones</h4>
+<p>Usaremos el CLI de hugo (línea de comandos) para crear ficheros de contenido y/o secciones</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new [seccion]/fichero.md
+</span></span></code></pre></div><p>La sección puede ser un directorio o varios (subdirectorios anidados)</p>
+<p>Los ficheros se crean en la carpeta <strong>content</strong> del directorio raíz del proyecto</p>
+<p>El fichero creado tendrá un  contenido según quede especificado en el fichero <strong>patrón</strong> ubicado en la carpeta <strong>archetypes/default.md</strong>
+
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>Creando un fichero md</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new docs/prueba.md
+</span></span></code></pre></div><p><em>Genera un fichero con el siguiente contenido</em></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title<span style="color:#a61717;background-color:#e3d2d2">:</span> <span style="color:#cd5555">&#34;Prueba&#34;</span>
+</span></span><span style="display:flex;"><span>date<span style="color:#a61717;background-color:#e3d2d2">:</span> 2021-10-04T19:39:33+02:00
+</span></span><span style="display:flex;"><span>draft<span style="color:#a61717;background-color:#e3d2d2">:</span> <span style="color:#8b008b;font-weight:bold">false</span>
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div>
+</div>
+
+<strong>Las páginas en el directorio content</strong>
+*Las páginas ubicadas directamente en el directorio <strong>content</strong> serán páginas decir globales o bundles pages: contacto, about, datos relevantes. Estas páginas no son  secciones y por lo tanto no tendrán contenidos</p>
+<p>La forma de organizar las secciones dependerá de nuestra visión del sitio y en cualquier caso deben de ser páginas relacionadas con el tema de la sección: teoría, prácticas ,&hellip;.</p>
+<p>Cada directorio puede contener un fichero llamado <strong>_index.md</strong> que va a contener el índice o información que se visualizará al cargar la sección concreta, sería como el fichero índice de la sección.</p>
+<h5 id="creando-ficheros-con-realearn">Creando ficheros con realearn</h5>
+<p>En el caso de la plantilla que estamos usando (<a href="https://mcshelby.github.io/hugo-theme-relearn/cont/pages/">ver documentación </a>), clasifica las páginas de dos tipos, las que son cabecera de un tema o sección (<em>_index.md</em>) y las que tienen contenido de las mismas.</p>
+<p>Para crear las páginas de un tipo u otro, tiene una serie de argumentos
+
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>Ejemplo de cómo hacerlo con relearn</strong></p>
+<ul>
+<li>Para crear una página que es cabecera de capítulo (creamos la sección teoría y el fichero _index.md)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span> hugo new chapter --kind 01_teoria/_index.md
+</span></span></code></pre></div><ul>
+<li>Para crear un fichero dentro de la sección teoría</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span> hugo new chapter --kind 01_teoria/tema1.md
+</span></span></code></pre></div>
+</div>
+</p>
+<h3 id="front---matter">Front   matter</h3>
+<p><a href="https://gohugo.io/content-management/front-matter/">https://gohugo.io/content-management/front-matter/</a>
+Cuando generamos contenidos, los ficheros creados vemos que en la cabecera o primeras líneas  pueden tener <em><strong>metainformación</strong></em>
+Esta información va entre tres líneas y constituye lo que se llama el <strong>front matter</strong> de la página
+En esta sección daremos valores a variables que luego se pueden utilizar.</p>
+<p>De los diferentes valores, nos interesa ver alguno que suele estar en el archtypes y suelen aparecer por defecto:</p>
+<ul>
+<li><strong>title</strong> será el título que va a tener esta página para referenciarse en los diferentes menús</li>
+<li><strong>weight</strong> es una de las formas de ordenar las páginas y secciones.</li>
+<li><strong>draft</strong> Indica si la página es borrador <em>true</em> o no. En caso de ser borrador nos e visualizará.</li>
+<li><strong>description</strong> Es una descripcion que aparecerá en la página principal o index de esta sección. Aparecerá para cada página, salvo que se especifique que no lo queramos. visualizará.</li>
+</ul>
+<p>La información del fichero creado anteriormente corresponde al <strong>Front matter</strong>, el cual es aportado por el fichero base o patrón ubicado en la carpeta <strong>archetypes</strong></p>
+<pre tabindex="0"><code>content
+└── blog        &lt;-- Sección, porque es el primer nivel bajo content/  
+    |   ├── funny-cats
+    │   ├── mypost.md
+    │   └── kittens         &lt;-- Sección porque contiene _index.md
+    │       └── _index.md
+    └── tech                &lt;-- Sección porque contiene _index.md
+        └── _index.md
+</code></pre>
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>Repaso</strong></p>
+<ul>
+<li>Lo que precede al contenido</li>
+<li>Sintaxis especial</li>
+<li>Hay unas variables predefinidas pero el usuario puede crear nuevas.</li>
+<li>Se genera según el <strong>archetype</strong> de la sección. Por defecto <em>_default.md</em></li>
+<li>Se pueden pasar valores por defecto a las páginas que descienden de una sección.
+Por ejemplo si ponemos en <code>content/blog/_index.md</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>title = <span style="color:#cd5555">&#39;Blog&#39;</span>
+</span></span><span style="display:flex;"><span>[cascade]
+</span></span><span style="display:flex;"><span>  banner = <span style="color:#cd5555">&#39;images/typewriter.jpg&#39;</span>
+</span></span></code></pre></div><p>Esta página y todas las que descienden de la sección <code>blog</code> devuelven <code>images/typewriter.jpg</code> en <code>.Params.banner</code> a no ser que tengan su propio banner o un ancestro más cercano lo modifique.</p>
+
+</div>
+
+
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>Referencias</strong></p>
+<ul>
+<li><a href="https://gohugo.io/content-management/front-matter/">https://gohugo.io/content-management/front-matter/</a></li>
+<li><a href="https://gohugo.io/variables/page/">https://gohugo.io/variables/page/</a></li>
+</ul>
+
+</div>
+
+<h2 id="taxonomías">Taxonomías</h2>
+<p><a href="https://gohugo.io/content-management/taxonomies">https://gohugo.io/content-management/taxonomies</a></p>
+<p>Una taxonomía es una categorización que nos permite clasificar contenido.</p>
+<p>Por ejemplo, en una web de Películas podríamos tener actores, directores, estudios, géneros, años, premios &hellip;
+A continuación se muestra un breve ejemplo, pero esta parte no la vamos a incluir en nuestro ejemplo.</p>
+<p>Por defecto Hugo añade las taxonomías <strong>categories</strong> y <strong>tags</strong>. Se pueden añadir más en <strong>config</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[taxonomies]
+</span></span><span style="display:flex;"><span>  category = <span style="color:#cd5555">&#39;categories&#39;</span>
+</span></span><span style="display:flex;"><span>  tag = <span style="color:#cd5555">&#39;tags&#39;</span>
+</span></span></code></pre></div><p>Si se quiere deshabilitar:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>disableKinds = [<span style="color:#cd5555">&#39;taxonomy&#39;</span>, <span style="color:#cd5555">&#39;term&#39;</span>]
+</span></span></code></pre></div><p>En <strong>frontmatter</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">categories</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>- Personal<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>- Trabajo<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">tags</span>:<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>- software<span style="color:#bbb">
+</span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>- html<span style="color:#bbb">
+</span></span></span></code></pre></div><h3 id="práctica">Práctica</h3>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Ahora practica tú </h4>
+
+    <p>&#x1f600;</p>
+<ul>
+<li>Establece un contenido para tu sitio web.
+Para ello debes de tener clara las secciones y en cada sección los ficheros contenidos
+Por ejemplo podría ser parte  del contenido de este curso visto anteriormente</li>
+</ul>
+<pre tabindex="0"><code class="language-markmap" data-lang="markmap"># content_ (directorio raíz base)
+## Introducción 
+### _index.md
+### conceptos_generales.md
+### arquitectura_web.md
+### instalación.md
+## Static
+### _index.md
+### teoría.md
+#### _index.md
+#### instalacion.md
+#### temas.md
+#### contenido.md
+### Práctica
+#### _index.md
+#### practica1.md
+#### practica2.md
+## PHP
+### _index.md
+### Sintaxis.md
+### Arrays_formularios.md
+### OOP.md
+</code></pre><p>Con esto nos aparecerá  la siguiente estructura:</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 168px">
+<img class="card-img-top" src="/dwes/fr/docs/03_hugo/hugo/3_contenido/estructura_content_hu_43fcd313cb8536ac.png" width="158" height="300">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+<p>Ejemplo de contenido</p>
+</p>
+</figcaption>
+</figure>
+<p>Ahora completa los ficheros con contenido (no hace falta que haya muchos, mejor que tenga sentido, que vayas realizando tu portfolio, que sea tu forma de presentarte y mostrar a los demás en qué estás trabajando, puede ser un blog, &hellip;</p>
+<p>Recuerda cómo se crean las secciones, ficheros _index y ficheros de contenido en este template</p>
+<p>También podrías usar la estructura anterior e ir completándola con esquemas, resúmenes de los aspectos que vayas aprendiendo en el curso.</p>
+<p>Ahora reordena todo usando el <em>frontmatter</em>, recuerda la propiedad <strong>weight</strong>, modifica los títulos según consideres y puedes poner una descripción.</p>
+<p>Ve revisando como queda todo al visualizarlo en la web</p>
+<p>Comprueba en el servidor como se ha actualizado tu sitio web</p>
+
+
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-65d881a39e301b4b681fccb6a72c8d46">4 - Uso básico de git</h1>
+    <div class="lead">Usar git a nivel básico (crear repositorio y utilizarlo</div>
+	
+
+<div class="pageinfo pageinfo-primary">
+<p>&#x2705;
+<strong>Objetivo</strong>:</p>
+<ul>
+<li>Crear un repositorio en github</li>
+<li>Crear un proyecto en local, crear un repositorio local y enlazarlo con el repositorio de github</li>
+<li>Realizar cambios en local, subirlo a github, clonar proyectos y actulizarlos</li>
+</ul>
+<p><strong>Páginas referenciadas o de consulta</strong></p>
+<ul>
+<li>https://https://www.atlassian.com/es/git</li>
+</ul>
+
+</div>
+
+<h2 id="crear-un-usuario-en-git">Crear un usuario en git</h2>
+<p>Para ello accedemos a la página oficial de git <a href="https://github.com">https://github.com</a> y buscamos la opción <strong>Sig up</strong></p>
+<p><img src="/dwes/fr/docs/03_hugo/hugo/3_git/git_new_user.png" alt="Acceso a git"></p>
+<p>Una vez presionado el botón, aportamos los datos que nos solicita y nos registramos</p>
+<h2 id="crear-un-nuevo-repositorio">Crear un nuevo repositorio</h2>
+<p>Entrando con nuestro usuario y password, ya podemos crear un nuevo repositorio (la idea es  crear un directorio que llamo de una forma para guardar un determinado proyecto en la nube).</p>
+<p>Buscamos la opción de nuebo repositorio y lo presionamos</p>
+<p><img src="/dwes/fr/docs/03_hugo/hugo/3_git/new_repositorio.png" alt="Crear un nuevo repositorio"></p>
+<p>Entonces nos mostrará un menú para insertar un nuevo repositorio</p>
+<p><img src="/dwes/fr/docs/03_hugo/hugo/3_git/new_repositorio_2.png" alt="Crear un nuevo repositorio"></p>
+<p>Insertamos un nombre y presionamos al final de la página el botón <em><strong><strong>Create Repository</strong></strong></em></p>
+<p><img src="/dwes/fr/docs/03_hugo/hugo/3_git/create_repositorio.png" alt="Crear un nuevo repositorio"></p>
+<p>Una vez creado vemos una serie de instrucciones que debemos de escribir en nuestro proyecto local, creando un repositorio en local y  ligarlo a este repositorio
+<img src="/dwes/fr/docs/03_hugo/hugo/3_git/repositorio_creado.png" alt="Repositorio creado"></p>
+<h2 id="crear-un-proyecto-en-local-y-crear-un-repositorio">Crear un proyecto en local y crear un repositorio</h2>
+<p>Ahora vamos a local y ejecutamos las instrucciones que nos ha indicado el servidor de github para crear el repositorio en local y vincularlo al repositorio en github
+Previamente a configurar el proyecto, y solo la primera vez, ya que se hará de forma <strong>global</strong>, vamos a configurar nuestros datos de git en local con los siguientes comandos</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git config --global user.name NombreUsuarioGit
+</span></span><span style="display:flex;"><span>git config --global user.mail emailUsuarioGiyt
+</span></span></code></pre></div><p>Una vez configurado el sitio, suponemos que tenemos un proyecto en local bajo un directorio donde nos ubicaremos
+Ahí escribimos:</p>
+<ol>
+<li><strong>Para crear el directorio en local</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git init
+</span></span></code></pre></div><blockquote>
+<blockquote>
+<p>Este comando crearé un directorio en local llamado .github que inicializará el repositorio en local</p></blockquote></blockquote>
+<ol start="2">
+<li><strong>Agregar ficheros al repositorio</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git add *
+</span></span></code></pre></div><blockquote>
+<p>Este comando agregará todos los ficheros del directorio al repositorio en local</p></blockquote>
+<blockquote>
+<p>Se excluirán aquellos ficheros que estén especificados en un fichero especial llamado .gitignore (el punto es porque es un fichero oculto)</p></blockquote>
+<ol start="3">
+<li><strong>Establecer un comentario de checkpoint</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git commit -m <span style="color:#cd5555">&#34;Primera actualización del proyecto&#34;</span> 
+</span></span></code></pre></div><blockquote>
+<p>Creamos un mensaje que se asociará al commit actual cuando subamos los ficheros al proyecto</p></blockquote>
+<ol start="4">
+<li><strong>Establecemos la rama principal de trabajo</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git branch -m main
+</span></span></code></pre></div><blockquote>
+<p>En este caso establecemos la rama de trabajo <strong>main</strong>. Un proyecto puede tener varias ramas, las cuales llevan una vida independiente en el desarrollo del proyecto hasta que se unan o establezca un  <strong>merge</strong> al proyecto principal</p></blockquote>
+<ol start="5">
+<li><strong>Ligamos el proyecto local al remoto</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git remote add origin main   https://github/Usuario/Proyecto.git *
+</span></span></code></pre></div><blockquote>
+<p>Ligamos el proyecto que tenemos en local al repositorio de github, unido, en este caso, a la rama main. En local la rama se llama <strong>origin</strong>.</p></blockquote>
+<ol start="6">
+<li><strong>Submimos el proyecto de local a remoto</strong></li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git push origin main *
+</span></span></code></pre></div><blockquote>
+<p>Este comando sube todos los ficheros preparados (que se han unido con el comando <strong>add</strong>), asignándoles el mensaje asociado al comando <strong>commit</strong> al repositorio en remoto de github</p></blockquote>
+<h2 id="realizar-cambios-en-local-y-subirlos-a-git">Realizar cambios en local y subirlos a git</h2>
+<p>Ahora trabajaremos con normalidad en nuestro proyecto y cuando consideremos (un buen criterio es que hayamos realizado una parte funcional, no se trata de subir el proyecto cada 5 minutos)
+Cuando lo queremos subir repetimos estos tres pasos</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git add *
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#cd5555">&#34;con esta parte funcionando ...&#34;</span>
+</span></span><span style="display:flex;"><span>git push origin main
+</span></span></code></pre></div><h2 id="clonar-el-proyecto-en-local">Clonar el proyecto en local</h2>
+<p>Ahora si vamos a otro ordenador y queremos trabajar con nuestro proyecto, lo tenemos que descargar o clonar.</p>
+<p>Para ello necesitamos la referencia del proyecto que podemos obtener accediendo a nuestro repositorio, y en el botón code, ver la referencia</p>
+<p><img src="/dwes/fr/docs/03_hugo/hugo/3_git/url_repositorio.png" alt="Nombre del repositorio "></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git clone https://github.com/Usuario/proyecto.git
+</span></span></code></pre></div><p>Ahora trabajamos en el proyecto y lo vamos modificando haciendo los push que correspondan</p>
+<h2 id="actualizar-el-proyecto-engi-github">Actualizar el proyecto engi github</h2>
+<p>En este caso, si volvemos a otro equipo donde tenemos el proyecto, el cual lo hemos modificado en un equipo diferente, lo tendremos que actualizar del servidor, antes de seguir trabajando. Esto lo hacemos con el comando pull</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>git pull
+</span></span></code></pre></div><p>Y continuamos trabajando</p>
+<h2 id="credenciales-para-trabajar-con-git">Credenciales para trabajar con git</h2>
+<p>Siempre que queramos interactuar con el proyecto, nos va a pedir que nos identifiquemos.
+Pero git, ya no permite identificarse con el password, si no que hay que crearse un token, e identificarse con ese token.
+Para crear un token accedemos a la opción Settings del menú de nuestro usuario</p>
+<p><img src="/dwes/fr/docs/03_hugo/hugo/3_git/opcion_setting.png" alt="Opción setting"></p>
+<p>Entonces en la parte izquierda, vamos a la opción <em><strong><strong>Developer setting</strong></strong></em></p>
+<p><img src="/dwes/fr/docs/03_hugo/hugo/3_git/developer_setting.png" alt="Opción setting"></p>
+<p>Al presionar sale un menú y volvemos a seleccionar la opción <em><strong><strong>Personal access token</strong></strong></em></p>
+<p><img src="/dwes/fr/docs/03_hugo/hugo/3_git/personal_access_token.png" alt="Personal Access token"></p>
+<p>Ahí podemos generar un nuevo token, asignar su caducidad y debemos asigar los <em><strong>scope</strong></em> o permisos que indican qué se puede hacer con ese token. Debemos dar permisos para acceder al repositorio
+En esta acción, sí que exige que nos identifiquemos con nuestra password</p>
+<p><img src="/dwes/fr/docs/03_hugo/hugo/3_git/scope.png" alt="scopie"></p>
+<h3 id="tocken">Tocken</h3>
+<h3 id="clave-pública-y-privada">Clave pública y privada</h3>
+<p>Crear</p>
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-7fb6525eb96583e2f0c9b97df76528fc">5 - Shortcode</h1>
+    <div class="lead">Incluir <strong>elementos visuales</strong> html en nuestros ficheros <strong>md</strong></div>
+	
+
+<div class="pageinfo pageinfo-primary">
+<p>Extensiones a markdown.</p>
+<p><strong>IMPORTANTE:</strong> Se usan dentro del texto <strong>.md</strong> no en las plantillas</p>
+<p>Doc: <a href="https://gohugo.io/content-management/shortcodes">https://gohugo.io/content-management/shortcodes</a></p>
+
+</div>
+
+<p>Un shortcode es un fragmento  de código html que será renderizado dentro de un fichero md  cuando el sistema cargue o renderice dicha página de contenido
+Es una forma de dar efectos visuales y de poder tener mayor funcionalidad dentro de nuestro sitio web</p>
+<p>Vamos a ver algunos ejemplos. Hay que remarcar, que ciertos shortcode son propios de una plantilla, pero no costaría mucho poderlos tener en otra</p>
+<p>Los shortcode los tenemos ubicados en la carpeta del tema <strong>themes/nombre_tema/layouts/shorcode</strong></p>
+<p>A continuación vamos a ver alguno de ellos</p>
+<p><strong>Cargar una página de redes sociales a partir de la referencia</strong></p>
+<ul>
+<li>Supongamos que me gusta un vidoeclip de música publicado en <strong>youtube</strong>, y la web es <a href="https://www.youtube.com/watch?v=j9WyKTGAO2w">https://www.youtube.com/watch?v=j9WyKTGAO2w</a></li>
+</ul>
+<p>Pues podría cargar ese vídeo usando el <strong>shortcode</strong> de hugo</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&lt;</span>youtube<span style="color:#bbb"> </span>j9WyKTGAO2w<span style="color:#a61717;background-color:#e3d2d2">&gt;</span><span style="color:#1e889b">}}</span>
+</span></span></code></pre></div><p>El efecto de ponerlo es el siguiente</p>
+<h2 id="hahahugoshortcode95s1hbhb"><div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/j9WyKTGAO2w?autoplay=0&amp;controls=1&amp;end=0&amp;loop=0&amp;mute=0&amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"></iframe>
+    </div>
+</h2>
+<p><strong>Instagram</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&lt;</span><span style="color:#bbb"> </span>instagram<span style="color:#bbb"> </span>BWNjjyYFxVx<span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&gt;</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span></code></pre></div><p>{{ <instagram BWNjjyYFxVx> }}</p>
+<p><strong>Twitter</strong></p>
+<pre tabindex="0"><code></code></pre><p>Resultado</p>
+<p><strong>Vimeo</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span>
+      <div
+          style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <iframe
+          src="https://player.vimeo.com/video/146022717?dnt=0"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen">
+        </iframe>
+      </div>
+
+</span></span></code></pre></div><h2 id="hahahugoshortcode95s3hbhb">Resultado
+
+      <div
+          style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <iframe
+          src="https://player.vimeo.com/video/146022717?dnt=0"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allow="fullscreen">
+        </iframe>
+      </div>
+</h2>
+<p>En el caso de relearn, tenemos varios e interesantes <a href="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/">shorcodes de relearn</a>  como vamos a ver. Visita la página y pruébalos cada uno.</p>
+<h3 id="algunos-shortcode-de-relearn">Algunos shortcode de Relearn</h3>
+<p>Puedes ver los <a href="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/">shortcodes</a> de la plantilla de <a href="https://mcshelby.github.io/hugo-theme-relearn/">relearn</a></p>
+<p>*Para practicar debes de probar con los siguientes shortcodes</p>
+<h4 id="button">button</h4>
+<p>*El uso es con la siguiente sintaxis</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>{{% button <span style="color:#00688b">href</span>=<span style="color:#cd5555">&#34;referencia&#34;</span> /*%}}Label del botón{{% /button %}}
+</span></span></code></pre></div><p>*Podemos incluir  atributos según puedes ver en la web de referencia</p>
+<h4 id="attachments">attachments</h4>
+<p>*Este shortcode es muy práctico e interesante. con él podemos conseguir que aparezcan una serie de ficheros para que el usuario pueda descargar
+*Consiste en colocar una carpeta de descargas con ficheros que queremos permitir que el usuario se descargue
+*Para usarlo tenemos dos circunstancias:</p>
+<ol>
+<li>Poner la carpeta de directamente bajo el directorio <strong>content</strong></li>
+</ol>
+<blockquote>
+<p>En este caso colocaremos una carpeta llamada <em><strong><strong>files</strong></strong></em> y bajo ella todos los ficheros que pretendamos dejar en descargas</p></blockquote>
+<ol start="2">
+<li>Poner la carpeta de descargas bajo otra subcarpeta del directorio <strong>content</strong>.</li>
+</ol>
+<blockquote>
+<p>En este caso colocaremos una carpeta llamada <em><strong><strong>_index.files</strong></strong></em> y bajo ella todos los ficheros que pretendamos dejar en descargas</p></blockquote>
+<p>Una vez colocada la carpeta con los ficheros, colocaremos en nuestro fichero <em><strong><strong>md</strong></strong></em> el shortcode
+*El uso es con la siguiente sintaxis</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go" data-lang="go"><span style="display:flex;"><span>{{%/*<span style="color:#bbb"> </span>attachments<span style="color:#bbb"> </span>sort=<span style="color:#cd5555">&#34;asc&#34;</span><span style="color:#bbb"> </span>/%}}<span style="color:#bbb">
+</span></span></span></code></pre></div><h4 id="extends">extends</h4>
+<h4 id="notice">notice</h4>
+<h4 id="mermaind">mermaind</h4>
+<h3 id="práctica">Práctica</h3>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Ahora practica tú </h4>
+
+    Accede a la información de de <a href="https://mcshelby.github.io/hugo-theme-relearn/shortcodes/">shortcode de la plantilla de relearn</a>
+Incluye en tu trabajo los elementos que a continuación se muestran
+1 Botones
+2 Páginas de descargas
+3 Acortar un texto con leer mas&hellip;
+4 Texto remarcado como una noticia
+5 Crear gráficos con mermaid (opcional)
+6 tabs de diferentes elementos
+Si tienes alguna duda, pregunta o envía un mensaje para aclarar. Mucho mejor usa el foro
+
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-c1674da16141cb40f7a8e58dea7a846f">6 - Personalizar la plantilla</h1>
+    <div class="lead">Cómo modificar y personalizar la plantilla o tema</div>
+	
+
+<div class="pageinfo pageinfo-primary">
+<p>&#x2705;
+<strong>Objetivos</strong></p>
+<ul>
+<li>Vamos a modificar la plantilla utilizada</li>
+<li>Siempre se podrá hacer, pero en cada plantilla de una forma</li>
+<li>Acceder siempre a la información de la plantilla</li>
+<li>Modificar el logo, menú, etc</li>
+</ul>
+<hr>
+<p><strong>Páginas referenciadas</strong></p>
+<ul>
+<li>En este caso referenciamos el tema <a href="https://mcshelby.github.io/hugo-theme-relearn/basics/customization/"><strong>relearn</strong></a></li>
+</ul>
+
+</div>
+
+<h2 id="qué-partes-hay-en-la-plantilla">Qué partes hay en la plantilla</h2>
+<p>Debemos identificar las partes de una plantilla. Independientemente de la plantilla utilizada podemos hablar de:</p>
+<ol>
+<li>Logo</li>
+<li>Colores usados en el estilo</li>
+<li>Menú principal
+Identifiquemos esos elementos en nuestra plantilla y veamos cómo modificarlos para personalizarla a nuestro gusto.</li>
+</ol>
+<p>En la imagen siguiente hemos identificado diferentes partes en la plantilla que vemos tras instalarla, sin ninguna modificación.</p>
+<p><strong>Partes de la plantilla</strong></p>
+<hr>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
+<img class="card-img-top" src="/dwes/fr/docs/03_hugo/hugo/5_estilo_plantilla/partes_plantilla_estilo_hu_3fdeab52d321e199.png" width="800" height="351">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<hr>
+<h3 id="logo">Logo</h3>
+<p>En esta plantilla, <strong>relearn</strong>,  el logo se carga a patir de un <strong>partial</strong>.
+La carpeta 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    partial
+
+
+</span>
+</strong>
+
+, va a contener ficheros html que serán parte una  página html, de forma que los podré invocar cuando los necesite. Por ejemplo un <strong>footer.html</strong> o un <strong>header.html</strong></p>
+<p><strong>Fichero logo.html del partial en relearn</strong>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 229px">
+<img class="card-img-top" src="/dwes/fr/docs/03_hugo/hugo/5_estilo_plantilla/partial_logo_hu_c6da7d3f65399d1d.png" width="219" height="139">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+<p>En este caso la ubicación es 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    themes/layoout/partial/logo.html
+
+
+</span>
+</strong>
+</p>
+<p>Ahora lo que hay que hacer es copiar el fichero en el directorio layout y modificar incluyendo el logo que queremos que tenga, que irá ubicado en la carpeta 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    static/images
+
+
+</span>
+</strong>
+</p>
+<p><strong>Ficheros para establecer nuestro logo</strong></p>
+<hr>
+<p><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 224px">
+<img class="card-img-top" src="/dwes/fr/docs/03_hugo/hugo/5_estilo_plantilla/ficheros_logo_hu_6b55bdc757d0ab7a.png" width="214" height="191">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+Modificamos el fichero actualizando al logo que queramos. En este caso el logo se rederiza a partir de un elemento <em><strong>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    svg
+
+
+</span>
+</strong>
+</strong></em>.
+Copiamos nuestro logo en la carpeta static y lo especificamos en un elemento 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    img
+
+
+</span>
+</strong>
+</p>
+<p>Para ello hacemos un diseño de logo. <a href="https://www.logaster.com.es/logo/">(hay muchas web gratuitas para ello)</a></p>
+<p>Luego modificamos el fichero 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    logo.html
+
+
+</span>
+</strong>
+ y sustituimos el elemento 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    svg
+
+
+</span>
+</strong>
+ por un elemento 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    img
+
+
+</span>
+</strong>
+</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#228b22">&lt;!--Lo anterior no lo escribo ....--&gt;</span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;logo&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;{{ .Site.Params.landingPageURL | default &#34;</span><span style="color:#a61717;background-color:#e3d2d2">/&#34;</span> <span style="color:#a61717;background-color:#e3d2d2">|</span> <span style="color:#658b00">relLangURL</span> <span style="color:#a61717;background-color:#e3d2d2">}}&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#658b00">style</span>=<span style="color:#cd5555">&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555">              color: #3d414d;
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555">              font-family: &#39;Novacento Sans Wide&#39;, &#39;Helvetica&#39;, &#39;Tahoma&#39;, &#39;Geneva&#39;, &#39;Arial&#39;, sans-serif;
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555">              font-size: 30px;
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555">              font-weight: bold;
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555">              margin-top: -2px;
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555">            &#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#8b008b;font-weight:bold">img</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;/images/logo.png&#34;</span> <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;Logo del ciclo&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>            Desarrollo Web
+</span></span><span style="display:flex;"><span>          &lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Y nos quedará la página con el logo actualizado
+</span></span></code></pre></div><p><strong>Sitio web con el logo actualizado</strong></p>
+<hr>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 531px">
+<img class="card-img-top" src="/dwes/fr/docs/03_hugo/hugo/5_estilo_plantilla/sitio_web_logo_hu_7ea1d1860e556cce.png" width="521" height="423">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<h3 id="menú">Menú</h3>
+<p>El menú es una sección muy importante. En esta plantilla el menú va a estar ubicado en la parte izquierda de la plantilla.
+Para añadir/modificarlo, debemos especificarlo en el fichero 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    config.toml
+
+
+</span>
+</strong>
+, añádiendo los elementos 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    [[menu.shortcuts]]
+
+
+</span>
+</strong>
+, para cada item que queremos añadir.
+Por ejemplo, vamos a añadir 3 items</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[[menu.shortcuts]]
+</span></span><span style="display:flex;"><span>name=<span style="color:#cd5555">&#34;&lt;i class=&#39;fab fa-php&#39;&gt;&lt;/i&gt;   Lenguaje php&#34;</span>
+</span></span><span style="display:flex;"><span>identified=<span style="color:#cd5555">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>url=<span style="color:#cd5555">&#34;https://php.net&#34;</span>
+</span></span><span style="display:flex;"><span>weight=<span style="color:#b452cd">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[menu.shortcuts]]
+</span></span><span style="display:flex;"><span>name=<span style="color:#cd5555">&#34;&lt;i class=&#39;fab fa-wikipedia-w&#39;&gt;&lt;/i&gt;   Wiki del curso&#34;</span>
+</span></span><span style="display:flex;"><span>identified=<span style="color:#cd5555">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>url=<span style="color:#cd5555">&#34;https://es.wikieducator.org/Usuario:ManuelRomero/ProgramacionWeb/Contenido&#34;</span>
+</span></span><span style="display:flex;"><span>weight=<span style="color:#b452cd">2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[[menu.shortcuts]]
+</span></span><span style="display:flex;"><span>name=<span style="color:#cd5555">&#34;&lt;i class=&#39;far fa-question-circle&#39;&gt;&lt;/i&gt;   Ejercicios resueltos&#34;</span>
+</span></span><span style="display:flex;"><span>identified=<span style="color:#cd5555">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>url=<span style="color:#cd5555">&#34;http://manuel.infenlaces.com/dwes/ejercicios/&#34;</span>
+</span></span><span style="display:flex;"><span>weight=<span style="color:#b452cd">3</span>
+</span></span></code></pre></div><p>Y vemos cómo se genera el menú en la parte izquierda</p>
+<p><strong>Menú principal ubicado en la parte izquierda</strong></p>
+<hr>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 299px">
+<img class="card-img-top" src="/dwes/fr/docs/03_hugo/hugo/5_estilo_plantilla/menu_izquierdo_hu_f6a2d1be3a3ecce6.png" width="289" height="133">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Observa insertar icono</h4>
+
+    Hugo integra los iconos <a href="https://fontawesome.com/v5.15/icons?d=gallery&amp;p=2&amp;m=free">fab awesome</a> que son free, utilízalos para tener mejor visualización de tu sitio
+
+</div>
+
+<p>El título del menú se coge del fichero de traducción ubicado en <strong>theme/relearn/i18n/xx.toml</strong>, donde xx es el idioma establecido.
+Posteriormente veremos el tema de traducción y abordaremos esta cuestión</p>
+<p>El parámetro que establece la traducción para este título de menú es el siguiente que estableceremos en <strong>/i18n/es.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>[Shortcuts-Title]
+</span></span><span style="display:flex;"><span>other = &#34;Más opciones&#34;
+</span></span></code></pre></div><p>Debemos también establecer el idioma por defecto en el fichero de configuración <strong>config.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>defaultContentLanguage=<span style="color:#cd5555">&#34;es&#34;</span>
+</span></span></code></pre></div><p><strong>Menú con título establecido</strong></p>
+<hr>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 311px">
+<img class="card-img-top" src="/dwes/fr/docs/03_hugo/hugo/5_estilo_plantilla/menu_titulo_hu_53e04d265c195c03.png" width="301" height="471">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<h3 id="estilo">Estilo</h3>
+<p>Esta plantilla tiene hasta tres estilos de colores diferentes preparados. Para utilizarlos basta con establecer el valor correspondiente de la variable 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    themeVariant
+
+
+</span>
+</strong>
+ en el fichero de configuración 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    config.toml
+
+
+</span>
+</strong>
+. Los valores permitidos son 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    red, green, blue
+
+
+</span>
+</strong>
+</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[params]
+</span></span><span style="display:flex;"><span>  themeVariant = <span style="color:#cd5555">&#34;blue&#34;</span> or <span style="color:#cd5555">&#34;green&#34;</span> or <span style="color:#cd5555">&#34;red&#34;</span>
+</span></span></code></pre></div><table>
+  <thead>
+      <tr>
+          <th>Red</th>
+          <th>Blue</th>
+          <th>Green</th>
+          <th>Default</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>themeVariant = &ldquo;red&rdquo;</td>
+          <td>themeVariant = &ldquo;blue&rdquo;</td>
+          <td>themeVariant = &ldquo;green&rdquo;</td>
+          <td>themeVariant = &quot;&quot;</td>
+      </tr>
+      <tr>
+          <td><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 210px">
+<img class="card-img-top" src="/dwes/fr/docs/03_hugo/hugo/5_estilo_plantilla/style_red_hu_708211a924930b7e.png" width="200" height="229">
+</figure>
+</td>
+          <td><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 210px">
+<img class="card-img-top" src="/dwes/fr/docs/03_hugo/hugo/5_estilo_plantilla/style_blue_hu_b406a711f01b459a.png" width="200" height="283">
+</figure>
+</td>
+          <td><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 210px">
+<img class="card-img-top" src="/dwes/fr/docs/03_hugo/hugo/5_estilo_plantilla/style_green_hu_8ad1ea10ef306597.png" width="200" height="237">
+</figure>
+</td>
+          <td><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 210px">
+<img class="card-img-top" src="/dwes/fr/docs/03_hugo/hugo/5_estilo_plantilla/style_default_hu_1495e6766c7263ec.png" width="200" height="219">
+</figure>
+</td>
+      </tr>
+  </tbody>
+</table>
+<p><em><strong>Modificar los colores de fondo</strong></em>
+El color se carga, ya que en realidad lo que hacemos es establecer los <strong>css</strong> concretos según el nombre. Los podemos ver en la carpeta de <strong>relearn</strong> como muestra la figura siguiente</p>
+<p><strong>Ficheros con diferentes temas</strong></p>
+<hr>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 296px">
+<img class="card-img-top" src="/dwes/fr/docs/03_hugo/hugo/5_estilo_plantilla/temas_hu_fd4c3e1d73ea29c1.png" width="286" height="200">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+ 
+ 
+</p>
+</figcaption>
+</figure>
+
+<p>Si copiamos el fichero en nuestra ubicación <strong>static/css/theme</strong>También podemos crear nuestros propios ficheros css y cargarlos en nuestro proyecto, o modificar los valores de variables establecidos en el fichero de estilo css. Para ilustrar esta modificiación, copiamos en nuestro directiro <strong>./static/css</strong> el fichero de variables css y modificamos el color de fondo donde se ubica el menú que estamos trabajando, colocando otro color.
+Vamos a copiar <strong>/themes/relearn/static/css/theme-relearn</strong>  en <strong>/static/css/theme-dwes.css</strong>
+Ahora modificamos alguna de las variables de este tema y en el fichero de configuración especificamos que usamos este tema</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[params]
+</span></span><span style="display:flex;"><span>  themeVariant = <span style="color:#cd5555">&#34;dwes&#34;</span>
+</span></span></code></pre></div><p>Por otro lado copiamos también el fichero <strong>theme.css</strong> por si queremos modificar algún elemento más.
+Tras modificar dos colores de fondo bg y el color de la letra del título queda así la página</p>
+<p>**Nuevo estilo de la página **</p>
+<hr>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 355px">
+<img class="card-img-top" src="/dwes/fr/docs/03_hugo/hugo/5_estilo_plantilla/pagina_nuevo_estilo_hu_56a83aeb56ebcbe1.png" width="345" height="550">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+ 
+ 
+</p>
+</figcaption>
+</figure>
+
+<h3 id="search">Search</h3>
+<p>Para modificar este botón accedemos a nuestro nuevo theme-dwes.css y modificamos las variables que afectan a search, según nuestro gusto</p>
+<h3 id="home">Home</h3>
+<p>Para modificar el home, debemos hacerlo desde el fichero de configuración.
+En este caso, como tenemos configurado el idioma español, para el título del menú, debemos especificar estas variables dentro de una sección de lenguaje
+Los parámetros modificados son los siguientes</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[Languages]
+</span></span><span style="display:flex;"><span>[Languages.es]
+</span></span><span style="display:flex;"><span>landingPageURL = <span style="color:#cd5555">&#34;http://cpilosenlaces.com&#34;</span>
+</span></span><span style="display:flex;"><span>landingPageName = <span style="color:#cd5555">&#34;&lt;i class=&#39;fas fa-university&#39;&gt;&lt;/i&gt; CPI Los Enlaces&#34;</span>
+</span></span></code></pre></div><p>Si no hubiéramos configurado el idioma, no sería necesaria la sección</p>
+<p><strong>Estilo de la página con el home modificado</strong></p>
+<hr>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 321px">
+<img class="card-img-top" src="/dwes/fr/docs/03_hugo/hugo/5_estilo_plantilla/pagina_home_modificado_hu_562d776e1e97956.png" width="311" height="542">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+ 
+ 
+</p>
+</figcaption>
+</figure>
+
+<h3 id="footer">footer</h3>
+<p>El footer es esta plantilla, corresponde a un partial, por lo que tendríamos que acceder a él, copiarlo en nuestro directorio  y modificarlo.
+El fichero  que muestra el footer en la parte del menú se llama 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    menu-footer.html
+
+
+</span>
+</strong>
+
+Una pequeña modificación y observamos la actualización en la página</p>
+<p><strong>Footer del  menú modificado</strong></p>
+<hr>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 289px">
+<img class="card-img-top" src="/dwes/fr/docs/03_hugo/hugo/5_estilo_plantilla/actualizado_footer_menu_hu_356ebc5f118c6459.png" width="279" height="534">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+ 
+ 
+</p>
+</figcaption>
+</figure>
+
+<h3 id="práctica">Práctica</h3>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Ahora practica tú</h4>
+
+    <p>&#x1f603;
+<strong>Modifica la plantilla según se ha visto en este tema</strong></p>
+<ol>
+<li>
+<p>Cambia el logo.</p>
+</li>
+<li>
+<p>Establece otros colores según consideres.</p>
+</li>
+<li>
+<p>Añade un menú principal</p>
+<ul>
+<li>Que tenga 4 opciones al menos</li>
+<li>Establece icono de fan awesome</li>
+<li>Establece un título para ese menú</li>
+</ul>
+</li>
+<li>
+<p>Modifica el footer de la página.</p>
+</li>
+</ol>
+
+
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-c226a579dd535373e8c2ac0582c89d56">7 - Multilenguaje</h1>
+    <div class="lead">Crear el sitio multilingüe</div>
+	<p>
+
+<div class="pageinfo pageinfo-primary">
+<ul>
+<li>Ver cómo establecer diferentes lenguajes en nuestro proyecto</li>
+<li><a href="https://gohugo.io/content-management/multilingual/">https://gohugo.io/content-management/multilingual/</a></li>
+<li><a href="https://learn.netlify.app/en/cont/i18n/">https://learn.netlify.app/en/cont/i18n/</a></li>
+</ul>
+<h2 id="para-este-cometido">Para este cometido</h2>
+<pre><code>1.- Vamos a actualizar el trabajo realizado para los diferentes idiomas 
+2.- Vamos a usar la plantilla relearn, y veremos también cómo actualizar la primera pantalla
+3.- Para la traducción usaremos translate de google
+4.- Si quieres puedes crear un proyecto de 0 para centrarte en este aspecto de un proyecto
+</code></pre>
+
+</div>
+
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Recuerda</h4>
+
+    <p><strong>Como crear un proyecto en hugo y establecer la plantilla relearn</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>     hugo new site idiomas
+</span></span><span style="display:flex;"><span>     <span style="color:#658b00">cd</span> idiomas
+</span></span><span style="display:flex;"><span>     git init
+</span></span><span style="display:flex;"><span>     git submodule add https://github.com/matcornic/hugo-theme-learn.git themes/learn
+</span></span></code></pre></div>
+
+</div>
+</p>
+<h1 id="multilenguaje">Multilenguaje</h1>
+<p>Hugo permite establecer el 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    multilenguaje
+
+
+</span>
+</strong>
+
+para adaptar las páginas en el lenguaje deseado</p>
+<blockquote>
+<p>Para ello, lo primero modificamos el fichero de configuración  estableciendo los idiomas
+&raquo; Vamos a establecer 3 idiomas : inglés, francés, y español</p></blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[Languages]
+</span></span><span style="display:flex;"><span>    [Languages.es]
+</span></span><span style="display:flex;"><span>        title = <span style="color:#cd5555">&#34;Ejemplo para el uso de idiomas&#34;</span>
+</span></span><span style="display:flex;"><span>        weight = <span style="color:#b452cd">1</span>
+</span></span><span style="display:flex;"><span>        languageName = <span style="color:#cd5555">&#34;Español&#34;</span>
+</span></span><span style="display:flex;"><span>    [Languages.en]
+</span></span><span style="display:flex;"><span>        title = <span style="color:#cd5555">&#34;Example use language&#34;</span>
+</span></span><span style="display:flex;"><span>        weight = <span style="color:#b452cd">2</span>
+</span></span><span style="display:flex;"><span>        languageName = <span style="color:#cd5555">&#34;English&#34;</span>
+</span></span><span style="display:flex;"><span>   [Languages.fr]
+</span></span><span style="display:flex;"><span>        title = <span style="color:#cd5555">&#34;Exemple d&#39;utilisation des langues&#34;</span>
+</span></span><span style="display:flex;"><span>        weight = <span style="color:#b452cd">3</span>
+</span></span><span style="display:flex;"><span>        languageName = <span style="color:#cd5555">&#34;Français&#34;</span>
+</span></span></code></pre></div><p>Vemos como las variables usadas son claras en su función. 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    weight
+
+
+</span>
+</strong>
+, como ya sabemos establece el orden en el que aparecerán en el menú
+
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>Listado de idiomas configurado</strong></p>
+<hr>
+<p><img src="/dwes/fr/docs/03_hugo/hugo/6_multilenguajes/listado_idiomas.png" alt="imagen de lista de idiomas"></p>
+
+</div>
+</p>
+<p>En este caso vamos a establecer diferentes directorios para establecer la ubicación de los ficheros. Deberá de aparecer un menú para ver las diferentes opciones del menú.</p>
+<p>Ahora podremos establecer un idioma por defecto también con variables en el fichero <strong>config.toml</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>defaultContentLanguage = <span style="color:#cd5555">&#39;es&#39;</span>
+</span></span></code></pre></div><h3 id="cambiando-la-página-por-defecto">Cambiando la página por defecto</h3>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Ten en cuenta</h4>
+
+    <strong>
+<span class="font-weight-bold text-primary">
+<pre><code>Esto es algó concreto de esta plantilla
+</code></pre>
+</span>
+</strong>
+
+
+</div>
+
+<p>Lo primero que observamos es que si cambiamos de idioma el contenido no cambia, por lo que tenemos que establecer el contenido de la página en los idiomas que queramos establecer</p>
+<p>En el caso de <strong>relearn</strong> la página que nos muestra, si no hay contenido en la carpeta 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    content
+
+
+</span>
+</strong>
+, es el contenido del fichero <strong>index.html</strong> Si entramos en él, y así vemos cómo utilizar la estructura de control en una plantilla, vemos claramente dónde se ubica la traducción, ya que por defecto, esta plantilla está preparada para inglés y francés. Añadamos el español.
+Para ello observa y utiliza la estructura de controlc   
+<strong>
+<span class="font-weight-bold text-primary">
+
+    if  - else if - end
+
+
+</span>
+</strong>
+<img src="https://gohugo.io/templates/introduction/#logic" alt="sintaxis estructuras de control"></p>
+
+
+<div class="pageinfo pageinfo-primary">
+<p>Recuerda realizar las modificaciones copiando los ficheros en la carpeta layout</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{if eq .Site.Language.Lang &#34;fr&#34;}}
+</span></span><span style="display:flex;"><span>   	&lt;<span style="color:#8b008b;font-weight:bold">h1</span>&gt;Personaliser la page d&#39;accueil&lt;/<span style="color:#8b008b;font-weight:bold">h1</span>&gt;
+</span></span><span style="display:flex;"><span>       <span style="color:#228b22">&lt;!--Usa el traductor para completar esta parte--&gt;</span>
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span>   {{else if eq .Site.Language.Lang &#34;es&#34; }}
+</span></span><span style="display:flex;"><span>   	&lt;<span style="color:#8b008b;font-weight:bold">h1</span>&gt;Personaliza tu página principal&lt;/<span style="color:#8b008b;font-weight:bold">h1</span>&gt;
+</span></span><span style="display:flex;"><span>   
+</span></span><span style="display:flex;"><span>   {{else if eq .Site.Language.Lang &#34;en&#34;}}
+</span></span><span style="display:flex;"><span>   		&lt;<span style="color:#8b008b;font-weight:bold">h1</span>&gt;Customize your own home page&lt;/<span style="color:#8b008b;font-weight:bold">h1</span>&gt;
+</span></span><span style="display:flex;"><span>           <span style="color:#228b22">&lt;!--Usa el traductor para completar esta parte--&gt;</span>
+</span></span><span style="display:flex;"><span>   {{end}}
+</span></span></code></pre></div>
+</div>
+
+<h3 id="cambiando-valores-a-través-de-variables">Cambiando valores a través de variables</h3>
+<p>Ahora observamos que aunque cambie el contenido, hay palabras con que no se adaptan al idioma esablecido</p>
+<p>Vamos a hacer que estas palabras, también sean traducidas. Lógicamente no vamos a cambiar toda la página para una palabra, sino, lo que haremos es usar un fichero para traducirlas y que el sistema obtenga el valor del fichero que corresponda al idioma establecido según una etiqueta</p>
+<p>Con uso podemos usar la librería <strong><a href="https://developer.mozilla.org/es/docs/Mozilla/Add-ons/WebExtensions/API/i18n">i18n</a></strong> para traducciones (internacionalización)</p>
+<p>En la estructura de carpetas, dentro de <strong>themes</strong>, hay ficheros para traducir o establecer identificadores que se pueden adaptar a diferentes idiomas.
+Vemos cómo estos ficheros empiezan con dos letras que identifican el idioma
+<a href="/static/lista_i18n_traducciones.png">Lista de ficheros de traducciones</a></p>
+<p>Vamos a establecer nuevos valores para cambiar las siguientes palabras. Vemos que la palabra de buscador ya sí que se adapta</p>
+<ul>
+<li>Home</li>
+<li>Build witdh &hellip; from &hellip; and</li>
+</ul>
+<p>Para ello vamos a usar la función de traducción de hugo</p>
+<pre tabindex="0"><code class="language-hugo" data-lang="hugo">{{ T &#34;identificador_valor&#34; }}
+</code></pre><p>Con esto lo que hacemos es buscar el identificador <strong>identificador_valor</strong> en el fichero del idioma establecido y colocar su valor</p>
+<p>En este fichero podemos tener valores para singular y plural. <strong>others</strong> sería el identificador general (normalmente el que querremos utilizar), ver más sobre esto en la documentación oficial
+
+
+<div class="pageinfo pageinfo-primary">
+<p>Cambia las palabras que hemos indicado
+Mira el fichero <strong>menu-footer.html</strong> y <strong>menu.html</strong> para localizar los items
+No olvides modificar los ficheros copiándolos previamente a tu carpeta <strong>layout</strong></p>
+
+</div>
+</p>
+<h3 id="añadiendo-menús-en-la-página-principal">Añadiendo menús en la página principal</h3>
+<p>Si queremos establecer menú en la página principal y que esté en diferentes idiomas</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> [[languages.es.menu.main]]
+</span></span><span style="display:flex;"><span>    name = <span style="color:#cd5555">&#34;Otros&#34;</span>
+</span></span><span style="display:flex;"><span>    weight = <span style="color:#b452cd">50</span>
+</span></span><span style="display:flex;"><span>    url = <span style="color:#cd5555">&#34;https://github.com/google/docsy/&#34;</span>
+</span></span><span style="display:flex;"><span> [[languages.en.menu.main]]
+</span></span><span style="display:flex;"><span>    name = <span style="color:#cd5555">&#34;Other&#34;</span>
+</span></span><span style="display:flex;"><span>    weight = <span style="color:#b452cd">50</span>
+</span></span><span style="display:flex;"><span>    url = <span style="color:#cd5555">&#34;https://github.com/google/docsy/&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  [[menu.main]]
+</span></span><span style="display:flex;"><span>     name = <span style="color:#cd5555">&#34;GitHub&#34;</span>
+</span></span><span style="display:flex;"><span>    weight = <span style="color:#b452cd">50</span>
+</span></span><span style="display:flex;"><span>    url = <span style="color:#cd5555">&#34;https://github.com/google/docsy/&#34;</span>
+</span></span><span style="display:flex;"><span>    pre = <span style="color:#cd5555">&#34;&lt;i class=&#39;fab fa-github&#39;&gt;&lt;/i&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>    post = <span style="color:#cd5555">&#34;&lt;span class=&#39;alert&#39;&gt;New!&lt;/span&gt;&#34;</span> 
+</span></span></code></pre></div><h3 id="añadiendo-páginas-traducidas-a-nuestro-sitio">Añadiendo páginas traducidas a nuestro sitio</h3>
+<p>A la hora de especificar las traducciones. Es sistema va a esperar tener un fichero para cada uno de los idiomas establecidos. Es decir, si tenemos una página llamada <strong>tema1.md</strong> y tenemos 3 idiomas, como es el caso que hemos planteado, deberemos de alguna manera especificar un fichero <em>tema1.md</em> para cada uno de los idiomas.</p>
+<p>Para hacer esto tenemos dos opciones. Vamos a ver aquí una de ellas, y la otra la podéis consultar en la página de referencia</p>
+<blockquote>
+<p><a href="https://gohugo.io/content-management/multilingual/#translate-your-content">https://gohugo.io/content-management/multilingual/#translate-your-content</a></p></blockquote>
+<p>La solución que aplicamos es tener un directorio para cada uno de los idiomas.</p>
+<p><img src="/images/directorios_idiomas.png" alt="Listado de directorios"></p>
+<p>Una vez que lo hemos establecido, debemos indicar en el fichero de configuración con la variable <strong>contentDir</strong>, el directorio dónde se ubicarán los ficheros traducidos a ese idioma, de forma que en el caso que estamos añadiendo esta variable, nos debería quedar</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[Languages]
+</span></span><span style="display:flex;"><span>    [Languages.en]
+</span></span><span style="display:flex;"><span>        title = <span style="color:#cd5555">&#34;Example use language&#34;</span>
+</span></span><span style="display:flex;"><span>        weight = <span style="color:#b452cd">2</span>
+</span></span><span style="display:flex;"><span>        languageName = <span style="color:#cd5555">&#34;English&#34;</span>
+</span></span><span style="display:flex;"><span>        ContentDir=<span style="color:#cd5555">&#34;/content/fr&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    [Languages.es]
+</span></span><span style="display:flex;"><span>        title = <span style="color:#cd5555">&#34;Ejemplo para el uso de idiomas&#34;</span>
+</span></span><span style="display:flex;"><span>        weight = <span style="color:#b452cd">1</span>
+</span></span><span style="display:flex;"><span>        languageName = <span style="color:#cd5555">&#34;Español&#34;</span>
+</span></span><span style="display:flex;"><span>        ContentDir=<span style="color:#cd5555">&#34;/content/es&#34;</span>
+</span></span><span style="display:flex;"><span>   [Languages.fr]
+</span></span><span style="display:flex;"><span>        title = <span style="color:#cd5555">&#34;Exemple d&#39;utilisation des langues&#34;</span>
+</span></span><span style="display:flex;"><span>        weight = <span style="color:#b452cd">1</span>
+</span></span><span style="display:flex;"><span>        languageName = <span style="color:#cd5555">&#34;Français&#34;</span>
+</span></span><span style="display:flex;"><span>        ContentDir=<span style="color:#cd5555">&#34;/content/fr&#34;</span>
+</span></span></code></pre></div><p>Una vez hecho esto, hemos de crear cada uno de los ficheros en cada directorio, no los replica hugo
+
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>Crear ficheros md</strong></p>
+<hr>
+<p><img src="/images/creacion_ficheros_md.png" alt="Crear ficheros"></p>
+
+</div>
+</p>
+<p>Una vez creada ya lo único que queda es poner contenido. Para el ejercicio utiliza <em>translate</em> para  realizar la traducción en los dos idiomas</p>
+<h3 id="añadiendo-menús">Añadiendo menús</h3>
+<p>Estas acciones hay que añadirlas en el fichero de configuración
+En el caso de learn se añade usando la siguiente sintaxis</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>[[Languages.en.menu.shortcuts]]
+</span></span><span style="display:flex;"><span>            name = <span style="color:#cd5555">&#34;Public Center  Enlaces&#34;</span>
+</span></span><span style="display:flex;"><span>            url = <span style="color:#cd5555">&#34;http://cpilosenlaces.com&#34;</span>
+</span></span><span style="display:flex;"><span>            identifier = <span style="color:#cd5555">&#34;cp&#34;</span>
+</span></span><span style="display:flex;"><span>            weight= <span style="color:#b452cd">10</span>
+</span></span><span style="display:flex;"><span>[[Languages.en.menu.shortcuts]]
+</span></span><span style="display:flex;"><span>            name = <span style="color:#cd5555">&#34;Language PHP&#34;</span>
+</span></span><span style="display:flex;"><span>            url = <span style="color:#cd5555">&#34;http://php.net&#34;</span>
+</span></span><span style="display:flex;"><span>            identifier = <span style="color:#cd5555">&#34;php&#34;</span>
+</span></span><span style="display:flex;"><span>            weight= <span style="color:#b452cd">11</span>
+</span></span><span style="display:flex;"><span>[[Languages.en.menu.shortcuts]]
+</span></span><span style="display:flex;"><span>            name = <span style="color:#cd5555">&#34;Wiki Documentation&#34;</span>
+</span></span><span style="display:flex;"><span>            identifier = <span style="color:#cd5555">&#34;wiki&#34;</span>
+</span></span><span style="display:flex;"><span>            url = <span style="color:#cd5555">&#34;http://es.wikieducator.org/Usuario:ManuelRomero&#34;</span>
+</span></span><span style="display:flex;"><span>            weight= <span style="color:#b452cd">12</span>            
+</span></span></code></pre></div><h3 id="práctica">Práctica</h3>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Ahora practica tú</h4>
+
+    <p>&#x1f603;
+<strong>Añade 3 lenguajes a la página</strong></p>
+<ol>
+<li>
+<p>Establece tres idiomas para la página (es, en, fr)</p>
+</li>
+<li>
+<p>Utiliza translate para realizar la traducción de los ficheros <strong>md</strong> (markdonw)</p>
+</li>
+</ol>
+
+
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-7d0e42348ba515fc3743ff8251ea9594">8 - Plantillas </h1>
+    
+	
+
+<div class="pageinfo pageinfo-primary">
+<p>Algunas notas sobre el trabajo con las plantillas:</p>
+<ul>
+<li>Sintaxis básica de las plantillas en Hugo</li>
+<li>Organización de las plantillas. Directorio <code>layout</code></li>
+<li>Modificación de una plantilla</li>
+<li>Creación de plantillas</li>
+</ul>
+<p><strong>Documentación:</strong>  <a href="https://gohugo.io/templates/">https://gohugo.io/templates/</a></p>
+
+</div>
+
+<h2 id="sintaxis-básica">Sintaxis básica</h2>
+<p>Un plantilla es una página html donde utilizando una notación especial, vamos a poder incluir elementos que vamos a partir de un lenguaje de programación y las variable que gestione.</p>
+<p>Las variables las podríamos declarar y asignar dentro de esas secciones de código, o bien, recuperarlas de las declaradas y asignadas en los ficheros de configuración como es 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    config.toml
+
+
+</span>
+</strong>
+ con el que estamos trabajando constantemete
+fini&gt;</p>
+<p>En hugo, como con otros muchos sistemas de plantillas (en el curso veremos smarty o twing y blade), usamos la notación de dobles brackets para incorporar código externo.
+Por ejemplo podría tener una plantilla  personalizada, podríamos escribir lo siguiente</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#1e889b">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">html</span> <span style="color:#658b00">lang</span>=<span style="color:#cd5555">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">charset</span>=<span style="color:#cd5555">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">title</span>&gt;Title&lt;/<span style="color:#8b008b;font-weight:bold">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">h1</span>&gt;Esto es un ejemplo de plantilla&lt;/<span style="color:#8b008b;font-weight:bold">h1</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">h2</span>&gt;aquí el título del fichero md en el frontmatter&lt;/<span style="color:#8b008b;font-weight:bold">h2</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">style</span>=<span style="color:#cd5555">&#34;color:red&#34;</span>&gt;{{.Title}}&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">h3</span>&gt;Declaro y luego visualizo una variable&lt;/<span style="color:#8b008b;font-weight:bold">h3</span>&gt;
+</span></span><span style="display:flex;"><span>{{ $nombre := &#34;Manuel&#34; }}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">h2</span>&gt;Valor de variable $nombre&lt;/<span style="color:#8b008b;font-weight:bold">h2</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">style</span>=<span style="color:#cd5555">&#34;color:red&#34;</span>&gt;{{ $nombre}}&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">html</span>&gt;
+</span></span></code></pre></div><p>Vemos una página que es completamente independiente del resto, donde utilizo una variable de los ficheros de configuración</p>
+<p>Ahora me queda crear un fichero md y especificar que utilice esta plantilla, la cual almacenaremos en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    layout/_default/ejemplo_plantilla.html
+
+
+</span>
+</strong>
+</p>
+<p>Creamos un fichero md llamado plantilla.md y en él especificamos en el 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    frontmatter
+
+
+</span>
+</strong>
+ que utilice esta plantilla</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>layout<span style="color:#a61717;background-color:#e3d2d2">:</span> ejemplo_plantilla
+</span></span><span style="display:flex;"><span>draft<span style="color:#a61717;background-color:#e3d2d2">:</span> <span style="color:#cd5555">&#34;false&#34;</span>
+</span></span><span style="display:flex;"><span>title<span style="color:#a61717;background-color:#e3d2d2">:</span> <span style="color:#cd5555">&#34;Plantillas&#34;</span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#228b22"># Uso de una plantilla</span>
+</span></span><span style="display:flex;"><span>En esta p<span style="color:#a61717;background-color:#e3d2d2">á</span>gina veremos el uso de una plantilla
+</span></span></code></pre></div>
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>El resultado serán</strong></p>
+<hr>
+<p><img src="/images/relearn/plantillas/plantilla_customer.png" alt="plantilla personalizada"></p>
+
+</div>
+
+<p>Acceso a variables predefinidas:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Title</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Params.bar</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">or</span><span style="color:#bbb"> </span>(isset<span style="color:#bbb"> </span><span style="color:#658b00">.Params</span><span style="color:#bbb"> </span><span style="color:#cd5555">&#34;alt&#34;</span>)<span style="color:#bbb"> </span>(isset<span style="color:#bbb"> </span><span style="color:#658b00">.Params</span><span style="color:#bbb"> </span><span style="color:#cd5555">&#34;caption&#34;</span>)<span style="color:#bbb"> </span><span style="color:#1e889b">}}</span> Caption <span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">end</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">title</span>&gt;<span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Title</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>&lt;/<span style="color:#8b008b;font-weight:bold">title</span>&gt;
+</span></span></code></pre></div><h2 id="partial">Partial</h2>
+<p>Incluye un fragmento en una plantilla para no tener que repetirlo:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span>partial<span style="color:#bbb"> </span><span style="color:#cd5555">&#34;&lt;PATH&gt;/&lt;PARTIAL&gt;.&lt;EXTENSION&gt;&#34;</span><span style="color:#bbb"> </span><span style="color:#658b00">.</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># Por ejemplo: layouts/partials/header.html partial
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span>partial<span style="color:#bbb"> </span><span style="color:#cd5555">&#34;header.html&#34;</span><span style="color:#bbb"> </span><span style="color:#658b00">.</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span></code></pre></div>
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">Importante</h4>
+
+    Los partials nos ayudan a reutilizar el código y a no repetir fragmentos.
+
+</div>
+
+<h2 id="plantillas-base-y-bloques">Plantillas base y bloques</h2>
+<p><a href="https://gohugo.io/templates/base/">https://gohugo.io/templates/base/</a>
+<code>layouts/_default/baseof.html</code></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#1e889b">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">html</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#8b008b;font-weight:bold">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">charset</span>=<span style="color:#cd5555">&#34;utf-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">title</span>&gt;{{ block &#34;title&#34; . }}
+</span></span><span style="display:flex;"><span>      <span style="color:#228b22">&lt;!-- Blocks may include default content. --&gt;</span>
+</span></span><span style="display:flex;"><span>      {{ .Site.Title }}
+</span></span><span style="display:flex;"><span>    {{ end }}&lt;/<span style="color:#8b008b;font-weight:bold">title</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#8b008b;font-weight:bold">head</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#8b008b;font-weight:bold">body</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#228b22">&lt;!-- Code that all your templates share, like a header --&gt;</span>
+</span></span><span style="display:flex;"><span>    {{ block &#34;main&#34; . }}
+</span></span><span style="display:flex;"><span>      <span style="color:#228b22">&lt;!-- The part of the page that begins to differ between templates --&gt;</span>
+</span></span><span style="display:flex;"><span>    {{ end }}
+</span></span><span style="display:flex;"><span>    {{ block &#34;footer&#34; . }}
+</span></span><span style="display:flex;"><span>    <span style="color:#228b22">&lt;!-- More shared code, perhaps a footer but that can be overridden if need be in  --&gt;</span>
+</span></span><span style="display:flex;"><span>    {{ end }}
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#8b008b;font-weight:bold">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">html</span>&gt;
+</span></span></code></pre></div><p><code>layouts/_default/single.html</code></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">define</span><span style="color:#bbb"> </span><span style="color:#cd5555">&#34;title&#34;</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#228b22">&lt;!-- Sobreescribe el valor de  baseof.html --&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Title</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span> &amp;ndash; <span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Site.Title</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">end</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">define</span><span style="color:#bbb"> </span><span style="color:#cd5555">&#34;main&#34;</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#8b008b;font-weight:bold">h1</span>&gt;<span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Title</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>&lt;/<span style="color:#8b008b;font-weight:bold">h1</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Content</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">end</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span></code></pre></div><h2 id="funciones">Funciones</h2>
+<p><a href="https://gohugo.io/templates/introduction/">https://gohugo.io/templates/introduction/</a></p>
+<h2 id="parámetros-de-las-páginas">Parámetros de las páginas</h2>
+<p><a href="https://gohugo.io/templates/introduction/#use-content-page-parameters">https://gohugo.io/templates/introduction/#use-content-page-parameters</a></p>
+<p>Podemos usar datos escritos en el <strong>front-matter</strong> de la página desde la plantilla:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">not</span><span style="color:#bbb"> </span><span style="color:#658b00">.Params.notoc</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">aside</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#8b008b;font-weight:bold">header</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#</span><span style="color:#1e889b">{{</span><span style="color:#658b00">.Title</span><span style="color:#bbb"> </span>|<span style="color:#bbb"> </span>urlize<span style="color:#1e889b">}}</span><span style="color:#cd5555">&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">h3</span>&gt;<span style="color:#1e889b">{{</span><span style="color:#658b00">.Title</span><span style="color:#1e889b">}}</span>&lt;/<span style="color:#8b008b;font-weight:bold">h3</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#8b008b;font-weight:bold">header</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#1e889b">{{</span><span style="color:#658b00">.TableOfContents</span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">aside</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;toc-toggle&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">end</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span></code></pre></div><h2 id="uso-de-la-configuración-del-sitio">Uso de la configuración del sitio</h2>
+<p><a href="https://gohugo.io/templates/introduction/#use-site-configuration-parameters">https://gohugo.io/templates/introduction/#use-site-configuration-parameters</a></p>
+<p>Y también datos del archivo de configuración general:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span><span style="color:#658b00">.Site.Params.copyrighthtml</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">footer</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;text-center&#34;</span>&gt;<span style="color:#1e889b">{{</span><span style="color:#658b00">.Site.Params.CopyrightHTML</span><span style="color:#bbb"> </span>|<span style="color:#bbb"> </span>safeHTML<span style="color:#1e889b">}}</span>&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">footer</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">end</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span></code></pre></div><h2 id="uso-de-datos-de-la-página">Uso de datos de la página</h2>
+<p><strong>Archetype</strong> ejemplo</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title<span style="color:#a61717;background-color:#e3d2d2">:</span> <span style="color:#a61717;background-color:#e3d2d2">​</span> <span style="color:#cd5555">&#34; ​ {{​ ​ replace​ ​ .Name​ ​ &#34;</span>-<span style="color:#cd5555">&#34; &#34;</span> <span style="color:#cd5555">&#34; | title }}&#34;</span>
+</span></span><span style="display:flex;"><span>draft<span style="color:#a61717;background-color:#e3d2d2">:</span> <span style="color:#8b008b;font-weight:bold">false</span>
+</span></span><span style="display:flex;"><span>image<span style="color:#a61717;background-color:#e3d2d2">:</span> <span style="color:#a61717;background-color:#e3d2d2">​</span> <span style="color:#a61717;background-color:#e3d2d2">//</span>via.placeholder.com<span style="color:#a61717;background-color:#e3d2d2">/</span><span style="color:#b452cd">640</span>x150
+</span></span><span style="display:flex;"><span>alt_text<span style="color:#a61717;background-color:#e3d2d2">:</span> <span style="color:#a61717;background-color:#e3d2d2">​</span> <span style="color:#cd5555">&#34; ​ {{​ ​ replace​ ​ .Name​ ​ &#34;</span>-<span style="color:#cd5555">&#34; &#34;</span> <span style="color:#cd5555">&#34; | title }} screenshot&#34;</span>
+</span></span><span style="display:flex;"><span>summary<span style="color:#a61717;background-color:#e3d2d2">:</span> <span style="color:#a61717;background-color:#e3d2d2">​</span> <span style="color:#cd5555">&#34; ​ Summary​ ​ of​ ​ the​ ​ {{​ ​ replace​ ​ .Name​ ​ &#34;</span>-<span style="color:#cd5555">&#34; &#34;</span> <span style="color:#cd5555">&#34; | title }} project&#34;</span>
+</span></span><span style="display:flex;"><span>tech_used<span style="color:#a61717;background-color:#e3d2d2">:</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#a61717;background-color:#e3d2d2">​</span> JavaScript
+</span></span><span style="display:flex;"><span>- <span style="color:#a61717;background-color:#e3d2d2">​</span> CSS
+</span></span><span style="display:flex;"><span>- <span style="color:#a61717;background-color:#e3d2d2">​</span> HTML
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><p><strong>Template</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">define</span><span style="color:#bbb"> </span><span style="color:#cd5555">&#34;main&#34;</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;project-container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">section</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;project-list&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">h2</span>&gt;Projects&lt;/<span style="color:#8b008b;font-weight:bold">h2</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">range</span><span style="color:#bbb"> </span>(where<span style="color:#bbb"> </span><span style="color:#658b00">.Site.RegularPages</span><span style="color:#bbb"> </span><span style="color:#cd5555">&#34;Type&#34;</span><span style="color:#bbb"> </span><span style="color:#cd5555">&#34;in&#34;</span><span style="color:#bbb"> </span><span style="color:#cd5555">&#34;projects&#34;</span>)<span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#8b008b;font-weight:bold">li</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;</span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.RelPermalink</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span><span style="color:#cd5555">&#34;</span>&gt;<span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Title</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">end</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">section</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">section</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;project&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">h2</span>&gt;<span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Title</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>&lt;/<span style="color:#8b008b;font-weight:bold">h2</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Content</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">img</span> <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;</span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Params.alt_text</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span><span style="color:#cd5555">&#34;</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;</span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Params.image</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span><span style="color:#cd5555">&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">h3</span>&gt;Tech used&lt;/<span style="color:#8b008b;font-weight:bold">h3</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">range</span><span style="color:#bbb"> </span><span style="color:#658b00">.Params.tech_used</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#8b008b;font-weight:bold">li</span>&gt;<span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">end</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">section</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">end</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span></code></pre></div><h3 id="práctica">Práctica</h3>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Ahora practica tú</h4>
+
+    &#x1f603;
+En este caso puedes porbar a crear una plantilla personal  y mostrarla
+
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-b37c86737fdaab482b008eb3ea4cce91">9 - Plantillas </h1>
+    
+	
+
+<div class="pageinfo pageinfo-primary">
+<p>Algunas notas sobre el trabajo con las plantillas:</p>
+<ul>
+<li>Sintaxis básica de las plantillas en Hugo</li>
+<li>Organización de las plantillas. Directorio <code>layout</code></li>
+<li>Modificación de una plantilla</li>
+<li>Creación de plantillas</li>
+</ul>
+<p><strong>Documentación:</strong>  <a href="https://gohugo.io/templates/">https://gohugo.io/templates/</a></p>
+
+</div>
+
+<h2 id="sintaxis-básica">Sintaxis básica</h2>
+<p>Un plantilla es una página html donde utilizando una notación especial, vamos a poder incluir elementos que vamos a partir de un lenguaje de programación y las variable que gestione.</p>
+<p>Las variables las podríamos declarar y asignar dentro de esas secciones de código, o bien, recuperarlas de las declaradas y asignadas en los ficheros de configuración como es 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    config.toml
+
+
+</span>
+</strong>
+ con el que estamos trabajando constantemete
+fini&gt;</p>
+<p>En hugo, como con otros muchos sistemas de plantillas (en el curso veremos smarty o twing y blade), usamos la notación de dobles brackets para incorporar código externo.
+Por ejemplo podría tener una plantilla  personalizada, podríamos escribir lo siguiente</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#1e889b">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">html</span> <span style="color:#658b00">lang</span>=<span style="color:#cd5555">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">charset</span>=<span style="color:#cd5555">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">title</span>&gt;Title&lt;/<span style="color:#8b008b;font-weight:bold">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">h1</span>&gt;Esto es un ejemplo de plantilla&lt;/<span style="color:#8b008b;font-weight:bold">h1</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">h2</span>&gt;aquí el título del fichero md en el frontmatter&lt;/<span style="color:#8b008b;font-weight:bold">h2</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">style</span>=<span style="color:#cd5555">&#34;color:red&#34;</span>&gt;{{.Title}}&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">h3</span>&gt;Declaro y luego visualizo una variable&lt;/<span style="color:#8b008b;font-weight:bold">h3</span>&gt;
+</span></span><span style="display:flex;"><span>{{ $nombre := &#34;Manuel&#34; }}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">h2</span>&gt;Valor de variable $nombre&lt;/<span style="color:#8b008b;font-weight:bold">h2</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">span</span> <span style="color:#658b00">style</span>=<span style="color:#cd5555">&#34;color:red&#34;</span>&gt;{{ $nombre}}&lt;/<span style="color:#8b008b;font-weight:bold">span</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">hr</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">html</span>&gt;
+</span></span></code></pre></div><p>Vemos una página que es completamente independiente del resto, donde utilizo una variable de los ficheros de configuración</p>
+<p>Ahora me queda crear un fichero md y especificar que utilice esta plantilla, la cual almacenaremos en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    layout/_default/ejemplo_plantilla.html
+
+
+</span>
+</strong>
+</p>
+<p>Creamos un fichero md llamado plantilla.md y en él especificamos en el 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    frontmatter
+
+
+</span>
+</strong>
+ que utilice esta plantilla</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>layout<span style="color:#a61717;background-color:#e3d2d2">:</span> ejemplo_plantilla
+</span></span><span style="display:flex;"><span>draft<span style="color:#a61717;background-color:#e3d2d2">:</span> <span style="color:#cd5555">&#34;false&#34;</span>
+</span></span><span style="display:flex;"><span>title<span style="color:#a61717;background-color:#e3d2d2">:</span> <span style="color:#cd5555">&#34;Plantillas&#34;</span>
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#228b22"># Uso de una plantilla</span>
+</span></span><span style="display:flex;"><span>En esta p<span style="color:#a61717;background-color:#e3d2d2">á</span>gina veremos el uso de una plantilla
+</span></span></code></pre></div>
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>El resultado serán</strong></p>
+<hr>
+<p><img src="/images/relearn/plantillas/plantilla_customer.png" alt="plantilla personalizada"></p>
+
+</div>
+
+<p>Acceso a variables predefinidas:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Title</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Params.bar</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">or</span><span style="color:#bbb"> </span>(isset<span style="color:#bbb"> </span><span style="color:#658b00">.Params</span><span style="color:#bbb"> </span><span style="color:#cd5555">&#34;alt&#34;</span>)<span style="color:#bbb"> </span>(isset<span style="color:#bbb"> </span><span style="color:#658b00">.Params</span><span style="color:#bbb"> </span><span style="color:#cd5555">&#34;caption&#34;</span>)<span style="color:#bbb"> </span><span style="color:#1e889b">}}</span> Caption <span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">end</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">title</span>&gt;<span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Title</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>&lt;/<span style="color:#8b008b;font-weight:bold">title</span>&gt;
+</span></span></code></pre></div><h2 id="partial">Partial</h2>
+<p>Incluye un fragmento en una plantilla para no tener que repetirlo:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span>partial<span style="color:#bbb"> </span><span style="color:#cd5555">&#34;&lt;PATH&gt;/&lt;PARTIAL&gt;.&lt;EXTENSION&gt;&#34;</span><span style="color:#bbb"> </span><span style="color:#658b00">.</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span># Por ejemplo: layouts/partials/header.html partial
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span>partial<span style="color:#bbb"> </span><span style="color:#cd5555">&#34;header.html&#34;</span><span style="color:#bbb"> </span><span style="color:#658b00">.</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span></code></pre></div>
+
+<div class="alert alert-danger" role="alert">
+<h4 class="alert-heading">Importante</h4>
+
+    Los partials nos ayudan a reutilizar el código y a no repetir fragmentos.
+
+</div>
+
+<h2 id="plantillas-base-y-bloques">Plantillas base y bloques</h2>
+<p><a href="https://gohugo.io/templates/base/">https://gohugo.io/templates/base/</a>
+<code>layouts/_default/baseof.html</code></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#1e889b">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">html</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#8b008b;font-weight:bold">head</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">meta</span> <span style="color:#658b00">charset</span>=<span style="color:#cd5555">&#34;utf-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">title</span>&gt;{{ block &#34;title&#34; . }}
+</span></span><span style="display:flex;"><span>      <span style="color:#228b22">&lt;!-- Blocks may include default content. --&gt;</span>
+</span></span><span style="display:flex;"><span>      {{ .Site.Title }}
+</span></span><span style="display:flex;"><span>    {{ end }}&lt;/<span style="color:#8b008b;font-weight:bold">title</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#8b008b;font-weight:bold">head</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#8b008b;font-weight:bold">body</span>&gt;
+</span></span><span style="display:flex;"><span>    <span style="color:#228b22">&lt;!-- Code that all your templates share, like a header --&gt;</span>
+</span></span><span style="display:flex;"><span>    {{ block &#34;main&#34; . }}
+</span></span><span style="display:flex;"><span>      <span style="color:#228b22">&lt;!-- The part of the page that begins to differ between templates --&gt;</span>
+</span></span><span style="display:flex;"><span>    {{ end }}
+</span></span><span style="display:flex;"><span>    {{ block &#34;footer&#34; . }}
+</span></span><span style="display:flex;"><span>    <span style="color:#228b22">&lt;!-- More shared code, perhaps a footer but that can be overridden if need be in  --&gt;</span>
+</span></span><span style="display:flex;"><span>    {{ end }}
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#8b008b;font-weight:bold">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">html</span>&gt;
+</span></span></code></pre></div><p><code>layouts/_default/single.html</code></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">define</span><span style="color:#bbb"> </span><span style="color:#cd5555">&#34;title&#34;</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#228b22">&lt;!-- Sobreescribe el valor de  baseof.html --&gt;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Title</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span> &amp;ndash; <span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Site.Title</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">end</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">define</span><span style="color:#bbb"> </span><span style="color:#cd5555">&#34;main&#34;</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#8b008b;font-weight:bold">h1</span>&gt;<span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Title</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>&lt;/<span style="color:#8b008b;font-weight:bold">h1</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Content</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">end</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span></code></pre></div><h2 id="funciones">Funciones</h2>
+<p><a href="https://gohugo.io/templates/introduction/">https://gohugo.io/templates/introduction/</a></p>
+<h2 id="parámetros-de-las-páginas">Parámetros de las páginas</h2>
+<p><a href="https://gohugo.io/templates/introduction/#use-content-page-parameters">https://gohugo.io/templates/introduction/#use-content-page-parameters</a></p>
+<p>Podemos usar datos escritos en el <strong>front-matter</strong> de la página desde la plantilla:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">not</span><span style="color:#bbb"> </span><span style="color:#658b00">.Params.notoc</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">aside</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#8b008b;font-weight:bold">header</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#</span><span style="color:#1e889b">{{</span><span style="color:#658b00">.Title</span><span style="color:#bbb"> </span>|<span style="color:#bbb"> </span>urlize<span style="color:#1e889b">}}</span><span style="color:#cd5555">&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">h3</span>&gt;<span style="color:#1e889b">{{</span><span style="color:#658b00">.Title</span><span style="color:#1e889b">}}</span>&lt;/<span style="color:#8b008b;font-weight:bold">h3</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#8b008b;font-weight:bold">header</span>&gt;
+</span></span><span style="display:flex;"><span>  <span style="color:#1e889b">{{</span><span style="color:#658b00">.TableOfContents</span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">aside</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;#&#34;</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;toc-toggle&#34;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">end</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span></code></pre></div><h2 id="uso-de-la-configuración-del-sitio">Uso de la configuración del sitio</h2>
+<p><a href="https://gohugo.io/templates/introduction/#use-site-configuration-parameters">https://gohugo.io/templates/introduction/#use-site-configuration-parameters</a></p>
+<p>Y también datos del archivo de configuración general:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">if</span><span style="color:#bbb"> </span><span style="color:#658b00">.Site.Params.copyrighthtml</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">footer</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;text-center&#34;</span>&gt;<span style="color:#1e889b">{{</span><span style="color:#658b00">.Site.Params.CopyrightHTML</span><span style="color:#bbb"> </span>|<span style="color:#bbb"> </span>safeHTML<span style="color:#1e889b">}}</span>&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">footer</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">end</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span></code></pre></div><h2 id="uso-de-datos-de-la-página">Uso de datos de la página</h2>
+<p><strong>Archetype</strong> ejemplo</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title<span style="color:#a61717;background-color:#e3d2d2">:</span> <span style="color:#a61717;background-color:#e3d2d2">​</span> <span style="color:#cd5555">&#34; ​ {{​ ​ replace​ ​ .Name​ ​ &#34;</span>-<span style="color:#cd5555">&#34; &#34;</span> <span style="color:#cd5555">&#34; | title }}&#34;</span>
+</span></span><span style="display:flex;"><span>draft<span style="color:#a61717;background-color:#e3d2d2">:</span> <span style="color:#8b008b;font-weight:bold">false</span>
+</span></span><span style="display:flex;"><span>image<span style="color:#a61717;background-color:#e3d2d2">:</span> <span style="color:#a61717;background-color:#e3d2d2">​</span> <span style="color:#a61717;background-color:#e3d2d2">//</span>via.placeholder.com<span style="color:#a61717;background-color:#e3d2d2">/</span><span style="color:#b452cd">640</span>x150
+</span></span><span style="display:flex;"><span>alt_text<span style="color:#a61717;background-color:#e3d2d2">:</span> <span style="color:#a61717;background-color:#e3d2d2">​</span> <span style="color:#cd5555">&#34; ​ {{​ ​ replace​ ​ .Name​ ​ &#34;</span>-<span style="color:#cd5555">&#34; &#34;</span> <span style="color:#cd5555">&#34; | title }} screenshot&#34;</span>
+</span></span><span style="display:flex;"><span>summary<span style="color:#a61717;background-color:#e3d2d2">:</span> <span style="color:#a61717;background-color:#e3d2d2">​</span> <span style="color:#cd5555">&#34; ​ Summary​ ​ of​ ​ the​ ​ {{​ ​ replace​ ​ .Name​ ​ &#34;</span>-<span style="color:#cd5555">&#34; &#34;</span> <span style="color:#cd5555">&#34; | title }} project&#34;</span>
+</span></span><span style="display:flex;"><span>tech_used<span style="color:#a61717;background-color:#e3d2d2">:</span>
+</span></span><span style="display:flex;"><span>- <span style="color:#a61717;background-color:#e3d2d2">​</span> JavaScript
+</span></span><span style="display:flex;"><span>- <span style="color:#a61717;background-color:#e3d2d2">​</span> CSS
+</span></span><span style="display:flex;"><span>- <span style="color:#a61717;background-color:#e3d2d2">​</span> HTML
+</span></span><span style="display:flex;"><span>---
+</span></span></code></pre></div><p><strong>Template</strong></p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">define</span><span style="color:#bbb"> </span><span style="color:#cd5555">&#34;main&#34;</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;project-container&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">section</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;project-list&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">h2</span>&gt;Projects&lt;/<span style="color:#8b008b;font-weight:bold">h2</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">range</span><span style="color:#bbb"> </span>(where<span style="color:#bbb"> </span><span style="color:#658b00">.Site.RegularPages</span><span style="color:#bbb"> </span><span style="color:#cd5555">&#34;Type&#34;</span><span style="color:#bbb"> </span><span style="color:#cd5555">&#34;in&#34;</span><span style="color:#bbb"> </span><span style="color:#cd5555">&#34;projects&#34;</span>)<span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#8b008b;font-weight:bold">li</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;</span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.RelPermalink</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span><span style="color:#cd5555">&#34;</span>&gt;<span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Title</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">end</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">section</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">section</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;project&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">h2</span>&gt;<span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Title</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>&lt;/<span style="color:#8b008b;font-weight:bold">h2</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      <span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Content</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">img</span> <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;</span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Params.alt_text</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span><span style="color:#cd5555">&#34;</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;</span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.Params.image</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span><span style="color:#cd5555">&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">h3</span>&gt;Tech used&lt;/<span style="color:#8b008b;font-weight:bold">h3</span>&gt;
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">range</span><span style="color:#bbb"> </span><span style="color:#658b00">.Params.tech_used</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#8b008b;font-weight:bold">li</span>&gt;<span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#658b00">.</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;
+</span></span><span style="display:flex;"><span>        <span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">end</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span><span style="display:flex;"><span>      &lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">section</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#8b008b;font-weight:bold">end</span><span style="color:#bbb"> </span><span style="color:#1e889b">}}</span>
+</span></span></code></pre></div><h3 id="práctica">Práctica</h3>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Ahora practica tú</h4>
+
+    &#x1f603;
+En este caso puedes porbar a crear una plantilla personal  y mostrarla
+
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-47906cf4a05152d02536dc91832a3ad1">10 - Datos externos</h1>
+    
+	<h1 id="consumir-datos-de-ficheros-con-estructura">Consumir datos de ficheros con estructura</h1>
+<p>La ubicación del fichero debe de estar en <em><strong>data</strong></em>
+Podemos consumir datos de diferentes fuentes, como un fichero json, o csv, o un directorio con imágenes o un fichero csv compartido en drive
+Por ejemplo vamos a ubicar ahí un fichero de cadenas de tv sacado de github y ubicado en un proyecto de github
+<a href="https://github.com/MAlejandroR/staticSite/blob/main/data/tv.json">https://github.com/MAlejandroR/staticSite/blob/main/data/tv.json</a>
+Este fichero es un array de elemetos ***json *** (parejas variable valor en un fichero)
+Cada json contiene <strong>name</strong> y <strong>channels</strong> y channels es un array con todos los canales de ese tipo de canales con los siguientes datos:</p>
+<ul>
+<li>name</li>
+<li>web</li>
+<li>logo</li>
+<li>epg_id</li>
+<li>options</li>
+</ul>
+<p>Se trataría de crear una plantilla que permita visualizar el contenido del array</p>
+<p>Para ello vamos a crear una plantilla <em><strong>html</strong></em> cuyo contenido sea recorrer el array, por ejemplo la llamamos 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    datos_tv.html
+
+
+</span>
+</strong>
+. La debemos de ubicar bajo el directorio 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    _layouts/_defaults
+
+
+</span>
+</strong>
+, siguiendo las especificaciones vistas en el apartado anterior.
+
+
+<div class="pageinfo pageinfo-primary">
+<p>**El código de la plantilla **</p>
+<hr>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>  {{ range  .Site.Data.tv }}
+</span></span><span style="display:flex;"><span>      &lt;<span style="color:#8b008b;font-weight:bold">h1</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">li</span>&gt;  {{ .name }}&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">h1</span>&gt;
+</span></span><span style="display:flex;"><span>      {{ range .channels }}
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;{{ .web}}&#34;</span> &gt;
+</span></span><span style="display:flex;"><span>          &lt;<span style="color:#8b008b;font-weight:bold">img</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;{{.logo}}&#34;</span> <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;{{ .name }}&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>          &lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>       {{ end }}
+</span></span><span style="display:flex;"><span>  {{ end }}
+</span></span><span style="display:flex;"><span>     &lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span></code></pre></div>
+</div>
+
+
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>La ubicación del fichero</strong></p>
+<hr>
+<p><img src="/images/relearn/plantillas/plantilla_tv.png" alt="fichero plantilla para canales de tv"></p>
+
+</div>
+
+Hay que entender el doble bucle que hay cuya sintaxis, en lugar del for al que estamos acostumbrados es <strong>range</strong>.
+En definitiva lo que hace es recorrer el array inicial y para cada elemento recorro el elemento <em>channels</em> que como se puede ver es otro array</p>
+<p>Observa la sintaxis y mira cómo cada <strong>range</strong> tiene su <strong>end</strong></p>
+<p>Una vez que hemos creado la plantilla, vamos a consumirla desde un fichero de markdown.
+Lo único que tendremos que hacer es cargar esa página con la plantilla que hemos creado previamente.
+Cómo queremos que se cargue la misma estructura que todas las plantillas de nuestro sitio web, debemos buscar la plantilla base e incluir los elementos en esta plantilla
+La plantilla base de las páginas está en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    themes/layouts/_defaults/single.html
+
+
+</span>
+</strong>
+ cuyo contenido editamos y copiamos en nuestra plantilla de 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    datos_tv.html
+
+
+</span>
+</strong>
+
+
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>Plantilla de datos_tv.html incluyendo la plantilla base.html</strong></p>
+<hr>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{- partial &#34;header.html&#34; . }}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">hr</span> /&gt;
+</span></span><span style="display:flex;"><span>{{ partial &#34;content.html&#34; . }}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">hr</span> /&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">hr</span> /&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>    {{ range  .Site.Data.tv }}
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">h2</span>&gt;&lt;<span style="color:#8b008b;font-weight:bold">li</span>&gt;  {{ .name }}&lt;/<span style="color:#8b008b;font-weight:bold">li</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">h2</span>&gt;
+</span></span><span style="display:flex;"><span>    {{ range .channels }}
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;{{ .web}}&#34;</span> &gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#8b008b;font-weight:bold">img</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;{{.logo}}&#34;</span> <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;{{ .name }}&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    {{ end }}
+</span></span><span style="display:flex;"><span>    {{ end }}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">ul</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">footer</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;footline&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    {{- with .Params.LastModifierDisplayName }}
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">i</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#39;fas fa-user&#39;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">i</span>&gt; &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;mailto:{{ $.Params.LastModifierEmail }}&#34;</span>&gt;{{ . }}&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt; {{ with $.Date }} &lt;<span style="color:#8b008b;font-weight:bold">i</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#39;fas fa-calendar&#39;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">i</span>&gt; {{ .Format &#34;02/01/2006&#34; }}{{ end }}
+</span></span><span style="display:flex;"><span>    {{- end }}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">footer</span>&gt;
+</span></span><span style="display:flex;"><span>{{- partial &#34;f
+</span></span></code></pre></div>
+</div>
+
+Ahora creamos la página markdown que usará esta plantilla, la creamos bajo practica con el comando de 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    hugo cli
+
+
+</span>
+</strong>
+</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>hugo new static/practica/datos.md
+</span></span></code></pre></div>
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>página markdown que usa esta plantilla datos.md</strong></p>
+<hr>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-markdown" data-lang="markdown"><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span>title: &#34;Obtener Json&#34;
+</span></span><span style="display:flex;"><span>date: 2021-10-21T13:31:19+02:00
+</span></span><span style="display:flex;"><span>draft: false
+</span></span><span style="display:flex;"><span>layout: datos_tv
+</span></span><span style="display:flex;"><span>---
+</span></span><span style="display:flex;"><span><span style="color:#000080;font-weight:bold"># Listado de canales de tv
+</span></span></span></code></pre></div>
+</div>
+
+<p>Vemos que especificamos en el front matter la variable 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    layout
+
+
+</span>
+</strong>
+. El resultado de la ejecución la podemos ver:</p>
+
+
+<div class="pageinfo pageinfo-primary">
+<p>**El resultado de la ejecución **</p>
+<hr>
+<p><img src="/images/relearn/plantillas/canales_tv.png" alt="Ejecución de carga de datos"></p>
+
+</div>
+
+<h1 id="consumir-ficheros-de-un-directorio">Consumir ficheros de un directorio</h1>
+<p>En este caso vamos a tener un fichero con imágenes o fotografías  en un directorio
+Podemos crear un fichero 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    json o yaml o toml
+
+
+</span>
+</strong>
+ para especificar la ubicación de los ficheros y los datos que queramos sobre cada uno de ellos.
+En este caso creamos las imágenes en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    /static/images/carousel
+
+
+</span>
+</strong>
+
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Comentario</h4>
+
+    He creado con nombre carousel, pues pretendía que se viesen como una galería de imágenes usando este efecto visual de bootstrap, pero no he conseguido cargarlo. Pendiente de modificarlo, pero dejo este ejemplo sin visualización de carousel.
+
+</div>
+
+
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>Ficheros de imágenes</strong></p>
+<hr>
+<p><img src="/images/relearn/data/imagenes.png" alt="Ficheros de imágenes para ver"></p>
+
+</div>
+
+
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>Creamos la plantilla content/&hellip;&hellip;/carousel.md</strong></p>
+<hr>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span> <span style="color:#a61717;background-color:#e3d2d2">!</span>[]<span style="color:#a61717;background-color:#e3d2d2">()</span>
+</span></span></code></pre></div>
+</div>
+
+
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>Creamos la plantilla html /layoout/_defoult/carousel.html</strong></p>
+<hr>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{- partial &#34;header.html&#34; . }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{ partial &#34;content.html&#34; . }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#228b22">&lt;!-- SECCION PARA CARGAR LAS IMÁGENES--&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">id</span>=<span style="color:#cd5555">&#34;mic&#34;</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;carousel slide &#34;</span> <span style="color:#658b00">data-ride</span>=<span style="color:#cd5555">&#34;carousel&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;carousel-inner&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        {{ range $elem_index, $elem_val := .Site.Data.carrusel }}
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#8b008b;font-weight:bold">div</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#39;carousel-item {{ if eq $elem_index &#34;1&#34; }} active {{ end }}&#39;</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#8b008b;font-weight:bold">img</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;d-block  w-100&#34;</span> <span style="color:#658b00">src</span>=<span style="color:#cd5555">&#34;{{ .image  | relURL }}&#34;</span>  <span style="color:#658b00">alt</span>=<span style="color:#cd5555">&#34;{{ .name }}&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>        {{ end }}
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">div</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#8b008b;font-weight:bold">footer</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#34;footline&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  {{- with .Params.LastModifierDisplayName }}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#8b008b;font-weight:bold">i</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#39;fas fa-user&#39;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">i</span>&gt; &lt;<span style="color:#8b008b;font-weight:bold">a</span> <span style="color:#658b00">href</span>=<span style="color:#cd5555">&#34;mailto:{{ $.Params.LastModifierEmail }}&#34;</span>&gt;{{ . }}&lt;/<span style="color:#8b008b;font-weight:bold">a</span>&gt; {{ with $.Date }} &lt;<span style="color:#8b008b;font-weight:bold">i</span> <span style="color:#658b00">class</span>=<span style="color:#cd5555">&#39;fas fa-calendar&#39;</span>&gt;&lt;/<span style="color:#8b008b;font-weight:bold">i</span>&gt; {{ .Format &#34;02/01/2006&#34; }}{{ end }}
+</span></span><span style="display:flex;"><span>  {{- end }}
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#8b008b;font-weight:bold">footer</span>&gt;
+</span></span><span style="display:flex;"><span>{{- partial &#34;footer.html&#34; . }}
+</span></span></code></pre></div>
+</div>
+</p>
+<p>Y creamos los ficheros en la carpeta de 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    data
+
+
+</span>
+</strong>
+ que van a referenciar a cada una de las imágenes. Lo vamos a establecer con formato 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    json
+
+
+</span>
+</strong>
+
+
+
+<div class="pageinfo pageinfo-primary">
+<p><strong>Listado de ficheros json para referenciar las imágens</strong></p>
+<hr>
+<p><img src="/images/relearn/data/ficheros_json_imagenes.png" alt="Listado de ficheros para referenciar imágenes local"></p>
+
+</div>
+
+El contenido de estos ficheros es igual salvo que cada uno referencia a una images</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">&#34;name&#34;</span>:<span style="color:#cd5555">&#34;imagen 1&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#8b008b;font-weight:bold">&#34;image&#34;</span>:<span style="color:#cd5555">&#34;/images/carrusel/img1.jpg&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="práctica">Práctica</h3>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Ahora practica tú</h4>
+
+    <p>&#x1f603;
+**Carga el ficheros de datos **</p>
+<ol>
+<li>Carga el fichero de canales visto en este tema</li>
+<li>Crea un directorio con imágenes y muestralas</li>
+<li>Investiga e intenta cargar los datos de un fichero csv que tengas en tu drive</li>
+</ol>
+
+</div>
+
+
+</div>
+
+
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-455150853f313a9623a258c3512c5806">11 - Otros Aspectos</h1>
+    
+	<h3 id="activar-un-shortcode-dentro-de-otro">Activar un shortcode dentro de otro</h3>
+<p>Hugo para convertir md a html utiliza <em><strong>GoldMark</strong></em>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">GoldMark</h4>
+
+    <p>Es el procesador que utiliza Hugo</p>
+<strong>
+<span class="font-weight-bold text-primary">
+<pre><code>para convertir texto MD a HTML
+</code></pre>
+</span>
+</strong>
+, rápido y muy compatible con los estándares de <strong>Markdown</strong>.
+
+</div>
+</p>
+
+<strong>
+<span class="font-weight-bold text-text-warning">
+
+    warning
+
+
+</span>
+</strong>
+
+
+<strong>
+<span class="font-weight-bold text-text-primary">
+
+    primary
+
+
+</span>
+</strong>
+
+
+<strong>
+<span class="font-weight-bold text-text-info">
+
+    Info
+
+
+</span>
+</strong>
+
+
+<strong>
+<span class="font-weight-bold text-text-muted">
+
+    Muted
+
+
+</span>
+</strong>
+
+
+</div>
+
+
+
+    
+	
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2025
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Tous droits réservés</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Politique de confidentialité</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script src="/dwes/js/main.js"></script>
+<script defer src="/dwes/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/dwes/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

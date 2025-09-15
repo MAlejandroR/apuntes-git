@@ -1,0 +1,2689 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/dwes/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=dwes/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" type="text/html" href="http://localhost:1313/dwes/es/docs/01_web/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/dwes/es/docs/01_web/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/dwes/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/dwes/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/dwes/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/dwes/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-192x192.png" sizes="192x192">
+
+<title>La web_old y www | Desarrollo Web</title>
+<meta name="description" content="Objetivos Repaso de conceptos de redes Primer contacto con conceptos básicos de redes Mostrar la evolución de internet Un modelo de capas para las redes Qué es la www">
+
+<meta property="og:url" content="http://localhost:1313/dwes/es/docs/01_web/">
+  <meta property="og:site_name" content="Desarrollo Web">
+  <meta property="og:title" content="La web_old y www">
+  <meta property="og:description" content="Objetivos Repaso de conceptos de redes Primer contacto con conceptos básicos de redes Mostrar la evolución de internet Un modelo de capas para las redes Qué es la www">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+    <meta property="og:image" content="http://localhost:1313/dwes/es/docs/01_web/featured-background.png">
+
+  <meta itemprop="name" content="La web_old y www">
+  <meta itemprop="description" content="Objetivos Repaso de conceptos de redes Primer contacto con conceptos básicos de redes Mostrar la evolución de internet Un modelo de capas para las redes Qué es la www">
+  <meta itemprop="datePublished" content="2024-10-15T07:04:49+02:00">
+  <meta itemprop="dateModified" content="2024-10-15T07:04:49+02:00">
+  <meta itemprop="wordCount" content="29">
+  <meta itemprop="image" content="http://localhost:1313/dwes/es/docs/01_web/featured-background.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/dwes/es/docs/01_web/featured-background.png">
+  <meta name="twitter:title" content="La web_old y www">
+  <meta name="twitter:description" content="Objetivos Repaso de conceptos de redes Primer contacto con conceptos básicos de redes Mostrar la evolución de internet Un modelo de capas para las redes Qué es la www">
+
+
+<link href="/dwes/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/dwes/es/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/dwes/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Desarrollo Web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/es/dwes/docs/02_docker/"><span>Docker</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/es/dwes/docs/03_hugo/"><span>Hugo</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/dwes/es/docs/02_docker/1_docker/"><span>Docker</span></a>
+      </li>
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/dwes/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/dwes/en/">English</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+Versión imprimible multipagina.
+<a href="#" onclick="print();return false;">Haga click aquí para imprimir</a>.
+</p><p>
+<a href="/dwes/es/docs/01_web/">Volver a la vista normal de esta página</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">La web_old y www</h1>
+
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1: <a href="#pg-c4476143a6d2502e40479caca90240d4">Introducción</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>2: <a href="#pg-d38436ca0288d1ee67db16116dcc17e3">Ideas básicas de redes</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>3: <a href="#pg-1ea8407e154d8a27e89dc5f2c0dc2e87">Modelo OSI</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>4: <a href="#pg-79616b07f354e87879c9cc65f893938a">Internet</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>5: <a href="#pg-6ffb78e0fc219410d94892651c8f2638">Instalaciones</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>6: <a href="#pg-365a2cdb02b562b4ce3808d7c1d496dc">Instalación</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>6.1: <a href="#pg-4f3f634e5dccf42ca7dc4bf41024f60e">Apache</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>6.1.1: <a href="#pg-6731e33131d9bb0a73e410e8c637ba0d">practicando</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+
+    </ul>
+    
+  
+
+    </ul>
+    
+  
+
+    </ul>
+
+
+<div class="content">
+      
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            <i class="fas  fa-check-circle"></i> 
+        </span>
+        
+        <span >Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px;font-weight:bold"> Repaso de conceptos de redes</h3>
+
+    <hr style="border-color:seagreen;border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            
+                
+                
+            
+                
+                
+                  <li>Primer contacto con  conceptos básicos de redes</li>
+                
+            
+                
+                
+                  <li>Mostrar la evolución de internet</li>
+                
+            
+                
+                
+                  <li>Un modelo de capas para las redes</li>
+                
+            
+                
+                
+                  <li>Qué es la www</li>
+                
+            
+                
+                
+            
+        </ul>
+
+    </div>
+</div>
+
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="">
+    
+	<h1 id="pg-c4476143a6d2502e40479caca90240d4">1 - Introducción</h1>
+    <div class="lead">Conceptos generales del desarrollo web</div>
+	
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            <i class="fas  fa-check-circle"></i> 
+        </span>
+        
+        <span >Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px;font-weight:bold"> Qué veremos aquí</h3>
+
+    <hr style="border-color:seagreen;border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            
+                
+                
+            
+                
+                
+                  <li>En qué consiste este módulo</li>
+                
+            
+                
+                
+                  <li>Qué es un desarrollar una aplicación</li>
+                
+            
+                
+                
+                  <li>Una aplicación web</li>
+                
+            
+                
+                
+                  <li>En el servidor</li>
+                
+            
+                
+                
+            
+        </ul>
+
+    </div>
+</div>
+
+<h3 id="introducción-al-desarrollo-en-la-web">Introducción al desarrollo en la web</h3>
+<div class="iframe-container">
+<iframe src="https://es.wikieducator.org/index.php?curid=6656" width="100%" height="5378">WikiEducator </iframe>
+</div>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-d38436ca0288d1ee67db16116dcc17e3">2 - Ideas básicas de redes</h1>
+    
+	
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            <i class="fas  fa-check-circle"></i> 
+        </span>
+        
+        <span >Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px;font-weight:bold"> Repaso de conceptos de redes</h3>
+
+    <hr style="border-color:seagreen;border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            
+                
+                
+            
+                
+                
+                  <li>Conceptos de redes</li>
+                
+            
+                
+                
+                  <li>La red de Internet</li>
+                
+            
+                
+                
+                  <li>WWW</li>
+                
+            
+                
+                
+            
+        </ul>
+
+    </div>
+</div>
+
+<h2 id="qué-es-una-red">Qué es una red</h2>
+<p><strong>Una red</strong> es 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    un conjunto de dispositivos interconectados
+
+</span>
+</strong>
+ que pueden comunicarse entre sí.</p>
+<p>Estos dispositivos pueden ser computadoras, servidores, impresoras, teléfonos móviles, routers, y otros dispositivos que forman parte de la infraestructura de la red.</p>
+<p>Cada dispositivo lo podemos llamar 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    nodo
+
+</span>
+</strong>
+</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 770px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/02_conceptos_basicos/red_nodos_hu_ffd2c7f2a4af6498.png" width="760" height="502">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<hr style="border-color: red; border-width: 3px;"/>
+<h3 id="características-de-una-red">Características de una red:</h3>
+<ul>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Interconexión
+
+
+</span>
+</strong>
+: Todos los dispositivos (también llamados nodos) están conectados entre sí. La conexión puede ser cableada (red cableada) o inalámbrica (red Wi-Fi).</p>
+</li>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Acceso a todos los nodos
+
+
+</span>
+</strong>
+: Desde cualquier nodo de la red, es posible comunicarse con cualquier otro nodo sin salir de la red. Esto significa que no es necesario &ldquo;abandonar&rdquo; la red para ir de un dispositivo a otro, garantizando que los datos viajen de un nodo a otro de manera directa o a través de otros nodos.</p>
+</li>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Identificación única en la red
+
+
+</span>
+</strong>
+: Para que los dispositivos puedan comunicarse correctamente, es fundamental que cada nodo tenga una identificación única dentro de la red. Esta identificación se conoce como dirección IP (en redes basadas en IP) y actúa como un número de identificación para cada dispositivo, permitiendo que los mensajes y datos lleguen al destino correcto.</p>
+</li>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Dirección IP
+
+
+</span>
+</strong>
+: Cada nodo tiene una dirección IP única, lo que permite identificarlo en la red. Por ejemplo, en una red local, las direcciones IP pueden ser de la forma 192.168.1.x, donde x identifica de manera única a cada dispositivo en la red. 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    La dirección IP
+
+
+</span>
+</strong>
+, es parte del protocolo IP, conceptos que abordaremos más adelante</p>
+</li>
+</ul>
+<hr style="border-color: red; border-width: 3px;"/>
+<h3 id="implicaciones-de-la-identificación-única">Implicaciones de la identificación única</h3>
+<p>Este es un concepto fundamental y necesario. El hecho de que necesariamente cada dispositivo o nodo, se tenga que identificar de forma única y que se permita la interconexión total tiene unas implicaciones:</p>
+<p>*
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Enrutamiento de datos
+
+
+</span>
+</strong>
+: Para que los datos lleguen de un nodo a otro, la red utiliza esta identificación para determinar el camino adecuado entre los dispositivos.</p>
+<p>*
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Colisión de direcciones
+
+
+</span>
+</strong>
+: Si dos nodos tienen la misma dirección IP, puede producirse un conflicto que impida que ambos nodos funcionen correctamente en la red.</p>
+<p>*
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Seguridad
+
+
+</span>
+</strong>
+: La identificación única también es importante desde el punto de vista de la seguridad. Al tener control sobre qué dispositivos están en la red, es más fácil implementar políticas de seguridad y control de acceso.</p>
+
+
+<div class="alert alert-dark" role="alert">
+<h4 class="alert-heading">Ejemplo</h4>
+
+    Imagina que tienes una red de 5 computadoras en una oficina. Cada una tiene una dirección IP única. Si el dispositivo A quiere enviar un archivo al dispositivo B, lo hará utilizando la dirección IP de B. Gracias a esta identificación única, el archivo llegará directamente a B sin confusiones ni errores.
+
+</div>
+
+<h2></h2>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-1ea8407e154d8a27e89dc5f2c0dc2e87">3 - Modelo OSI</h1>
+    
+	
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            <i class="fas  fa-check-circle"></i> 
+        </span>
+        
+        <span >Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px;font-weight:bold"> Qué veremos aquí</h3>
+
+    <hr style="border-color:seagreen;border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            
+                
+                
+            
+                
+                
+                  <li>Modelo OSI</li>
+                
+            
+                
+                
+                  <li>Modelo TCP_IP</li>
+                
+            
+                
+                
+                  <li>Concepto de protocolo</li>
+                
+            
+                
+                
+                  <li>Proceso de comunicación extremo a extremo</li>
+                
+            
+                
+                
+            
+        </ul>
+
+    </div>
+</div>
+
+<h2 id="introducción-al-modelo-osi">Introducción al Modelo OSI</h2>
+<p>El 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    modelo OSI
+
+
+</span>
+</strong>
+ (Open Systems Interconnection) es un marco conceptual (es la base para la construcción y definición de redes), que define 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    cómo las aplicaciones en una red pueden comunicarse entre sí.
+
+
+</span>
+</strong>
+</p>
+<p>Fue desarrollado por la 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    ISO (Organización Internacional de Normalización)
+
+
+</span>
+</strong>
+ en 1984 para estandarizar las funciones de comunicación de los sistemas de red.</p>
+<p>El modelo OSI se divide en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    siete capas
+
+
+</span>
+</strong>
+, cada una de las cuales describe una parte específica del proceso de comunicación.</p>
+<p>Estas capas van desde el 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    nivel físico
+
+
+</span>
+</strong>
+, donde se produce la transferencia física de bits a través de señales eléctricas o inalámbricas, hasta las 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    aplicaciones de usuario
+
+
+</span>
+</strong>
+, facilitando la cominucación entre distintos sistemas y aplicaciones de red.</p>
+<p>Las siete capas son:</p>
+<ol>
+<li><strong>Capa Física</strong></li>
+<li><strong>Capa de Enlace de Datos</strong></li>
+<li><strong>Capa de Red</strong></li>
+<li><strong>Capa de Transporte</strong></li>
+<li><strong>Capa de Sesión</strong></li>
+<li><strong>Capa de Presentación</strong></li>
+<li><strong>Capa de Aplicación</strong></li>
+</ol>
+<p>El modelo OSI es fundamental para entender cómo las redes organizan y gestionan las comunicaciones entre dispositivos.</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 410px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/03_osi/pila_osi_hu_93f0ef80bbc1e59b.png" width="400" height="600">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<p>La idea es que cada capa de diferentes dispositivos se comuniquen de forma directa a través de lo que es el protocolo.</p>
+<p>El modelo OSI es una especificación formal y en él se basan la construccion de redes reales como conjunto de protocolos que permiten la comunicación.</p>
+<p>Una red real, que todos conocemos, es la red TCP/IP o red de internet</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 826px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/03_osi/1_tcp_ip_hu_5f1d582e902e5f6f.jpg" width="816" height="1056">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+https://www.lawebdelprogramador.com/pdf/15788-Modelo-OSI-y-dispositivos-de-red-por-capa.html
+
+</p>
+</figcaption>
+</figure>
+
+<hr style="border-color: red; border-width: 3px;"/>
+<p>La siguiente imagen muestra la responsabilidad de capas agrupadas, que constituirán una sola capa en el modelo real de la red de internet o  TCP_IP</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 510px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/03_osi/capas_tcp_ip_hu_6c843911233d1e4.png" width="500" height="371">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+https://domoticaparatodos.com/2016/11/capas-en-los-protocolos/
+
+</p>
+</figcaption>
+</figure>
+
+<p>De forma ilustrativa muestra la siguiente imagen la relación de capa/s OSI con las capas de la red de tipo TPC/IP</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 510px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/03_osi/Internet_osi_hu_eac279d8f94e9c10.png" width="500" height="375">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<h3 id="protocolos">Protocolos</h3>
+<h4 id="qué-es-un-protocolo">¿Qué es un protocolo?</h4>
+<p>Un <strong>protocolo</strong> es un conjunto de <strong>reglas</strong> que permite que dos dispositivos diferentes puedan intercambiar <strong>datos</strong>, no información, de manera que ambos dispositivos se <strong>entiendan</strong>. Estas reglas aseguran que la comunicación entre los dispositivos sea <strong>lógica</strong> y de <strong>extremo a extremo</strong>, es decir, desde el origen hasta el destino sin perder coherencia en el proceso.</p>
+<h4 id="protocolo-como-software">Protocolo como software</h4>
+<p>Un protocolo no es un concepto abstracto, se materializa en un <strong>software</strong> o <strong>programa</strong> que implementa estas reglas, permitiendo que la comunicación se lleve a cabo.</p>
+<p>Los <strong>protocolos de nivel superior</strong> (como los de la capa de aplicación) se materializan en programas que el usuario o el administrador pueden instalar y configurar como un <strong>servicio</strong> o <strong>servidor</strong> en un equipo, que generalmente se denomina <strong>servidor</strong> y suele ser más potente que un equipo normal.</p>
+<h4 id="protocolos-y-el-sistema-operativo">Protocolos y el sistema operativo</h4>
+<p>Los <strong>protocolos de nivel inferior</strong> (capa de sesión, red, enlace-físico) forman parte del <strong>sistema operativo</strong> y se instalan automáticamente con él. Esto sucedió por primera vez en una distribución de <strong>Unix</strong> desarrollada por la Universidad de <strong>Berkeley</strong>, que integró de manera nativa estos protocolos en el sistema.</p>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    El Unix de Berkeley (BSD)
+
+
+</span>
+</strong>
+ integró 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    los protocolos TCP/IP de forma nativa en 1983
+
+
+</span>
+</strong>
+, lo que contribuyó de manera significativa a la expansión de las redes de computadoras y, eventualmente, de Internet.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p>La siguiente imagen muestra las capas de nivel de una red de internet de tipo TCP/IP
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1683px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/03_osi/1_comunicacion_hu_276e8e703b5512f2.png" width="1673" height="859">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+<h1 id="proceso-de-comunicación">Proceso de comunicación</h1>
+<p>Analiza la siguiente imagen para concretar cómo se produce una comunicación lógica de información  a nivel de capas y la comunicación física o intercambio de datos a nivel lógico</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1683px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/03_osi/2_comunicacion_hu_411f3bad8fd2a649.png" width="1673" height="859">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<h2 id="proceso-de-comunicación-en-redes">Proceso de comunicación en redes</h2>
+<p>Para que se produzca una <strong>comunicación lógica de extremo a extremo</strong> en los diferentes niveles o capas, cada <strong>protocolo</strong> incluye (cuando se encapsula en el emisor) o extrae y analiza (cuando desencapsula en recepción o destino), añadiendo a los datos una <strong>cabecera</strong> o información correspondiente al nivel en el que se encuentra.</p>
+<h3 id="proceso-de-comunicación-1">Proceso de comunicación</h3>
+<p>El proceso de encapsulación y desencapsulación sigue una serie de pasos que involucran diferentes capas del modelo OSI y TCP/IP.</p>
+<h4 id="en-el-emisor">En el emisor:</h4>
+<ol>
+<li>
+<p><strong>Nivel de Aplicación</strong>:
+En la capa de aplicación, los datos que el usuario quiere enviar se procesan según el protocolo de la aplicación (HTTP, FTP, SMTP, etc.). Aquí, se trocea la información (habitualmente llamada <strong>datos o mensaje</strong>), que se pasa al nivel de transporte.</p>
+</li>
+<li>
+<p><strong>Nivel de Transporte</strong>:
+En esta capa, el protocolo de transporte (TCP o UDP) añade una <strong>cabecera</strong> a cada trozo de datos, que se denomina <strong>segmento</strong> (en el caso de TCP) o <strong>datagrama</strong> (en el caso de UDP). Esta cabecera incluye, entre otras cosas, el <strong>número de puerto</strong>, que es un identificador único que permite saber qué aplicación en el dispositivo de destino debe recibir los datos.</p>
+<ul>
+<li><strong>TCP</strong> es un protocolo orientado a la conexión que asegura la entrega fiable de los datos.</li>
+<li><strong>UDP</strong> es un protocolo no orientado a la conexión, que ofrece una entrega más rápida pero sin garantías de fiabilidad.</li>
+</ul>
+</li>
+<li>
+<p><strong>Nivel de Red</strong>:
+El nivel de red utiliza el protocolo <strong>IP</strong> para realizar el enrutamiento de los datos. En este nivel, los <strong>segmentos</strong> de la capa de transporte se encapsulan en <strong>paquetes IP</strong>. La cabecera de IP contiene información clave, como la <strong>dirección IP de origen y destino</strong>, lo que permite a los routers dirigir el paquete al dispositivo correcto.</p>
+<p>Es importante destacar que para <strong>IP</strong>, todo lo que recibe de la capa de transporte, incluidos los datos y las cabeceras de TCP o UDP, es tratado como una unidad de datos. Cada nivel del modelo nunca accede al contenido interno de los datos, solo manipula y analiza su propia cabecera.</p>
+</li>
+<li>
+<p><strong>Nivel de Enlace</strong>:
+En el nivel de enlace, los <strong>paquetes</strong> de IP se encapsulan en <strong>tramas</strong>. La cabecera de una trama contiene información como las <strong>direcciones MAC</strong> (que identifican de forma única a los dispositivos dentro de la red local). Además, la trama incluye mecanismos de control de errores, como bits de redundancia para detectar y corregir errores. Un protocolo como <strong>Hamming</strong> puede ser utilizado para este propósito, permitiendo detectar y corregir un porcentaje de errores en la transmisión.</p>
+</li>
+<li>
+<p><strong>Nivel Físico</strong>:<br>
+Finalmente, la capa física se encarga de transmitir las <strong>señales eléctricas</strong>, <strong>ondas electromagnéticas</strong> (en redes inalámbricas), <strong>señales luminosas</strong> (si usamos medios de fibra óptica) o de otra naturaleza, en función del medio que usemos para la transmisión. Estas señales representan los bits que viajan a través del medio de transmisión (como cables de cobre, fibra óptica, o aire en redes inalámbricas). En este nivel, se lleva a cabo la <strong>conversión de los datos</strong> en señales físicas que pueden viajar por el medio de comunicación.</p>
+</li>
+</ol>
+<h4 id="proceso-inverso-receptor">Proceso inverso (receptor):</h4>
+<p>En el receptor, ocurre el <strong>proceso inverso</strong>, conocido como <strong>desencapsulación</strong>. Los datos recibidos en la capa física son convertidos de señales a bits, que pasan a la capa de enlace, donde se analizan las tramas y se verifica la integridad de los datos. Después, el paquete IP es enviado a la capa de red, donde se lee la cabecera IP y se entrega el segmento al nivel de transporte, que finalmente entrega los datos a la aplicación correspondiente según el número de puerto.</p>
+<hr>
+<h3 id="términos-clave">Términos clave:</h3>
+<ul>
+<li><strong>Segmento</strong>: Unidad de datos en el nivel de transporte (TCP).</li>
+<li><strong>Datagrama</strong>: Unidad de datos en el nivel de transporte (UDP).</li>
+<li><strong>Paquete</strong>: Unidad de datos en el nivel de red (IP).</li>
+<li><strong>Trama</strong>: Unidad de datos en el nivel de enlace.</li>
+<li><strong>Señal</strong>: Representación física de los datos en el nivel físico.</li>
+</ul>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-79616b07f354e87879c9cc65f893938a">4 - Internet</h1>
+    
+	
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            <i class="fas  fa-check-circle"></i> 
+        </span>
+        
+        <span >Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px;font-weight:bold"> Intenet una red de tipo TCP/IP</h3>
+
+    <hr style="border-color:seagreen;border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            
+                
+                
+            
+                
+                
+                  <li>Historia de internet</li>
+                
+            
+                
+                
+                  <li>Eventos</li>
+                
+            
+                
+                
+                  <li>Datos de conexión</li>
+                
+            
+                
+                
+            
+        </ul>
+
+    </div>
+</div>
+
+<h3 id="internet-intranet-y-extranet">Internet, Intranet y Extranet</h3>
+<h4 id="breve-historia-y-origen-de-internet">Breve historia y origen de Internet</h4>
+<ul>
+<li><strong>Origen de Internet</strong>: Todo comenzó a finales de los 50 cuando se creó <strong>ARPA</strong> (Agencia de Proyectos de Investigación Avanzada) dentro del Departamento de Defensa de EE. UU.<br>
+Más tarde, en 1966, <strong>Lawrence G. Roberts</strong> se trasladó a ARPA para desarrollar el concepto de una red de ordenadores, llamada <strong>ARPANet</strong>.</li>
+</ul>
+<h4 id="evolución-de-internet">Evolución de Internet</h4>
+<ul>
+<li>Durante los años 70, la red ARPA fue restringida a los investigadores y empresas privadas financiadas por la administración.</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Vinton Cerf
+
+
+</span>
+</strong>
+ usó por primera vez la palabra 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    internet
+
+
+</span>
+</strong>
+ para exponer su idea sobre una red de redes basada en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    la familia de protocolos TCP/IP.
+
+
+</span>
+</strong>
+.</li>
+<li>El correo electrónico se volvió popular y apareció la posibilidad de realizar <strong>telnet</strong>. ARPANet se presentó en una conferencia.</li>
+</ul>
+<h4 id="primeros-dominios">Primeros dominios</h4>
+<ul>
+<li>En abril de 1985, aparecieron 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    los primeros dominios con letras
+
+
+</span>
+</strong>
+:
+<ul>
+<li><code>acmu.edu</code>, <code>purdue.edu</code>, <code>rice.edu</code>, <code>ucla.edu</code> (todos aún activos).</li>
+</ul>
+</li>
+<li>En junio de ese año, surgió el 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    primer dominio gubernamental
+
+
+</span>
+</strong>
+(<code>css.gov</code>) y en julio <code>mitre.org</code>.</li>
+<li>El primer dominio de un país fue en julio de 1985 para Gran Bretaña: <strong>co.uk</strong>.
+<ul>
+<li>Para ese año, <strong>Internet</strong> ya contaba con <strong>1.961 servidores</strong> ( Actualmente, en 2024, se estima que existen más dec 75 millones de servidores en todo el mundo.).</li>
+</ul>
+</li>
+</ul>
+<h4 id="creación-de-la-www">Creación de la WWW</h4>
+<ul>
+<li>En 1989, <strong>Tim Berners-Lee</strong>, investigador del <strong>CERN</strong> en Suiza, elaboró su propuesta de un sistema de <strong>hipertexto compartido</strong>, el primer esbozo de lo que sería la <strong>World Wide Web (WWW)</strong>.</li>
+<li>Al igual que ARPANet veinte años antes, su objetivo era poner en contacto a los científicos.</li>
+<li>La <strong>WWW</strong> fue una creación europea, diseñada 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    como herramienta de trabajo para crear y leer textos a través de una red
+
+
+</span>
+</strong>
+, intercomunicando a científicos de todo el mundo.</li>
+</ul>
+<h3 id="evolución-de-internet-década-de-los-90">Evolución de Internet (Década de los 90)</h3>
+<ul>
+<li>En 1991, <strong>Tim Berners-Lee</strong> creó v  (muy rudimentario comparado con los actuales).
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    
+
+
+</span>
+</strong>
+</li>
+<li>En 1993, apareció <strong>Mosaic</strong>, el primer visualizador gráfico de páginas web. En ese año se acuñó la expresión <strong>&ldquo;surfear en la web&rdquo;</strong>.</li>
+<li>En 1994, surgió el primer <strong>ciberbanco</strong>.</li>
+<li>Para 1995, había más de <strong>5 millones de servidores</strong> conectados a Internet. La columna vertebral de <strong>NSFNET</strong> comenzó a ser sustituida por proveedores comerciales interconectados.</li>
+</ul>
+<h3 id="internet-en-la-actualidad">Internet en la actualidad</h3>
+<h4 id="ocio">Ocio</h4>
+<ul>
+<li>Muchos utilizan Internet para descargar música, películas y otros contenidos. El <strong>streaming</strong> es una realidad cotidiana en todos los aspectos.</li>
+<li>Los servicios más utilizados incluyen la mensajería instantánea, <strong>correo electrónico</strong>, y el <strong>chat</strong>.</li>
+<li>Las redes sociales como <strong>YouTube</strong>, <strong>Twitter</strong>, <strong>Facebook</strong>, <strong>Discord</strong> y <strong>Twitch</strong> han convertido a Internet en una red más social.</li>
+</ul>
+<h4 id="trabajo">Trabajo</h4>
+<ul>
+<li>Con la aparición de Internet y de conexiones de alta velocidad accesibles al público, muchas personas pueden trabajar desde casa.</li>
+<li>Internet ha sido un impulsor clave de la <strong>Globalización</strong> y, junto con la <strong>desmaterialización de la economía</strong>, ha dado lugar a la <strong>Nueva Economía</strong>.</li>
+<li>La pandemia por la <strong>COVID-19</strong> aceleró estas transformaciones.</li>
+</ul>
+<h4 id="tamaño-de-internet">Tamaño de Internet</h4>
+<ul>
+<li>Un estudio de 2008 estimaba que había más de <strong>63.000 millones de páginas web</strong>.</li>
+<li>El número de usuarios de Internet sigue aumentando. En 2006, había aproximadamente <strong>1.100 millones de usuarios</strong> y para 2016 esa cifra superó los <strong>2.000 millones</strong>.</li>
+<li>Actualmente, en 2024, se estima que 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    hay más de 5.000 millones
+
+
+</span>
+</strong>
+ de usuarios de Internet en todo el mundo, lo que representa 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    más del 60% de la población mundial
+
+
+</span>
+</strong>
+.</li>
+<li>Además, el número de páginas web ha alcanzado cifras superiores a los 1.800 millones, aunque no todas están activas o actualizadas.</li>
+</ul>
+<h4 id="statista">Statista</h4>
+<ul>
+<li>En esta <a href="https://es.statista.com/buscar/?q=intenet&amp;Buscar=&amp;p=1">Web de Statista</a> web, puedes ver datos relacionados con internet.</li>
+<li>Este gráfico nos muestra qué <a href="https://es.statista.com/grafico/17539/datos-creados-online-en-un-minuto/">sucede en un minuto en internet</a></li>
+</ul>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1210px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/04_internet/internet_un_minuto_hu_8496a16b750e6dbf.jpeg" width="1200" height="1300">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<ul>
+<li>
+<p>Podemos ver los principales <a href="https://infografiasencastellano.com/2011/08/09/los-principales-hitos-del-desarrollo-de-internet-infografia-infographic-internet/">hitos del desarrollo de intenet</a>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1290px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/04_internet/hitosinternet_hu_a0e82b446bf13cbd.png" width="1280" height="720">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+</li>
+<li>
+<p>Esta página de referencia sobre los <a href="https://www.mastermarketing-valencia.com/marketing-digital/blog/internet-historia-evolucion/">Grandes Hitos de internet</a> nos muestra información detallada y termina con una interesante imagen que resume todos ellos
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1290px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/04_internet/historia_hu_2e8dbbc128e3fa1a.jpg" width="1280" height="780">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+</li>
+</ul>
+<h4 id="referencias">Referencias</h4>
+<blockquote>
+<p>Statista</p>
+<blockquote>
+<p> <a href="https://es.statista.com">https://es.statista.com</a></p></blockquote>
+<p>Internet Society</p>
+<blockquote>
+<p> <a href="http://www.internetsociety.org/es/brevehistoria-de-internet">http://www.internetsociety.org/es/brevehistoria-de-internet</a></p></blockquote>
+<p>Wikipedia (por ejemplo):</p>
+<blockquote>
+<p> <a href="http://es.wikipedia.org/wiki/Historia_de_Internet">http://es.wikipedia.org/wiki/Historia_de_Internet</a></p></blockquote></blockquote>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-6ffb78e0fc219410d94892651c8f2638">5 - Instalaciones</h1>
+    
+	
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            <i class="fas  fa-check-circle"></i> 
+        </span>
+        
+        <span >Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px;font-weight:bold"> Intenet una red de tipo TCP/IP</h3>
+
+    <hr style="border-color:seagreen;border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            
+                
+                
+            
+                
+                
+                  <li>Realizar instalaciones</li>
+                
+            
+                
+                
+            
+        </ul>
+
+    </div>
+</div>
+
+<h2 id="breve-historia-de-la-www">Breve Historia de la WWW</h2>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    La  www en la red World Wide Web
+
+
+</span>
+</strong>
+
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Varios períodos en la historia de la web
+
+
+</span>
+</strong>
+</p>
+<ul>
+<li>
+<p><strong>1980 – 1990</strong>: Desarrollo del concepto de la web. Tim Berners-Lee introduce la idea de un sistema de información global basado en hipertexto.</p>
+</li>
+<li>
+<p><strong>1992 – 1995</strong>: Expansión del uso de Internet. Creación de los primeros navegadores gráficos (como Mosaic) que permiten a los usuarios comunes interactuar con la web.</p>
+</li>
+<li>
+<p><strong>1996 – 1998</strong>: Primeras etapas de comercio en la web. Comienza a surgir el comercio electrónico con empresas pioneras como Amazon y eBay.</p>
+</li>
+<li>
+<p><strong>1999 – 2001</strong>: La burbuja de las empresas .com. El auge y colapso de muchas startups relacionadas con Internet que no tenían un modelo de negocio sostenible.</p>
+</li>
+<li>
+<p><strong>2002 – 2006: La expansión de la Web 2.0</strong>:</p>
+<ul>
+<li><strong>Web 2.0</strong>: Este período marca el auge de la llamada Web 2.0, donde los usuarios pasan de ser meros consumidores de información a ser creadores de contenido. Plataformas como <strong>MySpace</strong> (2003), <strong>Facebook</strong> (2004) y <strong>YouTube</strong> (2005) introducen nuevas formas de interacción, centradas en la participación activa.</li>
+<li><strong>Tecnologías clave</strong>: Durante esta época se popularizan tecnologías como <strong>AJAX</strong>, que permite a los desarrolladores web crear aplicaciones más rápidas y dinámicas, mejorando la experiencia de usuario.</li>
+<li><strong>Primeros pasos del comercio en la nube</strong>: Aunque aún en su fase inicial, empresas como <strong>Amazon</strong> comienzan a ofrecer servicios en la nube, sentando las bases de lo que será la computación en la nube.</li>
+</ul>
+</li>
+<li>
+<p><strong>2007 – 2012: La revolución móvil y la nube</strong>:</p>
+<ul>
+<li><strong>El iPhone y el auge de los smartphones</strong>: En 2007, el lanzamiento del <strong>iPhone</strong> revoluciona el acceso a la web. Los usuarios comienzan a conectarse a Internet desde dispositivos móviles a gran escala, y esto impulsa el diseño web responsivo.</li>
+<li><strong>La explosión de las aplicaciones móviles</strong>: A medida que los smartphones se convierten en una parte fundamental de la vida diaria, las aplicaciones móviles comienzan a competir con las páginas web en importancia. Servicios como <strong>App Store</strong> (2008) y <strong>Google Play</strong> (2008) permiten a los desarrolladores ofrecer aplicaciones directamente a los usuarios.</li>
+<li><strong>Servicios en la nube</strong>: En esta etapa, la computación en la nube empieza a consolidarse con la expansión de plataformas como <strong>Amazon Web Services (AWS)</strong> (2006), que ofrece infraestructura escalable para aplicaciones web.</li>
+</ul>
+</li>
+<li>
+<p><strong>2013 – 2017: La era del Big Data y la privacidad</strong>:</p>
+<ul>
+<li><strong>Big Data</strong>: El crecimiento de los servicios en línea genera enormes cantidades de datos, lo que lleva al auge de tecnologías de análisis masivo de datos o <strong>Big Data</strong>. Empresas como Google y Facebook comienzan a aprovechar estos datos para personalizar la experiencia web, aunque esto suscita debates sobre la privacidad de los usuarios.</li>
+<li><strong>Auge de las redes sociales</strong>: Redes sociales como <strong>Instagram</strong> (2010), <strong>WhatsApp</strong> (2010) y <strong>Snapchat</strong> (2011) dominan el panorama digital, cambiando la forma en que los usuarios interactúan entre sí y con la web.</li>
+<li><strong>Ciberseguridad y privacidad</strong>: Los crecientes ataques cibernéticos y la recopilación masiva de datos provocan que la seguridad se convierta en una prioridad. Esto lleva a la adopción del protocolo <strong>HTTPS</strong> en la mayoría de los sitios web y al desarrollo de regulaciones de protección de datos como el <strong>GDPR</strong> en Europa.</li>
+</ul>
+</li>
+<li>
+<p><strong>2018 – Actualidad: Inteligencia artificial y descentralización</strong>:</p>
+<ul>
+<li><strong>Inteligencia artificial y machine learning</strong>: Tecnologías de IA y <strong>machine learning</strong> comienzan a integrarse en la web para mejorar desde los motores de búsqueda hasta las recomendaciones en plataformas de streaming y redes sociales.</li>
+<li><strong>Blockchain y Web 3.0</strong>: Empiezan a surgir conceptos de una <strong>Web 3.0</strong> basada en tecnologías descentralizadas como el <strong>blockchain</strong>, con el objetivo de dar más control a los usuarios sobre sus datos y las transacciones en línea.</li>
+<li><strong>El auge de IoT</strong>: La <strong>Internet de las cosas (IoT)</strong> continúa su expansión, conectando millones de dispositivos al entorno web y transformando sectores como el hogar inteligente, la industria y la salud.</li>
+<li><strong>Impacto de la pandemia (COVID-19)</strong>: La pandemia global de 2020 acelera la digitalización de muchos sectores, aumentando la demanda de aplicaciones web, comercio electrónico y servicios en línea.</li>
+</ul>
+</li>
+</ul>
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Perspectivas de presente y futuro
+
+
+</span>
+</strong>
+
+<ul>
+<li>
+<p><strong>Auge de las tecnologías móviles</strong>: La web se adapta a los dispositivos móviles, como teléfonos inteligentes y tabletas, que ahora dominan el acceso a Internet.</p>
+</li>
+<li>
+<p><strong>Internet de las Cosas (IoT)</strong>: La integración de la web con dispositivos cotidianos, conectándolos a Internet para mejorar la automatización y la comunicación entre dispositivos.</p>
+</li>
+</ul>
+<h2 id="arquitectura">Arquitectura</h2>
+<p>Puedes ampliar la idea de la siguiente manera:</p>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    La arquitectura de la WWW es un tanto compleja
+
+
+</span>
+</strong>
+ y, sobre todo, 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    muy vasta
+
+
+</span>
+</strong>
+.</p>
+<p>Abarca una gran cantidad de elementos interconectados, desde el hardware que sustenta los servidores hasta los diversos protocolos y tecnologías que permiten la comunicación fluida entre los navegadores y los servidores.</p>
+<p>Esta arquitectura incluye múltiples capas, como la física, la de red, la de transporte, y finalmente la aplicación, donde operan los servicios web que utilizamos a diario.</p>
+<p>Sin embargo, pese a su complejidad, podemos simplificar la explicación para comprender mejor su funcionamiento básico.</p>
+<p>Para centrarnos, vamos a exponer el proceso que ocurre en una solicitud de una página web que podemos ver en la siguiente images:</p>
+<p><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1081px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/05_www/despliegue_hu_37093da3cfd68042.png" width="1071" height="604">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Esquema del Proceso de Solicitud de una Página Web
+
+
+</span>
+</strong>
+</p>
+<ol>
+<li><strong>Navegador del cliente</strong>:</li>
+</ol>
+<ul>
+<li>El usuario introduce una URL en el navegador web (ejemplo: <code>www.ejemplo.com</code>).</li>
+</ul>
+<ol start="2">
+<li><strong>Consulta DNS</strong>:</li>
+</ol>
+<ul>
+<li>El navegador envía una solicitud al <strong>servidor DNS</strong> para obtener la dirección IP correspondiente al nombre de dominio.</li>
+</ul>
+<ol start="3">
+<li><strong>Petición HTTP/HTTPS</strong>:</li>
+</ol>
+<ul>
+<li>El navegador realiza una solicitud <strong>HTTP/HTTPS</strong> a la dirección IP obtenida, pidiendo el recurso (una página web, archivo, etc.).</li>
+</ul>
+<ol start="4">
+<li><strong>Servidor Web</strong>:</li>
+</ol>
+<ul>
+<li>El <strong>servidor web</strong> (como Apache o Nginx) recibe la solicitud y verifica el recurso solicitado.</li>
+</ul>
+<ol start="5">
+<li><strong>Servidor de Aplicaciones</strong> (si aplica):</li>
+</ol>
+<ul>
+<li>Si la página requiere procesamiento dinámico (PHP, Java, Python, etc.), el <strong>servidor de aplicaciones</strong> genera el contenido necesario.</li>
+</ul>
+<ol start="6">
+<li><strong>Servidor de Bases de Datos</strong> (si aplica):</li>
+</ol>
+<ul>
+<li>Si es necesario, el servidor de aplicaciones consulta el <strong>servidor de bases de datos</strong> para obtener datos (ejemplo: contenido de un blog, productos de una tienda).</li>
+</ul>
+<ol start="7">
+<li><strong>Respuesta del Servidor</strong>:</li>
+</ol>
+<ul>
+<li>El servidor web envía el contenido solicitado de vuelta al navegador, ya sea una página estática o dinámica.</li>
+</ul>
+<ol start="8">
+<li><strong>Renderizado en el Navegador</strong>:</li>
+</ol>
+<ul>
+<li>El navegador interpreta el HTML, CSS y JavaScript recibidos, y muestra la página al usuario.</li>
+</ul>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Nota</h4>
+
+    <ul>
+<li><strong>Caché</strong>: Dependiendo de la configuración, el navegador o un servicio intermedio (CDN, caché del servidor) puede almacenar una copia temporal del recurso para acelerar solicitudes futuras.</li>
+</ul>
+
+
+</div>
+
+<h3 id="servidores-web">Servidores web.</h3>
+<p><a href="https://www.netcraft.com/blog/january-2024-web-server-survey/">En esta página de netcraft</a>,  podemos ver un análisis mensual de la cuota de mercado de servidores web, basado en el número de sitios web, dominios y computadoras activas.</p>
+<p>Como podemos ver en la imagen, 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    en enero de 2024
+
+
+</span>
+</strong>
+, el estudio reporta cambios en la popularidad de servidores como 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    nginx (23.21% de los sitios web) y Apache (20.70%)
+
+
+</span>
+</strong>
+.
+También incluye información sobre el crecimiento de Cloudflare y OpenResty, así como actualizaciones sobre software relevante para servidores.
+<img src="/dwes/es/docs/01_web/05_www/analisis_netcraft.png" alt="analisis_netcraft"></p>
+<h4 id="servidor-web-algunas-características">Servidor Web: Algunas Características</h4>
+<ul>
+<li><strong>Contenido estático y dinámico</strong>: Soporte para contenido estático (HTML) y dinámico (mediante CGI, intérpretes de PHP, Python, etc.).</li>
+<li><strong>Host virtuales</strong>: Permite manejar varias direcciones web desde una única dirección IP.</li>
+<li><strong>Velocidad de respuesta</strong>: Autoregulación de la velocidad de respuesta según la demanda.</li>
+<li><strong>Autenticación básica</strong>: Integración con sistemas de autenticación para acceso restringido.</li>
+<li><strong>Soporte de SSL</strong>: Capacidad de cifrar la comunicación mediante HTTPS.</li>
+<li><strong>Módulos</strong>: Extensible mediante módulos para soporte de nuevas características.</li>
+</ul>
+<hr>
+<h3 id="servidor-de-aplicaciones">Servidor de Aplicaciones</h3>
+<ul>
+<li>
+<p>Un servidor de aplicaciones es un paquete de software que proporciona servicios a las aplicaciones, como:</p>
+<ul>
+<li><strong>Seguridad</strong></li>
+<li><strong>Balanceo de carga</strong></li>
+<li><strong>Gestión de sistemas distribuidos</strong></li>
+</ul>
+</li>
+<li>
+<p>Inicialmente, estos servidores aparecieron en la plataforma <strong>Java</strong>, pero hoy en día se usan para todo tipo de tecnologías.</p>
+</li>
+<li>
+<p>Los servidores web y de aplicaciones suelen trabajar juntos, aunque son diferentes. Un servidor de aplicaciones necesita de un servidor web para funcionar.
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 780px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/05_www/servidor_aplicaciones_hu_1dea05d9557be4aa.png" width="770" height="491">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+</li>
+</ul>
+<hr>
+<h3 id="servidor-de-bases-de-datos">Servidor de Bases de Datos</h3>
+<ul>
+<li><strong>Tipos de bases de datos</strong>:
+<ul>
+<li><strong>Relacionales</strong>: MySQL, Oracle, SQLServer, MariaDB</li>
+<li><strong>No relacionales</strong>: MongoDB</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="servidores-complementarios">Servidores Complementarios</h3>
+<ul>
+<li>
+<p><strong>Correo</strong>:</p>
+<ul>
+<li>Servidores como <strong>Postfix</strong> o <strong>Sendmail</strong>.</li>
+<li>Extensiones como <strong>SPF</strong> para verificación y control de SPAM.</li>
+<li>Generalmente se delega al proveedor del servicio.</li>
+</ul>
+</li>
+<li>
+<p><strong>DNS</strong>:</p>
+<ul>
+<li>Servidores como <strong>Bind</strong> gestionan la resolución de nombres en Internet.</li>
+<li>También puede ser gestionado por el proveedor.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="servidores-complementarios-proxies">Servidores Complementarios: Proxies</h3>
+<ul>
+<li>
+<p>Un <strong>proxy</strong> actúa como intermediario entre el cliente y el servidor web.</p>
+<ul>
+<li>
+<p><strong>Proxy directo</strong>:</p>
+<ul>
+<li>Mejora la eficiencia y seguridad al controlar el acceso a redes externas.</li>
+<li>Ofrece funcionalidades de caché y autenticación.</li>
+</ul>
+</li>
+<li>
+<p><strong>Proxy inverso</strong>:</p>
+<ul>
+<li>Se coloca entre el cliente y los servidores internos.</li>
+<li>Permite balancear la carga entre varios servidores.</li>
+<li>Mejora el rendimiento al ofrecer caché.</li>
+<li>Un proxy inverso puede servir múltiples servidores desde la misma URI.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="infraestructura-hardware">Infraestructura Hardware</h3>
+<ul>
+<li><strong>Cloud Computing</strong>:
+<ul>
+<li>
+<p>Se basa en la provisión de servicios informáticos a través de la nube, sin depender de dispositivos específicos.</p>
+</li>
+<li>
+<p>Ventajas:</p>
+<ul>
+<li><strong>Agilidad</strong>: Mejores recursos para el usuario.</li>
+<li><strong>Coste</strong>: Reducidos en comparación con infraestructura física.</li>
+<li><strong>Escalabilidad</strong>: Ajuste de recursos según demanda.</li>
+<li><strong>Rendimiento mejorado</strong>.</li>
+</ul>
+</li>
+<li>
+<p>Desventajas:</p>
+<ul>
+<li>Dependencia de la conexión a Internet.</li>
+<li>Los datos sensibles pueden no estar completamente bajo el control de la empresa.</li>
+<li>Curvas de aprendizaje elevadas debido a cambios continuos en la tecnología.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="modelos-de-servicios-cloud">Modelos de Servicios Cloud</h3>
+<ul>
+<li>
+<p><strong>IaaS (Infrastructure as a Service)</strong>:</p>
+<ul>
+<li>Provisión de recursos físicos y virtuales, como máquinas virtuales, almacenamiento, y balanceadores de carga.</li>
+<li>Se usan hipervisores como <strong>Xen</strong>, <strong>KVM</strong>, <strong>VMware ESX/ESXi</strong> o <strong>Hyper-V</strong>.</li>
+<li>Ejemplos: <strong>Amazon EC2</strong>, <strong>Azure VM</strong>, <strong>OpenStack</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>PaaS (Platform as a Service)</strong>:</p>
+<ul>
+<li>Permite desarrollar, ejecutar y gestionar aplicaciones sin preocuparse por la infraestructura.</li>
+<li>Se puede ejecutar sobre IaaS, máquinas físicas o contenedores.</li>
+<li>Ejemplos: <strong>Google App Engine</strong>, <strong>OpenShift</strong>, <strong>Heroku</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>SaaS (Software as a Service)</strong>:</p>
+<ul>
+<li>Aplicaciones disponibles a través de Internet.</li>
+<li>Ejemplos: <strong>Google Docs</strong>, <strong>Dropbox</strong>, <strong>Twitter</strong>, <strong>Netflix</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong>CaaS (Container as a Service)</strong>:</p>
+<ul>
+<li>
+<p>Nuevo concepto entre IaaS y PaaS, basado en el uso de contenedores.</p>
+</li>
+<li>
+<p>Permite desplegar aplicaciones sin necesidad de virtualización completa.</p>
+</li>
+<li>
+<p>Ejemplos: <strong>Docker</strong>, <strong>OpenStack Magnum</strong>, <strong>Kubernetes</strong>, <strong>Rancher</strong>:</p>
+<ul>
+<li>
+<p><strong>Docker</strong>: Es una plataforma de contenedores que permite empaquetar aplicaciones y todas sus dependencias en contenedores ligeros. Facilita la portabilidad entre entornos y el despliegue rápido de aplicaciones, tanto en desarrollo como en producción.</p>
+</li>
+<li>
+<p><strong>Kubernetes</strong>: Es una plataforma de orquestación de contenedores que automatiza el despliegue, escalado y operación de aplicaciones en contenedores. Facilita la gestión de múltiples contenedores en clústeres, distribuyendo la carga y asegurando alta disponibilidad.</p>
+</li>
+<li>
+<p><strong>OpenStack Magnum</strong>: Es una solución de OpenStack para gestionar contenedores mediante orquestadores como Kubernetes o Docker Swarm, integrándose en infraestructuras OpenStack.</p>
+</li>
+<li>
+<p><strong>Rancher</strong>: Es una plataforma que simplifica la gestión de Kubernetes y contenedores, ofreciendo una interfaz intuitiva para gestionar clústeres Kubernetes en múltiples entornos (nubes, servidores físicos).</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-365a2cdb02b562b4ce3808d7c1d496dc">6 - Instalación</h1>
+    
+	<h3 id="herramientas-y-aplicaciones-necesarias">Herramientas y aplicaciones necesarias</h3>
+
+
+<div class="pageinfo pageinfo-primary">
+<h4></h4>
+<hr>
+<p>Para el desarrollo web necesitamos los siguientes programas</p>
+<p>Para programar vamos a usar el siguiente IDE</p>
+<div class="td-card-group card-group p-0 mb-4">
+<div class="td-card card border me-4">
+<div class="card-header">
+      Apache 2
+    </div>
+<div class="card-body">
+    <p class="card-text">
+<p><span class='small-bold-text'>Servidor web http/https</span></p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p><a href="https://httpd.apache.org/"><img src="/dwes/es/docs/01_web/06_instalaciones/logo.jpeg" alt="apache"></a></p>
+</p>
+      </div>
+  </div>
+<div class="td-card card border me-4">
+<div class="card-header">
+      PHP
+    </div>
+<div class="card-body">
+    <p class="card-text">
+<p><span class='small-bold-text'>Lenguaje de programación en el servidor</span></p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p><a href="https://www.php.net/manual/es/intro-whatis.php"><img src="/dwes/es/docs/01_web/06_instalaciones/php.jpeg" alt="php"></a></p>
+</p>
+      </div>
+  </div>
+<div class="td-card card border me-4">
+<div class="card-header">
+      Mysql
+    </div>
+<div class="card-body">
+    <p class="card-text">
+<p><span class='small-bold-text'>Gestor de bases de datos relacionales</span></p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p><a href="https://www.mysql.com/"><img src="/dwes/es/docs/01_web/06_instalaciones/mysql.png" alt="mysql"></a></p>
+</p>
+      </div>
+  </div>
+<div class="td-card card border me-4">
+<div class="card-header">
+      XDebug
+    </div>
+<div class="card-body">
+    <p class="card-text">
+<p><span class='small-bold-text'>Aplicación para debugar (Interactuar durante la ejecución) </span></p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p><a href="https://xdebug.org/"><img src="/dwes/es/docs/01_web/06_instalaciones/xdebug.png" alt="xdebug"></a></p>
+</p>
+      </div>
+  </div>
+<div class="td-card card border me-4">
+<div class="card-header">
+      phpstorm
+    </div>
+<div class="card-body">
+    <p class="card-text">
+<p><span class='small-bold-text'>EDI para desarrollar o programar</span></p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p><a href="https://www.jetbrains.com/es-es/phpstorm/"><img src="/dwes/es/docs/01_web/06_instalaciones/phpstorm.jpeg" alt="phpstorm"></a></p>
+</p>
+      </div>
+  </div>
+</div>
+
+</div>
+
+<h3 id="instalando-en-ubuntu">Instalando en Ubuntu</h3>
+<ul>
+<li>En un sistema Ubuntu, puedes instalar Apache y PHP utilizando los siguientes comandos:</li>
+</ul>
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Actualizar los repositorios:
+
+
+</span>
+</strong>
+
+<p><div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#228b22">#Actualizar repositorios
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>sudo apt update
+</span></span><span style="display:flex;"><span><span style="color:#228b22">#Instalar Apache2
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>sudo apt install apache2
+</span></span><span style="display:flex;"><span><span style="color:#228b22">#Instalar php y el módulo de php para apache 
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>sudo apt install php libapache2-mod-php</span></span></code></pre></td></tr></table>
+</div>
+</div>
+Depué de realizar estas tareas, debes de resetear apache para ponerlo todo en funcionamiento
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>sudo systemctl restart apache2</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<h3 id="instalando-en-windows-con-xampp">Instalando en Windows con XAMPP</h3>
+<p>XAMPP es una solución sencilla para tener Apache, PHP, y MySQL en Windows. Sigue estos pasos para instalarlo:</p>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Descargar XAMPP
+
+
+</span>
+</strong>
+
+Ve al sitio web oficial de XAMPP <a href="https://www.apachefriends.org">https://www.apachefriends.org</a> y descarga la versión que incluye PHP.</p>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Instalar XAMPP
+
+
+</span>
+</strong>
+
+Ejecuta el instalador y sigue las instrucciones. Asegúrate de seleccionar Apache y PHP durante la instalación.</p>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Iniciar los servicios
+
+
+</span>
+</strong>
+:
+Abre el panel de control de XAMPP y asegúrate de iniciar Apache.</p>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Comprobar instalación
+
+
+</span>
+</strong>
+
+Abre tu navegador y visita <code>http://localhost/</code>. Deberías ver la página de bienvenida de XAMPP.</p>
+<h3 id="creación-de-docker">Creación de docker</h3>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Warning</h4>
+
+    Esta tecnología la emplearemos más tarde
+Cuando la veáis en el módulo de despliegue
+Pero la dejamos aquí, para recuperarla en su momento
+
+</div>
+
+<ul>
+<li>Es esta la solución que vamos a utilizar.</li>
+<li>Para ello crearemos un 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    docker-compose.yaml
+
+
+</span>
+</strong>
+, que nos levante un servicio con php y apache2.</li>
+<li>Por si queremos realizar modificaciones sobre la imagen original, la imagen la vamos a crear a patir de un 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Dockerfile
+
+
+</span>
+</strong>
+</li>
+<li>Cada proyecto que creemos o bien tendremos esta estructura, o bien los crearemos todos a partir de la carpeta compartida</li>
+</ul>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 240px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/06_instalaciones/docker_folder_hu_727b5a5b4c301520.png" width="230" height="87">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<hr style="border-color: red; border-width: 3px;"/>
+<p>El contenido de los ficheros:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-docker" data-lang="docker"><span style="display:flex;"><span>services:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#a61717;background-color:#e3d2d2"></span>    web:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#a61717;background-color:#e3d2d2"></span>        build : .<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#a61717;background-color:#e3d2d2"></span>        ports:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#a61717;background-color:#e3d2d2"></span>            - 8800:80<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>        volumes:<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span>            - ./../app:/var/www/html<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex; background-color:#d6d6c6"><span><span style="color:#a61717;background-color:#e3d2d2"></span>        container_name: web</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Info</h4>
+
+    <ul>
+<li>Creamos el servicio (contenedor ) <em><strong>web</strong></em></li>
+<li>A partir del <strong>Dockerfile</strong> que tenemos en <strong>la misma carpeta</strong></li>
+<li>Proyectamos el puerto <strong>8800</strong> para acceder a él</li>
+<li>Mapeamos la carpeta <strong>./../app</strong> para escribir nuestros programas</li>
+</ul>
+
+
+</div>
+
+<p>El Dockerfile
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>FROM php:<span style="color:#b452cd">8.3</span>-apache
+</span></span><span style="display:flex;"><span>ENV DEBIAN_FRONTEND=noninteractive
+</span></span><span style="display:flex;"><span>RUN apt update
+</span></span><span style="display:flex;"><span><span style="color:#228b22"># Usa la imagen base de PHP con Apache
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>
+</span></span><span style="display:flex;"><span><span style="color:#228b22"># Añadir o modificar la configuración de Apache para listar directorios si no hay index
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>RUN <span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;Directory /var/www/html&gt;&#39;</span> &gt;&gt; /etc/apache2/apache2.conf
+</span></span><span style="display:flex;"><span>RUN <span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;Options +Indexes&#39;</span> &gt;&gt; /etc/apache2/apache2.conf
+</span></span><span style="display:flex;"><span>RUN <span style="color:#8b008b;font-weight:bold">echo</span> <span style="color:#cd5555">&#39;&lt;/Directory&gt;&#39;</span> &gt;&gt; /etc/apache2/apache2.conf
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#228b22"># Exponer el puerto 80
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>EXPOSE <span style="color:#b452cd">80</span></span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<p>La imagen de la estructura la podríamos organizar de la siguiente manera</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 514px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/06_instalaciones/estructura_docker_hu_2e7f9b5350d258d9.png" width="504" height="297">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<h2 id="apache">Apache</h2>
+<h1 id="servidor-apache-y-su-funcionamiento-modular">Servidor Apache y su funcionamiento modular</h1>
+<p>Como se muestra en la imagen, Apache funciona mediante un sistema de módulos. Cada uno de estos módulos (como <strong>PHP</strong>, <strong>MySQL</strong>, <strong>XML</strong>, entre otros) añade funcionalidades específicas y se conecta al <strong>núcleo de Apache</strong>. Puedes activar o desactivar, instalar o desinstalar módulos según tus necesidades, manteniendo solo aquellos que sean esenciales.</p>
+<p>Es importante recordar que, al instalar Apache, se abre una &ldquo;puerta&rdquo; en el sistema hacia redes externas, lo que puede representar una exposición al exterior. Mantener activos solo los módulos necesarios reduce esta exposición y ayuda a mejorar la seguridad del servidor.</p>
+<h2 id="consideraciones-de-seguridad">Consideraciones de seguridad</h2>
+<p>Cuando instalas y configuras Apache en tu sistema, estás abriendo una &ldquo;puerta&rdquo; que permite el acceso desde redes externas. Esto significa que, en cierta medida, tu sistema está expuesto al exterior, lo que podría representar un riesgo de seguridad si no se toman las precauciones adecuadas.</p>
+<p>Para minimizar esta exposición, es importante:</p>
+<ul>
+<li><strong>Mantener actualizados</strong> tanto Apache como sus módulos.</li>
+<li><strong>Configurar adecuadamente</strong> los permisos y accesos, limitando el acceso a solo aquellos que necesiten interactuar con el servidor.</li>
+<li><strong>Deshabilitar módulos innecesarios</strong>, ya que cada módulo adicional aumenta las posibles vulnerabilidades.</li>
+</ul>
+<p>Recuerda que el uso seguro de Apache es esencial para proteger la infraestructura de red y los datos alojados en el servidor.</p>
+<h2 id="consideraciones-de-seguridad-1">Consideraciones de seguridad</h2>
+<p>Cuando instalas y configuras Apache en tu sistema, estás abriendo una &ldquo;puerta&rdquo; que permite el acceso desde redes externas. Esto significa que, en cierta medida, tu sistema está expuesto al exterior, lo que podría representar un riesgo de seguridad si no se toman las precauciones adecuadas.</p>
+<p>Para minimizar esta exposición, es importante:</p>
+<ul>
+<li><strong>Mantener actualizados</strong> tanto Apache como sus módulos.</li>
+<li><strong>Configurar adecuadamente</strong> los permisos y accesos, limitando el acceso a solo aquellos que necesiten interactuar con el servidor.</li>
+<li><strong>Deshabilitar módulos innecesarios</strong>, ya que cada módulo adicional aumenta las posibles vulnerabilidades.</li>
+</ul>
+<p>Recuerda que el uso seguro de Apache es esencial para proteger la infraestructura de red y los datos alojados en el servidor.</p>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-4f3f634e5dccf42ca7dc4bf41024f60e">6.1 - Apache</h1>
+    
+	<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 328px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/06_instalaciones/apache/apache2_hu_430a03cb5234427e.png" width="318" height="159">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+Servidor Web
+
+</p>
+</figcaption>
+</figure>
+
+<h4></h4>
+<hr>
+<h3 id="servidor-apache-y-su-funcionamiento-modular">Servidor Apache y su funcionamiento modular</h3>
+<p><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 940px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/06_instalaciones/apache/apache2_hu_88d192e14eb6848d.png" width="930" height="454">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+Como se muestra en la imagen, Apache funciona mediante un sistema de módulos.</p>
+<p>Cada uno de estos módulos (como <strong>PHP</strong>, <strong>MySQL</strong>, <strong>XML</strong>, entre otros) añade funcionalidades específicas y se conecta al <strong>núcleo de Apache</strong>.</p>
+<p>Puedes activar o desactivar, instalar o desinstalar módulos según tus necesidades, manteniendo solo aquellos que sean esenciales.</p>
+<p>Es importante recordar que, al instalar Apache, se abre una &ldquo;puerta&rdquo; en el sistema hacia redes externas, lo que puede representar una exposición al exterior.</p>
+<p>Mantener activos solo los módulos necesarios reduce esta exposición y ayuda a mejorar la seguridad del servidor.</p>
+<h2 id="consideraciones-de-seguridad">Consideraciones de seguridad</h2>
+<p>Cuando instalas y configuras Apache en tu sistema, estás abriendo una &ldquo;puerta&rdquo; que permite el acceso desde redes externas. Esto significa que, en cierta medida, tu sistema está expuesto al exterior, lo que podría representar un riesgo de seguridad si no se toman las precauciones adecuadas.</p>
+<p>Para minimizar esta exposición, es importante:</p>
+<ul>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Mantener actualizados
+
+
+</span>
+</strong>
+ tanto Apache como sus módulos.</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Configurar adecuadamente
+
+
+</span>
+</strong>
+ los permisos y accesos, limitando el acceso a solo aquellos que necesiten interactuar con el servidor.</li>
+<li>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Deshabilitar módulos innecesarios
+
+
+</span>
+</strong>
+, ya que cada módulo adicional aumenta las posibles vulnerabilidades.</li>
+</ul>
+<p>Recuerda que el uso seguro de Apache es esencial para proteger la infraestructura de red y los datos alojados en el servidor.</p>
+<h3 id="módulos-a-instalar">Módulos a instalar</h3>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 722px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/06_instalaciones/apache/Instalacion_web_hu_b7a6e3696d37f513.png" width="712" height="484">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Instalación en windows</h4>
+
+    <ul>
+<li>
+<p>En windows se instala todo instalando el paquete Xampp(<a href="https://www.apachefriends.org/es/index.html%29">https://www.apachefriends.org/es/index.html)</a>, o Wampp (<a href="https://www.wampserver.com/en/">https://www.wampserver.com/en/</a>)</p>
+</li>
+<li>
+<p>Una vez instalado debes de activarlo o arrancar los servicios correspondientes</p>
+</li>
+</ul>
+
+
+</div>
+
+<h3 id="concepto-del-virtual-host">Concepto del virtual host</h3>
+<p>Ponamos la siguiente analogía:
+Imaginemos que tenemos una persona llamada Manuel. En el trabajo, le llaman &ldquo;Manuel&rdquo; y adopta una actitud profesional y seria. En casa o con amigos, le llaman &ldquo;Manolo&rdquo; y su actitud es más relajada y cercana. Aunque es la misma persona, responde de manera diferente según cómo le llamen.</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 410px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/06_instalaciones/apache/manuel_hu_c8eaf271cad46dc3.png" width="400" height="400">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<p>De forma similar, en Apache, 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    un Virtual Host permite que el mismo servidor web responda de manera distinta según el nombre de dominio o dirección con la que se le acceda
+
+
+</span>
+</strong>
+.</p>
+<p>Siguiendo con la metáfora, es como si fuera <strong>Manuel</strong> en un contexto y <strong>Manolo</strong> en otro.</p>
+<p>Con 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Virtual Hosts
+
+
+</span>
+</strong>
+, Apache puede manejar varios sitios web en un solo servidor, mostrando diferentes contenidos o configuraciones según el dominio que se utilice.</p>
+<h3 id="dónde-se-configura-cada-virtual-host">Dónde se configura cada Virtual Host</h3>
+<p>Los ficheros de configuración de Apache están en <code>/etc/apache2</code>. En la imagen puedes ver cómo ubicarte y qué ficheros contiene.
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 815px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/06_instalaciones/apache/ficheros_configuracion_apache_hu_11deeb05bcbc58cb.png" width="805" height="712">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+Observa los comandos utilizados
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>cd <span style="color:#228b22">#change directory para cambiar de directorio
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>pwd <span style="color:#228b22">#print work directory ver el directorio actual de trabajo
+</span></span></span><span style="display:flex;"><span><span style="color:#228b22"></span>tree -L <span style="color:#b452cd">1</span> <span style="color:#228b22"># ver el contenido de un directorio con nivel 1 de profundidad con formato arbolescente. nivel 1 es no mostrar los subdirectorios
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+La configuración de los 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    sitios web
+
+
+</span>
+</strong>
+ está bajo los directorios 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    sites-available
+
+
+</span>
+</strong>
+ y 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    sites-enabled
+
+
+</span>
+</strong>
+.</p>
+<ul>
+<li>Después, para  actívalo en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    sites-enabled
+
+
+</span>
+</strong>
+ usando el comando  
+<strong>
+<span class="font-weight-bold text-primary">
+
+    a2ensite nombre_sitio
+
+
+</span>
+</strong>
+. Este comando crea un enlace simbólico que permite poner el sitio en funcionamiento.</li>
+</ul>
+<h4 id="cómo-crear-nombres-diferentes-para-mi-máquina">Cómo crear nombres diferentes para mi máquina</h4>
+<p>Para tener nombres únicos accesibles desde internet, lo ideal es comprar un dominio en un <strong>ISP</strong> (Proveedor de Servicios de Internet) y configurarlo para que apunte a tu máquina.</p>
+<p>Sin embargo, para hacer pruebas en local, puedes modificar el archivo 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    hosts
+
+
+</span>
+</strong>
+ en tu equipo.
+En ubuntu este fichero está ubicado en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    /etc/hosts
+
+
+</span>
+</strong>
+, y en Windows en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    c:\windows\system32\drivers\etc\hosts
+
+
+</span>
+</strong>
+.</p>
+<p>Este archivo permite asignar nombres personalizados a direcciones IP en tu red local.</p>
+<p>Por ejemplo, puedes añadir las siguientes líneas al archivo <code>hosts</code> para asociar los dominios locales a <code>localhost</code>:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>127.0.0.1 www.informatica.com 
+</span></span><span style="display:flex;"><span>127.0.0.1 www.musica.com </span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Una vez que hayas agregado el nombre en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    hosts
+
+
+</span>
+</strong>
+, puedes probar que funciona ejecutando un 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    <code>ping</code>
+
+
+</span>
+</strong>
+ al nombre que has configurado, como por ejemplo:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>ping www.informatica.com</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="directivas-a-configurar">Directivas a configurar</h3>
+<p>Apache se configura a través de 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    <strong>directivas</strong>
+
+
+</span>
+</strong>
+, que son como variables que definen el comportamiento del servidor al cargar el servicio.</p>
+<p>Siguiendo con la metáfora anterior de &ldquo;Manuel&rdquo; y &ldquo;Manolo&rdquo;, donde se establecen comportamientos distintos según el contexto, aquí concretaremos esos comportamientos deseados.</p>
+<p>Algunas de las directivas más importantes son:</p>
+<ul>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    ServerName
+
+
+</span>
+</strong>
+: Define el nombre del servidor o dominio que vamos a asociar a una configuración específica. Esto indica el nombre con el que el servidor responderá.</p>
+</li>
+<li>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    DocumentRoot
+
+
+</span>
+</strong>
+: Especifica el directorio donde Apache debe buscar los archivos de los recursos. Aquí se encuentra el contenido que será servido a los usuarios cuando accedan al sitio.</p>
+</li>
+</ul>
+<p>Al configurar estas directivas, estamos definiendo cómo se comportará Apache y cómo gestionará las solicitudes para cada sitio web.</p>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Muy importante</h4>
+
+    <p>Siempre que modifiquemos alguna directiva de configuración, debemos rebotar el servicio</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>sudo service apache2 restart</span></span></code></pre></td></tr></table>
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-6731e33131d9bb0a73e410e8c637ba0d">6.1.1 - practicando</h1>
+    
+	
+
+<div class="pageinfo pageinfo-primary">
+<h4 id="practicando">Practicando</h4>
+<p>Creamos en nuestro servidor web, dos sitios virtuales o virtual host, llamados <a href="https://www.informatica.com">www.informatica.com</a> y <a href="https://www.musica.com">www.musica.com</a>
+Cada uno de ellos van a tener esta peculiaridad de comportameiento y es que <a href="https://www.informatica.com">www.informatica.com</a> va a ir a buscar los recursos a la carpeta /var/www/informatica, y <a href="https://www.muscia.com">www.muscia.com</a>, a /var/www/musica</p>
+
+</div>
+
+<h3 id="creando-los-ficheros-de-configuración">Creando los ficheros de configuración</h3>
+<p>Para configurar dos sitios en Apache, vamos a crear dos archivos de configuración en <code>sites-available</code> y luego activarlos.</p>
+<p>Lo primero vamos a la carpeta /etc/apache2/site-available, y nos copiamos el fichero de configuración que hay ahí 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    000-default.conf
+
+
+</span>
+</strong>
+ a por ejemplo 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    informatica.conf
+
+
+</span>
+</strong>
+ y 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    musica.conf
+
+
+</span>
+</strong>
+.
+Recuerda que son ficheros de confituración y debemos hacerlo como superusuario
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>sudo cp <span style="color:#b452cd">000</span>-<span style="color:#8b008b;font-weight:bold">default</span>.conf informatica.conf 
+</span></span><span style="display:flex;"><span>sudo cp <span style="color:#b452cd">000</span>-<span style="color:#8b008b;font-weight:bold">default</span>.conf musica.conf 
+</span></span></code></pre></td></tr></table>
+</div>
+</div></p>
+<ul>
+<li>Modificamos el dfichero con la nueva configuración</li>
+<li>Para ello lo editamos con un editor, por ejemplo <strong>gedit</strong>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>sudo gedit informatica.conf</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>y añadimos las siguientes líneas
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>  &lt;VirtualHost *:<span style="color:#b452cd">80</span>&gt;
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>  ServerName www.informatica.com
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>  DocumentRoot /<span style="color:#8b008b;font-weight:bold">var</span>/www/informatica
+</span></span><span style="display:flex;"><span>  &lt;/VirtualHost&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>El fichero original tiene muchas más líneas que podemos eliminar</li>
+<li>Todas las líneas que empiecen por <strong>#</strong>, son comentarios que no tienen efecto en la configuración.</li>
+<li>Hacemos lo mismo en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    musica.conf
+
+
+</span>
+</strong>
+</li>
+<li><div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>sudo gedit musuca.conf</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>y añadimos su configuración
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>&lt;VirtualHost *:<span style="color:#b452cd">80</span>&gt;
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>ServerName www.musica.com
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>DocumentRoot /<span style="color:#8b008b;font-weight:bold">var</span>/www/musica
+</span></span><span style="display:flex;"><span>&lt;/VirtualHost&gt;</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<h3 id="modificación-del-archivo-hosts">Modificación del archivo hosts</h3>
+<p>Para realizar pruebas en local, añade los siguientes dominios al archivo <code>hosts</code> en tu equipo.</p>
+<p>En Ubuntu, el archivo se encuentra en <code>/etc/hosts</code>; en Windows, en <code>c:\windows\system32\drivers\etc\hosts</code>. Añade estas líneas:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>127.0.0.1 www.informatica.com 
+</span></span><span style="display:flex; background-color:#d6d6c6"><span>127.0.0.1 www.musica.com </span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Luego, puedes probar que los dominios responden ejecutando:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>ping www.informatica.com
+</span></span><span style="display:flex;"><span>ping www.musica.com</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="activación-de-los-sitios">Activación de los sitios</h3>
+<p>Una vez que hayas creado estos archivos de configuración en <code>sites-available</code>, debes activarlos usando los siguientes comandos:</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>sudo a2ensite informatica.conf
+</span></span><span style="display:flex;"><span>sudo a2ensite musica.conf
+</span></span><span style="display:flex;"><span>sudo systemctl reload apache2</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Esto creará los enlaces simbólicos en <code>sites-enabled</code> y recargará Apache para aplicar la configuración.</p>
+<h4 id="creando-el-directorio">Creando el directorio</h4>
+<p>Ahora debemos de crear los directorios que hemos especificado para que apache vaya ahí, a buscar los recursos cuando se los soliciten.</p>
+<p>Lo podemos hacer con nuestro edi, por ejemplo phpstorm.</p>
+<p>Vamos a crear carpetas en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    /var/www
+
+
+</span>
+</strong>
+, por lo que tenemos que tener permisos de escritura y ser propietarios.
+<img src="/dwes/es/docs/01_web/06_instalaciones/apache/practica/img.png" alt="img.png">
+Ahí vemos que esta carpeta es de root, y nosotros no podremos crear recuros
+Para ello ejecutamos el comando de cambiar de propietario (en nuestro ordenador somos 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    alumno
+
+
+</span>
+</strong>
+. Yo en el ejemplo, como en mi equipo soy 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    manuel
+
+
+</span>
+</strong>
+ pongo a ese usuario
+Podemos especificar la carpeta con ruta absoluta
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>sudo chown manuel:manuel /<span style="color:#8b008b;font-weight:bold">var</span>/www</span></span></code></pre></td></tr></table>
+</div>
+</div>
+y me habrá cambiado el propietario</p>
+<p><img src="/dwes/es/docs/01_web/06_instalaciones/apache/practica/img_1.png" alt="img_1.png"></p>
+<p>Ahora creamos las carpetas y recursos y ya los puedo acceder desde el navegador</p>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+
+    
+	
+  
+
+    
+	
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2025
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script src="/dwes/js/main.js"></script>
+<script defer src="/dwes/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/dwes/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

@@ -1,0 +1,5 @@
+RequestHeader unset Cookie
+Header unset Cookie
+Header unset Set-Cookie
+# El HTML nunca debe de ser cacheado
+

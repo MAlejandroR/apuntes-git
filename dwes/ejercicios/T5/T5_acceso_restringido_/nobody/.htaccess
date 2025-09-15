@@ -1,0 +1,7 @@
+
+AuthName "Presiona cancelar para volver al index elminando credenciales previas de cookies"
+AuthType Basic
+AuthUserFile "/home/manuel/web/manuel.infenlaces.com/public_html/dwes/T3_acceso_restringido/del_credenciales"
+#Usuario no existente, así eliminaremos usuarios almacenados en cookies y cache
+Require user nobody
+ErrorDocument 401 "<h1><a href=./../index.php>Volver al index</a></h1>"

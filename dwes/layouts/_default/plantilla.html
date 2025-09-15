@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Esto es un ejemplo de plantilla</h1>
+<h2>aquí el título del fichero md en el frontmatter</h2>
+<hr>
+<span style="color:red">{{.Title}}</span>
+<hr>
+
+<h3>Declaro y luego visualizo una variable</h3>
+{{ $nombre := "Manuel" }}
+<h2>Valor de variable $nombre</h2>
+<hr>
+<span style="color:red">{{ $nombre}}</span>
+<hr>
+</body>
+</html>

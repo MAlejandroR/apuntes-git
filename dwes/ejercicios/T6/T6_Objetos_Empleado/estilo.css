@@ -1,0 +1,110 @@
+.fichero{
+    border:1;
+    margin-left: 10%;
+    padding:15px ;
+    background-color: #CCCCCC;
+    width: 85%;
+    font-size: 1.8em;
+}
+.contenedor{
+    padding: 20px;
+    border:chocolate;
+    display: flex;
+    flex-flow: column;
+    flex-wrap:nowrap; /*1 sola línea*/
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_nominas{
+    display: flex;
+    flex-flow:row;
+    flex-wrap:wrap ; /*Varias líneas */
+    border:blue;
+    background: darksalmon;
+    padding: 10px;
+}
+
+.datos{
+    border:solid;
+    background: bisque;
+    width: 50%;
+    align-self: center;
+}
+
+.small{
+    font-size:small;
+}
+.center{
+    text-align: center;
+    color:darkblue;
+    font-weight: bold;
+    font-size:1.6em;
+    margin:30px;
+}
+table{
+    margin: 30px;
+
+}
+table, th, tr, td{
+    border-collapse: collapse;
+    border: 2px solid blue;
+    padding: 3px;
+
+}
+header {
+    #background: #9d3e42;
+    background: #5D6D7E;
+    height: 60px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    color:darkorange;
+    float:none;
+}
+fieldset{
+    background : #AEB6BF;
+    float:left;
+    margin: 10px;
+    width:35%;
+}
+legend{
+    color:darkblue;
+    font-weight: bold;
+    font-size:1.6em;
+    font-style:oblique;
+}
+
+input[type=text]{
+    color:blue;
+    font-weight: bold;
+    font-size:1.6em;
+}
+input[type=submit]{
+    color:maroon;
+    font-weight: bold;
+    font-size:1.8em;
+    margin-top:20px;
+}
+input[type="submit"][disabled]{
+    color:darkgrey;
+    font-weight: normal;
+}
+
+label{
+    color:blue;
+    font-weight: bold;
+    font-size:1.4em;
+
+}
+.listado_contactos{
+    background : #AEB6BF;
+    float:right;
+    margin: 10px;
+    width:55%;
+}
+.variable{
+    color:maroon;
+    font-weight: bold;
+    font-size: 1.3em;
+}

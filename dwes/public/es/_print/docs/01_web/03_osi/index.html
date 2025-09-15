@@ -1,0 +1,473 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/dwes/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=dwes/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" type="text/html" href="http://localhost:1313/dwes/es/docs/01_web/03_osi/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/dwes/es/docs/01_web/03_osi/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/dwes/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/dwes/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/dwes/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/dwes/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-192x192.png" sizes="192x192">
+
+<title>Modelo OSI | Desarrollo Web</title>
+<meta name="description" content="Objetivos Qué veremos aquí Modelo OSI Modelo TCP_IP Concepto de protocolo Proceso de comunicación extremo a extremo Introducción al Modelo OSI El modelo OSI (Open Systems Interconnection) es un marco conceptual (es la base para la construcción y definición de redes), que define cómo las aplicaciones en una red pueden comunicarse entre sí.">
+
+<meta property="og:url" content="http://localhost:1313/dwes/es/docs/01_web/03_osi/">
+  <meta property="og:site_name" content="Desarrollo Web">
+  <meta property="og:title" content="Modelo OSI">
+  <meta property="og:description" content="Objetivos Qué veremos aquí Modelo OSI Modelo TCP_IP Concepto de protocolo Proceso de comunicación extremo a extremo Introducción al Modelo OSI El modelo OSI (Open Systems Interconnection) es un marco conceptual (es la base para la construcción y definición de redes), que define cómo las aplicaciones en una red pueden comunicarse entre sí.">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="Modelo OSI">
+  <meta itemprop="description" content="Objetivos Qué veremos aquí Modelo OSI Modelo TCP_IP Concepto de protocolo Proceso de comunicación extremo a extremo Introducción al Modelo OSI El modelo OSI (Open Systems Interconnection) es un marco conceptual (es la base para la construcción y definición de redes), que define cómo las aplicaciones en una red pueden comunicarse entre sí.">
+  <meta itemprop="wordCount" content="1200">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Modelo OSI">
+  <meta name="twitter:description" content="Objetivos Qué veremos aquí Modelo OSI Modelo TCP_IP Concepto de protocolo Proceso de comunicación extremo a extremo Introducción al Modelo OSI El modelo OSI (Open Systems Interconnection) es un marco conceptual (es la base para la construcción y definición de redes), que define cómo las aplicaciones en una red pueden comunicarse entre sí.">
+
+
+<link href="/dwes/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/dwes/es/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/dwes/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Desarrollo Web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/es/dwes/docs/02_docker/"><span>Docker</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/es/dwes/docs/03_hugo/"><span>Hugo</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/dwes/es/docs/02_docker/1_docker/"><span>Docker</span></a>
+      </li>
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/dwes/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/dwes/en/">English</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+Versión imprimible multipagina.
+<a href="#" onclick="print();return false;">Haga click aquí para imprimir</a>.
+</p><p>
+<a href="/dwes/es/docs/01_web/03_osi/">Volver a la vista normal de esta página</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Modelo OSI</h1>
+
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+
+    </ul>
+
+
+<div class="content">
+      
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            <i class="fas  fa-check-circle"></i> 
+        </span>
+        
+        <span >Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px;font-weight:bold"> Qué veremos aquí</h3>
+
+    <hr style="border-color:seagreen;border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            
+                
+                
+            
+                
+                
+                  <li>Modelo OSI</li>
+                
+            
+                
+                
+                  <li>Modelo TCP_IP</li>
+                
+            
+                
+                
+                  <li>Concepto de protocolo</li>
+                
+            
+                
+                
+                  <li>Proceso de comunicación extremo a extremo</li>
+                
+            
+                
+                
+            
+        </ul>
+
+    </div>
+</div>
+
+<h2 id="introducción-al-modelo-osi">Introducción al Modelo OSI</h2>
+<p>El 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    modelo OSI
+
+
+</span>
+</strong>
+ (Open Systems Interconnection) es un marco conceptual (es la base para la construcción y definición de redes), que define 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    cómo las aplicaciones en una red pueden comunicarse entre sí.
+
+
+</span>
+</strong>
+</p>
+<p>Fue desarrollado por la 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    ISO (Organización Internacional de Normalización)
+
+
+</span>
+</strong>
+ en 1984 para estandarizar las funciones de comunicación de los sistemas de red.</p>
+<p>El modelo OSI se divide en 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    siete capas
+
+
+</span>
+</strong>
+, cada una de las cuales describe una parte específica del proceso de comunicación.</p>
+<p>Estas capas van desde el 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    nivel físico
+
+
+</span>
+</strong>
+, donde se produce la transferencia física de bits a través de señales eléctricas o inalámbricas, hasta las 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    aplicaciones de usuario
+
+
+</span>
+</strong>
+, facilitando la cominucación entre distintos sistemas y aplicaciones de red.</p>
+<p>Las siete capas son:</p>
+<ol>
+<li><strong>Capa Física</strong></li>
+<li><strong>Capa de Enlace de Datos</strong></li>
+<li><strong>Capa de Red</strong></li>
+<li><strong>Capa de Transporte</strong></li>
+<li><strong>Capa de Sesión</strong></li>
+<li><strong>Capa de Presentación</strong></li>
+<li><strong>Capa de Aplicación</strong></li>
+</ol>
+<p>El modelo OSI es fundamental para entender cómo las redes organizan y gestionan las comunicaciones entre dispositivos.</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 410px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/03_osi/pila_osi_hu_93f0ef80bbc1e59b.png" width="400" height="600">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<p>La idea es que cada capa de diferentes dispositivos se comuniquen de forma directa a través de lo que es el protocolo.</p>
+<p>El modelo OSI es una especificación formal y en él se basan la construccion de redes reales como conjunto de protocolos que permiten la comunicación.</p>
+<p>Una red real, que todos conocemos, es la red TCP/IP o red de internet</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 826px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/03_osi/1_tcp_ip_hu_5f1d582e902e5f6f.jpg" width="816" height="1056">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+https://www.lawebdelprogramador.com/pdf/15788-Modelo-OSI-y-dispositivos-de-red-por-capa.html
+
+</p>
+</figcaption>
+</figure>
+
+<hr style="border-color: red; border-width: 3px;"/>
+<p>La siguiente imagen muestra la responsabilidad de capas agrupadas, que constituirán una sola capa en el modelo real de la red de internet o  TCP_IP</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 510px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/03_osi/capas_tcp_ip_hu_6c843911233d1e4.png" width="500" height="371">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+https://domoticaparatodos.com/2016/11/capas-en-los-protocolos/
+
+</p>
+</figcaption>
+</figure>
+
+<p>De forma ilustrativa muestra la siguiente imagen la relación de capa/s OSI con las capas de la red de tipo TPC/IP</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 510px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/03_osi/Internet_osi_hu_eac279d8f94e9c10.png" width="500" height="375">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<h3 id="protocolos">Protocolos</h3>
+<h4 id="qué-es-un-protocolo">¿Qué es un protocolo?</h4>
+<p>Un <strong>protocolo</strong> es un conjunto de <strong>reglas</strong> que permite que dos dispositivos diferentes puedan intercambiar <strong>datos</strong>, no información, de manera que ambos dispositivos se <strong>entiendan</strong>. Estas reglas aseguran que la comunicación entre los dispositivos sea <strong>lógica</strong> y de <strong>extremo a extremo</strong>, es decir, desde el origen hasta el destino sin perder coherencia en el proceso.</p>
+<h4 id="protocolo-como-software">Protocolo como software</h4>
+<p>Un protocolo no es un concepto abstracto, se materializa en un <strong>software</strong> o <strong>programa</strong> que implementa estas reglas, permitiendo que la comunicación se lleve a cabo.</p>
+<p>Los <strong>protocolos de nivel superior</strong> (como los de la capa de aplicación) se materializan en programas que el usuario o el administrador pueden instalar y configurar como un <strong>servicio</strong> o <strong>servidor</strong> en un equipo, que generalmente se denomina <strong>servidor</strong> y suele ser más potente que un equipo normal.</p>
+<h4 id="protocolos-y-el-sistema-operativo">Protocolos y el sistema operativo</h4>
+<p>Los <strong>protocolos de nivel inferior</strong> (capa de sesión, red, enlace-físico) forman parte del <strong>sistema operativo</strong> y se instalan automáticamente con él. Esto sucedió por primera vez en una distribución de <strong>Unix</strong> desarrollada por la Universidad de <strong>Berkeley</strong>, que integró de manera nativa estos protocolos en el sistema.</p>
+<p>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    El Unix de Berkeley (BSD)
+
+
+</span>
+</strong>
+ integró 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    los protocolos TCP/IP de forma nativa en 1983
+
+
+</span>
+</strong>
+, lo que contribuyó de manera significativa a la expansión de las redes de computadoras y, eventualmente, de Internet.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<p>La siguiente imagen muestra las capas de nivel de una red de internet de tipo TCP/IP
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1683px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/03_osi/1_comunicacion_hu_276e8e703b5512f2.png" width="1673" height="859">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+
+</p>
+</figcaption>
+</figure>
+</p>
+<h1 id="proceso-de-comunicación">Proceso de comunicación</h1>
+<p>Analiza la siguiente imagen para concretar cómo se produce una comunicación lógica de información  a nivel de capas y la comunicación física o intercambio de datos a nivel lógico</p>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1683px">
+<img class="card-img-top" src="/dwes/es/docs/01_web/03_osi/2_comunicacion_hu_411f3bad8fd2a649.png" width="1673" height="859">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<h2 id="proceso-de-comunicación-en-redes">Proceso de comunicación en redes</h2>
+<p>Para que se produzca una <strong>comunicación lógica de extremo a extremo</strong> en los diferentes niveles o capas, cada <strong>protocolo</strong> incluye (cuando se encapsula en el emisor) o extrae y analiza (cuando desencapsula en recepción o destino), añadiendo a los datos una <strong>cabecera</strong> o información correspondiente al nivel en el que se encuentra.</p>
+<h3 id="proceso-de-comunicación-1">Proceso de comunicación</h3>
+<p>El proceso de encapsulación y desencapsulación sigue una serie de pasos que involucran diferentes capas del modelo OSI y TCP/IP.</p>
+<h4 id="en-el-emisor">En el emisor:</h4>
+<ol>
+<li>
+<p><strong>Nivel de Aplicación</strong>:
+En la capa de aplicación, los datos que el usuario quiere enviar se procesan según el protocolo de la aplicación (HTTP, FTP, SMTP, etc.). Aquí, se trocea la información (habitualmente llamada <strong>datos o mensaje</strong>), que se pasa al nivel de transporte.</p>
+</li>
+<li>
+<p><strong>Nivel de Transporte</strong>:
+En esta capa, el protocolo de transporte (TCP o UDP) añade una <strong>cabecera</strong> a cada trozo de datos, que se denomina <strong>segmento</strong> (en el caso de TCP) o <strong>datagrama</strong> (en el caso de UDP). Esta cabecera incluye, entre otras cosas, el <strong>número de puerto</strong>, que es un identificador único que permite saber qué aplicación en el dispositivo de destino debe recibir los datos.</p>
+<ul>
+<li><strong>TCP</strong> es un protocolo orientado a la conexión que asegura la entrega fiable de los datos.</li>
+<li><strong>UDP</strong> es un protocolo no orientado a la conexión, que ofrece una entrega más rápida pero sin garantías de fiabilidad.</li>
+</ul>
+</li>
+<li>
+<p><strong>Nivel de Red</strong>:
+El nivel de red utiliza el protocolo <strong>IP</strong> para realizar el enrutamiento de los datos. En este nivel, los <strong>segmentos</strong> de la capa de transporte se encapsulan en <strong>paquetes IP</strong>. La cabecera de IP contiene información clave, como la <strong>dirección IP de origen y destino</strong>, lo que permite a los routers dirigir el paquete al dispositivo correcto.</p>
+<p>Es importante destacar que para <strong>IP</strong>, todo lo que recibe de la capa de transporte, incluidos los datos y las cabeceras de TCP o UDP, es tratado como una unidad de datos. Cada nivel del modelo nunca accede al contenido interno de los datos, solo manipula y analiza su propia cabecera.</p>
+</li>
+<li>
+<p><strong>Nivel de Enlace</strong>:
+En el nivel de enlace, los <strong>paquetes</strong> de IP se encapsulan en <strong>tramas</strong>. La cabecera de una trama contiene información como las <strong>direcciones MAC</strong> (que identifican de forma única a los dispositivos dentro de la red local). Además, la trama incluye mecanismos de control de errores, como bits de redundancia para detectar y corregir errores. Un protocolo como <strong>Hamming</strong> puede ser utilizado para este propósito, permitiendo detectar y corregir un porcentaje de errores en la transmisión.</p>
+</li>
+<li>
+<p><strong>Nivel Físico</strong>:<br>
+Finalmente, la capa física se encarga de transmitir las <strong>señales eléctricas</strong>, <strong>ondas electromagnéticas</strong> (en redes inalámbricas), <strong>señales luminosas</strong> (si usamos medios de fibra óptica) o de otra naturaleza, en función del medio que usemos para la transmisión. Estas señales representan los bits que viajan a través del medio de transmisión (como cables de cobre, fibra óptica, o aire en redes inalámbricas). En este nivel, se lleva a cabo la <strong>conversión de los datos</strong> en señales físicas que pueden viajar por el medio de comunicación.</p>
+</li>
+</ol>
+<h4 id="proceso-inverso-receptor">Proceso inverso (receptor):</h4>
+<p>En el receptor, ocurre el <strong>proceso inverso</strong>, conocido como <strong>desencapsulación</strong>. Los datos recibidos en la capa física son convertidos de señales a bits, que pasan a la capa de enlace, donde se analizan las tramas y se verifica la integridad de los datos. Después, el paquete IP es enviado a la capa de red, donde se lee la cabecera IP y se entrega el segmento al nivel de transporte, que finalmente entrega los datos a la aplicación correspondiente según el número de puerto.</p>
+<hr>
+<h3 id="términos-clave">Términos clave:</h3>
+<ul>
+<li><strong>Segmento</strong>: Unidad de datos en el nivel de transporte (TCP).</li>
+<li><strong>Datagrama</strong>: Unidad de datos en el nivel de transporte (UDP).</li>
+<li><strong>Paquete</strong>: Unidad de datos en el nivel de red (IP).</li>
+<li><strong>Trama</strong>: Unidad de datos en el nivel de enlace.</li>
+<li><strong>Señal</strong>: Representación física de los datos en el nivel físico.</li>
+</ul>
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2025
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script src="/dwes/js/main.js"></script>
+<script defer src="/dwes/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/dwes/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

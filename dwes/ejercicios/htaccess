@@ -1,0 +1,8 @@
+AuthUserFile /home/manuel/accesos/accesos
+AuthGroupFile /home/manuel/accesos/grupo_distancia
+AuthName "Ingresar"
+AuthType Basic
+#require group distancia
+require user manuel profesor
+
+
