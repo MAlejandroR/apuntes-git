@@ -1,11 +1,11 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="fr" class="no-js">
-  <head><script src="/dwes/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=dwes/livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/04_ejercicios/2_contenedores/index.xml">
-<link rel="alternate" type="text/html" href="http://localhost:1313/dwes/fr/_print/docs/02_docker/1_docker/04_ejercicios/2_contenedores/">
-<meta name="robots" content="noindex, nofollow">
+<link rel="alternate" type="application/rss&#43;xml" href="http://web.infenlaces.com/dwes/fr/docs/02_docker/1_docker/04_ejercicios/2_contenedores/index.xml">
+<link rel="alternate" type="text/html" href="http://web.infenlaces.com/dwes/fr/_print/docs/02_docker/1_docker/04_ejercicios/2_contenedores/">
+<meta name="robots" content="index, follow">
 
 
 <link rel="shortcut icon" href="/dwes/favicons/favicon.ico" >
@@ -23,7 +23,7 @@
 <meta name="description" content="Crear y usar contenedores Comandos a usar docker create docker start docker exec docker run docker run --name docker run --name xxx --hostname xxx -p xxxx:xx v xx:xxx nombre_imagen Crea, lista y borra contenedores Comandos a usar docker create docker start docker exec &gt; docker ps -a docker rm nombre_contenedor docker rm (docker ps -a- q) Si estás en linux o en mac
 docker rm $(docker ps -a -q) 1. Crea 5 contenedor a partir de la imagen ubuntu:latest sin especificar nombre 2. Verifica que los has creado Revisa con cuidado 🔍 Reflexiona Observa que te tienen que salir en estado created Has de intentar enteder qué implica este estado y ver que en este contenedor no puedo ejecutar nada hasta que no esté en estado Up">
 
-<meta property="og:url" content="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/04_ejercicios/2_contenedores/">
+<meta property="og:url" content="http://web.infenlaces.com/dwes/fr/docs/02_docker/1_docker/04_ejercicios/2_contenedores/">
   <meta property="og:site_name" content="Docsy">
   <meta property="og:title" content="Crea Contenedores">
   <meta property="og:description" content="Crear y usar contenedores Comandos a usar docker create docker start docker exec docker run docker run --name docker run --name xxx --hostname xxx -p xxxx:xx v xx:xxx nombre_imagen Crea, lista y borra contenedores Comandos a usar docker create docker start docker exec &gt; docker ps -a docker rm nombre_contenedor docker rm (docker ps -a- q) Si estás en linux o en mac
@@ -41,7 +41,7 @@ docker rm $(docker ps -a -q) 1. Crea 5 contenedor a partir de la imagen ubuntu:l
 docker rm $(docker ps -a -q) 1. Crea 5 contenedor a partir de la imagen ubuntu:latest sin especificar nombre 2. Verifica que los has creado Revisa con cuidado 🔍 Reflexiona Observa que te tienen que salir en estado created Has de intentar enteder qué implica este estado y ver que en este contenedor no puedo ejecutar nada hasta que no esté en estado Up">
 
 
-<link href="/dwes/scss/main.css" rel="stylesheet">
+<link rel="preload" href="/dwes/scss/main.min.3da19bb34a91102fff8d504671094ed55eaadf5c5a6694cdafb60367917c1b0d.css" as="style"><link href="/dwes/scss/main.min.3da19bb34a91102fff8d504671094ed55eaadf5c5a6694cdafb60367917c1b0d.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -299,7 +299,7 @@ docker rm $(docker ps -a -q) 1. Crea 5 contenedor a partir de la imagen ubuntu:l
 </span></span></code></pre></div></blockquote>
 <p><em>Si estás en linux o en mac</em></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker rm <span style="color:#8b008b;font-weight:bold">$(</span>docker ps -a -q<span style="color:#8b008b;font-weight:bold">)</span>
-</span></span></code></pre></div><h4 id="1-crea-5-contenedor-a-partir-de-la-imagen-hahahugoshortcode32s0hbhb-sin-especificar-nombre"><strong>1. Crea 5 contenedor a partir de la imagen 
+</span></span></code></pre></div><h4 id="1-crea-5-contenedor-a-partir-de-la-imagen-hahahugoshortcode29s0hbhb-sin-especificar-nombre"><strong>1. Crea 5 contenedor a partir de la imagen 
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -421,7 +421,7 @@ esté en estado <strong>Up</strong></p></blockquote>
 
 
 <hr>
-<h4 id="5-crea-un-contenedor-llamado-hahahugoshortcode32s7hbhb-a-partir-de-la-imagen-hahahugoshortcode32s8hbhb"><strong>5. Crea un contenedor llamado 
+<h4 id="5-crea-un-contenedor-llamado-hahahugoshortcode29s7hbhb-a-partir-de-la-imagen-hahahugoshortcode29s8hbhb"><strong>5. Crea un contenedor llamado 
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -725,7 +725,7 @@ estar creado a partir de la imagen ubuntu:latest sí que tiene asociado un comma
 
 
 </blockquote>
-<h4 id="15-crea-un-contenedor-llamado-hahahugoshortcode32s24hbhb-que-se-quede-arrancado-a-partir-de-la-imagen-hahahugoshortcode32s25hbhb"><strong>15. Crea un contenedor llamado 
+<h4 id="15-crea-un-contenedor-llamado-hahahugoshortcode29s24hbhb-que-se-quede-arrancado-a-partir-de-la-imagen-hahahugoshortcode29s25hbhb"><strong>15. Crea un contenedor llamado 
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -876,7 +876,7 @@ Antes de elimniar el contenedor tiene que estar parado
 
 
 </p>
-<h4 id="19-crea-igual-que-antes-el-contenedor-web-pero-mapeando-el-puerto-hahahugoshortcode32s34hbhb"><strong>19. Crea igual que antes el contenedor web, pero mapeando el puerto 
+<h4 id="19-crea-igual-que-antes-el-contenedor-web-pero-mapeando-el-puerto-hahahugoshortcode29s34hbhb"><strong>19. Crea igual que antes el contenedor web, pero mapeando el puerto 
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -999,8 +999,8 @@ window.markmap = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
-<script src="/dwes/js/main.js"></script>
-<script defer src="/dwes/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src="/dwes/js/main.min.782ae6b8370b3397c4cce30b1ad2773718ff650b2c303b463cdcf51f90208a83.js" integrity="sha256-eCrmuDcLM5fEzOMLGtJ3Nxj/ZQssMDtGPNz1H5AgioM=" crossorigin="anonymous"></script>
+<script defer src="/dwes/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
 <script src='/dwes/js/tabpane-persist.js'></script>
 
   </body>

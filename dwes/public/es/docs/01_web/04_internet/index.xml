@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Internet on Desarrollo Web</title>
-    <link>http://localhost:1313/dwes/es/docs/01_web/04_internet/</link>
+    <link>http://web.infenlaces.com/dwes/es/docs/01_web/04_internet/</link>
     <description>Recent content in Internet on Desarrollo Web</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <atom:link href="http://localhost:1313/dwes/es/docs/01_web/04_internet/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://web.infenlaces.com/dwes/es/docs/01_web/04_internet/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
