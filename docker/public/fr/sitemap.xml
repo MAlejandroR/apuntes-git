@@ -22,13 +22,13 @@
     <loc>http://web.infenlaces.com/docker/fr/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en"
-                href="http://web.infenlaces.com/docker/en/"
+                hreflang="es"
+                href="http://web.infenlaces.com/docker/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="es"
-                href="http://web.infenlaces.com/docker/"
+                hreflang="en"
+                href="http://web.infenlaces.com/docker/en/"
                 />
     <xhtml:link
                 rel="alternate"

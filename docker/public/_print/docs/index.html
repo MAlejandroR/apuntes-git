@@ -31,6 +31,8 @@
 
   <meta itemprop="name" content="Introducción">
   <meta itemprop="description" content="Docker Objetivos de este tema Entender qué es docker Crear contenedores Crear Imágenes Trabajar con entornos dockerizados para desarrollo Crear imágenes con DockerFile Crear servicios con docker compose Referencias Fuentes de Información La mejor la oficial: https://docs.docker.com/engine/">
+  <meta itemprop="datePublished" content="2024-10-15T07:04:49+02:00">
+  <meta itemprop="dateModified" content="2024-10-15T07:04:49+02:00">
   <meta itemprop="wordCount" content="890">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Introducción">
@@ -108,7 +110,45 @@ Versión imprimible multipagina.
     
     
 	
-<li>1: <a href="#pg-31315b7cb4f93cac4e144a838a35f8df">Conceptos sobre docker</a></li>
+<li>1: <a href="#pg-b35cb6721e646a6ef312969f3e00a241">Anexos para el módulo</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1.1: <a href="#pg-7fc7475d67b6d8cf32a6b03add87feab">Comandos linux</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>2: <a href="#pg-31315b7cb4f93cac4e144a838a35f8df">Conceptos sobre docker</a></li>
 
 
     
@@ -127,7 +167,7 @@ Versión imprimible multipagina.
     
     
 	
-<li>2: <a href="#pg-65d5cba354484d7f0190e833730fea79">Contenedores e imágenes</a></li>
+<li>3: <a href="#pg-65d5cba354484d7f0190e833730fea79">Contenedores e imágenes</a></li>
 
 
     
@@ -146,7 +186,7 @@ Versión imprimible multipagina.
     
     
 	
-<li>3: <a href="#pg-1f44f5aa390b398c95b5507be6f66856">Documentación</a></li>
+<li>4: <a href="#pg-1f44f5aa390b398c95b5507be6f66856">Documentación</a></li>
 
 
     
@@ -154,7 +194,7 @@ Versión imprimible multipagina.
     
     
 	
-<li>4: <a href="#pg-015e39fb970d2fc0fa343d9eb6f8b7ee">Instalación</a></li>
+<li>5: <a href="#pg-015e39fb970d2fc0fa343d9eb6f8b7ee">Instalación</a></li>
 
 
     
@@ -173,7 +213,7 @@ Versión imprimible multipagina.
     
     
 	
-<li>5: <a href="#pg-81917096855a46c0b43795c6cb7186e7">Docker en  línea de comandos </a></li>
+<li>6: <a href="#pg-81917096855a46c0b43795c6cb7186e7">Docker en  línea de comandos </a></li>
 
 
     
@@ -192,7 +232,7 @@ Versión imprimible multipagina.
     
     
 	
-<li>6: <a href="#pg-be7312263a67ea65e5e20d152b9a270c">Fichero de ejecución para crear imágenes DockerFile</a></li>
+<li>7: <a href="#pg-be7312263a67ea65e5e20d152b9a270c">Fichero de ejecución para crear imágenes DockerFile</a></li>
 
 
     
@@ -211,7 +251,7 @@ Versión imprimible multipagina.
     
     
 	
-<li>7: <a href="#pg-9054adab69431dbba10d534b39274e03">Gestión de archivos y directorios</a></li>
+<li>8: <a href="#pg-9054adab69431dbba10d534b39274e03">Gestión de archivos y directorios</a></li>
 
 
     
@@ -230,7 +270,7 @@ Versión imprimible multipagina.
     
     
 	
-<li>8: <a href="#pg-119983b132b25e85c20958c2f3b25dcd">Docker compose</a></li>
+<li>9: <a href="#pg-119983b132b25e85c20958c2f3b25dcd">Docker compose</a></li>
 
 
     
@@ -249,7 +289,7 @@ Versión imprimible multipagina.
     
     
 	
-<li>9: <a href="#pg-f7de4513feaac6de7a9893742e148311">Docker Prácticas</a></li>
+<li>10: <a href="#pg-f7de4513feaac6de7a9893742e148311">Docker Prácticas</a></li>
 
 
     
@@ -264,26 +304,7 @@ Versión imprimible multipagina.
     
     
 	
-<li>9.1: <a href="#pg-a255b37ef9790045086ad4ec3af746d7">Crea imágenes</a></li>
-
-
-    
-    <ul>
-        
-  
-  
-  
-  
-
-  
-
-    </ul>
-    
-  
-    
-    
-	
-<li>9.2: <a href="#pg-307c1e990da196cfd02d1ad996525767">Crea Contenedores</a></li>
+<li>10.1: <a href="#pg-a255b37ef9790045086ad4ec3af746d7">Crea imágenes</a></li>
 
 
     
@@ -302,7 +323,26 @@ Versión imprimible multipagina.
     
     
 	
-<li>9.3: <a href="#pg-8e4c21f7e9bfca66daee9e988693e6a4">Contenedores</a></li>
+<li>10.2: <a href="#pg-307c1e990da196cfd02d1ad996525767">Crea Contenedores</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>10.3: <a href="#pg-8e4c21f7e9bfca66daee9e988693e6a4">Contenedores</a></li>
 
 
     
@@ -768,7 +808,147 @@ El día de la presentación de Salomon Hykes
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-31315b7cb4f93cac4e144a838a35f8df">1 - Conceptos sobre docker</h1>
+	<h1 id="pg-b35cb6721e646a6ef312969f3e00a241">1 - Anexos para el módulo</h1>
+    
+	
+
+
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-check-circle"></i> 
+            
+        </span>
+        
+        <span>Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight:bold">Repaso de conceptos </h3>
+
+    <hr style="border-color:seagreen; border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            <li>Incluímos aquí anexos y referencias necesarias para el cilo</li>
+            
+            <li>Introducimos Comandos linux</li>
+            
+            
+            
+        </ul>
+    </div>
+    
+
+
+</div>
+
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="">
+    
+	<h1 id="pg-7fc7475d67b6d8cf32a6b03add87feab">1.1 - Comandos linux</h1>
+    <div class="lead">Comanso básicos de linux</div>
+	
+
+
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-check-circle"></i> 
+            
+        </span>
+        
+        <span>Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight:bold">Qué veremos aquí</h3>
+
+    <hr style="border-color:seagreen; border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            <li>Conocer básicos de linux</li>
+            
+            <li>Diferenciar entre comandos de usuario y de administrador </li>
+            
+            <li>Poder usar la terminal para moverse por el sistema de archivos</li>
+            
+            
+            
+        </ul>
+    </div>
+    
+
+
+</div>
+
+<h3 id="comandos-de-linux">Comandos de linux</h3>
+<div class="iframe-container">
+<iframe src="https://es.wikieducator.org/index.php?curid=5777" width="100%" height="8255">WikiEducator </iframe>
+</div>
+
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-31315b7cb4f93cac4e144a838a35f8df">2 - Conceptos sobre docker</h1>
     
 	
 
@@ -1011,7 +1191,7 @@ En Windows, en cambio, para ejecutar contenedores Linux, Docker utiliza tecnolog
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-65d5cba354484d7f0190e833730fea79">2 - Contenedores e imágenes</h1>
+	<h1 id="pg-65d5cba354484d7f0190e833730fea79">3 - Contenedores e imágenes</h1>
     
 	<h2 id="contenedores-e-imágnes">Contenedores e imágnes</h2>
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 610px">
@@ -1367,7 +1547,7 @@ gestiona los contenedores y las imágenes.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-1f44f5aa390b398c95b5507be6f66856">3 - Documentación</h1>
+	<h1 id="pg-1f44f5aa390b398c95b5507be6f66856">4 - Documentación</h1>
     
 	
 
@@ -1403,7 +1583,7 @@ Según vayamos avanzando en las clases actualizamos estos puntos.</p></blockquot
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-015e39fb970d2fc0fa343d9eb6f8b7ee">4 - Instalación</h1>
+	<h1 id="pg-015e39fb970d2fc0fa343d9eb6f8b7ee">5 - Instalación</h1>
     
 	
 
@@ -1836,7 +2016,7 @@ Según vayamos avanzando en las clases actualizamos estos puntos.</p></blockquot
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-81917096855a46c0b43795c6cb7186e7">5 - Docker en  línea de comandos </h1>
+	<h1 id="pg-81917096855a46c0b43795c6cb7186e7">6 - Docker en  línea de comandos </h1>
     
 	
 
@@ -3208,7 +3388,7 @@ El comando `docker system prune` elimina contenedores, imágenes y volúmenes qu
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-be7312263a67ea65e5e20d152b9a270c">6 - Fichero de ejecución para crear imágenes DockerFile</h1>
+	<h1 id="pg-be7312263a67ea65e5e20d152b9a270c">7 - Fichero de ejecución para crear imágenes DockerFile</h1>
     
 	<p><div class="definicion-concepto">
   <div class="definicion-titulo">
@@ -3769,7 +3949,7 @@ Diferencias clave:</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-9054adab69431dbba10d534b39274e03">7 - Gestión de archivos y directorios</h1>
+	<h1 id="pg-9054adab69431dbba10d534b39274e03">8 - Gestión de archivos y directorios</h1>
     
 	
 
@@ -4198,7 +4378,7 @@ Diferencias clave:</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-119983b132b25e85c20958c2f3b25dcd">8 - Docker compose</h1>
+	<h1 id="pg-119983b132b25e85c20958c2f3b25dcd">9 - Docker compose</h1>
     
 	<p>Si quiero desarrollar una aplicación web,  puedo necesitar tener en el sistema:</p>
 <blockquote>
@@ -4640,7 +4820,7 @@ Docker Compose es una herramienta que nos permite gestionar sistemas dockerizado
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-f7de4513feaac6de7a9893742e148311">9 - Docker Prácticas</h1>
+	<h1 id="pg-f7de4513feaac6de7a9893742e148311">10 - Docker Prácticas</h1>
     
 	<p>
 
@@ -4689,7 +4869,7 @@ Docker Compose es una herramienta que nos permite gestionar sistemas dockerizado
 
 <div class="td-content" style="">
     
-	<h1 id="pg-a255b37ef9790045086ad4ec3af746d7">9.1 - Crea imágenes</h1>
+	<h1 id="pg-a255b37ef9790045086ad4ec3af746d7">10.1 - Crea imágenes</h1>
     
 	<h2 id="descargar-ver-y-borrar-imágenes"><strong>Descargar, ver y borrar imágenes</strong></h2>
 <ul>
@@ -4701,7 +4881,7 @@ Docker Compose es una herramienta que nos permite gestionar sistemas dockerizado
 </span></span><span style="display:flex;"><span>docker rmi nombre_imagen
 </span></span><span style="display:flex;"><span>docker rmi (docker images)
 </span></span></code></pre></div></blockquote>
-<h5 id="1-descarga-una-imagen-llamada--hahahugoshortcode39s0hbhb"><strong>1. Descarga una imagen llamada  
+<h5 id="1-descarga-una-imagen-llamada--hahahugoshortcode40s0hbhb"><strong>1. Descarga una imagen llamada  
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -4731,7 +4911,7 @@ Docker Compose es una herramienta que nos permite gestionar sistemas dockerizado
 
 
 </blockquote>
-<h5 id="2-descarga-una-imagen-llamada--hahahugoshortcode39s2hbhb"><strong>2. Descarga una imagen llamada  
+<h5 id="2-descarga-una-imagen-llamada--hahahugoshortcode40s2hbhb"><strong>2. Descarga una imagen llamada  
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -4914,7 +5094,7 @@ Docker Compose es una herramienta que nos permite gestionar sistemas dockerizado
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-307c1e990da196cfd02d1ad996525767">9.2 - Crea Contenedores</h1>
+	<h1 id="pg-307c1e990da196cfd02d1ad996525767">10.2 - Crea Contenedores</h1>
     
 	<h2 id="crear-y-usar-contenedores"><strong>Crear y usar contenedores</strong></h2>
 <ul>
@@ -4942,7 +5122,7 @@ Docker Compose es una herramienta que nos permite gestionar sistemas dockerizado
 </span></span></code></pre></div></blockquote>
 <p><em>Si estás en linux o en mac</em></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker rm <span style="color:#8b008b;font-weight:bold">$(</span>docker ps -a -q<span style="color:#8b008b;font-weight:bold">)</span>
-</span></span></code></pre></div><h4 id="1-crea-5-contenedor-a-partir-de-la-imagen-hahahugoshortcode40s0hbhb-sin-especificar-nombre"><strong>1. Crea 5 contenedor a partir de la imagen 
+</span></span></code></pre></div><h4 id="1-crea-5-contenedor-a-partir-de-la-imagen-hahahugoshortcode42s0hbhb-sin-especificar-nombre"><strong>1. Crea 5 contenedor a partir de la imagen 
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -5064,7 +5244,7 @@ esté en estado <strong>Up</strong></p></blockquote>
 
 
 <hr>
-<h4 id="5-crea-un-contenedor-llamado-hahahugoshortcode40s7hbhb-a-partir-de-la-imagen-hahahugoshortcode40s8hbhb"><strong>5. Crea un contenedor llamado 
+<h4 id="5-crea-un-contenedor-llamado-hahahugoshortcode42s7hbhb-a-partir-de-la-imagen-hahahugoshortcode42s8hbhb"><strong>5. Crea un contenedor llamado 
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -5368,7 +5548,7 @@ estar creado a partir de la imagen ubuntu:latest sí que tiene asociado un comma
 
 
 </blockquote>
-<h4 id="15-crea-un-contenedor-llamado-hahahugoshortcode40s24hbhb-que-se-quede-arrancado-a-partir-de-la-imagen-hahahugoshortcode40s25hbhb"><strong>15. Crea un contenedor llamado 
+<h4 id="15-crea-un-contenedor-llamado-hahahugoshortcode42s24hbhb-que-se-quede-arrancado-a-partir-de-la-imagen-hahahugoshortcode42s25hbhb"><strong>15. Crea un contenedor llamado 
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -5519,7 +5699,7 @@ Antes de elimniar el contenedor tiene que estar parado
 
 
 </p>
-<h4 id="19-crea-igual-que-antes-el-contenedor-web-pero-mapeando-el-puerto-hahahugoshortcode40s34hbhb"><strong>19. Crea igual que antes el contenedor web, pero mapeando el puerto 
+<h4 id="19-crea-igual-que-antes-el-contenedor-web-pero-mapeando-el-puerto-hahahugoshortcode42s34hbhb"><strong>19. Crea igual que antes el contenedor web, pero mapeando el puerto 
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -5609,7 +5789,7 @@ Antes de elimniar el contenedor tiene que estar parado
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-8e4c21f7e9bfca66daee9e988693e6a4">9.3 - Contenedores</h1>
+	<h1 id="pg-8e4c21f7e9bfca66daee9e988693e6a4">10.3 - Contenedores</h1>
     
 	<h2 id="contenedores--imágenes"><strong>Contenedores =&gt; imágenes</strong></h2>
 
@@ -5633,7 +5813,7 @@ La idea es tener un contenedor según nuestra necesidad, y con él, crear una im
 </span></span><span style="display:flex;"><span>docker <span style="color:#658b00">export</span>
 </span></span><span style="display:flex;"><span>docker import
 </span></span></code></pre></div></blockquote>
-<h4 id="1-crea-una-imagen-llamada-hahahugoshortcode41s1hbhb-a-partir-del-conenedor-hahahugoshortcode41s2hbhb"><strong>1. Crea una imagen llamada 
+<h4 id="1-crea-una-imagen-llamada-hahahugoshortcode43s1hbhb-a-partir-del-conenedor-hahahugoshortcode43s2hbhb"><strong>1. Crea una imagen llamada 
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -5781,7 +5961,7 @@ Lo que se almacena  en el <strong>fichero tar</strong> es <strong>la imagen del 
 
 
 </blockquote>
-<h4 id="5-crea-una-imagen-llamada-hahahugoshortcode41s10hbhb-a-partir-del-fichero-hahahugoshortcode41s11hbhb"><strong>5. Crea una imagen llamada 
+<h4 id="5-crea-una-imagen-llamada-hahahugoshortcode43s10hbhb-a-partir-del-fichero-hahahugoshortcode43s11hbhb"><strong>5. Crea una imagen llamada 
 <strong>
 <span class="font-weight-bold text-text-success">
 

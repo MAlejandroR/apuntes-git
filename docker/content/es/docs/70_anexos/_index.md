@@ -1,7 +1,7 @@
 ---
 title: "Anexos para el módulo"
 linkTitle: "Anexos "
-weight: 5
+weight: 70
 icon: code-web_old
 ---
 
