@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker en  línea de comandos  on Desarrollo Web</title>
-    <link>http://localhost:36265/dwes/es/docs/02_docker/04_comandos/</link>
+    <link>http://localhost:35361/dwes/es/docs/02_docker/04_comandos/</link>
     <description>Recent content in Docker en  línea de comandos  on Desarrollo Web</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <atom:link href="http://localhost:36265/dwes/es/docs/02_docker/04_comandos/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:35361/dwes/es/docs/02_docker/04_comandos/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
