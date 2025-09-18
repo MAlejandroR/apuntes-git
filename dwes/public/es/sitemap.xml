@@ -32,65 +32,7 @@
     <loc>http://localhost:1313/dwes/es/docs/01_web/06_instalaciones/apache/practica/</loc>
     <lastmod>2024-10-15T07:04:49+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/02_docker/1_docker/01_conceptos/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/01_conceptos/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/dwes/es/docs/02_docker/1_docker/01_conceptos/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/1_imagenes/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/04_ejercicios/1_imagenes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/1_imagenes/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/01_web/01_conceptos_generales/desarrollo_web/desarrollo_web/</loc>
-    <lastmod>2025-09-15T07:04:49+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/04_php/02_instalacion/</loc>
-    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/04_php/13_objetos/1_sintaxis/</loc>
-    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/04_php/16_basesdatos/02_sql/</loc>
-    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/2_contenedores/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/04_ejercicios/2_contenedores/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/2_contenedores/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/02_docker/1_docker/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/dwes/es/docs/02_docker/1_docker/"
-                />
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/01_conceptos/</loc>
   </url><url>
     <loc>http://localhost:1313/dwes/es/docs/02_docker/</loc>
     <xhtml:link
@@ -104,29 +46,29 @@
                 href="http://localhost:1313/dwes/es/docs/02_docker/"
                 />
   </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/02_docker/1_docker/02_contenedores_imagenes/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/02_contenedores_imagenes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/dwes/es/docs/02_docker/1_docker/02_contenedores_imagenes/"
-                />
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/04_ejercicios/1_imagenes/</loc>
   </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/02_docker/0_linux/01_comandos_gestion_ficheros/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/dwes/fr/docs/02_docker/0_linux/01_comandos_gestion_ficheros/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/dwes/es/docs/02_docker/0_linux/01_comandos_gestion_ficheros/"
-                />
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/08_ejercicios/1_imagenes/</loc>
+  </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/01_web/01_conceptos_generales/desarrollo_web/desarrollo_web/</loc>
+    <lastmod>2025-09-15T07:04:49+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/04_php/02_instalacion/</loc>
+    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/04_php/13_objetos/1_sintaxis/</loc>
+    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/04_php/16_basesdatos/02_sql/</loc>
+    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/04_ejercicios/2_contenedores/</loc>
+  </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/08_ejercicios/2_contenedores/</loc>
+  </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/02_contenedores-e-im%C3%A1genes/</loc>
+  </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/old_index/</loc>
   </url><url>
     <loc>http://localhost:1313/dwes/es/docs/01_web/02_conceptos_basicos/</loc>
   </url><url>
@@ -178,29 +120,11 @@
     <loc>http://localhost:1313/dwes/es/docs/04_php/15_peristencia/2_sesiones/</loc>
     <lastmod>2024-10-15T07:04:49+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/3_contenedores_imagenes/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/04_ejercicios/3_contenedores_imagenes/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/3_contenedores_imagenes/"
-                />
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/04_ejercicios/3_contenedores_imagenes/</loc>
   </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/02_docker/1_docker/03_comandos_docker/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/03_comandos_docker/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/dwes/es/docs/02_docker/1_docker/03_comandos_docker/"
-                />
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/08_ejercicios/3_contenedores_imagenes/</loc>
+  </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/03_instalacion/</loc>
   </url><url>
     <loc>http://localhost:1313/dwes/es/docs/01_web/03_osi/</loc>
   </url><url>
@@ -216,6 +140,8 @@
     <loc>http://localhost:1313/dwes/es/docs/04_php/</loc>
     <lastmod>2024-09-15T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/04_comandos/</loc>
+  </url><url>
     <loc>http://localhost:1313/dwes/es/docs/01_web/04_internet/</loc>
   </url><url>
     <loc>http://localhost:1313/dwes/es/docs/04_php/05_declaraciones/</loc>
@@ -229,17 +155,7 @@
   </url><url>
     <loc>http://localhost:1313/dwes/es/docs/01_web/05_www/</loc>
   </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/04_ejercicios/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/"
-                />
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/06_dockefile/</loc>
   </url><url>
     <loc>http://localhost:1313/dwes/es/docs/04_php/06_control/</loc>
     <lastmod>2024-10-15T07:04:49+02:00</lastmod>
@@ -247,17 +163,11 @@
     <loc>http://localhost:1313/dwes/es/docs/01_web/06_instalaciones/</loc>
     <lastmod>2024-10-15T07:04:49+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/02_docker/1_docker/05_resumen_instrucciones_docker_file/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/05_resumen_instrucciones_docker_file/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/dwes/es/docs/02_docker/1_docker/05_resumen_instrucciones_docker_file/"
-                />
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/05_resumen_instrucciones_docker_file/</loc>
+  </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/07_docker-compose/</loc>
+  </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/08_ejercicios/</loc>
   </url><url>
     <loc>http://localhost:1313/dwes/es/docs/04_php/07_expresiones/</loc>
     <lastmod>2024-10-15T07:04:49+02:00</lastmod>
@@ -320,89 +230,33 @@
                 href="http://localhost:1313/dwes/es/"
                 />
   </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/3_web_1/app/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/3_web_1/app/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/3_web_1/app/"
-                />
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/3_web_1/app/</loc>
   </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/4_web_2/app/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/4_web_2/app/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/4_web_2/app/"
-                />
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/4_web_2/app/</loc>
   </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/"
-                />
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/</loc>
   </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/7_web_developer/app/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/7_web_developer/app/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/7_web_developer/app/"
-                />
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/7_web_developer/app/</loc>
   </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/apache/app/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/apache/app/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/apache/app/"
-                />
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/apache/app/</loc>
   </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/docker_proyectos/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/docker_proyectos/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/docker_proyectos/"
-                />
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/docker_proyectos/</loc>
   </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/nginx/app/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/nginx/app/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="http://localhost:1313/dwes/es/docs/02_docker/1_docker/04_ejercicios/5_dockercompose/nginx/app/"
-                />
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/nginx/app/</loc>
+  </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/3_web_1/app/</loc>
+  </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/4_web_2/app/</loc>
+  </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/</loc>
+  </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/7_web_developer/app/</loc>
+  </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/apache/app/</loc>
+  </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/docker_proyectos/</loc>
+  </url><url>
+    <loc>http://localhost:1313/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/nginx/app/</loc>
   </url><url>
     <loc>http://localhost:1313/dwes/es/docs/prueba/</loc>
   </url><url>
