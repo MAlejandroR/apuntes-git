@@ -7,6 +7,19 @@ draft: false
 ---
 
 
+{{< objetivos sub_title="Conceptos que se adquirirán aquí" >}}
+Qué es docker
+Imágenes Vs Contenedores
+Obtener una imagen: run, pull, search
+Crear un contenedor: create, start, stop, rm, run
+Arrancar un contenedor: start, run
+Detener un contenedor: stop
+Eliminar un contenedor vs Imagenes: rm, rmi
+Visualizar imágenes y contenedores: images, ps, ps -a
+Mapear puertos y volúmenes: -p, -v
+Crear una imagen  a partir de un contenedor: commit, build
+{{< /objetivos >}}
+
 {{<definicion title="docker" icon="fab fa-docker">}}
 Docker es una plataforma de virtualización basada en contenedores.
 {{</definicion>}}
@@ -42,6 +55,7 @@ A partir de una imagen específica, es posible iniciar un contenedor de forma mu
 
 Si realizamos cambios en el contenedor, estos se guardan en capas incrementales, lo que permite visualizar los cambios y restaurar versiones anteriores del entorno, si es necesario.
 
-### Docker Vs Máquinas virtuales
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS6zxmUEE9zmd10c_6vLNf2bTaI_BoVCkVukwHcnBO0S3lm_NVU_YU9sJcUpCItLKyKCACkXrjESfbB/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+[//]: # (### Docker Vs Máquinas virtuales)
+
+[//]: # (<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS6zxmUEE9zmd10c_6vLNf2bTaI_BoVCkVukwHcnBO0S3lm_NVU_YU9sJcUpCItLKyKCACkXrjESfbB/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>)
 

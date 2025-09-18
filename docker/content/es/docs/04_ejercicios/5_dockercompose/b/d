@@ -1,0 +1,9 @@
+docker stop web
+docker stop mysql
+docker rm web
+docker rm mysql
+
+docker build -t web:v1  ./web
+docker build -t mysql:v1  ./mysql
+docker run -d  --name web --hostname dockerfile_web  web:v1
+docker run -d  --name mysql --hostname dockerfile_mysql  mysql:v1

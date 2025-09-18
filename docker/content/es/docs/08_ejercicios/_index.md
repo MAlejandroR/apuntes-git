@@ -4,7 +4,7 @@ linkTitle: "Ejercicios"
 weight: 60
 icon: fa-solid fa-list-check
   
-draft: true    
+draft: false    
 ---
 
 {{< pageinfo >}}

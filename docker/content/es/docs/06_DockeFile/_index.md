@@ -4,6 +4,7 @@ linkTitle: "DockerFile"
 weight: 50
 icon: fa-solid fa-terminal
 draft: false    
+
 ---
 {{< definicion title="Dockerfile" icon="fas fa-file-alt" >}}
 Un {{< color >}} Dockerfile {{< /color >}} es un fichero de texto que contiene una serie de instrucciones para crear una {{< color >}} imagen {{< /color >}}. 

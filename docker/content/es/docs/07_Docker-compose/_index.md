@@ -53,10 +53,10 @@ Ante esta situación qué hacemos
 El fichero docker-compose va a tener opciones de configuración que podemos jerarquizar
 
 Es un fichero de configuración con formato yaml
-{{< imgproc config1 Fill "400x450" >}}
+{{< imgproc config1 Fill "430x220" >}}
 
 {{< /imgproc >}}
-{{< imgproc config2 Fill "400x450" >}}
+{{< imgproc config2 Fill "428x152" >}}
 
 {{< /imgproc >}}
 Sintaxis YAML (https://es.wikipedia.org/wiki/YAML):
@@ -147,7 +147,7 @@ Creamos una configuración para un servidor web con Nginx y una base de datos My
 {{< highlight dockerfile "linenos=table, hl_lines=3 7" >}}
 services:
 web:
-    image: php:8.3-apache
+    image: php:8.4-apache
     ports:
         - "8080:80"
     
