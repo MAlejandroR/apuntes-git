@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Formularios on Desarrollo Web</title>
-    <link>http://localhost:1313/dwes/es/docs/04_php/11_formularios/</link>
+    <link>http://localhost:36265/dwes/es/docs/04_php/11_formularios/</link>
     <description>Recent content in Formularios on Desarrollo Web</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://localhost:1313/dwes/es/docs/04_php/11_formularios/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:36265/dwes/es/docs/04_php/11_formularios/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

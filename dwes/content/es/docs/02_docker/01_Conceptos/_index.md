@@ -7,6 +7,19 @@ draft: false
 ---
 
 
+{{< objetivos sub_title="Conceptos que se adquirirán aquí" >}}
+Qué es docker
+Imágenes Vs Contenedores
+Obtener una imagen: run, pull, search
+Crear un contenedor: create, start, stop, rm, run
+Arrancar un contenedor: start, run
+Detener un contenedor: stop
+Eliminar un contenedor vs Imagenes: rm, rmi
+Visualizar imágenes y contenedores: images, ps, ps -a
+Mapear puertos y volúmenes: -p, -v
+Crear una imagen  a partir de un contenedor: commit, build
+{{< /objetivos >}}
+
 {{<definicion title="docker" icon="fab fa-docker">}}
 Docker es una plataforma de virtualización basada en contenedores.
 {{</definicion>}}
