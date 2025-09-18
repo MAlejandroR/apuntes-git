@@ -20,16 +20,22 @@ Mapear puertos y volúmenes: -p, -v
 Crear una imagen  a partir de un contenedor: commit, build
 {{< /objetivos >}}
 
-{{<definicion title="docker" icon="fab fa-docker">}}
+{{<definicion title="Docker" icon="fab fa-docker">}}
 Docker es una plataforma de virtualización basada en contenedores.
 {{</definicion>}}
+
+{{<definicion title="Docker" icon="fab fa-docker">}}
+La idea de Docker es ejecutar una o varias aplicaciones en **entornos aislados** (es decir, una forma de virtualizar).  
+Esto facilita su despliegue y portabilidad.
+{{</definicion>}}
+
 
 
 * {{< color >}} PUNTOS FUNDAMENTALES {{< /color >}}
 {{< alert title="Importante" color="warning" >}}
 Asegúrate de leer y entender bien los siguientes párrafos
 {{< /alert >}}
-* La idea es tener {{< color >}} un contenedor (un archivo ejecutable) {{< /color >}} que contiene todo lo necesario para ejecutar una aplicación, incluyendo el código, las dependencias y las configuraciones, de forma totalmente aislada del sistema en el cual se está ejecutando. Esto permite que la aplicación se ejecute de manera consistente en cualquier entorno.
+* La idea es tener {{< color >}} un contenedor (un paquete ejecutable) {{< /color >}} que contiene todo lo necesario para ejecutar una aplicación, incluyendo el código, las dependencias y las configuraciones, de forma totalmente aislada del sistema en el cual se está ejecutando. Esto permite que la aplicación se ejecute de manera consistente en cualquier entorno.
 * Este archivo contenedor {{< color >}} no incluye un sistema operativo completo propio {{< /color >}}, pero funciona como si lo tuviera, {{< color >}} ejecutándose de forma aislada e independiente del sistema anfitrión {{< /color >}}. 
   > Utiliza el kernel del anfitrión y configura los componentes necesarios para simular el entorno del sistema operativo deseado o requerido, aunque siempre dentro del tipo de sistema operativo del anfitrión.
 * {{< color >}} Compatibilidad de sistema operativo {{< /color >}}: Los contenedores dependen del sistema anfitrión, por lo que los contenedores Linux solo se ejecutan en anfitriones Linux. 
@@ -37,6 +43,19 @@ Asegúrate de leer y entender bien los siguientes párrafos
    
   > También existen soluciones emergentes para ejecutar contenedores de Windows en Linux, aunque con limitaciones.
 
+
+{{< alert title="Nota aclaratoria: Docker en Windows" color="info" >}}
+En Linux los contenedores usan directamente el **kernel del anfitrión**.  
+En Windows, en cambio, para ejecutar contenedores Linux, Docker utiliza tecnologías como **WSL2** o **Hyper-V**:
+
+* **WSL2 (Windows Subsystem for Linux 2)**: es una compatibilidad de Windows que incluye un **kernel Linux real** integrado, no es exactamente una máquina virtual clásica, sino una capa optimizada para ejecutar Linux dentro de Windows.
+* **Hyper-V**: es la plataforma de virtualización de Windows, y en este caso sí funciona como una **máquina virtual ligera** que corre Linux para que los contenedores puedan ejecutarse.
+
+
+{{< /alert >}}
+{{<resumen>}}
+En sistemas  Windows necesitas un “puente” que proporcione un kernel Linux, porque los contenedores siempre dependen de un kernel del mismo tipo que fueron creados.
+{{< /resumen>}}
 
 
 ### El proceso de empaquetado

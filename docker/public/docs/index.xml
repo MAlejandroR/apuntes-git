@@ -2,10 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introducción on Despliegue de aplicacones Web</title>
-    <link>http://web.infenlaces.com/despliegue/docker/docs/</link>
+    <link>http://localhost:32973/docker/docs/</link>
     <description>Recent content in Introducción on Despliegue de aplicacones Web</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <atom:link href="http://web.infenlaces.com/despliegue/docker/docs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:32973/docker/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Documentación</title>
+      <link>http://localhost:32973/docker/docs/old_index/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:32973/docker/docs/old_index/</guid>
+      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Aspectos vistos en la tutoría&lt;/li&gt;&#xA;&lt;li&gt;Conceptos / Ejercicios de repaso y refuerzo&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;En esta sección se irán aportando recursos que puedan ayudar a adquirir los conceptos estudiados y vistos las tutorías&lt;br&gt;&#xA;Según vayamos avanzando en las clases actualizamos estos puntos.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&#xA;&lt;/div&gt;</description>
+    </item>
   </channel>
 </rss>
