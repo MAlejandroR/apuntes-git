@@ -1,153 +1,174 @@
 ---
-title: "Docker en  línea de comandos "
+    title: "Docker en  línea de comandos "
 linkTitle: "Comandos docker"
 weight: 40
 icon: fa-solid fa-terminal
-draft: false    
----   
+draft: false
+---
 
-{{< objetivos title="Docker" sub_title="Actuando en el terminal" >}}
-Cómo usar docker en línea de comandos
-Crear contenedores
-Descargar imágenes
-Modificar contenedores y persistirlos en imágenes
-Usar contenedores
-Subir a docker hub imágenes
-{{< /objetivos >}}
+  {{< objetivos title="Docker" sub_title="Actuando en el terminal" >}}
+  Cómo usar docker en línea de comandos
+  Crear contenedores
+  Descargar imágenes
+  Modificar contenedores y persistirlos en imágenes
+  Usar contenedores
+  Subir a docker hub imágenes
+  {{< /objetivos >}}
 
-### 1. Obteniendo una Imagen
+  ### 1. Obteniendo una Imagen
 
-{{<definicion title="Obtención de Imágenes" sub_title="Cómo descargar y gestionar imágenes en Docker" >}}
-Las imágenes en {{< color >}} Docker {{< /color >}} son las bases para crear {{< color >}} contenedores {{< /color >}}.
-<br />
-Puedes obtener diferentes versiones de una imagen usando etiquetas.
-{{< objetivos title="Comandos a estudiar" sub_title=" " >}}
-docker pull
-docker images
-docker search
-{{< /objetivos >}}
- {{</definicion>}}
+  {{<definicion title="Obtención de Imágenes" sub_title="Cómo descargar y gestionar imágenes en Docker" >}}
+  Las imágenes en {{< color >}} Docker {{< /color >}} son las bases para crear {{< color >}} contenedores {{< /color >}}.
+  <br />
+  Puedes obtener diferentes versiones de una imagen usando etiquetas.
+  {{< objetivos title="Comandos a estudiar" sub_title=" " >}}
+  docker pull
+  docker images
+  docker search
+  {{< /objetivos >}}
+  {{</definicion>}}
 
 1. {{< color >}} Descarga una imagen {{< /color >}}:
-   {{< highlight bash "linenos=table, hl_lines=1" >}}
-   docker pull ubuntu:latest
-   {{< /highlight >}}
-En este caso estamos descargando una imagen llamada ubuntu en su versión más reciente ({{< color >}} latest {{< /color >}}).
-{{< alert title="Cuidado" color="warning">}}
-   Para generar contenedores en producción ***No se recomiendo usar esta etiqueta***, ya que podría estar cambiando de versión del sistema base del contenedor.
-{{< /alert >}}
+  {{< highlight bash "linenos=table, hl_lines=1" >}}
+  docker pull ubuntu:latest
+  {{< /highlight >}}
+  En este caso estamos descargando una imagen llamada ubuntu en su versión más reciente ({{< color >}} latest {{< /color >}}).
+  {{< alert title="Cuidado" color="warning">}}
+  Para generar contenedores en producción ***No se recomiendo usar esta etiqueta***, ya que podría estar cambiando de versión del sistema base del contenedor.
+  {{< /alert >}}
 
 2. {{< color >}} Ver imágenes disponibles {{< /color >}}:
-   {{< highlight bash "linenos=table, hl_lines=1" >}}
-   docker images
-   {{< /highlight >}}
+  {{< highlight bash "linenos=table, hl_lines=1" >}}
+  docker images
+  {{< /highlight >}}
 
 3. {{< color >}} Consultar ayuda {{< /color >}}:
-   {{< highlight bash "linenos=table, hl_lines=1" >}}
-   docker help images
-   {{< /highlight >}}
-4. {{< color >}} Buscar imágenes {{< /color >}}
-> Buscar todas las imágenes que contengan ubuntu cuya distribución empiece por 1
- {{< highlight php "linenos=table, hl_lines=1" >}}
-   docker search ubuntu:1
-{{< / highlight >}}
+  {{< highlight bash "linenos=table, hl_lines=1" >}}
+  docker help images
+  {{< /highlight >}}
+  4. {{< color >}} Buscar imágenes {{< /color >}}
+  > Buscar todas las imágenes que contengan ubuntu cuya distribución empiece por 1
+  {{< highlight php "linenos=table, hl_lines=1" >}}
+    docker search ubuntu:1
+  {{< / highlight >}}
 
-{{% line %}}
+  {{% line %}}
 
-### 4. Estados del Contenedor
-Antes de empezar con los comandos, es importante tener muy claro {{< color >}} los estados que puede tener un contenedor {{< /color >}}, ya que nos ayudará a entender qué estamos haciendo en un momento determinado con un contenedor y por qué podemos realizar ciertas acciones y no otras.
+  ### 2. Estados del Contenedor
+  Antes de empezar con los comandos, es importante tener muy claro {{< color >}} los estados que puede tener un contenedor {{< /color >}}, ya que nos ayudará a entender qué estamos haciendo en un momento determinado con un contenedor y por qué podemos realizar ciertas acciones y no otras.
 
-Por ejemplo, no podremos ejecutar comandos en un contenedor si este no está en el estado **running** o en estado de ejecución.
-{{<definicion title="Estados del Contenedor" sub_title="Running, Exited, Stopped, Paused, Created, y Deleted" >}}
+  Por ejemplo, no podremos ejecutar comandos en un contenedor si este no está en el estado **running** o en estado de ejecución.
+  {{<definicion title="Estados del Contenedor" sub_title="Running, Exited, Stopped, Paused, Created, y Deleted" >}}
 Un contenedor en Docker puede estar en los siguientes estados:
-{{< imgproc estados Fill "814x414" >}}
-Estados de un contenedor
-{{< /imgproc >}}
-<ul>
+  {{< imgproc estados Fill "814x414" >}}
+  Estados de un contenedor
+  {{< /imgproc >}}
+  <ul>
 <li> {{< color >}} Created {{< /color >}}: El contenedor ha sido creado, pero aún no se está ejecutando. </li>
 <li> {{< color >}} Running {{< /color >}}: El contenedor está activo y operativo. </li>
 <li> {{< color >}} Paused {{< /color >}}: El contenedor está en pausa, con todos los procesos detenidos, pero puede reanudarse. </li>
 <li> {{< color >}} Stopped {{< /color >}}: El contenedor se detuvo de manera controlada. </li>
 <li> {{< color >}} Exited {{< /color >}}: Similar al estado "stopped", pero indica que el contenedor terminó de manera inesperada. </li>
 <li> {{< color >}} Deleted {{< /color >}}: El contenedor ha sido eliminado y ya no está disponible. </li>
-</ul>
+  </ul>
 
-{{</definicion>}}
+  {{</definicion>}}
 
 
 
 Para ver los estados de cada contenedor:
-{{< highlight bash "linenos=table, hl_lines=1" >}}
-docker ps -a
-{{< /highlight >}}
+  {{< highlight bash "linenos=table, hl_lines=1" >}}
+  docker ps -a
+  {{< /highlight >}}
 
 Para ver los contenedores que actualmente están en estado {{< color >}} Running {{< /color >}} o {{< color >}} Up {{< /color >}}:
-{{< highlight bash "linenos=table, hl_lines=1" >}}
-docker ps
-{{< /highlight >}}
+  {{< highlight bash "linenos=table, hl_lines=1" >}}
+  docker ps
+  {{< /highlight >}}
 
 
 
-Los estados se irán comentando según avancemos con los comandos.
+  Los estados se irán comentando según avancemos con los comandos.
 
-{{% line %}}
+  {{% line %}}
 
 
-### 2. Crear un Contenedor
-{{<definicion title="contenedor" >}}
-Un contenedor es una instancia ejecutable de una imagen, que contiene todo el entorno necesario para correr aplicaciones de forma aislada.
-{{< objetivos title="Comandos a estudiar" sub_title=" " >}}
-docker create
-docker start
-{{< /objetivos >}}
-{{</definicion>}}
-{{< imgproc docker_create Fill "827x292" >}}
+  ### 2. Crear un Contenedor
+  {{<definicion title="contenedor" >}}
+  Un contenedor es una instancia ejecutable de una imagen, que contiene todo el entorno necesario para correr aplicaciones de forma aislada.
 
-{{< /imgproc >}}
- 
+  El comando **create** tiene varias opciones, pero no lo vamos a utilizar, no obstante lo comentamos
+  {{< objetivos title="Comandos a estudiar" sub_title=" " >}}
+  docker create
+  docker start
+  docker run{{< /objetivos >}}
+  {{</definicion>}}
+  {{< imgproc docker_create Fill "827x292" >}}
+
+  {{< /imgproc >}}
+
 1. {{< color >}} Crear contenedor {{< /color >}}:
-   - El comando {{< color >}} docker create {{< /color >}} permite crear contenedores {{< color >}} sin ejecutarlos inmediatamente {{< /color >}}.
+  - El comando {{< color >}} docker create {{< /color >}} permite crear contenedores {{< color >}} sin ejecutarlos inmediatamente {{< /color >}}.
 
-   {{< highlight bash "linenos=table, hl_lines=1-3" >}}
-   docker create --name ls ubuntu:latest ls
-   docker create -i -t --name bash ubuntu:latest bash
-   docker create --name update ubuntu:latest apt-get update
-   {{< /highlight >}}
-Un contenedor en estado created, no puede ejecutar nada, tenemos que hacerlo usando start para pasarlo a estado up o running
-> Observa la siguiente secuencia 1de comandos y entiéndela
-{{< imgproc docker_create_command Fill "887x311" >}}
-{{< /imgproc >}}
-{{% line %}}
+  {{< highlight bash "linenos=table, hl_lines=1-3" >}}
+  docker create --name ls ubuntu:latest ls
+  docker create -i -t --name bash ubuntu:latest bash
+  docker create --name update ubuntu:latest apt-get update
+  {{< /highlight >}}
+  Un contenedor en estado created, no puede ejecutar nada, tenemos que hacerlo usando start para pasarlo a estado up o running
+  > Observa la siguiente secuencia 1de comandos y entiéndela
+  {{< imgproc docker_create_command Fill "887x311" >}}
+  {{< /imgproc >}}
+  {{% line %}}
+
+  ####  3. Crear un contenedor con run
+
+  {{<definicion title="docker run" sub_title="Crear y ejecutar contenedores" >}}
+Permite crear un contenedor a partir de una imagen y ponerlo en ejecución
+
+En caso de que la imagen no esté descargada, la descarga automáticamente
+  
+  {{< imgproc run Fill "1000x300" >}}
+
+  {{< /imgproc >}}
+  {{</definicion>}}
+
+
+* Este es uno de los comandos que más vamos a utilizar
+* Es un comando que tiene muchas opciones, puedes verlas con el comando help
+  ```bash
+  docker help run
+  ```
+
 
 ### 3. Ejecutando y Administrando Contenedores
 
 1. {{< color >}} Ver contenedores creados {{< /color >}}:
-   {{< highlight bash "linenos=table, hl_lines=1" >}}
-   docker ps -a
-   {{< /highlight >}}
+  {{< highlight bash "linenos=table, hl_lines=1" >}}
+  docker ps -a
+  {{< /highlight >}}
 
 2. {{< color >}} Ejecutar contenedores creados {{< /color >}}:
-   - Para ejecutar un contenedor creado, usa el comando `docker start` con opciones para ver su salida en consola.
+  - Para ejecutar un contenedor creado, usa el comando `docker start` con opciones para ver su salida en consola.
 
-   {{< highlight bash "linenos=table, hl_lines=1-3" >}}
-   docker start -a ls
-   docker start -i bash
-   docker start -a update
-   {{< /highlight >}}
-   
- Como vemos, con {{< color >}} docker start {{< /color >}}, inicio  un contenedor en estado creado ({{< color >}} created {{< /color >}}).
- 
- Con el uso de   las opciones {{< color >}}-a (adjuntar salida)  {{< /color >}} y {{< color >}} -i (entrada interactiva) {{< /color >}} puedo interactuar con el contenedor al iniciarlo.
+  {{< highlight bash "linenos=table, hl_lines=1-3" >}}
+  docker start -a ls
+  docker start -i bash
+  docker start -a update
+  {{< /highlight >}}
 
- En el apartado 5, vemos cómo ejectuar comandos en un contenedor que esté en estado {{< color >}} running o up {{< /color >}} (ver estados del contenedor e el apartado siguiente)
+  Como vemos, con {{< color >}} docker start {{< /color >}}, inicio  un contenedor en estado creado ({{< color >}} created {{< /color >}}).
+
+  Con el uso de   las opciones {{< color >}}-a (adjuntar salida)  {{< /color >}} y {{< color >}} -i (entrada interactiva) {{< /color >}} puedo interactuar con el contenedor al iniciarlo.
+
+  En el apartado 5, vemos cómo ejectuar comandos en un contenedor que esté en estado {{< color >}} running o up {{< /color >}} (ver estados del contenedor e el apartado siguiente)
 
 ---
-
 
 ### 5. Ejecución de Comandos en el Contenedor
 
 1. {{< color >}} Ejecutar comandos con `docker exec` {{< /color >}}:
-   - Usa `docker exec` para ejecutar comandos en un contenedor que ya esté en ejecución.
+    - Usa `docker exec` para ejecutar comandos en un contenedor que ya esté en ejecución.
 
    {{< highlight bash "linenos=table, hl_lines=1" >}}
    docker exec -ti web bash
@@ -158,7 +179,8 @@ Un contenedor en estado created, no puede ejecutar nada, tenemos que hacerlo usa
 ### 6. Forward de Puertos
 
 1. {{< color >}} Redireccionamiento de puertos entre anfitrión y contenedor {{< /color >}}:
-   - Para acceder al servidor web desde la red, configura un puerto en el anfitrión que redirija al puerto 80 del contenedor.
+    - Para acceder al servidor web desde la red, configura un puerto en el anfitrión que redirija al puerto 80 del
+      contenedor.
 
    {{< highlight bash "linenos=table, hl_lines=1-2" >}}
    docker run -ti -p 8080:80 --name web ubuntu:latest
@@ -180,6 +202,7 @@ Puedes mapear una carpeta local en el directorio de trabajo del contenedor para 
 > Si la carpeta no existe, Docker la crea automáticamente.
 
 ---
+
 ### 8. Crear una Imagen desde un Contenedor
 
 {{<definicion title="Crear imagen desde contenedor" sub_title="Usar `docker commit` para crear una imagen" >}}
@@ -192,10 +215,11 @@ Para conservar el estado de un contenedor y replicarlo, crea una imagen con `doc
    {{< /highlight >}}
 
 ---
+
 ### 9. Comandos para Manejar Volúmenes
 
 1. {{< color >}} Crear y administrar volúmenes {{< /color >}}:
-   - Comandos útiles para gestionar volúmenes en Docker:
+    - Comandos útiles para gestionar volúmenes en Docker:
 
    {{< highlight bash "linenos=table, hl_lines=1-4" >}}
    docker volume create [nombre]
@@ -208,7 +232,8 @@ Para conservar el estado de un contenedor y replicarlo, crea una imagen con `doc
 
 ### 9. Otros Comandos Importantes en Docker
 
-1. {{< color >}} Comandos útiles en Docker {{< /color >}}: Existen varios comandos para gestionar contenedores e imágenes. Aquí algunos de los más importantes:
+1. {{< color >}} Comandos útiles en Docker {{< /color >}}: Existen varios comandos para gestionar contenedores e
+   imágenes. Aquí algunos de los más importantes:
 
    {{< highlight bash "linenos=table, hl_lines=1-10" >}}
    docker inspect
@@ -230,10 +255,12 @@ Para conservar el estado de un contenedor y replicarlo, crea una imagen con `doc
    {{< /highlight >}}
 
 ---
+
 ### 10. Inspección de Contenedores
 
 {{<definicion title="Comando inspect" sub_title="Obteniendo información detallada" >}}
-El comando `docker inspect` proporciona información detallada del contenedor, como directorios mapeados y puertos abiertos.
+El comando `docker inspect` proporciona información detallada del contenedor, como directorios mapeados y puertos
+abiertos.
 {{</definicion>}}
 
 1. {{< color >}} Inspeccionar un contenedor {{< /color >}}:
@@ -245,18 +272,22 @@ El comando `docker inspect` proporciona información detallada del contenedor, c
    > **Nota**: Con la opción `-s`, obtienes información adicional sobre el tamaño de los archivos.
 
 ---
+
 ### 11. Pausar y Reiniciar un Contenedor
 
-1. {{< color >}} Pausar y reanudar {{< /color >}}: Los comandos `docker pause` y `docker unpause` congelan y reinician un contenedor en un estado específico.
+1. {{< color >}} Pausar y reanudar {{< /color >}}: Los comandos `docker pause` y `docker unpause` congelan y reinician
+   un contenedor en un estado específico.
 
    {{< highlight bash "linenos=table, hl_lines=1-2" >}}
    docker pause
    docker unpause
    {{< /highlight >}}
 
-   **Práctica**: Arranca un contenedor, abre un terminal y pausa el contenedor. Observa cómo afecta el terminal y reanúdalo.
+   **Práctica**: Arranca un contenedor, abre un terminal y pausa el contenedor. Observa cómo afecta el terminal y
+   reanúdalo.
 
 ---
+
 ### 12. Borrar un Contenedor
 
 {{< alert title="Información" >}}
@@ -264,16 +295,18 @@ Para borrar un contenedor, debe estar detenido. Usa `docker stop` para detenerlo
 {{< /alert >}}
 
 1. {{< color >}} Detener y borrar contenedores {{< /color >}}:
-   - `docker stop` tiene una opción `-t` para especificar el tiempo de espera antes de detener el contenedor.
+    - `docker stop` tiene una opción `-t` para especificar el tiempo de espera antes de detener el contenedor.
 
    {{< highlight bash "linenos=table, hl_lines=1-2" >}}
    docker stop [opciones]
    docker rm [opciones]
    {{< /highlight >}}
 
-   **Nota**: `pause` y `stop` no son lo mismo. `pause` detiene momentáneamente el contenedor sin interrumpir el proceso, mientras que `stop` finaliza la ejecución.
+   **Nota**: `pause` y `stop` no son lo mismo. `pause` detiene momentáneamente el contenedor sin interrumpir el proceso,
+   mientras que `stop` finaliza la ejecución.
 
 ---
+
 ### 13. Borrar Todos los Contenedores
 
 1. {{< color >}} Comando para borrar múltiples contenedores {{< /color >}}:
@@ -305,7 +338,8 @@ Para borrar una imagen, no debe tener contenedores asociados, independientemente
 ### 15. Exportar e Importar Imágenes
 
 {{<definicion title="Exportación e Importación de Imágenes" sub_title="Uso de archivos tar para migración de imágenes" >}}
-Los comandos `docker export` y `docker import` permiten guardar una imagen en un archivo `.tar` y restaurarla posteriormente.
+Los comandos `docker export` y `docker import` permiten guardar una imagen en un archivo `.tar` y restaurarla
+posteriormente.
 {{</definicion>}}
 
 1. {{< color >}} Exportar un contenedor a un archivo tar {{< /color >}}:
@@ -320,7 +354,8 @@ Los comandos `docker export` y `docker import` permiten guardar una imagen en un
    docker import web.tar
    {{< /highlight >}}
 
-   **Ejercicio**: Exporta el contenedor `web` a un archivo tar, revisa su tamaño, y crea una imagen `web:v2` a partir del archivo.
+   **Ejercicio**: Exporta el contenedor `web` a un archivo tar, revisa su tamaño, y crea una imagen `web:v2` a partir
+   del archivo.
 
 ---
 
@@ -344,14 +379,14 @@ Docker Hub permite almacenar, compartir y descargar imágenes de contenedores.
 ### 17. Creando una Cuenta y Usando Docker Hub
 
 1. {{< color >}} Crear una cuenta en Docker Hub {{< /color >}}:
-   - Puedes descargar imágenes sin cuenta usando `docker pull` o `docker run`.
-   - Inicia sesión con `docker login` para subir tus propias imágenes.
+    - Puedes descargar imágenes sin cuenta usando `docker pull` o `docker run`.
+    - Inicia sesión con `docker login` para subir tus propias imágenes.
 
 2. {{< color >}} Subir imágenes al repositorio {{< /color >}}:
-   - Usa `docker push` para subir una imagen. **Recuerda**: el nombre de usuario debe ser parte del nombre de la imagen.
+    - Usa `docker push` para subir una imagen. **Recuerda**: el nombre de usuario debe ser parte del nombre de la
+      imagen.
 
 ---
-
 
 ### 18. Estadísticas de Contenedores
 

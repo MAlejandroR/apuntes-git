@@ -1,8 +1,9 @@
 ---
-title: "Docker Prácticas"
+title: "Comandos Docker"
+linkTitle: "Comandos"
 weight: 30
 icon: fa-solid fa-terminal
-draft: true    
+draft: false    
 ---
 
 {{% pageinfo %}}
@@ -41,7 +42,6 @@ docker search ubuntu:1
 {{% /pageinfo %}}
 
 
-{{% pageinfo color="primary" %}}
 #### Crear  un __contenedor__
 
 {{< alert title="docker create" color="warning" >}}
@@ -59,44 +59,29 @@ No obstante lo comento es este post
 docker create ubuntu:latest
 ```
 ***
-##### Crearlo vinculándolo al terminal
->__docker create -t__
->> Crea un contenedor que quede vinculado a un terminal __tty__
+##### Crearlo vinculándolo al terminal de forma interactiva
+>__docker run -t -i__
+>> Crea un contenedor que quede vinculado a un terminal __tty__ con el que podemos interactuar
 ```bash
-    docker create -t ubuntu:latest
+    docker run -t -i  ubuntu:latest
 ```
 ***
 ##### Nombrar el contenedor
->__docker create  --name__
+>__docker run  --name__
 >> Crear un contenedor llamado __web__ a partir de la imagen ubuntu:latest y vincúlalo al terminal
 ```bash
-    docker create --name web_old -t ubuntu:latest
+    docker ran --name web -t -i ubuntu:latest
 ```
-####  Creando comandos para interactuar en un terminal
->__docker create -t -i__
->>Crear un contenedor llamada web para interactuar y luego ejecuta un bash _(Este comando ejecuta un intérprete de comandos de un sistema operativo)_
-```bash
- docker rm web_old
- docker create --name web_old -t -i ubuntu:latest
- docker start web_old
- docker exec -ti bash
-```
+
 {{< alert title="Revisa" color="warning" >}}
-Antes de crear el contenedor lo borramos     
+Antes de crear el contenedor lo borramos si lo queremos llamar igual     
 Antes de ejectuar algo, lo tenemos que arrancar     
 En este caso el comando start lo deja en estado up, ya que el contenedor fue coreado con __-i__  y __-t__   
 {{< /alert >}}
 
-{{% /pageinfo %}}
-
-
 
 {{<line >}}
 
-{{% pageinfo color="primary" %}}
-#### Crear un contenedor con run
->__run__
->> Este es uno de los comandos que más vamos a utilizar
 Es un comando que tiene muchas opciones, puedes verlas con el comando help
 ```bash
  docker help run
@@ -107,7 +92,6 @@ Nosotros lo vamos a usar comos se muestra a continuación
 {{< /imgproc >}}
 
 
-{{% /pageinfo %}}
 
 {{% pageinfo color="primary" %}}
 ####  Listar todos  los contenedores
@@ -169,7 +153,6 @@ __:star: El contenedor tiene que estar en estado Up__
 
 
 
-{{% pageinfo color="primary" %}}
 ####  Crear un contenedor que ejecute una instrucción: ls
 * El contenedor se crea a partir de la imagen __ubuntu:latest__
 * La instrucción que queremos ejecutar es ls
@@ -183,7 +166,7 @@ __:star: El contenedor tiene que estar en estado Up__
 ```bash
  docker run  -ti ubuntu:latest bash
 ```
-{{% /pageinfo %}}
+
 {{< alert title="Importante" color="warning" >}}
 > Entiende bien las opciones
 > -ti se pone para que se quede abierto el terminal que está ejecutando el __bash__

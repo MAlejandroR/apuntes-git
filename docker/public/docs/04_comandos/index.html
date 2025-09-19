@@ -1,11 +1,11 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head>
+  <head><script src="/docker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=docker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="alternate" type="application/rss&#43;xml" href="http://web.infenlaces.com/docker/docs/04_comandos/index.xml">
-<link rel="alternate" type="text/html" href="http://web.infenlaces.com/docker/_print/docs/04_comandos/">
-<meta name="robots" content="index, follow">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docker/docs/04_comandos/index.xml">
+<link rel="alternate" type="text/html" href="http://localhost:1313/docker/_print/docs/04_comandos/">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/docker/favicons/favicon.ico" >
@@ -22,7 +22,7 @@
 <title>Docker en  línea de comandos  | Despliegue de aplicacones Web</title>
 <meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
 
-<meta property="og:url" content="http://web.infenlaces.com/docker/docs/04_comandos/">
+<meta property="og:url" content="http://localhost:1313/docker/docs/04_comandos/">
   <meta property="og:site_name" content="Despliegue de aplicacones Web">
   <meta property="og:title" content="Docker en  línea de comandos ">
   <meta property="og:description" content="Docker Actuando en el terminal Cómo usar docker en línea de comandos Crear contenedores Descargar imágenes Modificar contenedores y persistirlos en imágenes Usar contenedores Subir a docker hub imágenes 1. Obteniendo una Imagen Obtención de Imágenes Las imágenes en Docker son las bases para crear contenedores . Puedes obtener diferentes versiones de una imagen usando etiquetas. Comandos a estudiar docker pull docker images docker search Descarga una imagen : 1 docker pull ubuntu:latest En este caso estamos descargando una imagen llamada ubuntu en su versión más reciente ( latest ). Cuidado Para generar contenedores en producción No se recomiendo usar esta etiqueta, ya que podría estar cambiando de versión del sistema base del contenedor.">
@@ -31,13 +31,13 @@
 
   <meta itemprop="name" content="Docker en  línea de comandos ">
   <meta itemprop="description" content="Docker Actuando en el terminal Cómo usar docker en línea de comandos Crear contenedores Descargar imágenes Modificar contenedores y persistirlos en imágenes Usar contenedores Subir a docker hub imágenes 1. Obteniendo una Imagen Obtención de Imágenes Las imágenes en Docker son las bases para crear contenedores . Puedes obtener diferentes versiones de una imagen usando etiquetas. Comandos a estudiar docker pull docker images docker search Descarga una imagen : 1 docker pull ubuntu:latest En este caso estamos descargando una imagen llamada ubuntu en su versión más reciente ( latest ). Cuidado Para generar contenedores en producción No se recomiendo usar esta etiqueta, ya que podría estar cambiando de versión del sistema base del contenedor.">
-  <meta itemprop="wordCount" content="1436">
+  <meta itemprop="wordCount" content="1514">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Docker en  línea de comandos ">
   <meta name="twitter:description" content="Docker Actuando en el terminal Cómo usar docker en línea de comandos Crear contenedores Descargar imágenes Modificar contenedores y persistirlos en imágenes Usar contenedores Subir a docker hub imágenes 1. Obteniendo una Imagen Obtención de Imágenes Las imágenes en Docker son las bases para crear contenedores . Puedes obtener diferentes versiones de una imagen usando etiquetas. Comandos a estudiar docker pull docker images docker search Descarga una imagen : 1 docker pull ubuntu:latest En este caso estamos descargando una imagen llamada ubuntu en su versión más reciente ( latest ). Cuidado Para generar contenedores en producción No se recomiendo usar esta etiqueta, ya que podría estar cambiando de versión del sistema base del contenedor.">
 
 
-<link rel="preload" href="/docker/scss/main.min.a1a4e66c6f4dd103dc041fb68e4ebc96264fb0f2dd7cd8f7448e2b9f810a0f50.css" as="style"><link href="/docker/scss/main.min.a1a4e66c6f4dd103dc041fb68e4ebc96264fb0f2dd7cd8f7448e2b9f810a0f50.css" rel="stylesheet">
+<link href="/docker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -94,36 +94,21 @@
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-dockerdocs-li">
   <a href="/docker/docs/" title="Introducción" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-dockerdocs"><i class="fab fa-docker"></i><span class="">Docker</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dockerdocs00_anexos-li">
-  <input type="checkbox" id="m-dockerdocs00_anexos-check"/>
-  <label for="m-dockerdocs00_anexos-check"><a href="/docker/docs/00_anexos/" title="Anexos para el módulo" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs00_anexos"><i class="code-web_old"></i><span class="">Anexos </span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs00_conceptos-li">
+  <input type="checkbox" id="m-dockerdocs00_conceptos-check"/>
+  <label for="m-dockerdocs00_conceptos-check"><a href="/docker/docs/00_conceptos/" title="Conceptos sobre docker" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs00_conceptos"><i class="fa-regular fa-lightbulb"></i><span class="">Conceptos</span></a></label>
   
-  <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs00_anexos01_comando-linux-li">
-  <input type="checkbox" id="m-dockerdocs00_anexos01_comando-linux-check"/>
-  <label for="m-dockerdocs00_anexos01_comando-linux-check"><a href="/docker/docs/00_anexos/01_comando-linux/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs00_anexos01_comando-linux"><i class="fas fa-code"></i><span class="">Comandos linux</span></a></label>
-  
-</li>
-  </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs01_conceptos-li">
-  <input type="checkbox" id="m-dockerdocs01_conceptos-check"/>
-  <label for="m-dockerdocs01_conceptos-check"><a href="/docker/docs/01_conceptos/" title="Conceptos sobre docker" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs01_conceptos"><i class="fa-regular fa-lightbulb"></i><span class="">Conceptos</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs01_instalacion-li">
+  <input type="checkbox" id="m-dockerdocs01_instalacion-check"/>
+  <label for="m-dockerdocs01_instalacion-check"><a href="/docker/docs/01_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs01_instalacion"><i class="fa fa-download"></i><span class="">Instalación</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs02_contenedores-e-imc3a1genes-li">
   <input type="checkbox" id="m-dockerdocs02_contenedores-e-imc3a1genes-check"/>
   <label for="m-dockerdocs02_contenedores-e-imc3a1genes-check"><a href="/docker/docs/02_contenedores-e-im%C3%A1genes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs02_contenedores-e-imc3a1genes"><i class="fa  fa-box"></i><span class="">Contenedores e imágenes</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocsold_index-li">
-  <input type="checkbox" id="m-dockerdocsold_index-check"/>
-  <label for="m-dockerdocsold_index-check"><a href="/docker/docs/old_index/" title="Documentación" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dockerdocsold_index"><i class="fa-solid fa-screwdriver-wrench"></i><span class="">Dócker</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs03_instalacion-li">
-  <input type="checkbox" id="m-dockerdocs03_instalacion-check"/>
-  <label for="m-dockerdocs03_instalacion-check"><a href="/docker/docs/03_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs03_instalacion"><i class="fa fa-download"></i><span class="">Instalación</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-dockerdocs04_comandos-li">
-  <input type="checkbox" id="m-dockerdocs04_comandos-check" checked/>
-  <label for="m-dockerdocs04_comandos-check"><a href="/docker/docs/04_comandos/" title="Docker en  línea de comandos " class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-dockerdocs04_comandos"><i class="fa-solid fa-terminal"></i><span class="td-sidebar-nav-active-item">Comandos docker</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs03_comandos_docker-li">
+  <input type="checkbox" id="m-dockerdocs03_comandos_docker-check"/>
+  <label for="m-dockerdocs03_comandos_docker-check"><a href="/docker/docs/03_comandos_docker/" title="Comandos Docker" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs03_comandos_docker"><i class="fa-solid fa-terminal"></i><span class="">Comandos</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs06_dockefile-li">
   <input type="checkbox" id="m-dockerdocs06_dockefile-check"/>
@@ -156,6 +141,21 @@
   
 </li>
   </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dockerdocs70_anexos-li">
+  <input type="checkbox" id="m-dockerdocs70_anexos-check"/>
+  <label for="m-dockerdocs70_anexos-check"><a href="/docker/docs/70_anexos/" title="Anexos para el módulo" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs70_anexos"><i class="code-web_old"></i><span class="">Anexos </span></a></label>
+  
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs70_anexos01_comando-linux-li">
+  <input type="checkbox" id="m-dockerdocs70_anexos01_comando-linux-check"/>
+  <label for="m-dockerdocs70_anexos01_comando-linux-check"><a href="/docker/docs/70_anexos/01_comando-linux/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs70_anexos01_comando-linux"><i class="fas fa-code"></i><span class="">Comandos linux</span></a></label>
+  
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-dockerdocs04_comandos-li">
+  <input type="checkbox" id="m-dockerdocs04_comandos-check" checked/>
+  <label for="m-dockerdocs04_comandos-check"><a href="/docker/docs/04_comandos/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-dockerdocs04_comandos"><span class="td-sidebar-nav-active-item">Docker en  línea de comandos </span></a></label>
+  
 </li>
   </ul>
 </li>
@@ -176,7 +176,7 @@
     <li>
       <ul>
         <li><a href="#1-obteniendo-una-imagen">1. Obteniendo una Imagen</a></li>
-        <li><a href="#4-estados-del-contenedor">4. Estados del Contenedor</a></li>
+        <li><a href="#2-estados-del-contenedor">2. Estados del Contenedor</a></li>
         <li><a href="#2-crear-un-contenedor">2. Crear un Contenedor</a></li>
         <li><a href="#3-ejecutando-y-administrando-contenedores">3. Ejecutando y Administrando Contenedores</a></li>
         <li><a href="#5-ejecución-de-comandos-en-el-contenedor">5. Ejecución de Comandos en el Contenedor</a></li>
@@ -217,7 +217,7 @@
   <li class="breadcrumb-item">
     <a href="/docker/docs/">Docker</a></li>
   <li class="breadcrumb-item active" aria-current="page">
-    Comandos docker</li>
+    Docker en  línea de comandos </li>
   </ol>
 </nav>
             
@@ -252,18 +252,19 @@
     <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
         <ul>
             
-            <li>Cómo usar docker en línea de comandos</li>
+            <li>  Cómo usar docker en línea de comandos</li>
             
-            <li>Crear contenedores</li>
+            <li>  Crear contenedores</li>
             
-            <li>Descargar imágenes</li>
+            <li>  Descargar imágenes</li>
             
-            <li>Modificar contenedores y persistirlos en imágenes</li>
+            <li>  Modificar contenedores y persistirlos en imágenes</li>
             
-            <li>Usar contenedores</li>
+            <li>  Usar contenedores</li>
             
-            <li>Subir a docker hub imágenes</li>
+            <li>  Subir a docker hub imágenes</li>
             
+            <li>  </li>
             
             
         </ul>
@@ -283,7 +284,7 @@
   </div>
   <div class="definicion-contenido">
     
-Las imágenes en 
+  Las imágenes en 
 <strong>
 <span class="font-weight-bold text-primary">
 
@@ -302,9 +303,9 @@ Las imágenes en
 </span>
 </strong>
 .
-<br />
-Puedes obtener diferentes versiones de una imagen usando etiquetas.
-
+  <br />
+  Puedes obtener diferentes versiones de una imagen usando etiquetas.
+  
 
 
 
@@ -329,12 +330,13 @@ Puedes obtener diferentes versiones de una imagen usando etiquetas.
     <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
         <ul>
             
-            <li>docker pull</li>
+            <li>  docker pull</li>
             
-            <li>docker images</li>
+            <li>  docker images</li>
             
-            <li>docker search</li>
+            <li>  docker search</li>
             
+            <li>  </li>
             
             
         </ul>
@@ -344,7 +346,7 @@ Puedes obtener diferentes versiones de una imagen usando etiquetas.
 
 </div>
 
- 
+  
   </div>
 </div>
 <ol>
@@ -450,8 +452,8 @@ En este caso estamos descargando una imagen llamada ubuntu en su versión más r
 <pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-php" data-lang="php"><span style="display:flex; background-color:#d6d6c6"><span>  docker search ubuntu:<span style="color:#b452cd">1</span></span></span></code></pre></td></tr></table>
 </div>
 </div></p></blockquote>
-<hr style="border-color: red; border-width: 3px;"/>
-<h3 id="4-estados-del-contenedor">4. Estados del Contenedor</h3>
+  <hr style="border-color: red; border-width: 3px;"/>
+<h3 id="2-estados-del-contenedor">2. Estados del Contenedor</h3>
 <p>Antes de empezar con los comandos, es importante tener muy claro 
 <strong>
 <span class="font-weight-bold text-primary">
@@ -473,19 +475,19 @@ En este caso estamos descargando una imagen llamada ubuntu en su versión más r
   <div class="definicion-contenido">
     
 Un contenedor en Docker puede estar en los siguientes estados:
-<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 824px">
+  <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 824px">
 <img class="card-img-top" src="/docker/docs/04_comandos/estados_hu_5a4c0cf5c17ba9d7.png" width="814" height="414">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
 
-Estados de un contenedor
-
+  Estados de un contenedor
+  
 </p>
 </figcaption>
 </figure>
 
-<ul>
+  <ul>
 <li> 
 <strong>
 <span class="font-weight-bold text-primary">
@@ -546,9 +548,9 @@ Estados de un contenedor
 </span>
 </strong>
 : El contenedor ha sido eliminado y ya no está disponible. </li>
-</ul>
+  </ul>
 
-
+  
   </div>
 </div></p>
 <p>Para ver los estados de cada contenedor:
@@ -588,7 +590,7 @@ Estados de un contenedor
 </div>
 </div></p>
 <p>Los estados se irán comentando según avancemos con los comandos.</p>
-<hr style="border-color: red; border-width: 3px;"/>
+  <hr style="border-color: red; border-width: 3px;"/>
 <h3 id="2-crear-un-contenedor">2. Crear un Contenedor</h3>
 <p><div class="definicion-concepto">
   <div class="definicion-titulo">
@@ -599,8 +601,10 @@ Estados de un contenedor
   </div>
   <div class="definicion-contenido">
     
-Un contenedor es una instancia ejecutable de una imagen, que contiene todo el entorno necesario para correr aplicaciones de forma aislada.
+  Un contenedor es una instancia ejecutable de una imagen, que contiene todo el entorno necesario para correr aplicaciones de forma aislada.
 
+  El comando **create** tiene varias opciones, pero no lo vamos a utilizar, no obstante lo comentamos
+  
 
 
 
@@ -625,10 +629,11 @@ Un contenedor es una instancia ejecutable de una imagen, que contiene todo el en
     <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
         <ul>
             
-            <li>docker create</li>
+            <li>  docker create</li>
             
-            <li>docker start</li>
+            <li>  docker start</li>
             
+            <li>  docker run</li>
             
             
         </ul>
@@ -638,7 +643,7 @@ Un contenedor es una instancia ejecutable de una imagen, que contiene todo el en
 
 </div>
 
-
+  
   </div>
 </div>
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 837px">
@@ -648,14 +653,13 @@ Un contenedor es una instancia ejecutable de una imagen, que contiene todo el en
 
 
 
-
+  
 </p>
 </figcaption>
 </figure>
 </p>
 <ol>
 <li>
-<p>
 <strong>
 <span class="font-weight-bold text-primary">
 
@@ -664,7 +668,8 @@ Un contenedor es una instancia ejecutable de una imagen, que contiene todo el en
 
 </span>
 </strong>
-:</p>
+:</li>
+</ol>
 <ul>
 <li>El comando 
 <strong>
@@ -699,8 +704,6 @@ Un contenedor es una instancia ejecutable de una imagen, que contiene todo el en
 </div>
 </div>
 Un contenedor en estado created, no puede ejecutar nada, tenemos que hacerlo usando start para pasarlo a estado up o running</p>
-</li>
-</ol>
 <blockquote>
 <p>Observa la siguiente secuencia 1de comandos y entiéndela
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 897px">
@@ -709,12 +712,47 @@ Un contenedor en estado created, no puede ejecutar nada, tenemos que hacerlo usa
 <p class="card-text">
 
 
-
+  
 </p>
 </figcaption>
 </figure>
 </p></blockquote>
-<hr style="border-color: red; border-width: 3px;"/>
+  <hr style="border-color: red; border-width: 3px;"/>
+<h4 id="3-crear-un-contenedor-con-run">3. Crear un contenedor con run</h4>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="fas fa-info-circle" aria-hidden="true"></i>
+    
+    <strong>docker run</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+Permite crear un contenedor a partir de una imagen y ponerlo en ejecución
+
+En caso de que la imagen no esté descargada, la descarga automáticamente
+  
+  <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1010px">
+<img class="card-img-top" src="/docker/docs/04_comandos/run_hu_7519489dac525511.png" width="1000" height="300">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+  
+</p>
+</figcaption>
+</figure>
+
+  
+  </div>
+</div>
+<ul>
+<li>Este es uno de los comandos que más vamos a utilizar</li>
+<li>Es un comando que tiene muchas opciones, puedes verlas con el comando help
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker <span style="color:#658b00">help</span> run
+</span></span></code></pre></div></li>
+</ul>
 <h3 id="3-ejecutando-y-administrando-contenedores">3. Ejecutando y Administrando Contenedores</h3>
 <ol>
 <li>
@@ -748,6 +786,8 @@ Un contenedor en estado created, no puede ejecutar nada, tenemos que hacerlo usa
 </span>
 </strong>
 :</p>
+</li>
+</ol>
 <ul>
 <li>Para ejecutar un contenedor creado, usa el comando <code>docker start</code> con opciones para ver su salida en consola.</li>
 </ul>
@@ -763,8 +803,6 @@ Un contenedor en estado created, no puede ejecutar nada, tenemos que hacerlo usa
 </span></span><span style="display:flex; background-color:#d6d6c6"><span>docker start -a update</span></span></code></pre></td></tr></table>
 </div>
 </div>
-</li>
-</ol>
 <p>Como vemos, con 
 <strong>
 <span class="font-weight-bold text-primary">
@@ -855,7 +893,8 @@ Un contenedor en estado created, no puede ejecutar nada, tenemos que hacerlo usa
 </strong>
 :</p>
 <ul>
-<li>Para acceder al servidor web desde la red, configura un puerto en el anfitrión que redirija al puerto 80 del contenedor.</li>
+<li>Para acceder al servidor web desde la red, configura un puerto en el anfitrión que redirija al puerto 80 del
+contenedor.</li>
 </ul>
 <div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
@@ -986,7 +1025,8 @@ Para conservar el estado de un contenedor y replicarlo, crea una imagen con `doc
 
 </span>
 </strong>
-: Existen varios comandos para gestionar contenedores e imágenes. Aquí algunos de los más importantes:</p>
+: Existen varios comandos para gestionar contenedores e
+imágenes. Aquí algunos de los más importantes:</p>
 <div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
@@ -1037,7 +1077,8 @@ Para conservar el estado de un contenedor y replicarlo, crea una imagen con `doc
   </div>
   <div class="definicion-contenido">
     
-El comando `docker inspect` proporciona información detallada del contenedor, como directorios mapeados y puertos abiertos.
+El comando `docker inspect` proporciona información detallada del contenedor, como directorios mapeados y puertos
+abiertos.
 
   </div>
 </div>
@@ -1078,7 +1119,8 @@ El comando `docker inspect` proporciona información detallada del contenedor, c
 
 </span>
 </strong>
-: Los comandos <code>docker pause</code> y <code>docker unpause</code> congelan y reinician un contenedor en un estado específico.</p>
+: Los comandos <code>docker pause</code> y <code>docker unpause</code> congelan y reinician
+un contenedor en un estado específico.</p>
 <div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#d6d6c6"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -1089,7 +1131,8 @@ El comando `docker inspect` proporciona información detallada del contenedor, c
 </span></span><span style="display:flex; background-color:#d6d6c6"><span>docker unpause</span></span></code></pre></td></tr></table>
 </div>
 </div>
-<p><strong>Práctica</strong>: Arranca un contenedor, abre un terminal y pausa el contenedor. Observa cómo afecta el terminal y reanúdalo.</p>
+<p><strong>Práctica</strong>: Arranca un contenedor, abre un terminal y pausa el contenedor. Observa cómo afecta el terminal y
+reanúdalo.</p>
 </li>
 </ol>
 <hr>
@@ -1128,7 +1171,8 @@ El comando `docker inspect` proporciona información detallada del contenedor, c
 </span></span><span style="display:flex; background-color:#d6d6c6"><span>docker rm [opciones]</span></span></code></pre></td></tr></table>
 </div>
 </div>
-<p><strong>Nota</strong>: <code>pause</code> y <code>stop</code> no son lo mismo. <code>pause</code> detiene momentáneamente el contenedor sin interrumpir el proceso, mientras que <code>stop</code> finaliza la ejecución.</p>
+<p><strong>Nota</strong>: <code>pause</code> y <code>stop</code> no son lo mismo. <code>pause</code> detiene momentáneamente el contenedor sin interrumpir el proceso,
+mientras que <code>stop</code> finaliza la ejecución.</p>
 </li>
 </ol>
 <hr>
@@ -1209,7 +1253,8 @@ Para borrar una imagen, no debe tener contenedores asociados, independientemente
   </div>
   <div class="definicion-contenido">
     
-Los comandos `docker export` y `docker import` permiten guardar una imagen en un archivo `.tar` y restaurarla posteriormente.
+Los comandos `docker export` y `docker import` permiten guardar una imagen en un archivo `.tar` y restaurarla
+posteriormente.
 
   </div>
 </div>
@@ -1253,7 +1298,8 @@ Los comandos `docker export` y `docker import` permiten guardar una imagen en un
 <pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-bash" data-lang="bash"><span style="display:flex; background-color:#d6d6c6"><span>docker import web.tar</span></span></code></pre></td></tr></table>
 </div>
 </div>
-<p><strong>Ejercicio</strong>: Exporta el contenedor <code>web</code> a un archivo tar, revisa su tamaño, y crea una imagen <code>web:v2</code> a partir del archivo.</p>
+<p><strong>Ejercicio</strong>: Exporta el contenedor <code>web</code> a un archivo tar, revisa su tamaño, y crea una imagen <code>web:v2</code> a partir
+del archivo.</p>
 </li>
 </ol>
 <hr>
@@ -1330,7 +1376,8 @@ Docker Hub permite almacenar, compartir y descargar imágenes de contenedores.
 </strong>
 :</p>
 <ul>
-<li>Usa <code>docker push</code> para subir una imagen. <strong>Recuerda</strong>: el nombre de usuario debe ser parte del nombre de la imagen.</li>
+<li>Usa <code>docker push</code> para subir una imagen. <strong>Recuerda</strong>: el nombre de usuario debe ser parte del nombre de la
+imagen.</li>
 </ul>
 </li>
 </ol>
@@ -1612,8 +1659,8 @@ El comando `docker system prune` elimina contenedores, imágenes y volúmenes qu
 </footer>
 
     </div>
-    <script src="/docker/js/main.min.f09a0cf27ce2d45045bcd9e31590ca1c450b02aa8ff6221f07422b8e0bb8a972.js" integrity="sha256-8JoM8nzi1FBFvNnjFZDKHEULAqqP9iIfB0Irjgu4qXI=" crossorigin="anonymous"></script>
-<script defer src="/docker/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <script src="/docker/js/main.js"></script>
+<script defer src="/docker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docker/js/tabpane-persist.js'></script>
 
   </body>
