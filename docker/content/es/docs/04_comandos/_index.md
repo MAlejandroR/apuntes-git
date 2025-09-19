@@ -1,5 +1,5 @@
 ---
-    title: "Docker en  línea de comandos "
+title: "Docker en  línea de comandos "
 linkTitle: "Comandos docker"
 weight: 30
 icon: fa-solid fa-terminal
