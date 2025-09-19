@@ -167,7 +167,7 @@ Versión imprimible multipagina.
     
     
 	
-<li>4: <a href="#pg-358ec36b74d0a4e7a1aa51e212b35a9f">Comandos Docker</a></li>
+<li>4: <a href="#pg-be7312263a67ea65e5e20d152b9a270c">Fichero de ejecución para crear imágenes DockerFile</a></li>
 
 
     
@@ -186,7 +186,7 @@ Versión imprimible multipagina.
     
     
 	
-<li>5: <a href="#pg-be7312263a67ea65e5e20d152b9a270c">Fichero de ejecución para crear imágenes DockerFile</a></li>
+<li>5: <a href="#pg-9054adab69431dbba10d534b39274e03">Gestión de archivos y directorios</a></li>
 
 
     
@@ -205,7 +205,7 @@ Versión imprimible multipagina.
     
     
 	
-<li>6: <a href="#pg-9054adab69431dbba10d534b39274e03">Gestión de archivos y directorios</a></li>
+<li>6: <a href="#pg-119983b132b25e85c20958c2f3b25dcd">Docker compose</a></li>
 
 
     
@@ -224,7 +224,22 @@ Versión imprimible multipagina.
     
     
 	
-<li>7: <a href="#pg-119983b132b25e85c20958c2f3b25dcd">Docker compose</a></li>
+<li>7: <a href="#pg-f7de4513feaac6de7a9893742e148311">Docker Prácticas</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>7.1: <a href="#pg-a255b37ef9790045086ad4ec3af746d7">Crea imágenes</a></li>
 
 
     
@@ -243,22 +258,7 @@ Versión imprimible multipagina.
     
     
 	
-<li>8: <a href="#pg-f7de4513feaac6de7a9893742e148311">Docker Prácticas</a></li>
-
-
-    
-    <ul>
-        
-  
-  
-  
-  
-
-  
-    
-    
-	
-<li>8.1: <a href="#pg-a255b37ef9790045086ad4ec3af746d7">Crea imágenes</a></li>
+<li>7.2: <a href="#pg-307c1e990da196cfd02d1ad996525767">Crea Contenedores</a></li>
 
 
     
@@ -277,26 +277,7 @@ Versión imprimible multipagina.
     
     
 	
-<li>8.2: <a href="#pg-307c1e990da196cfd02d1ad996525767">Crea Contenedores</a></li>
-
-
-    
-    <ul>
-        
-  
-  
-  
-  
-
-  
-
-    </ul>
-    
-  
-    
-    
-	
-<li>8.3: <a href="#pg-8e4c21f7e9bfca66daee9e988693e6a4">Contenedores</a></li>
+<li>7.3: <a href="#pg-8e4c21f7e9bfca66daee9e988693e6a4">Contenedores</a></li>
 
 
     
@@ -319,7 +300,7 @@ Versión imprimible multipagina.
     
     
 	
-<li>9: <a href="#pg-ddf970139dcadbd92b8d9c28b646944c">Anexos para el módulo</a></li>
+<li>8: <a href="#pg-ddf970139dcadbd92b8d9c28b646944c">Anexos para el módulo</a></li>
 
 
     
@@ -334,7 +315,7 @@ Versión imprimible multipagina.
     
     
 	
-<li>9.1: <a href="#pg-fbcf493b5fb7b25a6df9f05739c61843">Comandos linux</a></li>
+<li>8.1: <a href="#pg-fbcf493b5fb7b25a6df9f05739c61843">Comandos linux</a></li>
 
 
     
@@ -357,7 +338,7 @@ Versión imprimible multipagina.
     
     
 	
-<li>10: <a href="#pg-81917096855a46c0b43795c6cb7186e7">Docker en  línea de comandos </a></li>
+<li>9: <a href="#pg-81917096855a46c0b43795c6cb7186e7">Docker en  línea de comandos </a></li>
 
 
     
@@ -1852,417 +1833,7 @@ gestiona los contenedores y las imágenes.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-358ec36b74d0a4e7a1aa51e212b35a9f">4 - Comandos Docker</h1>
-    
-	
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="star"><strong>&#x2b50; Comandos</strong></h4>
-<p>Repaso de <strong>comandos</strong> usados en <strong>docker</strong> en <strong>línea de comados</strong></p>
-
-</div>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="descargando-imágenes">Descargando imágenes</h4>
-<blockquote>
-<p><strong>pull</strong></p>
-<blockquote>
-<p>Obtener en local una imagen llamada <strong>ubuntu:latest</strong>::</p></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    docker pull ubunut:latest
-</span></span></code></pre></div>
-</div>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="visualizar-imágenes-en-local">Visualizar imágenes en local</h4>
-<blockquote>
-<p><strong>images</strong></p>
-<blockquote>
-<p>Listar todas las imágenes del sistema</p></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker images
-</span></span></code></pre></div>
-</div>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="buscar-imágenes">Buscar imágenes</h4>
-<blockquote>
-<p><strong>docker search</strong></p>
-<blockquote>
-<p>Buscar todas las imágenes que contengan ubuntu cuya distribución empiece por 1</p></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker search ubuntu:1
-</span></span></code></pre></div>
-</div>
-
-<h4 id="crear--un-contenedor">Crear  un <strong>contenedor</strong></h4>
-
-
-<div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">docker create</h4>
-
-    <p>Hay varios comandos para crear contenedores</p>
-<p>El comando <strong>create</strong> tiene varias opciones, pero no lo vamos a utilizar nosotras.</p>
-<p>No obstante lo comento es este post</p>
-
-
-</div>
-
-<blockquote>
-<p><strong>docker create</strong></p>
-<blockquote>
-<p>Crea un contenedor basado en la imagen <strong>ubuntu:latest</strong></p></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker create ubuntu:latest
-</span></span></code></pre></div><hr>
-<h5 id="crearlo-vinculándolo-al-terminal-de-forma-interactiva">Crearlo vinculándolo al terminal de forma interactiva</h5>
-<blockquote>
-<p><strong>docker run -t -i</strong></p>
-<blockquote>
-<p>Crea un contenedor que quede vinculado a un terminal <strong>tty</strong> con el que podemos interactuar</p></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    docker run -t -i  ubuntu:latest
-</span></span></code></pre></div><hr>
-<h5 id="nombrar-el-contenedor">Nombrar el contenedor</h5>
-<blockquote>
-<p><strong>docker run  &ndash;name</strong></p>
-<blockquote>
-<p>Crear un contenedor llamado <strong>web</strong> a partir de la imagen ubuntu:latest y vincúlalo al terminal</p></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    docker ran --name web -t -i ubuntu:latest
-</span></span></code></pre></div>
-
-<div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Revisa</h4>
-
-    Antes de crear el contenedor lo borramos si lo queremos llamar igual  <br>
-Antes de ejectuar algo, lo tenemos que arrancar  <br>
-En este caso el comando start lo deja en estado up, ya que el contenedor fue coreado con <strong>-i</strong>  y <strong>-t</strong>
-
-</div>
-
-
-
-
-<hr style="border-color: red; border-width: 3px;"/>
-
-<p>Es un comando que tiene muchas opciones, puedes verlas con el comando help</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker <span style="color:#658b00">help</span> run
-</span></span></code></pre></div><p>Nosotros lo vamos a usar comos se muestra a continuación
-<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1010px">
-<img class="card-img-top" src="/docker/docs/03_comandos_docker/run_hu_7519489dac525511.png" width="1000" height="300">
-<figcaption class="card-body px-0 pt-2 pb-0">
-<p class="card-text">
-
-
-
-
-</p>
-</figcaption>
-</figure>
-</p>
-<p>
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="listar-todos--los-contenedores">Listar todos  los contenedores</h4>
-<blockquote>
-<p><strong>docker ps -a</strong></p>
-<blockquote>
-<p>Lista todos los contenedores que tenemos en el sistema</p></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker ps -a
-</span></span></code></pre></div><h4 id="listar-los-contenesores-arrancados">Listar los contenesores arrancados</h4>
-<blockquote>
-<p>__docker ps __</p>
-<blockquote>
-<p>Lista todos los contenedores en estado Up</p></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker ps 
-</span></span></code></pre></div>
-</div>
-
-
-
-<div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Prueba</h4>
-
-    Si no ponemos <strong>-a</strong> que viene de <strong>all</strong> solo nos mostrará los contenedores que actualmente tenemos arrancados (en estado Up)
-
-</div>
-
-
-
-
-<hr style="border-color: red; border-width: 3px;"/>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="parar-un-contenedor">Parar un contenedor</h4>
-<blockquote>
-<p><strong>stop</strong></p>
-<blockquote>
-<p>Para un contenedor (previamente creado)</p></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker start web_old
-</span></span></code></pre></div>
-</div>
-</p>
-<p>
-
-
-<hr style="border-color: red; border-width: 3px;"/>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="estados-de-un-contenedor">Estados de un contenedor</h4>
-<blockquote>
-<p><strong>Un contenedor está en uno de los siguientes estados</strong></p></blockquote>
-<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1210px">
-<img class="card-img-top" src="/docker/docs/03_comandos_docker/estados_hu_a08fd9557a2c8d2d.png" width="1200" height="600">
-<figcaption class="card-body px-0 pt-2 pb-0">
-<p class="card-text">
-</p>
-</figcaption>
-</figure>
-
-</div>
-</p>
-<p>
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="arrancar-el-contenedor-web">Arrancar el contenedor web</h4>
-<blockquote>
-<p><strong>start</strong></p>
-<blockquote>
-<p>Arranca un contenedor (previamente creado)</p></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker start web_old
-</span></span></code></pre></div>
-</div>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="ejecutar-un-comando-en-un-contenedor">Ejecutar un comando en un contenedor</h4>
-<p><strong>&#x2b50; El contenedor tiene que estar en estado Up</strong></p>
-<blockquote>
-<p><strong>exec</strong></p>
-<blockquote>
-<p>Ejecuta en un contenedor previamente creado llamado <strong>web</strong> el comando ls <em>(Este comando muestra un listado de ficheros del contenedor)</em></p></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    docker <span style="color:#658b00">exec</span> -ti  web_old ls
-</span></span></code></pre></div>
-</div>
-
-
-
-
-<hr style="border-color: red; border-width: 3px;"/>
-</p>
-<h4 id="crear-un-contenedor-que-ejecute-una-instrucción-ls">Crear un contenedor que ejecute una instrucción: ls</h4>
-<ul>
-<li>El contenedor se crea a partir de la imagen <strong>ubuntu:latest</strong></li>
-<li>La instrucción que queremos ejecutar es ls</li>
-</ul>
-<blockquote>
-<p><strong>docker run</strong></p></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker run  ubuntu:latest ls
-</span></span></code></pre></div><h4 id="crear-un-contenedor-dejarlo-arrancado--ejecuta-una-instrucción-bash">Crear un contenedor, dejarlo arrancado  ejecuta una instrucción: bash</h4>
-<ul>
-<li>El contenedor queremos que deje abierta un terminal para interactuar con el  bash</li>
-</ul>
-<blockquote>
-<p><strong>docker run</strong></p></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker run  -ti ubuntu:latest bash
-</span></span></code></pre></div><p>
-
-<div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Importante</h4>
-
-    <blockquote>
-<p>Entiende bien las opciones
--ti se pone para que se quede abierto el terminal que está ejecutando el <strong>bash</strong></p></blockquote>
-
-</div>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="crando-un-contenedor-con-run-y-que-tenga-nombre">Crando un contenedor con run y que tenga nombre</h4>
-<blockquote>
-<p><strong>docker run &ndash;name</strong></p>
-<blockquote>
-<p>Crea un contenedor llamado web y deja abierto un bash</p></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    docker rm web_old 
-</span></span><span style="display:flex;"><span>    docker run -ti --name web_old ubuntu:latest bash    
-</span></span></code></pre></div>
-</div>
-
-
-
-<div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Cuidado</h4>
-
-    Si intentamos crear un contenedor cuyo nombre ya exista nos dará un error.
-En este
-
-</div>
-
-
-
-
-<hr style="border-color: red; border-width: 3px;"/>
-</p>
-<p>
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="forward-de-puertos">Forward de puertos</h4>
-<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1010px">
-<img class="card-img-top" src="/docker/docs/03_comandos_docker/puertos_hu_b03d3f2ec295ff4a.png" width="1000" height="800">
-<figcaption class="card-body px-0 pt-2 pb-0">
-<p class="card-text">
-</p>
-</figcaption>
-</figure>
-<blockquote>
-<p><strong>docker run -p XXXX:XXXX</strong></p>
-<blockquote>
-<p>Crea un contenedor llamado web, abriendo un terminal y mapea el puerto 8000 del anfitrión al 80 del contenedor</p></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker rm web_old 
-</span></span><span style="display:flex;"><span> docker run -ti --name web_old  -p 8000:80 ubuntu:latest bash
-</span></span></code></pre></div>
-</div>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
-<img class="card-img-top" src="/docker/docs/03_comandos_docker/volumenes_hu_b2379a0ab8782260.png" width="800" height="500">
-<figcaption class="card-body px-0 pt-2 pb-0">
-<p class="card-text">
-</p>
-</figcaption>
-</figure>
-<h4 id="compartiendo-carpetas">Compartiendo carpetas</h4>
-<blockquote>
-<p><strong>docker run -v c:\carpeta_origen:/var/www/html</strong></p>
-<blockquote>
-<p>Crea un contenedor llamado <strong>web</strong>, abriendo un terminal y comparte la carpeta del directorio actual llamada <strong>app</strong> con la carpeta del docker ubicada en <strong>/var/www/html</strong>. Mapea los puertos anteriores</p></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker rm web_old 
-</span></span><span style="display:flex;"><span> docker run -ti --name web_old -p 8000:80  -v .<span style="color:#cd5555">\a</span>pp:/var/www/html ubuntu:latest  bash
-</span></span></code></pre></div>
-</div>
-
-
-
-<div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Warning</h4>
-
-    <ul>
-<li>Cuidado con la barra de separacion de carpetas o directorios <strong>(en windows &ldquo;&quot;, en linux &ldquo;/&rdquo;)</strong>
-<ul>
-<li>Si la carpeta no existe la crea</li>
-</ul>
-</li>
-</ul>
-
-
-</div>
-
-
-
-
-<hr style="border-color: red; border-width: 3px;"/>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="creando-una-imagen-a-partir-de-un-contenedor">Creando una imagen a partir de un contenedor</h4>
-<blockquote>
-<p><strong>docker commit</strong></p></blockquote>
-<blockquote>
-<blockquote>
-<p>Para crear una imagen a partir de un contenedor, este debe estar detenido.</p>
-<ul>
-<li>La imagen que creemos incluirá todo lo que hayamos configurado dentro del contenedor.</li>
-<li>El contenido de los volúmenes compartidos no se guarda en la imagen, ya que estos se cargan desde la carpeta compartida por el anfitrión.</li>
-<li>La forma de referenciar una imagen, el nombre que le pongamos en este caso,  siempre será con su nombre y tag (separados por dos puntos),lo que nos permitirá crear diferentes versiones (mismo nombre, diferente tag).</li>
-</ul></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker commit nombre_contenedor nombre_imagen:tag 
-</span></span></code></pre></div>
-</div>
-</p>
-<p>
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="login-en-docker-hub">Login en Docker Hub</h4>
-<p><strong>docker login</strong></p>
-<blockquote>
-<blockquote>
-<p>Permite autenticarse en Docker Hub para poder interactuar con los repositorios de imágenes.<br>
-Se utiliza para subir, descargar o gestionar imágenes desde la cuenta de Docker Hub.<br>
-Solicita las credenciales de acceso (usuario y contraseña).</p></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker login
-</span></span></code></pre></div><div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Nota</h4>
-<pre><code>&lt;blockquote&gt;
-</code></pre>
-<p>Este comando es necesario para poder hacer un push de imágenes a Docker Hub.
-Tras ejecutar docker login, se te solicitará el nombre de usuario y la contraseña.</p></blockquote>
-</div>
-
-</div>
-
-
-
-<div class="pageinfo pageinfo-primary">
-<h4 id="subir-una-imagen-a-docker-hub">Subir una imagen a Docker Hub</h4>
-<p><strong>docker push</strong></p>
-<blockquote>
-<blockquote>
-<p>Sube una imagen local a un repositorio en Docker Hub.
-Debes estar autenticado en Docker Hub (previamente con docker login).
-La imagen debe estar correctamente etiquetada con el formato <usuario>/&lt;nombre_imagen&gt;:<tag>.</p></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker push usuario/nombre_imagen:tag
-</span></span></code></pre></div><h5 id="ejemplos">Ejemplos:</h5>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker push miusuario/miapp:v1.0
-</span></span><span style="display:flex;"><span>docker push miusuario/miapp:latest
-</span></span></code></pre></div><div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Nota</h4>
-<pre><code>&lt;blockquote&gt;
-</code></pre>
-<p>El comando docker <strong>push</strong> requiere que la imagen esté etiquetada con el nombre del usuario de Docker Hub.
-tag puede ser cualquier etiqueta que se desee utilizar para versionar la imagen (latest, v1.0, etc.).
-Si no especificas un tag, Docker usará latest por defecto.</p></blockquote>
-</div>
-
-</div>
-</p>
-
-</div>
-
-
-
-    
-      
-  
-  
-  
-  
-
-  
-  
-
-  
-
-    
-	
-  
-    
-    
-	
-    
-
-<div class="td-content" style="page-break-before: always">
-    
-	<h1 id="pg-be7312263a67ea65e5e20d152b9a270c">5 - Fichero de ejecución para crear imágenes DockerFile</h1>
+	<h1 id="pg-be7312263a67ea65e5e20d152b9a270c">4 - Fichero de ejecución para crear imágenes DockerFile</h1>
     
 	<p><div class="definicion-concepto">
   <div class="definicion-titulo">
@@ -2823,7 +2394,7 @@ Diferencias clave:</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-9054adab69431dbba10d534b39274e03">6 - Gestión de archivos y directorios</h1>
+	<h1 id="pg-9054adab69431dbba10d534b39274e03">5 - Gestión de archivos y directorios</h1>
     
 	
 
@@ -3252,7 +2823,7 @@ Diferencias clave:</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-119983b132b25e85c20958c2f3b25dcd">7 - Docker compose</h1>
+	<h1 id="pg-119983b132b25e85c20958c2f3b25dcd">6 - Docker compose</h1>
     
 	<p>Si quiero desarrollar una aplicación web,  puedo necesitar tener en el sistema:</p>
 <blockquote>
@@ -3694,7 +3265,7 @@ Docker Compose es una herramienta que nos permite gestionar sistemas dockerizado
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-f7de4513feaac6de7a9893742e148311">8 - Docker Prácticas</h1>
+	<h1 id="pg-f7de4513feaac6de7a9893742e148311">7 - Docker Prácticas</h1>
     
 	<p>
 
@@ -3743,7 +3314,7 @@ Docker Compose es una herramienta que nos permite gestionar sistemas dockerizado
 
 <div class="td-content" style="">
     
-	<h1 id="pg-a255b37ef9790045086ad4ec3af746d7">8.1 - Crea imágenes</h1>
+	<h1 id="pg-a255b37ef9790045086ad4ec3af746d7">7.1 - Crea imágenes</h1>
     
 	<h2 id="descargar-ver-y-borrar-imágenes"><strong>Descargar, ver y borrar imágenes</strong></h2>
 <ul>
@@ -3755,7 +3326,7 @@ Docker Compose es una herramienta que nos permite gestionar sistemas dockerizado
 </span></span><span style="display:flex;"><span>docker rmi nombre_imagen
 </span></span><span style="display:flex;"><span>docker rmi (docker images)
 </span></span></code></pre></div></blockquote>
-<h5 id="1-descarga-una-imagen-llamada--hahahugoshortcode38s0hbhb"><strong>1. Descarga una imagen llamada  
+<h5 id="1-descarga-una-imagen-llamada--hahahugoshortcode35s0hbhb"><strong>1. Descarga una imagen llamada  
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -3785,7 +3356,7 @@ Docker Compose es una herramienta que nos permite gestionar sistemas dockerizado
 
 
 </blockquote>
-<h5 id="2-descarga-una-imagen-llamada--hahahugoshortcode38s2hbhb"><strong>2. Descarga una imagen llamada  
+<h5 id="2-descarga-una-imagen-llamada--hahahugoshortcode35s2hbhb"><strong>2. Descarga una imagen llamada  
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -3968,7 +3539,7 @@ Docker Compose es una herramienta que nos permite gestionar sistemas dockerizado
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-307c1e990da196cfd02d1ad996525767">8.2 - Crea Contenedores</h1>
+	<h1 id="pg-307c1e990da196cfd02d1ad996525767">7.2 - Crea Contenedores</h1>
     
 	<h2 id="crear-y-usar-contenedores"><strong>Crear y usar contenedores</strong></h2>
 <ul>
@@ -3996,7 +3567,7 @@ Docker Compose es una herramienta que nos permite gestionar sistemas dockerizado
 </span></span></code></pre></div></blockquote>
 <p><em>Si estás en linux o en mac</em></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span> docker rm <span style="color:#8b008b;font-weight:bold">$(</span>docker ps -a -q<span style="color:#8b008b;font-weight:bold">)</span>
-</span></span></code></pre></div><h4 id="1-crea-5-contenedor-a-partir-de-la-imagen-hahahugoshortcode40s0hbhb-sin-especificar-nombre"><strong>1. Crea 5 contenedor a partir de la imagen 
+</span></span></code></pre></div><h4 id="1-crea-5-contenedor-a-partir-de-la-imagen-hahahugoshortcode37s0hbhb-sin-especificar-nombre"><strong>1. Crea 5 contenedor a partir de la imagen 
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -4118,7 +3689,7 @@ esté en estado <strong>Up</strong></p></blockquote>
 
 
 <hr>
-<h4 id="5-crea-un-contenedor-llamado-hahahugoshortcode40s7hbhb-a-partir-de-la-imagen-hahahugoshortcode40s8hbhb"><strong>5. Crea un contenedor llamado 
+<h4 id="5-crea-un-contenedor-llamado-hahahugoshortcode37s7hbhb-a-partir-de-la-imagen-hahahugoshortcode37s8hbhb"><strong>5. Crea un contenedor llamado 
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -4422,7 +3993,7 @@ estar creado a partir de la imagen ubuntu:latest sí que tiene asociado un comma
 
 
 </blockquote>
-<h4 id="15-crea-un-contenedor-llamado-hahahugoshortcode40s24hbhb-que-se-quede-arrancado-a-partir-de-la-imagen-hahahugoshortcode40s25hbhb"><strong>15. Crea un contenedor llamado 
+<h4 id="15-crea-un-contenedor-llamado-hahahugoshortcode37s24hbhb-que-se-quede-arrancado-a-partir-de-la-imagen-hahahugoshortcode37s25hbhb"><strong>15. Crea un contenedor llamado 
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -4573,7 +4144,7 @@ Antes de elimniar el contenedor tiene que estar parado
 
 
 </p>
-<h4 id="19-crea-igual-que-antes-el-contenedor-web-pero-mapeando-el-puerto-hahahugoshortcode40s34hbhb"><strong>19. Crea igual que antes el contenedor web, pero mapeando el puerto 
+<h4 id="19-crea-igual-que-antes-el-contenedor-web-pero-mapeando-el-puerto-hahahugoshortcode37s34hbhb"><strong>19. Crea igual que antes el contenedor web, pero mapeando el puerto 
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -4663,7 +4234,7 @@ Antes de elimniar el contenedor tiene que estar parado
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-8e4c21f7e9bfca66daee9e988693e6a4">8.3 - Contenedores</h1>
+	<h1 id="pg-8e4c21f7e9bfca66daee9e988693e6a4">7.3 - Contenedores</h1>
     
 	<h2 id="contenedores--imágenes"><strong>Contenedores =&gt; imágenes</strong></h2>
 
@@ -4687,7 +4258,7 @@ La idea es tener un contenedor según nuestra necesidad, y con él, crear una im
 </span></span><span style="display:flex;"><span>docker <span style="color:#658b00">export</span>
 </span></span><span style="display:flex;"><span>docker import
 </span></span></code></pre></div></blockquote>
-<h4 id="1-crea-una-imagen-llamada-hahahugoshortcode41s1hbhb-a-partir-del-conenedor-hahahugoshortcode41s2hbhb"><strong>1. Crea una imagen llamada 
+<h4 id="1-crea-una-imagen-llamada-hahahugoshortcode38s1hbhb-a-partir-del-conenedor-hahahugoshortcode38s2hbhb"><strong>1. Crea una imagen llamada 
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -4835,7 +4406,7 @@ Lo que se almacena  en el <strong>fichero tar</strong> es <strong>la imagen del 
 
 
 </blockquote>
-<h4 id="5-crea-una-imagen-llamada-hahahugoshortcode41s10hbhb-a-partir-del-fichero-hahahugoshortcode41s11hbhb"><strong>5. Crea una imagen llamada 
+<h4 id="5-crea-una-imagen-llamada-hahahugoshortcode38s10hbhb-a-partir-del-fichero-hahahugoshortcode38s11hbhb"><strong>5. Crea una imagen llamada 
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -5035,7 +4606,7 @@ Lo que se almacena  en el <strong>fichero tar</strong> es <strong>la imagen del 
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-ddf970139dcadbd92b8d9c28b646944c">9 - Anexos para el módulo</h1>
+	<h1 id="pg-ddf970139dcadbd92b8d9c28b646944c">8 - Anexos para el módulo</h1>
     
 	
 
@@ -5098,7 +4669,7 @@ Lo que se almacena  en el <strong>fichero tar</strong> es <strong>la imagen del 
 
 <div class="td-content" style="">
     
-	<h1 id="pg-fbcf493b5fb7b25a6df9f05739c61843">9.1 - Comandos linux</h1>
+	<h1 id="pg-fbcf493b5fb7b25a6df9f05739c61843">8.1 - Comandos linux</h1>
     <div class="lead">Comanso básicos de linux</div>
 	
 
@@ -5175,7 +4746,7 @@ Lo que se almacena  en el <strong>fichero tar</strong> es <strong>la imagen del 
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-81917096855a46c0b43795c6cb7186e7">10 - Docker en  línea de comandos </h1>
+	<h1 id="pg-81917096855a46c0b43795c6cb7186e7">9 - Docker en  línea de comandos </h1>
     
 	
 
@@ -5830,6 +5401,20 @@ En caso de que la imagen no esté descargada, la descarga automáticamente
 </ol>
 <hr>
 <h3 id="6-forward-de-puertos">6. Forward de Puertos</h3>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 778px">
+<img class="card-img-top" src="/docker/docs/04_comandos/puertos_hu_b95f380299040e27.png" width="768" height="567">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<blockquote>
+<p><strong>docker run -p XXXX:XXXX</strong></p></blockquote>
 <ol>
 <li>
 <p>
@@ -5858,6 +5443,18 @@ contenedor.</li>
 </ol>
 <hr>
 <h3 id="7-compartiendo-carpetas">7. Compartiendo Carpetas</h3>
+<p><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
+<img class="card-img-top" src="/docker/docs/04_comandos/volumenes_hu_534e17ce70c36029.png" width="800" height="489">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
 <div class="definicion-concepto">
   <div class="definicion-titulo">
     
@@ -5870,7 +5467,7 @@ contenedor.</li>
 Puedes mapear una carpeta local en el directorio de trabajo del contenedor para compartir archivos.
 
   </div>
-</div>
+</div></p>
 <ol>
 <li>
 <strong>

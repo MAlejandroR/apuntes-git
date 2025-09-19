@@ -3,12 +3,12 @@ title: "Comandos Docker"
 linkTitle: "Comandos"
 weight: 30
 icon: fa-solid fa-terminal
-draft: false    
+draft: true    
 ---
 
 {{% pageinfo %}}
 #### __:star: Comandos__  
- Repaso de __comandos__ usados en __docker__ en __línea de comados__
+  __Comandos__ para usar  __docker__ en __terminar__ (En windows mejor un Power Shell)
 {{% /pageinfo %}}
 
 
@@ -59,6 +59,19 @@ No obstante lo comento es este post
 docker create ubuntu:latest
 ```
 ***
+
+{{<line >}}
+
+Es un comando que tiene muchas opciones, puedes verlas con el comando help
+```bash
+ docker help run
+```
+Nosotros lo vamos a usar comos se muestra a continuación
+{{< imgproc run Fill "1000x300" >}}
+
+{{< /imgproc >}}
+
+
 ##### Crearlo vinculándolo al terminal de forma interactiva
 >__docker run -t -i__
 >> Crea un contenedor que quede vinculado a un terminal __tty__ con el que podemos interactuar
@@ -73,23 +86,6 @@ docker create ubuntu:latest
     docker ran --name web -t -i ubuntu:latest
 ```
 
-{{< alert title="Revisa" color="warning" >}}
-Antes de crear el contenedor lo borramos si lo queremos llamar igual     
-Antes de ejectuar algo, lo tenemos que arrancar     
-En este caso el comando start lo deja en estado up, ya que el contenedor fue coreado con __-i__  y __-t__   
-{{< /alert >}}
-
-
-{{<line >}}
-
-Es un comando que tiene muchas opciones, puedes verlas con el comando help
-```bash
- docker help run
-```
-Nosotros lo vamos a usar comos se muestra a continuación
-{{< imgproc run Fill "1000x300" >}}
-
-{{< /imgproc >}}
 
 
 
@@ -129,6 +125,11 @@ Si no ponemos __-a__ que viene de __all__ solo nos mostrará los contenedores qu
 {{< /imgproc >}}
 {{% /pageinfo %}}
 
+{{< alert title="Recurda" color="warning" >}}
+Antes de crear el contenedor lo borramos si lo queremos llamar igual     
+Antes de ejectuar algo, lo tenemos que arrancar     
+En este caso el comando start lo deja en estado up, ya que el contenedor fue coreado con __-i__  y __-t__   
+{{< /alert >}}
 
 
 

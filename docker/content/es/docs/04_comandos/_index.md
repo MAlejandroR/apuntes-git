@@ -1,7 +1,7 @@
 ---
     title: "Docker en  línea de comandos "
 linkTitle: "Comandos docker"
-weight: 40
+weight: 30
 icon: fa-solid fa-terminal
 draft: false
 ---
@@ -177,7 +177,10 @@ En caso de que la imagen no esté descargada, la descarga automáticamente
 ---
 
 ### 6. Forward de Puertos
+{{< imgproc puertos Fill "768x567" >}}
 
+{{< /imgproc >}}
+>__docker run -p XXXX:XXXX__
 1. {{< color >}} Redireccionamiento de puertos entre anfitrión y contenedor {{< /color >}}:
     - Para acceder al servidor web desde la red, configura un puerto en el anfitrión que redirija al puerto 80 del
       contenedor.
@@ -189,7 +192,9 @@ En caso de que la imagen no esté descargada, la descarga automáticamente
 ---
 
 ### 7. Compartiendo Carpetas
+{{< imgproc volumenes Fill "800x489" >}}
 
+{{< /imgproc >}}
 {{<definicion title="Mapeo de Directorios" sub_title="Compartir carpetas entre el anfitrión y el contenedor" >}}
 Puedes mapear una carpeta local en el directorio de trabajo del contenedor para compartir archivos.
 {{</definicion>}}

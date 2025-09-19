@@ -31,7 +31,7 @@
 
   <meta itemprop="name" content="Docker en  línea de comandos ">
   <meta itemprop="description" content="Docker Actuando en el terminal Cómo usar docker en línea de comandos Crear contenedores Descargar imágenes Modificar contenedores y persistirlos en imágenes Usar contenedores Subir a docker hub imágenes 1. Obteniendo una Imagen Obtención de Imágenes Las imágenes en Docker son las bases para crear contenedores . Puedes obtener diferentes versiones de una imagen usando etiquetas. Comandos a estudiar docker pull docker images docker search Descarga una imagen : 1 docker pull ubuntu:latest En este caso estamos descargando una imagen llamada ubuntu en su versión más reciente ( latest ). Cuidado Para generar contenedores en producción No se recomiendo usar esta etiqueta, ya que podría estar cambiando de versión del sistema base del contenedor.">
-  <meta itemprop="wordCount" content="1514">
+  <meta itemprop="wordCount" content="1518">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Docker en  línea de comandos ">
   <meta name="twitter:description" content="Docker Actuando en el terminal Cómo usar docker en línea de comandos Crear contenedores Descargar imágenes Modificar contenedores y persistirlos en imágenes Usar contenedores Subir a docker hub imágenes 1. Obteniendo una Imagen Obtención de Imágenes Las imágenes en Docker son las bases para crear contenedores . Puedes obtener diferentes versiones de una imagen usando etiquetas. Comandos a estudiar docker pull docker images docker search Descarga una imagen : 1 docker pull ubuntu:latest En este caso estamos descargando una imagen llamada ubuntu en su versión más reciente ( latest ). Cuidado Para generar contenedores en producción No se recomiendo usar esta etiqueta, ya que podría estar cambiando de versión del sistema base del contenedor.">
@@ -105,10 +105,6 @@
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs02_contenedores-e-imc3a1genes-li">
   <input type="checkbox" id="m-dockerdocs02_contenedores-e-imc3a1genes-check"/>
   <label for="m-dockerdocs02_contenedores-e-imc3a1genes-check"><a href="/docker/docs/02_contenedores-e-im%C3%A1genes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs02_contenedores-e-imc3a1genes"><i class="fa  fa-box"></i><span class="">Contenedores e imágenes</span></a></label>
-  
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs03_comandos_docker-li">
-  <input type="checkbox" id="m-dockerdocs03_comandos_docker-check"/>
-  <label for="m-dockerdocs03_comandos_docker-check"><a href="/docker/docs/03_comandos_docker/" title="Comandos Docker" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs03_comandos_docker"><i class="fa-solid fa-terminal"></i><span class="">Comandos</span></a></label>
   
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs06_dockefile-li">
   <input type="checkbox" id="m-dockerdocs06_dockefile-check"/>
@@ -880,6 +876,20 @@ En caso de que la imagen no esté descargada, la descarga automáticamente
 </ol>
 <hr>
 <h3 id="6-forward-de-puertos">6. Forward de Puertos</h3>
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 778px">
+<img class="card-img-top" src="/docker/docs/04_comandos/puertos_hu_b95f380299040e27.png" width="768" height="567">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
+<blockquote>
+<p><strong>docker run -p XXXX:XXXX</strong></p></blockquote>
 <ol>
 <li>
 <p>
@@ -908,6 +918,18 @@ contenedor.</li>
 </ol>
 <hr>
 <h3 id="7-compartiendo-carpetas">7. Compartiendo Carpetas</h3>
+<p><figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 810px">
+<img class="card-img-top" src="/docker/docs/04_comandos/volumenes_hu_534e17ce70c36029.png" width="800" height="489">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+
+
+</p>
+</figcaption>
+</figure>
+
 <div class="definicion-concepto">
   <div class="definicion-titulo">
     
@@ -920,7 +942,7 @@ contenedor.</li>
 Puedes mapear una carpeta local en el directorio de trabajo del contenedor para compartir archivos.
 
   </div>
-</div>
+</div></p>
 <ol>
 <li>
 <strong>

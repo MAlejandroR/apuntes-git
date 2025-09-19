@@ -25,7 +25,7 @@
 <meta property="og:url" content="http://localhost:1313/docker/docs/03_comandos_docker/">
   <meta property="og:site_name" content="Despliegue de aplicacones Web">
   <meta property="og:title" content="Comandos Docker">
-  <meta property="og:description" content="⭐ Comandos Repaso de comandos usados en docker en línea de comados
+  <meta property="og:description" content="⭐ Comandos Comandos para usar docker en terminar (En windows mejor un Power Shell)
 Descargando imágenes pull
 Obtener en local una imagen llamada ubuntu:latest::
 docker pull ubunut:latest Visualizar imágenes en local images
@@ -37,7 +37,7 @@ docker search ubuntu:1 Crear un contenedor docker create Hay varios comandos par
   <meta property="og:type" content="website">
 
   <meta itemprop="name" content="Comandos Docker">
-  <meta itemprop="description" content="⭐ Comandos Repaso de comandos usados en docker en línea de comados
+  <meta itemprop="description" content="⭐ Comandos Comandos para usar docker en terminar (En windows mejor un Power Shell)
 Descargando imágenes pull
 Obtener en local una imagen llamada ubuntu:latest::
 docker pull ubunut:latest Visualizar imágenes en local images
@@ -45,10 +45,10 @@ Listar todas las imágenes del sistema
 docker images Buscar imágenes docker search
 Buscar todas las imágenes que contengan ubuntu cuya distribución empiece por 1
 docker search ubuntu:1 Crear un contenedor docker create Hay varios comandos para crear contenedores">
-  <meta itemprop="wordCount" content="868">
+  <meta itemprop="wordCount" content="870">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Comandos Docker">
-  <meta name="twitter:description" content="⭐ Comandos Repaso de comandos usados en docker en línea de comados
+  <meta name="twitter:description" content="⭐ Comandos Comandos para usar docker en terminar (En windows mejor un Power Shell)
 Descargando imágenes pull
 Obtener en local una imagen llamada ubuntu:latest::
 docker pull ubunut:latest Visualizar imágenes en local images
@@ -135,7 +135,7 @@ Versión imprimible multipagina.
 
 <div class="pageinfo pageinfo-primary">
 <h4 id="star"><strong>&#x2b50; Comandos</strong></h4>
-<p>Repaso de <strong>comandos</strong> usados en <strong>docker</strong> en <strong>línea de comados</strong></p>
+<p><strong>Comandos</strong> para usar  <strong>docker</strong> en <strong>terminar</strong> (En windows mejor un Power Shell)</p>
 
 </div>
 
@@ -194,30 +194,6 @@ Versión imprimible multipagina.
 <p>Crea un contenedor basado en la imagen <strong>ubuntu:latest</strong></p></blockquote></blockquote>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker create ubuntu:latest
 </span></span></code></pre></div><hr>
-<h5 id="crearlo-vinculándolo-al-terminal-de-forma-interactiva">Crearlo vinculándolo al terminal de forma interactiva</h5>
-<blockquote>
-<p><strong>docker run -t -i</strong></p>
-<blockquote>
-<p>Crea un contenedor que quede vinculado a un terminal <strong>tty</strong> con el que podemos interactuar</p></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    docker run -t -i  ubuntu:latest
-</span></span></code></pre></div><hr>
-<h5 id="nombrar-el-contenedor">Nombrar el contenedor</h5>
-<blockquote>
-<p><strong>docker run  &ndash;name</strong></p>
-<blockquote>
-<p>Crear un contenedor llamado <strong>web</strong> a partir de la imagen ubuntu:latest y vincúlalo al terminal</p></blockquote></blockquote>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    docker ran --name web -t -i ubuntu:latest
-</span></span></code></pre></div>
-
-<div class="alert alert-warning" role="alert">
-<h4 class="alert-heading">Revisa</h4>
-
-    Antes de crear el contenedor lo borramos si lo queremos llamar igual  <br>
-Antes de ejectuar algo, lo tenemos que arrancar  <br>
-En este caso el comando start lo deja en estado up, ya que el contenedor fue coreado con <strong>-i</strong>  y <strong>-t</strong>
-
-</div>
-
 
 
 
@@ -238,7 +214,20 @@ En este caso el comando start lo deja en estado up, ya que el contenedor fue cor
 </figcaption>
 </figure>
 </p>
-<p>
+<h5 id="crearlo-vinculándolo-al-terminal-de-forma-interactiva">Crearlo vinculándolo al terminal de forma interactiva</h5>
+<blockquote>
+<p><strong>docker run -t -i</strong></p>
+<blockquote>
+<p>Crea un contenedor que quede vinculado a un terminal <strong>tty</strong> con el que podemos interactuar</p></blockquote></blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    docker run -t -i  ubuntu:latest
+</span></span></code></pre></div><hr>
+<h5 id="nombrar-el-contenedor">Nombrar el contenedor</h5>
+<blockquote>
+<p><strong>docker run  &ndash;name</strong></p>
+<blockquote>
+<p>Crear un contenedor llamado <strong>web</strong> a partir de la imagen ubuntu:latest y vincúlalo al terminal</p></blockquote></blockquote>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    docker ran --name web -t -i ubuntu:latest
+</span></span></code></pre></div><p>
 
 <div class="pageinfo pageinfo-primary">
 <h4 id="listar-todos--los-contenedores">Listar todos  los contenedores</h4>
@@ -303,6 +292,17 @@ En este caso el comando start lo deja en estado up, ya que el contenedor fue cor
 
 </div>
 </p>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Recurda</h4>
+
+    Antes de crear el contenedor lo borramos si lo queremos llamar igual  <br>
+Antes de ejectuar algo, lo tenemos que arrancar  <br>
+En este caso el comando start lo deja en estado up, ya que el contenedor fue coreado con <strong>-i</strong>  y <strong>-t</strong>
+
+</div>
+
 <p>
 
 <div class="pageinfo pageinfo-primary">
