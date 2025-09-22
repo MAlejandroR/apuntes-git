@@ -12,7 +12,7 @@
       <link>http://web.infenlaces.com/git/docs/instalacion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://web.infenlaces.com/git/docs/instalacion/</guid>
-      <description>Instalación y configuración básica de Git en Ubuntu Para comenzar a trabajar con Git en Ubuntu, necesitamos instalarlo y configurarlo correctamente.&#xA;1. Instalación de Git Para instalar Git en Ubuntu, ejecuta los siguientes comandos en la terminal:&#xA;1 2 sudo apt update sudo apt install git Una vez instalado, verifica la versión con:&#xA;1 git --version ✅ Si ves un número de versión como git version 2.x.x, Git se ha instalado correctamente.</description>
+      <description>Instalación y configuración básica de Git en Ubuntu Para comenzar a trabajar con Git en Ubuntu, necesitamos instalarlo y configurarlo correctamente.&#xA;**1. Instalación de Git Para instalar Git en Ubuntu, ejecuta los siguientes comandos en la terminal:&#xA;1 2 sudo apt update sudo apt install git Una vez instalado, verifica la versión con:&#xA;1 git --version 2. Configuración inicial de Git Lo primero que debemos hacer es configurar una variables de entorno de git que establece tus datos (name y email es obligatorio)</description>
     </item>
   </channel>
 </rss>

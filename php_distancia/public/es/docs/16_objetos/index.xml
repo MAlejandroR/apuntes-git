@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Objetos on Desarrollo Web en Entorno Servidor</title>
+    <link>http://localhost:1313/distancia/dwes/php/es/docs/16_objetos/</link>
+    <description>Recent content in Objetos on Desarrollo Web en Entorno Servidor</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 15 Oct 2024 07:04:49 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/distancia/dwes/php/es/docs/16_objetos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>OOP en PHP</title>
+      <link>http://localhost:1313/distancia/dwes/php/es/docs/16_objetos/0_b%C3%A1sico/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>http://localhost:1313/distancia/dwes/php/es/docs/16_objetos/0_b%C3%A1sico/</guid>
+      <description>Conceptos de OOP en PHP WikiEducator </description>
+    </item>
+    <item>
+      <title>Sintaxis</title>
+      <link>http://localhost:1313/distancia/dwes/php/es/docs/16_objetos/1_sintaxis/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>http://localhost:1313/distancia/dwes/php/es/docs/16_objetos/1_sintaxis/</guid>
+      <description>Sintaxis de OOP en PHP WikiEducator </description>
+    </item>
+    <item>
+      <title>Herencia</title>
+      <link>http://localhost:1313/distancia/dwes/php/es/docs/16_objetos/2_herencia/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>http://localhost:1313/distancia/dwes/php/es/docs/16_objetos/2_herencia/</guid>
+      <description>Herencia en php WikiEducator </description>
+    </item>
+    <item>
+      <title>Sobrecarga</title>
+      <link>http://localhost:1313/distancia/dwes/php/es/docs/16_objetos/4_estatico/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>http://localhost:1313/distancia/dwes/php/es/docs/16_objetos/4_estatico/</guid>
+      <description>Herencia en php WikiEducator </description>
+    </item>
+    <item>
+      <title>Elementos estáticos</title>
+      <link>http://localhost:1313/distancia/dwes/php/es/docs/16_objetos/3_sobrecarga/</link>
+      <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
+      <guid>http://localhost:1313/distancia/dwes/php/es/docs/16_objetos/3_sobrecarga/</guid>
+      <description>Elementos estáticos WikiEducator </description>
+    </item>
+  </channel>
+</rss>

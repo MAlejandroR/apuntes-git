@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/servicios.iml" filepath="$PROJECT_DIR$/.idea/servicios.iml" />
       <module fileurl="file://$USER_HOME$/vagrant/.idea/vagrant.iml" filepath="$USER_HOME$/vagrant/.idea/vagrant.iml" />
+      <module fileurl="file://$USER_HOME$/vagrant/vagrant_dns/.idea/vagrant_dns.iml" filepath="$USER_HOME$/vagrant/vagrant_dns/.idea/vagrant_dns.iml" />
     </modules>
   </component>
 </project>

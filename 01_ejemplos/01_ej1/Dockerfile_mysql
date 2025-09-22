@@ -1,0 +1,4 @@
+FROM ubuntu:latest
+RUN apt-get update && apt-get install -y mysql-client mysql-server
+CMD ["mysqld_safe", "--datadir=/var/lib/mysql"]
+EXPOSE 3306

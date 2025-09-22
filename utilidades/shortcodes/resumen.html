@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{{/* resumen.html */}}
+{{ $title := .Get "title" | default "Resumen" }}
+{{ $icon := .Get "icon" | default "fas fa-info-circle" }}
 
-</body>
-</html>
+<div style="border: 1px solid #2c3e50; border-radius: 5px; overflow: hidden; margin: 10px 0;">
+    <div style="background-color:#2c3e50; color:white;
+    font-weight:bold; padding:8px; display: flex; align-items: center;">
+        <!-- Icono -->
+        <span style="margin-right: 8px;">
+            <i class="{{ $icon }}"></i>
+        </span>
+        <span>{{ $title }}</span>
+    </div>
+
+    <!-- Contenido del resumen -->
+    <div style="background-color:#ecf0f1; color:#2c3e50; padding: 10px; font-style: italic;">
+        {{ .Inner | markdownify }}
+    </div>
+</div>

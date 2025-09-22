@@ -18,7 +18,7 @@ Para programar vamos a usar el siguiente IDE
 {{< card header="Apache 2" >}}
 <span class='small-bold-text'>Servidor web http/https</span>
 {{% line %}}
-[![apache](apache.jpeg)](https://httpd.apache.org/)
+[![apache](logo.jpeg)](https://httpd.apache.org/)
 {{< /card >}}
 
 {{< card header="PHP" >}}
@@ -97,6 +97,7 @@ Pero la dejamos aquí, para recuperarla en su momento
  
 {{< imgproc docker_folder Fill "230x87" >}}
 
+
 {{< /imgproc >}}
 
 {{% line %}}  
@@ -138,15 +139,20 @@ EXPOSE 80
 {{< / highlight >}}
 
 La imagen de la estructura la podríamos organizar de la siguiente manera
+
 {{< imgproc estructura_docker Fill "504x297" >}}
+
 
 {{< /imgproc >}}
 
 ## Apache
 # Servidor Apache y su funcionamiento modular
-{{< imgproc apache2 Fill "930x454" >}}
 
-{{< /imgproc >}}
+[//]: # ({{< imgproc apache2 Fill "930x454" >}})
+
+[//]: # ()
+[//]: # ()
+[//]: # ({{< /imgproc >}})
 Como se muestra en la imagen, Apache funciona mediante un sistema de módulos. Cada uno de estos módulos (como **PHP**, **MySQL**, **XML**, entre otros) añade funcionalidades específicas y se conecta al **núcleo de Apache**. Puedes activar o desactivar, instalar o desinstalar módulos según tus necesidades, manteniendo solo aquellos que sean esenciales.
 
 Es importante recordar que, al instalar Apache, se abre una "puerta" en el sistema hacia redes externas, lo que puede representar una exposición al exterior. Mantener activos solo los módulos necesarios reduce esta exposición y ayuda a mejorar la seguridad del servidor.

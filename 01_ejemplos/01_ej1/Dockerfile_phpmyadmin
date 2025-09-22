@@ -1,0 +1,21 @@
+FROM ubuntu:24.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Evita que se intenten arrancar servicios durante la instalación
+RUN printf '#!/bin/sh\nexit 0\n' > /usr/sbin/policy-rc.d \
+ && chmod +x /usr/sbin/policy-rc.d
+
+RUN apt-get update && \
+    apt-get install -y phpmyadmin apache2 libapache2-mod-php && \
+    ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-enabled/phpmyadmin.conf && \
+    rm -rf /var/lib/apt/lists/*
+
+EXPOSE 80
+
+CMD ["apache2ctl", "-DFOREGROUND"]
+#RUN apt-get update && apt-get install -y phpmyadmin && rm -rf /var/lib/apt/lists/*
+#FROM ubuntu:latest
+#RUN apt-get update && apt-get install -y phpmyadmin
+#EXPOSE 80
+#CMD ["apache2ctl", "-DFOREGROUND"]

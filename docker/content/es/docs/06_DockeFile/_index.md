@@ -6,18 +6,19 @@ icon: fa-solid fa-terminal
 draft: false    
 
 ---
-{{< definicion title="Dockerfile" icon="fas fa-file-alt" >}}
-Un {{< color >}} Dockerfile {{< /color >}} es un fichero de texto que contiene una serie de instrucciones para crear una {{< color >}} imagen {{< /color >}}. 
-<br />
-Este fichero tiene un formato concreto y necesita al menos la instrucción {{< color >}} FROM {{< /color >}} para especificar la imagen base a partir de la cual construiremos nuestra imagen personalizada.
-{{</ definicion >}}
-{{< alert title="Para qué" color="success" >}}
-> * La idea es que partiendo de una imagen  personalicemos la imagen quequeremos crear,
-> 
-> * Después, a partir de esta imagen, levantaremos el contenedor)
-{{< /alert >}}
-{{% line %}}
 
+{{< definicion title="Dockerfile" icon="fas fa-file-alt" >}}
+Un {{< color >}} Dockerfile {{< /color >}} es un fichero de texto que contiene una serie de instrucciones para crear una {{< color >}} imagen {{< /color >}} de Docker.  
+<br />
+Este fichero tiene un formato específico y necesita, como mínimo, la instrucción {{< color >}} FROM {{< /color >}} para indicar la imagen base a partir de la cual construiremos nuestra propia imagen personalizada.
+{{</ definicion >}}
+
+{{< alert title="¿Para qué sirve?" color="success" >}}
+> * La idea es **partir de una imagen base** y **personalizarla** según nuestras necesidades.
+> * Una vez creada la nueva imagen, **podremos utilizarla para levantar contenedores**.
+    {{< /alert >}}
+
+{{% line %}}
 ## Construcción del Dockerfile
 ![img_1.png](img_1.png)
 Para ejecutar las instrucciones del Dockerfile, utilizamos el comando {{< color >}} docker build {{< /color >}}:

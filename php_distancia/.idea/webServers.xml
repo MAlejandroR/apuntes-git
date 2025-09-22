@@ -3,9 +3,9 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="8f974fc6-1023-4edb-8eb2-da46b67f329c" name="hestia">
-        <fileTransfer rootFolder="/home/admin/web/web.infenlaces.com/public_html/" accessType="SFTP" host="web.infenlaces.com" port="22123" sshConfigId="d1cff2fb-4812-4572-8746-e7fef2f551bf" sshConfig="admin@web.infenlaces.com:22123 key" keyPair="true">
+        <fileTransfer rootFolder="/home/admin/web/web.infenlaces.com/public_html/" accessType="SFTP" host="web.infenlaces.com" port="22123" sshConfigId="bf929c0d-484d-4408-ae64-845c6ea6adce" sshConfig="admin@web.infenlaces.com:22123 key" keyPair="true">
           <advancedOptions>
-            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
         </fileTransfer>
       </webServer>

@@ -14,7 +14,7 @@
     <mapping directory="$PROJECT_DIR$/../../dwes/vesta/practicas/22022_ficheros/Daniel Radomirov Yordanov/Radomirov_Yordanov_Daniel_DWES_Practica_Ficheros/enunciado_pactica_descargas" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../../dwes/vesta/practicas/22022_ficheros/MARTA PORTOLÉS BARGALLO/PORTOLES_BARGALLO_MARTA_ficheros_tema7/tema7" vcs="Git" />
     <mapping directory="$USER_HOME$/php/app/adivina_numero" vcs="Git" />
-    <mapping directory="$USER_HOME$/php/app/crud2" vcs="Git" />
+    <mapping directory="$USER_HOME$/php/app/c1" vcs="Git" />
     <mapping directory="$USER_HOME$/php/app/examen_imagenes" vcs="Git" />
     <mapping directory="$USER_HOME$/php/app/examen_presencial_2024" vcs="Git" />
     <mapping directory="$USER_HOME$/php/app/examen_presencial_2024/DAVID TEJERO SALAS/examen1evDavidTejero/examen1ev/examen_imagenes" vcs="Git" />
@@ -29,10 +29,5 @@
     <mapping directory="$USER_HOME$/php/app/examen_presencial_2024/Pablo LAHOZ SARINENA/examen_imagenes" vcs="Git" />
     <mapping directory="$USER_HOME$/php/app/examen_presencial_2024/Rodrigo GOMIS DIES/ExamenServidor1Ev/examen_imagenes" vcs="Git" />
     <mapping directory="$USER_HOME$/php/app/examen_presencial_2024/Sara Ortega Sanchez/examen_imagenes" vcs="Git" />
-    <mapping directory="$USER_HOME$/php/app/oceano/examen_aula/examen_vocabulario_2022" vcs="Git" />
-    <mapping directory="$USER_HOME$/php/app/propuesta_examen" vcs="Git" />
-    <mapping directory="$USER_HOME$/php/app/tmp/examen_imagenes" vcs="Git" />
-    <mapping directory="$USER_HOME$/php/app/tmp/examen_vocabulario_2022" vcs="Git" />
-    <mapping directory="/var/www/html/mm" vcs="Git" />
   </component>
 </project>

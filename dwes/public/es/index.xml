@@ -2,248 +2,248 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Desarrollo Web</title>
-    <link>http://localhost:35361/dwes/es/</link>
+    <link>http://web.infenlaces.com/dwes/es/</link>
     <description>Recent content on Desarrollo Web</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate>Mon, 15 Sep 2025 07:04:49 +0200</lastBuildDate>
-    <atom:link href="http://localhost:35361/dwes/es/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://web.infenlaces.com/dwes/es/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cookies</title>
-      <link>http://localhost:35361/dwes/es/docs/04_php/15_peristencia/1_cookies/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/04_php/15_peristencia/1_cookies/</link>
       <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/04_php/15_peristencia/1_cookies/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/04_php/15_peristencia/1_cookies/</guid>
       <description>&lt;h3 id=&#34;las-cookies-en-php&#34;&gt;Las cookies en php&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=4414&#34; width=&#34;100%&#34; height=&#34;8000&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>OOP en PHP</title>
-      <link>http://localhost:35361/dwes/es/docs/04_php/13_objetos/0_b%C3%A1sico/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/04_php/13_objetos/0_b%C3%A1sico/</link>
       <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/04_php/13_objetos/0_b%C3%A1sico/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/04_php/13_objetos/0_b%C3%A1sico/</guid>
       <description>&lt;h3 id=&#34;conceptos-de-oop-en-php&#34;&gt;Conceptos de OOP en PHP&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=4406&#34; width=&#34;100%&#34; height=&#34;3500&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Aplicaciones web</title>
-      <link>http://localhost:35361/dwes/es/docs/01_web/01_conceptos_generales/desarrollo_web/desarrollo_web/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/01_web/01_conceptos_generales/desarrollo_web/desarrollo_web/</link>
       <pubDate>Mon, 15 Sep 2025 07:04:49 +0200</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/01_web/01_conceptos_generales/desarrollo_web/desarrollo_web/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/01_web/01_conceptos_generales/desarrollo_web/desarrollo_web/</guid>
       <description>&lt;div style=&#34;border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;&#34;&gt;&#xA;    &lt;div style=&#34;background-color:darkgreen; color:white;&#xA;    font-weight:bold; padding:10px; display: flex; align-items: center;&#34;&gt;&#xA;        &#xA;        &lt;span style=&#34;margin-right: 8px;&#34;&gt;&#xA;            &lt;i class=&#34;fas  fa-check-circle&#34;&gt;&lt;/i&gt; &#xA;        &lt;/span&gt;&#xA;        &#xA;        &lt;span &gt;Objetivos&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;&#xA;    &lt;h3 style=&#34;padding: 5px;font-weight:bold&#34;&gt; Qué veremos aquí&lt;/h3&gt;&#xA;&#xA;    &lt;hr style=&#34;border-color:seagreen;border-width:3px&#34;/&gt;&#xA;    &#xA;    &lt;div style=&#34;background-color:#d0f0d0; color:darkgreen; padding: 10px;&#34;&gt;&#xA;        &lt;ul&gt;&#xA;            &#xA;            &#xA;                &#xA;                &#xA;            &#xA;                &#xA;                &#xA;                  &lt;li&gt;Que son las aplicaciones Web&lt;/li&gt;&#xA;                &#xA;            &#xA;                &#xA;                &#xA;                  &lt;li&gt;Páginas Estáticas Vs Dinámicas&lt;/li&gt;&#xA;                &#xA;            &#xA;                &#xA;                &#xA;            &#xA;        &lt;/ul&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h3 id=&#34;aplicaciones-web-en-el-servidor&#34;&gt;Aplicaciones web en el servidor&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;    &lt;iframe src=&#34;https://es.wikieducator.org/index.php?oldid=31958&#34; width=&#34;100%&#34; height=&#34;6116&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Sintaxis</title>
-      <link>http://localhost:35361/dwes/es/docs/04_php/13_objetos/1_sintaxis/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/04_php/13_objetos/1_sintaxis/</link>
       <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/04_php/13_objetos/1_sintaxis/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/04_php/13_objetos/1_sintaxis/</guid>
       <description>&lt;h3 id=&#34;sintaxis-de-oop-en-php&#34;&gt;Sintaxis de OOP en PHP&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=4405&#34; width=&#34;100%&#34; height=&#34;13500&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Documentación</title>
-      <link>http://localhost:35361/dwes/es/docs/02_docker/old_index/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/02_docker/old_index/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/02_docker/old_index/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/02_docker/old_index/</guid>
       <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Aspectos vistos en la tutoría&lt;/li&gt;&#xA;&lt;li&gt;Conceptos / Ejercicios de repaso y refuerzo&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;En esta sección se irán aportando recursos que puedan ayudar a adquirir los conceptos estudiados y vistos las tutorías&lt;br&gt;&#xA;Según vayamos avanzando en las clases actualizamos estos puntos.&lt;/p&gt;&lt;/blockquote&gt;&#xA;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Instalación</title>
-      <link>http://localhost:35361/dwes/es/docs/03_hugo/1_instalacion/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/03_hugo/1_instalacion/</link>
       <pubDate>Mon, 04 Oct 2021 12:01:52 +0200</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/03_hugo/1_instalacion/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/03_hugo/1_instalacion/</guid>
       <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;&amp;#x2705;&#xA;&lt;strong&gt;Objetivos&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Aprenderemos a instalar &lt;em&gt;hugo&lt;/em&gt; y crear un &lt;strong&gt;nuevo sitio web&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&amp;#x1f604; qué bonito &lt;em&gt;es&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;No olvides, si se necesita, configurar el &lt;strong&gt;path&lt;/strong&gt; del sistema para acceder desde cualquier invocación&lt;/li&gt;&#xA;&lt;li&gt;Gestionamos todo desde un &lt;strong&gt;terminal&lt;/strong&gt; independientemente de usar linux o windows&lt;/li&gt;&#xA;&lt;li&gt;Verifica la versión instalada&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Páginas referenciadas&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Web de visual code : &lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;https://code.visualstudio.com/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Web de jetsbrain y phpstorm: &lt;a href=&#34;https://www.jetbrains.com/&#34;&gt;https://www.jetbrains.com/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;hugo: &lt;a href=&#34;https://gohugo.io&#34;&gt;https://gohugo.io&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;página de snap : &lt;a href=&#34;https://snapcraft.io/docs/snap-documentation&#34;&gt;https://snapcraft.io/docs/snap-documentation&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;instalación&#34;&gt;Instalación&lt;/h3&gt;&#xA;&lt;p&gt;Tiene instaladores para mac, windows y linux:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Temas o layouts base</title>
-      <link>http://localhost:35361/dwes/es/docs/03_hugo/2_temas/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/03_hugo/2_temas/</link>
       <pubDate>Mon, 04 Oct 2021 13:19:24 +0200</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/03_hugo/2_temas/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/03_hugo/2_temas/</guid>
       <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;&amp;#x2705;&#xA;&lt;strong&gt;Objetivo&lt;/strong&gt;:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Asociar una plantilla o theme al sitio web&lt;/li&gt;&#xA;&lt;li&gt;Acceder al fichero de configuración del sitio web &lt;strong&gt;config.toml&lt;/strong&gt;&#xA;&lt;strong&gt;Páginas referenciadas o de consulta&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://desarrolloweb.com/articulos/generar-contenido-site-hugo&#34;&gt;https://desarrolloweb.com/articulos/generar-contenido-site-hugo&lt;/a&gt; (primera parte)&lt;/li&gt;&#xA;&lt;li&gt;Plantillas disponibles en &lt;em&gt;hugo&lt;/em&gt;  &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;https://themes.gohugo.io/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Plantilla usada como ejemplo&lt;em&gt;relearn&lt;/em&gt;:  &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-relearn/&#34;&gt;https://themes.gohugo.io/themes/hugo-theme-relearn/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h1 id=&#34;tema-plantilla-o-layout-para-el-sitio-web&#34;&gt;Tema, plantilla o layout para el sitio web&lt;/h1&gt;&#xA;&lt;p&gt;Ahora que tenemos nuestro sitio web, lo primero que tenemos que hacer es asociar una plantilla o theme a nuestro sitio para poder visualizar su contenido.&#xA;Para referirnos a la plantilla usaremos el término  &lt;strong&gt;theme&lt;/strong&gt; o &lt;strong&gt;layout&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Shortcode</title>
-      <link>http://localhost:35361/dwes/es/docs/03_hugo/4_shortcode/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/03_hugo/4_shortcode/</link>
       <pubDate>Mon, 04 Oct 2021 13:19:53 +0200</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/03_hugo/4_shortcode/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/03_hugo/4_shortcode/</guid>
       <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;Extensiones a markdown.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;IMPORTANTE:&lt;/strong&gt; Se usan dentro del texto &lt;strong&gt;.md&lt;/strong&gt; no en las plantillas&lt;/p&gt;&#xA;&lt;p&gt;Doc: &lt;a href=&#34;https://gohugo.io/content-management/shortcodes&#34;&gt;https://gohugo.io/content-management/shortcodes&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;El párrafo que has escrito está bien enfocado para un nivel de ciclo superior de desarrollo web, pero tiene algunos pequeños detalles de estilo que se podrían ajustar para mejorar la fluidez del texto. Aquí te doy una versión ligeramente corregida, con algunas mejoras gramaticales y de redacción:&lt;/p&gt;&#xA;&lt;p&gt;Un &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34;&gt;shortcode&lt;/a&gt; es un fragmento de &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    código HTML&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA; que será renderizado a partir de un texto en un fichero .md cuando el sistema cargue o renderice la página de contenido.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Añadiendo</title>
-      <link>http://localhost:35361/dwes/es/docs/03_hugo/3_contenido/01_creacion/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/03_hugo/3_contenido/01_creacion/</link>
       <pubDate>Mon, 04 Oct 2021 13:19:24 +0200</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/03_hugo/3_contenido/01_creacion/</guid>
-      <description>&lt;h2 id=&#34;creando-contenido-markdown&#34;&gt;Creando contenido: markdown&lt;/h2&gt;&#xA;&lt;p&gt;Para crear nuevo contenido vamos  a generar páginas de texto con formato &lt;strong&gt;markdown&lt;/strong&gt; &lt;a href=&#34;http://localhost:35361/dwes/es/docs/03_hugo/3_contenido/01_creacion/#markdown&#34;&gt;&lt;em&gt;(Hablamos más abajo sobre el tema)&lt;/em&gt;&lt;/a&gt;&#xA;Podemos consultar las siguientes referencias para el texto en markdown:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Daring Fireball: Markdown, John Gruber (Creator of Markdown)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;Markdown Cheatsheet, Adam Pritchard&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.markdowntutorial.com/&#34;&gt;Markdown Tutorial (Interactive), Garen Torikian&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.markdownguide.org/&#34;&gt;The Markdown Guide, Matt Cone&lt;/a&gt;&#xA;&lt;strong&gt;Otras referencias&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://programminghistorian.org/es/lecciones/introduccion-a-markdown&#34;&gt;https://programminghistorian.org/es/lecciones/introduccion-a-markdown&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Este metalenguaje o lenguaje con marcas &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    es muy utilizado en la documentación técnica&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA;.&lt;/p&gt;</description>
+      <guid>http://web.infenlaces.com/dwes/es/docs/03_hugo/3_contenido/01_creacion/</guid>
+      <description>&lt;h2 id=&#34;creando-contenido-markdown&#34;&gt;Creando contenido: markdown&lt;/h2&gt;&#xA;&lt;p&gt;Para crear nuevo contenido vamos  a generar páginas de texto con formato &lt;strong&gt;markdown&lt;/strong&gt; &lt;a href=&#34;http://web.infenlaces.com/dwes/es/docs/03_hugo/3_contenido/01_creacion/#markdown&#34;&gt;&lt;em&gt;(Hablamos más abajo sobre el tema)&lt;/em&gt;&lt;/a&gt;&#xA;Podemos consultar las siguientes referencias para el texto en markdown:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Daring Fireball: Markdown, John Gruber (Creator of Markdown)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;Markdown Cheatsheet, Adam Pritchard&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.markdowntutorial.com/&#34;&gt;Markdown Tutorial (Interactive), Garen Torikian&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.markdownguide.org/&#34;&gt;The Markdown Guide, Matt Cone&lt;/a&gt;&#xA;&lt;strong&gt;Otras referencias&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://programminghistorian.org/es/lecciones/introduccion-a-markdown&#34;&gt;https://programminghistorian.org/es/lecciones/introduccion-a-markdown&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Este metalenguaje o lenguaje con marcas &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    es muy utilizado en la documentación técnica&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA;.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Añadiendo</title>
-      <link>http://localhost:35361/dwes/es/docs/03_hugo/3_contenido/02_taxonomias/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/03_hugo/3_contenido/02_taxonomias/</link>
       <pubDate>Mon, 04 Oct 2021 13:19:24 +0200</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/03_hugo/3_contenido/02_taxonomias/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/03_hugo/3_contenido/02_taxonomias/</guid>
       <description>&lt;h2 id=&#34;taxonomías&#34;&gt;Taxonomías&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://gohugo.io/content-management/taxonomies&#34;&gt;https://gohugo.io/content-management/taxonomies&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Una taxonomía es una categorización que nos permite clasificar contenido.&lt;/p&gt;&#xA;&lt;p&gt;Por ejemplo, en una web de Películas podríamos tener actores, directores, estudios, géneros, años, premios &amp;hellip;&#xA;A continuación se muestra un breve ejemplo, pero esta parte no la vamos a incluir en nuestro ejemplo.&lt;/p&gt;&#xA;&lt;p&gt;Por defecto Hugo añade las taxonomías &lt;strong&gt;categories&lt;/strong&gt; y &lt;strong&gt;tags&lt;/strong&gt;. Se pueden añadir más en &lt;strong&gt;config&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[taxonomies]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  category = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;categories&amp;#39;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  tag = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#39;tags&amp;#39;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Si se quiere deshabilitar:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Despliegue en git</title>
-      <link>http://localhost:35361/dwes/es/docs/03_hugo/3_git/despliegue/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/03_hugo/3_git/despliegue/</link>
       <pubDate>Mon, 04 Oct 2021 13:19:24 +0200</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/03_hugo/3_git/despliegue/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/03_hugo/3_git/despliegue/</guid>
       <description>&lt;h3 id=&#34;1-crear-el-repositorio-en-github&#34;&gt;1. Crear el Repositorio en GitHub&lt;/h3&gt;&#xA;&lt;p&gt;Ve a &lt;a href=&#34;https://github.com/&#34;&gt;GitHub&lt;/a&gt;, inicia sesión y crea un nuevo repositorio (esta sección ya la hemos realizado previamente:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Haz clic en &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    New&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA; en la esquina superior derecha.&lt;/li&gt;&#xA;&lt;li&gt;Nombra el repositorio, por ejemplo, &lt;strong&gt;&lt;code&gt;mi-proyecto-hugo&lt;/code&gt;&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;Selecciona &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    público&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA; si deseas que el sitio sea accesible para todos.&lt;/li&gt;&#xA;&lt;li&gt;Copiamos las instrucciones y vamos a local&lt;/li&gt;&#xA;&lt;li&gt;Terminamos el proceso para subir nuestro proyecto, &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    pero antes de ello debemos preparar nuestro proyecto de hugo para deplegarlo&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;configurar-hugo-para-deplegarlo&#34;&gt;Configurar Hugo para deplegarlo&lt;/h3&gt;&#xA;&lt;p&gt;Por defecto, Hugo genera los archivos estáticos en la carpeta &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    /public&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA;, pero para desplegarlo, git espera que el sitio web esté en una carpeta llamada &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    /docs&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA; para &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    GitHub Pages&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA;, que es dónde se va a desplegar.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Personalizar la plantilla</title>
-      <link>http://localhost:35361/dwes/es/docs/03_hugo/5_estilo_plantilla/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/03_hugo/5_estilo_plantilla/</link>
       <pubDate>Fri, 22 Oct 2021 16:23:31 +0200</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/03_hugo/5_estilo_plantilla/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/03_hugo/5_estilo_plantilla/</guid>
       <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;&amp;#x2705;&#xA;&lt;strong&gt;Objetivos&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Vamos a modificar la plantilla utilizada&lt;/li&gt;&#xA;&lt;li&gt;Siempre se podrá hacer, pero en cada plantilla de una forma&lt;/li&gt;&#xA;&lt;li&gt;Acceder siempre a la información de la plantilla&lt;/li&gt;&#xA;&lt;li&gt;Modificar el logo, menú, etc&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Páginas referenciadas&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;En este caso referenciamos el tema &lt;a href=&#34;https://mcshelby.github.io/hugo-theme-relearn/basics/customization/&#34;&gt;&lt;strong&gt;relearn&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;qué-partes-hay-en-la-plantilla&#34;&gt;Qué partes hay en la plantilla&lt;/h2&gt;&#xA;&lt;p&gt;Debemos identificar las partes de una plantilla. Independientemente de la plantilla utilizada podemos hablar de:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Logo&lt;/li&gt;&#xA;&lt;li&gt;Colores usados en el estilo&lt;/li&gt;&#xA;&lt;li&gt;Menú principal&#xA;Identifiquemos esos elementos en nuestra plantilla y veamos cómo modificarlos para personalizarla a nuestro gusto.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;En la imagen siguiente hemos identificado diferentes partes en la plantilla que vemos tras instalarla, sin ninguna modificación.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Multilenguaje</title>
-      <link>http://localhost:35361/dwes/es/docs/03_hugo/6_multilenguajes/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/03_hugo/6_multilenguajes/</link>
       <pubDate>Tue, 05 Oct 2021 20:02:27 +0200</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/03_hugo/6_multilenguajes/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/03_hugo/6_multilenguajes/</guid>
       <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Ver cómo establecer diferentes lenguajes en nuestro proyecto&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://gohugo.io/content-management/multilingual/&#34;&gt;https://gohugo.io/content-management/multilingual/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://relearn.netlify.app/en/cont/i18n/&#34;&gt;https://relearn.netlify.app/en/cont/i18n/&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h1 id=&#34;multilenguaje&#34;&gt;Multilenguaje&lt;/h1&gt;&#xA;&lt;p&gt;Hugo permite establecer el &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    multilenguaje&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA;&#xA;para adaptar las páginas en el lenguaje deseado&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Para ello, lo primero modificamos el fichero de configuración  estableciendo los idiomas&#xA;&amp;raquo; Vamos a establecer 3 idiomas : inglés, francés, y español&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[Languages]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [Languages.es]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        title = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;Ejemplo para el uso de idiomas&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        weight = &lt;span style=&#34;color:#b452cd&#34;&gt;1&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        languageName = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;Español&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    [Languages.en]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        title = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;Example use language&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        weight = &lt;span style=&#34;color:#b452cd&#34;&gt;2&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        languageName = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;English&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   [Languages.fr]&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        title = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;Exemple d&amp;#39;utilisation des langues&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        weight = &lt;span style=&#34;color:#b452cd&#34;&gt;3&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        languageName = &lt;span style=&#34;color:#cd5555&#34;&gt;&amp;#34;Français&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Vemos como las variables usadas son claras en su función. &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    weight&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA;, como ya sabemos establece el orden en el que aparecerán en el menú&#xA;&#xA;&#xA;&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;&lt;strong&gt;Listado de idiomas configurado&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Datos externos</title>
-      <link>http://localhost:35361/dwes/es/docs/03_hugo/7_plantillas/datos/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/03_hugo/7_plantillas/datos/</link>
       <pubDate>Mon, 04 Oct 2021 13:20:01 +0200</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/03_hugo/7_plantillas/datos/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/03_hugo/7_plantillas/datos/</guid>
       <description>&lt;h1 id=&#34;consumir-datos-de-ficheros-con-estructura&#34;&gt;Consumir datos de ficheros con estructura&lt;/h1&gt;&#xA;&lt;p&gt;La ubicación del fichero debe de estar en &lt;em&gt;&lt;strong&gt;data&lt;/strong&gt;&lt;/em&gt;&#xA;Podemos consumir datos de diferentes fuentes, entro otras opciones:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Un fichero json&lt;/li&gt;&#xA;&lt;li&gt;Fichero CSV&lt;/li&gt;&#xA;&lt;li&gt;Un directorio con imágenes&lt;/li&gt;&#xA;&lt;li&gt;Un fichero csv compartido en drive&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Para ilustrar esto, a ubicar en el directorio &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    data&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA; un fichero de cadenas de tv sacado de github y ubicado en un proyecto de github&#xA;&lt;a href=&#34;https://github.com/MAlejandroR/staticSite/blob/main/data/tv.json&#34;&gt;https://github.com/MAlejandroR/staticSite/blob/main/data/tv.json&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Este fichero, es un array de elemetos &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    json&#xA;&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA; (parejas variable valor en un fichero)&#xA;Cada json contiene &lt;strong&gt;name&lt;/strong&gt; y &lt;strong&gt;channels&lt;/strong&gt; y channels es un array con todos los canales de ese tipo de canales con los siguientes datos:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Herencia</title>
-      <link>http://localhost:35361/dwes/es/docs/04_php/13_objetos/2_herencia/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/04_php/13_objetos/2_herencia/</link>
       <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/04_php/13_objetos/2_herencia/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/04_php/13_objetos/2_herencia/</guid>
       <description>&lt;h3 id=&#34;herencia-en-php&#34;&gt;Herencia en php&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=4437&#34; width=&#34;100%&#34; height=&#34;7500&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Sesiones</title>
-      <link>http://localhost:35361/dwes/es/docs/04_php/15_peristencia/2_sesiones/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/04_php/15_peristencia/2_sesiones/</link>
       <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/04_php/15_peristencia/2_sesiones/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/04_php/15_peristencia/2_sesiones/</guid>
       <description>&lt;h3 id=&#34;sesiones&#34;&gt;Sesiones&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=4545&#34; width=&#34;100%&#34; height=&#34;8000&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Sobrecarga</title>
-      <link>http://localhost:35361/dwes/es/docs/04_php/13_objetos/4_estatico/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/04_php/13_objetos/4_estatico/</link>
       <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/04_php/13_objetos/4_estatico/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/04_php/13_objetos/4_estatico/</guid>
       <description>&lt;h3 id=&#34;herencia-en-php&#34;&gt;Herencia en php&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=4430&#34; width=&#34;100%&#34; height=&#34;6400&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Elementos estáticos</title>
-      <link>http://localhost:35361/dwes/es/docs/04_php/13_objetos/3_sobrecarga/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/04_php/13_objetos/3_sobrecarga/</link>
       <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/04_php/13_objetos/3_sobrecarga/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/04_php/13_objetos/3_sobrecarga/</guid>
       <description>&lt;h3 id=&#34;elementos-estáticos&#34;&gt;Elementos estáticos&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=4741&#34; width=&#34;100%&#34; height=&#34;4700&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Ejercicios </title>
-      <link>http://localhost:35361/dwes/es/docs/04_php/12_arrays/ejercicios/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/04_php/12_arrays/ejercicios/</link>
       <pubDate>Tue, 15 Oct 2024 07:04:49 +0200</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/04_php/12_arrays/ejercicios/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/04_php/12_arrays/ejercicios/</guid>
       <description>&lt;h3 id=&#34;practicando&#34;&gt;Practicando&lt;/h3&gt;&#xA;&lt;div class=&#34;iframe-container&#34;&gt;&#xA;&lt;iframe src=&#34;https://es.wikieducator.org/index.php?curid=6675&#34; width=&#34;100%&#34; height=&#34;5437&#34;&gt;WikiEducator &lt;/iframe&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35361/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/3_web_1/app/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/3_web_1/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/3_web_1/app/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/3_web_1/app/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;title&gt;Title&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;h1&gt;Hola desde docker &lt;/h1&gt;&#xA;&lt;h2 style=&#34;color:red; font-size: 3em&#34;&gt;Estoy en el index&lt;/h2&gt;&#xA;&lt;a href=&#34;saludo2.html&#34;&gt;Ir a saludo2&lt;/a&gt;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35361/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/4_web_2/app/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/4_web_2/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/4_web_2/app/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/4_web_2/app/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;title&gt;Title&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;h1&gt;Hola desde dockerrrrr &lt;/h1&gt;&#xA;&lt;h2 style=&#34;color:red; font-size: 3em&#34;&gt;Estoy en el index&lt;/h2&gt;&#xA;&lt;a href=&#34;saludo2.html&#34;&gt;Ir a saludo2&lt;/a&gt;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35361/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;title&gt;Title&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;h1&gt;Hola desde dockerrrrr &lt;/h1&gt;&#xA;&lt;h2 style=&#34;color:red; font-size: 3em&#34;&gt;Estoy en el index&lt;/h2&gt;&#xA;&lt;a href=&#34;saludo2.html&#34;&gt;Ir a saludo2&lt;/a&gt;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35361/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/7_web_developer/app/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/7_web_developer/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/7_web_developer/app/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/7_web_developer/app/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;title&gt;Title&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;h1&gt;Hola desde dockerrrrr &lt;/h1&gt;&#xA;&lt;h2 style=&#34;color:red; font-size: 3em&#34;&gt;Estoy en el index&lt;/h2&gt;&#xA;&lt;a href=&#34;saludo2.html&#34;&gt;Ir a saludo2&lt;/a&gt;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35361/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/apache/app/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/apache/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/apache/app/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/apache/app/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;title&gt;Title&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;h1&gt;Hols&lt;/h1&gt;&#xA;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35361/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/docker_proyectos/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/docker_proyectos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/docker_proyectos/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/docker_proyectos/</guid>
       <description>&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Transitional//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#34;&gt;&#xA;&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34;&gt;&#xA;  &lt;!--&#xA;    Modified from the Debian original for Ubuntu&#xA;    Last updated: 2022-03-22&#xA;    See: https://launchpad.net/bugs/1966004&#xA;  --&gt;&#xA;  &lt;head&gt;&#xA;    &lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=UTF-8&#34; /&gt;&#xA;    &lt;title&gt;Apache2 Ubuntu Default Page: It works&lt;/title&gt;&#xA;    &lt;style type=&#34;text/css&#34; media=&#34;screen&#34;&gt;&#xA;  * {&#xA;    margin: 0px 0px 0px 0px;&#xA;    padding: 0px 0px 0px 0px;&#xA;  }&#xA;&#xA;  body, html {&#xA;    padding: 3px 3px 3px 3px;&#xA;&#xA;    background-color: #D8DBE2;&#xA;&#xA;    font-family: Ubuntu, Verdana, sans-serif;&#xA;    font-size: 11pt;&#xA;    text-align: center;&#xA;  }&#xA;&#xA;  div.main_page {&#xA;    position: relative;&#xA;    display: table;&#xA;&#xA;    width: 800px;&#xA;&#xA;    margin-bottom: 3px;&#xA;    margin-left: auto;&#xA;    margin-right: auto;&#xA;    padding: 0px 0px 0px 0px;&#xA;&#xA;    border-width: 2px;&#xA;    border-color: #212738;&#xA;    border-style: solid;&#xA;&#xA;    background-color: #FFFFFF;&#xA;&#xA;    text-align: center;&#xA;  }&#xA;&#xA;  div.page_header {&#xA;    height: 180px;&#xA;    width: 100%;&#xA;&#xA;    background-color: #F5F6F7;&#xA;  }&#xA;&#xA;  div.page_header span {&#xA;    margin: 15px 0px 0px 50px;&#xA;&#xA;    font-size: 180%;&#xA;    font-weight: bold;&#xA;  }&#xA;&#xA;  div.page_header img {&#xA;    margin: 3px 0px 0px 40px;&#xA;&#xA;    border: 0px 0px 0px;&#xA;  }&#xA;&#xA;  div.banner {&#xA;    padding: 9px 6px 9px 6px;&#xA;    background-color: #E9510E;&#xA;    color: #FFFFFF;&#xA;    font-weight: bold;&#xA;    font-size: 112%;&#xA;    text-align: center;&#xA;    position: absolute;&#xA;    left: 40%;&#xA;    bottom: 30px;&#xA;    width: 20%;&#xA;  }&#xA;&#xA;  div.table_of_contents {&#xA;    clear: left;&#xA;&#xA;    min-width: 200px;&#xA;&#xA;    margin: 3px 3px 3px 3px;&#xA;&#xA;    background-color: #FFFFFF;&#xA;&#xA;    text-align: left;&#xA;  }&#xA;&#xA;  div.table_of_contents_item {&#xA;    clear: left;&#xA;&#xA;    width: 100%;&#xA;&#xA;    margin: 4px 0px 0px 0px;&#xA;&#xA;    background-color: #FFFFFF;&#xA;&#xA;    color: #000000;&#xA;    text-align: left;&#xA;  }&#xA;&#xA;  div.table_of_contents_item a {&#xA;    margin: 6px 0px 0px 6px;&#xA;  }&#xA;&#xA;  div.content_section {&#xA;    margin: 3px 3px 3px 3px;&#xA;&#xA;    background-color: #FFFFFF;&#xA;&#xA;    text-align: left;&#xA;  }&#xA;&#xA;  div.content_section_text {&#xA;    padding: 4px 8px 4px 8px;&#xA;&#xA;    color: #000000;&#xA;    font-size: 100%;&#xA;  }&#xA;&#xA;  div.content_section_text pre {&#xA;    margin: 8px 0px 8px 0px;&#xA;    padding: 8px 8px 8px 8px;&#xA;&#xA;    border-width: 1px;&#xA;    border-style: dotted;&#xA;    border-color: #000000;&#xA;&#xA;    background-color: #F5F6F7;&#xA;&#xA;    font-style: italic;&#xA;  }&#xA;&#xA;  div.content_section_text p {&#xA;    margin-bottom: 6px;&#xA;  }&#xA;&#xA;  div.content_section_text ul, div.content_section_text li {&#xA;    padding: 4px 8px 4px 16px;&#xA;  }&#xA;&#xA;  div.section_header {&#xA;    padding: 3px 6px 3px 6px;&#xA;&#xA;    background-color: #8E9CB2;&#xA;&#xA;    color: #FFFFFF;&#xA;    font-weight: bold;&#xA;    font-size: 112%;&#xA;    text-align: center;&#xA;  }&#xA;&#xA;  div.section_header_grey {&#xA;    background-color: #9F9386;&#xA;  }&#xA;&#xA;  .floating_element {&#xA;    position: relative;&#xA;    float: left;&#xA;  }&#xA;&#xA;  div.table_of_contents_item a,&#xA;  div.content_section_text a {&#xA;    text-decoration: none;&#xA;    font-weight: bold;&#xA;  }&#xA;&#xA;  div.table_of_contents_item a:link,&#xA;  div.table_of_contents_item a:visited,&#xA;  div.table_of_contents_item a:active {&#xA;    color: #000000;&#xA;  }&#xA;&#xA;  div.table_of_contents_item a:hover {&#xA;    background-color: #000000;&#xA;&#xA;    color: #FFFFFF;&#xA;  }&#xA;&#xA;  div.content_section_text a:link,&#xA;  div.content_section_text a:visited,&#xA;   div.content_section_text a:active {&#xA;    background-color: #DCDFE6;&#xA;&#xA;    color: #000000;&#xA;  }&#xA;&#xA;  div.content_section_text a:hover {&#xA;    background-color: #000000;&#xA;&#xA;    color: #DCDFE6;&#xA;  }&#xA;&#xA;  div.validator {&#xA;  }&#xA;    &lt;/style&gt;&#xA;  &lt;/head&gt;&#xA;  &lt;body&gt;&#xA;    &lt;div class=&#34;main_page&#34;&gt;&#xA;      &lt;div class=&#34;page_header floating_element&#34;&gt;&#xA;        &lt;img src=&#34;icons/ubuntu-logo.png&#34; alt=&#34;Ubuntu Logo&#34;&#xA;             style=&#34;width:184px;height:146px;&#34; class=&#34;floating_element&#34; /&gt;&#xA;        &lt;div&gt;&#xA;          &lt;span style=&#34;margin-top: 1.5em;&#34; class=&#34;floating_element&#34;&gt;&#xA;            Apache2 Default Page&#xA;          &lt;/span&gt;&#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;banner&#34;&gt;&#xA;          &lt;div id=&#34;about&#34;&gt;&lt;/div&gt;&#xA;          It works!&#xA;        &lt;/div&gt;&#xA;&#xA;      &lt;/div&gt;&#xA;      &lt;div class=&#34;content_section floating_element&#34;&gt;&#xA;        &lt;div class=&#34;content_section_text&#34;&gt;&#xA;          &lt;p&gt;&#xA;                This is the default welcome page used to test the correct &#xA;                operation of the Apache2 server after installation on Ubuntu systems.&#xA;                It is based on the equivalent page on Debian, from which the Ubuntu Apache&#xA;                packaging is derived.&#xA;                If you can read this page, it means that the Apache HTTP server installed at&#xA;                this site is working properly. You should &lt;b&gt;replace this file&lt;/b&gt; (located at&#xA;                &lt;tt&gt;/var/www/html/index.html&lt;/tt&gt;) before continuing to operate your HTTP server.&#xA;          &lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35361/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/nginx/app/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/nginx/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/nginx/app/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/02_docker/04_ejercicios/5_dockercompose/nginx/app/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;title&gt;Title&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;h1&gt;Hola desde docker &lt;/h1&gt;&#xA;&lt;h2 style=&#34;color:red; font-size: 3em&#34;&gt;Estoy en el index&lt;/h2&gt;&#xA;&lt;a href=&#34;saludo2.html&#34;&gt;Ir a saludo2&lt;/a&gt;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35361/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/3_web_1/app/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/3_web_1/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/3_web_1/app/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/3_web_1/app/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;title&gt;Title&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;h1&gt;Hola desde docker &lt;/h1&gt;&#xA;&lt;h2 style=&#34;color:red; font-size: 3em&#34;&gt;Estoy en el index&lt;/h2&gt;&#xA;&lt;a href=&#34;saludo2.html&#34;&gt;Ir a saludo2&lt;/a&gt;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35361/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/4_web_2/app/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/4_web_2/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/4_web_2/app/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/4_web_2/app/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;title&gt;Title&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;h1&gt;Hola desde dockerrrrr &lt;/h1&gt;&#xA;&lt;h2 style=&#34;color:red; font-size: 3em&#34;&gt;Estoy en el index&lt;/h2&gt;&#xA;&lt;a href=&#34;saludo2.html&#34;&gt;Ir a saludo2&lt;/a&gt;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35361/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/6_mysql_phpmyadmin/app/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;title&gt;Title&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;h1&gt;Hola desde dockerrrrr &lt;/h1&gt;&#xA;&lt;h2 style=&#34;color:red; font-size: 3em&#34;&gt;Estoy en el index&lt;/h2&gt;&#xA;&lt;a href=&#34;saludo2.html&#34;&gt;Ir a saludo2&lt;/a&gt;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35361/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/7_web_developer/app/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/7_web_developer/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/7_web_developer/app/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/7_web_developer/app/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;title&gt;Title&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;h1&gt;Hola desde dockerrrrr &lt;/h1&gt;&#xA;&lt;h2 style=&#34;color:red; font-size: 3em&#34;&gt;Estoy en el index&lt;/h2&gt;&#xA;&lt;a href=&#34;saludo2.html&#34;&gt;Ir a saludo2&lt;/a&gt;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35361/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/apache/app/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/apache/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/apache/app/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/apache/app/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;title&gt;Title&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;h1&gt;Hols&lt;/h1&gt;&#xA;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35361/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/docker_proyectos/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/docker_proyectos/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/docker_proyectos/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/docker_proyectos/</guid>
       <description>&lt;!DOCTYPE html PUBLIC &#34;-//W3C//DTD XHTML 1.0 Transitional//EN&#34; &#34;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&#34;&gt;&#xA;&lt;html xmlns=&#34;http://www.w3.org/1999/xhtml&#34;&gt;&#xA;  &lt;!--&#xA;    Modified from the Debian original for Ubuntu&#xA;    Last updated: 2022-03-22&#xA;    See: https://launchpad.net/bugs/1966004&#xA;  --&gt;&#xA;  &lt;head&gt;&#xA;    &lt;meta http-equiv=&#34;Content-Type&#34; content=&#34;text/html; charset=UTF-8&#34; /&gt;&#xA;    &lt;title&gt;Apache2 Ubuntu Default Page: It works&lt;/title&gt;&#xA;    &lt;style type=&#34;text/css&#34; media=&#34;screen&#34;&gt;&#xA;  * {&#xA;    margin: 0px 0px 0px 0px;&#xA;    padding: 0px 0px 0px 0px;&#xA;  }&#xA;&#xA;  body, html {&#xA;    padding: 3px 3px 3px 3px;&#xA;&#xA;    background-color: #D8DBE2;&#xA;&#xA;    font-family: Ubuntu, Verdana, sans-serif;&#xA;    font-size: 11pt;&#xA;    text-align: center;&#xA;  }&#xA;&#xA;  div.main_page {&#xA;    position: relative;&#xA;    display: table;&#xA;&#xA;    width: 800px;&#xA;&#xA;    margin-bottom: 3px;&#xA;    margin-left: auto;&#xA;    margin-right: auto;&#xA;    padding: 0px 0px 0px 0px;&#xA;&#xA;    border-width: 2px;&#xA;    border-color: #212738;&#xA;    border-style: solid;&#xA;&#xA;    background-color: #FFFFFF;&#xA;&#xA;    text-align: center;&#xA;  }&#xA;&#xA;  div.page_header {&#xA;    height: 180px;&#xA;    width: 100%;&#xA;&#xA;    background-color: #F5F6F7;&#xA;  }&#xA;&#xA;  div.page_header span {&#xA;    margin: 15px 0px 0px 50px;&#xA;&#xA;    font-size: 180%;&#xA;    font-weight: bold;&#xA;  }&#xA;&#xA;  div.page_header img {&#xA;    margin: 3px 0px 0px 40px;&#xA;&#xA;    border: 0px 0px 0px;&#xA;  }&#xA;&#xA;  div.banner {&#xA;    padding: 9px 6px 9px 6px;&#xA;    background-color: #E9510E;&#xA;    color: #FFFFFF;&#xA;    font-weight: bold;&#xA;    font-size: 112%;&#xA;    text-align: center;&#xA;    position: absolute;&#xA;    left: 40%;&#xA;    bottom: 30px;&#xA;    width: 20%;&#xA;  }&#xA;&#xA;  div.table_of_contents {&#xA;    clear: left;&#xA;&#xA;    min-width: 200px;&#xA;&#xA;    margin: 3px 3px 3px 3px;&#xA;&#xA;    background-color: #FFFFFF;&#xA;&#xA;    text-align: left;&#xA;  }&#xA;&#xA;  div.table_of_contents_item {&#xA;    clear: left;&#xA;&#xA;    width: 100%;&#xA;&#xA;    margin: 4px 0px 0px 0px;&#xA;&#xA;    background-color: #FFFFFF;&#xA;&#xA;    color: #000000;&#xA;    text-align: left;&#xA;  }&#xA;&#xA;  div.table_of_contents_item a {&#xA;    margin: 6px 0px 0px 6px;&#xA;  }&#xA;&#xA;  div.content_section {&#xA;    margin: 3px 3px 3px 3px;&#xA;&#xA;    background-color: #FFFFFF;&#xA;&#xA;    text-align: left;&#xA;  }&#xA;&#xA;  div.content_section_text {&#xA;    padding: 4px 8px 4px 8px;&#xA;&#xA;    color: #000000;&#xA;    font-size: 100%;&#xA;  }&#xA;&#xA;  div.content_section_text pre {&#xA;    margin: 8px 0px 8px 0px;&#xA;    padding: 8px 8px 8px 8px;&#xA;&#xA;    border-width: 1px;&#xA;    border-style: dotted;&#xA;    border-color: #000000;&#xA;&#xA;    background-color: #F5F6F7;&#xA;&#xA;    font-style: italic;&#xA;  }&#xA;&#xA;  div.content_section_text p {&#xA;    margin-bottom: 6px;&#xA;  }&#xA;&#xA;  div.content_section_text ul, div.content_section_text li {&#xA;    padding: 4px 8px 4px 16px;&#xA;  }&#xA;&#xA;  div.section_header {&#xA;    padding: 3px 6px 3px 6px;&#xA;&#xA;    background-color: #8E9CB2;&#xA;&#xA;    color: #FFFFFF;&#xA;    font-weight: bold;&#xA;    font-size: 112%;&#xA;    text-align: center;&#xA;  }&#xA;&#xA;  div.section_header_grey {&#xA;    background-color: #9F9386;&#xA;  }&#xA;&#xA;  .floating_element {&#xA;    position: relative;&#xA;    float: left;&#xA;  }&#xA;&#xA;  div.table_of_contents_item a,&#xA;  div.content_section_text a {&#xA;    text-decoration: none;&#xA;    font-weight: bold;&#xA;  }&#xA;&#xA;  div.table_of_contents_item a:link,&#xA;  div.table_of_contents_item a:visited,&#xA;  div.table_of_contents_item a:active {&#xA;    color: #000000;&#xA;  }&#xA;&#xA;  div.table_of_contents_item a:hover {&#xA;    background-color: #000000;&#xA;&#xA;    color: #FFFFFF;&#xA;  }&#xA;&#xA;  div.content_section_text a:link,&#xA;  div.content_section_text a:visited,&#xA;   div.content_section_text a:active {&#xA;    background-color: #DCDFE6;&#xA;&#xA;    color: #000000;&#xA;  }&#xA;&#xA;  div.content_section_text a:hover {&#xA;    background-color: #000000;&#xA;&#xA;    color: #DCDFE6;&#xA;  }&#xA;&#xA;  div.validator {&#xA;  }&#xA;    &lt;/style&gt;&#xA;  &lt;/head&gt;&#xA;  &lt;body&gt;&#xA;    &lt;div class=&#34;main_page&#34;&gt;&#xA;      &lt;div class=&#34;page_header floating_element&#34;&gt;&#xA;        &lt;img src=&#34;icons/ubuntu-logo.png&#34; alt=&#34;Ubuntu Logo&#34;&#xA;             style=&#34;width:184px;height:146px;&#34; class=&#34;floating_element&#34; /&gt;&#xA;        &lt;div&gt;&#xA;          &lt;span style=&#34;margin-top: 1.5em;&#34; class=&#34;floating_element&#34;&gt;&#xA;            Apache2 Default Page&#xA;          &lt;/span&gt;&#xA;        &lt;/div&gt;&#xA;        &lt;div class=&#34;banner&#34;&gt;&#xA;          &lt;div id=&#34;about&#34;&gt;&lt;/div&gt;&#xA;          It works!&#xA;        &lt;/div&gt;&#xA;&#xA;      &lt;/div&gt;&#xA;      &lt;div class=&#34;content_section floating_element&#34;&gt;&#xA;        &lt;div class=&#34;content_section_text&#34;&gt;&#xA;          &lt;p&gt;&#xA;                This is the default welcome page used to test the correct &#xA;                operation of the Apache2 server after installation on Ubuntu systems.&#xA;                It is based on the equivalent page on Debian, from which the Ubuntu Apache&#xA;                packaging is derived.&#xA;                If you can read this page, it means that the Apache HTTP server installed at&#xA;                this site is working properly. You should &lt;b&gt;replace this file&lt;/b&gt; (located at&#xA;                &lt;tt&gt;/var/www/html/index.html&lt;/tt&gt;) before continuing to operate your HTTP server.&#xA;          &lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35361/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/nginx/app/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/nginx/app/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/nginx/app/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/02_docker/08_ejercicios/5_dockercompose/nginx/app/</guid>
       <description>&lt;!DOCTYPE html&gt;&#xA;&lt;html lang=&#34;en&#34;&gt;&#xA;&lt;head&gt;&#xA;    &lt;meta charset=&#34;UTF-8&#34;&gt;&#xA;    &lt;title&gt;Title&lt;/title&gt;&#xA;&lt;/head&gt;&#xA;&lt;body&gt;&#xA;&lt;h1&gt;Hola desde docker &lt;/h1&gt;&#xA;&lt;h2 style=&#34;color:red; font-size: 3em&#34;&gt;Estoy en el index&lt;/h2&gt;&#xA;&lt;a href=&#34;saludo2.html&#34;&gt;Ir a saludo2&lt;/a&gt;&#xA;&lt;/body&gt;&#xA;&lt;/html&gt;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:35361/dwes/es/docs/prueba/</link>
+      <link>http://web.infenlaces.com/dwes/es/docs/prueba/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:35361/dwes/es/docs/prueba/</guid>
+      <guid>http://web.infenlaces.com/dwes/es/docs/prueba/</guid>
       <description></description>
     </item>
   </channel>

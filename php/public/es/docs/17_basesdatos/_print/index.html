@@ -1,0 +1,701 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/php/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=php/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" type="text/html" href="http://localhost:1313/php/es/docs/17_basesdatos/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/php/es/docs/17_basesdatos/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/php/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/php/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/php/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/php/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/php/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/php/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/php/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/php/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/php/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/php/favicons/android-192x192.png" sizes="192x192">
+
+<title>Prueba unitaria | Desarrollo Web en Entorno Servidor</title>
+<meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
+
+<meta property="og:title" content="Prueba unitaria" />
+<meta property="og:description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://localhost:1313/php/es/docs/17_basesdatos/" />
+
+<meta itemprop="name" content="Prueba unitaria">
+<meta itemprop="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins."><meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Prueba unitaria"/>
+<meta name="twitter:description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins."/>
+
+
+<link href="/php/scss/main.css" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/php/es/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/php/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Desarrollo Web en Entorno Servidor</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/php/en/">English</a></li>
+    <li><a class="dropdown-item" href="/php/fr/">Francés</a></li>
+    </ul>
+</div></li>
+      <li class="td-light-dark-menu nav-item dropdown">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="check2" viewBox="0 0 16 16">
+    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+  </symbol>
+  <symbol id="circle-half" viewBox="0 0 16 16">
+    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+  </symbol>
+  <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+    <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+    <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+  </symbol>
+  <symbol id="sun-fill" viewBox="0 0 16 16">
+    <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+  </symbol>
+</svg>
+
+<button class="btn btn-link nav-link dropdown-toggle d-flex align-items-center"
+        id="bd-theme"
+        type="button"
+        aria-expanded="false"
+        data-bs-toggle="dropdown"
+        data-bs-display="static"
+        aria-label="Toggle theme (auto)">
+  <svg class="bi my-1 theme-icon-active"><use href="#circle-half"></use></svg>
+</button>
+<ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#sun-fill"></use></svg>
+      Light
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+      <svg class="bi me-2 opacity-50"><use href="#moon-stars-fill"></use></svg>
+      Dark
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+  <li>
+    <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+      <svg class="bi me-2 opacity-50"><use href="#circle-half"></use></svg>
+      Auto
+      <svg class="bi ms-auto d-none"><use href="#check2"></use></svg>
+    </button>
+  </li>
+</ul>
+
+      </li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+Versión imprimible multipagina.
+<a href="#" onclick="print();return false;">Haga click aquí para imprimir</a>.
+</p><p>
+<a href="/php/es/docs/17_basesdatos/">Volver a la vista normal de esta página</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">Prueba unitaria</h1>
+
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+
+    </ul>
+
+
+<div class="content">
+      <h3 id="objetivos-de-este-tema">Objetivos de este tema</h3>
+
+
+
+
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-check-circle"></i> 
+            
+        </span>
+        
+        <span>Objetivos</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight:bold">Qué veremos aquí</h3>
+
+    <hr style="border-color:seagreen; border-width:3px"/>
+    
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            
+            <li>Repaso de bases de datos</li>
+            
+            <li>Gestor de bases de datos Mysql</li>
+            
+            <li>Conectores o Recursos en php para acceder a datos</li>
+            
+            <li>Estudo de mysqli</li>
+            
+            <li>Estudo de PDO</li>
+            
+            
+            
+        </ul>
+    </div>
+    
+
+
+</div>
+
+<h1 id="introducción-a-las-pruebas-unitarias-con-pest-en-php">Introducción a las Pruebas Unitarias con Pest en PHP</h1>
+<p>Las pruebas unitarias permiten verificar que cada parte de nuestro código funciona correctamente de manera aislada. En PHP, podemos usar herramientas como PHPUnit o Pest para escribir y ejecutar pruebas automatizadas.</p>
+<h2 id="qué-es-pest">¿Qué es Pest?</h2>
+<div class="definicion-concepto">
+  <div class="definicion-titulo">
+    
+    <i class="code" aria-hidden="true"></i>
+    
+    <strong>Pest</strong>
+  </div>
+  <div class="definicion-contenido">
+    
+Pest es un marco de pruebas para PHP que proporciona una sintaxis más simple y expresiva en comparación con PHPUnit. Está diseñado para escribir pruebas unitarias de forma más rápida y clara.
+
+  </div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="instalación-de-pest">Instalación de Pest</h2>
+<p>Para instalar Pest en un proyecto PHP, usa Composer:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#3c3d38"><span>composer require pestphp/pest --dev<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>vendor/bin/pest --init</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Esto instalará Pest y creará la estructura necesaria para escribir pruebas.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="escribiendo-la-primera-prueba">Escribiendo la Primera Prueba</h2>
+<p>Supongamos que tenemos la siguiente clase:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#3c3d38"><span>&lt;?php<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>namespace App;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>class Fecha<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#f92672">{</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    private int $year;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    public <span style="color:#66d9ef">function</span> __construct<span style="color:#f92672">(</span>int $year<span style="color:#f92672">)</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#f92672">{</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>        $this-&gt;year <span style="color:#f92672">=</span> $year;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>        $this-&gt;valida_fecha<span style="color:#f92672">()</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#f92672">}</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    public <span style="color:#66d9ef">function</span> getYear<span style="color:#f92672">()</span>: int<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#f92672">{</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>        <span style="color:#66d9ef">return</span> $this-&gt;year;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#f92672">}</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    public <span style="color:#66d9ef">function</span> setYear<span style="color:#f92672">(</span>int $year<span style="color:#f92672">)</span>: void<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#f92672">{</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>        $this-&gt;year <span style="color:#f92672">=</span> $year;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#f92672">}</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    private <span style="color:#66d9ef">function</span> valida_fecha<span style="color:#f92672">()</span>: void<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#f92672">{</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>$this-&gt;year &lt; <span style="color:#ae81ff">1900</span> <span style="color:#f92672">||</span> $this-&gt;year &gt; 2100<span style="color:#f92672">)</span> <span style="color:#f92672">{</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>            throw new <span style="color:#ae81ff">\I</span>nvalidArgumentException<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;El año debe estar entre 1900 y 2100.&#34;</span><span style="color:#f92672">)</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>        <span style="color:#f92672">}</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#f92672">}</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#f92672">}</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Para probarla con Pest, creamos un archivo en <code>tests/FechaTest.php</code>:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#3c3d38"><span>&lt;?php<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>use App<span style="color:#ae81ff">\F</span>echa;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>test<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;se puede obtener y establecer el año&#39;</span>, <span style="color:#66d9ef">function</span> <span style="color:#f92672">()</span> <span style="color:#f92672">{</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    $fecha <span style="color:#f92672">=</span> new Fecha<span style="color:#f92672">(</span>2024<span style="color:#f92672">)</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    expect<span style="color:#f92672">(</span>$fecha-&gt;getYear<span style="color:#f92672">())</span>-&gt;toBe<span style="color:#f92672">(</span>2024<span style="color:#f92672">)</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    $fecha-&gt;setYear<span style="color:#f92672">(</span>2030<span style="color:#f92672">)</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    expect<span style="color:#f92672">(</span>$fecha-&gt;getYear<span style="color:#f92672">())</span>-&gt;toBe<span style="color:#f92672">(</span>2030<span style="color:#f92672">)</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#f92672">})</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>test<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;lanza excepción si el año no es válido&#39;</span>, <span style="color:#66d9ef">function</span> <span style="color:#f92672">()</span> <span style="color:#f92672">{</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    expect<span style="color:#f92672">(</span>fn <span style="color:#f92672">()</span> <span style="color:#f92672">=</span>&gt; new Fecha<span style="color:#f92672">(</span>1800<span style="color:#f92672">))</span>-&gt;toThrow<span style="color:#f92672">(</span><span style="color:#ae81ff">\I</span>nvalidArgumentException::class<span style="color:#f92672">)</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    expect<span style="color:#f92672">(</span>fn <span style="color:#f92672">()</span> <span style="color:#f92672">=</span>&gt; new Fecha<span style="color:#f92672">(</span>2200<span style="color:#f92672">))</span>-&gt;toThrow<span style="color:#f92672">(</span><span style="color:#ae81ff">\I</span>nvalidArgumentException::class<span style="color:#f92672">)</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#f92672">})</span>;</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="explicación-de-las-pruebas">Explicación de las Pruebas</h2>
+
+
+<div class="alert alert-blue" role="alert">
+<h4 class="alert-heading">Importante</h4>
+
+    Las pruebas con Pest utilizan una sintaxis más clara que PHPUnit, permitiendo escribir <code>expect(...)-&gt;toBe(...)</code> en lugar de métodos como <code>assertEquals()</code>.
+
+</div>
+
+<ul>
+<li>
+<p><strong>Primera prueba</strong> (<code>se puede obtener y establecer el año</code>):</p>
+<ul>
+<li>Se crea un objeto <code>Fecha</code> con el año <code>2024</code> y se verifica que <code>getYear()</code> devuelve <code>2024</code>.</li>
+<li>Se cambia el año a <code>2030</code> con <code>setYear()</code> y se verifica el nuevo valor.</li>
+</ul>
+</li>
+<li>
+<p><strong>Segunda prueba</strong> (<code>lanza excepción si el año no es válido</code>):</p>
+<ul>
+<li>Se intenta crear un objeto <code>Fecha</code> con <code>1800</code> y <code>2200</code>, y se espera que Pest lance una excepción <code>InvalidArgumentException</code>.</li>
+</ul>
+</li>
+</ul>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="ejecutando-las-pruebas">Ejecutando las Pruebas</h2>
+<p>Para ejecutar las pruebas, simplemente usa:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#3c3d38"><span>vendor/bin/pest</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Si todo está bien, verás un mensaje indicando que las pruebas han pasado ✅.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="beneficios-de-usar-pest">Beneficios de Usar Pest</h2>
+<details>
+    <summary>Ventajas de Pest</summary>
+    <div class="solution-content">
+        
+- **Sintaxis simple**: Usa una sintaxis clara y sin clases de test extensas.
+- **Integración con PHPUnit**: Se puede usar junto con PHPUnit sin problemas.
+- **Mayor legibilidad**: Los tests son más fáciles de escribir y entender.
+
+    </div>
+</details>
+
+<style>
+    .solution-content {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-top: 5px;
+        background-color: #f9f9f9;
+    }
+    summary {
+        cursor: pointer;
+        font-weight: bold;
+        color: #0073e6;
+    }
+</style>
+
+<hr style="border-color: red; border-width: 3px;"/>
+<h1 id="-cheat-sheet-de-pestphp">📌 Cheat Sheet de PestPHP</h1>
+<p>Pest ofrece una sintaxis clara y expresiva para escribir pruebas en PHP. Aquí tienes un resumen de los métodos más usados con <code>expect()</code> y otros objetos útiles.</p>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="-expect-y-sus-métodos">✅ <code>expect()</code> y sus Métodos</h2>
+<p><code>expect()</code> es la base de las pruebas en Pest y permite hacer aserciones sobre valores.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#3c3d38"><span>expect<span style="color:#f92672">(</span>5<span style="color:#f92672">)</span>-&gt;toBe<span style="color:#f92672">(</span>5<span style="color:#f92672">)</span>; // ✅ Pasa la prueba<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>expect<span style="color:#f92672">(</span>5<span style="color:#f92672">)</span>-&gt;not-&gt;toBe<span style="color:#f92672">(</span>10<span style="color:#f92672">)</span>; // ✅ Pasa la prueba</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="métodos-disponibles">Métodos Disponibles</h3>
+<table>
+<thead>
+<tr>
+<th>Método</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>toBe($valor)</code></td>
+<td>Verifica que el valor sea exactamente igual (<code>===</code>).</td>
+</tr>
+<tr>
+<td><code>not-&gt;toBe($valor)</code></td>
+<td>Verifica que el valor <strong>no</strong> sea igual.</td>
+</tr>
+<tr>
+<td><code>toEqual($valor)</code></td>
+<td>Verifica que el valor sea igual (<code>==</code>).</td>
+</tr>
+<tr>
+<td><code>toBeNull()</code></td>
+<td>Verifica que el valor sea <code>null</code>.</td>
+</tr>
+<tr>
+<td><code>toBeTrue()</code></td>
+<td>Verifica que el valor sea <code>true</code>.</td>
+</tr>
+<tr>
+<td><code>toBeFalse()</code></td>
+<td>Verifica que el valor sea <code>false</code>.</td>
+</tr>
+<tr>
+<td><code>toBeGreaterThan($n)</code></td>
+<td>Verifica que sea mayor que <code>$n</code>.</td>
+</tr>
+<tr>
+<td><code>toBeLessThan($n)</code></td>
+<td>Verifica que sea menor que <code>$n</code>.</td>
+</tr>
+<tr>
+<td><code>toContain($item)</code></td>
+<td>Verifica que un array o string contenga el valor <code>$item</code>.</td>
+</tr>
+<tr>
+<td><code>toHaveCount($n)</code></td>
+<td>Verifica que un array tenga exactamente <code>$n</code> elementos.</td>
+</tr>
+<tr>
+<td><code>toBeInstanceOf($clase)</code></td>
+<td>Verifica que un objeto sea instancia de <code>$clase</code>.</td>
+</tr>
+<tr>
+<td><code>toThrow($excepcion)</code></td>
+<td>Verifica que se lance una excepción específica.</td>
+</tr>
+</tbody>
+</table>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="-expectativas-para-arrays-y-cadenas">🔥 Expectativas para Arrays y Cadenas</h2>
+<table>
+<thead>
+<tr>
+<th>Método</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>toContain($valor)</code></td>
+<td>Verifica si un array o string contiene el <code>$valor</code>.</td>
+</tr>
+<tr>
+<td><code>toMatch($regex)</code></td>
+<td>Verifica si una cadena coincide con una expresión regular.</td>
+</tr>
+<tr>
+<td><code>toStartWith($str)</code></td>
+<td>Verifica si una cadena empieza con <code>$str</code>.</td>
+</tr>
+<tr>
+<td><code>toEndWith($str)</code></td>
+<td>Verifica si una cadena termina con <code>$str</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>Ejemplo:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#3c3d38"><span>expect<span style="color:#f92672">([</span><span style="color:#e6db74">&#39;PHP&#39;</span>, <span style="color:#e6db74">&#39;Laravel&#39;</span>, <span style="color:#e6db74">&#39;Pest&#39;</span><span style="color:#f92672">])</span>-&gt;toContain<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;Pest&#39;</span><span style="color:#f92672">)</span>; // ✅<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>expect<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;PestPHP&#39;</span><span style="color:#f92672">)</span>-&gt;toStartWith<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;Pest&#39;</span><span style="color:#f92672">)</span>; // ✅</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="-test-y-agrupación-de-pruebas">🛠 <code>test()</code> y Agrupación de Pruebas</h2>
+<p>Pest permite agrupar pruebas de forma sencilla:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#3c3d38"><span>test<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;sumar dos números&#39;</span>, <span style="color:#66d9ef">function</span> <span style="color:#f92672">()</span> <span style="color:#f92672">{</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    $calc <span style="color:#f92672">=</span> new Calculadora<span style="color:#f92672">()</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    expect<span style="color:#f92672">(</span>$calc-&gt;sumar<span style="color:#f92672">(</span>2, 3<span style="color:#f92672">))</span>-&gt;toBe<span style="color:#f92672">(</span>5<span style="color:#f92672">)</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#f92672">})</span>;</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Para agrupar varias pruebas relacionadas:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#3c3d38"><span>describe<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;Pruebas de la Calculadora&#39;</span>, <span style="color:#66d9ef">function</span> <span style="color:#f92672">()</span> <span style="color:#f92672">{</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    test<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;sumar dos números&#39;</span>, <span style="color:#66d9ef">function</span> <span style="color:#f92672">()</span> <span style="color:#f92672">{</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>        $calc <span style="color:#f92672">=</span> new Calculadora<span style="color:#f92672">()</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>        expect<span style="color:#f92672">(</span>$calc-&gt;sumar<span style="color:#f92672">(</span>2, 3<span style="color:#f92672">))</span>-&gt;toBe<span style="color:#f92672">(</span>5<span style="color:#f92672">)</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#f92672">})</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    test<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;restar dos números&#39;</span>, <span style="color:#66d9ef">function</span> <span style="color:#f92672">()</span> <span style="color:#f92672">{</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>        $calc <span style="color:#f92672">=</span> new Calculadora<span style="color:#f92672">()</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>        expect<span style="color:#f92672">(</span>$calc-&gt;restar<span style="color:#f92672">(</span>5, 2<span style="color:#f92672">))</span>-&gt;toBe<span style="color:#f92672">(</span>3<span style="color:#f92672">)</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#f92672">})</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#f92672">})</span>;</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="-excepciones-y-errores">⚠️ Excepciones y Errores</h2>
+<p>Puedes probar excepciones fácilmente con <code>toThrow()</code>:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#3c3d38"><span>expect<span style="color:#f92672">(</span>fn <span style="color:#f92672">()</span> <span style="color:#f92672">=</span>&gt; new Fecha<span style="color:#f92672">(</span>1800<span style="color:#f92672">))</span>-&gt;toThrow<span style="color:#f92672">(</span><span style="color:#ae81ff">\I</span>nvalidArgumentException::class<span style="color:#f92672">)</span>;</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Si necesitas verificar un mensaje específico de la excepción:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code><span style="background-color:#3c3d38"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;display:grid;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex; background-color:#3c3d38"><span>expect<span style="color:#f92672">(</span>fn <span style="color:#f92672">()</span> <span style="color:#f92672">=</span>&gt; new Fecha<span style="color:#f92672">(</span>1800<span style="color:#f92672">))</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    -&gt;toThrow<span style="color:#f92672">(</span><span style="color:#ae81ff">\I</span>nvalidArgumentException::class, <span style="color:#e6db74">&#34;El año debe estar entre 1900 y 2100.&#34;</span><span style="color:#f92672">)</span>;</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr style="border-color: red; border-width: 3px;"/>
+<h2 id="-hooks-beforeeach-y-aftereach">🏗 Hooks: <code>beforeEach()</code> y <code>afterEach()</code></h2>
+<p>Pest permite ejecutar código antes o después de cada prueba.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span>beforeEach<span style="color:#f92672">(</span><span style="color:#66d9ef">function</span> <span style="color:#f92672">()</span> <span style="color:#f92672">{</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    $this-&gt;calc <span style="color:#f92672">=</span> new Calculadora<span style="color:#f92672">()</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#f92672">})</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>test<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;sumar dos números&#39;</span>, <span style="color:#66d9ef">function</span> <span style="color:#f92672">()</span> <span style="color:#f92672">{</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>    expect<span style="color:#f92672">(</span>$this-&gt;calc-&gt;sumar<span style="color:#f92672">(</span>2, 3<span style="color:#f92672">))</span>-&gt;toBe<span style="color:#f92672">(</span>5<span style="color:#f92672">)</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#f92672">})</span>;<span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#75715e">## Referencias</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010"></span>
+
+
+
+<div style="border: 1px solid navy; border-radius: 5px; overflow: hidden;">
+    <div style="background-color: navy; color: white;
+    font-weight: bold; padding: 10px; display: flex; align-items: center;">
+        
+        <span style="margin-right: 8px;">
+            
+                <i class="fas fa-book"></i> 
+            
+        </span>
+        
+        <span>Documentación de Pest</span>
+    </div>
+
+    <h3 style="padding: 5px; font-weight: bold; color: navy;">Fuentes de Información</h3>
+
+    <hr style="border-color: lightblue; border-width: 3px"/>
+    
+    <div style="background-color: #e0f7fa; color: navy; padding: 10px;">
+        <ul>
+            
+            <li><ul>
+<li><a href="https://pestphp.com/">PestPHP - Documentación Oficial</a></li>
+</ul>
+</li>
+            
+            <li><ul>
+<li><a href="https://laravel.com/docs/10.x/testing#pest">Pruebas en Laravel con Pest</a></li>
+</ul>
+</li>
+            
+            
+            
+        </ul>
+    </div>
+</div>
+<span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></div>
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="manuelromeromiguel@gmail.com" aria-label="manuelromeromiguel@gmail.com">
+    <a target="_blank" rel="noopener" href="mailto:manuelromeromiguel@gmail.com" aria-label="manuelromeromiguel@gmail.com">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2025
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/php/js/main.js"></script>
+<script defer src="/php/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/php/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

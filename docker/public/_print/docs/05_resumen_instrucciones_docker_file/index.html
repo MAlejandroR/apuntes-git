@@ -1,28 +1,28 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/docker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=docker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="//:1313/docs/05_resumen_instrucciones_docker_file/">
-<link rel="alternate" type="application/rss&#43;xml" href="//:1313/docs/05_resumen_instrucciones_docker_file/index.xml">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docker/docs/05_resumen_instrucciones_docker_file/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docker/docs/05_resumen_instrucciones_docker_file/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
-<link rel="shortcut icon" href="/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+<link rel="shortcut icon" href="/docker/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/docker/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/docker/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/docker/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/docker/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/docker/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/docker/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/docker/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/docker/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/docker/favicons/android-192x192.png" sizes="192x192">
 
 <title>Gestión de archivos y directorios | Despliegue de aplicacones Web</title>
 <meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
 
-<meta property="og:url" content="//:1313/docs/05_resumen_instrucciones_docker_file/">
+<meta property="og:url" content="http://localhost:1313/docker/docs/05_resumen_instrucciones_docker_file/">
   <meta property="og:site_name" content="Despliegue de aplicacones Web">
   <meta property="og:title" content="Gestión de archivos y directorios">
   <meta property="og:description" content="⭐ Comandos Repaso de comandos usados en Dockefiler Docerfile es un fichero de comandos para generar una imagen
@@ -46,7 +46,7 @@ Crea una imagen a partir del fichero Dockerfile ubicado en el mismo directorio d
 docker build -t web_old:v1 . Warning la opción -t permite especificar el nombere de la imagen el punto final ’.’ especifica la ubicación del fichero Dockerfile, el directorio actual Para ver más opciones del comando build ver _docker help build">
 
 
-<link href="/scss/main.css" rel="stylesheet">
+<link href="/docker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -57,8 +57,8 @@ docker build -t web_old:v1 . Warning la opción -t permite especificar el nomber
     <header>
       <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
 <div class="container-fluid flex-column flex-md-row ">
-  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo">
-    <img src="/images/logo.png" alt="Logo" width="150" height="auto" />
+  <a class="navbar-brand" href="/docker/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/docker/images/logo.png" alt="Logo" width="150" height="auto" />
     </span><span class="navbar-brand__name">Despliegue de aplicacones Web</span></a>
   <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
     <ul class="navbar-nav">
@@ -66,8 +66,8 @@ docker build -t web_old:v1 . Warning la opción -t permite especificar el nomber
         <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/en/">English</a></li>
-    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/docker/en/">English</a></li>
+    <li><a class="dropdown-item" href="/docker/fr/">Francés</a></li>
     </ul>
 </div></li>
       </ul>
@@ -94,7 +94,7 @@ docker build -t web_old:v1 . Warning la opción -t permite especificar el nomber
 Versión imprimible multipagina.
 <a href="#" onclick="print();return false;">Haga click aquí para imprimir</a>.
 </p><p>
-<a href="/docs/05_resumen_instrucciones_docker_file/">Volver a la vista normal de esta página</a>.
+<a href="/docker/docs/05_resumen_instrucciones_docker_file/">Volver a la vista normal de esta página</a>.
 </p>
 </div>
 
@@ -337,7 +337,7 @@ Versión imprimible multipagina.
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -d -p 8000:80 --name web_old web_old:v1 sh -c <span style="color:#cd5555">&#34;service apache2 start &amp;&amp; tail -f /dev/null&#34;</span>
 </span></span></code></pre></div><ul>
 <li>Abrimo apache y vemo el index.php
-<img src="/docs/05_resumen_instrucciones_docker_file/img.png" alt="img.png"></li>
+<img src="/docker/docs/05_resumen_instrucciones_docker_file/img.png" alt="img.png"></li>
 </ul>
 
 </div>
@@ -403,7 +403,7 @@ Versión imprimible multipagina.
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>docker run -d -p 8000:80 --name web_old web_old:v1 
 </span></span></code></pre></div><ul>
 <li>Solicitamos el recurso en un navegador y vemos el resultado <br>
-<img src="/docs/05_resumen_instrucciones_docker_file/img_1.png" alt="img_1.png"></li>
+<img src="/docker/docs/05_resumen_instrucciones_docker_file/img_1.png" alt="img_1.png"></li>
 </ul>
 
 </div>
@@ -571,9 +571,9 @@ Versión imprimible multipagina.
 </footer>
 
     </div>
-    <script src="/js/main.js"></script>
-<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
-<script src='/js/tabpane-persist.js'></script>
+    <script src="/docker/js/main.js"></script>
+<script defer src="/docker/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/docker/js/tabpane-persist.js'></script>
 
   </body>
 </html>

@@ -1,27 +1,27 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/docker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=docker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="alternate" type="text/html" href="//:1313/_print/docs/04_ejercicios/5_dockercompose/nginx/app/">
+<link rel="alternate" type="text/html" href="http://localhost:1313/docker/_print/docs/04_ejercicios/5_dockercompose/nginx/app/">
 <meta name="robots" content="noindex, nofollow">
 
 
-<link rel="shortcut icon" href="/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+<link rel="shortcut icon" href="/docker/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/docker/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/docker/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/docker/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/docker/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/docker/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/docker/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/docker/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/docker/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/docker/favicons/android-192x192.png" sizes="192x192">
 
 <title>Despliegue de aplicacones Web</title>
 <meta name="description" content="&lt;!DOCTYPE html&gt; Title Hola desde docker Estoy en el index Ir a saludo2 ">
 
-<meta property="og:url" content="//:1313/docs/04_ejercicios/5_dockercompose/nginx/app/">
+<meta property="og:url" content="http://localhost:1313/docker/docs/04_ejercicios/5_dockercompose/nginx/app/">
   <meta property="og:site_name" content="Despliegue de aplicacones Web">
   <meta property="og:title" content="Despliegue de aplicacones Web">
   <meta property="og:description" content="&lt;!DOCTYPE html&gt; Title Hola desde docker Estoy en el index Ir a saludo2">
@@ -37,7 +37,7 @@
   <meta name="twitter:description" content="&lt;!DOCTYPE html&gt; Title Hola desde docker Estoy en el index Ir a saludo2">
 
 
-<link href="/scss/main.css" rel="stylesheet">
+<link href="/docker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,8 +48,8 @@
     <header>
       <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
 <div class="container-fluid flex-column flex-md-row ">
-  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo">
-    <img src="/images/logo.png" alt="Logo" width="150" height="auto" />
+  <a class="navbar-brand" href="/docker/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/docker/images/logo.png" alt="Logo" width="150" height="auto" />
     </span><span class="navbar-brand__name">Despliegue de aplicacones Web</span></a>
   <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
     <ul class="navbar-nav">
@@ -57,8 +57,8 @@
         <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/en/">English</a></li>
-    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/docker/en/">English</a></li>
+    <li><a class="dropdown-item" href="/docker/fr/">Francés</a></li>
     </ul>
 </div></li>
       </ul>
@@ -85,70 +85,74 @@
       <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/en/">English</a></li>
-    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/docker/en/">English</a></li>
+    <li><a class="dropdown-item" href="/docker/fr/">Francés</a></li>
     </ul>
 </div>
     </div>
     <ul class="td-sidebar-nav__section pe-md-3 ul-0">
-      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
-  <a href="/docs/" title="Introducción" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><i class="fab fa-docker"></i><span class="">Docker</span></a>
+      <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-dockerdocs-li">
+  <a href="/docker/docs/" title="Introducción" class="align-left ps-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-dockerdocs"><i class="fab fa-docker"></i><span class="">Docker</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs00_conceptos-li">
-  <input type="checkbox" id="m-docs00_conceptos-check"/>
-  <label for="m-docs00_conceptos-check"><a href="/docs/00_conceptos/" title="Conceptos sobre docker" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs00_conceptos"><i class="fa-regular fa-lightbulb"></i><span class="">Conceptos</span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs00_conceptos-li">
+  <input type="checkbox" id="m-dockerdocs00_conceptos-check"/>
+  <label for="m-dockerdocs00_conceptos-check"><a href="/docker/docs/00_conceptos/" title="Conceptos sobre docker" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs00_conceptos"><i class="fa-regular fa-lightbulb"></i><span class="">Conceptos</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs01_instalacion-li">
-  <input type="checkbox" id="m-docs01_instalacion-check"/>
-  <label for="m-docs01_instalacion-check"><a href="/docs/01_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs01_instalacion"><i class="fa fa-download"></i><span class="">Instalación</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs01_instalacion-li">
+  <input type="checkbox" id="m-dockerdocs01_instalacion-check"/>
+  <label for="m-dockerdocs01_instalacion-check"><a href="/docker/docs/01_instalacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs01_instalacion"><i class="fa fa-download"></i><span class="">Instalación</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs02_contenedores-e-imc3a1genes-li">
-  <input type="checkbox" id="m-docs02_contenedores-e-imc3a1genes-check"/>
-  <label for="m-docs02_contenedores-e-imc3a1genes-check"><a href="/docs/02_contenedores-e-im%C3%A1genes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs02_contenedores-e-imc3a1genes"><i class="fa  fa-box"></i><span class="">Contenedores e imágenes</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs02_contenedores-e-imc3a1genes-li">
+  <input type="checkbox" id="m-dockerdocs02_contenedores-e-imc3a1genes-check"/>
+  <label for="m-dockerdocs02_contenedores-e-imc3a1genes-check"><a href="/docker/docs/02_contenedores-e-im%C3%A1genes/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs02_contenedores-e-imc3a1genes"><i class="fa  fa-box"></i><span class="">Contenedores e imágenes</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs04_comandos-li">
-  <input type="checkbox" id="m-docs04_comandos-check"/>
-  <label for="m-docs04_comandos-check"><a href="/docs/04_comandos/" title="Docker en  línea de comandos " class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs04_comandos"><i class="fa-solid fa-terminal"></i><span class="">Comandos docker</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs04_comandos-li">
+  <input type="checkbox" id="m-dockerdocs04_comandos-check"/>
+  <label for="m-dockerdocs04_comandos-check"><a href="/docker/docs/04_comandos/" title="Docker en  línea de comandos " class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs04_comandos"><i class="fa-solid fa-terminal"></i><span class="">Comandos docker</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs06_dockefile-li">
-  <input type="checkbox" id="m-docs06_dockefile-check"/>
-  <label for="m-docs06_dockefile-check"><a href="/docs/06_dockefile/" title="Fichero de ejecución para crear imágenes DockerFile" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs06_dockefile"><i class="fa-solid fa-terminal"></i><span class="">DockerFile</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs06_dockefile-li">
+  <input type="checkbox" id="m-dockerdocs06_dockefile-check"/>
+  <label for="m-dockerdocs06_dockefile-check"><a href="/docker/docs/06_dockefile/" title="Fichero de ejecución para crear imágenes DockerFile" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs06_dockefile"><i class="fa-solid fa-terminal"></i><span class="">DockerFile</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs05_resumen_instrucciones_docker_file-li">
-  <input type="checkbox" id="m-docs05_resumen_instrucciones_docker_file-check"/>
-  <label for="m-docs05_resumen_instrucciones_docker_file-check"><a href="/docs/05_resumen_instrucciones_docker_file/" title="Gestión de archivos y directorios" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs05_resumen_instrucciones_docker_file"><i class="fa-regular fa-file-code"></i><span class="">Archivos y directorios</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs05_resumen_instrucciones_docker_file-li">
+  <input type="checkbox" id="m-dockerdocs05_resumen_instrucciones_docker_file-check"/>
+  <label for="m-dockerdocs05_resumen_instrucciones_docker_file-check"><a href="/docker/docs/05_resumen_instrucciones_docker_file/" title="Gestión de archivos y directorios" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs05_resumen_instrucciones_docker_file"><i class="fa-regular fa-file-code"></i><span class="">Archivos y directorios</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs07_docker-compose-li">
-  <input type="checkbox" id="m-docs07_docker-compose-check"/>
-  <label for="m-docs07_docker-compose-check"><a href="/docs/07_docker-compose/" title="Docker compose" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs07_docker-compose"><i class="fas fa-file-code"></i><span class="">docker compose</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs07_docker-compose-li">
+  <input type="checkbox" id="m-dockerdocs07_docker-compose-check"/>
+  <label for="m-dockerdocs07_docker-compose-check"><a href="/docker/docs/07_docker-compose/" title="Docker compose" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs07_docker-compose"><i class="fas fa-file-code"></i><span class="">docker compose</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs08_ejercicios-li">
-  <input type="checkbox" id="m-docs08_ejercicios-check"/>
-  <label for="m-docs08_ejercicios-check"><a href="/docs/08_ejercicios/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs08_ejercicios"><i class="fa-solid fa-list-check"></i><span class="">Ejercicios</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dockerdocs08_ejercicios-li">
+  <input type="checkbox" id="m-dockerdocs08_ejercicios-check"/>
+  <label for="m-dockerdocs08_ejercicios-check"><a href="/docker/docs/08_ejercicios/" title="Docker Prácticas" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs08_ejercicios"><i class="fa-solid fa-list-check"></i><span class="">Ejercicios</span></a></label>
   
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs08_ejercicios1_imagenes-li">
-  <input type="checkbox" id="m-docs08_ejercicios1_imagenes-check"/>
-  <label for="m-docs08_ejercicios1_imagenes-check"><a href="/docs/08_ejercicios/1_imagenes/" title="Crea imágenes" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs08_ejercicios1_imagenes"><i class="fa-regular fa-file-image"></i><span class="">Imágenes</span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs08_ejercicios1_imagenes-li">
+  <input type="checkbox" id="m-dockerdocs08_ejercicios1_imagenes-check"/>
+  <label for="m-dockerdocs08_ejercicios1_imagenes-check"><a href="/docker/docs/08_ejercicios/1_imagenes/" title="Crea imágenes" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs08_ejercicios1_imagenes"><i class="fa-regular fa-file-image"></i><span class="">Imágenes</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs08_ejercicios2_contenedores-li">
-  <input type="checkbox" id="m-docs08_ejercicios2_contenedores-check"/>
-  <label for="m-docs08_ejercicios2_contenedores-check"><a href="/docs/08_ejercicios/2_contenedores/" title="Crea Contenedores" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs08_ejercicios2_contenedores"><i class="fa-solid fa-box-open"></i><span class="">Contenedores</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs08_ejercicios2_contenedores-li">
+  <input type="checkbox" id="m-dockerdocs08_ejercicios2_contenedores-check"/>
+  <label for="m-dockerdocs08_ejercicios2_contenedores-check"><a href="/docker/docs/08_ejercicios/2_contenedores/" title="Crea Contenedores" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs08_ejercicios2_contenedores"><i class="fa-solid fa-box-open"></i><span class="">Contenedores</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs08_ejercicios3_contenedores_imagenes-li">
-  <input type="checkbox" id="m-docs08_ejercicios3_contenedores_imagenes-check"/>
-  <label for="m-docs08_ejercicios3_contenedores_imagenes-check"><a href="/docs/08_ejercicios/3_contenedores_imagenes/" title="Contenedores" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs08_ejercicios3_contenedores_imagenes"><i class="fa-solid fa-trowel"></i><span class="">Container to images</span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs08_ejercicios3_contenedores_imagenes-li">
+  <input type="checkbox" id="m-dockerdocs08_ejercicios3_contenedores_imagenes-check"/>
+  <label for="m-dockerdocs08_ejercicios3_contenedores_imagenes-check"><a href="/docker/docs/08_ejercicios/3_contenedores_imagenes/" title="Contenedores" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs08_ejercicios3_contenedores_imagenes"><i class="fa-solid fa-trowel"></i><span class="">Container to images</span></a></label>
   
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docs70_anexos-li">
-  <input type="checkbox" id="m-docs70_anexos-check"/>
-  <label for="m-docs70_anexos-check"><a href="/docs/70_anexos/" title="Anexos para el módulo" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs70_anexos"><i class="code-web_old"></i><span class="">Anexos </span></a></label>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dockerdocs70_anexos-li">
+  <input type="checkbox" id="m-dockerdocs70_anexos-check"/>
+  <label for="m-dockerdocs70_anexos-check"><a href="/docker/docs/70_anexos/" title="Anexos para el módulo" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs70_anexos"><i class="code-web_old"></i><span class="">Anexos </span></a></label>
   
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docs70_anexos01_comando-linux-li">
-  <input type="checkbox" id="m-docs70_anexos01_comando-linux-check"/>
-  <label for="m-docs70_anexos01_comando-linux-check"><a href="/docs/70_anexos/01_comando-linux/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-docs70_anexos01_comando-linux"><i class="fas fa-code"></i><span class="">Comandos linux</span></a></label>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs70_anexos01_comando-linux-li">
+  <input type="checkbox" id="m-dockerdocs70_anexos01_comando-linux-check"/>
+  <label for="m-dockerdocs70_anexos01_comando-linux-check"><a href="/docker/docs/70_anexos/01_comando-linux/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs70_anexos01_comando-linux"><i class="fas fa-code"></i><span class="">Comandos linux</span></a></label>
+  
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dockerdocs70_anexos02_resumen-li">
+  <input type="checkbox" id="m-dockerdocs70_anexos02_resumen-check"/>
+  <label for="m-dockerdocs70_anexos02_resumen-check"><a href="/docker/docs/70_anexos/02_resumen/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dockerdocs70_anexos02_resumen"><i class="fa fa-docker"></i><span class="">Comandos docker</span></a></label>
   
 </li>
   </ul>
@@ -176,7 +180,7 @@
             <nav aria-label="breadcrumb" class="td-breadcrumbs">
   <ol class="breadcrumb">
   <li class="breadcrumb-item">
-    <a href="/docs/">Docker</a></li>
+    <a href="/docker/docs/">Docker</a></li>
   <li class="breadcrumb-item">
     <a href="">Ejercicios</a></li>
   <li class="breadcrumb-item">
@@ -243,9 +247,9 @@
 </footer>
 
     </div>
-    <script src="/js/main.js"></script>
-<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
-<script src='/js/tabpane-persist.js'></script>
+    <script src="/docker/js/main.js"></script>
+<script defer src="/docker/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/docker/js/tabpane-persist.js'></script>
 
   </body>
 </html>

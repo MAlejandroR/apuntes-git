@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6f964790-2df7-46e0-9176-a9406fdf2ef0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/es/docs/06_autenticacion/OTP/_index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/es/docs/10_Test/pest.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/es/docs/13_Blueprint/_index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/es/docs/14_Filament/_index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/es/docs/30_Pinia/_index.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/content/es/docs/999_cheatseet/06_AuthFortity/index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/es/docs/06_autenticacion/.$Diagrama sin título.drawio.bkp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/es/docs/06_autenticacion/Fortify/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/es/docs/06_autenticacion/Fortify/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/es/docs/06_autenticacion/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/es/docs/06_autenticacion/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/es/docs/10_Test/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/es/docs/10_Test/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/es/docs/11_roles/_index.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/es/docs/11_roles/_index.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content/es/docs/11_roles/eloquent.md" beforeDir="false" afterPath="$PROJECT_DIR$/content/es/docs/11_roles/eloquent.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/shortcodes/desplegable.html" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/shortcodes/desplegable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/categories/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/categories/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/categories/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/categories/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/categories/laravel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/categories/laravel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/categories/laravel/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/categories/laravel/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/01_introducción/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/01_introducción/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/02_instalación/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/02_instalación/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/03_rutas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/03_rutas/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/04_plantillas/01_blade/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/04_plantillas/01_blade/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/04_plantillas/02_creandodiseño/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/04_plantillas/02_creandodiseño/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/04_plantillas/03_componentes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/04_plantillas/03_componentes/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/04_plantillas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/04_plantillas/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/05_controlador/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/05_controlador/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/06_autenticacion/breeze/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/06_autenticacion/breeze/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/06_autenticacion/fortify/01_instalacion/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/06_autenticacion/fortify/01_instalacion/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/06_autenticacion/fortify/02_page_role_autenticated/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/06_autenticacion/fortify/02_page_role_autenticated/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/06_autenticacion/fortify/diagrama/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/06_autenticacion/fortify/diagrama/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/06_autenticacion/fortify/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/06_autenticacion/fortify/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/06_autenticacion/fortify/peronsalizar_controladores/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/06_autenticacion/fortify/peronsalizar_controladores/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/07_migraciones/eloquent/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/07_migraciones/eloquent/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/08_crud/01_la-tabla/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/08_crud/01_la-tabla/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/08_crud/03_el-controlador/01_listado/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/08_crud/03_el-controlador/01_listado/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/08_crud/03_el-controlador/02_crearalumno/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/08_crud/03_el-controlador/02_crearalumno/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/08_crud/03_el-controlador/03_modificar/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/08_crud/03_el-controlador/03_modificar/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/08_crud/03_el-controlador/04_borrar/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/08_crud/03_el-controlador/04_borrar/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/100_anexos/bootstrap/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/100_anexos/bootstrap/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/100_anexos/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/100_anexos/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/10_api/1.instalacion/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/10_api/1.instalacion/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/10_api/2.visiongeneral/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/10_api/2.visiongeneral/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/10_api/3.la-vista/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/10_api/3.la-vista/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/10_api/4.-swagger/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/10_api/4.-swagger/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/10_api/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/10_api/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/10_test/chat/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/10_test/chat/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/11_roles/eloquent/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/11_roles/eloquent/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/999_cheatseet/04_despliegue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/999_cheatseet/04_despliegue/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/999_cheatseet/04_despliegue/rutas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/999_cheatseet/04_despliegue/rutas/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/999_cheatseet/04_despliegue/vistas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/999_cheatseet/04_despliegue/vistas/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/999_cheatseet/05_filefacade/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/999_cheatseet/05_filefacade/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/999_cheatseet/artisan/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/999_cheatseet/artisan/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/999_cheatseet/blade/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/999_cheatseet/blade/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/999_cheatseet/carbon/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/999_cheatseet/carbon/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/999_cheatseet/helper/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/999_cheatseet/helper/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/999_cheatseet/helper/rutas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/999_cheatseet/helper/rutas/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/999_cheatseet/helper/vistas/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/999_cheatseet/helper/vistas/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/999_cheatseet/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/999_cheatseet/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/999_cheatseet/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/999_cheatseet/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/es/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/es/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/index.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/laravel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/laravel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/tags/laravel/index.xml" beforeDir="false" afterPath="$PROJECT_DIR$/public/tags/laravel/index.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2vtrknSsO4lVGJPpIl5o0PcK4xx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/manuel/hugo/apuntes/laravel/content/es/docs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/content/es/docs" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-PS-251.26094.133" />
+        <option value="bundled-php-predefined-a98d8de5180a-c5828cf854d9-com.jetbrains.php.sharedIndexes-PS-251.26094.133" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f964790-2df7-46e0-9176-a9406fdf2ef0" name="Changes" comment="" />
+      <created>1744975357492</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744975357492</updated>
+      <workItem from="1744975360764" duration="1222000" />
+      <workItem from="1744990948566" duration="1821000" />
+      <workItem from="1749797517193" duration="1263000" />
+      <workItem from="1749803828406" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

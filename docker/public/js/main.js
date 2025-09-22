@@ -6409,7 +6409,7 @@ limitations under the License.
           }
 
           var query = $(this).val();
-          var searchPage = '//:1313/search/?q=' + query;
+          var searchPage = 'http://localhost:1313/docker/search/?q=' + query;
           document.location = searchPage;
 
           return false;

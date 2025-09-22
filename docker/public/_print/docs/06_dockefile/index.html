@@ -1,46 +1,43 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/docker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=docker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="//:1313/docs/06_dockefile/">
-<link rel="alternate" type="application/rss&#43;xml" href="//:1313/docs/06_dockefile/index.xml">
+<link rel="canonical" type="text/html" href="http://localhost:1313/docker/docs/06_dockefile/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docker/docs/06_dockefile/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
-<link rel="shortcut icon" href="/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+<link rel="shortcut icon" href="/docker/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/docker/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/docker/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/docker/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/docker/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/docker/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/docker/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/docker/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/docker/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/docker/favicons/android-192x192.png" sizes="192x192">
 
 <title>Fichero de ejecución para crear imágenes DockerFile | Despliegue de aplicacones Web</title>
 <meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
 
-<meta property="og:url" content="//:1313/docs/06_dockefile/">
+<meta property="og:url" content="http://localhost:1313/docker/docs/06_dockefile/">
   <meta property="og:site_name" content="Despliegue de aplicacones Web">
   <meta property="og:title" content="Fichero de ejecución para crear imágenes DockerFile">
-  <meta property="og:description" content="Dockerfile Un Dockerfile es un fichero de texto que contiene una serie de instrucciones para crear una imagen . Este fichero tiene un formato concreto y necesita al menos la instrucción FROM para especificar la imagen base a partir de la cual construiremos nuestra imagen personalizada. Para qué La idea es que partiendo de una imagen personalicemos la imagen quequeremos crear,
-Después, a partir de esta imagen, levantaremos el contenedor)">
+  <meta property="og:description" content="Dockerfile Un Dockerfile es un fichero de texto que contiene una serie de instrucciones para crear una imagen de Docker. Este fichero tiene un formato específico y necesita, como mínimo, la instrucción FROM para indicar la imagen base a partir de la cual construiremos nuestra propia imagen personalizada. ¿Para qué sirve? La idea es partir de una imagen base y personalizarla según nuestras necesidades. Una vez creada la nueva imagen, podremos utilizarla para levantar contenedores. Construcción del Dockerfile Para ejecutar las instrucciones del Dockerfile, utilizamos el comando docker build :">
   <meta property="og:locale" content="es">
   <meta property="og:type" content="website">
 
   <meta itemprop="name" content="Fichero de ejecución para crear imágenes DockerFile">
-  <meta itemprop="description" content="Dockerfile Un Dockerfile es un fichero de texto que contiene una serie de instrucciones para crear una imagen . Este fichero tiene un formato concreto y necesita al menos la instrucción FROM para especificar la imagen base a partir de la cual construiremos nuestra imagen personalizada. Para qué La idea es que partiendo de una imagen personalicemos la imagen quequeremos crear,
-Después, a partir de esta imagen, levantaremos el contenedor)">
-  <meta itemprop="wordCount" content="813">
+  <meta itemprop="description" content="Dockerfile Un Dockerfile es un fichero de texto que contiene una serie de instrucciones para crear una imagen de Docker. Este fichero tiene un formato específico y necesita, como mínimo, la instrucción FROM para indicar la imagen base a partir de la cual construiremos nuestra propia imagen personalizada. ¿Para qué sirve? La idea es partir de una imagen base y personalizarla según nuestras necesidades. Una vez creada la nueva imagen, podremos utilizarla para levantar contenedores. Construcción del Dockerfile Para ejecutar las instrucciones del Dockerfile, utilizamos el comando docker build :">
+  <meta itemprop="wordCount" content="818">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Fichero de ejecución para crear imágenes DockerFile">
-  <meta name="twitter:description" content="Dockerfile Un Dockerfile es un fichero de texto que contiene una serie de instrucciones para crear una imagen . Este fichero tiene un formato concreto y necesita al menos la instrucción FROM para especificar la imagen base a partir de la cual construiremos nuestra imagen personalizada. Para qué La idea es que partiendo de una imagen personalicemos la imagen quequeremos crear,
-Después, a partir de esta imagen, levantaremos el contenedor)">
+  <meta name="twitter:description" content="Dockerfile Un Dockerfile es un fichero de texto que contiene una serie de instrucciones para crear una imagen de Docker. Este fichero tiene un formato específico y necesita, como mínimo, la instrucción FROM para indicar la imagen base a partir de la cual construiremos nuestra propia imagen personalizada. ¿Para qué sirve? La idea es partir de una imagen base y personalizarla según nuestras necesidades. Una vez creada la nueva imagen, podremos utilizarla para levantar contenedores. Construcción del Dockerfile Para ejecutar las instrucciones del Dockerfile, utilizamos el comando docker build :">
 
 
-<link href="/scss/main.css" rel="stylesheet">
+<link href="/docker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -51,8 +48,8 @@ Después, a partir de esta imagen, levantaremos el contenedor)">
     <header>
       <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
 <div class="container-fluid flex-column flex-md-row ">
-  <a class="navbar-brand" href="/"><span class="navbar-brand__logo navbar-logo">
-    <img src="/images/logo.png" alt="Logo" width="150" height="auto" />
+  <a class="navbar-brand" href="/docker/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/docker/images/logo.png" alt="Logo" width="150" height="auto" />
     </span><span class="navbar-brand__name">Despliegue de aplicacones Web</span></a>
   <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
     <ul class="navbar-nav">
@@ -60,8 +57,8 @@ Después, a partir de esta imagen, levantaremos el contenedor)">
         <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/en/">English</a></li>
-    <li><a class="dropdown-item" href="/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/docker/en/">English</a></li>
+    <li><a class="dropdown-item" href="/docker/fr/">Francés</a></li>
     </ul>
 </div></li>
       </ul>
@@ -88,7 +85,7 @@ Después, a partir de esta imagen, levantaremos el contenedor)">
 Versión imprimible multipagina.
 <a href="#" onclick="print();return false;">Haga click aquí para imprimir</a>.
 </p><p>
-<a href="/docs/06_dockefile/">Volver a la vista normal de esta página</a>.
+<a href="/docker/docs/06_dockefile/">Volver a la vista normal de esta página</a>.
 </p>
 </div>
 
@@ -113,7 +110,7 @@ Versión imprimible multipagina.
 
 
 <div class="content">
-      <p><div class="definicion-concepto">
+      <div class="definicion-concepto">
   <div class="definicion-titulo">
     
     <i class="fas fa-file-alt" aria-hidden="true"></i>
@@ -140,9 +137,9 @@ Un
 
 </span>
 </strong>
-. 
+ de Docker.  
 <br />
-Este fichero tiene un formato concreto y necesita al menos la instrucción 
+Este fichero tiene un formato específico y necesita, como mínimo, la instrucción 
 <strong>
 <span class="font-weight-bold text-primary">
 
@@ -151,31 +148,27 @@ Este fichero tiene un formato concreto y necesita al menos la instrucción
 
 </span>
 </strong>
- para especificar la imagen base a partir de la cual construiremos nuestra imagen personalizada.
+ para indicar la imagen base a partir de la cual construiremos nuestra propia imagen personalizada.
 
   </div>
 </div>
 
 
 <div class="alert alert-success" role="alert">
-<h4 class="alert-heading">Para qué</h4>
+<h4 class="alert-heading">¿Para qué sirve?</h4>
 
     <blockquote>
 <ul>
-<li>
-<p>La idea es que partiendo de una imagen  personalicemos la imagen quequeremos crear,</p>
-</li>
-<li>
-<p>Después, a partir de esta imagen, levantaremos el contenedor)</p>
-</li>
+<li>La idea es <strong>partir de una imagen base</strong> y <strong>personalizarla</strong> según nuestras necesidades.</li>
+<li>Una vez creada la nueva imagen, <strong>podremos utilizarla para levantar contenedores</strong>.</li>
 </ul></blockquote>
 
 
 </div>
-</p>
+
 <hr style="border-color: red; border-width: 3px;"/>
 <h2 id="construcción-del-dockerfile">Construcción del Dockerfile</h2>
-<p><img src="/docs/06_dockefile/img_1.png" alt="img_1.png">
+<p><img src="/docker/docs/06_dockefile/img_1.png" alt="img_1.png">
 Para ejecutar las instrucciones del Dockerfile, utilizamos el comando 
 <strong>
 <span class="font-weight-bold text-primary">
@@ -398,7 +391,7 @@ Para ejecutar las instrucciones del Dockerfile, utilizamos el comando
 </div>
 <hr style="border-color: red; border-width: 3px;"/>
 <h2 id="declaración-de-variables-env-vs-arg">Declaración de variables: <code>ENV</code> vs <code>ARG</code></h2>
-<p><img src="/docs/06_dockefile/img_2.png" alt="img_2.png">
+<p><img src="/docker/docs/06_dockefile/img_2.png" alt="img_2.png">
 Diferencias clave:</p>
 <ul>
 <li><strong><code>ENV</code></strong>: Define variables accesibles dentro del contenedor en tiempo de ejecución.</li>
@@ -443,7 +436,7 @@ Diferencias clave:</p>
 <h2 id="solución-de-problemas-instalación-de-php">Solución de problemas: Instalación de PHP</h2>
 <h3 id="problema">Problema</h3>
 <p>Al instalar PHP, puede requerirse configurar la zona horaria (<code>tzone</code>), lo que interrumpe la construcción al no poder interactuar con el contenedor.
-<img src="/docs/06_dockefile/img_3.png" alt="img_3.png"></p>
+<img src="/docker/docs/06_dockefile/img_3.png" alt="img_3.png"></p>
 <h3 id="solución">Solución</h3>
 <p>Configurar el entorno en modo no interactivo:</p>
 <div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
@@ -697,9 +690,9 @@ Diferencias clave:</p>
 </footer>
 
     </div>
-    <script src="/js/main.js"></script>
-<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
-<script src='/js/tabpane-persist.js'></script>
+    <script src="/docker/js/main.js"></script>
+<script defer src="/docker/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/docker/js/tabpane-persist.js'></script>
 
   </body>
 </html>
