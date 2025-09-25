@@ -78,7 +78,7 @@ services:
 
 El Dockerfile 
 {{< highlight php "linenos=table, hl_lines=1" >}}
-FROM php:8.3-apache
+FROM php:8.4-apache
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt update
 # Usa la imagen base de PHP con Apache
