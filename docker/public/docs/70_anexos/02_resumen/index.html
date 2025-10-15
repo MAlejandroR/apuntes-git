@@ -1,11 +1,11 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head>
+  <head><script src="/docker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=docker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="alternate" type="application/rss&#43;xml" href="http://web.infenlaces.com/docker/docs/70_anexos/02_resumen/index.xml">
-<link rel="alternate" type="text/html" href="http://web.infenlaces.com/docker/_print/docs/70_anexos/02_resumen/">
-<meta name="robots" content="index, follow">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docker/docs/70_anexos/02_resumen/index.xml">
+<link rel="alternate" type="text/html" href="http://localhost:1313/docker/_print/docs/70_anexos/02_resumen/">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/docker/favicons/favicon.ico" >
@@ -22,7 +22,7 @@
 <title>Comandos docker | Despliegue de aplicacones Web</title>
 <meta name="description" content="Repaso docker">
 
-<meta property="og:url" content="http://web.infenlaces.com/docker/docs/70_anexos/02_resumen/">
+<meta property="og:url" content="http://localhost:1313/docker/docs/70_anexos/02_resumen/">
   <meta property="og:site_name" content="Despliegue de aplicacones Web">
   <meta property="og:title" content="Comandos docker">
   <meta property="og:description" content="Repaso docker">
@@ -33,13 +33,13 @@
   <meta itemprop="description" content="Repaso docker">
   <meta itemprop="datePublished" content="2024-10-15T07:04:49+02:00">
   <meta itemprop="dateModified" content="2024-10-15T07:04:49+02:00">
-  <meta itemprop="wordCount" content="275">
+  <meta itemprop="wordCount" content="647">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Comandos docker">
   <meta name="twitter:description" content="Repaso docker">
 
 
-<link rel="preload" href="/docker/scss/main.min.a1a4e66c6f4dd103dc041fb68e4ebc96264fb0f2dd7cd8f7448e2b9f810a0f50.css" as="style"><link href="/docker/scss/main.min.a1a4e66c6f4dd103dc041fb68e4ebc96264fb0f2dd7cd8f7448e2b9f810a0f50.css" rel="stylesheet">
+<link href="/docker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -178,6 +178,8 @@
     <li>
       <ul>
         <li><a href="#conceptos-básicos-de-docker">Conceptos básicos de Docker</a></li>
+        <li><a href="#estados-de-un-contenedor-según-cómo-se-cree">Estados de un contenedor según cómo se cree</a></li>
+        <li><a href="#opciones-más-comunes-de-docker-run">Opciones más comunes de <code>docker run</code></a></li>
       </ul>
     </li>
   </ul>
@@ -296,6 +298,136 @@
 </span></span><span style="display:flex;"><span>docker create --name web ubuntu:latest   <span style="color:#228b22"># Crea el contenedor</span>
 </span></span><span style="display:flex;"><span>docker start web                         <span style="color:#228b22"># Lo arranca</span>
 </span></span><span style="display:flex;"><span>docker <span style="color:#658b00">exec</span> web bash                     <span style="color:#228b22"># Ejecuta bash dentro del contenedor</span></span></span></code></pre></div>
+<h3 id="estados-de-un-contenedor-según-cómo-se-cree">Estados de un contenedor según cómo se cree</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Comando</th>
+          <th>Proceso principal (PID 1)</th>
+          <th>Estado tras <code>docker ps</code></th>
+          <th>¿Puedo entrar después?</th>
+          <th>Explicación breve</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>docker run --name c1 ubuntu:latest</code></td>
+          <td><code>bash</code> (sin tty/stdin)</td>
+          <td><code>Exited</code> inmediato</td>
+          <td>❌ No</td>
+          <td><code>bash</code> detecta que no hay terminal y termina.</td>
+      </tr>
+      <tr>
+          <td><code>docker run -it --name c2 ubuntu:latest</code></td>
+          <td><code>bash</code> (con tty/stdin)</td>
+          <td><code>Up</code> mientras dure la sesión</td>
+          <td>✅ Sí (ya estás dentro)</td>
+          <td>Sesión interactiva con <code>bash</code>.</td>
+      </tr>
+      <tr>
+          <td><code>docker run -dit --name c3 ubuntu:latest</code></td>
+          <td><code>bash</code> (detached, tty)</td>
+          <td><code>Up</code></td>
+          <td>✅ Con <code>docker exec</code></td>
+          <td>Contenedor sigue en background; puedes entrar con <code>exec</code>.</td>
+      </tr>
+      <tr>
+          <td><code>docker run --name c4 ubuntu:latest sleep infinity</code></td>
+          <td><code>sleep infinity</code></td>
+          <td><code>Up</code></td>
+          <td>✅ Con <code>docker exec</code></td>
+          <td>Proceso nunca termina, mantiene el contenedor vivo.</td>
+      </tr>
+      <tr>
+          <td><code>docker run --name c5 ubuntu:latest touch 1.txt</code></td>
+          <td><code>touch 1.txt</code></td>
+          <td><code>Exited</code> inmediato</td>
+          <td>❌ No</td>
+          <td>El comando se ejecuta y termina, contenedor muere.</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p><strong>Regla de oro</strong>: un contenedor vive mientras viva su proceso principal.</p>
+<ul>
+<li>Usa <code>-it</code> si quieres trabajar directamente con un shell.</li>
+<li>Usa <code>-dit</code> si quieres dejarlo corriendo y conectarte más tarde con <code>docker exec</code>.</li>
+<li>Si el proceso termina → el contenedor pasa a <code>Exited</code>.</li>
+</ul>
+<h3 id="opciones-más-comunes-de-docker-run">Opciones más comunes de <code>docker run</code></h3>
+<table>
+  <thead>
+      <tr>
+          <th>Opción</th>
+          <th>Ejemplo</th>
+          <th>Explicación breve</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>--name</code></td>
+          <td><code>docker run --name web ubuntu:latest</code></td>
+          <td>Asigna un nombre al contenedor (en lugar de ID aleatorio).</td>
+      </tr>
+      <tr>
+          <td><code>-h</code> / <code>--hostname</code></td>
+          <td><code>docker run -h servidor1 ubuntu:latest</code></td>
+          <td>Define el hostname interno del contenedor.</td>
+      </tr>
+      <tr>
+          <td><code>-p</code></td>
+          <td><code>docker run -p 8080:80 httpd</code></td>
+          <td>Publica un puerto (host:contenedor).</td>
+      </tr>
+      <tr>
+          <td><code>-v</code> (Linux → Linux)</td>
+          <td><code>docker run -v /home/manuel/web:/var/www/html httpd</code></td>
+          <td>Monta el directorio local en <code>/var/www/html</code> del contenedor (caso típico con Apache).</td>
+      </tr>
+      <tr>
+          <td><code>-v</code> (Windows → Linux)</td>
+          <td><code>docker run -v C:\Users\Manuel\web:/var/www/html httpd</code></td>
+          <td>En Windows, rutas con <code>C:\...</code> se montan en <code>/var/www/html</code> del contenedor.</td>
+      </tr>
+      <tr>
+          <td><code>-d</code></td>
+          <td><code>docker run -d httpd</code></td>
+          <td>Ejecuta en segundo plano (detached).</td>
+      </tr>
+      <tr>
+          <td><code>-it</code></td>
+          <td><code>docker run -it ubuntu bash</code></td>
+          <td>Interactivo con terminal (<code>stdin</code>+<code>tty</code>).</td>
+      </tr>
+      <tr>
+          <td><code>--network</code></td>
+          <td><code>docker run --network mi_red httpd</code></td>
+          <td>Conecta el contenedor a una red Docker específica.</td>
+      </tr>
+      <tr>
+          <td><code>--rm</code></td>
+          <td><code>docker run --rm ubuntu echo &quot;hola&quot;</code></td>
+          <td>El contenedor se elimina automáticamente al salir.</td>
+      </tr>
+      <tr>
+          <td><code>--env</code> / <code>-e</code></td>
+          <td><code>docker run -e MYSQL_ROOT_PASSWORD=1234 mysql</code></td>
+          <td>Define variables de entorno.</td>
+      </tr>
+      <tr>
+          <td><code>--restart</code></td>
+          <td><code>docker run --restart=always httpd</code></td>
+          <td>Política de reinicio automático (ej: tras fallo o reinicio del host).</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<p><strong>Notas prácticas sobre <code>-v</code>:</strong></p>
+<ul>
+<li>En <strong>Linux</strong>, se usan rutas absolutas (<code>/home/usuario/...</code>).</li>
+<li>En <strong>Windows con Docker Desktop</strong>, se usan rutas de la forma <code>C:\Users\...</code>.</li>
+<li>Para Apache, el mapeo típico es al directorio raíz <code>/var/www/html</code>.</li>
+</ul>
 
   <div class="section-index">
     
@@ -338,8 +470,8 @@
 </footer>
 
     </div>
-    <script src="/docker/js/main.min.f09a0cf27ce2d45045bcd9e31590ca1c450b02aa8ff6221f07422b8e0bb8a972.js" integrity="sha256-8JoM8nzi1FBFvNnjFZDKHEULAqqP9iIfB0Irjgu4qXI=" crossorigin="anonymous"></script>
-<script defer src="/docker/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <script src="/docker/js/main.js"></script>
+<script defer src="/docker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docker/js/tabpane-persist.js'></script>
 
   </body>

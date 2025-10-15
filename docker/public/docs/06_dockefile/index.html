@@ -1,11 +1,11 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head>
+  <head><script src="/docker/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=docker/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="alternate" type="application/rss&#43;xml" href="http://web.infenlaces.com/docker/docs/06_dockefile/index.xml">
-<link rel="alternate" type="text/html" href="http://web.infenlaces.com/docker/_print/docs/06_dockefile/">
-<meta name="robots" content="index, follow">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/docker/docs/06_dockefile/index.xml">
+<link rel="alternate" type="text/html" href="http://localhost:1313/docker/_print/docs/06_dockefile/">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/docker/favicons/favicon.ico" >
@@ -22,7 +22,7 @@
 <title>Fichero de ejecución para crear imágenes DockerFile | Despliegue de aplicacones Web</title>
 <meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
 
-<meta property="og:url" content="http://web.infenlaces.com/docker/docs/06_dockefile/">
+<meta property="og:url" content="http://localhost:1313/docker/docs/06_dockefile/">
   <meta property="og:site_name" content="Despliegue de aplicacones Web">
   <meta property="og:title" content="Fichero de ejecución para crear imágenes DockerFile">
   <meta property="og:description" content="Dockerfile Un Dockerfile es un fichero de texto que contiene una serie de instrucciones para crear una imagen de Docker. Este fichero tiene un formato específico y necesita, como mínimo, la instrucción FROM para indicar la imagen base a partir de la cual construiremos nuestra propia imagen personalizada. ¿Para qué sirve? La idea es partir de una imagen base y personalizarla según nuestras necesidades. Una vez creada la nueva imagen, podremos utilizarla para levantar contenedores. Construcción del Dockerfile Para ejecutar las instrucciones del Dockerfile, utilizamos el comando docker build :">
@@ -31,13 +31,13 @@
 
   <meta itemprop="name" content="Fichero de ejecución para crear imágenes DockerFile">
   <meta itemprop="description" content="Dockerfile Un Dockerfile es un fichero de texto que contiene una serie de instrucciones para crear una imagen de Docker. Este fichero tiene un formato específico y necesita, como mínimo, la instrucción FROM para indicar la imagen base a partir de la cual construiremos nuestra propia imagen personalizada. ¿Para qué sirve? La idea es partir de una imagen base y personalizarla según nuestras necesidades. Una vez creada la nueva imagen, podremos utilizarla para levantar contenedores. Construcción del Dockerfile Para ejecutar las instrucciones del Dockerfile, utilizamos el comando docker build :">
-  <meta itemprop="wordCount" content="818">
+  <meta itemprop="wordCount" content="1296">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Fichero de ejecución para crear imágenes DockerFile">
   <meta name="twitter:description" content="Dockerfile Un Dockerfile es un fichero de texto que contiene una serie de instrucciones para crear una imagen de Docker. Este fichero tiene un formato específico y necesita, como mínimo, la instrucción FROM para indicar la imagen base a partir de la cual construiremos nuestra propia imagen personalizada. ¿Para qué sirve? La idea es partir de una imagen base y personalizarla según nuestras necesidades. Una vez creada la nueva imagen, podremos utilizarla para levantar contenedores. Construcción del Dockerfile Para ejecutar las instrucciones del Dockerfile, utilizamos el comando docker build :">
 
 
-<link rel="preload" href="/docker/scss/main.min.a1a4e66c6f4dd103dc041fb68e4ebc96264fb0f2dd7cd8f7448e2b9f810a0f50.css" as="style"><link href="/docker/scss/main.min.a1a4e66c6f4dd103dc041fb68e4ebc96264fb0f2dd7cd8f7448e2b9f810a0f50.css" rel="stylesheet">
+<link href="/docker/scss/main.css" rel="stylesheet">
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
   integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -218,6 +218,13 @@
     <li><a href="#volúmenes-volume">Volúmenes (<code>VOLUME</code>)</a></li>
     <li><a href="#directorio-de-trabajo-workdir">Directorio de trabajo (<code>WORKDIR</code>)</a></li>
     <li><a href="#exponer-puertos-expose">Exponer puertos (<code>EXPOSE</code>)</a></li>
+    <li><a href="#extensiones-de-php-en-docker-docker-php-ext-">Extensiones de PHP en Docker (<code>docker-php-ext-*</code>)</a>
+      <ul>
+        <li><a href="#-ejemplo-básico">🧱 Ejemplo básico</a></li>
+        <li><a href="#-ejemplo-con-dependencias">🌍 Ejemplo con dependencias</a></li>
+        <li><a href="#-notas">💡 Notas</a></li>
+      </ul>
+    </li>
     <li><a href="#conclusión">Conclusión</a></li>
   </ul>
 </nav>
@@ -701,7 +708,26 @@ Diferencias clave:</p>
 <p>Ambos comandos definen lo que ejecutará el contenedor al iniciarse.</p>
 <hr style="border-color: red; border-width: 3px;"/>
 <h2 id="volúmenes-volume">Volúmenes (<code>VOLUME</code>)</h2>
-<p>Definir un volumen para persistencia de datos:</p>
+<p>Define un 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    volumen
+
+
+</span>
+</strong>
+ para la persistencia de datos.
+Es una 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    instrucción declarativa
+
+
+</span>
+</strong>
+ que indica que, en los contenedores creados a partir de esta imagen, los datos ubicados en esta carpeta deberían almacenarse de forma persistente en un volumen.</p>
 <div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
@@ -709,7 +735,7 @@ Diferencias clave:</p>
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">FROM</span><span style="color:#bbb"> </span><span style="color:#cd5555">ubuntu:latest</span><span style="color:#a61717;background-color:#e3d2d2">
-</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">VOLUME</span> [<span style="color:#cd5555">&#34;/data&#34;</span>]</span></span></code></pre></td></tr></table>
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">VOLUME</span> [<span style="color:#cd5555">&#34;/var/www/html&#34;</span>]</span></span></code></pre></td></tr></table>
 </div>
 </div>
 <p>Uso con variables de entorno:</p>
@@ -742,20 +768,180 @@ Diferencias clave:</p>
 </div>
 <hr style="border-color: red; border-width: 3px;"/>
 <h2 id="exponer-puertos-expose">Exponer puertos (<code>EXPOSE</code>)</h2>
-<p>Definir puertos expuestos por el contenedor:</p>
+<p>Define los 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    puertos que el contenedor utilizará
+
+
+</span>
+</strong>
+ para aceptar conexiones.</p>
+<p>Es una 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    instrucción declarativa
+
+
+</span>
+</strong>
+(en una <em>instrucción declarativa</em> indicamos una <strong>intención</strong>, mientras que en una <em>instrucción activa</em> realizamos la <strong>acción real</strong>).<br>
+Indica qué puertos estarán disponibles dentro del contenedor, aunque <strong>no los publica automáticamente</strong> en el host.<br>
+Para hacerlos accesibles desde fuera, deben 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    mapearse explícitamente
+
+
+</span>
+</strong>
+ al ejecutar el contenedor, por ejemplo con la opción <code>-p</code>.</p>
 <div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
 <pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">FROM</span><span style="color:#bbb"> </span><span style="color:#cd5555">php:8.3-apache</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#228b22"># El contenedor escuchará internamente en el puerto 80</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">EXPOSE</span><span style="color:#bbb"> </span><span style="color:#cd5555">80</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>Ejemplo de uso, (myimage sería la imagen generado por el Dockerfile anterior):</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#228b22"># Publicamos el puerto 80 del contenedor en el 8080 del host</span>
+</span></span><span style="display:flex;"><span>docker run -d -p 8080:80 myimage</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<p>El contenedor escucha en el puerto <code>80</code>, pero el acceso externo se realiza a través del <code>8080</code>.</p>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">FROM</span><span style="color:#bbb"> </span><span style="color:#cd5555">ubuntu:latest</span><span style="color:#a61717;background-color:#e3d2d2">
-</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">ENV</span> <span style="color:#00688b">WEB_PORT</span>=<span style="color:#b452cd">80</span> <span style="color:#00688b">MYSQL_PORT</span>=<span style="color:#b452cd">3306</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">ENV</span> <span style="color:#00688b">WEB_PORT</span>=<span style="color:#b452cd">80</span> 
+</span></span><span style="display:flex;"><span><span style="color:#00688b">MYSQL_PORT</span>=<span style="color:#b452cd">3306</span>
 </span></span><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">EXPOSE</span><span style="color:#bbb"> </span><span style="color:#cd5555">$WEB_PORT</span> <span style="color:#00688b">$MYSQL_PORT</span></span></span></code></pre></td></tr></table>
 </div>
 </div>
 <hr style="border-color: red; border-width: 3px;"/>
+<h2 id="extensiones-de-php-en-docker-docker-php-ext-">Extensiones de PHP en Docker (<code>docker-php-ext-*</code>)</h2>
+<p>Las imágenes oficiales de PHP incluyen herramientas para <strong>gestionar extensiones</strong> de forma sencilla.</p>
+<p>Estas utilidades permiten <strong>compilar, activar, configurar o instalar extensiones adicionales</strong> directamente dentro del contenedor durante el proceso de construcción de la imagen.</p>
+<p>De este modo, puedes añadir soporte para bases de datos (<code>pdo_mysql</code>, <code>mysqli</code>), gráficos (<code>gd</code>), internacionalización (<code>intl</code>), depuración (<code>xdebug</code>), cachés (<code>redis</code>, <code>apcu</code>) u otras librerías sin necesidad de compilar PHP manualmente.</p>
+<p>Es una <strong>instrucción activa</strong>, ya que <strong>ejecuta acciones reales</strong> durante la construcción de la imagen (instala o habilita extensiones).</p>
+<hr>
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    Comandos principales
+
+
+</span>
+</strong>
+
+<table>
+  <thead>
+      <tr>
+          <th>Comando</th>
+          <th>Función principal</th>
+          <th>Tipo</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>docker-php-ext-install</code></td>
+          <td>Compila e instala extensiones incluidas en el código fuente de PHP (por ejemplo <code>pdo_mysql</code>, <code>gd</code>, <code>intl</code>)</td>
+          <td>Activa</td>
+      </tr>
+      <tr>
+          <td><code>docker-php-ext-enable</code></td>
+          <td>Activa extensiones ya instaladas, normalmente tras usar <code>pecl install</code></td>
+          <td>Activa</td>
+      </tr>
+      <tr>
+          <td><code>docker-php-ext-configure</code></td>
+          <td>Configura opciones previas a la compilación de una extensión</td>
+          <td>Activa</td>
+      </tr>
+      <tr>
+          <td><code>pecl install</code></td>
+          <td>Instala extensiones externas (no incluidas en el core de PHP)</td>
+          <td>Activa</td>
+      </tr>
+  </tbody>
+</table>
+<hr>
+<h3 id="-ejemplo-básico">🧱 Ejemplo básico</h3>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">FROM</span><span style="color:#bbb"> </span><span style="color:#cd5555">php:8.3-apache</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#228b22"># Instalar extensiones PHP nativas</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">RUN</span> docker-php-ext-install mysqli pdo pdo_mysql</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr>
+<h3 id="-ejemplo-con-dependencias">🌍 Ejemplo con dependencias</h3>
+<div class="highlight"><div style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-dockerfile" data-lang="dockerfile"><span style="display:flex;"><span><span style="color:#8b008b;font-weight:bold">FROM</span><span style="color:#bbb"> </span><span style="color:#cd5555">php:8.3-apache</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#228b22"># Instalar librerías del sistema necesarias</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">RUN</span> apt-get update &amp;&amp; apt-get install -y <span style="color:#cd5555">\
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555"></span>libjpeg-dev libpng-dev libwebp-dev libfreetype6-dev <span style="color:#cd5555">\
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555"></span>&amp;&amp; docker-php-ext-configure gd --with-jpeg --with-webp --with-freetype <span style="color:#cd5555">\
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555"></span>&amp;&amp; docker-php-ext-install gd mysqli pdo pdo_mysql intl <span style="color:#cd5555">\
+</span></span></span><span style="display:flex;"><span><span style="color:#cd5555"></span>&amp;&amp; docker-php-ext-enable gd<span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#228b22"># Limpieza para reducir tamaño de la imagen</span><span style="color:#a61717;background-color:#e3d2d2">
+</span></span></span><span style="display:flex;"><span><span style="color:#a61717;background-color:#e3d2d2"></span><span style="color:#8b008b;font-weight:bold">RUN</span> apt-get clean &amp;&amp; rm -rf /var/lib/apt/lists/*</span></span></code></pre></td></tr></table>
+</div>
+</div>
+<hr>
+<h3 id="-notas">💡 Notas</h3>
+<ul>
+<li>Estas herramientas solo están disponibles en las <strong>imágenes oficiales de PHP</strong> (<code>php:8.3-apache</code>, <code>php:8.3-fpm</code>, etc.).</li>
+<li>Es recomendable <strong>limpiar la caché</strong> y <strong>combinar comandos</strong> en una sola capa para reducir el tamaño final de la imagen.</li>
+<li>Si la extensión no está incluida en PHP, puede instalarse mediante <code>pecl install nombre</code> y activarse con <code>docker-php-ext-enable</code>.</li>
+</ul>
+<hr>
+<p>👉 En resumen, estas utilidades facilitan la instalación y configuración de extensiones PHP durante la construcción de imágenes Docker, de forma similar a cómo <code>apt-get install</code> gestiona paquetes del sistema.</p>
 <h2 id="conclusión">Conclusión</h2>
 
 
@@ -815,8 +1001,8 @@ Diferencias clave:</p>
 </footer>
 
     </div>
-    <script src="/docker/js/main.min.f09a0cf27ce2d45045bcd9e31590ca1c450b02aa8ff6221f07422b8e0bb8a972.js" integrity="sha256-8JoM8nzi1FBFvNnjFZDKHEULAqqP9iIfB0Irjgu4qXI=" crossorigin="anonymous"></script>
-<script defer src="/docker/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <script src="/docker/js/main.js"></script>
+<script defer src="/docker/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/docker/js/tabpane-persist.js'></script>
 
   </body>

@@ -258,11 +258,12 @@ Ambos comandos definen lo que ejecutará el contenedor al iniciarse.
 
 ## Volúmenes (`VOLUME`)
 
-Definir un volumen para persistencia de datos:
+Define un {{<color>}}volumen{{</color>}} para la persistencia de datos.
+Es una {{<color>}}instrucción declarativa{{</color>}} que indica que, en los contenedores creados a partir de esta imagen, los datos ubicados en esta carpeta deberían almacenarse de forma persistente en un volumen.
 
 {{< highlight dockerfile "linenos=table" >}}
 FROM ubuntu:latest
-VOLUME ["/data"]
+VOLUME ["/var/www/html"]
 {{< /highlight >}}
 
 Uso con variables de entorno:
@@ -289,15 +290,99 @@ ENTRYPOINT bash script.sh
 
 ## Exponer puertos (`EXPOSE`)
 
-Definir puertos expuestos por el contenedor:
+Define los {{<color>}}puertos que el contenedor utilizará{{</color>}} para aceptar conexiones.
+
+Es una {{<color>}}instrucción declarativa{{</color>}}(en una *instrucción declarativa* indicamos una **intención**, mientras que en una *instrucción activa* realizamos la **acción real**).  
+Indica qué puertos estarán disponibles dentro del contenedor, aunque **no los publica automáticamente** en el host.  
+Para hacerlos accesibles desde fuera, deben {{<color>}}mapearse explícitamente{{</color>}} al ejecutar el contenedor, por ejemplo con la opción `-p`.
+
+{{< highlight dockerfile "linenos=table" >}}
+FROM php:8.3-apache
+
+# El contenedor escuchará internamente en el puerto 80
+EXPOSE 80
+{{< /highlight >}}
+
+Ejemplo de uso, (myimage sería la imagen generado por el Dockerfile anterior):
+
+{{< highlight bash "linenos=table" >}}
+# Publicamos el puerto 80 del contenedor en el 8080 del host
+docker run -d -p 8080:80 myimage
+{{< /highlight >}}
+
+El contenedor escucha en el puerto `80`, pero el acceso externo se realiza a través del `8080`.
 
 {{< highlight dockerfile "linenos=table" >}}
 FROM ubuntu:latest
-ENV WEB_PORT=80 MYSQL_PORT=3306
+ENV WEB_PORT=80 
+MYSQL_PORT=3306
 EXPOSE $WEB_PORT $MYSQL_PORT
 {{< /highlight >}}
 
 {{% line %}}
+
+
+## Extensiones de PHP en Docker (`docker-php-ext-*`)
+
+Las imágenes oficiales de PHP incluyen herramientas para **gestionar extensiones** de forma sencilla.
+
+Estas utilidades permiten **compilar, activar, configurar o instalar extensiones adicionales** directamente dentro del contenedor durante el proceso de construcción de la imagen.
+
+De este modo, puedes añadir soporte para bases de datos (`pdo_mysql`, `mysqli`), gráficos (`gd`), internacionalización (`intl`), depuración (`xdebug`), cachés (`redis`, `apcu`) u otras librerías sin necesidad de compilar PHP manualmente.
+
+Es una **instrucción activa**, ya que **ejecuta acciones reales** durante la construcción de la imagen (instala o habilita extensiones).
+
+---
+
+{{<color>}} Comandos principales{{</color>}}
+
+| Comando | Función principal | Tipo |
+|----------|------------------|------|
+| `docker-php-ext-install` | Compila e instala extensiones incluidas en el código fuente de PHP (por ejemplo `pdo_mysql`, `gd`, `intl`) | Activa |
+| `docker-php-ext-enable` | Activa extensiones ya instaladas, normalmente tras usar `pecl install` | Activa |
+| `docker-php-ext-configure` | Configura opciones previas a la compilación de una extensión | Activa |
+| `pecl install` | Instala extensiones externas (no incluidas en el core de PHP) | Activa |
+
+---
+
+### 🧱 Ejemplo básico
+
+{{< highlight dockerfile "linenos=table" >}}
+FROM php:8.3-apache
+
+# Instalar extensiones PHP nativas
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+{{< /highlight >}}
+
+---
+
+### 🌍 Ejemplo con dependencias
+
+{{< highlight dockerfile "linenos=table" >}}
+FROM php:8.3-apache
+
+# Instalar librerías del sistema necesarias
+RUN apt-get update && apt-get install -y \
+libjpeg-dev libpng-dev libwebp-dev libfreetype6-dev \
+&& docker-php-ext-configure gd --with-jpeg --with-webp --with-freetype \
+&& docker-php-ext-install gd mysqli pdo pdo_mysql intl \
+&& docker-php-ext-enable gd
+
+# Limpieza para reducir tamaño de la imagen
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+{{< /highlight >}}
+
+---
+
+### 💡 Notas
+
+- Estas herramientas solo están disponibles en las **imágenes oficiales de PHP** (`php:8.3-apache`, `php:8.3-fpm`, etc.).
+- Es recomendable **limpiar la caché** y **combinar comandos** en una sola capa para reducir el tamaño final de la imagen.
+- Si la extensión no está incluida en PHP, puede instalarse mediante `pecl install nombre` y activarse con `docker-php-ext-enable`.
+
+---
+
+👉 En resumen, estas utilidades facilitan la instalación y configuración de extensiones PHP durante la construcción de imágenes Docker, de forma similar a cómo `apt-get install` gestiona paquetes del sistema.
 
 ## Conclusión
 
