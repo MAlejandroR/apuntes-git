@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>La web_old y www on Desarrollo Web</title>
-    <link>http://web.infenlaces.com/dwes/es/docs/01_web/</link>
+    <link>http://localhost:40319/dwes/es/docs/01_web/</link>
     <description>Recent content in La web_old y www on Desarrollo Web</description>
     <generator>Hugo</generator>
     <language>es</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="http://web.infenlaces.com/dwes/es/docs/01_web/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:40319/dwes/es/docs/01_web/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

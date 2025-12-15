@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://web.infenlaces.com/dwes/en/categories/</loc>
+    <loc>http://localhost:40319/dwes/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://web.infenlaces.com/dwes/es/categories/"
+                href="http://localhost:40319/dwes/es/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://web.infenlaces.com/dwes/fr/categories/"
+                href="http://localhost:40319/dwes/fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://web.infenlaces.com/dwes/en/categories/"
+                href="http://localhost:40319/dwes/en/categories/"
                 />
   </url><url>
-    <loc>http://web.infenlaces.com/dwes/en/</loc>
+    <loc>http://localhost:40319/dwes/en/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://web.infenlaces.com/dwes/es/"
+                href="http://localhost:40319/dwes/es/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://web.infenlaces.com/dwes/fr/"
+                href="http://localhost:40319/dwes/fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://web.infenlaces.com/dwes/en/"
+                href="http://localhost:40319/dwes/en/"
                 />
   </url><url>
-    <loc>http://web.infenlaces.com/dwes/en/tags/</loc>
+    <loc>http://localhost:40319/dwes/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="es"
-                href="http://web.infenlaces.com/dwes/es/tags/"
+                href="http://localhost:40319/dwes/es/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="http://web.infenlaces.com/dwes/fr/tags/"
+                href="http://localhost:40319/dwes/fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://web.infenlaces.com/dwes/en/tags/"
+                href="http://localhost:40319/dwes/en/tags/"
                 />
   </url>
 </urlset>

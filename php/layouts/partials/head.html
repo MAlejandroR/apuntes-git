@@ -20,7 +20,9 @@
     {{ .Site.Title -}}
   {{ end -}}
 </title>
-<meta name="description" content="{{ template "partials/page-description.html" . }}">
+
+{{ partial "page-meta.html" . }}
+
 
 {{ template "_internal/opengraph.html" . -}}
 {{ template "_internal/schema.html" . -}}
